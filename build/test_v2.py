@@ -31,32 +31,45 @@ sub_parent = {s["sub_factor_id"]: f["factor_id"] for f in D["factors"] for s in 
 
 # ------------------------------------------------------------------ taxonomy
 
-@test("83 patterns, unique ids and slugs, each in one of 10 valid categories")
+@test("80 patterns, unique ids and slugs, each in one of 10 valid categories")
 def _():
-    assert len(D["patterns"]) == 83
-    assert len({p["pattern_id"] for p in D["patterns"]}) == 83
-    assert len({p["pattern_slug"] for p in D["patterns"]}) == 83
+    assert len(D["patterns"]) == 80
+    assert len({p["pattern_id"] for p in D["patterns"]}) == 80
+    assert len({p["pattern_slug"] for p in D["patterns"]}) == 80
     cats = {c["category_id"] for c in D["categories"]}
     assert len(cats) == 10
     assert all(p["category_id"] in cats for p in D["patterns"])
 
 
-@test("54 UI-led and 29 UX-led patterns; pattern ids are not renumbered")
+@test("52 UI-led and 28 UX-led patterns; ids are not renumbered, 3 are withdrawn")
 def _():
     kinds = collections.Counter(p["ui_ux_type"] for p in D["patterns"])
-    assert kinds == {"UI": 54, "UX": 29}, kinds
+    assert kinds == {"UI": 52, "UX": 28}, kinds
     src = {r["pattern_id"] for r in csv.DictReader(
         open(os.path.join(ROOT, "design_patterns_web_migration_pack", "design_patterns.csv"), encoding="utf-8"))}
-    assert {p["pattern_id"] for p in D["patterns"]} == src
+    live = {p["pattern_id"] for p in D["patterns"]}
+    retired = set(D["migration"]["pattern_revisions_v3"]["retired"])
+    assert retired == {"pat-008", "pat-073", "pat-084"}, retired
+    assert live == src - retired, (live - src, src - retired - live)
 
 
-@test("category ids run U01-U10 in stage order, each keeping its source id")
+@test("category ids run U01-U10, and the four stages partition them")
 def _():
     ids = [c["category_id"] for c in D["categories"]]
     assert ids == ["U%02d" % i for i in range(1, 11)], ids
     assert [c["category_order"] for c in D["categories"]] == list(range(1, 11))
-    stages = [c["stage"] for c in D["categories"]]
-    assert stages == ["Setting the specs"] * 3 + ["Working the output"] * 4 + ["Fitting into the work"] * 3, stages
+    stages = D["migration"]["stages"]
+    assert [s["name"] for s in stages] == ["Setting the specs", "Taking in the output",
+                                           "Acting on the output", "Fitting into the work"]
+    assert [s["stage_order"] for s in stages] == [1, 2, 3, 4]
+    covered = [cid for s in stages for cid in s["categories"]]
+    assert sorted(covered) == ids and len(covered) == len(set(covered)), covered
+    of_stage = {cid: s["name"] for s in stages for cid in s["categories"]}
+    for c in D["categories"]:
+        assert c["stage"] == of_stage[c["category_id"]], c["category_id"]
+    for s in stages:
+        n = sum(1 for p in D["patterns"] if p["stage"] == s["name"])
+        assert n == s["pattern_count"], (s["name"], n, s["pattern_count"])
     remap = D["migration"]["category_id_remap"]
     assert len(remap) == 10 and sorted(remap.values()) == ids, remap
     assert {c["source_category_id"] for c in D["categories"]} == set(remap)
@@ -64,16 +77,27 @@ def _():
         assert remap[c["source_category_id"]] == c["category_id"]
 
 
-@test("renumbering preserved every category's own content, only its id moved")
+@test("renumbering preserved every category's content; only ids moved, and two were renamed")
 def _():
     src = {r["category_id"]: r for r in csv.DictReader(
         open(os.path.join(ROOT, "design_patterns_web_migration_pack", "design_pattern_categories.csv"), encoding="utf-8"))}
+    renamed = D["migration"]["category_renames_v3"]
+    assert set(renamed) == {"U03", "U04"}, set(renamed)
+    retired = set(D["migration"]["pattern_revisions_v3"]["retired"])
+    lost = collections.Counter(
+        p["category_id"] for p in D["migration"]["pattern_revisions_v3"]["retired"].values())
     for c in D["categories"]:
         s = src[c["source_category_id"]]
-        assert c["category_name"] == s["category_name"]
+        cid = c["category_id"]
+        assert c["v2_category_name"] == s["category_name"], cid
+        if cid in renamed:
+            assert renamed[cid]["from"] == s["category_name"], cid
+            assert c["category_name"] == renamed[cid]["to"], cid
+        else:
+            assert c["category_name"] == s["category_name"], cid
         assert c["category_slug"] == s["category_slug"]
         assert c["category_description"] == s["category_description"]
-        assert c["pattern_count"] == int(s["pattern_count"])
+        assert c["pattern_count"] == int(s["pattern_count"]) - lost[cid], cid
 
 
 @test("every pattern sits in the renumbered category its source id maps to")
@@ -94,9 +118,13 @@ def _():
     ids = [f["factor_id"] for f in D["factors"]]
     retired = {r["factor_id"] for r in D["migration"]["factor_revisions"]["retired_factors"]}
     assert retired == {"F10", "N5"}, retired
-    expect = [x for x in ["F%d" % i for i in range(1, 19)] + ["N%d" % i for i in range(1, 6)]
-              if x not in retired]
-    assert ids == expect, ids
+    # the five newest factors moved out of the N-series into F19-F22 (N5 was retired first)
+    remap = D["migration"]["factor_revisions"]["v3"]["id_remap"]
+    assert remap == {"N1": "F19", "N2": "F20", "N3": "F21", "N4": "F22"}, remap
+    expect = {x for x in ["F%d" % i for i in range(1, 23)] if x != "F10"}
+    assert set(ids) == expect, (expect - set(ids), set(ids) - expect)
+    assert len(ids) == 21 == len(set(ids))
+    assert not any(i.startswith("N") for i in ids), ids
     assert sum(len(f["sub_factors"]) for f in D["factors"]) == 96
     assert len(sub_parent) == 96
 
@@ -109,35 +137,43 @@ def _():
     for f in D["factors"]:
         assert f["definition"], f["factor_id"]
         assert f["boundary_rule"], f["factor_id"]
-        m = re.search(r"Nearest sibling: (F\d+|N\d+) \(([^)]+)\)", f["boundary_rule"])
+        m = re.search(r"Nearest sibling: (F\d+|N\d+) \((.+)\)\.", f["boundary_rule"])
         assert m, f["factor_id"]
         assert m.group(1) in ids, (f["factor_id"], m.group(1))
         assert m.group(2) in names, (f["factor_id"], m.group(2))
         assert m.group(1) != f["factor_id"], f["factor_id"]
 
 
-@test("renamed factors keep their id and their source name")
+@test("renamed factors keep their id, their source name and their v2 name")
 def _():
-    want = {"F3": "Judging and deciding", "F4": "Oversight", "F7": "Control and agency",
-            "F11": "Mindset", "F15": "Spatial and embodied cognition"}
-    for fid, name in want.items():
+    v2 = {"F3": "Judging and deciding", "F4": "Oversight", "F7": "Control and agency",
+          "F11": "Mindset", "F15": "Spatial and embodied cognition"}
+    for fid, name in v2.items():
         f = factor[fid]
-        assert f["factor_name"] == name, (fid, f["factor_name"])
+        assert f["v2_factor_name"] == name, (fid, f.get("v2_factor_name"))
         assert f.get("source_factor_name"), fid
         assert not f.get("definition_is_stale"), fid
-    renamed = D["migration"]["factor_revisions"]["renamed"]
-    assert set(renamed) == set(want)
+    assert set(D["migration"]["factor_revisions"]["renamed"]) == set(v2)
+    # the v3 pass renamed a further set, each recorded with the basis for the new name
+    v3 = D["migration"]["factor_revisions"]["v3"]["renamed"]
+    for fid, r in v3.items():
+        assert factor[fid]["factor_name"] == r["to"], (fid, factor[fid]["factor_name"])
+        assert factor[fid]["v2_factor_name"] == r["from"], fid
+        assert r.get("basis"), fid
+    for f in D["factors"]:
+        # every factor states what it was called before, renamed or not
+        assert f.get("v2_factor_name"), f["factor_id"]
 
 
-@test("F11 keeps only agent perception; its human half sits under N3")
+@test("F11 keeps only agent perception; its human half sits under F21 (was N3)")
 def _():
     assert [s["sub_factor_id"] for s in factor["F11"]["sub_factors"]] == \
         ["acceptance-and-social-perception-of-the-agent"]
-    n3 = {s["sub_factor_id"] for s in factor["N3"]["sub_factors"]}
+    n3 = {s["sub_factor_id"] for s in factor["F21"]["sub_factors"]}
     moved = {"social-sharing-and-human-connection", "social-presence-and-team-rapport",
              "authenticity-of-ai-mediated-interaction"}
     assert moved <= n3, moved - n3
-    assert all(e["factor_id"] == "N3" for e in D["paper_factors"] if e["sub_factor_id"] in moved)
+    assert all(e["factor_id"] == "F21" for e in D["paper_factors"] if e["sub_factor_id"] in moved)
 
 
 @test("F10 retired with its six papers rehoused, none left uncoded")
@@ -145,9 +181,9 @@ def _():
     assert "F10" not in factor
     assert not any(e["sub_factor_id"] == "arousal-and-performance" for e in D["paper_factors"])
     for rid in ["3950", "5443", "13132"]:
-        assert "N3" in paper[rid]["factor_ids"], rid
+        assert "F21" in paper[rid]["factor_ids"], rid
     for rid in ["6290", "7485", "17248"]:
-        assert "N1" in paper[rid]["factor_ids"], rid
+        assert "F19" in paper[rid]["factor_ids"], rid
     for rid in ["3950", "5443", "13132", "6290", "7485", "17248"]:
         assert paper[rid]["factor_ids"], rid
 
@@ -162,6 +198,103 @@ def _():
         assert "F14" in paper[rid]["factor_ids"], rid
     assert sub not in paper["14953"]["sub_factor_ids"]
     assert paper["14953"]["factor_ids"], "14953 must keep its other factors"
+
+
+# ------------------------------------------------------------------------ v3
+
+@test("every pattern carries a title and the verbatim clause it was named from")
+def _():
+    renamed = D["migration"]["pattern_revisions_v3"]["renamed"]
+    assert len(renamed) == 80, len(renamed)
+    for p in D["patterns"]:
+        pid = p["pattern_id"]
+        assert p["description"], pid
+        assert p["pattern_name"] != p["description"], pid
+        assert p["pattern_name"][0].isupper(), pid
+        assert renamed[pid]["from"] == p["source_pattern_name"], pid
+        assert renamed[pid]["to"] == p["pattern_name"], pid
+    # titles and slugs stay unique, so nothing collides in the catalogue or the routes
+    assert len({p["pattern_name"] for p in D["patterns"]}) == 80
+    assert len({p["pattern_slug"] for p in D["patterns"]}) == 80
+
+
+@test("the 3 withdrawn patterns are gone from every table, with their 7 edges")
+def _():
+    retired = D["migration"]["pattern_revisions_v3"]["retired"]
+    assert set(retired) == {"pat-008", "pat-073", "pat-084"}
+    assert D["migration"]["pattern_revisions_v3"]["dropped_edges"] == 7
+    dropped = sum(len(r["rids"]) for r in retired.values())
+    assert dropped == 7, dropped
+    for pid, r in retired.items():
+        assert r["reason"] and r["n_papers"] == len(r["rids"]), pid
+        assert pid not in {p["pattern_id"] for p in D["patterns"]}
+        assert pid not in D["indexes"]["by_pattern"]
+        assert pid not in D["indexes"]["pattern_x_factor"]
+        assert not any(e["pattern_id"] == pid for e in D["paper_patterns"])
+        assert not any(pid in p["pattern_ids"] for p in D["papers"])
+        # their papers stay in the corpus, holding whatever else they carry
+        for rid in r["rids"]:
+            assert rid in paper, rid
+
+
+@test("no N-series id survives anywhere the site or a reader can reach it")
+def _():
+    remap = D["migration"]["factor_revisions"]["v3"]["id_remap"]
+    assert not any(f["factor_id"].startswith("N") for f in D["factors"])
+    assert not any(e["factor_id"].startswith("N") for e in D["paper_factors"])
+    assert not any(k.startswith("N") for k in D["indexes"]["by_factor"])
+    for p in D["papers"]:
+        assert not any(f.startswith("N") for f in p["factor_ids"]), p["rid"]
+    for row in D["indexes"]["pattern_x_factor"].values():
+        assert not any(k.startswith("N") for k in row)
+    # and each renumbered factor kept its papers exactly
+    for old, new in remap.items():
+        assert new in D["indexes"]["by_factor"], new
+
+
+@test("factor groups partition the 21 factors, and every factor points back")
+def _():
+    groups = D["factor_groups"]
+    covered = [fid for g in groups for fid in g["factor_ids"]]
+    assert sorted(covered) == sorted(f["factor_id"] for f in D["factors"])
+    assert len(covered) == len(set(covered))
+    by_id = {g["group_id"]: g for g in groups}
+    assert [g["group_order"] for g in groups] == list(range(1, len(groups) + 1))
+    for f in D["factors"]:
+        g = by_id[f["factor_group_id"]]
+        assert f["factor_id"] in g["factor_ids"], f["factor_id"]
+        assert f["factor_group_name"] == g["group_name"], f["factor_id"]
+
+
+@test("display_order is a dense 1..80 ranking that respects stage then category")
+def _():
+    ordered = sorted(D["patterns"], key=lambda p: p["display_order"])
+    assert [p["display_order"] for p in ordered] == list(range(1, 81))
+    stage_seq = [p["stage_order"] for p in ordered]
+    assert stage_seq == sorted(stage_seq), "stages must not interleave"
+    seen = []
+    for p in ordered:
+        if not seen or seen[-1] != p["category_id"]:
+            seen.append(p["category_id"])
+    assert len(seen) == len(set(seen)), "a category must not be split across the order"
+
+
+@test("the derived breadth measures are reproducible from the matrix")
+def _():
+    import math
+    px = D["indexes"]["pattern_x_factor"]
+    fac = {f["factor_id"]: f["mapped_paper_count"] for f in D["factors"]}
+    total = D["counts"]["papers"]
+    for p in D["patterns"]:
+        row = {k: v for k, v in px.get(p["pattern_id"], {}).items() if v}
+        n = p["mapped_paper_count"] or 1
+        assert p["factors_touched"] == len(row), p["pattern_id"]
+        share = [v / sum(row.values()) for v in row.values()]
+        eff = math.exp(-sum(x * math.log(x) for x in share)) if share else 0
+        assert abs(eff - p["effective_breadth"]) < 0.02, (p["pattern_id"], eff, p["effective_breadth"])
+        distinctive = {k for k, v in row.items() if v >= 5 and (v / n) / (fac[k] / total) >= 1.25}
+        assert distinctive == set(p["distinctive_factor_ids"]), p["pattern_id"]
+        assert p["distinctive_breadth"] == len(p["distinctive_factor_ids"]), p["pattern_id"]
 
 
 # --------------------------------------------------------------------- edges
@@ -198,9 +331,10 @@ def _():
     assert sum(1 for p in D["papers"] if len(p["pattern_ids"]) > 1) > 1000
 
 
-@test("pattern edges reproduce design_patterns_papers.csv for the 83 live patterns")
+@test("pattern edges reproduce design_patterns_papers.csv for the 80 live patterns")
 def _():
-    by_name = {p["pattern_name"].strip(): p["pattern_id"] for p in D["patterns"]}
+    # v3 gave every pattern a title; the csv still names them by the source clause
+    by_name = {p["source_pattern_name"].strip(): p["pattern_id"] for p in D["patterns"]}
     want = {(r["rid"], by_name[r["design_pattern"].strip()])
             for r in PAT_EDGES if r["design_pattern"].strip() in by_name}
     got = {(e["rid"], e["pattern_id"]) for e in D["paper_patterns"]}
@@ -343,7 +477,7 @@ def _():
 
 @test("a pattern filter and a factor filter intersect, matching the matrix cell")
 def _():
-    pid, fid = "pat-009", "N1"
+    pid, fid = "pat-009", "F19"
     got = filter_papers(patterns=[pid], factors=[fid])
     assert len(got) == D["indexes"]["pattern_x_factor"][pid][fid]
     assert len(got) == len(set(got))

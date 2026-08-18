@@ -1,0 +1,644 @@
+{
+ "stages": [
+  {
+   "name": "Setting the specs",
+   "stage_order": 1,
+   "categories": [
+    "U01",
+    "U02",
+    "U03"
+   ]
+  },
+  {
+   "name": "Taking in the output",
+   "stage_order": 2,
+   "categories": [
+    "U04",
+    "U07"
+   ]
+  },
+  {
+   "name": "Acting on the output",
+   "stage_order": 3,
+   "categories": [
+    "U05",
+    "U06"
+   ]
+  },
+  {
+   "name": "Fitting into the work",
+   "stage_order": 4,
+   "categories": [
+    "U08",
+    "U09",
+    "U10"
+   ]
+  }
+ ],
+ "category_renames": {
+  "U03": {
+   "from": "Constraints, Safety & Agency",
+   "to": "Constraints, Guardrails & Reserved Control",
+   "method": "editorial",
+   "basis": "'Agency' collided with the F7 column, Control and Agency; a category and a factor sharing a word made the matrix ambiguous to read."
+  },
+  "U04": {
+   "from": "Modality, Embodiment & Output Rendering",
+   "to": "Modality, Embodiment & Rendering",
+   "method": "editorial",
+   "basis": "'Output Rendering' was inaccurate for the category's own contents: pat-060 (multimodal input), pat-062 (voice as the input surface) and pat-061 (explicitly 'input or output') are not output rendering."
+  }
+ },
+ "pattern_renames": {
+  "pat-059": {
+   "to": "Inferred User State Driven Adaptation",
+   "slug": "inferred-user-state-driven-adaptation",
+   "description": "inferred or declared user state selects the system's next behavior"
+  },
+  "pat-015": {
+   "to": "Question-Driven Elicitation",
+   "slug": "question-driven-elicitation",
+   "description": "the system questions the user and the answers become the input"
+  },
+  "pat-027": {
+   "to": "Specification by Demonstration",
+   "slug": "specification-by-demonstration",
+   "description": "demonstration or example as the specification"
+  },
+  "pat-092": {
+   "to": "Natural-Language Control",
+   "slug": "natural-language-control",
+   "description": "natural-language instruction replaces direct manipulation of the artifact"
+  },
+  "pat-032": {
+   "to": "Source Conditioned Generation",
+   "slug": "source-conditioned-generation",
+   "description": "generation conditioned on the user's own material The user hands over material they already own - a dataset, PDF, photo set or chat log - and the generation is conditioned on it."
+  },
+  "pat-035": {
+   "to": "Atomic AI Action Menu",
+   "slug": "atomic-ai-action-menu",
+   "description": "a fixed set of predefined prompts attached to each unit of content The same small, named set of prepared AI actions is attached to every content unit, in place of an open prompt box."
+  },
+  "pat-093": {
+   "to": "Familiar-Object Metaphor",
+   "slug": "familiar-object-metaphor",
+   "description": "familiar metaphor imported as the interaction surface The interface is built from an object the user already knows - a spreadsheet, a palette, puzzle pieces, recipe cards."
+  },
+  "pat-039": {
+   "to": "Spatial Canvas",
+   "slug": "spatial-canvas",
+   "description": "spatial arrangement on a canvas is the prompt"
+  },
+  "pat-034": {
+   "to": "Artifact Generation Property Controls",
+   "slug": "artifact-generation-property-controls",
+   "description": "a system or generation property exposed as a level the user sets"
+  },
+  "pat-040": {
+   "to": "Sketch-Based Input",
+   "slug": "sketch-based-input",
+   "description": "sketch or drawn stroke as the generation input"
+  },
+  "pat-022": {
+   "to": "Artifact Derived Controls",
+   "slug": "artifact-derived-controls",
+   "description": "extracted keywords or attributes exposed as control handles"
+  },
+  "pat-011": {
+   "to": "Live Activity Output Synchronization",
+   "slug": "live-activity-output-synchronization",
+   "description": "output synchronized to the live activity as it happens"
+  },
+  "pat-082": {
+   "to": "Chunked Interaction Sessions",
+   "slug": "chunked-interaction-sessions",
+   "description": "interaction bounded into discrete sessions rather than running continuously"
+  },
+  "pat-009": {
+   "to": "Proactive Support",
+   "slug": "proactive-support",
+   "description": "system-initiated output with no user request"
+  },
+  "pat-013": {
+   "to": "Deferred Intervention",
+   "slug": "deferred-intervention",
+   "description": "the intervention deferred to after the activity rather than interrupting it"
+  },
+  "pat-012": {
+   "to": "Live Side Panel",
+   "slug": "live-side-panel",
+   "description": "live-updating panel co-located with the working surface"
+  },
+  "pat-090": {
+   "to": "On-Demand Suggestion",
+   "slug": "on-demand-suggestion",
+   "description": "suggestion summoned on demand inside the working surface"
+  },
+  "pat-067": {
+   "to": "User-Authored Rules",
+   "slug": "user-authored-rules",
+   "description": "user-authored criteria or constraint set governing generation"
+  },
+  "pat-068": {
+   "to": "Withheld Answer",
+   "slug": "withheld-answer",
+   "description": "the system withholds the answer and hands the step back to the user"
+  },
+  "pat-071": {
+   "to": "Protected Region",
+   "slug": "protected-region",
+   "description": "regions the user did not mark protected from generation"
+  },
+  "pat-072": {
+   "to": "Low Detail Outlines with User-Filled Specificity",
+   "slug": "low-detail-outlines-with-user-filled-specificity",
+   "description": "output rendered at a fixed low fidelity with no higher-fidelity mode The user supplies the missing detail and specificity themselves."
+  },
+  "pat-033": {
+   "to": "Output Templates",
+   "slug": "output-templates",
+   "description": "schema or template constrains what the model may emit"
+  },
+  "pat-043": {
+   "to": "Embodied Avatar",
+   "slug": "embodied-avatar",
+   "description": "embodied character or avatar as the agent's form"
+  },
+  "pat-061": {
+   "to": "Tangible Interaction",
+   "slug": "tangible-interaction",
+   "description": "physical objects and physical space as the input or output channel"
+  },
+  "pat-062": {
+   "to": "Voice Interaction",
+   "slug": "voice-interaction",
+   "description": "spoken channel as the interaction surface in place of typed input"
+  },
+  "pat-063": {
+   "to": "Multimodal Output",
+   "slug": "multimodal-output",
+   "description": "the same content delivered in more than one modality"
+  },
+  "pat-074": {
+   "to": "Non-Readable to Natural Language Conversion",
+   "slug": "non-readable-to-natural-language-conversion",
+   "description": "the material rewritten as human-readable text"
+  },
+  "pat-076": {
+   "to": "Perceptible Rendering",
+   "slug": "perceptible-rendering",
+   "description": "abstract output given a viewable rendered representation"
+  },
+  "pat-049": {
+   "to": "Space Registered Overlay",
+   "slug": "space-registered-overlay",
+   "description": "output spatially registered to the physical scene"
+  },
+  "pat-078": {
+   "to": "Composite Glyph",
+   "slug": "composite-glyph",
+   "description": "a composite glyph whose parts each encode a named component of one property A purpose-built graphical mark rather than a standard chart type."
+  },
+  "pat-060": {
+   "to": "Multimodal Input",
+   "slug": "multimodal-input",
+   "description": "multiple input modalities and gestures accepted together"
+  },
+  "pat-064": {
+   "to": "Nonvisual Navigation",
+   "slug": "nonvisual-navigation",
+   "description": "nonvisual sequential navigation through structure"
+  },
+  "pat-050": {
+   "to": "Generative Filters",
+   "slug": "generative-filters",
+   "description": "a generative pipeline interposed between the scene and the user's view What the user perceives is the pipeline's output rather than the scene itself."
+  },
+  "pat-065": {
+   "to": "Nonvisual Task Delegation",
+   "slug": "nonvisual-task-delegation",
+   "description": "screenless task delegation with no visual interface"
+  },
+  "pat-054": {
+   "to": "Paired (Human-AI) Assessment",
+   "slug": "paired-human-ai-assessment",
+   "description": "the model's judgment placed alongside the person's own"
+  },
+  "pat-031": {
+   "to": "Pre-Send Inspection",
+   "slug": "pre-send-inspection",
+   "description": "pre-send inspection of what is about to leave"
+  },
+  "pat-020": {
+   "to": "Inspectable Intermediate Steps",
+   "slug": "inspectable-intermediate-steps",
+   "description": "inspectable intermediate representation between input and output"
+  },
+  "pat-053": {
+   "to": "Artifact Flagging and Annotations",
+   "slug": "artifact-flagging-and-annotations",
+   "description": "flagged spans highlighted in place with detail revealed on demand"
+  },
+  "pat-052": {
+   "to": "Color Coded Content",
+   "slug": "color-coded-content",
+   "description": "a per-unit attribute encoded by colour or typography in the content itself"
+  },
+  "pat-055": {
+   "to": "Aggregated Summary Score",
+   "slug": "aggregated-summary-score",
+   "description": "a single aggregate score as the summary readout That single number is the interface's headline element."
+  },
+  "pat-025": {
+   "to": "Interpretation Readback",
+   "slug": "interpretation-readback",
+   "description": "the model's interpretation of the input externalized on screen"
+  },
+  "pat-036": {
+   "to": "Overview-plus-Detail",
+   "slug": "overview-plus-detail",
+   "description": "drill-down from aggregate overview to individual instance"
+  },
+  "pat-037": {
+   "to": "Unit Visualization Views",
+   "slug": "unit-visualization-views",
+   "description": "corpus laid out as a spatial map as the browse surface Items are projected into a two-dimensional layout, and that layout is the browse surface rather than a list."
+  },
+  "pat-001": {
+   "to": "Linked Views",
+   "slug": "linked-views",
+   "description": "linked views where selecting one element highlights its counterpart"
+  },
+  "pat-028": {
+   "to": "Plan Preview",
+   "slug": "plan-preview",
+   "description": "the agent's plan rendered on screen before execution"
+  },
+  "pat-038": {
+   "to": "Model Internals View",
+   "slug": "model-internals-view",
+   "description": "model internals rendered as an inspectable view"
+  },
+  "pat-051": {
+   "to": "Elements for Process Disclosure",
+   "slug": "elements-for-process-disclosure",
+   "description": "disclosure of how the output was produced"
+  },
+  "pat-005": {
+   "to": "Branching Exploration",
+   "slug": "branching-exploration",
+   "description": "branching or freely-ordered structure instead of a linear sequence"
+  },
+  "pat-007": {
+   "to": "Perturb-and-Compare",
+   "slug": "perturb-and-compare",
+   "description": "perturb-then-compare probing of the model"
+  },
+  "pat-004": {
+   "to": "Side-by-Side Comparison",
+   "slug": "side-by-side-comparison",
+   "description": "two artifacts placed side by side for comparison"
+  },
+  "pat-006": {
+   "to": "Multi-Model Output Comparison",
+   "slug": "multi-model-output-comparison",
+   "description": "one prompt fanned out to several models in parallel"
+  },
+  "pat-002": {
+   "to": "Candidate Gallery",
+   "slug": "candidate-gallery",
+   "description": "generated candidates offered for the user to pick among"
+  },
+  "pat-041": {
+   "to": "Pick and Combine",
+   "slug": "pick-and-combine",
+   "description": "two inputs blended or interpolated into one result"
+  },
+  "pat-097": {
+   "to": "Mid-Run Intervention",
+   "slug": "mid-run-intervention",
+   "description": "the run can be suspended, redirected or exited mid-flight"
+  },
+  "pat-019": {
+   "to": "Propose-Critique-Revise Iterative Refinement",
+   "slug": "propose-critique-revise-iterative-refinement",
+   "description": "propose-critique-revise iteration loop over the same artifact"
+  },
+  "pat-095": {
+   "to": "Manual Fallback Editing",
+   "slug": "manual-fallback-editing",
+   "description": "manual authoring path retained beside the generated one"
+  },
+  "pat-096": {
+   "to": "Accept/Reject Controls",
+   "slug": "accept-reject-controls",
+   "description": "fixed disposition set offered on every suggestion"
+  },
+  "pat-018": {
+   "to": "Addressable Segments",
+   "slug": "addressable-segments",
+   "description": "segmented into discrete units, each individually addressable"
+  },
+  "pat-024": {
+   "to": "Program-as-Output",
+   "slug": "program-as-output",
+   "description": "the model emits a program or parameterized template rather than the finished artifact The output is a generator of the artifact - code or a parameterised template - not the artifact itself."
+  },
+  "pat-010": {
+   "to": "Prefilled Editable Templates",
+   "slug": "prefilled-editable-templates",
+   "description": "system-filled content left editable in place"
+  },
+  "pat-030": {
+   "to": "Two-Way Sync View",
+   "slug": "two-way-sync-view",
+   "description": "two representations kept synchronized and editable from either side"
+  },
+  "pat-021": {
+   "to": "Localized Tweaking Support",
+   "slug": "localized-tweaking-support",
+   "description": "the operation scoped to the region or location the user marks"
+  },
+  "pat-029": {
+   "to": "Reverse Engineered Representation",
+   "slug": "reverse-engineered-representation",
+   "description": "an existing artifact reverse-engineered into an editable representation"
+  },
+  "pat-016": {
+   "to": "Structured Dialogue Flow",
+   "slug": "structured-dialogue-flow",
+   "description": "explicit control structure over dialogue turns"
+  },
+  "pat-017": {
+   "to": "Staged Pipeline",
+   "slug": "staged-pipeline",
+   "description": "fixed staged pipeline the user is walked through"
+  },
+  "pat-080": {
+   "to": "Revisitable History",
+   "slug": "revisitable-history",
+   "description": "revisitable history, versioning and replay"
+  },
+  "pat-023": {
+   "to": "Goal Decomposition",
+   "slug": "goal-decomposition",
+   "description": "the task decomposed into parts handled one at a time"
+  },
+  "pat-089": {
+   "to": "Chat Panels",
+   "slug": "chat-panels",
+   "description": "scrollable chat-log surface with a text-entry area"
+  },
+  "pat-091": {
+   "to": "In-Situ Agent Presence",
+   "slug": "in-situ-agent-presence",
+   "description": "the agent's presence and actions shown inside the shared artifact"
+  },
+  "pat-057": {
+   "to": "Companion Chat Panel",
+   "slug": "companion-chat-panel",
+   "description": "open dialogue running alongside the artifact being viewed"
+  },
+  "pat-087": {
+   "to": "Dual Artifact Presentation Modes",
+   "slug": "dual-artifact-presentation-modes",
+   "description": "two alternative presentation modes for the same content"
+  },
+  "pat-026": {
+   "to": "Unified Workspace",
+   "slug": "unified-workspace",
+   "description": "successive workflow stages sharing state in a single environment"
+  },
+  "pat-088": {
+   "to": "AI Panels for Host Application",
+   "slug": "ai-panels-for-host-application",
+   "description": "assistance grafted into an existing tool, page or workflow"
+  },
+  "pat-086": {
+   "to": "Fixed Functional Panel Layout",
+   "slug": "fixed-functional-panel-layout",
+   "description": "workspace partitioned into fixed functional panels"
+  },
+  "pat-042": {
+   "to": "Persona Assigned to Agents",
+   "slug": "persona-assigned-to-agents",
+   "description": "persona or stance assigned to the agent"
+  },
+  "pat-048": {
+   "to": "Simulated Counterparts",
+   "slug": "simulated-counterparts",
+   "description": "the model fills all but one role of a multi-party procedure"
+  },
+  "pat-044": {
+   "to": "Role-Play Scenario",
+   "slug": "role-play-scenario",
+   "description": "a generated scenario the user enters as a participant"
+  },
+  "pat-045": {
+   "to": "Multiparty Hub and Spoke",
+   "slug": "multiparty-hub-and-spoke",
+   "description": "several co-present participants around one system Two humans, a dyad, a group, or one person plus a simulated population."
+  },
+  "pat-094": {
+   "to": "Artifact as Interlocutor",
+   "slug": "artifact-as-interlocutor",
+   "description": "the artifact under construction embodied as the interlocutor"
+  },
+  "pat-047": {
+   "to": "Role Asymmetric Views",
+   "slug": "role-asymmetric-views",
+   "description": "role-asymmetric surfaces over one system"
+  }
+ },
+ "pattern_retirements": {
+  "pat-008": {
+   "pattern_name": "feedforward preview of a control's outcome before acting",
+   "reason": "2 papers touching 3 of 21 factors - the thinnest row in the catalogue, below the naming-attestation threshold and below any reasonable evidence bar.",
+   "n_papers": 2,
+   "rids": [
+    "869",
+    "3862"
+   ],
+   "category_id": "U05",
+   "ui_ux_type": "UI"
+  },
+  "pat-073": {
+   "pattern_name": "deliberately narrowed output bandwidth to a nonvisual channel",
+   "reason": "withdrawn on review: 2 papers, no attested term, and the mechanism is covered by pat-065 and pat-061 for the papers concerned.",
+   "n_papers": 2,
+   "rids": [
+    "9045",
+    "9449"
+   ],
+   "category_id": "U03",
+   "ui_ux_type": "UI"
+  },
+  "pat-084": {
+   "pattern_name": "the system's participants presented as one kind of entity while composed of another",
+   "reason": "withdrawn on review: 3 papers, no attested term; all three carry 3-5 other patterns.",
+   "n_papers": 3,
+   "rids": [
+    "4991",
+    "8465",
+    "9474"
+   ],
+   "category_id": "U10",
+   "ui_ux_type": "UX"
+  }
+ },
+ "factor_id_remap": {
+  "N1": "F19",
+  "N2": "F20",
+  "N3": "F21",
+  "N4": "F22"
+ },
+ "factor_renames": {
+  "F3": {
+   "to": "Judgment and Decision Making",
+   "method": "external-anchor",
+   "basis": "Canonical judgment-and-decision-making construct; names the field the column sits in."
+  },
+  "F5": {
+   "to": "Appropriate Reliance",
+   "method": "external-anchor",
+   "basis": "Lee & See, Human Factors 46(1) 2004, 'Trust in Automation: Designing for Appropriate Reliance', doi:10.1518/hfes.46.1.50_30392; Schemmer et al., IUI 2023, doi:10.1145/3581641.3584066. States the target rather than the failure, as the other columns do."
+  },
+  "F9": {
+   "to": "Guidance and Feedback",
+   "method": "corpus-attested",
+   "basis": "Attested in the column's own 218 papers: guid* in 72, feedback in 52, critique in only 5. One term per sub-factor - guidance for 'direction while stuck' (176), feedback for 'external critique' (54)."
+  },
+  "F11": {
+   "to": "Social Perception (Mindset)",
+   "method": "external-anchor",
+   "basis": "Nass & Moon, J. Soc. Issues 56(1) 2000, 'Machines and Mindlessness', doi:10.1111/0022-4537.00153; Davis 1989 (TAM). Its one sub-factor is 'acceptance and social perception of the agent'."
+  },
+  "F13": {
+   "to": "Personalization",
+   "method": "editorial",
+   "basis": "Kept as Personalization at the PI's direction. Note for the record: its sub-factors are engagement and immersion (291), motivation (94), behaviour change (56) and long-term adherence (46) - personalization is the remedy those papers apply, not the factor itself."
+  },
+  "F16": {
+   "to": "Coordination and Equitable Participation",
+   "method": "external-anchor",
+   "basis": "Edmondson, ASQ 44(2) 1999, doi:10.2307/2666999 (psychological safety); Malone & Crowston, ACM Comput. Surv. 1994 (coordination). Names both halves: coordination (73), minority voice and psychological safety (24), consensus (21)."
+  },
+  "F19": {
+   "to": "Effort and Cognitive Load",
+   "method": "editorial",
+   "basis": "Shortened from 'Effort, cognitive load and attention' for parallel structure; attention survives as a sub-factor (91)."
+  },
+  "F20": {
+   "to": "Skill and Self-Efficacy",
+   "method": "external-anchor",
+   "basis": "Bandura 1977 (self-efficacy). Shortened from 'Skill, expertise and self-efficacy'; the expertise barrier survives as a sub-factor (385)."
+  },
+  "F21": {
+   "to": "Affect, Wellbeing and Connection",
+   "method": "editorial",
+   "basis": "184 of its papers are social sharing and human connection (128) and social presence and team rapport (56) - relational, not only emotional."
+  },
+  "F22": {
+   "to": "Risk of Harm and Accountability",
+   "method": "editorial",
+   "basis": "Unchanged in substance; Title Case for parallel structure."
+  }
+ },
+ "factor_recased": {
+  "F1": "Gulf of Envisioning",
+  "F2": "Creativity Support and Ideation",
+  "F6": "Sensemaking",
+  "F4": "Oversight",
+  "F8": "Metacognition",
+  "F18": "Bias and Fairness",
+  "F7": "Control and Agency",
+  "F12": "Perspective-Taking",
+  "F17": "Privacy and Ownership",
+  "F14": "Accessibility",
+  "F15": "Spatial and Embodied Cognition"
+ },
+ "factor_groups": [
+  {
+   "group_id": "G1",
+   "group_name": "Intent & Creation",
+   "group_order": 1,
+   "factor_ids": [
+    "F1",
+    "F2",
+    "F9"
+   ]
+  },
+  {
+   "group_id": "G2",
+   "group_name": "Comprehension & Judgment",
+   "group_order": 2,
+   "factor_ids": [
+    "F6",
+    "F3",
+    "F4",
+    "F8"
+   ]
+  },
+  {
+   "group_id": "G3",
+   "group_name": "Trust, Reliance & Risk",
+   "group_order": 3,
+   "factor_ids": [
+    "F5",
+    "F18",
+    "F22"
+   ]
+  },
+  {
+   "group_id": "G4",
+   "group_name": "Effort, Skill & Agency",
+   "group_order": 4,
+   "factor_ids": [
+    "F19",
+    "F20",
+    "F7"
+   ]
+  },
+  {
+   "group_id": "G5",
+   "group_name": "Social & Relational",
+   "group_order": 5,
+   "factor_ids": [
+    "F12",
+    "F16",
+    "F11",
+    "F17"
+   ]
+  },
+  {
+   "group_id": "G6",
+   "group_name": "Experiences",
+   "group_order": 6,
+   "factor_ids": [
+    "F13",
+    "F21",
+    "F14",
+    "F15"
+   ]
+  }
+ ],
+ "pattern_sort": {
+  "key": [
+   "stage",
+   "category within stage",
+   "lens (UX before UI)",
+   "distinctive_breadth desc",
+   "effective_breadth desc",
+   "mapped_paper_count desc"
+  ],
+  "distinctive_breadth": "factors the pattern reaches at >= 1.25x the corpus base rate, minimum 5 papers",
+  "effective_breadth": "exp(Shannon entropy) over the pattern's factor distribution",
+  "why_not_raw_breadth": "35 of 83 patterns touch all 21 factors and 61 touch 19 or more; a raw distinct count is almost all ties."
+ },
+ "distinctive_rule": {
+  "min_cell": 5,
+  "min_lift": 1.25,
+  "order": "cell count desc"
+ }
+}
