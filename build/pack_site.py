@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pack the v2 site into one self-contained HTML file.
+"""Pack the site into one self-contained HTML file.
 
 Inlines: styles, React 18 UMD (the same build the previous bundle shipped), the app,
 and the generated data as gzip + base64, inflated in the page with DecompressionStream.
@@ -9,7 +9,7 @@ The page makes no network requests at all: the Swiss Archive skin uses system fa
 import base64, gzip, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT_HTML = os.path.join(ROOT, "A Design Cookbook for UI of AI (v2).html")
+OUT_HTML = os.path.join(ROOT, "A Design Cookbook for UI-UX of AI.html")
 
 read = lambda *p: open(os.path.join(ROOT, *p), encoding="utf-8").read()
 
@@ -27,15 +27,15 @@ html = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A Design Cookbook for UI of AI</title>
+<title>A Design Cookbook for UI/UX of AI</title>
 <style>
 %(css)s
-#boot { padding: 90px 28px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; color: #6e6e6e; }
-#boot b { display: block; font-size: 30px; font-weight: 600; color: #111; margin-bottom: 12px; letter-spacing: -0.028em; }
+#boot { padding: 90px 28px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; color: var(--ink-4); }
+#boot b { display: block; font-size: 30px; font-weight: 600; color: var(--ink); margin-bottom: 12px; letter-spacing: -0.028em; }
 </style>
 </head>
 <body>
-<div id="root"><div id="boot"><b>A Design Cookbook for UI of AI</b>Unpacking the catalogue…</div></div>
+<div id="root"><div id="boot"><b>A Design Cookbook for UI/UX of AI</b>Unpacking the catalogue…</div></div>
 
 <script>%(react)s</script>
 <script>%(react_dom)s</script>
@@ -45,7 +45,7 @@ html = """<!DOCTYPE html>
 (function () {
   var b64 = document.getElementById('cookbook-data').textContent.trim();
   var boot = document.getElementById('boot');
-  function fail(msg) { if (boot) boot.innerHTML = '<b>A Design Cookbook for UI of AI</b>' + msg; }
+  function fail(msg) { if (boot) boot.innerHTML = '<b>A Design Cookbook for UI/UX of AI</b>' + msg; }
   function bytes(s) {
     var bin = atob(s), out = new Uint8Array(bin.length);
     for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
