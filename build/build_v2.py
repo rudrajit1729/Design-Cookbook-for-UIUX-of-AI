@@ -21,7 +21,10 @@ Outputs:
   build/paper_factors_audit.csv   auditable factor edges
   build/validation_report.md
 """
-import csv, json, collections, os, re
+import csv, json, collections, os, re, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import v3_overlay  # noqa: E402  (needs the path above)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PACK = os.path.join(ROOT, "design_patterns_web_migration_pack")
@@ -625,9 +628,9 @@ asset = {
         "low_confidence_pattern_edges": len(low_pat),
         "low_confidence_factor_edges": len(low_fac),
         "notes": [
-            "%d rows of design_patterns_papers.csv name %d patterns that are absent from the 83-pattern "
-            "catalogue; they carry no id, category or definition and were dropped."
-            % (sum(dropped_patterns.values()), len(dropped_patterns)),
+            "%d rows of design_patterns_papers.csv name %d patterns that are absent from the %d-pattern "
+            "source catalogue; they carry no id, category or definition and were dropped."
+            % (sum(dropped_patterns.values()), len(dropped_patterns), len(pat_rows)),
             "%d papers carry no v2 pattern: %d appear nowhere in the pattern coding, and %d had edges only to "
             "the dropped patterns above. They stay browsable and keep their factors."
             % (len(no_pattern), 37, len(no_pattern) - 37),
@@ -645,7 +648,7 @@ asset = {
             % (len(revisions["renamed"]), ", ".join("%s->%s" % (k, v["to"]) for k, v in revisions["renamed"].items()),
                len(revisions["reparented"]), " and ".join(f["factor_id"] for f in revisions["retired_factors"]),
                len(revisions["edges_repointed"]), len(revisions["edges_dropped"])),
-            "Category ids were renumbered so U01-U10 runs in the site's reading order (the three stages). "
+            "Category ids were renumbered so U01-U10 runs in the site's reading order (its stages). "
             "Each category keeps its source id as source_category_id and the mapping is in "
             "migration.category_id_remap; pattern ids were not renumbered.",
         ],
@@ -657,6 +660,18 @@ asset = {
                 "by_factor": index_by_factor, "by_sub_factor": index_by_sub_factor,
                 "pattern_x_factor": pxf},
 }
+# The v3 naming pass runs on the finished asset: titles for the patterns, the renamed and
+# renumbered factors, the withdrawals, the four stages and the factor groups. Everything
+# above stays keyed to the source catalogues, which still name patterns by their clause.
+v3_overlay.apply(asset, check)
+patterns = asset["patterns"]
+factors = asset["factors"]
+paper_patterns = asset["paper_patterns"]
+paper_factors = asset["paper_factors"]
+pat_by_id = {p["pattern_id"]: p for p in patterns}
+pat_cat = {p["pattern_id"]: p["category_id"] for p in patterns}
+fac_by_id = {f["factor_id"]: f for f in factors}
+
 os.makedirs(OUT, exist_ok=True)
 json.dump(asset, open(os.path.join(OUT, "cookbook_v2.json"), "w", encoding="utf-8"), ensure_ascii=False)
 
