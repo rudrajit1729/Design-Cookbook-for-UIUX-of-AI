@@ -1,0 +1,104 @@
+{
+ "pattern_id": "pat-064",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "832",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The quote shows addressable objects, hierarchical layers, and a discrete \u201cinto\u201d action, so it partially resembles graph traversal. However, it describes visible outlines and boxes rather than a nonvisual rendering, gives no orientation announcement, and does not establish a persistent navigation cursor. The title suggests an accessibility benefit, but impact beyond that is only moderately judgeable from the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2654",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "A frame-level caption list could plausibly support nonvisual navigation, but the quote ends before saying what the arrow keys do, what state is retained, or what feedback is emitted. The title suggests augmented audio descriptions, but that cannot repair the incomplete structural evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The verbatim quote is truncated before it demonstrates navigation or system response, so it does not support the pattern assignment sufficiently."
+  },
+  {
+   "rid": "4729",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 1,
+    "mechanism_clarity": 1,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "Screen-reader-compatible buttons and hotkeys establish accessible video controls, but not a structured artifact parsed into nodes, traversal among positions, a persistent cursor, or nonvisual position announcements. This is generic accessible control rather than Nonvisual Navigation.",
+   "disqualify": true,
+   "disqualify_reason": "The quote contains no evidence of the pattern\u2019s traversable structure or position-carrying navigation mechanism."
+  },
+  {
+   "rid": "5580",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "This is the cleanest candidate: states are addressable nodes, arrow keys move a persistent position to cardinally adjacent nodes, and the Kansas-to-Nebraska example makes the interaction rebuildable. The screen-reader context supports a nonvisual use case, though the quote does not explicitly show the emitted rendering or an orientation announcement, preventing a top representativeness or evidence score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5950",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 1,
+    "evidence_strength": 1
+   },
+   "reason": "Previous/Next buttons and one-turn-at-a-time presentation create a persistent cursor over chat history, but the evidence describes ordinary linear pagination in a visual dialog. It provides no nonvisual output or structural orientation cue and is closer to carousel/history navigation than this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted mechanism instantiates ordinary linear pagination, not a specified nonvisual traversal interface with position announcements."
+  },
+  {
+   "rid": "10058",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "Multiple reconstructed charts become addressable items navigated with explicit Next and Previous commands, which supports a persistent cursor over structured content. The accessibility and natural-language context makes nonvisual delivery plausible, but the quote is truncated and does not demonstrate the node rendering or any cue announcing the user\u2019s position.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13675",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 1,
+    "mechanism_clarity": 0,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The abstract-level quote names accessible navigation controls and conversational speech but never specifies positions, adjacency, discrete movement semantics, retained cursor state, or orientation feedback. It is topical to accessibility and modality without demonstrating this pattern\u2019s mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "The quote only asserts accessible navigation and speech at a high level; it provides no structural evidence for Nonvisual Navigation."
+  }
+ ]
+}

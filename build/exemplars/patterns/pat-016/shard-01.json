@@ -1,0 +1,495 @@
+{
+ "pattern": {
+  "pattern_id": "pat-016",
+  "pattern_name": "Structured Dialogue Flow",
+  "pattern_slug": "structured-dialogue-flow",
+  "short_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+  "definition": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion. The structure is a designed object, sometimes authorable by non-programmers.",
+  "structural_signature": "A graph or ordered stage list exists as an inspectable (often editable) object: nodes carry what the agent says or does, edges carry conditions evaluated on the interlocutor's response. The current node is persistent state, and a transition is computed at every turn, so the reachable next turns are a function of position in the structure.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "8176",
+   "title": "Bridging the Treatment Gap: A Novel LLM-Driven System for Scalable Initial Patient Assessments in Mental Healthcare",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720043",
+   "system_id": "8176",
+   "evidence": [
+    {
+     "quote": "Our proposed concept combines rule-based dialog management and topic coverage with the capabilities of large language models for dynamic conversations in a novel chatbot-based system.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8382",
+   "title": "How Self-Disclosing Chatbots Influence Student Engagement, Assessment Accuracy, and Self-Reflection in Academic Stress Assessment",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719684",
+   "system_id": "8382",
+   "evidence": [
+    {
+     "quote": "Example interaction flow of the self-disclosing (SD) chatbot: After the (1) small talk phase, the SD chatbot introduces an academic stress aspect—stressors—by sharing its own experiences in the (2) self-disclosure phase.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8452",
+   "title": "Meeting at Crossroads: An exploration of playful listening through a co-creative AI game",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719767",
+   "system_id": "8452",
+   "evidence": [
+    {
+     "quote": "After the storyteller shares a story, the other players have 90 seconds to craft a sentence describing what they heard.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8471",
+   "title": "My Focus was on the Game: Investigating the Use of AI Assistants in a Virtual Reality Exergame for Older Adults",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719808",
+   "system_id": "8471",
+   "evidence": [
+    {
+     "quote": "Gameflow (red nodes) as well as input of the IVA provided in different situations (blue nodes).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9018",
+   "title": "You Just Said...: Raising Self-Awareness of Users' Toxic Language in Human-AI Conversations through Utterance Re-Presentation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799087",
+   "system_id": "9018",
+   "evidence": [
+    {
+     "quote": "The interaction with the voice AI consisted of 30 turns. The first 5 turns comprised a scripted phase that included brief greetings and an introduction.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9200",
+   "title": "Designing for Adolescent Voice in Health Decisions: Embodied Conversational Agents for HPV Vaccination",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798846",
+   "system_id": "9200",
+   "evidence": [
+    {
+     "quote": "Dialogue is managed through a hierarchical transition network, with users interacting via multiple-choice options",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9498",
+   "title": "PlanningConnect: Bridging Collaborative Gaps in Urban Land Use Planning with an End-to-End Multi-Agent Framework",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798641",
+   "system_id": "planningconnect",
+   "evidence": [
+    {
+     "quote": "The Dialogue Facilitator structures conversations through topic organization and balanced participation monitoring, while the Decision Synthesizer aggregates stakeholder inputs and visualizes trade-offs, reducing power imbalances through systematic input balancing.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "9525",
+   "title": "ReMe: Scaffolding Personalized Cognitive Training via Controllable LLM-Mediated Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798695",
+   "system_id": "reme",
+   "evidence": [
+    {
+     "quote": "Puzzle groups also specify explicit interaction constraints, such as required response formats (e.g., yes/no-only answering), to preserve training fidelity (DG1).",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9621",
+   "title": "TeamWise: Exploring Virtually Embodied AI Facilitation for Video-Based Team Onboarding",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798791",
+   "system_id": "teamwise",
+   "evidence": [
+    {
+     "quote": "While the overall sequence of activities and facilitation goals is predefined, the facilitator’s turn-by-turn utterances are generated dynamically by an LLM in response to participant input.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9743",
+   "title": "When Objects Gossip: Exploring Object-to-Object Conversation with GAI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798919",
+   "system_id": "9743",
+   "evidence": [
+    {
+     "quote": "We organized the dialogue flow in a fixed turn-taking sequence (Fig. 1). Each participant was assigned to use GAI to role-play an object by prompting the model solely with the preceding turn’s speech, rather than the full conversation history.",
+     "location": "full text sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10337",
+   "title": "Explaining Recommendations through Conversations: Dialog Model and the Effects of Interface Type and Degree of Interactivity",
+   "venue": "tiis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3579541",
+   "system_id": "10337",
+   "evidence": [
+    {
+     "quote": "Orange arrows: sequence of allowed moves, pointing to the next interface.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "13652",
+   "title": "DialogLab: Authoring, Simulating, and Testing Dynamic Human-AI Group Conversations",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747696",
+   "system_id": "dialoglab",
+   "evidence": [
+    {
+     "quote": "DialogLab provides a unified interface to configure conversational scenes, define agent personas, manage group structures, specify turn-taking rules, and orchestrate transitions between scripted narratives and improvisation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14816",
+   "title": "Designing the Conversational Agent: Asking Follow-up Questions for Information Elicitation",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637320",
+   "system_id": "14816",
+   "evidence": [
+    {
+     "quote": "Follow-ups on concepts and follow-ups on related concepts are supposed to fit the context where the respondent mentions a concept that the interviewer would like to be elaborated on more. General follow-ups are supposed to deal with the context where no such concept needs elaboration in the respondent’s response.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15487",
+   "title": "Remini: Leveraging Chatbot-Mediated Mutual Reminiscence for Promoting Positive Affect and Feeling of Connectedness among Loved Ones",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757650",
+   "system_id": "remini",
+   "evidence": [
+    {
+     "quote": "Remini uses conversational AI to guide emotionally rich exchanges through five narrative phases: rapport building, memory narration, elaboration, reflection, and summary.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15643",
+   "title": "Wisdom of the Crowd, Without the Crowd: A Socratic LLM for Asynchronous Deliberation on Perspectivist Data",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757707",
+   "system_id": "15643",
+   "evidence": [
+    {
+     "quote": "Participants progress through the phases of the Socratic Method as they complete annotation tasks. (A) Wonder, the participant considers the datapoint provided. (B) Hypothesis, participants generate a hypothesis based on the data and respond to questions to record their annotation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16757",
+   "title": "Narrative Plasticity and State Stickiness: Designing Hybrid AI Systems for High-Stakes Communication",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813073",
+   "system_id": "16757",
+   "evidence": [
+    {
+     "quote": "operationalizes practices from narrative mediation and conflict resolution through structured interaction flows",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16784",
+   "title": "PsyMooc: Empowering Simulation-Based Educational Systems with LLM Agents to Train Clinical Interviewing Skills",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813015",
+   "system_id": "psymooc",
+   "evidence": [
+    {
+     "quote": "PsyMooc distributes these domain constraints across scenario generation, dialogue control, and post-hoc feedback.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17186",
+   "title": "Designing Smarter Conversational Agents for Kids: Lessons from Cognitive Work and Means-Ends Analyses",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3765284",
+   "system_id": "17186",
+   "evidence": [
+    {
+     "quote": "employed interviews, observations, and Cognitive Work Analysis to map children’s information-processing flows, the role of more knowledgeable others, functional uses, contextual goals, and interaction patterns to inform conversation-tree design",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-022",
+ "exemplars": [
+  {
+   "rid": "4449",
+   "title": "AI-Instruments: Embodying Prompts as Instruments to Abstract & Reflect Graphical Interface Commands as General-Purpose Tools",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714259",
+   "final_score": 4.75,
+   "why": "The system decomposes an existing image into image-specific prompt fragments, renders those dimensions as individually editable controls, and regenerates the image when a fragment changes. The evidence directly captures the complete derivation–control–downstream-operation chain and makes the content-dependent nature of the controls unusually easy to reconstruct.",
+   "over_the_runner_up": "It ranks above GazeNoter because its evidence explicitly shows both artifact-specific derivation and regeneration after editing, while GazeNoter’s quotation is truncated before fully documenting the downstream effect."
+  },
+  {
+   "rid": "3398",
+   "title": "GazeNoter: Co-Piloted AR Note-Taking via Gaze Selection of LLM Suggestions to Match Users' Intentions",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714294",
+   "final_score": 4.4,
+   "why": "GazeNoter extracts context keywords from the user’s latest spoken sentence, exposes those input-dependent terms for selection, and uses the selections to shape candidate sentences. It is a strong example of replacing repeated free-text specification with a dynamically derived set of discrete handles.",
+   "over_the_runner_up": "It ranks above DesignWeaver because the evidence explicitly ties keyword derivation to the latest input and selection to candidate text, whereas DesignWeaver’s regeneration response is only implicit."
+  },
+  {
+   "rid": "3576",
+   "title": "DesignWeaver: Dimensional Scaffolding for Text-to-Image Product Design",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714211",
+   "final_score": 4.4,
+   "why": "DesignWeaver derives key product-design dimensions from generated images and surfaces them as a palette for subsequent prompt construction. The palette is therefore determined by the artifact rather than fixed at design time, giving novices concrete, selectable handles for steering later image generation.",
+   "over_the_runner_up": "It ranks above Composable Prompting Workspaces because its evidence explicitly derives the displayed dimensions from generated artifacts, while that system’s widgets may be suggested, prompted, or manually created without demonstrated derivation from the current draft."
+  }
+ ],
+ "notes": "I departed from the consensus order by selecting rank 4, DesignWeaver, instead of rank 3, Composable Prompting Workspaces. DesignWeaver more clearly satisfies the defining derivation step: its controls come from generated images, whereas the evidence for Composable Prompting Workspaces establishes dynamic widgets and downstream influence but not artifact-specific extraction or regeneration when the artifact changes. I raised DesignWeaver from 4.27 to 4.40; no adjustment exceeds 0.3. Evidence caveats: GazeNoter’s quotation is truncated, and DesignWeaver’s abstract leaves the exact control-to-regeneration loop and handle regeneration behavior implicit. Even AI-Instruments’ otherwise strong figure evidence does not explicitly state whether its fragment set is automatically regenerated after every input change.",
+ "pattern_name": "Artifact Derived Controls",
+ "category_id": "U01",
+ "rated": 30
+}

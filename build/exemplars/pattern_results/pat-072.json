@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-072",
+ "exemplars": [
+  {
+   "rid": "2408",
+   "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642794",
+   "final_score": 4.75,
+   "why": "This is a near-definitional exemplar: every system-generated recombination is uniformly limited to a line sketch and one-line description, explicitly leaving users to supply specificity through reinterpretation.",
+   "over_the_runner_up": "Unlike Inkspire, CreativeConnect’s evidence establishes the uniform ceiling, identifies both sparse output forms, and explicitly connects withheld detail to user reinterpretation."
+  },
+  {
+   "rid": "4127",
+   "title": "Inkspire: Supporting Design Exploration with Generative AI through Analogical Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713397",
+   "final_score": 2.9,
+   "why": "Converting AI designs into lower-fidelity sketch scaffolding matches the central move of withholding finish so users can continue elaborating, although the evidence does not establish that this ceiling is uniform or unavoidable.",
+   "over_the_runner_up": "Inkspire at least transforms generated artifacts into incomplete sketch scaffolds, whereas Quologue removes contextual anchors to stimulate reflection rather than producing low-detail artifacts for users to finish."
+  },
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "final_score": 1.3,
+   "why": "This is only a weak boundary case: it deliberately withholds titles, authors, and full quotations so users supply personal meaning, but the mechanism is decontextualization rather than low-fidelity rendering of an artifact awaiting completion.",
+   "over_the_runner_up": "There is no lower-ranked supplied candidate; Quologue occupies the third slot only because the candidate pool is exhausted and should not be treated as a strong positive exemplar."
+  }
+ ],
+ "notes": "I preserved the consensus order but materially reduced Quologue from 1.95 to 1.3 because its evidence does not satisfy the structural signature: it removes contextual metadata rather than imposing a rendering-stage fidelity ceiling. It is best treated as a negative boundary case, so the supplied pool supports only two defensible positive exemplars. Inkspire is also weakly evidenced: its short feature description does not prove a uniform ceiling, lack of a higher-fidelity option, or explicit user completion. CreativeConnect is the only selection whose quote directly establishes the complete mechanism; even there, the evidence states design intent rather than measured impact.",
+ "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+ "category_id": "U03",
+ "rated": 3
+}

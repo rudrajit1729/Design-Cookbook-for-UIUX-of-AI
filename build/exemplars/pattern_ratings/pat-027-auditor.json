@@ -1,0 +1,356 @@
+{
+ "pattern_id": "pat-027",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "1661",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes estimating human correctness likelihood from modeled behavior on similar instances. It shows neither user-supplied exemplars nor induction of an operative, reusable specification.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support Specification by Demonstration; it concerns behavioral modeling for trust calibration."
+  },
+  {
+   "rid": "2221",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Selecting positive and negative gallery examples plausibly specifies a direction that GANravel then disentangles. This matches exemplar-based induction, but the quote does not itself state what reusable structure is induced or whether users can edit it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2966",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Users provide imagery exemplars and descriptions, and the system explicitly converts them into augmentation strategies governing fine-tuning. That is a clear induction step, although the hybrid textual specification makes demonstration only part of the mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3512",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "The title indicates that cognitive dependencies are modeled from demonstrations, which fits the pattern. The quoted evidence shows only the demonstration phase, however, not the induced representation, its reuse, or its editability.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3748",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Observing human demonstrations is compatible with learning an operative behavior specification, but the fragment supplies no induction step, reusable artifact, subsequent use, or user-facing control. Scoring is necessarily conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3796",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system converts example stories into narrative possibility spaces, a good exemplar-to-structure transformation. The short quote does not establish whether that space governs later runs, is editable, or changes predictably as examples change.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4067",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Users label example comments and the system induces a reusable personal classifier. The input, induction target, and subsequent behavioral role are explicit; this is a canonical and highly transferable instance, though the design move itself is established rather than surprising.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4098",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Demonstrating desired table actions is a credible specification-by-demonstration input. The quote stops at Step 1 and does not show the inferred transformation, reusable program, editing interface, or later execution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4449",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "A finished example or result is grounded into an instrument\u2014a reusable abstraction of interface commands. This strongly matches the signature and is unusually general, although the compressed quote leaves the grounding interaction and editability underspecified.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6006",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The user demonstrates intent by editing a finished question; the system infers the reason, creates a reusable edit command, and reapplies it elsewhere. The quote plainly contains the demonstration, induction, reusable structure, and later-run conditioning required by the pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6355",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "The interface organizes examples into a few-shot prompt, but the examples themselves remain the runtime conditioning context. No separate template, constraint set, control state, or reusable action is induced from them.",
+   "disqualify": true,
+   "disqualify_reason": "This is direct in-context example conditioning, a neighboring pattern, rather than induction of an operative specification from demonstrations."
+  },
+  {
+   "rid": "7708",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Calling the pipeline Programming by Demonstration supports the broad assignment, but the quote identifies none of the user action, induced artifact, reuse mechanism, or editing affordances. Impact and novelty are difficult to judge from the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9410",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "A skilled operator's narrated assembly video is a finished demonstration that could be converted into a cobot plan. The quote shows only the input, while the title supplies the likely planning output; industrial assembly and multimodal hardware also limit direct transfer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10078",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The evidence clearly shows task customization through examples, but those examples directly condition the LLM in context. It does not show an induced intermediate specification that replaces the exemplars and governs later runs.",
+   "disqualify": true,
+   "disqualify_reason": "Interactive few-shot example curation is a neighboring direct-conditioning pattern, not the structural signature of Specification by Demonstration."
+  },
+  {
+   "rid": "10146",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "Users establish examples during iterative communication, but the quote says only that these examples influence the LLM. It provides no evidence of generalization into a reusable, editable specification.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports iterative example conditioning, not an induction step producing an operative structure."
+  },
+  {
+   "rid": "10473",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "\u201cExample-based\u201d is topical but does not reveal whether examples are references, content inputs, or demonstrations from which a reusable glyph specification is induced. No structural mechanism can be established from the quote.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate the pattern's induction-and-reuse signature."
+  },
+  {
+   "rid": "10539",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The user supplies a desired goal text and the system inverts that result into control states. This directly matches the pattern's inversion variant: inferred controls, rather than the exemplar text, become the operative specification.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11418",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Programming by example is explicitly used to build custom concepts, suggesting examples are generalized into reusable visualization concepts. The quote does not show the exact examples, inference feedback, or how users inspect and edit the resulting concept.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12840",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The system reuses and adapts SVG examples, but the evidence does not show conversion into a template, constraint graph, or other specification that independently governs later runs. It reads as reference-based adaptation.",
+   "disqualify": true,
+   "disqualify_reason": "Direct reuse and adaptation of a reference artifact is a neighboring pattern; the required induction into a reusable structure is unsupported."
+  },
+  {
+   "rid": "13373",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Experts select valid and invalid instances to refine data-validation rules. The demonstrations therefore modify an explicit reusable rule structure that governs subsequent validation, closely matching the structural signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13698",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "The algorithm learns sensor representations for procedural steps from one demonstration, but the quote frames this as task-tracking infrastructure. It does not establish a user-facing, inspectable or editable specification.",
+   "disqualify": true,
+   "disqualify_reason": "The cited mechanism is invisible sensor-representation learning rather than the user-facing specification interaction required by this pattern and dimension."
+  },
+  {
+   "rid": "13700",
+   "scores": {
+    "representativeness": 0,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "The system mines patterns from passive user-behavior logs. Users do not deliberately supply finished exemplars as a specification, and the quote does not show an editable induced structure.",
+   "disqualify": true,
+   "disqualify_reason": "Passive behavior mining is implicit adaptation, not Specification by Demonstration."
+  },
+  {
+   "rid": "13794",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Users choose an existing report as a reference for generating another report. The quote describes selection and direct reuse, not induction of an independently reusable template or constraint structure.",
+   "disqualify": true,
+   "disqualify_reason": "This instantiates reference-based generation rather than generalizing an exemplar into an operative specification."
+  },
+  {
+   "rid": "14038",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A single user demonstration is explicitly synthesized into a task-level agentic workflow, which then serves as a reusable execution structure. The quote cleanly states both sides of the induction step, though it does not establish user editing of the workflow.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16713",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Recorded actions are reified as composable \u201cSpells,\u201d closely matching the recorded-macro form of the pattern and offering broad transfer. The quote does not explicitly say who records them, how generalization occurs, or how later composition and editing work.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

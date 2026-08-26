@@ -1,0 +1,99 @@
+{
+  "category_id": "U03",
+  "category_name": "Constraints, Guardrails & Reserved Control",
+  "exemplars": [
+    {
+      "rid": "10177",
+      "title": "ConstitutionMaker: Interactively Critiquing Large Language Models by Converting Feedback into Principles",
+      "venue": "iui-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3640543.3645144",
+      "pattern_id": "pat-067",
+      "pattern_name": "User-Authored Rules",
+      "final_score": 4.85,
+      "why": "Reacting to an output (kudos, critique, rewrite) is converted into a named principle, and the resulting constitution is what dictates the model's subsequent behavior — the full origin-to-consultation path of a user-authored rule set in one move. It is this dimension's exemplar because the guardrail is neither a hidden system prompt nor a one-shot instruction: it is an inspectable object the user built out of their own dissatisfaction. Anyone building an assistant where users keep re-issuing the same correction can lift it directly.",
+      "over_the_runner_up": "Chosen over Policy Maps (13804) because the elicitation-to-principle path is corroborated by a second coded row in the same paper, whereas the Policy Projector if-then quote appears in the full text only in the abstract and an RQ heading."
+    },
+    {
+      "rid": "3208",
+      "title": "ClassMeta: Designing Interactive Virtual Classmate to Promote VR Classroom Participation",
+      "venue": "chi-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613904.3642947",
+      "pattern_id": "pat-068",
+      "pattern_name": "Withheld Answer",
+      "final_score": 4.8,
+      "why": "The agent is fully capable of answering and deliberately answers only part, leaving the terminal step of the answer for a student to supply. That is the truncated pipeline at its most literal — the loop cannot close without a human act — which makes it the clearest instance of reserving part of the task for the user. The move transfers to any assistant that would otherwise finish the thought its user was about to have.",
+      "over_the_runner_up": "Chosen over rid 3547 because ClassMeta withholds at the level of the answer's construction rather than only its verification, where 3547's withheld value is an ordinary courseware answer key beside a separate predictive-model contribution."
+    },
+    {
+      "rid": "2408",
+      "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
+      "venue": "chi-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613904.3642794",
+      "pattern_id": "pat-072",
+      "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+      "final_score": 4.75,
+      "why": "Every generated recombination is emitted uniformly as a line sketch plus a one-line description, so the representation underdetermines the artifact and the designer must supply the specificity by reinterpreting it. It earns its place as the dimension's only instance of restraint imposed at the rendering stage rather than on content or regions — a fidelity ceiling used as a guardrail against fixation. A writing tool emitting outlines instead of prose, or a design tool emitting wireframes instead of mockups, is the same move.",
+      "over_the_runner_up": "Chosen over Inkspire (4127) because CreativeConnect's ceiling is uniform ('All system-generated... outputs'), whereas Inkspire shows the high-fidelity render permanently beside the scaffold and so imposes no ceiling at all."
+    },
+    {
+      "rid": "5176",
+      "title": "From Conversation to Human-AI Common Ground: Extracting Cognitive Workflows for Reuse in Sense-making Tasks",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3791669",
+      "pattern_id": "pat-033",
+      "pattern_name": "Output Templates",
+      "final_score": 4.78,
+      "why": "A stored schema requires extracted workflows to take a fixed form — phases linked by dependencies, each phase carrying inputs, activities, decisions and outputs — and the filled schema is then rendered per part on a canvas the user works with. It belongs here rather than in a formatting pattern because the structure is an artifact the user inspects and reuses, satisfying U03's requirement that the constraint be visible in the interface. The phase-and-dependency skeleton is domain-independent and lifts straight into any tool that wants reasoning, not just prose, to come back in a reusable shape.",
+      "over_the_runner_up": "Chosen over the narrative-schema system (9312) because that paper is an extended abstract with no evaluation, leaving impact unjudgeable, while this one shows the same pre-declared structure with a working system behind it."
+    },
+    {
+      "rid": "13551",
+      "title": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI",
+      "venue": "uist-2023",
+      "year": 2023,
+      "url": "https://doi.org/10.1145/3586183.3606723",
+      "pattern_id": "pat-071",
+      "pattern_name": "Protected Region",
+      "final_score": 4.45,
+      "why": "The system segments a 3D model, classifies each segment as functional or aesthetic, and then styles only the aesthetic complement — an automatic partition plus enforcement at generation time, the two halves the pattern requires. It is the dimension's sharpest case because crossing the boundary does not merely violate a preference, it breaks the object: a restyled hinge no longer hinges. The generate-around-the-protected-subset structure transplants to text, code, and layout without modification.",
+      "over_the_runner_up": "Chosen over CICADA (16164) because the stroke-preservation penalty in that paper is explicitly inherited from prior work by others, while Style2Fab's partition-and-restrict pipeline is the paper's own contribution."
+    }
+  ],
+  "notes": "All five of the dimension's patterns are represented, one exemplar each, so no pattern is stacked and none goes unrepresented. Overrides of pattern-level judgements: (1) rid 623 (IntelliCircos) was ranked second in pat-033 by its curator on structural-signature fidelity, but its grammar is a serialization contract between generator and parser, and pattern-level curation had no reason to test it against U03's boundary, which excludes invisible policies; one reviewer found the token string surfaced to a participant, which is a partial rescue, but not enough to outrank a schema the user demonstrably inspects and reuses. (2) rid 16164 (CICADA) has the most explicit enforcement evidence in the pool, but a reviewer traced the quoted penalty to a background paragraph attributing it to CICADA, ref [24], prior work by others; this paper's own contribution is a study of perceived agency, so it brushes the third disqualifier and yields to Style2Fab. (3) rid 13637 (Semantic Commit) is excluded from both patterns it was seated in: its pat-068 quote is contradicted by its own coded rows, since the Make Change button produces exactly the withheld rewrite, and its pat-067 quote is forward-looking framing prose about AI agents generally rather than evidence about this system. (4) rid 4912 (Quologue) was seated by its own curator at 1.30 after arguing it fails the signature; an exhausted pool is a reason to show fewer exemplars, not to publish a known negative case. What a reader should distrust: no candidate in pat-033 shows nonconforming output being rejected or corrected, so rid 5176 should not be described as validating each generation; rid 10177's evidence shows a principle set dictating behavior but does not establish that principles accumulate across turns or persist across sessions, nor any add/edit/remove/reorder affordance; rid 3208 states an intended participation benefit rather than a measured effect, and nothing proves the interface exposes no reveal control; rid 13551's partition is computed and then user-correctable (segments can be toggled), so it is not purely system-produced; rid 2408's full text in this repo is abstract-only, so the audit CSV is the sole authority for its system-section quote, and it reports design intent rather than measured impact. Two reviewer promotions could not be seated: CodeAid (rid 2978, pat-068) and Roomify (rid 6055, pat-071) are argued convincingly, but the input file carries no bibliographic record for either, and this file may not invent one. Finally, a pipeline fault worth fixing before publication: pat-071 was rated against only two candidate records although the audit CSV reportedly contains six central-role papers, so Protected Region should be re-rated against its full pool.",
+  "near_misses": [
+    {
+      "rid": "13804",
+      "title": "Policy Maps: Tools for Guiding the Unbounded Space of LLM Behaviors",
+      "pattern_id": "pat-067",
+      "reason": "The most mechanically complete rule evidence in the dimension — a user-authored if-then predicate that acts on LLM outputs — but the pattern already has its slot, the domain overlaps ConstitutionMaker's (governing LLM conversational behavior), and the quoted phrasing is not corroborated anywhere outside the abstract and an RQ heading."
+    },
+    {
+      "rid": "9312",
+      "title": "From Text-First to Structure-First: A Visual Pipeline for Narrative Writing with Multimodal Support",
+      "pattern_id": "pat-033",
+      "reason": "The only pat-033 candidate whose full text confirms a conformance step (sections must pass validation before compilation), and the schema is visibly selected before generation; excluded only because it is a CHI extended abstract with no evaluation, leaving criterion 2 unjudgeable."
+    },
+    {
+      "rid": "16164",
+      "title": "When is a Tool a Tool? User Perceptions of System Agency in Human-AI Co-Creative Drawing",
+      "pattern_id": "pat-071",
+      "reason": "Both halves of Protected Region are explicit here — provenance partition plus a named generation-time penalty — but the mechanism is inherited from CICADA, prior work by others, while this paper's contribution is a perceptions study."
+    },
+    {
+      "rid": "623",
+      "title": "IntelliCircos: A Data-driven and AI-powered Authoring Tool for Circos Plots",
+      "pattern_id": "pat-033",
+      "reason": "The most reconstructable template evidence in the pool (named element types, delimiters, nesting, cardinality, ordering), but it reads as a generator-to-parser grammar, which sits on the wrong side of U03's boundary against invisible policies."
+    },
+    {
+      "rid": "3547",
+      "title": "Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Monitoring",
+      "pattern_id": "pat-068",
+      "reason": "A second classroom-learning instance 0.25 below ClassMeta, inside the domain-spread threshold; the withheld value is a quiz answer key set by the courseware rather than the paper's interface contribution, and the study cannot isolate the effect of withholding."
+    }
+  ]
+}

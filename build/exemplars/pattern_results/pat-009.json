@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-009",
+ "exemplars": [
+  {
+   "rid": "2258",
+   "title": "CatAlyst: Domain-Extensible Intervention for Preventing Task Procrastination Using Large Generative Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581133",
+   "final_score": 4.95,
+   "why": "CatAlyst exposes the complete proactive-support structure: it detects halted task progress without a user request and responds by presenting a generated continuation of the user’s work. The state trigger, unsolicited output, and actionable intervention are all explicit, while the domain-extensible design makes the mechanism broadly reusable.",
+   "over_the_runner_up": "CatAlyst ranks above ProMemAssist because it turns detected difficulty directly into substantive task continuation, whereas ProMemAssist’s evidence establishes a strong timing policy but says less about the assistance content and its practical effect."
+  },
+  {
+   "rid": "13772",
+   "title": "ProMemAssist: Exploring Timely Proactive Assistance Through Working Memory Modeling in Multi-Modal Wearable Devices",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747770",
+   "final_score": 4.93,
+   "why": "ProMemAssist makes intervention timing an explicit system decision: predicted utility determines whether assistance is spoken immediately, deferred, or discarded. This clearly satisfies the non-user-triggered output signature and contributes a portable policy for balancing timely help against unwanted interruption.",
+   "over_the_runner_up": "ProMemAssist ranks above the meeting-reflection system because its immediate-deliver, defer, or discard policy captures the broader design problem of deciding whether and when proactive support should appear."
+  },
+  {
+   "rid": "3819",
+   "title": "Are We On Track? AI-Assisted Active and Passive Goal Reflection During Meetings",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714052",
+   "final_score": 4.65,
+   "why": "The system independently identifies when reflective discussion is needed and then surfaces a question with three response options. That internal-decision-to-output edge precisely matches the structural signature, and the structured prompt demonstrates proactive support as an actionable checkpoint rather than a generic alert.",
+   "over_the_runner_up": "This ranks above the personalized-classifier candidate because its evidence specifies both the inferred condition and the exact user-visible intervention, making the proactive interaction more concrete and reproducible."
+  }
+ ],
+ "notes": "The final three preserve the consensus order; no candidate was moved into or out of the top three. The main judgment was to retain rid 3819 over rid 5473 because rid 3819’s figure evidence shows the full observable structure—an internally inferred need followed by a specific popup—while rid 5473’s abstract establishes triggering but leaves the signals and presentation underspecified. No score was adjusted by more than 0.3. Readers should distrust strong claims about measured impact: the supplied excerpts primarily establish mechanisms, not outcomes. Evidence for rid 3819 is especially narrow because it comes from a figure caption, while the CatAlyst and ProMemAssist excerpts do not independently establish how reliably their triggers work or whether users welcomed the interventions.",
+ "pattern_name": "Proactive Support",
+ "category_id": "U02",
+ "rated": 30
+}

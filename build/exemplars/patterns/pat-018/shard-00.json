@@ -1,0 +1,1083 @@
+{
+ "pattern": {
+  "pattern_id": "pat-018",
+  "pattern_name": "Addressable Segments",
+  "pattern_slug": "addressable-segments",
+  "short_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+  "definition": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object. Operations that would otherwise apply to the whole — editing, regenerating, tagging, attributing — apply per unit. The partition is materialized on screen, and its boundaries may themselves be adjustable.",
+  "structural_signature": "A single artifact is divided into a set of non-overlapping parts, each given an identity (a name, a type label, a card, a row). Each part carries its own handles, so the artifact has as many operation targets as it has parts, all simultaneously present. Segmentation may be automatic or user-adjusted, but the resulting units persist as the unit of interaction rather than dissolving back into the whole.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Persistent Structured Representation",
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "2468",
+   "title": "Inkeraction: An Interaction Modality Powered by Ink Recognition and Synthesis",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642498",
+   "system_id": "inkeraction",
+   "evidence": [
+    {
+     "quote": "Inkeraction segments and classifes digital ink objects (e.g., handwriting and sketches), identifes relationships between them, and generates strokes in diferent writing styles.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2489",
+   "title": "CollabCoder: A Lower-barrier, Rigorous Workflow for Inductive Collaborative Qualitative Analysis with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642002",
+   "system_id": "collabcoder",
+   "evidence": [
+    {
+     "quote": "The lead coder Alice frst splits qualitative data into small units of analysis, e.g., sentence, paragraph, prior to the formal coding.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2587",
+   "title": "AXNav: Replaying Accessibility Tests from Natural Language",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642777",
+   "system_id": "axnav",
+   "evidence": [
+    {
+     "quote": "It then outputs a chaptered video that a tester can navigate and replay (F1; subsubsection 3.4.2)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2654",
+   "title": "SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions for Blind or Low-Vision Viewers",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642632",
+   "system_id": "spica_audiodesc",
+   "evidence": [
+    {
+     "quote": "Spica ofers interactive mechanisms for supporting temporal navigation of frame captions and spatial exploration of objects within key frames.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2680",
+   "title": "DirectGPT: A Direct Manipulation Interface to Interact with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642462",
+   "system_id": "directgpt",
+   "evidence": [
+    {
+     "quote": "(a) continuous representation of the objects of interest",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2940",
+   "title": "Rambler: Supporting Writing With Speech via LLM-Assisted Gist Manipulation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642217",
+   "system_id": "rambler",
+   "evidence": [
+    {
+     "quote": "A labeled screenshot of the Rambler UI. (1) Ramble in default state, with revision functions accessible through buttons on (2) and (3).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3300",
+   "title": "Ivie: Lightweight Anchored Explanations of Just-Generated Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642239",
+   "system_id": "ivie",
+   "evidence": [
+    {
+     "quote": "Ivie submits that suggestion in a prompt to an LLM, requesting that the code be segmented and explained",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3502",
+   "title": "GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713502",
+   "system_id": "genpara",
+   "evidence": [
+    {
+     "quote": "GenPara introduced three core tools aimed at enhancing the 3D design process: text-conditional part-level editing (T1)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3524",
+   "title": "Script&Shift: A Layered Interface Paradigm for Integrating Content Development and Rhetorical Strategy with LLM Writing Assistants",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714119",
+   "system_id": "scriptshift",
+   "evidence": [
+    {
+     "quote": "A layer is a discrete, modular content unit within the writing workspace designed to encapsulate specifc elements of the writing or organizational process.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "4002",
+   "title": "Friction: Deciphering Writing Feedback into Writing Revisions through LLM-Assisted Reflection",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714316",
+   "system_id": "friction",
+   "evidence": [
+    {
+     "quote": "Friction leverages large language models to break down large feedback collections into manageable units",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4199",
+   "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714057",
+   "system_id": "ideasynth",
+   "evidence": [
+    {
+     "quote": "IdeaSynth also provides contextualized feedback at the node level and for the overall idea canvas",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4266",
+   "title": "Compositional Structures as Substrates for Human-AI Co-creation Environment: A Design Approach and A Case Study",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713401",
+   "system_id": "4266",
+   "evidence": [
+    {
+     "quote": "The Narrative Editor that we utilize is a linear block-based text editor that consists of two block types: section blocks, which define high-level section headings to guide the overarching structure of the video, and paragraph blocks, which contain individual talking points",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4417",
+   "title": "FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713686",
+   "system_id": "fusionprotor",
+   "evidence": [
+    {
+     "quote": "We also innovated a component-level 3D creation method and applied it in XR environment for the mixed-prototype presentation and interaction.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4426",
+   "title": "ELMI: Interactive and Intelligent Sign Language Translation of Lyrics for Song Signing",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713973",
+   "system_id": "elmi",
+   "evidence": [
+    {
+     "quote": "ELMI enables users to edit glosses line-byline, with real-time synced lyric and music video snippets.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Accessibility",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4479",
+   "title": "PrivCAPTCHA: Interactive CAPTCHA to Facilitate Effective Comprehension of APP Privacy Policy",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713928",
+   "system_id": "privcaptcha",
+   "evidence": [
+    {
+     "quote": "PrivCAP adopted a CAPTCHA-based design, requiring users to interact with clickable chunks of concise policy content, thus reducing physical and cognitive load.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4816",
+   "title": "Orality: A Semantic Canvas for Externalizing and Clarifying Thoughts with Speech",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791713",
+   "system_id": "orality",
+   "evidence": [
+    {
+     "quote": "By selecting the topic group (“Proposed Solution for Input in VR and AR”) and speaking, the spoken content is analyzed and added under the selected topic group as new nodes with different colors.",
+     "location": "fig 6"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4820",
+   "title": "RAG Without the Lag: Enabling \"What-If\" Analysis for Retrieval-Augmented Generation Pipelines",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790874",
+   "system_id": "4820",
+   "evidence": [
+    {
+     "quote": "raggy dynamically generates cells for each primitive component: (A) Query, (B) Retriever, (C) LLM, and (D) Answer",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5132",
+   "title": "Collaposer: Transforming Photo Collections into Visual Assets for Storytelling with Collages",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791160",
+   "system_id": "collaposer",
+   "evidence": [
+    {
+     "quote": "Each cutout is stored as an RGBA image named after its corresponding label and assigned a unique ID to distinguish multiple elements sharing the same label.",
+     "location": "system sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5222",
+   "title": "MIND: Empowering Mental Health Clinicians with Multimodal Data Insights through a Narrative Dashboard",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790529",
+   "system_id": "mind",
+   "evidence": [
+    {
+     "quote": "Insight card as visual primitive. Three sections: insight description, insight types, and data source types, present the multimodal insights.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5288",
+   "title": "Sci-Fi Spark: A Human-AI Co-Creation System for Science Fiction Ideation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791950",
+   "system_id": "5288",
+   "evidence": [
+    {
+     "quote": "(1) Idea block. An idea block is the basic unit on the canvas.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5352",
+   "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791680",
+   "system_id": "clearfairy",
+   "evidence": [
+    {
+     "quote": "Clear (top) is a workflow segmentation approach that structures workflows into cognitive decision steps by linking explanations, actions, and artifacts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5355",
+   "title": "PaperTrail: A Claim-Evidence Interface for Grounding Provenance in LLM-based Scholarly Q&A",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791101",
+   "system_id": "papertrail",
+   "evidence": [
+    {
+     "quote": "decomposes both LLM answers and source documents into discrete claims and evidence",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5488",
+   "title": "SoundStager: Interactive Design of Story-Driven GenAI Soundscapes for Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790870",
+   "system_id": "soundstager",
+   "evidence": [
+    {
+     "quote": "(A) Stem View displays editable layers for keynote, signal, soundmark, and archetypal sounds, supporting fine-grained control.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5505",
+   "title": "CareerCraft: Supporting New Graduates on Job Hunting with LLM-Assisted Self-Construction of Career Profile",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791221",
+   "system_id": "careercraft",
+   "evidence": [
+    {
+     "quote": "then cards are refined and selected to construct a complete career profile that integrates self-concepts and task breakdowns",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5670",
+   "title": "Evalet: Evaluating Large Language Models through Functional Fragmentation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790285",
+   "system_id": "evalet",
+   "evidence": [
+    {
+     "quote": "Evalet extracts significant text fragments from each output. Then, the system interprets and labels the function that each fragment plays",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5702",
+   "title": "HOICraft: In-Situ VLM-based Authoring Tool for Part-Level Hand-Object Interaction Design in VR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790823",
+   "system_id": "hoicraft",
+   "evidence": [
+    {
+     "quote": "The authoring workflow begins with the user providing a target 3D object (which is segmented into parts, labeled with part names, and pre-defined with motion constraints) and specifying a design intent as text",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5715",
+   "title": "Component-Wise Sketching and Generation for Car Interior Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790912",
+   "system_id": "5715",
+   "evidence": [
+    {
+     "quote": "Designers can view all cards in perspective views or individual cards in the corresponding orthographic views, enabling them to sketch in either mode according to their needs (DR2).",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5763",
+   "title": "Open-ended Structured Question Assessment with Human-LLM Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791034",
+   "system_id": "5763",
+   "evidence": [
+    {
+     "quote": "The LLM is guided to segment responses, classify pieces into Correct/Wrong/Unclear, and generate grading reasons using chain-of-thought reasoning.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6216",
+   "title": "Orchid-Creator: An Authoring Tool Supporting LLM-Driven Interactive Narrative Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791426",
+   "system_id": "orchidcreator",
+   "evidence": [
+    {
+     "quote": "Interactive components of phase 1. They are defined as cards, each of which corresponds to a specific narrative element: World Setting (1A), Character (1B), Narrator Behavior (1C), Player Input (1D), Event (1E), Global Variable (1F).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6284",
+   "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790553",
+   "system_id": "papertok",
+   "evidence": [
+    {
+     "quote": "In Step 2: Storyboarding (Figure 2b), users are presented with a potential script as segmented scenes, each paired with a corresponding visual to be generated.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6298",
+   "title": "PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790966",
+   "system_id": "pasta",
+   "evidence": [
+    {
+     "quote": "Illustration of how raw policy documents are segmented into paragraph-level units, standardized into a table format, and scored for relevancy against model card sections.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7801",
+   "title": "A Design of Interface for Visual-Impaired People to Access Visual Information from Images Featuring Large Language Models and Visual Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648648",
+   "system_id": "7801",
+   "evidence": [
+    {
+     "quote": "The segmentation includes two parts: a term set describing the semantic object, and segmented mask which represents the shape of the semantic object.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8556",
+   "title": "Synoptic: Query-Driven Multimodal Product Review Summarization System",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719820",
+   "system_id": "synoptic",
+   "evidence": [
+    {
+     "quote": "The transcript was then split into individual sentences and annotated with timestamps.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8751",
+   "title": "Rambler in the Wild: A Diary Study of LLM-Assisted Writing With Speech",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706676",
+   "system_id": "8751",
+   "evidence": [
+    {
+     "quote": "Semantic Split operates on an individual Ramble to divide one Ramble into N Rambles based on its content (the scissors button in Figure 1).",
+     "location": "full text sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9176",
+   "title": "CyberFrame: AI-Supported Hybrid Comics for Cybersecurity Awareness",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798980",
+   "system_id": "cyberframe",
+   "evidence": [
+    {
+     "quote": "creators can refine individual segments by editing the underlying prompts",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9312",
+   "title": "From Text-First to Structure-First: A Visual Pipeline for Narrative Writing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799344",
+   "system_id": "9312",
+   "evidence": [
+    {
+     "quote": "writers can drag and drop narrative beats",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9433",
+   "title": "Mapping Movies: A Mind-Map Approach to Aphasia-Friendly Video",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798702",
+   "system_id": "9433",
+   "evidence": [
+    {
+     "quote": "It includes a central node representing the overall topic, with connected child nodes corresponding to individual segments of the audiovisual content. Each node is shown as a card displaying the segment’s timestamp, topic, and keywords, and includes Play and Listen buttons to jump to the segment or hear its audio summary.",
+     "location": "system sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "9479",
+   "title": "Operationalizing Responsible AI Policies with LLMs: an End-to-End Monitoring Prototype",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799675",
+   "system_id": "9479",
+   "evidence": [
+    {
+     "quote": "RAMP extracts policy statements from governance documents, decomposes them into atomic obligations, and proposes system-specific rules linked to available evaluations, while surfacing gaps where requirements remain unverifiable or underspecified.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9489",
+   "title": "PerforMagic: Coordinating Bodily Performance and Camera Movement in AI Video Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798782",
+   "system_id": "performagic",
+   "evidence": [
+    {
+     "quote": "PerforMagic supports early-stage shot planning through a cardbased storyboard interface that externalizes narrative structure and camera intention. Each storyboard card represents a scene and requires a short plot description authored by the user.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9524",
+   "title": "ReFashionPal: Exploring AI Assistant Embedded in How-to Videos to Support Garment Repurposing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798775",
+   "system_id": "refashionpal",
+   "evidence": [
+    {
+     "quote": "(B) task summarization and step localization: provides LLM-generated summaries of key steps and timestamped links for quick navigation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

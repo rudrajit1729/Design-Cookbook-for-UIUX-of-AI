@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-082",
+ "exemplars": [
+  {
+   "rid": "13758",
+   "title": "StorySage: Conversational Autobiography Writing Powered by a Multi-Agent Framework",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747681",
+   "final_score": 2.85,
+   "why": "StorySage is the strongest structural match because it explicitly defines its depicted interaction flow as one session, indicating that autobiographical conversation is organized as a bounded episode rather than an always-open thread. The available excerpt does not establish the session’s entry condition, terminal state, or cross-session reference rules, so the exemplar is strong but incompletely evidenced.",
+   "over_the_runner_up": "StorySage ranks above Poet-Weaver because its evidence explicitly says the flow defines a single session, whereas Poet-Weaver’s caption merely labels a flow as being for a reflection session."
+  },
+  {
+   "rid": "15755",
+   "title": "Poet-Weaver: Reflecting on Communication Failure in Personal Relationships With Stylized AI-Generated Conversation Digests",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757646",
+   "final_score": 2.25,
+   "why": "Poet-Weaver packages sensitive conversation reflection into a named session with its own interaction flow, plausibly turning reflection into a discrete episode. However, the caption alone does not verify a system-imposed close, repeated-session reset, or limits on what subsequent sessions may reference.",
+   "over_the_runner_up": "Poet-Weaver ranks above HINT because it associates session-bounding with the user-facing interaction flow, while HINT’s successive sessions may only be rounds in a longitudinal testing protocol."
+  },
+  {
+   "rid": "10028",
+   "title": "HINT: Integration Testing for AI-based features with Humans in the Loop",
+   "venue": "iui",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511141",
+   "final_score": 1.55,
+   "why": "HINT deliberately divides an evolving AI experience across successive sessions, making repeated episodes part of how the experience is tested. It is only a weak exemplar: the quote does not demonstrate defined openings and closes, a fixed within-session flow, or session-scoped context, and the sessions may belong to the evaluation protocol rather than the interface itself.",
+   "over_the_runner_up": "HINT ranks above StayFocused because successive sessions are explicitly used to structure an evolving AI experience, whereas StayFocused describes user-set non-screen intervals and therefore conflicts with the pattern’s requirement that the system impose the interaction boundary."
+  }
+ ],
+ "notes": "I retained the consensus ordering and excluded StayFocused. Its evidence describes sessions set by users, which directly conflicts with the definition’s system-imposed boundary and resembles a focus timer more than a bounded interaction flow. I reduced Poet-Weaver from 2.43 to 2.25 and HINT from 1.83 to 1.55 because neither excerpt confirms the required terminal state or session-scoped reference behavior; neither adjustment exceeds 0.3. Readers should treat Poet-Weaver and especially HINT as provisional exemplars: their evidence names sessions but does not expose the complete structural signature. StorySage is the only selection whose excerpt directly says that a flow defines one session, though even it lacks evidence for opening, closure, repetition, and cross-session scoping.",
+ "pattern_name": "Chunked Interaction Sessions",
+ "category_id": "U02",
+ "rated": 4
+}

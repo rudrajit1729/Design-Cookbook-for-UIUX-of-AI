@@ -1,0 +1,105 @@
+{
+  "category_id": "U04",
+  "category_name": "Modality, Embodiment & Rendering",
+  "exemplars": [
+    {
+      "rid": "10281",
+      "title": "Semantic See-through Goggles: Wearing Linguistic Virtual Reality in (Artificial) Intelligence",
+      "venue": "iui-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3742413.3789145",
+      "pattern_id": "pat-050",
+      "pattern_name": "Generative Filters",
+      "final_score": 4.8,
+      "why": "A generative chain is spliced between the camera and the head-mounted display: the scene is captured, collapsed into a single line of text, re-generated as an image, and only that mediated image reaches the wearer's eyes. The whole capture-transform-display path is stated verbatim in the abstract, including the absence of a direct-view bypass, which makes this the strongest-evidenced record in the dimension and the only entry where the channel is not augmented but replaced. Any designer wiring a model into a live sensor stream (camera, audio, document feed) can lift the topology directly.",
+      "over_the_runner_up": "It beats WebPerceptor because the no-bypass property is stated rather than implied, and beats ShadAR outright because ShadAR's generation happens once at configuration time, leaving ordinary shading in the runtime perceptual path."
+    },
+    {
+      "rid": "9589",
+      "title": "Sonic Stage: Automatically Generating an Interactive Spatial Soundscape to Facilitate Dialogue Video Comprehension for Blind and Low Vision Viewers",
+      "venue": "chiea-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772363.3798425",
+      "pattern_id": "pat-049",
+      "pattern_name": "Space Registered Overlay",
+      "final_score": 4.73,
+      "why": "3D reconstruction resolves where each character is, and their dialogue is then spatialized to those coordinates, so output placement is owned by the moving referent rather than by a fixed panel or channel. Both halves of the signature — a spatial resolution step over referents, and output laid out at the resulting coordinates — appear in one sentence, and the registered surface is audio rather than a rendered overlay, which shows the pattern is about coordinate binding, not about headsets. Lift it for any system where generated commentary must stay attached to a thing that moves.",
+      "over_the_runner_up": "It edges Guided Reality because the tracking step makes referent-bound placement explicit rather than static anchoring, and it keeps the dimension from spending a second slot on AR-headset hardware already covered by Semantic See-through Goggles."
+    },
+    {
+      "rid": "13660",
+      "title": "Shape n' Swarm: Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs",
+      "venue": "uist-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3746059.3747781",
+      "pattern_id": "pat-061",
+      "pattern_name": "Tangible Interaction",
+      "final_score": 4.7,
+      "why": "The user hand-arranges tabletop robots and speaks an instruction; the arrangement is the command, and the same physical robots then perform the generated animation. It is the only complete tangible loop in the file — matter on both the input and the output side — so it demonstrates the physical channel without borrowing a rendered surface anywhere. The move transfers to any actuated-object platform where a spatial configuration can serve as both the prompt and the display.",
+      "over_the_runner_up": "It leads its pattern over the refreshable-tactile-display study because the authors built this system, whereas that paper is a Wizard-of-Oz study on commercial hardware the authors neither built nor implemented an agent for."
+    },
+    {
+      "rid": "13996",
+      "title": "Dynamite: Real-Time Debriefing Slide Authoring through AI-Enhanced Multimodal Interaction",
+      "venue": "vlhcc-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1109/vl-hcc65237.2025.00023",
+      "pattern_id": "pat-060",
+      "pattern_name": "Multimodal Input",
+      "final_score": 4.62,
+      "why": "An instructor circles two chart elements while simultaneously saying \"Compare these two keywords\", so a drawn referent and a spoken operation are fused into a single request the system must reconcile. This is the only candidate whose evidence shows two channels combined inside one command rather than each channel filling a separate field of a prompt, which is what separates real multimodality from structured prompt composition. Any visual workspace with a pen and a microphone can adopt the referent-by-mark, operation-by-voice split.",
+      "over_the_runner_up": "It is chosen over GazePointAR because the fusion happens inside one authored command rather than as query-time disambiguation, and over One Kiss because One Kiss's sketch and emoji channels each own a different property, so nothing is ever arbitrated."
+    },
+    {
+      "rid": "5580",
+      "title": "GeoVisA11y: An AI-based Geovisualization Question-Answering System for Screen-Reader Users",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3790334",
+      "pattern_id": "pat-064",
+      "pattern_name": "Nonvisual Navigation",
+      "final_score": 3.65,
+      "why": "TAB lands a persistent cursor on a state, and arrow keys then move to the topologically adjacent state — up means Nebraska only because you are currently on Kansas. That state-carrying cursor over a non-linear structure is the load-bearing property of nonvisual traversal, and it is the only candidate in the dimension that demonstrably has one; it is also the dimension's only corner where the whole interface exists without a visual channel. The mechanism generalizes to any graph-shaped artifact a screen-reader user must explore rather than have flattened into a paragraph.",
+      "over_the_runner_up": "It stands above SeeChart because SeeChart's coded quote shows N/P pagination between whole charts — a flat list with no position to carry — and above ImageExplorer, whose exploration is continuous finger movement over an image, not a cursor stepped by discrete commands."
+    }
+  ],
+  "notes": "Overrides of pattern-level judgements: (1) pat-061 is led here by Shape n' Swarm rather than the 4.80-rated refreshable-tactile-display paper, because full text shows that paper is a Wizard-of-Oz study on a commercial Graphiti device with a human wizard standing in for the agent — the rubric's third disqualifier is arguably met outright, and the coded quote comes from a participant briefing, not a built mechanism. (2) pat-049 is led by Sonic Stage rather than the curator's third pick (the tangible tea system, rid 9539), whose projected text is the user's own selected phrase, not generated content — it belongs under Tangible Interaction. (3) GeoVisA11y is seated at 3.65, well below fat-pattern third-place candidates, on set-level grounds: pat-064 has only 7 rated papers and a score-ranked cut would leave the dimension with no nonvisual corner at all. Every exemplar leads with a distinct pattern; no pattern is used twice. Unrepresented, and the real cost of this set: pat-043 Embodied Avatar (its best candidate, HAT Swapping, evidences slot occupancy but not that outputs are emitted from the figure, and the corner would otherwise spend a slot restating 'the agent has a body'); pat-062 Voice Interaction (both leading candidates are contested — Rambler's flow is full of pointer and keyboard editing, contradicting the bypass clause, and VoiceAlign inherits its speech channel from the legacy VUI it shims); pat-074, pat-076 and pat-078, the representational-rendering corners, which lost the last slot to spatial registration; and pat-063 and pat-065, each of which has only one surviving credible instance. Distrust: Sonic Stage's movement coupling is entailed by 'track', not stated, and it is an extended abstract; Shape n' Swarm's output half ('the robots perform the authored animation') is entailed by animating tabletop robots rather than separately quoted; GeoVisA11y's quote never shows the spoken response emitted per move — that rests on the paper's screen-reader framing and on pat-074 being coded central on the same record, so do not cite it as evidence of the announcement. None of the five records report user outcomes in the supplied evidence, so every impact claim here is structural.",
+  "near_misses": [
+    {
+      "rid": "13939",
+      "title": "Exploring the impacts of semi-automated storytelling on programmers' comprehension of software histories",
+      "pattern_id": "pat-074",
+      "reason": "The most literal non-prose-to-prose conversion in the file (commit list view explicitly rewritten into a narrative story-view) and evidence-confirmed, but the fifth slot went to spatial registration, which is closer to this dimension's sensory-channel core than a text-to-text representational change."
+    },
+    {
+      "rid": "9372",
+      "title": "Illuminating Memory: Using Ambient Light to Enrich Generative Representations of Daily Life",
+      "pattern_id": "pat-076",
+      "reason": "The set's only non-screen rendering surface — imperceptible RGB output made perceptible by a fixed apply-and-fade routine — but the physical-output corner is already held by Shape n' Swarm, and nothing establishes what the RGB values mean or how the model produced them."
+    },
+    {
+      "rid": "13212",
+      "title": "Compendia: Automated Visual Storytelling Generation From Online Article Collection",
+      "pattern_id": "pat-078",
+      "reason": "The only pat-078 quote that enumerates named properties against named parts (one radial bar for fact count, another for contributing articles), but paired radial bars are a conventional composite, so it wins on evidence rather than on the design move."
+    },
+    {
+      "rid": "12692",
+      "title": "HAT Swapping: Virtual Agents as Stand-Ins for Absent Human Instructors in Virtual Training",
+      "pattern_id": "pat-043",
+      "reason": "The cleanest statement of an agent body substituted into a specific absent human's slot, but nothing establishes the figure's rendering, persistence, or that outputs issue from it rather than a text pane — half the signature is unevidenced."
+    },
+    {
+      "rid": "10271",
+      "title": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+      "pattern_id": "pat-062",
+      "reason": "Structurally the cleanest voice candidate — speech in, converted to internal command syntax, forwarded downstream — but it introduces no modality of its own: the speech channel belongs to the legacy VUI it wraps, so its design move is utterance-to-syntax mapping."
+    },
+    {
+      "rid": "9045",
+      "title": "AI at your Fingertips: Wearable Ring as a Low-Friction Interface for Agentic AI",
+      "pattern_id": "pat-065",
+      "reason": "The dimension's only screenless-delegation corner and a legitimate instance in full text, but the coded quote restates the pattern's name ('screenless, fire-and-forget task delegation') without showing the initiation gesture, specification channel, or terminating signal."
+    }
+  ]
+}

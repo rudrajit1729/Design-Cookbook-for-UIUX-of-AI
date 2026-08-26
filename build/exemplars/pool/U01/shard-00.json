@@ -1,0 +1,1873 @@
+{
+ "dimension": {
+  "category_id": "U01",
+  "category_name": "Input, Context & Specification",
+  "category_slug": "input-context-and-specification",
+  "stage": "Setting the context",
+  "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+  "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+  "pattern_count": 11,
+  "eligible_papers": 568,
+  "candidate_count": 568,
+  "patterns": [
+   {
+    "pattern_id": "pat-015",
+    "pattern_name": "Question-Driven Elicitation",
+    "short_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from."
+   },
+   {
+    "pattern_id": "pat-022",
+    "pattern_name": "Artifact Derived Controls",
+    "short_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates."
+   },
+   {
+    "pattern_id": "pat-027",
+    "pattern_name": "Specification by Demonstration",
+    "short_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification."
+   },
+   {
+    "pattern_id": "pat-032",
+    "pattern_name": "Source Conditioned Generation",
+    "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on."
+   },
+   {
+    "pattern_id": "pat-034",
+    "pattern_name": "Artifact Generation Property Controls",
+    "short_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance."
+   },
+   {
+    "pattern_id": "pat-035",
+    "pattern_name": "Atomic AI Action Menu",
+    "short_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds."
+   },
+   {
+    "pattern_id": "pat-039",
+    "pattern_name": "Spatial Canvas",
+    "short_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification."
+   },
+   {
+    "pattern_id": "pat-040",
+    "pattern_name": "Sketch-Based Input",
+    "short_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt."
+   },
+   {
+    "pattern_id": "pat-059",
+    "pattern_name": "Inferred User State Driven Adaptation",
+    "short_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings."
+   },
+   {
+    "pattern_id": "pat-092",
+    "pattern_name": "Natural-Language Control",
+    "short_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval."
+   },
+   {
+    "pattern_id": "pat-093",
+    "pattern_name": "Familiar-Object Metaphor",
+    "short_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation."
+   }
+  ]
+ },
+ "shard": 0,
+ "candidates": [
+  {
+   "rid": "2772",
+   "title": "DeepTreeSketch: Neural Graph Prediction for Faithful 3D Tree Modeling from Sketches",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642125",
+   "system_id": "deeptreesketch",
+   "prefilter_score": 8.432,
+   "prefilter_parts": {
+    "relevance_density": 5.132,
+    "focus": 3.0,
+    "evidence_location": 0.3,
+    "_density_raw": 28.84
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "our system supports a flexible sketching mode for both precise and coarse control of the tree shapes by drawing branch strokes and foliage strokes, respectively",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "869",
+   "title": "GANSlider: How Users Control Generative Models for Images using Multiple Sliders with and without Feedforward Information",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502141",
+   "system_id": "ganslider",
+   "prefilter_score": 8.374,
+   "prefilter_parts": {
+    "relevance_density": 5.374,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 42.58
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The output image of the generative model is the sum of all slider edits.",
+     "evidence_location": "system sec 3.2"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6229",
+   "title": "LingoQ: Bridging the Gap between EFL Learning and Work through AI-Generated Work-Related Quizzes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791342",
+   "system_id": "lingoq",
+   "prefilter_score": 8.284,
+   "prefilter_parts": {
+    "relevance_density": 5.084,
+    "focus": 2.0,
+    "evidence_location": 1.2,
+    "_density_raw": 27.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We present LingoQ, an AI-mediated system that allows workers to practice English using quizzes generated from their LLM queries during work.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The AI’s responses for three major types of query intents—Look up ( b ○), Translate ○), and Proofread ( f ○)—provide the UI components tailored to each query type.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3590",
+   "title": "FusAIn: Composing Generative AI Visual Prompts Using Pen-based Interaction",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714027",
+   "system_id": "fusain",
+   "prefilter_score": 8.254,
+   "prefilter_parts": {
+    "relevance_density": 4.754,
+    "focus": 2.0,
+    "evidence_location": 1.5,
+    "_density_raw": 21.48
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Color pens extract six main colors of the user-selected area from an inspirational image to a color palette shown under the canvas.",
+     "evidence_location": "system sec 4.1"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "These pens can extract and load multiple visual details from inspirational images and can be used individually or together.",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "pattern_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "They extract visual properties with “smart” pens from (2) Pen sets (object, color, texture, basic, eraser) and compose visual prompts on (3) Canvas with editing tools.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we present FusAIn, a GenAI prompt composition tool that lets designers create personalized pens by loading them with objects or attributes such as color or texture",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "9055",
+   "title": "Actionbrushes: Painting with Elemental Dynamics from a Generative Palette",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798553",
+   "system_id": "actionbrushes",
+   "prefilter_score": 8.238,
+   "prefilter_parts": {
+    "relevance_density": 4.938,
+    "focus": 1.8,
+    "evidence_location": 1.5,
+    "_density_raw": 25.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Effect-aware semantic sliders are generated alongside newly created actionbrushes, and users can generate additional sliders from text prompts.",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "we introduce actionbrushes: elemental dynamic brush primitives that are customized through a generative palette interface and applied to animated scenes by direct manipulation",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Inspired by the metaphor between painting and effects animation, we collected 49 short animations and 42 tutorials to derive design goals for an elemental dynamics palette-and-brush interface.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8543",
+   "title": "SketchAI: A \"Sketch-First\" Approach to Incorporating Generative AI into Fashion Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719782",
+   "system_id": "sketchai",
+   "prefilter_score": 8.161,
+   "prefilter_parts": {
+    "relevance_density": 5.161,
+    "focus": 1.8,
+    "evidence_location": 1.2,
+    "_density_raw": 29.76
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Step 1 (Upload) lets users capture a photo (1A), upload an existing image (1B), or create a new sketch (1C).",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "In Step 2 (Enhancement), SketchAI processes the input using one of 16 options, such as Sketch Single or Enhanced, applying features such as S",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we introduce SketchAI, a novel sketch-first interface for diffusion models that allows practitioners to use real-time sketching on a tablet computer to guide model outputs",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2221",
+   "title": "GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581226",
+   "system_id": "ganravel",
+   "prefilter_score": 8.109,
+   "prefilter_parts": {
+    "relevance_density": 4.909,
+    "focus": 2.0,
+    "evidence_location": 1.2,
+    "_density_raw": 24.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) The positive and negative examples can be selected from the gallery.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(d) The weights of the examples can be changed using the ‘+’ and ‘-’ buttons.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13695",
+   "title": "3D Sketching + 2D Generative AI for Car Exterior Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747609",
+   "system_id": "13695",
+   "prefilter_score": 8.103,
+   "prefilter_parts": {
+    "relevance_density": 5.403,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 47.76
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our system utilizes 3D sketches as structural backbones to ensure view-consistency among generated 2D renderings",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(c) input the drawing into a 2D generative AI model to ex",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "973",
+   "title": "TaleBrush: Sketching Stories with Generative Pretrained Language Models",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501819",
+   "system_id": "talebrush",
+   "prefilter_score": 7.919,
+   "prefilter_parts": {
+    "relevance_density": 5.219,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 32.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "In our prototype, the protagonist’s ‘fortune’ is controllable.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "TaleBrush uses a line sketching interaction for intuitive control and sensemaking of story generation with GPTbased language models, closing the gap in the iterative co-creation process between humans and AI.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6492",
+   "title": "TaleBrush: Visual Sketching of Story Generation with Pretrained Language Models",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519873",
+   "system_id": "talebrush",
+   "prefilter_score": 7.871,
+   "prefilter_parts": {
+    "relevance_density": 5.471,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 55.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The writer can specify the level of surprise for the generation. When “Surprise in a separate panel” is checked, TaleBrush shows a panel where they can draw a thin green line to specify the surprise level.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The tool allows writers to draw out the protagonist’s fortune with a simple and expressive interaction.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4700",
+   "title": "Hear You in Silence: Designing for Active Listening in Human Interaction with Conversational Agents Using Context-Aware Pacing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791238",
+   "system_id": "4700",
+   "prefilter_score": 7.813,
+   "prefilter_parts": {
+    "relevance_density": 5.113,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 28.53
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A Conversational Agent (CA) with Context-Aware Pacing adapts its response timing to the situation.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5715",
+   "title": "Component-Wise Sketching and Generation for Car Interior Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790912",
+   "system_id": "5715",
+   "prefilter_score": 7.809,
+   "prefilter_parts": {
+    "relevance_density": 5.452,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 54.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "pattern_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system automatically assembles the components closest to the center to pre-visualize cabin configurations (DR4).",
+     "evidence_location": "system sec 5.1"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we propose a novel workflow in which designers sketch components individually, generate refined renderings for each component, and compose them to pre-visualize concepts",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5326",
+   "title": "SketchDynamics: Exploring Free-Form Sketches for Dynamic Intent Expression in Animation Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791071",
+   "system_id": "sketchdynamics",
+   "prefilter_score": 7.793,
+   "prefilter_parts": {
+    "relevance_density": 5.393,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 45.06
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system proactively raises clarification questions (e.g., whether the car starts moving immediately or after a delay, and whether a car SVG should be provided)",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we introduce an interaction paradigm where users convey dynamic intent to a vision–language model via free-form sketching",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3748",
+   "title": "AppAgent: Multimodal Agents as Smartphone Users",
+   "venue": "chi",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713600",
+   "system_id": "appagent",
+   "prefilter_score": 7.618,
+   "prefilter_parts": {
+    "relevance_density": 3.118,
+    "focus": 3.0,
+    "evidence_location": 1.5,
+    "_density_raw": 11.12
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "through autonomous exploration or by observing human demonstrations",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Deployment Phase:",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 2,
+   "factors": [
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4170",
+   "title": "AdaptiveSliders: User-aligned Semantic Slider-based Editing of Text-to-Image Model Output",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714292",
+   "system_id": "adaptivesliders",
+   "prefilter_score": 7.558,
+   "prefilter_parts": {
+    "relevance_density": 5.258,
+    "focus": 2.0,
+    "evidence_location": 0.3,
+    "_density_raw": 35.96
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AdaptiveSliders also suggests initial attributes and generates initial images more aligned with prompt semantics.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Slider-based editing is a recent approach wherein the image's semantic attributes are manipulated via sliders.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9843",
+   "title": "Slide.Bingo: From Passive Attendance to Active Listening Through AI-Generated Bingo",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799376",
+   "system_id": "slidebingo",
+   "prefilter_score": 7.545,
+   "prefilter_parts": {
+    "relevance_density": 5.045,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 26.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This is intended to transform bingo from a seated listening activity into an active exploration.",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8514",
+   "title": "Redefining Research Crowdsourcing: Incorporating Human Feedback with LLM-Powered Digital Twins: Incorporating Human Feedback with LLM-Powered Digital Twins",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720269",
+   "system_id": "8514",
+   "prefilter_score": 7.506,
+   "prefilter_parts": {
+    "relevance_density": 5.006,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 25.84
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system starts by asking crowd workers to answer 25 demographic questions (see Appendix C), including age, gender, education, location, and political views, to contextualize the digital twin’s responses based on their own characteristics.",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The platform is a React application that interacts with OpenAI’s GPT-4o model, an LLM, to create “digital twin” responses based on participant data.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3431",
+   "title": "D-Twins: Your Digital Twin Designed for Real-Time Boredom Intervention",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714163",
+   "system_id": "dtwins",
+   "prefilter_score": 7.493,
+   "prefilter_parts": {
+    "relevance_density": 4.793,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 22.04
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Initially, we collected users’ natural language expressions to capture their unique characteristics.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Based on the classification result, D-Twins initiates conversations as interventions",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9012",
+   "title": "What Can I Control?: Designing an Attribution Reframing Chatbot for Early-Career Employees' Workplace Stress Management",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798873",
+   "system_id": "9012",
+   "prefilter_score": 7.483,
+   "prefilter_parts": {
+    "relevance_density": 4.783,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 21.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AR chatbot system in the external-uncontrollable attribution scenario.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "12396",
+   "title": "Data Playwright: Authoring Data Videos With Annotated Narration",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3477926",
+   "system_id": "12396",
+   "prefilter_score": 7.415,
+   "prefilter_parts": {
+    "relevance_density": 3.215,
+    "focus": 3.0,
+    "evidence_location": 1.2,
+    "_density_raw": 11.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Automatic interpreter to synthesize data video components from users' annotated narration and visualizations.",
+     "evidence_location": "fig 4"
+    },
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users craft text narrations based on visualizations and incorporate natural language commands for data video authoring as inline annotations, known as annotated narration.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 2,
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "system_id": "imaginationvellum",
+   "prefilter_score": 7.399,
+   "prefilter_parts": {
+    "relevance_density": 5.074,
+    "focus": 1.125,
+    "evidence_location": 1.2,
+    "_density_raw": 27.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "mapping different spatial dimensions (e.g., 1D changes in relative distance, or 2D layout changes) to changes of prompts (e.g., changing weight of input tokens) or other generation parameters (e.g., weights, temperature/CFG)",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "pattern_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This means that ImaginationVellum employs the entire 2D canvas as an active prompt space",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we introduce Generative Strokes—freeform strokes that spatially modulate generation and prompt-parameters (articulated along multiple latent semantic or stylistic dimensions)",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "16044",
+   "title": "GANCollage: A GAN-Driven Digital Mood Board to Facilitate Ideation in Creativity Support",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3596072",
+   "system_id": "gancollage",
+   "prefilter_score": 7.361,
+   "prefilter_parts": {
+    "relevance_density": 4.861,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 23.69
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Goal 2: Provide customisable data-driven semantic atributes over visual ideas to help users interact with the AI..",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a physical mood board has already been solidly proved to be a perfect ft [4, 12], since it both boosts creativity, and facilitates communication of ideas that are hard to express",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "prefilter_score": 7.303,
+   "prefilter_parts": {
+    "relevance_density": 4.803,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 22.26
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "First, it uses a video of a skilled operator performing the assembly manually while explaining their actions aloud.",
+     "evidence_location": "system sec 2"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Second, users provide supporting context about the human worker, the cobot, and the product. This includes operator competencies, robot capabilities and constraints, and a bill of materials with relevant part properties.",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13154",
+   "title": "GenerativeSurface: GenAI-Assisted Semantic Scaffolding for 3D Conceptual Design in Mixed Reality",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3679098",
+   "system_id": "generativesurface",
+   "prefilter_score": 7.266,
+   "prefilter_parts": {
+    "relevance_density": 5.016,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 25.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "our system enables rapid generation and iteration of diverse 3D forms from simple text descriptions, expanding the designer’s solution space without requiring technical 3D modeling expertise",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5259",
+   "title": "Words to Describe What I'm Feeling: Exploring the Potential of AI Agents for High Subjectivity Decisions in Advance Care Planning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791335",
+   "system_id": "5259",
+   "prefilter_score": 7.251,
+   "prefilter_parts": {
+    "relevance_density": 4.551,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 18.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Screens guided participants through configuring (a) lifestyle values, (b) goals of care, and (c) trade-off ratings (1-10) to initialise their personalised ACPAgent.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "asked 15 participants in 4 workshops to train it to be their personal ACP proxy",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "9071",
+   "title": "AnimAlte: Designing a Multimodal AI-Infused Cartoon Video System to Support Structured Vocabulary Learning for Preschoolers at Home",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798929",
+   "system_id": "animalte",
+   "prefilter_score": 7.208,
+   "prefilter_parts": {
+    "relevance_density": 4.958,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 25.38
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "By integrating multimodal AI, our system interprets specific regions of cartoon videos and couples them with structured questioning and personalized feedback based on children’s responses, enabling children to consolidate abstract vocabulary through visually grounded cues and verbal descriptions rather than passive viewing.",
+     "evidence_location": "system sec 5.1"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "This poster presents AnimAlte, an AI-infused cartoon video learning system that supports structured vocabulary learning through age-appropriate vocabulary extraction, real-time visual cues with interactive Q&A, and AI-guided drawing activities for story creation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14001",
+   "title": "DeckFlow: Specification Decomposition on a Multimodal Generative Canvas",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00027",
+   "system_id": "deckflow",
+   "prefilter_score": 7.17,
+   "prefilter_parts": {
+    "relevance_density": 4.813,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 22.58
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Goal Card then creates an Action Card (c) with labels connected to discrete Text Cards (d), extracted from her highlevel prompt: Style: “Chinese traditional”, Subject: “landscape”, Key Elements: “traditional pavilion”, Lighting: “soft and diffuse”",
+     "evidence_location": "system sec III (full text)"
+    },
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "pattern_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "DeckFlow is an infinite canvas for creating multimodal content.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "She moves these Image Cards to a different region and forms a Cluster (g) around them, indicating to it that she wants to understand how to describe the phrase ‘sun’ from these Image Cards.",
+     "evidence_location": "system sec III (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5463",
+   "title": "CoNode: Visualizing Workflows for Knowledge Reuse and Recombination in Team-AI Collaborative Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791216",
+   "system_id": "conode",
+   "prefilter_score": 6.941,
+   "prefilter_parts": {
+    "relevance_density": 4.541,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 18.66
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Interaction flow of the text generation node and examples of four operations.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "pattern_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(B) Shared whiteboard: where team members add, move, and connect nodes to build triplet workflows.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "13794",
+   "title": "ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747644",
+   "system_id": "respark",
+   "prefilter_score": 6.848,
+   "prefilter_parts": {
+    "relevance_density": 4.348,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 16.32
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ReSpark helps users generate new data reports by reusing existing ones. It begins by ranking reports based on their alignment with the target dataset to assist in selecting a reference report (a).",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The analyst begins by uploading the Los Angeles crime dataset (Figure 3a).",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "17197",
+   "title": "Prompt2Task: Automating UI Tasks on Smartphones from Textual Prompts",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3716132",
+   "system_id": "prompt2task",
+   "prefilter_score": 6.834,
+   "prefilter_parts": {
+    "relevance_density": 4.667,
+    "focus": 0.667,
+    "evidence_location": 1.5,
+    "_density_raw": 19.93
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Interactive Context Enrichment: If the agent determines that relevant context information is still missing after the automated enrichment, it queries the user to obtain the missing details.",
+     "evidence_location": "system sec 4.1.1"
+    },
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Prompt2Task then automatically translates these textual prompts into operation sequences on GUI, freeing users from the complexity of designing automation scripts themselves.",
+     "evidence_location": "intro"
+    },
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "pattern_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The user is asked to manually demonstrate the correct operation on the mobile GUI, as shown in Figure 11(d).",
+     "evidence_location": "system sec 4.1.4"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16464",
+   "title": "Prompt Machine: A Tangible Generative AI Tool for Supporting Children's Learning and Literacy",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735673",
+   "system_id": "16464",
+   "prefilter_score": 6.235,
+   "prefilter_parts": {
+    "relevance_density": 3.835,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 13.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(A) Pupils write assignments. (B) Pupils input their written assignments.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(C) Pupils modify their texts using tangible prompt cubes.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13641",
+   "title": "GLITTER: An AI-assisted Platform for Material-Grounded Asynchronous Discussion in Flipped Learning",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747742",
+   "system_id": "glitter",
+   "prefilter_score": 5.473,
+   "prefilter_parts": {
+    "relevance_density": 3.844,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 13.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Students can activate this feature by clicking the ’Generate Summary’ button.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "196",
+   "title": "Interactive Authoring of Terrain using Diffusion Models",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14941",
+   "system_id": "196",
+   "prefilter_score": 8.064,
+   "prefilter_parts": {
+    "relevance_density": 5.364,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 42.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "an artist first sketches a simple ridge and forked drainage network, then makes their style selection (outlined in red) before adding further details",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12713",
+   "title": "From Air to Wear: Personalized 3D Digital Fashion With AR/VR Immersive 3D Sketching",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3593504",
+   "system_id": "12713",
+   "prefilter_score": 8.026,
+   "prefilter_parts": {
+    "relevance_density": 5.326,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 38.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we propose a novel method that allows everyday users to create personalized 3D garments by simply sketching in immersive",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2074",
+   "title": "StyleMe: Towards Intelligent Fashion Generation with Designer Style",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581377",
+   "system_id": "styleme",
+   "prefilter_score": 8.016,
+   "prefilter_parts": {
+    "relevance_density": 5.316,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 38.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Given the clothing pictures specified by the designer, StyleMe can use deep learning based generative model to generate clothing sketches that are consistent with the designer style.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "StyleMe system employs generative adversarial network to automatically generate personalized clothing sketches based on designer’s sketches and transfer style from sketch to real clothing image.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12941",
+   "title": "ScribbleSense: Generative Scribble-Based Texture Editing With Intent Prediction",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3635035",
+   "system_id": "scribblesense",
+   "prefilter_score": 7.797,
+   "prefilter_parts": {
+    "relevance_density": 5.297,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 36.95
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "By freely scribbling with different colors on the surface of the 3D model, our model can reasonably predict the user’s editing intentions and generate high-quality local textures that match the scribble colors.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The inputs are the 3D textured mesh and the user-scribbled images.",
+     "evidence_location": "system sec 3 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7263",
+   "title": "Exploring a Digital Art Collection through Drawing Interactions with a Deep Generative Model",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3583902",
+   "system_id": "7263",
+   "prefilter_score": 7.59,
+   "prefilter_parts": {
+    "relevance_density": 4.59,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 19.0
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The user places a piece of tracing paper on the surface and draws with a pen (fig. 3).",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "11401",
+   "title": "InkSight: Leveraging Sketch Interaction for Documenting Chart Findings in Computational Notebooks",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327170",
+   "system_id": "inksight",
+   "prefilter_score": 7.532,
+   "prefilter_parts": {
+    "relevance_density": 4.832,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 23.49
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This figure showcases how users can employ both closed-path sketches (A1-A3) and open-path sketches (B1-B2) to express their intent by selecting data subsets of interest.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9535",
+   "title": "Recognizable ≠ Mine: Anchoring and Negotiating Authorship in Child-AI Co-Creation",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798533",
+   "system_id": "9535",
+   "prefilter_score": 7.498,
+   "prefilter_parts": {
+    "relevance_density": 4.048,
+    "focus": 3.0,
+    "evidence_location": 0.45,
+    "_density_raw": 14.52
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Through a human-mediated semantic upscaling workflow, this work explores how children perceive authorship when their rough sketches are transformed into hyper-realistic images.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "current tools largely function as \"Aesthetic Filters\": they perform Image-to-Image translation that polishes strokes while strictly adhering to the original structure, merely beautifying the child’s drawing skills.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 2,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4147",
+   "title": "SketchFlex: Facilitating Spatial-Semantic Coherence in Text-to-Image Generation with Region-Based Sketches",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713801",
+   "system_id": "sketchflex",
+   "prefilter_score": 7.46,
+   "prefilter_parts": {
+    "relevance_density": 5.21,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 31.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "pattern_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "1) the user can draw a sketch, assign a corresponding regional prompt, and use automatic prompt recommendation to refine their initial prompt (G1, G2)",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

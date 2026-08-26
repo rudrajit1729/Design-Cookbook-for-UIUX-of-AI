@@ -1,0 +1,507 @@
+{
+ "pattern": {
+  "pattern_id": "pat-001",
+  "pattern_name": "Linked Views",
+  "pattern_slug": "linked-views",
+  "short_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+  "definition": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible. Acting on an element in one region changes the rendering of its counterpart in the others. The correspondence is the interface's claim: nothing shown in one view is orphaned from its counterpart elsewhere.",
+  "structural_signature": "A set of items has more than one simultaneous rendering, and the system holds an identity mapping between renderings. A selection, brush, or hover event in region A triggers a rendering change (highlight, filter, scroll, annotation) on the mapped elements in region B, with the mapping stable across interactions. As clustered, the category also contains members where the correspondence is a fixed link from an output element to its source span rather than an interactive coordination — see the review flag.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "evidence": [
+    {
+     "quote": "Hovering over a rectangle band (d1) highlights the associated",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12559",
+   "title": "Concept Lens: Visual Comparison and Evaluation of Generative Model Manipulations",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3564537",
+   "system_id": "12559",
+   "evidence": [
+    {
+     "quote": "The use of the two hierarchies is to support a coordinated",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12608",
+   "title": "Save It for the \"Hot\" Day: An LLM-Empowered Visual Analytics System for Heat Risk Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3586689",
+   "system_id": "12608",
+   "evidence": [
+    {
+     "quote": "glyph will synchronously center and highlight the corresponding",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12730",
+   "title": "CausalChat: Interactive Causal Model Development and Refinement Using Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3602448",
+   "system_id": "causalchat",
+   "evidence": [
+    {
+     "quote": "conveyed through visual representations which are linked to the",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12837",
+   "title": "InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634639",
+   "system_id": "insightchaser",
+   "evidence": [
+    {
+     "quote": "Users can hover over the colored entities in the insight view to highlight relevant subgraphs in the context view and linked visual elements in the visualization view.",
+     "location": "system sec 5.1 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13183",
+   "title": "RAGExplorer: A Visual Analytics System for the Comparative Diagnosis of RAG Systems",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694443",
+   "system_id": "ragexplorer",
+   "evidence": [
+    {
+     "quote": "An overview of our visual analytic system. Our system integrates four coordinated views",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "13419",
+   "title": "CodeToon: Story Ideation, Auto Comic Generation, and Structure Mapping for Code-Driven Storytelling",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545617",
+   "system_id": "codetoon",
+   "evidence": [
+    {
+     "quote": "It uses 1-to-1 mapping to make connections clear across code, story, and comic. For example, as indicated by the dotted line, line 1 (code) maps to line 1 (story) and to row 1 (comic).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13641",
+   "title": "GLITTER: An AI-assisted Platform for Material-Grounded Asynchronous Discussion in Flipped Learning",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747742",
+   "system_id": "glitter",
+   "evidence": [
+    {
+     "quote": "While reading, he adds annotations that appear as discussion blocks in the right panel (Figure 1. F).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13643",
+   "title": "GenTune: Toward Traceable Prompts to Improve Controllability of Image Refinement in Environment Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747774",
+   "system_id": "gentune",
+   "evidence": [
+    {
+     "quote": "Our GenTune system lets designers select any element in a generated image, trace it back to the corresponding prompt labels, and revise those labels to guide precise yet globally consistent image refinement",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13703",
+   "title": "Synthia: Visually Interpreting and Synthesizing Feedback for Writing Revision",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747703",
+   "system_id": "synthia",
+   "evidence": [
+    {
+     "quote": "Bidirectional highlighting links each feedback unit to its original context and relevant parts of the text.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13714",
+   "title": "DxHF: Providing High-Quality Human Feedback for LLM Alignment with Interactive Decomposition",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747600",
+   "system_id": "dxhf",
+   "evidence": [
+    {
+     "quote": "Similar claims across two responses are connected with a keyword label. By using hover highlights, human annotators can more easily identify differences and compare the claims.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13727",
+   "title": "RAGTrace: Understanding and Refining Retrieval-Generation Dynamics in Retrieval-Augmented Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747741",
+   "system_id": "ragtrace",
+   "evidence": [
+    {
+     "quote": "The small dots on the left correspond to the circular nodes in the Chunk-Relink Graph, both representing a chunk in the RAG knowledge base.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "13986",
+   "title": "DevTales: A Tool for Providing Narrative Code Histories into Developer Workflows",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00013",
+   "system_id": "devtales",
+   "evidence": [
+    {
+     "quote": "3-way linking between the Subgoal view, Story view, and the code itself.",
+     "location": "full text sec III-C"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14017",
+   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00043",
+   "system_id": "convomap",
+   "evidence": [
+    {
+     "quote": "Once a region is selected, the area is highlighted with a gray rectangle surrounding multiple dots, and the trajectories passing through that region are highlighted in red (Figure 2.c).",
+     "location": "full text sec IV-A"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14867",
+   "title": "MetaWriter: Exploring the Potential and Perils of AI Writing Support in Scientific Peer Review",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637371",
+   "system_id": "metawriter",
+   "evidence": [
+    {
+     "quote": "hover over the extracted sentences for each review and the corresponding sentence will be highlighted",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15268",
+   "title": "MeetMap: Real-Time Collaborative Dialogue Mapping with LLMs in Online Meetings",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711030",
+   "system_id": "meetmap",
+   "evidence": [
+    {
+     "quote": "(2) When users click a topic in the timeline, the topic block changes colors, and the related nodes will be highlighted on the Map Canvas.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15683",
+   "title": "DesignMemo: Integrating Discussion Context into Online Collaboration with Enhanced Design Rationale Tracking",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757579",
+   "system_id": "designmemo",
+   "evidence": [
+    {
+     "quote": "Annotation-based Context Recall: Precise Transcript Locate or Agent-Driven Context Recall.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "evidence": [
+    {
+     "quote": "In both the Static and Interactive versions, users can inspect individual data points via interactive visualization (e.g., hover tooltips), while a linked view shows the corresponding image (original in Static; reconstructed in Interactive) and the target classifier’s predicted label (and its color) and confidence.",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

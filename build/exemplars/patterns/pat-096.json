@@ -1,0 +1,500 @@
+{
+ "pattern": {
+  "pattern_id": "pat-096",
+  "pattern_name": "Accept/Reject Controls",
+  "pattern_slug": "accept-reject-controls",
+  "short_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+  "definition": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary. The unit of disposition is the individual item, not the batch. The specific set varies by system — accept/regenerate/edit, replace/abstract, insert/ignore — but its fixity and its per-item attachment are what the pattern names.",
+  "structural_signature": "Each generated item is rendered with a co-located control group whose members are identical across items and constant across the session; activating a member commits a disposition for that item alone and leaves other items untouched. The set is enumerable and closed, and there is no path for disposing of items that is not in the set.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "eligible": 18,
+ "candidates": [
+  {
+   "rid": "2002",
+   "title": "Choice Over Control: How Users Write with Large Language Models using Diegetic and Non-Diegetic Prompting",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580969",
+   "system_id": "2002",
+   "evidence": [
+    {
+     "quote": "If the suggestion is accepted ( ENTER ) the preview style (green background) is removed and the suggested text becomes part of the text document. Alternatively, the user can cancel the current suggestion preview by pressing ESC or by continuing to type without confirming the suggestion.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2423",
+   "title": "ReelFramer: Human-AI Co-Creation for News-to-Video Translation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642868",
+   "system_id": "reelframer",
+   "evidence": [
+    {
+     "quote": "Users can regenerate suggestions in the first step, and in the subsequent two steps, they can choose to accept, regenerate, or edit the suggestions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "2439",
+   "title": "DiaryMate: Understanding User Perceptions and Experience in Human-AI Collaboration for Personal Journaling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642693",
+   "system_id": "diarymate",
+   "evidence": [
+    {
+     "quote": "Users can either incorporate the text recommended by LLM into their diary, ignore it (just for reference), or request a new one.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U05"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4871",
+   "title": "AI of Oz: Enhancing Wizard of Oz Studies in HCI with AI Assistance for Human Moderation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791324",
+   "system_id": "4871",
+   "evidence": [
+    {
+     "quote": "The moderator can approve, edit, or replace suggestions(DG2).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5024",
+   "title": "AI-Mediated Feedback Improves Student Revisions: A Randomized Trial with FeedbackWriter in a Large Undergraduate Course",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791121",
+   "system_id": "5024",
+   "evidence": [
+    {
+     "quote": "TAs have the full capacity to adopt, edit, or dismiss the suggestions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6099",
+   "title": "EcoAssist: Embedding Sustainability into AI-Assisted Frontend Development",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791330",
+   "system_id": "ecoassist",
+   "evidence": [
+    {
+     "quote": "Shown transformations include AVIF conversion, lazy-loading, simplified styles, and unused font/script removal, all applied through the accept/reject interface.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8246",
+   "title": "Designing for an AI-Augmented Journaling Experience: Balancing Guidance and Autonomy for Deeper Emotional Insight",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719887",
+   "system_id": "8246",
+   "evidence": [
+    {
+     "quote": "Users can accept, reject, or refine these tags in settings, ensuring full control.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9370",
+   "title": "INLAY: Preemptive, In-Context Intelligence for Casual Web Browsing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799065",
+   "system_id": "inlay",
+   "evidence": [
+    {
+     "quote": "the temporal distribution of Delegate (yellow), Expansion (blue), and Dismissal",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9674",
+   "title": "Tracking, Retrieving, and Auditing for Coherent Epics in Online Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798905",
+   "system_id": "9674",
+   "evidence": [
+    {
+     "quote": "the conflict panel lists flagged issues with brief explanations and actions to acknowledge or dismiss",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9836",
+   "title": "MnemoMaker: Creator, Curator, or Something Else? Exploring Human-AI Mnemonic Co-Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799137",
+   "system_id": "mnemomaker",
+   "evidence": [
+    {
+     "quote": "Rather than fully automating generation, MnemoMaker scaffolds a workflow where users can accept, modify,",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10078",
+   "title": "ScatterShot: Interactive In-context Example Curation for Text Transformation",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584059",
+   "system_id": "scattershot",
+   "evidence": [
+    {
+     "quote": "Users can make edits to LLM outputs, sort the candidates into positive demonstrative examples (+), negative ones (-), or just not include the candidate (O).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10164",
+   "title": "SwipeGANSpace: Swipe-to-Compare Image Generation via Efficient Latent Space Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645141",
+   "system_id": "swipeganspace",
+   "evidence": [
+    {
+     "quote": "Users are asked to perform pairwise comparisons by comparing the currently displayed image with the previous one: swiping right indicates a preference for the current image, whereas swiping left favors the earlier one.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10177",
+   "title": "ConstitutionMaker: Interactively Critiquing Large Language Models by Converting Feedback into Principles",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645144",
+   "system_id": "constitutionmaker",
+   "evidence": [
+    {
+     "quote": "The three principle elicitation features: kudos, critique and rewrite.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10181",
+   "title": "SenseMate: An Accessible and Beginner-Friendly Human-AI Platform for Qualitative Data Analysis",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645194",
+   "system_id": "sensemate",
+   "evidence": [
+    {
+     "quote": "For each recommendation, users can perform various actions (C).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10260",
+   "title": "RankCut: A Ranking-Based LLM Approach to Extractive Summarization for Transcript-Based Video Editing",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789115",
+   "system_id": "rankcut",
+   "evidence": [
+    {
+     "quote": "Editors can accept, trim, merge, or demote markers",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "system_id": "echoladder",
+   "evidence": [
+    {
+     "quote": "Users can preview, apply, undo, or regenerate each suggestion individually, combining manual adjustments to iteratively construct the environment and refine their design decisions.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14009",
+   "title": "TraceMate: Collaborating with AI in Test-Driven Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00035",
+   "system_id": "tracemate",
+   "evidence": [
+    {
+     "quote": "The student may then choose Accept or Reject ( 7 )-in the former case, TraceMate applies the patch directly into the editor, and in the latter, it reverts to the prior version or prompts for clarification.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15431",
+   "title": "Democratizing Game Modding with GenAI: A Case Study of StarCharM, a Stardew Valley Character Maker",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3748612",
+   "system_id": "15431",
+   "evidence": [
+    {
+     "quote": "Users can Regenerate (d) a character highlight, Pin (e) a highlight to ensure it is saved, or View (f) a character in f",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

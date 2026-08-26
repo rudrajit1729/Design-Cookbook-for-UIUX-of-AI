@@ -1,0 +1,1760 @@
+{
+ "dimension": {
+  "category_id": "U09",
+  "category_name": "Workspace Layout & Tool Integration",
+  "category_slug": "workspace-layout-and-tool-integration",
+  "stage": "Fitting into the work",
+  "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+  "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+  "pattern_count": 7,
+  "eligible_papers": 410,
+  "candidate_count": 410,
+  "patterns": [
+   {
+    "pattern_id": "pat-026",
+    "pattern_name": "Unified Workspace",
+    "short_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state."
+   },
+   {
+    "pattern_id": "pat-057",
+    "pattern_name": "Companion Chat Panel",
+    "short_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact."
+   },
+   {
+    "pattern_id": "pat-086",
+    "pattern_name": "Fixed Functional Panel Layout",
+    "short_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use."
+   },
+   {
+    "pattern_id": "pat-087",
+    "pattern_name": "Dual Artifact Presentation Modes",
+    "short_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force."
+   },
+   {
+    "pattern_id": "pat-088",
+    "pattern_name": "AI Panels for Host Application",
+    "short_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow."
+   },
+   {
+    "pattern_id": "pat-089",
+    "pattern_name": "Chat Panels",
+    "short_summary": "The interaction surface is a vertically scrolling transcript of alternating turns with a persistent composition area anchored below it."
+   },
+   {
+    "pattern_id": "pat-091",
+    "pattern_name": "In-Situ Agent Presence",
+    "short_summary": "The system's activity is rendered within the work surface itself — as cursors, marks, live strokes, or attached companions — instead of being confined to a separate conversation panel."
+   }
+  ]
+ },
+ "shard": 2,
+ "candidates": [
+  {
+   "rid": "13726",
+   "title": "Flowco: Mixed-Initiative Authoring of Reliable End-to-End Data Analyses via Dataflow Graphs and LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747636",
+   "system_id": "flowco",
+   "prefilter_score": 6.259,
+   "prefilter_parts": {
+    "relevance_density": 4.159,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 8.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Flowco user interface, as shown in Figure 3, is divided into three panels: The project panel on the left encompasses global actions and the “Ask Me Anything!” (AMA) chat box; the canvas in the center is the visual editor for Flowco dataflow graphs; and the details panel on the right presents details of the selected node during editing.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The Flowco editor interface is divided into three panels: the project panel (left) encompasses global actions and the “Ask Me Anything!” (AMA) chat box; the canvas (center) is the visual editor for Flowco dataflow graphs; and the details panel (right) presents details of the selected node during editing.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6120",
+   "title": "GestuProp: 3D Virtual Reality Prop Generation with Co-Speech Gestures",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790491",
+   "system_id": "gestuprop",
+   "prefilter_score": 6.245,
+   "prefilter_parts": {
+    "relevance_density": 4.145,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 8.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Before each object creation, users need to select a gesture input mode: Gripping Mode or Sketching Mode.",
+     "evidence_location": "system sec 4.1.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13926",
+   "title": "BISCUIT: Scaffolding LLM-Generated Code with Ephemeral UIs in Computational Notebooks",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00012",
+   "system_id": "biscuit",
+   "prefilter_score": 6.226,
+   "prefilter_parts": {
+    "relevance_density": 4.226,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 8.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we implemented B ISCUIT as a JupyterLab extension to offer in-context support",
+     "evidence_location": "full text, intro"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The interface of B ISCUIT consists of Code Context, User Request, Ephemeral UI, and Code Injection (Figure 1).",
+     "evidence_location": "full text, system sec IV.B"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4455",
+   "title": "AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714148",
+   "system_id": "aideation",
+   "prefilter_score": 6.216,
+   "prefilter_parts": {
+    "relevance_density": 3.716,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 7.33
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-026",
+     "pattern_name": "Unified Workspace",
+     "pattern_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Unlike existing tools, AIdeation combines the strengths of traditional and AI-driven approaches, streamlining the process by unifying research, brainstorming, and design idea refinement into a cohesive, iterative workflow.",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15324",
+   "title": "ComViewer: An Interactive Visual Tool to Help Viewers Seek Social Support in Online Mental Health Communities",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710904",
+   "system_id": "comviewer",
+   "prefilter_score": 6.187,
+   "prefilter_parts": {
+    "relevance_density": 4.387,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 9.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ComViewer supports this flow with a Zoomable Posts Panel, a Note-taking Panel, and a Questioning Panel.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10176",
+   "title": "AI for Low-Code for AI",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645203",
+   "system_id": "10176",
+   "prefilter_score": 6.173,
+   "prefilter_parts": {
+    "relevance_density": 4.373,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 9.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "LowCoder interface with labeled components, described in the text.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9715",
+   "title": "WebPerceptor: An Open Source Chromium Plugin for Real-Time LLM-Based In-Line, In-Browser Re-Writing of Website Content",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798730",
+   "system_id": "webperceptor",
+   "prefilter_score": 6.17,
+   "prefilter_parts": {
+    "relevance_density": 4.87,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 12.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We present WebPerceptor an open source, client-side Chromium plugin which, for any webpage, identifies text content, relays this to a local or cloud-based LLM with a user-defined prompt and then modifies the existing text (to replace, append, or remove it) based on the LLM response.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10261",
+   "title": "Script2Screen: Supporting Dialogue-Centric Scriptwriting with Interactive Audiovisual Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789075",
+   "system_id": "script2screen",
+   "prefilter_score": 6.162,
+   "prefilter_parts": {
+    "relevance_density": 4.212,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 8.79
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-026",
+     "pattern_name": "Unified Workspace",
+     "pattern_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "an AI-assisted tool that integrates scriptwriting with audiovisual scene creation in a unified, synchronized workflow",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Writers can select a workspace from the Scenes navigation bar (A), where the corresponding script loads into the Script Editor (B).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10260",
+   "title": "RankCut: A Ranking-Based LLM Approach to Extractive Summarization for Transcript-Based Video Editing",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789115",
+   "system_id": "rankcut",
+   "prefilter_score": 6.154,
+   "prefilter_parts": {
+    "relevance_density": 4.279,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 8.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our system is implemented as a custom extension for Adobe Premiere Pro and appears as a custom Assistant panel in the software.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Two workflows for rough-cut generation.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8813",
+   "title": "Visiobo Demo: Augmenting Static Prints with Projection-based Visual Cueing and Concept Mapping via LLM Reasoning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721169",
+   "system_id": "8813",
+   "prefilter_score": 6.153,
+   "prefilter_parts": {
+    "relevance_density": 3.796,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 7.5
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This triggers a dialogue system, allowing users to inquire about specific aspects of the poster content that capture their interest (Figure 2-c).",
+     "evidence_location": "system sec 2.1"
+    },
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Visiobo Demo: Augmenting Static Prints with Projection-based Visual Cueing and Concept Mapping via LLM Reasoning",
+     "evidence_location": "title"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10239",
+   "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789057",
+   "system_id": "codevoyager",
+   "prefilter_score": 6.149,
+   "prefilter_parts": {
+    "relevance_density": 4.199,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 8.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(c) Chatbot Panel supports text-based interactions, where users can issue GRAPH, MODIFY, or GENERAL queries to obtain explanations or perform actions.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "User interface of CodeVoyager. (a) Navigation Bar allows quick toggling between panels. (b) File Browser presents the project’s hierarchical structure.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "system_id": "datawink",
+   "prefilter_score": 6.14,
+   "prefilter_parts": {
+    "relevance_density": 4.44,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 9.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(A) Canvas panel–Users can upload a reference, browse different bookmarked visualization designs, and edit the visual elements in the generated layer.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "8457",
+   "title": "MindMate: Exploring the Effect of Conversational Agents on Reflective Writing",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720029",
+   "system_id": "mindmate",
+   "prefilter_score": 6.126,
+   "prefilter_parts": {
+    "relevance_density": 3.126,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 5.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "we conducted a field experiment with 55 students to gain early insights on two design versions of MindMate against a static tool, by manipulating the user interface",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-089",
+     "pattern_name": "Chat Panels",
+     "pattern_summary": "The interaction surface is a vertically scrolling transcript of alternating turns with a persistent composition area anchored below it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a CA in the writing phase, which iteratively helps the learner to form a reflective text based on the reflection framework through back-and-forth conversation with the learner",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7464",
+   "title": "Automatic Histograms: Leveraging Language Models for Text Dataset Exploration",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650798",
+   "system_id": "7464",
+   "prefilter_score": 6.113,
+   "prefilter_parts": {
+    "relevance_density": 3.863,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 7.76
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The left side (Figure 1(A)) is a scrollable list of examples. The right side contains the automatically generated distributions (Figure 1(B)).",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "10243",
+   "title": "Vistoryteller: Designing Data Stories with LLM Agent-Based Generation and Interactive User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789086",
+   "system_id": "vistoryteller",
+   "prefilter_score": 6.099,
+   "prefilter_parts": {
+    "relevance_density": 4.266,
+    "focus": 0.333,
+    "evidence_location": 1.5,
+    "_density_raw": 8.94
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a dialogue panel (Fig. 7a1) for interacting with agents to adjust the story",
+     "evidence_location": "system sec 6.1"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The Story Generation Page, the system’s core, features three components.",
+     "evidence_location": "system sec 6.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10265",
+   "title": "SCSimulator: An Exploratory Visual Analytics Framework for Partner Selection in Supply Chains through LLM-driven Multi-Agent Simulation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789061",
+   "system_id": "scsimulator",
+   "prefilter_score": 6.066,
+   "prefilter_parts": {
+    "relevance_density": 4.293,
+    "focus": 0.273,
+    "evidence_location": 1.5,
+    "_density_raw": 9.01
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The SCSimulator simulation interface incorporates five main views, each serving a distinct purpose.",
+     "evidence_location": "system sec 4.2.2"
+    },
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "interact with the agent through the Conversation View (Figure 4- A )",
+     "evidence_location": "system sec 4.2.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 11,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12991",
+   "title": "DAVA: Decoding Art With Visual Analytics Through Feature Modeling and Multi-Agent Collaboration",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3653892",
+   "system_id": "dava",
+   "prefilter_score": 6.061,
+   "prefilter_parts": {
+    "relevance_density": 4.132,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 8.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Finally, (C) Interdisciplinary Interpretation (T5, T6) engages domain-informed agents in dialogue with the user, offering cross-domain perspectives and guiding interpretation.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Following the design tasks, we developed DAVA as an online system with three modules (Fig. 1): (1) data storage, which preprocesses inputs from multiple sources and stores them in a database; (2) data analysis, which performs structural feature extraction, pattern modeling, and multi-agent interpretation in the backend; (3) data visualization, which presents the outputs of",
+     "evidence_location": "system sec 3.B (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10222",
+   "title": "CoAutoML: User Interface Framework for Machine Learning Novices using LLM-based AutoML and Test-Driven Machine Teaching",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789153",
+   "system_id": "coautoml",
+   "prefilter_score": 6.05,
+   "prefilter_parts": {
+    "relevance_density": 3.85,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 7.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "our user-facing framework that combines the understandability of conversation with Large Language Models (LLMs) and the interface scaffolding necessary",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our system integrates three core components: (1) a conversational LLM interface (left) for ML task guidance",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13183",
+   "title": "RAGExplorer: A Visual Analytics System for the Comparative Diagnosis of RAG Systems",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694443",
+   "system_id": "ragexplorer",
+   "prefilter_score": 6.033,
+   "prefilter_parts": {
+    "relevance_density": 4.333,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 9.16
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Component Configuration View (A) allows users to define an experimental space by selecting options for each RAG component.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "5764",
+   "title": "GuideMe: A VLM-Based System Assisting Independent Smartphone Learning for Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791448",
+   "system_id": "guideme",
+   "prefilter_score": 6.004,
+   "prefilter_parts": {
+    "relevance_density": 3.904,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 7.79
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can open GuideMe to ask a question in an app; GuideMe then uses a VLM to analyze the Multimodal context of the current app and the user’s query.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-091",
+     "pattern_name": "In-Situ Agent Presence",
+     "pattern_summary": "The system's activity is rendered within the work surface itself — as cursors, marks, live strokes, or attached companions — instead of being confined to a separate conversation panel.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The system must bypass this cognitive load by providing in-situ visual anchors directly on the interface, simulating the deictic gestures (pointing) used by human helpers.",
+     "evidence_location": "system sec 3.4.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3388",
+   "title": "FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713863",
+   "system_id": "fontcraft",
+   "prefilter_score": 5.993,
+   "prefilter_parts": {
+    "relevance_density": 4.118,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 8.34
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "As shown in Figure 2, our UI contains the character design area, the multimodal input area, the character collection area, and the history area.",
+     "evidence_location": "system sec 3.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13419",
+   "title": "CodeToon: Story Ideation, Auto Comic Generation, and Structure Mapping for Code-Driven Storytelling",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545617",
+   "system_id": "codetoon",
+   "prefilter_score": 5.974,
+   "prefilter_parts": {
+    "relevance_density": 4.024,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 8.08
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "System interface: (A) drop-down allows users to check potential code examples for basic programming concepts, (B) code container, (C) button that generates story template from code in code container, (D) story template, (E) drawing canvas for comics, (F) tool palette, (G) style palette, and (H) buttons for changing the interface layout",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13667",
+   "title": "MACEDON : Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747655",
+   "system_id": "macedon",
+   "prefilter_score": 5.956,
+   "prefilter_parts": {
+    "relevance_density": 3.756,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 7.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "It provides three basic dashboards: (A) Evaluation Dashboard provides the current score of their code in five dimensions(clarity, documentation, redundancy, time efficiency, and space efficiency); (B) a button for user to trigger Optimization Dashboard; (C) Optimization Dashboard provides…",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "MACEDON is an extension of the Visual Studio Code.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5486",
+   "title": "Protosampling: Enabling Free-Form Convergence of Sampling and Prototyping through Canvas-Driven Visual AI Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791884",
+   "system_id": "protosampling",
+   "prefilter_score": 5.939,
+   "prefilter_parts": {
+    "relevance_density": 3.689,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 7.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-026",
+     "pattern_name": "Unified Workspace",
+     "pattern_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Tightening the loop between sampling and prototyping requires a workspace that invites open-ended exploration and creation while also bringing materials together.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5071",
+   "title": "PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790919",
+   "system_id": "privweb",
+   "prefilter_score": 5.938,
+   "prefilter_parts": {
+    "relevance_density": 5.138,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 16.49
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we designed and implemented PrivWeb, a trusted add-on on web agents that utilizes a localized LLM to anonymize",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16762",
+   "title": "ClayScape: A GenAI-Supported Workflow for Designing Chinese Style Ceramics with Clay 3D Printing",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812941",
+   "system_id": "clayscape",
+   "prefilter_score": 5.913,
+   "prefilter_parts": {
+    "relevance_density": 3.984,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 7.94
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The interface of ClayScape consists of three interconnected workspaces: an AI prompt area, a 3D design preview, and a clay print preview (see Fig. 11).",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16163",
+   "title": "3DALL-E: Integrating Text-to-Image AI in 3D Design Workflows",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3596098",
+   "system_id": "3dalle",
+   "prefilter_score": 5.911,
+   "prefilter_parts": {
+    "relevance_density": 5.111,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 16.4
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we integrated DALL-E, GPT-3, and CLIP within a CAD software in 3DALL-E, a plugin that generates 2D image inspiration for 3D design",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "10097",
+   "title": "Evaluating Descriptive Quality of AI-Generated Audio Using Image-Schemas",
+   "venue": "iui",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584083",
+   "system_id": "10097",
+   "prefilter_score": 5.893,
+   "prefilter_parts": {
+    "relevance_density": 3.193,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 5.85
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A language-based interface was implemented as shown in (c).",
+     "evidence_location": "fig 6"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "9382",
+   "title": "IntentWeave: A Progressive Entry Ladder for Multi-Surface Browser Agents in Cloud Portals",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798973",
+   "system_id": "intentweave",
+   "prefilter_score": 5.879,
+   "prefilter_parts": {
+    "relevance_density": 4.829,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 11.95
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We implement IntentWeave as a browser-extension prototype on the Alibaba Cloud website",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "compare three entry strategies in a within-subjects study (N=16)",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14017",
+   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00043",
+   "system_id": "convomap",
+   "prefilter_score": 5.868,
+   "prefilter_parts": {
+    "relevance_density": 4.239,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 8.88
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ConvoMap’s user interface is organized into three panels: a Topic Overview (Figure 1.1), a Semantic Map (Figure 1.2), and a Conversation Detailed View (Figure 1.3).",
+     "evidence_location": "full text sec IV-A"
+    },
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The Conversation Detailed View (3), which display all message content in blocks, allowing users to either view by agent or by conversation (d).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5578",
+   "title": "Conversational Inoculation to Enhance Resistance to Misinformation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790954",
+   "system_id": "5578",
+   "prefilter_score": 5.849,
+   "prefilter_parts": {
+    "relevance_density": 3.649,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 7.24
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The MindFort system implemented three experimental conditions (the treatments). From left: (a) Reading, (b) Writing, and (c) Chatbot condition.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-089",
+     "pattern_name": "Chat Panels",
+     "pattern_summary": "The interaction surface is a vertically scrolling transcript of alternating turns with a persistent composition area anchored below it.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "We investigate Conversational Inoculation, a method to help people build resistance to misinformation through dynamic conversations with a chatbot.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3308",
+   "title": "AI-Assisted Causal Pathway Diagram for Human-Centered Design",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642179",
+   "system_id": "3308",
+   "prefilter_score": 5.845,
+   "prefilter_parts": {
+    "relevance_density": 3.595,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 7.07
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we developed a plugin in Miro [73], a widely used diagramming platform",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6238",
+   "title": "Surfacing Governing Principles for Chatbots: A Workbench and Comparative Study",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790612",
+   "system_id": "6238",
+   "prefilter_score": 5.843,
+   "prefilter_parts": {
+    "relevance_density": 3.743,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 7.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Its main interface provides seamless access to three primary panels: the Chatbot Evaluation panel, the Principles List panel (both discussed below), and the Chatbot List panel.",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "This panel supports two interaction modes: single-answer mode, which provides a single response per query and allows to focus more on the conversation sequence, and multiple-answer mode, which provides a range of three different chatbot responses and allows service owners to examine variants in the chatbot responses.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5866",
+   "title": "Beyond Descriptions: A Generative Scene2Audio Framework for Blind and Low-Vision Users to Experience Vista Landscapes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791655",
+   "system_id": "5866",
+   "prefilter_score": 5.817,
+   "prefilter_parts": {
+    "relevance_density": 2.817,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 5.03
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the bottom navigation bar hosts the four audio files in the modes labeled Brief, Detail, Speech, and Audio, with the active mode highlighted",
+     "evidence_location": "system sec"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5013",
+   "title": "Designing and Evaluating AI Margin Notes in Document Reader Software",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790786",
+   "system_id": "5013",
+   "prefilter_score": 5.812,
+   "prefilter_parts": {
+    "relevance_density": 3.112,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 5.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "pattern_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Different ways to leverage LLM capabilities in document reader software: (a) we propose AI margin notes that are integrated with the document text unlike (b) chat-based interfaces that are separated from the document text.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We explore integrating AI into document comments, a concept we formalize as AI margin notes.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16652",
+   "title": "TaskLens: Generating Task-Conditioned Scaffolded Interfaces for Learning Professional Creative Software",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813081",
+   "system_id": "tasklens",
+   "prefilter_score": 5.796,
+   "prefilter_parts": {
+    "relevance_density": 4.896,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We evaluate TaskLens by deploying two LLM-generated scaffolded interfaces in Blender, a professional 3D modeling software.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9487",
+   "title": "PedaCo-Gen: Scaffolding Pedagogical Agency in Human-AI Collaborative Video Authoring",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798741",
+   "system_id": "pedacogen",
+   "prefilter_score": 5.778,
+   "prefilter_parts": {
+    "relevance_density": 4.078,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 8.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "pattern_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Overview of the PedaCo-Gen system interface for human-AI collaborative educational video authoring. (a) Learning Content Input Panel (b) Principles and Constraints Settings Panel (c) Review Instructions Panel (d) Script Review Results Panel (e) Generated Video Script Panel (f) Generated Video Preview Player (g) Workflow Progress Bar.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10419",
+   "title": "Skeptik: A Hybrid Framework for Combating Potential Misinformation in Journalism",
+   "venue": "tiis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3766891",
+   "system_id": "skeptik",
+   "prefilter_score": 5.771,
+   "prefilter_parts": {
+    "relevance_density": 3.971,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 7.93
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Operating as a web browser extension, Skeptik automatically highlights sentences that may contain logical fallacies",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "Readers are able to interact dynamically with the article and the annotations by communicating with the large language model module.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "5902",
+   "title": "Helping Johnny Make Sense of Privacy Policies with LLMs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791465",
+   "system_id": "5902",
+   "prefilter_score": 5.754,
+   "prefilter_parts": {
+    "relevance_density": 3.354,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 6.28
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "pattern_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We present PRISMe, an interactive browser extension that combines LLM-based policy assessment with a dashboard and customizable chat interface, enabling users to skim quick overviews or explore policy details in depth while browsing.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our tool features privacy alerts via colored scrollbars and a point-of-entry smiley icon (top middle).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12085",
+   "title": "LEVA: Using Large Language Models to Enhance Visual Analytics",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3368060",
+   "system_id": "leva",
+   "prefilter_score": 5.743,
+   "prefilter_parts": {
+    "relevance_density": 4.843,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.28
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "pattern_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We demonstrate how LEVA can be integrated into existing visual analytics systems.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

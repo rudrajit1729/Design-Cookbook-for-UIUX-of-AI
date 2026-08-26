@@ -1,0 +1,690 @@
+{
+ "pattern": {
+  "pattern_id": "pat-052",
+  "pattern_name": "Color Coded Content",
+  "pattern_slug": "color-coded-content",
+  "short_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+  "definition": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight. The attribute is read off the content itself rather than from a separate annotation layer or panel.",
+  "structural_signature": "A one-to-one map from content units to attribute values, rendered as a visual variable of each unit; the content's text, order, and layout are unchanged, so stripping the encoding restores the original artifact exactly. The display allocates no separate region to the attribute, and the number of encoded marks equals the number of content units.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 26,
+ "candidates": [
+  {
+   "rid": "2415",
+   "title": "Supporting Sensemaking of Large Language Model Outputs at Scale",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642139",
+   "system_id": "2415",
+   "evidence": [
+    {
+     "quote": "Each highlights or juxtaposes words, phrases, or entire sentences based on their relationship to the entire collection of LLM responses.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2937",
+   "title": "The HaLLMark Effect: Supporting Provenance and Transparent Use of Large Language Models in Writing with Interactive Visualization",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641895",
+   "system_id": "2937",
+   "evidence": [
+    {
+     "quote": "The system highlights text written (orange) and infuenced (green) by the AI.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3246",
+   "title": "An AI-Resilient Text Rendering Technique for Reading and Skimming Documents",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642699",
+   "system_id": "3246",
+   "evidence": [
+    {
+     "quote": "The lighter the text color that each word is rendered in, the earlier it was cut in the backend’s recursive sentence compression process.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4436",
+   "title": "DBox: Scaffolding Algorithmic Programming Learning through Learner-LLM Co-Decomposition",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713748",
+   "system_id": "dbox",
+   "evidence": [
+    {
+     "quote": "The tree contains steps and substeps labeled as Correct, Incorrect, System Generated, Missing, or Can be Divided.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5262",
+   "title": "Venus and Mars on Canvas: AI-Mediated Collaborative Drawing for Romantic Relationship Insight",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791153",
+   "system_id": "5262",
+   "evidence": [
+    {
+     "quote": "This color serves as their only drawing tool across all three sessions, enabling the system to attribute drawing strokes to each individual.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5284",
+   "title": "InterFlow: Designing Unobtrusive AI to Empower Interviewers in Semi-Structured Interviews",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790866",
+   "system_id": "interflow",
+   "evidence": [
+    {
+     "quote": "an interactive script that dynamically visualizes the structure and status of the interview (the ongoing question in yellow, visited questions in gray, and unvisited ones in blue)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6838",
+   "title": "Affective Typography: The Effect of AI-Driven Font Design on Empathetic Story Reading",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585625",
+   "system_id": "6838",
+   "evidence": [
+    {
+     "quote": "Sentiment is represented by font color and emojis, and prosodic features, such as loudness and pace, are represented by letter boldness and letter spacing.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6937",
+   "title": "Exploring the Design Space of Automatically Generated Emotive Captions for Deaf or Hard of Hearing Users",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585880",
+   "system_id": "6937",
+   "evidence": [
+    {
+     "quote": "The three schemas used typographic changes to the text, color changes, or both.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "7532",
+   "title": "EmoScribe Camera: A Virtual Camera System to Enliven Online Conferencing with Automatically Generated Emotional Text Captions",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650987",
+   "system_id": "emoscribecamera",
+   "evidence": [
+    {
+     "quote": "The estimated emotions are categorized into seven basic emotions based on Ekman's research [9], and the strongest estimated emotion category determines the font and color used for the captions, as shown in …",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "evidence": [
+    {
+     "quote": "Cells, rows, or columns that have been modified, added, or removed are highlighted with different colors",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8435",
+   "title": "Let AI Read First: Enhancing Reading Abilities for Individuals with Dyslexia through Artificial Intelligence",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720113",
+   "system_id": "8435",
+   "evidence": [
+    {
+     "quote": "To address these issues, we introduce LARF (Let AI Read First), the first strategy that employs large language models to annotate text and enhance readability while preserving the original content.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8510",
+   "title": "Prompt it Colorful with Rainbow Bot: Enhancing Video-Based Collaborative Learning by using a Multi-Party AI-Driven Chatbot",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720278",
+   "system_id": "8510",
+   "evidence": [
+    {
+     "quote": "a unique color scheme for visual clarity",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8529",
+   "title": "Scaling Analysis of Creative Activity Traces via Fuzzy Linkography",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720184",
+   "system_id": "8529",
+   "evidence": [
+    {
+     "quote": "we use link color—ranging from white, for very weak links, to black, for very strong links—to indicate the strength of each link",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9244",
+   "title": "Every Persona Has Their Palette: Persona-Based Color Highlighting for Emotional Expression in Text Chat",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799029",
+   "system_id": "9244",
+   "evidence": [
+    {
+     "quote": "We designed a chat system that uses a large language model to suggest color highlighting for selected words without changing the message text",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9334",
+   "title": "Glanceable Verification Indicators for AI-Assisted Storytelling",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798491",
+   "system_id": "9334",
+   "evidence": [
+    {
+     "quote": "The verifiable condition added color-coded confidence indicators, which matched quotes to sources (green for strong, yellow for partial, and red for weak match).",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10149",
+   "title": "Annota: Peer-based AI Hints Towards Learning Qualitative Coding at Scale",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645168",
+   "system_id": "annota",
+   "evidence": [
+    {
+     "quote": "Red highlights indicate annotations predicted as \"Not Relevant\" and yellow as \"Relevant\", dashed red borders indicate sentences predicted as \"Missed\".",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12428",
+   "title": "FinFlier: Automating Graphical Overlays for Financial Visualizations With Knowledge-Grounding Large Language Model",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3514138",
+   "system_id": "finflier",
+   "evidence": [
+    {
+     "quote": "Narrative Panel (Figure 9 (B)) displays the annotated textual content, where the background color of subjects is added, numerical values are underlined, and trend words are boxed.",
+     "location": "system sec 4.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "system_id": "13637",
+   "evidence": [
+    {
+     "quote": "The color-coding of cards marked as conflicts drew user attention sometimes entirely away from manual inspection of nonmarked cards.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "system_id": "echoladder",
+   "evidence": [
+    {
+     "quote": "(b) Three statuses of the suggestions: White (Generation of spatial modification in progress), Blue (Generation completed, pending application), Green (Applied).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13684",
+   "title": "AbstractExplorer: Leveraging Structure-Mapping Theory to Enhance Comparative Close Reading at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747773",
+   "system_id": "abstractexplorer",
+   "evidence": [
+    {
+     "quote": "AbstractExplorer has a unique combination of LLM-powered (1) faceted comparative close reading with (2) role highlighting enhanced by (3) structure-based ordering and (4) alignment.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13714",
+   "title": "DxHF: Providing High-Quality Human Feedback for LLM Alignment with Interactive Decomposition",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747600",
+   "system_id": "dxhf",
+   "evidence": [
+    {
+     "quote": "It enhances the comparison process by showing decomposed claims, visually encoding the relevance of claims to the conversation and linking similar claims.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14867",
+   "title": "MetaWriter: Exploring the Potential and Perils of AI Writing Support in Scientific Peer Review",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637371",
+   "system_id": "metawriter",
+   "evidence": [
+    {
+     "quote": "color-coded tags highlight content related to considerations on the rubric agreed upon by the academic community",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15232",
+   "title": "Leveraging Learner Errors in Digital Argumentation Learning: How ALure Helps Students Learn from their Mistakes and Write Better Arguments",
+   "venue": "cscw",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711023",
+   "system_id": "15232",
+   "evidence": [
+    {
+     "quote": "color-coding the claims, premises, and errors in the input text",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16043",
+   "title": "Metaphorian: Leveraging Large Language Models to Support Extended Metaphor Creation for Science Writing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595996",
+   "system_id": "metaphorian",
+   "evidence": [
+    {
+     "quote": "If users clicked on the understandability button, the nodes of metaphor ideas would be color coded depending on the level of difculty, blue for the scientifc concepts that are easy to understand, white for neutral, and red for those that were comparatively hard to understand.",
+     "location": "full text sec 5.2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16234",
+   "title": "GlassMail: Towards Personalised Wearable Assistant for On-the-Go Email Creation on Smart Glasses",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660683",
+   "system_id": "glassmail",
+   "evidence": [
+    {
+     "quote": "diferent methods to reduce the workload caused by adding context, such as using an unnoticeable colour to display unchanged te…",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "17234",
+   "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3702320",
+   "system_id": "17234",
+   "evidence": [
+    {
+     "quote": "One technique that has been proposed and implemented to help programmers locate potential errors is to highlight uncertain tokens.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  }
+ ]
+}

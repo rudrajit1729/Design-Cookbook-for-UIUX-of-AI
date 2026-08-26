@@ -1,0 +1,1074 @@
+{
+ "pattern": {
+  "pattern_id": "pat-088",
+  "pattern_name": "AI Panels for Host Application",
+  "pattern_slug": "ai-panels-for-host-application",
+  "short_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+  "definition": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow. The host keeps its own structure and remains usable without the addition. The design move is the attachment point: where in the host the capability is inserted.",
+  "structural_signature": "Two separable layers exist: a pre-existing host surface with its own controls and content, and an added layer (plugin, browser extension overlay, injected step, docked component) that renders generated content into or beside the host. The added layer is anchored to identifiable host locations — particular spans of host content, particular stages of the host's flow, particular composition steps — and the anchoring, not the generation, is what the paper specifies. Detaching the layer leaves the host intact.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "4970",
+   "title": "Collaborative Document Editing with Multiple Users and AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790648",
+   "system_id": "4970",
+   "evidence": [
+    {
+     "quote": "Our design goal is to embed AI writing support directly into a shared document environment. We realise this by introducing AI agents into a standard collaborative editor UI.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5013",
+   "title": "Designing and Evaluating AI Margin Notes in Document Reader Software",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790786",
+   "system_id": "5013",
+   "evidence": [
+    {
+     "quote": "We explore integrating AI into document comments, a concept we formalize as AI margin notes.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5071",
+   "title": "PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790919",
+   "system_id": "privweb",
+   "evidence": [
+    {
+     "quote": "we designed and implemented PrivWeb, a trusted add-on on web agents that utilizes a localized LLM to anonymize",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5133",
+   "title": "Botender: Supporting Communities in Collaboratively Designing AI Agents through Case-Based Provocations",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790500",
+   "system_id": "botender",
+   "evidence": [
+    {
+     "quote": "On the left, platform events are captured by Botender’s alwaysrunning event listener, which translates them into information the agent architecture can understand.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5286",
+   "title": "AI meets Mathematics Education: Supporting Instructors in Large Mathematics Classes with Context-Aware AI",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791236",
+   "system_id": "5286",
+   "evidence": [
+    {
+     "quote": "Specifically, we focus on instructional support through AI-powered responses to student questions on a course portal.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5557",
+   "title": "Live in the Loop: Rapid Run-time Feedback for Prompts",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791731",
+   "system_id": "5557",
+   "evidence": [
+    {
+     "quote": "Figure 1 illustrates this outcome in our implementation of ReFiQ in the Python IDE PyCharm.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance"
+   ]
+  },
+  {
+   "rid": "5764",
+   "title": "GuideMe: A VLM-Based System Assisting Independent Smartphone Learning for Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791448",
+   "system_id": "guideme",
+   "evidence": [
+    {
+     "quote": "Users can open GuideMe to ask a question in an app; GuideMe then uses a VLM to analyze the Multimodal context of the current app and the user’s query.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5847",
+   "title": "Designing Around Stigma: Human-Centered LLMs for Menstrual Health",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791318",
+   "system_id": "5847",
+   "evidence": [
+    {
+     "quote": "Second, reliance on subsidized “social data” bundles meant that embedded AI within familiar apps was far more accessible than standalone tools",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5852",
+   "title": "Epimopilot : An LLM-infused Epistemic Emotion Support System to Boost Self-regulated Asynchronous Online Video Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791067",
+   "system_id": "epimopilot",
+   "evidence": [
+    {
+     "quote": "The front end is a browser extension that dynamically injects the aforementioned components onto existing video platforms.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5902",
+   "title": "Helping Johnny Make Sense of Privacy Policies with LLMs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791465",
+   "system_id": "5902",
+   "evidence": [
+    {
+     "quote": "Our tool features privacy alerts via colored scrollbars and a point-of-entry smiley icon (top middle).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6023",
+   "title": "CHOIR: A Chatbot-mediated Organizational Memory Leveraging Communication in University Research Labs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791314",
+   "system_id": "choir",
+   "evidence": [
+    {
+     "quote": "We accomplish these goals by embedding CHOIR as a chatbot within the lab’s communication platform, i.e., Slack.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6099",
+   "title": "EcoAssist: Embedding Sustainability into AI-Assisted Frontend Development",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791330",
+   "system_id": "ecoassist",
+   "evidence": [
+    {
+     "quote": "To address this gap, we introduce EcoAssist, an energy-aware assistant integrated into an IDE that analyzes AI-generated frontend code, estimates its energy footprint, and proposes targeted optimizations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6135",
+   "title": "CritiqueCrew: Orchestrating Multi-Perspective Conversational Design Critique",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791391",
+   "system_id": "critiquecrew",
+   "evidence": [
+    {
+     "quote": "We introduce CritiqueCrew, a Figma tool that supports designers through conversational critique.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6174",
+   "title": "A11yExtensions: Accessibility Extensions to Augment Mobile AI Assistive Technology In-Situ",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791559",
+   "system_id": "a11yextensions",
+   "evidence": [
+    {
+     "quote": "We propose A11yExtensions, in-situ interventions that augment existing mobile AI assistive technology with add-on services.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6295",
+   "title": "BuyMate: Making AI Interventions Effective in Promoting Rational Consumption in Live Commerce",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790928",
+   "system_id": "buymate",
+   "evidence": [
+    {
+     "quote": "When users enable the “Rational Consumption Support Mode” to enter a live-streaming room, a “Similar Product Comparison” button is placed at the top.",
+     "location": "system sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "6317",
+   "title": "Facilitating Proactive and Reactive Guidance for Decision Making on the Web: A Design Probe with WebSeek",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791945",
+   "system_id": "6317",
+   "evidence": [
+    {
+     "quote": "We present WebSeek, a mixed-initiative browser extension that enables This work is licensed under a Creative Commons Attribution 4.0 International License. CHI ’26, Barcelona, Spain © 2026 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-2278-3/26/04 https://doi.org/10.1145/3772318.3791945 users to discover and extract information from webpages to then flexibly build, transform, and refine tangible data artifacts–such as tables, lists, and visualizations–all within an interactive canvas.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6885",
+   "title": "Collaborative Diffusion: Boosting Designerly Co-Creation with Generative AI",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585680",
+   "system_id": "6885",
+   "evidence": [
+    {
+     "quote": "Image generation is performed within the Telegram chat interface in two forms: (1) text-to-image, using a textual prompt, and (2) imageto-image, using a textual prompt as well as an input image.",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7049",
+   "title": "PromptInfuser: Bringing User Interface Mock-ups to Life with Large Language Models",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585628",
+   "system_id": "promptinfuser",
+   "evidence": [
+    {
+     "quote": "we built PromptInfuser, a Figma plugin for authoring LLM-infused mock-ups",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7633",
+   "title": "Leveraging Large Language Models for Realizing Truly Intelligent User Interfaces",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650949",
+   "system_id": "7633",
+   "evidence": [
+    {
+     "quote": "We present an approach to integrate non-intrusive LLMs guidance into existing user interfaces. More specifically, we integrate LLM-supported user interface components into an existing scholarly knowledge infrastructure.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "evidence": [
+    {
+     "quote": "a Jupyter Notebook extension that continuously tracks changes to dataframes and model metrics",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7693",
+   "title": "SHADE: Empowering Consumer Choice for Sustainable Fashion with AI and Digital Tooling",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651025",
+   "system_id": "shade",
+   "evidence": [
+    {
+     "quote": "Through the desktop browser extension, users can seamlessly discover new information on brands while browsing the internet, and its AI capabilities enable them to find visually similar items to those they come across.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7718",
+   "title": "Supporting Novice Researchers to Write Literature Review using Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650787",
+   "system_id": "7718",
+   "evidence": [
+    {
+     "quote": "LitWeaver is implemented as a Chrome Extension for Notion, a web-based document application. It detects content and user focus in Notion, displaying a custom widget on the side",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8019",
+   "title": "Enhancing Programming Error Messages in Real Time with Generative AI",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3647967",
+   "system_id": "8019",
+   "evidence": [
+    {
+     "quote": "We extend this work by implementing feedback from ChatGPT for all programs submitted to our automated assessment tool, Athene, providing help for compiler, run-time, and logic errors.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8096",
+   "title": "You Don't Need a University Degree to Comprehend Data Protection This Way: LLM-Powered Interactive Privacy Policy Assessment",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719816",
+   "system_id": "8096",
+   "evidence": [
+    {
+     "quote": "For the practical part of our study, we implemented PRISMe (see Figure 1), a Chrome browser extension.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8133",
+   "title": "Aptly: Making Mobile Apps from Natural Language",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720081",
+   "system_id": "aptly",
+   "evidence": [
+    {
+     "quote": "The Aptly user interface (Figure 1), integrated with App Inventor platform, introduces a new button labeled \"Project from description\".",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8356",
+   "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719708",
+   "system_id": "gptfootprint",
+   "evidence": [
+    {
+     "quote": "We implemented GPTFootprint as a Chrome Extension that layers on top of the ChatGPT website for ease of use.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8405",
+   "title": "IntentPrism: Human-AI Intent Manifestation for Web Information Foraging",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719744",
+   "system_id": "intentprism",
+   "evidence": [
+    {
+     "quote": "Implemented as a web browser plug-in, IntentPrism provides real-time intent analysis from bookmarked web content, intent tree visualization and relevant content highlighting on webpages.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8510",
+   "title": "Prompt it Colorful with Rainbow Bot: Enhancing Video-Based Collaborative Learning by using a Multi-Party AI-Driven Chatbot",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720278",
+   "system_id": "8510",
+   "evidence": [
+    {
+     "quote": "For the present study, an AI-driven chatbot was integrated, which visually stands out from the regular chat through color differentiation.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8605",
+   "title": "UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719729",
+   "system_id": "uxagent",
+   "evidence": [
+    {
+     "quote": "The LLM Agent interacts with a Chrome browser through the Universal Browser Connector Module. This module parses the raw HTML extracted from Chrome and simplifies it for the agent.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8769",
+   "title": "Demonstrating Diff-MSTC: A Controllable and Context-Aware AI System for Multitrack Mixing in Digital Audio Workstation Cubase",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721167",
+   "system_id": "demonstratingdiffmstc",
+   "evidence": [
+    {
+     "quote": "User interface for Diff-MSTC plugin integrated in DAW Cubase along with usage guidelines.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8784",
+   "title": "Demonstration of VRSight: AI-Driven Real-Time Descriptions to Enhance VR Accessibility for Blind People",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721194",
+   "system_id": "demonstrationofvrsight",
+   "evidence": [
+    {
+     "quote": "This way, users can hear and understand VR environments alongside existing VR audio at any time.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "8813",
+   "title": "Visiobo Demo: Augmenting Static Prints with Projection-based Visual Cueing and Concept Mapping via LLM Reasoning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721169",
+   "system_id": "8813",
+   "evidence": [
+    {
+     "quote": "Visiobo Demo: Augmenting Static Prints with Projection-based Visual Cueing and Concept Mapping via LLM Reasoning",
+     "location": "title"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9370",
+   "title": "INLAY: Preemptive, In-Context Intelligence for Casual Web Browsing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799065",
+   "system_id": "inlay",
+   "evidence": [
+    {
+     "quote": "proactively embedding AI-driven insights and cues directly within webpages",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9382",
+   "title": "IntentWeave: A Progressive Entry Ladder for Multi-Surface Browser Agents in Cloud Portals",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798973",
+   "system_id": "intentweave",
+   "evidence": [
+    {
+     "quote": "We implement IntentWeave as a browser-extension prototype on the Alibaba Cloud website",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9512",
+   "title": "PromptHelper: A Prompt Recommender System for Encouraging Creativity in AI Chatbot Interactions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798681",
+   "system_id": "prompthelper",
+   "evidence": [
+    {
+     "quote": "In contrast to approaches that automatically optimize or rewrite prompts on users’ behalf [14, 16, 45], PRS are designed to complement existing chatbot interfaces by offering guidance while preserving user agency and control.",
+     "location": "full text, intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9524",
+   "title": "ReFashionPal: Exploring AI Assistant Embedded in How-to Videos to Support Garment Repurposing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798775",
+   "system_id": "refashionpal",
+   "evidence": [
+    {
+     "quote": "ReFashionPal embeds an LLM assistant into how-to videos, and we invited 14 participants to use it during repurposing tasks.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9715",
+   "title": "WebPerceptor: An Open Source Chromium Plugin for Real-Time LLM-Based In-Line, In-Browser Re-Writing of Website Content",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798730",
+   "system_id": "webperceptor",
+   "evidence": [
+    {
+     "quote": "We present WebPerceptor an open source, client-side Chromium plugin which, for any webpage, identifies text content, relays this to a local or cloud-based LLM with a user-defined prompt and then modifies the existing text (to replace, append, or remove it) based on the LLM response.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10160",
+   "title": "DataDive: Supporting Readers' Contextualization of Statistical Statements with Data Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645155",
+   "system_id": "datadive",
+   "evidence": [
+    {
+     "quote": "DataDive is developed as a browser extension, and we also built a standalone version for the controlled experiment.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10178",
+   "title": "Empirical Evidence on Conversational Control of GUI in Semantic Automation",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645172",
+   "system_id": "10178",
+   "evidence": [
+    {
+     "quote": "We augment the UI with our conversational engine and propose In-situ Prompt Engineering",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "system_id": "jamplate",
+   "evidence": [
+    {
+     "quote": "Developed as a digital whiteboard plugin, Jamplate integrates LLM capabilities into design templates, streamlining the collection and organization of user-generated content and LLM responses within the template structure.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

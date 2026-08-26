@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-097",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "3704",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Canonical instance: execution is explicitly paused so the user can inject new messages in the middle of the same run. The quote identifies timing, control action, and effect on the in-flight process; the mechanism also transfers readily beyond multi-agent systems.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3885",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The user interrupts an agent\u2019s ongoing utterance and immediately redirects the interaction, plainly demonstrating barge-in rather than merely taking a later conversational turn. It is a clean speech-level instance, though narrower than a general mechanism for modifying persistent computational state.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4509",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The simulation can be paused at any point, preserving its partial state while the user performs a different guided activity. This clearly makes the simulation non-atomic, although interruption is one feature of a domain-specific self-care experience rather than the paper\u2019s apparent central contribution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A detected condition pauses active agent execution and opens a live Allow/Deny decision that determines how the same run proceeds. This is a strong, consequential, and transferable checkpoint form of mid-run intervention, despite the supplied quotation ending prematurely.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5240",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quotation establishes iterative refinement across creation stages but does not say that execution remains live, is paused, or accepts changes affecting an in-flight run. On the supplied evidence, this is staged co-creation or artifact revision rather than Mid-Run Intervention.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports refinement at workflow stages, not a live control channel acting on an executing process."
+  },
+  {
+   "rid": "5322",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "The user intervenes during embodied assistance and requests a replacement approach, causing a new stimulation sequence to be generated. This strongly suggests substitution within the ongoing assistance process, though the quote does not explicitly say whether the current sequence is aborted or paused; the hardware-dependent realization limits direct transfer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5627",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Repairing agent mistakes while tasks are executing supports intervention within a multi-step run. However, the quote does not describe the control, whether execution pauses, or how repairs alter retained partial state, so mechanism clarity and coding confidence must remain conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6060",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The automation pauses during execution on risky screens and solicits intervention before proceeding. The timing and consequential control point are explicit, although the quote does not specify the available user commands and the trigger is confined to detected risk conditions.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8667",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Allowing a user to interject into and steer an otherwise agent-driven conversation makes the overall conversational run non-atomic. The evidence is direct about intervention but does not show whether an active model utterance is interrupted, how state is preserved, or what steering operation is exposed.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9385",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Intermediate checkpoints expose partial research state for intervention before the overall run completes, fitting a checkpoint-based version of the pattern. The quote does not identify what users can change or how those changes affect subsequent execution, so it falls short of a fully specified exemplar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9743",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Users can inject prompts or current environmental photos after an ongoing generated conversation deviates, providing a concrete steering channel for the continuing session. It remains unclear whether this interrupts an active generation or merely supplies the next conversational turn, weakening structural confidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10227",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Interrupting an erroneous generation and steering the model toward a different response is the pattern\u2019s central mechanism and a substantial change from atomic generation. The title and quote strongly establish visualization and control of active reasoning, although the exact interface operation is not included in the available evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13492",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This is an unusually pure exemplar: users change guiding prompts during generation, so new parameters affect the currently executing image process rather than a subsequent run. The timing, editable parameter, and effect are explicit, and the mechanism generalizes readily to other progressive generators.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13652",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "An unscripted user question can be interjected during an executing conversational scene, making the broader simulation responsive before completion. The truncated quote does not demonstrate interruption of an active agent turn, pausing, or modification of explicit partial state, so this is only moderate evidence for the structural signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13756",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Morae explicitly detects decision points during task execution, pauses the same run, and lets the user determine how it continues. This directly supplies the live control point, valid partial state, and consequential mid-run choice required by the pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13806",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Intervention in an optimization process plausibly alters an unfinished run and is broadly transferable. But the abstract-level quote does not establish whether optimization is actually paused or modified in flight rather than adjusted between iterations, nor does it name the available controls.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16863",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 5,
+    "evidence_strength": 3
+   },
+   "reason": "Building responses in tandem with the model and intervening in algorithmic decisions suggests an editable, non-atomic generation process. The evidence does not specify timing, controls, preserved partial state, or whether intervention occurs inside a run rather than through successive turns, so the pattern assignment remains tentative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

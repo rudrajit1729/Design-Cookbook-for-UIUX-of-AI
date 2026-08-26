@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-015",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "15712",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system initiates elicitation before the meeting and turns novices\u2019 answers into a mentor-facing summary, closely matching question-led specification and downstream consumption. The quote does not reveal the question structure or whether later questions adapt to answers.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3951",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A particularly clean inversion of prompt-then-generate: the system derives short questions from an incoming email, and the user specifies the reply by answering them. The mechanism, input source, user action, and resulting task are all explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9849",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Three system-defined questions establish the specification slots, and the resulting answer-derived scaffold is explicitly consumed throughout generation. The parallel-self application is unusual, while the underlying elicitation mechanism transfers readily.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15126",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote shows an AI conducting a pre-defined practice interview, but not answers becoming a specification for a subsequent system stage. This is better coded as interview simulation or tutoring.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence demonstrates interview practice, not question-driven construction of a specification consumed by the system."
+  },
+  {
+   "rid": "5574",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "LLM-generated multiple-choice questions define the decision slots through which developers articulate a privacy specification. The quote clearly shows elicitation but does not explicitly describe how the completed decisions are consumed downstream.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8366",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The evidence provides an unusually concrete loop: system clarification questions and generated controls precede user input, and GUI answers become a structured JSON record. It is slightly less canonical because the clarification interface appears inside an existing chat response and may follow an initial prompt.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14045",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The assistant requests a specific missing input and directly uses the response for code and environment analysis. This supports elicitation, though it resembles a single prerequisite request more than a question-defined, multi-slot specification.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4098",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "LLM-posed multiple-choice questions structure intent clarification, but the wording implies that users first express an intent and only then receive questions. It is therefore a legitimate clarification-prompt variant, not the cleanest inversion of prompt-first interaction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9122",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The structured dialogue elicits four named specification slots, making the system\u2019s question framework determine exactly what the user supplies. Although an initial goal precedes the dialogue, the operative pedagogical specification is assembled through system-led elicitation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15463",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "The quote establishes only that the process begins with an open-ended question. It does not show subsequent system questions, an answer record, adaptation, or any downstream stage consuming responses; the title suggests more, but the available evidence cannot establish it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3962",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system repeatedly asks for circumstances and symptom details until it judges the context sufficient, clearly making elicited answers the working record. The medical setting limits direct transfer and the quote does not state measured outcomes.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8514",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The system begins with 25 defined questions and uses the resulting demographic record to condition a digital twin. This plainly has the structural signature, although it is closer to standardized profiling than adaptive intent elicitation and its practical benefit is unsubstantiated here.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10233",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Three sequential questions define the environment, soundscape, and companionship slots from which the personalized experience is specified. The mechanism is explicit and portable, though impact must be inferred from the title and interaction description.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14816",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote supplies general background about what conversational agents can and cannot do. It does not describe the authors\u2019 own interface, its question loop, or answers being consumed as a specification.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence is a general statement about conversational agents and does not demonstrate an interface of the paper\u2019s own instantiating the pattern."
+  },
+  {
+   "rid": "5260",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A stepwise AI-led dialogue elicits the details that constitute an adolescent\u2019s narrative, which is consistent with question-driven specification. The quote does not expose the actual questions, answer representation, or downstream processing, so several structural details remain implicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11327",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This is a defining instance: the machine adaptively chooses questions, collects user feedback, and explicitly incorporates that record into story generation. Both the complete loop and its transferable mixed-initiative mechanism are stated directly.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14837",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The system asks learners questions about visual-design examples, but the quote describes a quiz or instructional assessment. It does not show answers functioning as a specification for work the system subsequently produces.",
+   "disqualify": true,
+   "disqualify_reason": "This is a neighbouring quiz/tutoring interaction, not elicitation of a user specification."
+  },
+  {
+   "rid": "4144",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The assistant asks up to three questions to disambiguate intent, providing a concrete clarification loop. Because the loop follows an initial user expression of intent and the quote does not state how answers are represented or consumed, it is a secondary rather than defining exemplar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13647",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Adaptive questions incrementally collect task-relevant context and explicitly feed coherent draft synthesis, matching the pattern end to end. Applying this inversion to hands-free, eyes-free writing makes the interaction consequential and non-obvious.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13758",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The system leads an autobiographical conversation by asking about childhood, plausibly eliciting source material for writing. The supplied quote does not state how answers shape the autobiography or whether the questions define a structured specification.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5560",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The system explicitly asks for feelings or immediate needs and uses those self-reports to determine subsequent interaction. The complete question-answer-consumption relationship is present, though the broad prompts form a small and fairly conventional specification.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16621",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "A system-authored sentence stem does define one structured input slot, but the evidence shows neither multiple-stage elicitation nor the patient goal being consumed downstream. It is a weak, single-field instance based on the available quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5259",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Sequential screens define concrete slots for values, care goals, and trade-off ratings, and the completed record initializes the personalized agent. This strongly matches structured elicitation, although the quote describes configuration fields rather than an interrogative conversational turn.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9749",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A structured multi-round dialogue asks for an event, feelings, and value concerns, giving the elicitation a legible slot structure. The evidence does not explicitly say how those answers are encoded or used in the later emotional-support stage.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16716",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes mandatory cognitive scaffolds for articulating context and constraints before generation, but no system-authored questions or interrogative loop. It is closer to staged constraint entry or reflection scaffolding.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate the pattern\u2019s required system-authored question turn."
+  },
+  {
+   "rid": "2685",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The prototype provides several disclosure and reflection prompts, confirmation blocks, and an explicit sharing-permission question. This is a clear guided sequence, but the quote only implies\u2014rather than states\u2014how responses become the care-communication record.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9493",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Standardized questionnaires combined with adaptive LLM dialogue make system-defined questions the means of constructing a user profile. The profile outcome is clear, though the quote does not describe individual turns or precisely how answers update it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16756",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Users fill system-defined preference dimensions that presumably configure adaptive learning support, so the specification is structured rather than freely composed. The quote does not establish that these are questions, that the system initiates the loop, or exactly how preferences affect later behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3164",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The AI explicitly leads with prompted and follow-up questions, eliciting the daily material from which journaling proceeds. It is a strong conversational instance, although the quote does not directly state how the accumulated answers are transformed or stored.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9552",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "A guided interface collects inputs step by step and explicitly uses them to generate a personalized storybook, demonstrating structured specification and downstream consumption. The evidence does not show that the steps are phrased as questions or identify the specification slots.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

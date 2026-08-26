@@ -1,0 +1,1613 @@
+{
+ "dimension": {
+  "category_id": "U04",
+  "category_name": "Modality, Embodiment & Rendering",
+  "category_slug": "modality-embodiment-and-output-rendering",
+  "stage": "Taking in the output",
+  "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+  "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+  "pattern_count": 12,
+  "eligible_papers": 399,
+  "candidate_count": 399,
+  "patterns": [
+   {
+    "pattern_id": "pat-043",
+    "pattern_name": "Embodied Avatar",
+    "short_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane."
+   },
+   {
+    "pattern_id": "pat-049",
+    "pattern_name": "Space Registered Overlay",
+    "short_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel."
+   },
+   {
+    "pattern_id": "pat-050",
+    "pattern_name": "Generative Filters",
+    "short_summary": "A chain of generative transformations is placed inside the user's perceptual path, so that what the user perceives is the pipeline's reconstruction rather than the captured signal."
+   },
+   {
+    "pattern_id": "pat-060",
+    "pattern_name": "Multimodal Input",
+    "short_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation."
+   },
+   {
+    "pattern_id": "pat-061",
+    "pattern_name": "Tangible Interaction",
+    "short_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement."
+   },
+   {
+    "pattern_id": "pat-062",
+    "pattern_name": "Voice Interaction",
+    "short_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy."
+   },
+   {
+    "pattern_id": "pat-063",
+    "pattern_name": "Multimodal Output",
+    "short_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another."
+   },
+   {
+    "pattern_id": "pat-064",
+    "pattern_name": "Nonvisual Navigation",
+    "short_summary": "A structured artifact is exposed as a traversable graph of positions that the user steps through with discrete commands, with the system's response delivered on a nonvisual channel."
+   },
+   {
+    "pattern_id": "pat-065",
+    "pattern_name": "Nonvisual Task Delegation",
+    "short_summary": "The user hands a whole multi-step task to the system through a non-visual act and then stops attending to it; there is no display at any point in the loop."
+   },
+   {
+    "pattern_id": "pat-074",
+    "pattern_name": "Non-Readable to Natural Language Conversion",
+    "short_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form."
+   },
+   {
+    "pattern_id": "pat-076",
+    "pattern_name": "Perceptible Rendering",
+    "short_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable."
+   },
+   {
+    "pattern_id": "pat-078",
+    "pattern_name": "Composite Glyph",
+    "short_summary": "Rather than reusing a standard chart type, the system introduces a new graphical mark whose geometry is designed around the specific property being communicated."
+   }
+  ]
+ },
+ "shard": 9,
+ "candidates": [
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "prefilter_score": 2.25,
+   "prefilter_parts": {
+    "relevance_density": 0.717,
+    "focus": 0.333,
+    "evidence_location": 1.2,
+    "_density_raw": 11.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Interacting with a point in the 2D space finds its corresponding representation in N-dimensional latent space, decodes it, and shows the reconstructed image 𝑥 ′ ∈ 𝑋 ′ along with the original classifier’s prediction 𝑦 ′ ∈ 𝑌 ′ for this sample, with which the user can update their frame.",
+     "evidence_location": "full text fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12537",
+   "title": "JailbreakHunter: A Visual Analytics Approach for Jailbreak Prompts Discovery From Large-Scale Human-LLM Conversational Datasets",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3557568",
+   "system_id": "jailbreakhunter",
+   "prefilter_score": 2.234,
+   "prefilter_parts": {
+    "relevance_density": 0.234,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 8.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-078",
+     "pattern_name": "Composite Glyph",
+     "pattern_summary": "Rather than reusing a standard chart type, the system introduces a new graphical mark whose geometry is designed around the specific property being communicated.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A conversation is represented by a horizontal glyph. The left part",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12281",
+   "title": "AgentLens: Visual Analysis for Agent Behaviors in LLM-Based Autonomous Systems",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3394053",
+   "system_id": "agentlens",
+   "prefilter_score": 2.233,
+   "prefilter_parts": {
+    "relevance_density": 0.358,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 9.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the summarization model generates a succinct behavior description, significantly reducing the information length while maintaining the original meaning",
+     "evidence_location": "full text, system sec IV-B"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8407",
+   "title": "Interactive Sketchpad: A Multimodal Tutoring System for Collaborative, Visual Problem-Solving",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719790",
+   "system_id": "8407",
+   "prefilter_score": 2.224,
+   "prefilter_parts": {
+    "relevance_density": 0.124,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 6.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Interactive Sketchpad enhances problem-solving and tutoring by incorporating a multimodal interaction loop, allowing humans to interact with LMMs using both text and images.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9715",
+   "title": "WebPerceptor: An Open Source Chromium Plugin for Real-Time LLM-Based In-Line, In-Browser Re-Writing of Website Content",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798730",
+   "system_id": "webperceptor",
+   "prefilter_score": 2.224,
+   "prefilter_parts": {
+    "relevance_density": 0.924,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 12.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-050",
+     "pattern_name": "Generative Filters",
+     "pattern_summary": "A chain of generative transformations is placed inside the user's perceptual path, so that what the user perceives is the pipeline's reconstruction rather than the captured signal.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We introduce the \"AI Mediated Web\", an automatic, personalised, inline, real-time remixing of web content by an LLM based on given prompts and presented in-browser such that the user perceives the end result as a published web page.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "15120",
+   "title": "Generative Co-Learners: Enhancing Cognitive and Social Presence of Students in Asynchronous Learning with Generative AI",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701198",
+   "system_id": "15120",
+   "prefilter_score": 2.143,
+   "prefilter_parts": {
+    "relevance_density": 0.276,
+    "focus": 0.667,
+    "evidence_location": 1.2,
+    "_density_raw": 8.64
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When the co-learner responds to the user’s message, the generative agents select the appropriate active action and display it on an enlarged responsive screen.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "An audio chat function that enables users to (a) send voice chat messages to co-learners by clicking on the audio chat button.",
+     "evidence_location": "fig 4"
+    },
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(c) The text from the audio response wi",
+     "evidence_location": "fig 4"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6058",
+   "title": "Agentic Audio Moderator vs Human Moderator in Think-Aloud Usability Testing: Results from a Randomized Controlled Trial: Results from a Randomized Controlled Trial",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791653",
+   "system_id": "6058",
+   "prefilter_score": 2.141,
+   "prefilter_parts": {
+    "relevance_density": 1.241,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.61
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Agentic AI holds promise for usability testing, yet its role as an audio moderator in think-aloud protocols is not well understood.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2685",
+   "title": "CareJournal: A Voice-Based Conversational Agent for Supporting Care Communications",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642163",
+   "system_id": "carejournal",
+   "prefilter_score": 2.096,
+   "prefilter_parts": {
+    "relevance_density": 1.296,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 13.73
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a voice-based conversational agent that supports care-related disclosure between care partners",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8951",
+   "title": "The Reversed Turing Test",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720317",
+   "system_id": "8951",
+   "prefilter_score": 2.014,
+   "prefilter_parts": {
+    "relevance_density": 0.014,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 3.96
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "For our 3D models and textures, we used Meshy AI [2] to create the models, and Mixamo [3] to rig and animate the model of Alan Turing.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "13958",
+   "title": "Development of an Adaptive User Support System Based on Multimodal Large Language Models",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00044",
+   "system_id": "13958",
+   "prefilter_score": 2.01,
+   "prefilter_parts": {
+    "relevance_density": 0.51,
+    "focus": 0.6,
+    "evidence_location": 0.9,
+    "_density_raw": 9.98
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The generated text can be delivered audibly to users, especially aiding those with varying degrees of visual impairments.",
+     "evidence_location": "full text sec III"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15764",
+   "title": "FamilyDittos: Reimagining Intergenerational Interaction through Mimetic Agents",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757600",
+   "system_id": "familydittos",
+   "prefilter_score": 2.003,
+   "prefilter_parts": {
+    "relevance_density": 1.103,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.03
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To address these challenges, we propose using Ditto, a mimetic embodied agent, in video-call-like interactions between an older adult and a remote family member.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3300",
+   "title": "Ivie: Lightweight Anchored Explanations of Just-Generated Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642239",
+   "system_id": "ivie",
+   "prefilter_score": 1.989,
+   "prefilter_parts": {
+    "relevance_density": 1.089,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Explanations are compact and informative. They describe meaningful expressions, from individual variables to entire blocks of code.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8199",
+   "title": "Colin: A Multimodal Human-AI Co-Creation Storytelling System to Support children's Multi-Level Narrative Skills",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719837",
+   "system_id": "colin",
+   "prefilter_score": 1.989,
+   "prefilter_parts": {
+    "relevance_density": 0.689,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 11.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In the building phase, Colin actively encourages children to create connections between elements through drawing and speaking.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we developed Colin, an interactive storytelling tool that supports children’s multi-level narrative skills through both voice and visual modalities",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13573",
+   "title": "WorldSmith: Iterative and Expressive Prompting for World Building with a Generative AI",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606772",
+   "system_id": "worldsmith",
+   "prefilter_score": 1.985,
+   "prefilter_parts": {
+    "relevance_density": 1.185,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 13.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "enable users iteratively visualize and modify elements of their fctional world using a combination of text input, sketching, and region-based flling",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10115",
+   "title": "Living Memories: AI-Generated Characters as Digital Mementos",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584065",
+   "system_id": "10115",
+   "prefilter_score": 1.938,
+   "prefilter_parts": {
+    "relevance_density": 0.138,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 7.03
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The experience started with a 40 second long animated video of Leonardo Da Vinci introducing himself generated using an open-source AI-generated character pipeline.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8046",
+   "title": "Language of Zelda: Facilitating Language Learning Practices Using ChatGPT",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648107",
+   "system_id": "8046",
+   "prefilter_score": 1.928,
+   "prefilter_parts": {
+    "relevance_density": 0.028,
+    "focus": 1.0,
+    "evidence_location": 0.9,
+    "_density_raw": 4.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When an NPC speaks, their dialogue appears in the standard format, and immediately below, Navi provides a translation (in English) in a distinct light blue font.",
+     "evidence_location": "full text, gameplay sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10153",
+   "title": "ExpressEdit: Video Editing with Natural Language and Sketching",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645164",
+   "system_id": "expressedit",
+   "prefilter_score": 1.906,
+   "prefilter_parts": {
+    "relevance_density": 1.006,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we present ExpressEdit, a system that enables editing videos via NL text and sketching on the video frame",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16494",
+   "title": "IKIWISI: An Interactive Visual Pattern Generator for Evaluating the Reliability of Vision-Language Models Without Ground Truth",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735754",
+   "system_id": "ikiwisi",
+   "prefilter_score": 1.905,
+   "prefilter_parts": {
+    "relevance_density": 0.855,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 12.21
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "IKIWISI transforms model outputs into a binary heatmap where green",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13591",
+   "title": "From Gap to Synergy: Enhancing Contextual Understanding through Human-Machine Collaboration in Personalized Systems",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606741",
+   "system_id": "13591",
+   "prefilter_score": 1.82,
+   "prefilter_parts": {
+    "relevance_density": 1.02,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 12.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "provide understandable natural language feedback for efective user involvement",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "prefilter_score": 1.771,
+   "prefilter_parts": {
+    "relevance_density": 0.538,
+    "focus": 0.333,
+    "evidence_location": 0.9,
+    "_density_raw": 10.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we explore the use of LLMs to supplement human effort in translating code into natural language and explainable visualizations",
+     "evidence_location": "full text sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17071",
+   "title": "Where to Hide a Stolen Elephant: Leaps in Creative Writing with Multimodal Machine Intelligence",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3511599",
+   "system_id": "17071",
+   "prefilter_score": 1.71,
+   "prefilter_parts": {
+    "relevance_density": 0.91,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 12.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a multimodal writing support interface that ofers writing suggestions textually, visually, and aurally",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "10270",
+   "title": "SIA: A Framework for Context-Aware Intent Clarification in Speech-Driven Immersive Analytics",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789063",
+   "system_id": "sia",
+   "prefilter_score": 1.684,
+   "prefilter_parts": {
+    "relevance_density": 0.634,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 11.13
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We introduce a context-aware Speech-driven Immersive Analytics framework (SIA) as a speech-oriented approach that leverages speech acts to convey actionable intent.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13606",
+   "title": "SketchGPT: A Sketch-based Multimodal Interface for Application-Agnostic LLM Interaction",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747598",
+   "system_id": "sketchgpt",
+   "prefilter_score": 1.631,
+   "prefilter_parts": {
+    "relevance_density": 0.731,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 11.58
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "SketchGPT, a novel interaction paradigm that integrates sketch and speech input directly over the system interface, facilitating open-ended, context-aware communication with LLMs",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8019",
+   "title": "Enhancing Programming Error Messages in Real Time with Generative AI",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3647967",
+   "system_id": "8019",
+   "prefilter_score": 1.601,
+   "prefilter_parts": {
+    "relevance_density": 0.551,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 10.36
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Both students and instructors have complained for decades that these messages are often cryptic and difcult to understand.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8751",
+   "title": "Rambler in the Wild: A Diary Study of LLM-Assisted Writing With Speech",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706676",
+   "system_id": "8751",
+   "prefilter_score": 1.577,
+   "prefilter_parts": {
+    "relevance_density": 0.248,
+    "focus": 0.429,
+    "evidence_location": 0.9,
+    "_density_raw": 8.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The speech-to-text tool we used is Rambler [10], which has users dictate their impromptu thoughts, placing each segment of recording into a Ramble.",
+     "evidence_location": "full text sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10166",
+   "title": "LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645143",
+   "system_id": "lave",
+   "prefilter_score": 1.575,
+   "prefilter_parts": {
+    "relevance_density": 0.675,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 11.3
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "LAVE automatically generates language descriptions for the user’s footage, serving as the foundation for enabling the LLM to process videos and assist in editing tasks.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14896",
+   "title": "The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3641019",
+   "system_id": "14896",
+   "prefilter_score": 1.383,
+   "prefilter_parts": {
+    "relevance_density": 0.083,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 5.98
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our framework leverages visual-language models to parse and compose multimodal user inputs to provide more accurate and satisfying results.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12085",
+   "title": "LEVA: Using Large Language Models to Enhance Visual Analytics",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3368060",
+   "system_id": "leva",
+   "prefilter_score": 1.382,
+   "prefilter_parts": {
+    "relevance_density": 0.482,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 9.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "generate insight reports with the help of large language models",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8732",
+   "title": "Evaluating an AI Documentation Assistant for Anesthesiology Teams",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706658",
+   "system_id": "8732",
+   "prefilter_score": 1.355,
+   "prefilter_parts": {
+    "relevance_density": 0.055,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 5.49
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In this case study, we demonstrate how speech-based artificial intelligence (AI) assistants that leverage closed-loop communication can increase documentation quality.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13986",
+   "title": "DevTales: A Tool for Providing Narrative Code Histories into Developer Workflows",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00013",
+   "system_id": "devtales",
+   "prefilter_score": 1.302,
+   "prefilter_parts": {
+    "relevance_density": 0.069,
+    "focus": 0.333,
+    "evidence_location": 0.9,
+    "_density_raw": 5.95
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "DevTales generates a code story that summarizes historical changes in a narrative format using recent advances in LLMs.",
+     "evidence_location": "full text sec III"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9992",
+   "title": "Colorbo: Envisioned Mandala Coloringthrough Human-AI Collaboration",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511135",
+   "system_id": "colorbo",
+   "prefilter_score": 1.295,
+   "prefilter_parts": {
+    "relevance_density": 0.345,
+    "focus": 0.5,
+    "evidence_location": 0.45,
+    "_density_raw": 8.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Colorbo then projects the complete mandala onto the paper the user is colorizing, and the user continues coloring by envisioning the outcome based on images from Colorbo.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "In this paper, we focus on paper-based mandala coloring.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "12248",
+   "title": "ChartInsighter: An Approach for Mitigating Hallucination in Time-Series Chart Summary Generation With a Benchmark Dataset",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567122",
+   "system_id": "chartinsighter",
+   "prefilter_score": 1.271,
+   "prefilter_parts": {
+    "relevance_density": 0.221,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 8.34
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We introduce ChartInsighter, which automatically generates chart summaries of time-series data, effectively reducing hallucinations in chart summary generation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15362",
+   "title": "APOLLO: A GPT-based tool to detect phishing emails and generate explanations that warn users",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3733049",
+   "system_id": "apollo",
+   "prefilter_score": 1.257,
+   "prefilter_parts": {
+    "relevance_density": 0.207,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 8.34
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we present APOLLO, a tool based on OpenAI’s GPT-4o to detect phishing emails and generate explanation messages to users about why a specific email is dangerous, thus improving their decision-making capabilities",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "5313",
+   "title": "DiLLS: Interactive Diagnosis of LLM-based Multi-agent Systems via Layered Summary of Agent Behaviors",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790815",
+   "system_id": "dills",
+   "prefilter_score": 1.243,
+   "prefilter_parts": {
+    "relevance_density": 0.193,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 8.28
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "By probing the multi-agent system through natural language, DiLLS derives and organizes information about planning and execution into a structured, multi-layered summary.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3586",
+   "title": "From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713133",
+   "system_id": "3586",
+   "prefilter_score": 1.215,
+   "prefilter_parts": {
+    "relevance_density": 0.165,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 7.81
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "providing natural-language-based analysis of AI’s decision recommendation, e.g., how each feature of a decision making task might contribute to the AI recommendation",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9537",
+   "title": "Reflexia: AI-Assisted Reflection on Personal Media Consumption",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798688",
+   "system_id": "reflexia",
+   "prefilter_score": 1.032,
+   "prefilter_parts": {
+    "relevance_density": 0.303,
+    "focus": 0.429,
+    "evidence_location": 0.3,
+    "_density_raw": 8.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "externalizes the emotional and thematic essence of users' YouTube watch histories by generating their textual and visual summaries",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8234",
+   "title": "Demystifying Mental Health Reports Through an LLM-based Approach",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720208",
+   "system_id": "8234",
+   "prefilter_score": 0.996,
+   "prefilter_parts": {
+    "relevance_density": 0.096,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 6.19
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "it simplifies complex psychiatric information for laypersons, providing understandable explanations",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13875",
+   "title": "COLDECO: An End User Spreadsheet Inspection Tool for AI-Generated Code",
+   "venue": "vlhcc-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/vl-hcc57772.2023.00017",
+   "system_id": "coldeco",
+   "prefilter_score": 0.879,
+   "prefilter_parts": {
+    "relevance_density": 0.0,
+    "focus": 0.429,
+    "evidence_location": 0.45,
+    "_density_raw": 0.46
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(3) a description of the solution expressed in natural language",
+     "evidence_location": "intro (pdf)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10268",
+   "title": "FuzzySeek: Multimodal Refinement of Imprecise Video Queries for Moment Retrieval",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789095",
+   "system_id": "fuzzyseek",
+   "prefilter_score": 0.827,
+   "prefilter_parts": {
+    "relevance_density": 0.152,
+    "focus": 0.375,
+    "evidence_location": 0.3,
+    "_density_raw": 7.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(1) Multimodality-blended text querying to improve expressivity, enabling users to directly anchor multimodal content within their textual queries",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

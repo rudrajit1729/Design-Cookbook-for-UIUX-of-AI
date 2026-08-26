@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-040",
+ "exemplars": [
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "final_score": 4.85,
+   "why": "Generative Strokes are an especially exact match: both the geometry and placement of freehand marks directly modulate generation and latent semantic or stylistic parameters on an ideation canvas.",
+   "over_the_runner_up": "Chosen over Reframer because the evidence explicitly establishes stroke geometry and spatial placement as generative controls, rather than referring more generally to the canvas state as conditioning."
+  },
+  {
+   "rid": "10072",
+   "title": "Drawing with Reframer: Emergence and Control in Co-Creative AI",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584095",
+   "final_score": 4.7,
+   "why": "Reframer consumes the current vector sketch together with a text goal and completes that sketch on the canvas, clearly making drawn geometry persistent generative state in a co-creative loop.",
+   "over_the_runner_up": "Chosen over Code Shaping because its evidence more directly documents the signature canvas loop: an existing sketch conditions synthesis and the generated completion returns to that sketch."
+  },
+  {
+   "rid": "3895",
+   "title": "Code Shaping: Iterative Code Editing with Free-form AI-Interpreted Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713822",
+   "final_score": 4.55,
+   "why": "Free-form annotations drawn directly over code and console output are spatial specifications interpreted by AI to edit the underlying artifact, demonstrating that sketch-based steering can extend beyond visual-media generation.",
+   "over_the_runner_up": "Chosen over Notational Animating because Code Shaping explicitly frames the sketch interaction as iterative editing directly on the input/output artifact, whereas the supplied animation evidence does not show generated keyframes returning to a surface that users draw on again."
+  }
+ ],
+ "notes": "I departed from the consensus by promoting ImaginationVellum from third to first and Reframer from fifth to second because their supplied evidence most directly establishes the structural signature: freehand geometry becomes conditioning state on a canvas that also holds the generated result. I retained Code Shaping but reduced its 4.90 consensus by 0.35 because the evidence does not spell out the annotation vocabulary or precisely show how edited output is returned for another drawing pass. I excluded consensus runner-up Notational Animating: it clearly maps placed motion marks to generated keyframes, but the quote does not establish the required return-and-redraw loop. Readers should also treat ImaginationVellum’s iteration loop and Reframer’s repeated drawing passes as only implicit in the supplied excerpts.",
+ "pattern_name": "Sketch-Based Input",
+ "category_id": "U01",
+ "rated": 30
+}

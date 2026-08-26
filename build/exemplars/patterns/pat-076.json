@@ -1,0 +1,540 @@
+{
+ "pattern": {
+  "pattern_id": "pat-076",
+  "pattern_name": "Perceptible Rendering",
+  "pattern_slug": "perceptible-rendering",
+  "short_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+  "definition": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable. The rendering is not the model's output; it is a display layer chosen by the designer. The user judges the artifact only through that layer.",
+  "structural_signature": "A rendering stage is inserted between generation and display: the generated representation R is mapped by a fixed, designer-chosen function into a perceptible form V, and only V appears in the interface. The mapping is deterministic and adds no content — everything shown is entailed by R plus fixed rendering assets. Where R is time-varying, V is commonly a sampled sequence laid out spatially. Transplants to sonifying a data stream, plotting a vector, animating a trajectory.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U04",
+   "category_name": "Modality, Embodiment & Rendering",
+   "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+   "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 20,
+ "candidates": [
+  {
+   "rid": "4727",
+   "title": "ViSTAR: Virtual Skill Training with Augmented Reality with 3D Avatars and LLM coaching agent",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790634",
+   "system_id": "vistar",
+   "evidence": [
+    {
+     "quote": "The model predicts 3D joint locations and rotation parameters from RGB frames, which we then retarget to a rigged avatar.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4755",
+   "title": "AgentHands: Generating Interactive Hand Gestures for Spatially Grounded Agent Conversations in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790938",
+   "system_id": "agenthands",
+   "evidence": [
+    {
+     "quote": "At runtime, a parser converts events into time-stamped poses and motions, driving an animation system that renders expressive hands synchronized with speech.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4906",
+   "title": "Designing a Generative AI-Assisted Music Psychotherapy Tool for Deaf and Hard-of-Hearing Individuals",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791385",
+   "system_id": "4906",
+   "evidence": [
+    {
+     "quote": "while the right panel displays the generated music rendered as visualizations for appreciation, along wit",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5828",
+   "title": "VidTune: Creating Video Soundtracks with Generative Music and Video-Based Thumbnails",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791572",
+   "system_id": "vidtune",
+   "evidence": [
+    {
+     "quote": "VidTune extracts representative video subjects to ground thumbnails in context, maps each track’s valence and energy onto visual cues like color and brightness, and depicts prominent genres and instruments.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6025",
+   "title": "All Futures at Once: Supporting Speculative Design for Placemaking with Multi-Agent Social Simulation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791543",
+   "system_id": "6025",
+   "evidence": [
+    {
+     "quote": "These scenarios are visualized as image sequences, where each scenario depicts multiple activities unfolding within a place at a given moment.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "7267",
+   "title": "Fencing Hallucination: An Interactive Installation for Fencing with AI and Synthesizing Chronophotographs",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3583929",
+   "system_id": "7267",
+   "evidence": [
+    {
+     "quote": "The system frst represents pose data as stick fgures. Then it uses a difusion model to perform image-to-image translations, converting the stick fgures into a series of realistic fencing images.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7832",
+   "title": "SynCocreate: Fostering Interpersonal Connectedness via Brainwave-Driven Co-creation in Virtual Reality",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648650",
+   "system_id": "syncocreate",
+   "evidence": [
+    {
+     "quote": "In the Unity environment, we map these real-time brainwave data from both users to CG properties within the scene to craft a dynamic visual representation of brain activities.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8174",
+   "title": "Bridging Tradition and Technology: Human-AI Interface for Exploration and Co-Creation of Classical Dance Heritage",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719859",
+   "system_id": "8174",
+   "evidence": [
+    {
+     "quote": "Three Generated Dances from Three Contemporary Tales — Star Wars: A New Hope, Lalisa's TikTok performance, and a steampunk adaptation of Stravinsky —each visualized as a series of Mae Bot Yai movement with corresponding movement descriptions that translate modern stories into traditional Thai dance repertoire.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Accessibility",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "8296",
+   "title": "Exploring AI-Driven Affective Avatars for Autistic Adults and Adults with Social Anxiety in Virtual Meetings",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719885",
+   "system_id": "8296",
+   "evidence": [
+    {
+     "quote": "This paper introduces a prototype that converts typed text into emotive avatars using LLM technology, which convey emotional tone through modulated vocal and facial expressions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8524",
+   "title": "Reviving Intentional Facial Expressions: an Interface for ALS Patients using Brain Decoding and Image-Generative AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719775",
+   "system_id": "8524",
+   "evidence": [
+    {
+     "quote": "To enable AU-based facial expression synthesis, we employed GANimation [21], a GAN-based framework designed to generate anatomically-aware and realistic facial animations by manipulating expressions through AUs.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8529",
+   "title": "Scaling Analysis of Creative Activity Traces via Fuzzy Linkography",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720184",
+   "system_id": "8529",
+   "evidence": [
+    {
+     "quote": "Fuzzy linkography allows for the rapid translation of user activity logs from digital creativity support tools (and other traces of creative activity) into rough graphical summaries, suitable for visual and quantitative inspection by researchers.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9321",
+   "title": "GazeFlow: Personalized Ambient Soundscape Generation for Passive Strabismus Self-Monitoring",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798882",
+   "system_id": "gazeflow",
+   "evidence": [
+    {
+     "quote": "uses a personalized temporal autoencoder to detect eye drift patterns from webcam-based gaze tracking & provides ambient audio feedback",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9372",
+   "title": "Illuminating Memory: Using Ambient Light to Enrich Generative Representations of Daily Life",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798359",
+   "system_id": "9372",
+   "evidence": [
+    {
+     "quote": "The system received the model’s RGB output and applied the specified colours for the video duration before fading to black.",
+     "location": "full text sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10401",
+   "title": "HAIFAI: Human-AI Interaction for Mental Face Reconstruction",
+   "venue": "tiis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3725891",
+   "system_id": "haifai",
+   "evidence": [
+    {
+     "quote": "This model accepts a latent vector 𝑤 as input, which encodes facial features and subsequently generates a corresponding face image 𝑓",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "12458",
+   "title": "Narrative Player: Reviving Data Narratives With Visuals",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3530512",
+   "system_id": "12458",
+   "evidence": [
+    {
+     "quote": "we map each data fact candidate to the Vega-Lite",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13524",
+   "title": "Usable and Fast Interactive Mental Face Reconstruction",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606795",
+   "system_id": "13524",
+   "evidence": [
+    {
+     "quote": "A reconstruction network predicts the latent vector of the mental image according to the ranked auxiliary latents. This vector can be decoded with a pre-trained generator to reconstruct…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13987",
+   "title": "Keyframer: A Design Probe for Exploring LLM Assistance in 2D Animation Design",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00014",
+   "system_id": "keyframer",
+   "evidence": [
+    {
+     "quote": "Each time we detect a complete snippet, we render a preview of the animation inline by injecting the CSS snippet along with the original SVG code onto the page.",
+     "location": "full text sec IV"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "evidence": [
+    {
+     "quote": "Interacting with a point in the 2D space finds its corresponding representation in N-dimensional latent space, decodes it, and shows the reconstructed image 𝑥 ′ ∈ 𝑋 ′ along with the original classifier’s prediction 𝑦 ′ ∈ 𝑌 ′ for this sample, with which the user can update their frame.",
+     "location": "full text fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16267",
+   "title": "DanceGen: Supporting Choreography Ideation and Prototyping with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661594",
+   "system_id": "dancegen",
+   "evidence": [
+    {
+     "quote": "Dance sequences are represented by the SMPL male mesh [50]",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16494",
+   "title": "IKIWISI: An Interactive Visual Pattern Generator for Evaluating the Reliability of Vision-Language Models Without Ground Truth",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735754",
+   "system_id": "ikiwisi",
+   "evidence": [
+    {
+     "quote": "IKIWISI transforms model outputs into a binary heatmap where green",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

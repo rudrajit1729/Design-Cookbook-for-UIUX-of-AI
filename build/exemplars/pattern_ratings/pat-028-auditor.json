@@ -1,0 +1,230 @@
+{
+ "pattern_id": "pat-028",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "3392",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The quote clearly describes a pre-execution decomposition into user-modifiable steps, capturing the ordered and editable-plan elements. It does not establish that the plan remains visible or advances during execution, so it is a strong but incomplete match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3512",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A structured task graph is explicitly confirmed or modified before a separate save-and-execute stage. This is a clear, rebuildable plan-preview interaction, though the quote does not show the graph persisting or encoding progress during execution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3809",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 0,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "The quote says only that agents plan and execute step by step in a simulation. It provides no evidence that users see an ordered plan before execution or that such a display persists while actions run.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern's required visible plan-preview interface; it describes agent behavior rather than a rendered user-facing plan."
+  },
+  {
+   "rid": "4142",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Jupybara identifies and presents an analysis plan in response to a complex query, providing direct evidence of a visible planning object. The quote does not establish editability, execution through the plan, persistence, or status encoding.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4190",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "A visible 'garden of plans and actions' is suggestive and visually distinctive, but the metaphor does not specify an ordered preview, when execution begins, or whether the plan persists and advances. Impact cannot be judged confidently from this evidence alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5968",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The agent proposes an execution plan before acting, and users can edit what is proposed, directly capturing the pattern's consequential control mechanism. The title reinforces co-planning and co-execution, but the quote does not demonstrate persistent display or execution-state encoding.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6148",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The comparison explicitly includes feedback showing planned steps and intermediate results during multi-step processing, closely suggesting a plan that remains relevant through execution. The quotation is truncated, so its exact visual structure, persistence, and user controls cannot be verified.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8513",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The agent continually predicts forthcoming performance and visually conveys that plan while the interaction unfolds. This is unusually direct evidence of a persistent, dynamically updated lookahead representation, although the quote does not indicate editability or explicit commitment states.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8770",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The node-based tree makes action plans structured and directly editable through pruning and expansion, with real-time feedback. This strongly supports visible, persistent plan manipulation, though the quote does not explicitly say execution advances through the tree or marks completed and provisional nodes.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9385",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "Exposing intermediate plans is relevant to transparency but does not establish a preview shown before action, an ordered structure, persistence during execution, or plan-directed control. The evidence supports only a weak fragment of this pattern rather than its structural signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9410",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 3,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The system presents editable task allocations, requires validation, then generates stepwise instructions and permits triggered cobot execution. That is a concrete, consequential preview-and-commit workflow; transfer is somewhat constrained by industrial human\u2013cobot assembly, and persistence during execution is not explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12415",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "A task-flow diagram is a structured plan object used to monitor and manage planning, strongly supporting inspection and intervention. Its broad agent-task framing transfers well, but the quote does not clearly establish that the diagram appears before execution and remains visible as execution advances.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12862",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 1,
+    "mechanism_clarity": 1,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "A proposed first sketch is a generated draft, not evidence of an ordered sequence of forthcoming operations. Nothing in the quote indicates previewing, editing, or tracking an execution plan.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence instantiates generated-draft review rather than Plan Preview and does not support the pattern's structural signature."
+  },
+  {
+   "rid": "13606",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Users enter a distinct confirmation phase where they preview tasks and selectively determine which execute. This clearly makes planned operations inspectable and consequential before action, although ordering, continued on-screen persistence, and progress states are not stated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13665",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "Interactable suggestion modules may make proposed scene changes transparent, but the quote provides no ordered execution plan, pre-action sequence, or persistent progress representation. It fits suggestion or generated-draft editing more closely.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence supports interactive suggestions, not a displayed sequence of forthcoming operations that persists through execution."
+  },
+  {
+   "rid": "15356",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote establishes that tools are assembled into a plan and later executed, but it never says the plan is rendered to the user, previewed before execution, editable, or retained on screen. A merely internal tool plan is insufficient for this UI pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate a user-facing plan display, so it fails the pattern's essential interface requirement."
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-004",
+ "exemplars": [
+  {
+   "rid": "4474",
+   "title": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713417",
+   "final_score": 4.7,
+   "why": "The strongest structural match: comparable videos are explicitly aligned and shown together, with differences exposed across synchronized timelines, transcripts, and previews. It demonstrates both the canonical parallel layout and an unusually rich diff encoding for time-based, multimodal artifacts.",
+   "over_the_runner_up": "Selected over rid 10955 because its evidence establishes alignment and corresponding-part comparison across multiple representations, not merely the availability of a juxtaposed view."
+  },
+  {
+   "rid": "10955",
+   "title": "Visual Comparison of Language Model Adaptation",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209458",
+   "final_score": 4.4,
+   "why": "The figure evidence directly defines juxtaposition as two comparable model visualizations displayed next to each other. Its contrast with superposition makes the layout mechanism especially legible and offers a transferable design choice between separated and overlaid comparison.",
+   "over_the_runner_up": "Selected over rid 12304 because it turns juxtaposition versus superposition into an explicit comparison-mode control, making the interaction more broadly instructive than a fixed pair of heatmaps."
+  },
+  {
+   "rid": "12304",
+   "title": "Visual Analysis of Prediction Uncertainty in Neural Networks for Deep Image Synthesis",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3406959",
+   "final_score": 4.35,
+   "why": "This is the cleanest canonical selected-pair exemplar: users choose two uncertainty-estimation methods, whose comparable heatmaps are placed side by side so spatial differences in uncertainty and error can be read directly.",
+   "over_the_runner_up": "Selected over rid 16920 because the evidence specifies the comparable objects, user-selected slots, parallel placement, and visual quantity being compared, whereas AnimationDiff's abstract only names switching between comparison modes without describing alignment or corresponding-part structure."
+  }
+ ],
+ "notes": "I departed from the consensus top three by selecting rid 12304 instead of rid 16920. The adjustment is small: 12304 rises from 4.25 to 4.35 because its quote independently establishes nearly the entire structural signature, while 16920's evidence confirms a side-by-side mode but supplies little detail about simultaneous alignment. No score adjustment exceeds 0.3. Readers should still be cautious: the evidence for rid 4474 comes only from an abstract, rid 10955 from a figure caption with a typographical error ('juxtapositon'), and rid 12304 from a short system-section excerpt; none of the supplied evidence establishes measured user outcomes. I also avoided selecting both LLM Comparator records, which share the same underlying system concept despite having different supplied system_id values.",
+ "pattern_name": "Side-by-Side Comparison",
+ "category_id": "U05",
+ "rated": 23
+}

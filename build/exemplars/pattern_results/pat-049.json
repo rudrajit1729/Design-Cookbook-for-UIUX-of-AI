@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-049",
+ "exemplars": [
+  {
+   "rid": "9589",
+   "title": "Sonic Stage: Automatically Generating an Interactive Spatial Soundscape to Facilitate Dialogue Video Comprehension for Blind and Low Vision Viewers",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798425",
+   "final_score": 4.73,
+   "why": "A particularly complete captured-video instance: 3D reconstruction locates and tracks characters, then positions each character’s dialogue at those scene-derived coordinates, making audio placement depend on the moving referent rather than a fixed channel or panel.",
+   "over_the_runner_up": "It edges out SocialCue because the evidence explicitly connects reconstructed 3D character tracking to referent-bound output in captured video, while also avoiding a second, closely similar headset-based spatial-audio exemplar."
+  },
+  {
+   "rid": "13814",
+   "title": "Guided Reality: Generating Visually-Enriched AR Task Guidance with LLMs and Vision Models",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747784",
+   "final_score": 4.6,
+   "why": "The paper states both halves of the structural signature directly: the system extracts spatial information for real-world interaction points and embeds generated visual guidance at those physical locations.",
+   "over_the_runner_up": "It is stronger than Playground+ because it explicitly describes the spatial-resolution step that converts detected real-world points into output placement, rather than only reporting that cues follow entities or remain fixed."
+  },
+  {
+   "rid": "9539",
+   "title": "Reframing Human-AI Interaction through Tangible, Multisensory Interfaces",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798597",
+   "final_score": 4.53,
+   "why": "Projected text follows a tracked hand and scales with its proximity, vividly demonstrating that generated language can be laid out as a scene-registered object whose position and appearance continuously follow physical geometry.",
+   "over_the_runner_up": "It takes the final slot over SocialCue because its evidence directly demonstrates output following a moving referent, while adding a projection-based, visual and embodied form that broadens the set beyond spatial-audio accessibility systems."
+  }
+ ],
+ "notes": "I departed from the consensus order by selecting rid 9539 instead of third-ranked rid 9587. SocialCue is structurally strong, but it substantially overlaps Sonic Stage as another accessibility-oriented spatial-audio system; rid 9539 supplies clearer observable motion coupling and greater modality breadth without sacrificing structural fit. No score was adjusted by more than 0.3. Readers should distrust any implication of measured user benefit: the supplied evidence establishes rendering mechanisms, not outcomes. Guided Reality’s excerpt establishes spatial anchoring but does not explicitly confirm behavior when a referent moves, and Sonic Stage’s movement coupling is inferred from character tracking rather than stated verbatim.",
+ "pattern_name": "Space Registered Overlay",
+ "category_id": "U04",
+ "rated": 30
+}

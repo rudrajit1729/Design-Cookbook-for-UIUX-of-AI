@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-023",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "10246",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A runtime, user-articulated goal becomes structured steps that are enacted separately and explicitly made visible for inspection. Serial ordering and editing are not stated, but this is unusually direct evidence and decomposition is the system\u2019s core contribution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14044",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Complex runtime prompts become input-specific subtasks with dependencies, exposed for visual exploration and modification. The quote establishes decomposition and inspectability very clearly, though it does not explicitly say the subtasks are executed serially or assembled into a final artifact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12953",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote describes an agent\u2019s internal translation into atomic tasks but gives no evidence that the sequence is exposed, inspectable, or editable by users. It therefore fails the UX visibility boundary.",
+   "disqualify": true,
+   "disqualify_reason": "The cited decomposition appears to be hidden agent planning rather than a user-visible goal decomposition interface."
+  },
+  {
+   "rid": "3392",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Testing and approving separately generated code steps is a strong serial interaction, but the quote never shows that a runtime goal was decomposed into an input-specific list of sub-parts. This is better evidenced as incremental generation with checkpoints.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports sequential approval, not goal-derived decomposition."
+  },
+  {
+   "rid": "13700",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "A user command is clearly decomposed into a goal-specific sequence, but the quote describes planner architecture and does not show the resulting structure in the interface or allow inspection between steps.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not establish that the decomposed plan is exposed to users, as required by the pattern\u2019s UX boundary."
+  },
+  {
+   "rid": "5968",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Editable, individually executable plan steps are exceptionally clear, but the evidence starts with an existing collaborative plan. It does not demonstrate transformation of a supplied goal into a varying sequence of sub-parts.",
+   "disqualify": true,
+   "disqualify_reason": "The quote supports interactive co-planning and step execution, but not goal decomposition."
+  },
+  {
+   "rid": "10210",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The interface exposes an editable sequence of operations, but it decomposes an already generated query in an explanation mode. The quote does not show the parts being serially produced or executed to construct the query.",
+   "disqualify": true,
+   "disqualify_reason": "This is post-hoc process explanation of an existing artifact, a neighbouring pattern, rather than decomposition used for serial construction."
+  },
+  {
+   "rid": "13647",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system breaks a context-specific writing process into manageable subtasks and guides the user through them sequentially, giving strong evidence for discrete serial handling. The quote does not clarify editing, variable sequence formation, or final assembly.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13705",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A runtime script produces an editable, input-specific scene breakdown, which is a visible decomposition likely tied to the final animation. The quote does not explicitly establish that scenes are generated or handled serially.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4436",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 3
+   },
+   "reason": "Learners visibly and collaboratively construct a personalized step tree, making input-dependent decomposition central and unusually participatory. A tree is not necessarily an ordered serial sequence, and execution or final assembly is absent from the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16860",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A supplied story is converted into displayed programming goals, which are further decomposed into concrete steps. This strongly supports visible, input-specific decomposition, although serial execution and editing are not stated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7490",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A runtime meeting description generates goal-specific phases that attendees can further refine, exposing decomposition before the phased activity occurs. The quote does not explicitly describe per-phase execution or assembly, but the temporal sequence is strongly implied.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14038",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The system exposes an editable task tree, but it derives that tree from a recorded demonstration rather than decomposing a runtime goal. The structure is also a reconstructable workflow tree rather than clearly serial goal handling.",
+   "disqualify": true,
+   "disqualify_reason": "This is demonstration-to-workflow induction, not decomposition of a supplied runtime goal."
+  },
+  {
+   "rid": "9301",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The task description determines a maintained list of modeling steps, satisfying the goal-to-parts portion of the signature. The evidence does not show whether the list is user-visible, editable, executed serially, or used to assemble the model, so confidence is limited.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13814",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system generates a task-specific, step-by-step plan and presents every step as text and situated visual guidance, strongly establishing a discrete visible sequence. Editing and explicit serial artifact assembly are not demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5627",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The quote directly states goal-to-operation decomposition over multiple steps, but it does not say that the operation sequence is exposed as an inspectable or editable interface structure. The title concerns confirmation frequency, a neighbouring checkpoint mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes agent operations without demonstrating the user-visible decomposition required by this UX pattern."
+  },
+  {
+   "rid": "12415",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "High-level analytical goals are progressively translated into lower-level tasks that produce visualizations and insights, supporting goal-specific staged construction. The quote does not establish an ordered visible list, separate editable steps, or exactly how outputs are assembled.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3216",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The planner clearly derives a sequence from each user request, but the excerpt only describes an internal planner component. Nothing shows that users see or can inspect the sequence before or during execution.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports hidden planner decomposition, which the pattern\u2019s classification boundary excludes."
+  },
+  {
+   "rid": "13794",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "The quote describes the anatomy of an analysis workflow containing interdependent segments. It does not show a supplied goal being transformed into those segments or the segments being produced serially.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes an existing segmented workflow, not goal decomposition."
+  },
+  {
+   "rid": "4190",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "A single runtime prompt is clearly transformed into a bespoke hierarchical action plan, but the quote does not establish that the plan is visible, editable, or serially executed as discrete interface steps.",
+   "disqualify": true,
+   "disqualify_reason": "Only planner-side hierarchical decomposition is evidenced; the required exposed serial interaction is not."
+  },
+  {
+   "rid": "12319",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The authors decompose tutorial authoring into a step-by-step exploratory process, which sounds like a designed authoring workflow. There is no evidence that each runtime goal generates a different sequence of sub-parts.",
+   "disqualify": true,
+   "disqualify_reason": "This is a fixed staged workflow rather than input-derived goal decomposition."
+  },
+  {
+   "rid": "8770",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "As with the full DreamGarden paper, the quote establishes prompt-dependent hierarchical planning but not a user-visible, inspectable serial sequence. The demonstration title supplies no additional structural evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The quote only supports planner-side hierarchical decomposition, not the exposed serial UX pattern."
+  },
+  {
+   "rid": "13791",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The system detects overly complex operations and suggests decompositions, but the excerpt supplies no ordered sequence, serial execution, discrete step interface, or final assembly. It is closer to complexity remediation.",
+   "disqualify": true,
+   "disqualify_reason": "Suggested operation splitting alone does not demonstrate the pattern\u2019s ordered, serial goal-decomposition mechanism."
+  },
+  {
+   "rid": "2812",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "A task hierarchy containing sequences of subtasks is structurally adjacent, but the quote does not identify a runtime input transformation or show that the tree is exposed and handled step by step in the interface.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes a task representation without establishing user-visible runtime goal decomposition."
+  },
+  {
+   "rid": "13807",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "Vid2Coach extracts steps from an existing how-to video. That is content segmentation or procedure extraction, not decomposition of a goal supplied at runtime into parts for serial production.",
+   "disqualify": true,
+   "disqualify_reason": "The source is an existing demonstration artifact rather than a runtime goal."
+  },
+  {
+   "rid": "4034",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A runtime textual task produces an explicit, goal-specific numbered sequence, and the resulting animation necessarily presents the actions serially. The quote is concrete but does not show inspection, editing, or how the final animation is assembled from independently generated steps.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "17209",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "Incrementally generating spreadsheet components establishes serial construction, but the quote never shows that a user goal is decomposed into a computed ordered list of components or that those components appear as inspectable steps.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports incremental construction, not goal decomposition."
+  },
+  {
+   "rid": "6000",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "Tasks are decomposed into guidelines and expert agents are introduced sequentially, but the quote does not show a visible sequence of goal sub-parts. The serial element concerns agent introduction rather than clearly executing the decomposed parts.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes an internal multi-agent orchestration mechanism, not exposed serial goal decomposition."
+  },
+  {
+   "rid": "15726",
+   "scores": {
+    "representativeness": 0,
+    "impact": 3,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "Converting descriptions or tutorials into \u201cstructured solutions\u201d is too vague to establish decomposition, ordering, discrete steps, serial handling, or input-varying sequence length. No structural signature can be recovered from the quote.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence is merely topical and does not demonstrate the pattern\u2019s mechanism."
+  },
+  {
+   "rid": "9410",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 2,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The pipeline segments a narrated demonstration into assignable atomic tasks. Although the resulting steps are concrete, they are extracted from an existing procedure and primarily support task allocation, not decomposition of a supplied goal for serial construction.",
+   "disqualify": true,
+   "disqualify_reason": "This is demonstration segmentation and human\u2013robot task allocation, not runtime goal decomposition."
+  }
+ ]
+}

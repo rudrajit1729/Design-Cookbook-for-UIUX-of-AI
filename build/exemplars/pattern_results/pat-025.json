@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-025",
+ "exemplars": [
+  {
+   "rid": "13743",
+   "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747668",
+   "final_score": 4.95,
+   "why": "NeuroSync is the clearest complete instance: it infers coding tasks and relationships from user intent, externalizes them before code generation, and lets users correct that intermediate understanding directly so the corrected artifact governs downstream generation.",
+   "over_the_runner_up": "It ranks above IntentFlow because the evidence explicitly establishes both artifact-level correction and downstream conditioning before code generation, whereas IntentFlow’s downstream dependency is only implicit."
+  },
+  {
+   "rid": "16862",
+   "title": "IntentFlow: Investigating Fluid Dynamics of Intent Communication in Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812999",
+   "final_score": 4.78,
+   "why": "IntentFlow turns vague user input into a named, structured interpretation—a high-level goal and low-level intents—and renders that interpretation as editable components, cleanly locating correction at the inferred-representation layer.",
+   "over_the_runner_up": "It ranks above PlayWrite because its goal-and-intent hierarchy is a more general-purpose readback structure and the evidence unambiguously describes the components as editable."
+  },
+  {
+   "rid": "5558",
+   "title": "PlayWrite: A Multimodal System for AI Supported Narrative Co-Authoring Through Play in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791159",
+   "final_score": 4.68,
+   "why": "PlayWrite supplies an unusually complete and legible mechanism: embodied actions are interpreted into named Intent Frames, visualized persistently as story marbles, and rearranged at the interpretation layer before shaping the narrative.",
+   "over_the_runner_up": "It ranks above ToMigo because the excerpt identifies the source input, inferred artifact, concrete rendering, and manipulation operation, while ToMigo’s evidence does not show how its graph conditions downstream behavior."
+  }
+ ],
+ "notes": "I retained the consensus leader and third-ranked candidate but promoted PlayWrite from eighth to the final three because its quote demonstrates more of the structural signature than several higher-ranked records. I excluded consensus #2, Just-In-Time Objectives, because the supplied evidence never establishes that the objectives are inferred from user input; #4, Semantic Commit, because its quote omits generation, rendering, and editing details; and #5 because the grounded utterance appears to represent generated code rather than clearly externalizing the system’s reading of the user’s original input. No selected score was adjusted by more than 0.3. Readers should still treat the downstream-conditioning claim cautiously for IntentFlow and PlayWrite: their excerpts strongly imply it but do not state it as explicitly as NeuroSync’s evidence.",
+ "pattern_name": "Interpretation Readback",
+ "category_id": "U07",
+ "rated": 37
+}

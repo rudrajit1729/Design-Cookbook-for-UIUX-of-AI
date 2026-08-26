@@ -1,0 +1,976 @@
+{
+ "pattern": {
+  "pattern_id": "pat-088",
+  "pattern_name": "AI Panels for Host Application",
+  "pattern_slug": "ai-panels-for-host-application",
+  "short_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+  "definition": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow. The host keeps its own structure and remains usable without the addition. The design move is the attachment point: where in the host the capability is inserted.",
+  "structural_signature": "Two separable layers exist: a pre-existing host surface with its own controls and content, and an added layer (plugin, browser extension overlay, injected step, docked component) that renders generated content into or beside the host. The added layer is anchored to identifiable host locations — particular spans of host content, particular stages of the host's flow, particular composition steps — and the anchoring, not the generation, is what the paper specifies. Detaching the layer leaves the host intact.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "10192",
+   "title": "In-Situ Adaptive Interfaces for Online Browsing: Design Dimensions for Intent-Responsive Automation and User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789092",
+   "system_id": "10192",
+   "evidence": [
+    {
+     "quote": "Adaptations should operate directly within existing browsing pages rather than redirecting users to separate dashboards or views.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10199",
+   "title": "AutoStructGUI: Bridging Design and Implementation of GUI through Structured Layout Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789058",
+   "system_id": "autostructgui",
+   "evidence": [
+    {
+     "quote": "Since our model is trained on an Android GUI layout dataset [13], we develop the framework as a plug-in of an Android development IDE, Android Studio.",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10201",
+   "title": "Developer Interaction Patterns with Proactive AI: A Five-Day Field Study",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789148",
+   "system_id": "10201",
+   "evidence": [
+    {
+     "quote": "Main stages of the code iteration workflow and corresponding points where ProAIDE triggers proactive suggestions.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10260",
+   "title": "RankCut: A Ranking-Based LLM Approach to Extractive Summarization for Transcript-Based Video Editing",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789115",
+   "system_id": "rankcut",
+   "evidence": [
+    {
+     "quote": "Our system is implemented as a custom extension for Adobe Premiere Pro and appears as a custom Assistant panel in the software.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10271",
+   "title": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789167",
+   "system_id": "voicealign",
+   "evidence": [
+    {
+     "quote": "This work demonstrates how modern AI techniques can unlock the underutilized potential of legacy VUI systems without requiring system modifications",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10419",
+   "title": "Skeptik: A Hybrid Framework for Combating Potential Misinformation in Journalism",
+   "venue": "tiis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3766891",
+   "system_id": "skeptik",
+   "evidence": [
+    {
+     "quote": "Operating as a web browser extension, Skeptik automatically highlights sentences that may contain logical fallacies",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "11327",
+   "title": "Socrates: Data Story Generation via Adaptive Machine-Guided Elicitation of User Feedback",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327363",
+   "system_id": "socrates",
+   "evidence": [
+    {
+     "quote": "Our approach employs an adaptive plug-in module for existing story generation systems",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12085",
+   "title": "LEVA: Using Large Language Models to Enhance Visual Analytics",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3368060",
+   "system_id": "leva",
+   "evidence": [
+    {
+     "quote": "We demonstrate how LEVA can be integrated into existing visual analytics systems.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12806",
+   "title": "ProactiveVA: Proactive Visual Analytics with LLM-Based UI Agent",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642628",
+   "system_id": "proactiveva",
+   "evidence": [
+    {
+     "quote": "We implemented the framework in two representative types of VA systems, demonstrating its generalizability, and evaluated the effectiveness through an algorithm evaluation, case and expert study and a user study.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12936",
+   "title": "EnVisionVR: A Scene Interpretation Tool for Visual Accessibility in Virtual Reality",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3617147",
+   "system_id": "envisionvr",
+   "evidence": [
+    {
+     "quote": "In response to these design objectives, we developed E N V I SION VR, a generalized visual accessibility framework which can be deployed into a VR application with minimal integration effect.",
+     "location": "system sec 4 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13496",
+   "title": "CriTrainer: An Adaptive Training Tool for Critical Paper Reading",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606816",
+   "system_id": "critrainer",
+   "evidence": [
+    {
+     "quote": "We choose to integrate CriTrainer as an add-on into Google Docs, a publicly available platform for reading documents (including papers), in the form of a sidebar",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13625",
+   "title": "Knoll: Creating a Knowledge Ecosystem for Large Language Models",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747711",
+   "system_id": "knoll",
+   "evidence": [
+    {
+     "quote": "In this paper, we propose a knowledge ecosystem in which end-users can create, curate, and configure custom knowledge modules that are utilized by language models, such as ChatGPT and Claude.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13667",
+   "title": "MACEDON : Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747655",
+   "system_id": "macedon",
+   "evidence": [
+    {
+     "quote": "MACEDON is an extension of the Visual Studio Code.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13675",
+   "title": "StreetViewAI: Making Street View Accessible Using Context-Aware Multimodal AI",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747756",
+   "system_id": "streetviewai",
+   "evidence": [
+    {
+     "quote": "With StreetViewAI, blind users can virtually examine destinations, engage in open-world exploration, or virtually tour any of the over 220 billion images and 100+ countries where GSV is deployed.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13749",
+   "title": "Answering Developer Questions with Annotated Agent-Discovered Program Traces",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747652",
+   "system_id": "13749",
+   "evidence": [
+    {
+     "quote": "Question asking. Trailblazer is an extension to VS Code. As such, it is invoked from the standard command palette.",
+     "location": "system sec 4.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13808",
+   "title": "Imago Obscura: An Image Privacy AI Co-pilot to Enable Identification and Mitigation of Risks",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747633",
+   "system_id": "13808",
+   "evidence": [
+    {
+     "quote": "We implemented Imago Obscura as a plugin for the open-source graphics editor Krita [34].",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13925",
+   "title": "Let's Fix this Together: Conversational Debugging with GitHub Copilot",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00011",
+   "system_id": "13925",
+   "evidence": [
+    {
+     "quote": "an innovative multi-agent workflow-based debugging system integrated into the Visual Studio IDE as part of the GitHub Copilot Chat extension",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13926",
+   "title": "BISCUIT: Scaffolding LLM-Generated Code with Ephemeral UIs in Computational Notebooks",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00012",
+   "system_id": "biscuit",
+   "evidence": [
+    {
+     "quote": "we implemented B ISCUIT as a JupyterLab extension to offer in-context support",
+     "location": "full text, intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "13958",
+   "title": "Development of an Adaptive User Support System Based on Multimodal Large Language Models",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00044",
+   "system_id": "13958",
+   "evidence": [
+    {
+     "quote": "Without collecting or disrupting the software system, as MLLMs are capable of interpreting the UI as images, the tool can be applied universally across different applications.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13986",
+   "title": "DevTales: A Tool for Providing Narrative Code Histories into Developer Workflows",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00013",
+   "system_id": "devtales",
+   "evidence": [
+    {
+     "quote": "We present DevTales, a VSCode extension that integrates fine-grained subgoal labels, captured web-foraging activity, and LLM-generated narrative summaries directly with code in the IDE.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13990",
+   "title": "Exploring Direct Instruction and Summary-Mediated Prompting in LLM-Assisted Code Modification",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00017",
+   "system_id": "13990",
+   "evidence": [
+    {
+     "quote": "we developed PASTA (Prompt-Assisted Software TrAnsformation), integrated into JetBrains IDEs, which supports both prompting techniques",
+     "location": "intro (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14009",
+   "title": "TraceMate: Collaborating with AI in Test-Driven Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00035",
+   "system_id": "tracemate",
+   "evidence": [
+    {
+     "quote": "The system is implemented as a plugin to a web-based IDE (VS Code), placing a chatbot alongside the code editor so students can get help without leaving their programming environment.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14019",
+   "title": "Co-Advisor: Learning Programming Strategies in Context",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00045",
+   "system_id": "14019",
+   "evidence": [
+    {
+     "quote": "Co-Advisor operates as an extension to the Microsoft Visual Studio Code (VS Code), ensuring accessibility and ease of use.",
+     "location": "full text sec V"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14038",
+   "title": "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00064",
+   "system_id": "agentpbd",
+   "evidence": [
+    {
+     "quote": "By capturing browser actions and contextual metadata, AgentPbD automatically infers user goals and intentions, transforming user demonstrations into an editable, modular LLM agent workflow, and displays it on the browser extension interface.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14046",
+   "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00072",
+   "system_id": "snapclass",
+   "evidence": [
+    {
+     "quote": "SnapClass is a classroom management system integrated within the block-based programming environment Snap!, to support teachers to seamlessly view and grade the student assignments and give feedback within the same coding platform.",
+     "location": "full text sec III-A"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14932",
+   "title": "Conversational Agents to Facilitate Deliberation on Harmful Content in WhatsApp Groups",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3687030",
+   "system_id": "14932",
+   "evidence": [
+    {
+     "quote": "The probe showed a fictional informal WhatsApp group among friends where sometimes harmful content is shared.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15198",
+   "title": "DanModCap: Designing a Danmaku Moderation Tool for Video-Sharing Platforms that Leverages Impact Captions with Large Language Models",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710954",
+   "system_id": "danmodcap",
+   "evidence": [
+    {
+     "quote": "On video-sharing platforms, Danmaku is a built-in social feature that supports end-users’ social communication and is synchronized with the video.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15510",
+   "title": "EchoAid: Enhancing Livestream Shopping Accessibility for the DHH Community",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757471",
+   "system_id": "echoaid",
+   "evidence": [
+    {
+     "quote": "EchoAid Floating Window Interface Functions: (1) Click to activate the software floating window mode.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15726",
+   "title": "WePilot: Integrating Younger Family Members and Chatbot to Support Older Adults Learning Smartphone Usage",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757703",
+   "system_id": "wepilot",
+   "evidence": [
+    {
+     "quote": "In this mode, OAs follow visual highlights (F1) and voice prompts (F2) to interact with marked UI elements.",
+     "location": "full text sec 4.2.1"
+    }
+   ],
+   "other_patterns_in_paper": 12,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U06",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15755",
+   "title": "Poet-Weaver: Reflecting on Communication Failure in Personal Relationships With Stylized AI-Generated Conversation Digests",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757646",
+   "system_id": "poetweaver",
+   "evidence": [
+    {
+     "quote": "We developed and evaluated Poet-Weaver, a Discord text chat plugin that presents AI-generated insights on user conversations in a stylized, openly-interpretable way",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16163",
+   "title": "3DALL-E: Integrating Text-to-Image AI in 3D Design Workflows",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3596098",
+   "system_id": "3dalle",
+   "evidence": [
+    {
+     "quote": "we integrated DALL-E, GPT-3, and CLIP within a CAD software in 3DALL-E, a plugin that generates 2D image inspiration for 3D design",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "16257",
+   "title": "PromptInfuser: How Tightly Coupling AI and UI Design Impacts Designers' Workflows",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661613",
+   "system_id": "promptinfuser",
+   "evidence": [
+    {
+     "quote": "PromptInfuser was built with Figma's plugin API 1 , and it employs a version of the LLM detailed in [1] [6].",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16652",
+   "title": "TaskLens: Generating Task-Conditioned Scaffolded Interfaces for Learning Professional Creative Software",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813081",
+   "system_id": "tasklens",
+   "evidence": [
+    {
+     "quote": "We evaluate TaskLens by deploying two LLM-generated scaffolded interfaces in Blender, a professional 3D modeling software.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16763",
+   "title": "MakeAloud: Think-Aloud to Bridge Design-Fabrication Workflows",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813028",
+   "system_id": "makealoud",
+   "evidence": [
+    {
+     "quote": "designers initialize the MakeAloud add-in from the Utilities tab",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16995",
+   "title": "Documentation Matters: Human-Centered AI System to Assist Data Science Code Documentation in Computational Notebooks",
+   "venue": "tochi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3489465",
+   "system_id": "16995",
+   "evidence": [
+    {
+     "quote": "the client-side User Interface (UI) is implemented as a Jupyter Notebook plugin using TypeScript code",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U05"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "17256",
+   "title": "Iffy-or-Not: Critically Evaluating Potential Misinformation Using Fallacy Detection and Socratic Questioning with LLMs",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3771935",
+   "system_id": "iffyornot",
+   "evidence": [
+    {
+     "quote": "we developed Iffy-Or-Not (ION ), a browser extension that seeks to invoke critical thinking when reading texts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

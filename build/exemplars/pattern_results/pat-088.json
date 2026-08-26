@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-088",
+ "exemplars": [
+  {
+   "rid": "2436",
+   "title": "Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642149",
+   "final_score": 4.83,
+   "why": "Selenite leaves the webpage intact while attaching AI-generated support at two identifiable host locations: a global overview beside the page and local, paragraph-level annotations within it. This global/local anchoring makes the insertion architecture unusually explicit, rich, and transferable to other reading and inspection workflows.",
+   "over_the_runner_up": "Selenite ranks above IntentPrism because its global overview and paragraph-level annotations define a more precise and differentiated attachment scheme."
+  },
+  {
+   "rid": "8405",
+   "title": "IntentPrism: Human-AI Intent Manifestation for Web Information Foraging",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719744",
+   "final_score": 4.58,
+   "why": "IntentPrism is explicitly implemented as a browser plug-in that adds an intent-tree visualization and highlights relevant content on otherwise independent webpages. It demonstrates both a separable panel-like layer and content-level anchoring, while connecting information gathered across multiple host pages.",
+   "over_the_runner_up": "IntentPrism ranks above LitWeaver because it specifies both an added visualization and highlights anchored directly to host content, rather than only a context-aware side widget."
+  },
+  {
+   "rid": "7718",
+   "title": "Supporting Novice Researchers to Write Literature Review using Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650787",
+   "final_score": 4.4,
+   "why": "LitWeaver preserves Notion as the document-authoring host and adds a detachable Chrome-extension widget at its side. Detecting the host document and the user's current focus establishes how the added surface is contextually anchored, making the integration reconstructable even though its spatial form is conventional.",
+   "over_the_runner_up": "LitWeaver ranks above StoryNode because its evidence identifies the host, extension mechanism, contextual anchor, and visible placement, whereas StoryNode's quote does not show where its generated material appears."
+  }
+ ],
+ "notes": "I retained the first two consensus choices but replaced consensus rank 3, StoryNode (rid 4124), with LitWeaver (rid 7718). StoryNode cleanly separates FigJam from its plugin, but the supplied evidence does not specify the generated layer's visible placement or host attachment points; LitWeaver supplies the structurally decisive side placement and focus-sensitive anchoring. No selected score was adjusted by more than 0.3. The evidence should still be treated cautiously: each selection rests on a single excerpt; LitWeaver's excerpt establishes the integration structure but does not itself describe the generated output, and the excerpts for Selenite and IntentPrism do not fully document detachment behavior or all interface controls.",
+ "pattern_name": "AI Panels for Host Application",
+ "category_id": "U09",
+ "rated": 30
+}

@@ -1,0 +1,99 @@
+{
+ "pattern": {
+  "pattern_id": "pat-071",
+  "pattern_name": "Protected Region",
+  "pattern_slug": "protected-region",
+  "short_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user.",
+  "definition": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user. The user contributes the artifact and, implicitly, its already-authored parts; the system works out what must be preserved and enforces that during generation. Generation is thereby restricted to the complement of the protected set.",
+  "structural_signature": "The artifact is partitioned into a protected subset and a mutable subset; the partition is computed (by segmentation, or by provenance of who authored each element) rather than selected; generation is then executed under a constraint or penalty that forbids modifying, overwriting or occluding the protected subset. Two things are needed and both are observable: an automatic partition step, and an enforcement mechanism at generation time. Transplants to text (generate around the user's own sentences), code (do not touch hand-written blocks), layout, audio.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 3,
+ "candidates": [
+  {
+   "rid": "6055",
+   "title": "Roomify: Spatially-Grounded Style Transformation for Immersive Virtual Environments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791803",
+   "system_id": "roomify",
+   "evidence": [
+    {
+     "quote": "Roomify addresses this through spatially-grounded transformation—treating physical spaces as “spatial containers” that preserve key functional and geometric properties of furniture while enabling radical stylistic changes.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13551",
+   "title": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606723",
+   "system_id": "style2fab",
+   "evidence": [
+    {
+     "quote": "This method allows users to selectively modify aesthetic segments of 3D models, without afecting the functional segments.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16164",
+   "title": "When is a Tool a Tool? User Perceptions of System Agency in Human-AI Co-Creative Drawing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595977",
+   "system_id": "16164",
+   "evidence": [
+    {
+     "quote": "CICADA draws while preserving a provided “partial” sketch (i.e. user input), incurring a penalty if it moves user-drawn strokes too much, draws over them, or otherwise visually occludes the user’s contributions.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership"
+   ]
+  }
+ ]
+}

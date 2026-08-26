@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-007",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "666",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote describes defining anchor/test concepts and receiving bias candidates, but not altering an already-run input, rerunning the same model, or comparing original and altered outputs. It supports bias querying, not Perturb-and-Compare.",
+   "disqualify": true,
+   "disqualify_reason": "The cited evidence does not demonstrate the pattern\u2019s induced-variant and original-versus-altered output comparison."
+  },
+  {
+   "rid": "2325",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Testing multiple prompt templates simultaneously while holding the input variable constant closely matches controlled variation and batched comparison. The quote does not explicitly identify an original template or describe the output display, keeping it below a definitive 5.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5582",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Controlled-condition comparison of generations is compatible with the pattern, but the quote does not establish an interface, user-authored transformations, a held original input, or a paired display. It may instead describe an evaluation framework operating offline.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8558",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote explains the general value of counterfactual feature changes but gives no evidence that this interface creates user-parameterized variants, reruns the model, and displays their outputs against the original. It is evidence for counterfactual explanation rather than this comparison pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence only characterizes counterfactual explanations conceptually and does not support the required interface mechanism."
+  },
+  {
+   "rid": "9311",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Holding linguistic content constant while researchers vary voice properties is a controlled experimental manipulation, but the quote is explicitly study design evidence. It does not show users inducing variants through an interface or receiving paired model outputs.",
+   "disqualify": true,
+   "disqualify_reason": "The cited passage describes a researcher-controlled study manipulation, not a Perturb-and-Compare interface."
+  },
+  {
+   "rid": "10126",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is the cleanest instance: prompt keywords are systematically removed, the model produces altered images, and those images are evaluated against the original. The known redaction makes the output difference interpretable, although the quote does not make the extent of user parameterization explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10173",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "The quote only says that two plagiarized summaries are examined across two runs. It identifies neither an interface-induced transformation nor a comparison keyed to a known alteration; ordinary run or item comparison is a neighboring mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "No controlled alteration of an original input is supported by the cited evidence."
+  },
+  {
+   "rid": "10953",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Prompt variations are explicitly tested over a common batch of examples, giving a clear controlled sweep with results organized by variation. The quote does not explicitly state that one prompt is the original or describe side-by-side output presentation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11819",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Simultaneous testing of prompts designed to isolate dependent variables strongly matches controlled perturbation and batched comparison. The evidence is especially good about the known manipulated dimension, though less explicit about original-versus-altered output layout and user authorship.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12469",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The title is highly suggestive, but the supplied fragment merely names keyword and paraphrasing perturbation strategies. It does not show a held input, model reruns, an original output, or any comparison mechanism; scoring from the title would overreach.",
+   "disqualify": true,
+   "disqualify_reason": "The verbatim evidence names perturbations but does not demonstrate the pattern\u2019s execution-and-comparison structure."
+  },
+  {
+   "rid": "12559",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The fragment mentions editing in precomputed directions but is too incomplete to establish what is edited, who controls it, whether the model is rerun, or how results are compared. The title cannot substitute for evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The truncated quote does not support the structural signature."
+  },
+  {
+   "rid": "12590",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "A strategy-keyed control for viewing perturbation results fits the display side of the pattern and indicates that known perturbation strategies organize results. The quote does not establish a held original, same-model rerun, or simultaneous original-versus-altered comparison.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12821",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The pipeline explicitly applies controlled image corruption before generating and evaluating new captions, closely matching induced variants followed by reruns. A clean baseline comparison is strongly suggested by robustness evaluation but is not actually stated in the supplied quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12842",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "User-selectable granularity and customizable replacement rules provide an unusually clear account of how controlled variants are constructed. The quote does not itself show the model reruns or paired output display, so it demonstrates the perturbation half more strongly than the complete loop.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13413",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Design changes and moderator or community interventions produce model-behavior changes for what-if exploration, making this a plausible domain-transferred instance. The quote does not specify the controls, baseline preservation, rerun procedure, or whether outputs are presented comparatively.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15884",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "Dense latent-grid sampling and classifier reevaluation describe continuous latent-space probing. The sampled inputs are not shown as user-specified transformations of an already-run input, and no original-versus-variant output comparison is evidenced.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports latent-space exploration, a neighboring pattern, rather than controlled perturbation and paired comparison."
+  },
+  {
+   "rid": "16494",
+   "scores": {
+    "representativeness": 1,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Known-absent spy objects are an interesting controlled probe, but the quote describes testing against known negatives rather than altering an already-run input and comparing the new output with its original output. It is adversarial or sentinel testing on the supplied evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The quote provides no before-and-after input pair or original-versus-altered output comparison."
+  }
+ ]
+}

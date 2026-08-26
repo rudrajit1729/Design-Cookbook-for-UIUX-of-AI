@@ -1,0 +1,192 @@
+{
+ "pattern": {
+  "pattern_id": "pat-033",
+  "pattern_name": "Output Templates",
+  "pattern_slug": "output-templates",
+  "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+  "definition": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take. Generation is validated against or rendered into that structure rather than emitted as free text. The structure exists at the type level: it applies to every output the system produces, not just this one.",
+  "structural_signature": "A named structure with enumerated parts (fields, sections, component types, category labels) is defined independently of any single generation and is stored in the system. The generator's output is emitted into, checked against, or parsed by that structure, and downstream rendering is per-part: each part gets its own visual slot, colour, or handle. Outputs that do not conform are corrected or rejected before display.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "15682",
+   "title": "EchoMind: Supporting Real-time Complex Problem Discussions through Human-AI Collaborative Facilitation",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757587",
+   "system_id": "echomind",
+   "evidence": [
+    {
+     "quote": "Key interactive components are as follows: issue node (1), position node (2), related issue node (3) connected by a dashed line to the position node, recording switch (4), optional manual update button for user-initiated updates (5), and indicator of updatin…",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15714",
+   "title": "AMQuestioner: Training Critical Thinking with Question-Driven Interactive Argument Maps in Online Discussion",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757551",
+   "system_id": "amquestioner",
+   "evidence": [
+    {
+     "quote": "labeling each sentence with its corresponding argument component (major claim, claim, premise); and (4) annotating the attitude (support, attack) between major claims and claims, and between claims and premises",
+     "location": "full text sec 4.1.3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16465",
+   "title": "PersonaFlow: Designing LLM-Simulated Expert Perspectives for Enhanced Research Ideation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735789",
+   "system_id": "personaflow",
+   "evidence": [
+    {
+     "quote": "The Research Outline Panel contains five sections: research question, liter…",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16684",
+   "title": "ToMigo: Interpretable Design Concept Graphs for Aligning Generative AI with Creative Intent",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813064",
+   "system_id": "tomigo",
+   "evidence": [
+    {
+     "quote": "We derived a schema of node types and edges from pre-study data, informing a multimodal large language model to generate graphs",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16741",
+   "title": "Representational Design for Clinical AI: Embedding Secondary Stakeholder Needs in Large Language Models",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812864",
+   "system_id": "16741",
+   "evidence": [
+    {
+     "quote": "The LLM was prompted to generate reports following a structured template matching the PCP information themes.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "17197",
+   "title": "Prompt2Task: Automating UI Tasks on Smartphones from Textual Prompts",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3716132",
+   "system_id": "prompt2task",
+   "evidence": [
+    {
+     "quote": "As shown in Table 2, an instruction is represented as a tuple comprising the operation type, associated parameters, and object descriptions, usually referencing a widget on the page.",
+     "location": "system sec 4.1.3 / table 2"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -147,6 +147,18 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
 .chip-ux { background: var(--lens-ux); color: var(--lens-ux-on); box-shadow: none; }
 .chip-role { background: var(--ink); color: var(--card); box-shadow: none; }
 .chip-new { background: var(--accent-pale); color: var(--accent-ink); box-shadow: none; }
+/* on a paper row the two taxonomies are told apart by colour: a pattern wears its stage,
+   a factor wears the accent */
+.chip-pat { background: var(--bc-pale); color: var(--bc-text); box-shadow: none; }
+.chip-pat .mono { color: var(--bc-text); opacity: .62; }
+a.chip-pat:hover { box-shadow: inset 0 0 0 1px var(--bc-text); color: var(--bc-text); }
+/* outlined rather than filled: a palette's stage washes and its accent wash can land close
+   together, so the two taxonomies are separated by weight as well as by hue */
+.chip-fac { background: transparent; color: var(--accent-ink);
+  box-shadow: inset 0 0 0 1px var(--accent-ink); opacity: .8; }
+.chip-fac .mono { color: var(--accent-ink); opacity: .62; }
+a.chip-fac:hover { opacity: 1; color: var(--accent-ink); box-shadow: inset 0 0 0 1px var(--accent-ink); }
+.prow .chips + .chips { margin-top: 6px; }
 
 .bar { height: 5px; border-radius: 0; background: var(--band); overflow: hidden; }
 .bar > i { display: block; height: 100%; background: var(--accent); }
@@ -206,30 +218,59 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
 /* ------------------------------------------------------------------ home */
 
 .hero { padding: 64px 0 10px; }
-.hero .kicker, .hero h1, .hero .lede { max-width: 820px; }
-.hero h1 { font-size: 50px; line-height: 1.03; letter-spacing: -0.032em; margin: 14px 0 20px; }
-.stats { display: flex; flex-wrap: wrap; align-items: stretch; gap: 14px; margin-top: 30px; }
-.stat-box {
-  display: flex; align-items: baseline; gap: 18px;
-  border: 1px solid var(--rule); background: var(--card);
-  padding: 13px 18px;
+.hero .kicker, .hero .lede { max-width: 820px; }
+/* also one line — 41 characters at the top of the home page */
+.hero h1 { font-size: clamp(18px, 2.92vw, 50px); line-height: 1.03; letter-spacing: -0.032em;
+  margin: 14px 0 20px; white-space: nowrap; }
+/* The shape of the catalogue: what each taxonomy resolves into, and the corpus all of it
+   was read off, given the largest number on the page. The patterns rule runs through the
+   four stage colours in order; the factors rule is the one colour that family wears. */
+.statline { display: flex; align-items: flex-end; justify-content: space-between;
+  flex-wrap: wrap; gap: 30px 44px; margin-top: 34px; }
+.taxo { display: flex; gap: 40px; flex-wrap: wrap; }
+.taxo-col { position: relative; padding-left: 15px; display: block; }
+.taxo-col::before {
+  content: ""; position: absolute; left: 0; top: 2px; bottom: 2px; width: 3px;
+  background: var(--cc, var(--ink));
 }
-.stat-sep {
-  font-family: var(--sans); font-size: 20px; font-weight: 400; color: var(--muted);
-  align-self: center; padding-bottom: 14px; display: flex; align-items: center;
+.taxo-stages::before {
+  background: linear-gradient(180deg, var(--b1) 0%, var(--b1) 25%, var(--b2) 25%, var(--b2) 50%,
+    var(--b3) 50%, var(--b3) 75%, var(--b4) 75%);
 }
-.stat-sep .icon { display: block; }
-.stats > .stat-sep { align-self: center; padding-bottom: 0; }
-.stat-sep.wide { font-size: 22px; }
-.stat-sep.word { font-size: 13px; letter-spacing: -0.01em; color: var(--muted); }
-.stat { text-align: center; }
-.stat .n { font-family: var(--sans); font-size: 30px; font-weight: 600; letter-spacing: -0.02em; }
-.stat .l { font-family: var(--sans); font-size: 13px; color: var(--muted); letter-spacing: -0.01em; }
+.taxo-factors { --cc: var(--accent-ink); }
+.taxo-col .h {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--ink-4); margin-bottom: 8px;
+}
+.taxo-stages .h { color: var(--b1-text); }
+.taxo-factors .h { color: var(--accent-ink); }
+.taxo-col .r { font-family: var(--sans); font-size: 13px; color: var(--muted); line-height: 1.85; }
+.taxo-col .r b { font-size: 16px; font-weight: 600; color: var(--ink); margin-right: 6px;
+  letter-spacing: -0.015em; }
+.taxo-col:hover .h { color: var(--ink); }
+
+.corpus { display: block; text-align: right; }
+.corpus b {
+  display: block; font-family: var(--sans); font-size: clamp(40px, 5.4vw, 66px); font-weight: 600;
+  letter-spacing: -0.035em; line-height: 0.94; color: var(--ink);
+}
+.corpus span { font-family: var(--sans); font-size: 13px; color: var(--muted); }
+.corpus:hover b { color: var(--accent-ink); }
+
+@media (max-width: 620px) {
+  .statline { align-items: flex-start; }
+  .corpus { text-align: left; }
+}
 
 /* ---------------------------------------------------------------- matrix */
 
 .matrix-scroll { overflow: visible; background: var(--paper); }
-.matrix { border-collapse: separate; border-spacing: 0; font-family: var(--sans); }
+/* Fixed layout, so every cell is the width it is told to be. On auto layout the group
+   labels in the band above -- set nowrap, and spanning three or four columns each -- pushed
+   their own group's columns wider than the next group's, and a cell's size then read as part
+   of the scale. The labels ellipsis instead, which they were already styled to do. */
+.matrix { border-collapse: separate; border-spacing: 0; font-family: var(--sans);
+  table-layout: fixed; }
 .matrix th, .matrix td { padding: 0; }
 .matrix .rowhead {
   position: sticky; left: 0; z-index: 2; background: var(--paper);
@@ -275,15 +316,24 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
   a.card { transition: none; }
 }
 
-/* the groups the factors belong to, banded over their own columns */
-.matrix .grouphead th { background: var(--paper); vertical-align: bottom; padding: 0 0 6px; }
+/* The groups the factors belong to, banded over their own columns. The label is taken out
+   of flow: set nowrap and spanning several columns, it would otherwise set a minimum width
+   for its own group and push those columns wider than the next group's. */
+.matrix .grouphead th { background: var(--paper); vertical-align: bottom; padding: 0; height: 52px; }
+.matrix .grouphead-cell { position: relative; }
+/* out of flow, so it can wrap onto a second line without widening its columns */
 .matrix .grouphead-cell span {
-  display: block; margin: 0 4px; padding: 4px 6px 3px;
-  font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.04em;
-  color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  position: absolute; left: 4px; right: 4px; bottom: 6px;
+  display: block; padding: 3px 5px 3px;
+  font-family: var(--sans); font-size: 10px; letter-spacing: 0.03em; line-height: 1.25;
+  color: var(--ink-3); overflow: hidden;
   border-bottom: 2px solid var(--rule-strong);
 }
-.matrix .cell.group-start, .matrix .grouphead-cell + .grouphead-cell { border-left: 1px solid var(--rule); }
+/* The factor groups are set apart by a gap, and the gap is a column of its own -- a border
+   on the first cell of each group would make that column wider than the rest, and every
+   cell has to be the same size for the shading to read as one scale. */
+.matrix .colgap { width: 11px; min-width: 11px; padding: 0; background: transparent; }
+.matrix thead .colgap { border-bottom: 0; }
 /* In the header the separator runs parallel to the labels, in the gap between the last
    label of one group and the first of the next -- a vertical rule would cut across them. */
 .matrix .colhead.group-start::before {
@@ -318,7 +368,10 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
   border-left: 1px dotted var(--ink-5); opacity: 0.55;
 }
 .matrix .colhead a:hover { color: var(--ink); }
-.matrix-pad { display: inline-block; padding-right: 40px; position: relative; }
+/* A rotated label overhangs its column to the right by about half its own length, so the
+   pad reserves room for the longest one. Without it the page has nothing to scroll to and
+   the last few labels are unreachable. */
+.matrix-pad { display: inline-block; padding-right: 170px; position: relative; }
 
 /* A stage announces itself in its own colour and then runs a rail down the left of every
    row it covers, rather than laying a solid bar across the grid. */
@@ -367,17 +420,25 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
 .cell { width: 34px; text-align: center; font-size: 10.5px; cursor: pointer; }
 .cell .slot-in { height: 26px; display: flex; align-items: center; justify-content: center; }
 .cell.empty { cursor: default; }
-.matrix-legend {
-  display: flex; align-items: center; gap: 8px;
-  font-family: var(--sans); font-size: 12px; color: var(--muted); flex-wrap: wrap;
+/* One bar above the grid. It used to sit in the grid's own empty corner, where it was
+   bounded by the narrow row-head column and scrolled sideways with the header. */
+.matrix-controls {
+  display: flex; align-items: center; gap: 12px 26px; flex-wrap: wrap;
+  padding: 0 0 14px; margin-bottom: 20px; border-bottom: 1px solid var(--rule);
 }
-/* the grid's own empty corner carries its controls */
-.matrix-controls { display: flex; flex-direction: column; gap: 9px; align-items: flex-start; padding: 0 0 10px; }
-.matrix-controls .ctl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.matrix-controls .ctl-l { font-family: var(--sans); font-size: 11.5px; color: var(--muted); width: 56px; flex: none; }
-.matrix-controls .btn { padding: 4px 9px; font-size: 12px; }
+.matrix-controls .ctl { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.matrix-controls .ctl-l { font-family: var(--sans); font-size: 12px; color: var(--muted); flex: none; }
+.matrix-controls .btn { padding: 5px 11px; font-size: 12.5px; }
+
+/* the ramp, at a size that can actually be read against the grid */
+.matrix-legend {
+  display: flex; align-items: center; gap: 11px; margin-left: auto;
+  font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); flex-wrap: wrap;
+}
 .matrix-legend .swatches { display: flex; }
-.matrix-legend .swatches i { width: 22px; height: 10px; display: block; }
+.matrix-legend .swatches { box-shadow: inset 0 0 0 1px var(--rule); }
+/* larger than it was, and each swatch is split four ways, one band per stage ramp */
+.matrix-legend .swatches i { width: 38px; height: 24px; display: block; }
 .scale-row { display: flex; gap: 4px; }
 .scale-dot {
   width: 15px; height: 15px; padding: 0; border-radius: 50%;
@@ -392,18 +453,106 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
 }
 .scale-custom input { position: absolute; inset: -6px; opacity: 0; cursor: pointer; border: 0; padding: 0; }
 
-/* placeholder slots for worked examples, until the real ones land */
-.example-slot { border-style: dashed; box-shadow: none; }
-.example-shot {
-  height: 132px; background: var(--band); border: 1px dashed var(--rule-strong);
+/* ------------------------------------------------------------------ tabs */
+/* The catalogue pages open one group at a time. Two rows on the pattern page --
+   stage above, dimension below -- and one on the factors page. */
+
+.tabs { display: flex; flex-wrap: wrap; gap: 2px; }
+.tab { appearance: none; display: inline-flex; align-items: baseline; gap: 7px;
+  font-family: var(--sans); font-size: 13px; line-height: 1.2; padding: 9px 13px;
+  color: var(--ink-3); background: transparent; border: 0; cursor: pointer;
+  border-bottom: 2px solid transparent; }
+.tab:hover { color: var(--ink); background: var(--tint, var(--band)); }
+.tab.on { color: var(--ink); border-bottom-color: var(--ink); }
+.tab.off { color: var(--muted); opacity: .45; cursor: default; }
+.tab.off:hover { background: transparent; color: var(--muted); }
+.tab-code { font-family: var(--mono); font-size: 10.5px; color: var(--ink-4); }
+.tab-n { font-family: var(--mono); font-size: 10.5px; color: var(--ink-4); }
+.tab.on .tab-code, .tab.on .tab-n { color: inherit; opacity: .7; }
+
+/* the stage row carries its stage's colour, so the reader keeps the four-stage
+   reading order the home page sets up */
+/* Four steps of one arc rather than four labels: each takes its stage's colour as a wash
+   with the colour itself along the top, and the open one is filled with it. */
+.tabs-stage { margin-top: 34px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px; }
+.tabs-stage .tab { font-size: 15px; font-weight: 600; letter-spacing: -0.01em;
+  align-items: center; padding: 13px 15px 13px 13px; border-bottom: 0;
+  border-top: 3px solid var(--bc); background: var(--bc-pale);
+  transition: background .14s, color .14s; }
+/* every stage wears its own colour, selected or not: muted until it is the open one,
+   which takes the readable tone and the rule under it */
+/* Some palettes make the soft tone as saturated as the readable one, so the open tab is
+   held apart by weight and full strength rather than by hue alone. */
+.tabs-stage .tab { color: var(--bc-text); }
+.tabs-stage .tab .tab-n { color: inherit; opacity: .6; }
+.tabs-stage .tab:hover { background: var(--bc); color: var(--bc-on); }
+.tabs-stage .tab.on { background: var(--bc); color: var(--bc-on); }
+
+/* the step number, in a disc of the stage colour */
+.tabs-stage .tab-code { flex: none; width: 20px; height: 20px; line-height: 20px;
+  text-align: center; border-radius: 50%; font-size: 11px; font-weight: 600;
+  background: var(--bc); color: var(--bc-on); }
+/* on the filled tab the disc inverts to the card white, which reads on any stage colour --
+   --bc-on is the ink for the brighter stages, and a dark disc on a bright fill reads as a hole */
+.tabs-stage .tab.on .tab-code, .tabs-stage .tab:hover .tab-code {
+  background: var(--card); color: var(--bc-text); opacity: 1; }
+.tabs-stage .tab-label { flex: 1 1 auto; }
+
+/* a stage with nothing in it under the current filter drops out of the colour scheme */
+.tabs-stage .tab.off, .tabs-stage .tab.off:hover { color: var(--muted); background: var(--band);
+  border-top-color: var(--rule-strong); }
+.tabs-stage .tab.off .tab-code, .tabs-stage .tab.off:hover .tab-code {
+  background: var(--rule-strong); color: var(--band); }
+
+/* The dimension row belongs to the stage above it and is filled in that stage's colour;
+   --bc-on is derived against --bc, so the label stays readable whatever the palette.
+   The factor groups sit under no stage, so --bc falls back to the ink and they keep the
+   plain dark fill. */
+.tabs-dim, .tabs-group { margin-top: 12px; }
+.tabs-dim .tab, .tabs-group .tab { border: 1px solid var(--rule); border-bottom-width: 1px; }
+/* --bc-text rather than --bc-soft: these are 13px labels on the page ground, so they take
+   the tone measured for 4.5:1 instead of the 3:1 one the larger stage names can carry. */
+.tabs-dim .tab { color: var(--bc-text); }
+.tabs-dim .tab:hover { background: var(--bc-pale); border-color: var(--bc-soft); }
+.tabs-dim .tab.on, .tabs-group .tab.on { background: var(--bc); color: var(--bc-on);
+  border-color: var(--bc); }
+.tabs-dim .tab.on:hover { background: var(--bc); color: var(--bc-on); }
+.tabs-dim .tab.on .tab-code, .tabs-dim .tab.on .tab-n,
+.tabs-group .tab.on .tab-code, .tabs-group .tab.on .tab-n { color: inherit; opacity: .72; }
+.tabs-dim .tab.off, .tabs-dim .tab.off:hover { color: var(--muted); background: transparent;
+  border-color: var(--rule); }
+.tabs-group { margin-top: 30px; }
+
+@media (max-width: 860px) {
+  .tabs-stage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-.example-slot h3 { color: var(--ink-4); }
+@media (max-width: 620px) {
+  .tabs { gap: 1px; }
+  .tabs-stage { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+  .tabs-stage .tab { font-size: 13.5px; padding: 10px; }
+  .tab { font-size: 12px; padding: 8px 10px; }
+}
+
+/* the home page's way into the catalogue */
+.btn-go { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.btn-go .icon { transition: transform .14s; }
+.btn-go:hover .icon { transform: translateX(3px); }
 
 .readout { background: var(--card); border: 1px solid var(--rule); border-radius: 0; padding: 18px 20px; box-shadow: var(--shade-1); }
 
 /* ----------------------------------------------------------------- lists */
 
 .plist { border-top: 1px solid var(--rule); }
+
+/* the paper list as its own scroll panel, so a 300-paper pattern does not push the rest
+   of the page off the bottom */
+.plist-search { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.plist-search .search { flex: 1; }
+.plist-panel { max-height: 560px; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--rule); border-top: 1px solid var(--rule); padding: 0 14px; }
+.plist-panel .prow { padding-left: 0; padding-right: 0; }
+.plist-panel .prow:last-child { border-bottom: 0; }
 .prow { display: block; border-bottom: 1px solid var(--rule); padding: 16px 2px; }
 .prow:hover { background: var(--band-alt); }
 .palette-btn { box-shadow: var(--shade-1); }
@@ -420,6 +569,27 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
 
 .subcard { border: 1px solid var(--rule); border-radius: 0; padding: 16px 18px; background: var(--card); box-shadow: var(--shade-1); }
 .subcard + .subcard { margin-top: 10px; }
+
+/* Sub-factors as a list of rows that open. Nine of them as open cards was several screens;
+   the name, the share and the counts are what a reader scans, so those stay on the row. */
+.sublist { border-top: 1px solid var(--rule); }
+.subrow { border-bottom: 1px solid var(--rule); }
+.subrow-head { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+  padding: 11px 4px; font-family: var(--sans); font-size: 13.5px; color: var(--ink-2); }
+.subrow-head:hover { background: var(--tint, var(--band)); }
+.subrow.on .subrow-head { color: var(--ink); }
+.subrow-caret { flex: none; width: 12px; font-size: 10px; color: var(--bc-text, var(--ink-4)); }
+.subrow-name { flex: 1 1 auto; min-width: 0; }
+.subrow-bar { flex: 0 0 150px; }
+.subrow-n { flex: none; font-family: var(--sans); font-size: 11.5px; color: var(--ink-5);
+  min-width: 128px; text-align: right; }
+.subrow-body { padding: 2px 4px 16px 28px; max-width: 82ch; }
+.subrow-body p { margin: 0 0 8px; }
+
+@media (max-width: 620px) {
+  .subrow-bar { display: none; }
+  .subrow-n { min-width: 0; }
+}
 
 /* --------------------------------------------------------------- filters */
 
@@ -476,10 +646,282 @@ a.chip:hover { box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
   .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   h1 { font-size: 34px; }
-  .hero h1 { font-size: 38px; }
+  /* .hero h1 keeps its clamp: it has to stay on one line at every width */
 }
 @media (max-width: 620px) {
   .wrap { padding: 0 18px; }
   .g2, .g3, .g4 { grid-template-columns: minmax(0, 1fr); }
   .filterbar label { width: auto; }
 }
+
+/* ---------------------------------------------------- factor tiles */
+/* The share each factor takes of a pattern's papers. One tile each, in columns: a bar the
+   width of the page spent a whole screen on eight numbers and made the eye travel the page
+   rather than compare the factors. */
+
+.facgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 10px; }
+.factile { display: block; border: 1px solid var(--rule); padding: 11px 12px 12px; }
+.factile:hover { border-color: var(--bc, var(--ink)); }
+.factile-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.factile-head .mono { font-size: 10.5px; color: var(--ink-4); }
+.factile-pct { font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; }
+.factile-name { font-family: var(--sans); font-size: 12.5px; line-height: 1.35; color: var(--ink-2);
+  margin-top: 3px; min-height: 2.7em; }
+/* the stage colour itself, not the darkened tone measured for text on paper: these bars sit
+   beside the stage tabs, which are filled with --bc, and any other value reads as a mismatch */
+.factile-bar { margin-top: 4px; }
+.factile .bar > i { background: var(--bc); }
+.factile-n { font-family: var(--sans); font-size: 11px; color: var(--ink-5); margin-top: 6px; }
+
+/* --------------------------------------------------- a page inside a stage */
+/* A pattern page and a dimension page both belong to one of the four stages, and say so in
+   more than the header chips: a rule across the top, a marginal rule beside the title,
+   stage-toned section rules, and the stage colour on the marks that already carried a rule
+   -- quotes, the paper panel, the exemplar figures. */
+
+.stagepage { padding-top: 38px; position: relative; }
+.stagepage::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--bc);
+}
+
+/* One line, always: the longest pattern name is 48 characters, so the size is taken from
+   the viewport and capped rather than fixed. */
+.stagepage > h1 {
+  border-left: 3px solid var(--bc); padding-left: 15px; margin-left: -18px;
+  white-space: nowrap; font-size: clamp(19px, 3.05vw, 42px);
+}
+.stagepage .kicker { color: var(--bc-text); }
+
+/* the rule under a heading takes the stage; the heading itself stays in the ink */
+.stagepage .sec-head { border-bottom: 1px solid var(--bc-pale); padding-bottom: 9px; }
+
+.stagepage .prow .quote { border-left-color: var(--bc); }
+.stagepage .plist-panel { border-top: 2px solid var(--bc); }
+.stagepage .exrank { color: var(--bc-text); }
+.stagepage .exfig { border-color: var(--bc-pale); }
+.stagepage .exfig:hover { border-color: var(--bc); }
+
+@media (max-width: 760px) {
+  .stagepage > h1 { margin-left: 0; }
+}
+
+/* ------------------------------------------------------------- exemplars */
+/* One card per exemplar paper on a pattern page: the figure on the left, the
+   citation and the curator's note on the right. Figure aspect ratios run from
+   wide strips to near-square, so the cell is fixed and the image is contained. */
+
+.exlist { display: grid; gap: 14px; margin-top: 16px; }
+.excard { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 18px; align-items: start; padding: 14px; border: 1px solid var(--rule);
+  background: var(--paper); }
+.exfigs { display: grid; gap: 8px; }
+.exfig { margin: 0; cursor: zoom-in; border: 1px solid var(--rule);
+  background: #fff; overflow: hidden; }
+.exfig img { display: block; width: 100%; height: auto; max-height: 240px;
+  object-fit: contain; }
+.exfig:hover { border-color: var(--ink-3); }
+.exbody { position: relative; padding-right: 30px; }
+.exrank { position: absolute; top: 0; right: 0; font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 11px; color: var(--ink-4); }
+.extitle { display: block; font-size: 14.5px; font-weight: 600; line-height: 1.35; }
+.exmeta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11.5px;
+  color: var(--ink-4); margin-top: 5px; }
+.exmeta a { color: var(--ink-4); text-decoration: underline; }
+.exwhy { font-size: 12.5px; line-height: 1.55; color: var(--ink-3);
+  max-width: 72ch; margin: 9px 0 0; }
+.excard.bare .exwhy { font-style: italic; }
+
+.exnotes { margin-top: 14px; }
+.exnotes-toggle { appearance: none; background: none; border: 0; padding: 0;
+  cursor: pointer; font-family: var(--sans); font-size: 12px; color: var(--ink-4); }
+.exnotes-toggle:hover { color: var(--ink); }
+.exnotes p { font-size: 12.5px; line-height: 1.55; color: var(--ink-3);
+  max-width: 78ch; margin: 8px 0 0; }
+
+@media (max-width: 760px) {
+  .excard { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ------------------------------------------------ stage matrices (temp) */
+/* One grid per stage. Each is short enough to read without a sticky header, and it carries
+   only the factors its own patterns reach, so the columns are dense rather than sparse.
+   Temporary: withdraw with SHOW_STAGE_MATRIX in app.js. */
+
+/* The grid sits on white rather than the page's near-white ground -- on screen and in the
+   exported PDF alike. Rebinding --paper covers the sticky row heads and the header cells,
+   which all paint themselves with it. */
+.sgwrap { margin-top: 56px; --paper: #ffffff; }
+.sgwrap .matrix-pad { background: #ffffff; }
+/* visible, like the grid on the home page: a scroll box clips the rotated labels both
+   where they rise above the table and where they overhang its right edge */
+.sgscroll { overflow: visible; padding-bottom: 6px; }
+
+/* The grid's own corner -- 300px of row-head width by the height the rotated labels need --
+   was empty in every matrix on the site. Here it carries the stage's name. */
+.sgcorner { vertical-align: bottom; padding: 0 16px 10px 0; }
+.sgcorner-in { max-width: 290px; }
+.sgcorner-in h2 { font-size: 21px; letter-spacing: -0.016em; color: var(--bc-text); line-height: 1.1; }
+/* each grid shades over its own range, so each carries its own key */
+.sglegend { margin-top: 11px; font-family: var(--sans); font-size: 11.5px; color: var(--ink-4); }
+.sglegend-mode { color: var(--bc-text); font-weight: 600; font-size: 12px; white-space: nowrap;
+  margin-bottom: 5px; }
+.sglegend-ramp { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+.sglegend .swatches { display: flex; box-shadow: inset 0 0 0 1px var(--rule); }
+.sglegend .swatches i { width: 22px; height: 15px; display: block; }
+/* The rule under the stage name, drawn at the same offset off the bottom of the band row as
+   the rules under the group labels, so the two sit on one line. A border on the cell itself
+   would sit at the row's very bottom edge, 6px below them. */
+.sgcorner-rule { position: relative; }
+.sgcorner-rule::after {
+  content: ""; position: absolute; left: 0; right: 4px; bottom: 6px;
+  border-bottom: 3px solid var(--bc);
+}
+
+/* the shared .matrix rules do the rest; these are the differences */
+.matrix-stage thead { position: static; }
+/* the same height the grid on the home page gives them: the longest factor name needs
+   about 185px of rise at 45 degrees, and 168px cut the top off it */
+.matrix-stage .colhead { height: 200px; }
+.matrix-stage .rowhead { width: 300px; min-width: 300px; background: var(--paper); }
+.matrix-stage .rowhead a { padding: 3px 0; }
+.matrix-stage .cell { height: 24px; }
+.matrix-stage .cell a { display: block; color: inherit; }
+.matrix-stage .cell a:hover { text-decoration: underline; }
+.matrix-stage .lens-tag { flex: none; font-size: 9.5px; padding: 1px 5px; margin-left: auto; }
+
+/* A dimension label, doing the job the band row does in the single grid. It runs on one
+   line and is allowed to overhang its 300px cell: the rest of that row is empty, so the
+   long names have the whole width of the grid to stretch into. */
+.matrix-stage .sgcat .rowhead { padding-top: 13px; overflow: visible; white-space: nowrap; }
+.matrix-stage .sgcat .rowhead a { font-size: 12px; font-weight: 600; color: var(--bc-text);
+  white-space: nowrap; }
+.matrix-stage .sgcat .rowhead a > span { flex: none; }
+.matrix-stage .sgcat .rowhead .mono { color: var(--bc-text); opacity: .7; }
+
+/* One stage on its own, which is what each exported PDF holds. The page furniture is out
+   of the way and the grid sits at its natural size; @page is wide enough for the widest of
+   the four plus the overhanging labels. */
+.sgsolo { padding: 26px 0 10px; }
+.sgsolo .sgwrap { margin-top: 0; }
+
+@media print {
+  .topbar, footer, .notice, .matrix-controls, .lede, .tiny.dim { display: none !important; }
+  body { background: #fff; }
+  .wrap { padding: 0; max-width: none; }
+  .sgsolo { padding: 0; }
+  .sgscroll { overflow: visible; }
+  a { text-decoration: none; }
+  @page { size: 420mm 297mm; margin: 12mm; }
+}
+
+/* ---------------------------------------------------------- figure picker */
+/* Temporary editorial tool. Remove with the SHOW_FIGURE_PICKER flag in app.js. */
+
+.picker-bar { display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+.picker-count { font-size: 13px; color: var(--ink-3); margin-top: 6px; }
+.picker-tools { display: flex; align-items: center; gap: 10px; }
+
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; }
+.seg button { appearance: none; border: 0; background: transparent; cursor: pointer;
+  font: inherit; font-size: 12px; padding: 5px 11px; color: var(--ink-3); }
+.seg button + button { border-left: 1px solid var(--rule); }
+.seg button.on { background: var(--ink); color: var(--paper); }
+
+.btn { appearance: none; cursor: pointer; font: inherit; font-size: 12px; padding: 6px 13px;
+  border: 1px solid var(--rule); border-radius: 3px; background: transparent; color: var(--ink); }
+.btn:hover { background: var(--tint); }
+
+.picker-main { display: grid; grid-template-columns: 262px minmax(0, 1fr);
+  gap: 30px; align-items: start; margin-top: 20px; }
+
+.picker-nav { position: sticky; top: 16px; max-height: calc(100vh - 60px); overflow-y: auto;
+  border: 1px solid var(--rule); border-radius: 3px; }
+.picker-nav-row { display: flex; align-items: baseline; gap: 8px; width: 100%; text-align: left;
+  appearance: none; border: 0; background: transparent; cursor: pointer; font: inherit;
+  font-size: 12px; padding: 7px 10px; color: var(--ink-2); }
+.picker-nav-row + .picker-nav-row { border-top: 1px solid var(--rule-2, var(--rule)); }
+.picker-nav-row:hover { background: var(--tint); }
+.picker-nav-row.on { background: var(--ink); color: var(--paper); }
+.picker-nav-row .pid { font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 10.5px; opacity: .7; flex: none; }
+.picker-nav-row .pnm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picker-nav-row .dot { flex: none; font-size: 10px; min-width: 15px; height: 15px; line-height: 15px;
+  text-align: center; border-radius: 8px; background: var(--accent, #1a5b2f); color: #fff; }
+.picker-nav-row.on .dot { background: var(--paper); color: var(--ink); }
+
+.sig { font-size: 12.5px; color: var(--ink-3); max-width: 78ch; margin: 6px 0 0;
+  padding-left: 11px; border-left: 2px solid var(--rule); }
+
+.picker-paper { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.picker-paper-head a { font-size: 14.5px; font-weight: 600; }
+.picker-paper-head .meta { display: block; font-size: 11.5px; color: var(--ink-4); margin-top: 3px; }
+.picker-paper .why { font-size: 12.5px; color: var(--ink-3); max-width: 80ch; margin: 8px 0 0; }
+
+.figgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px; margin-top: 13px; }
+.figcell { position: relative; margin: 0; cursor: pointer; border: 1px solid var(--rule);
+  border-radius: 3px; overflow: hidden; background: var(--tint); transition: border-color .12s; }
+.figcell:hover { border-color: var(--ink-3); }
+.figcell.on { border-color: var(--accent, #1a5b2f); box-shadow: inset 0 0 0 2px var(--accent, #1a5b2f); }
+.figcell img { display: block; width: 100%; height: 152px; object-fit: contain;
+  background: #fff; }
+.figcell figcaption { font-size: 10.5px; color: var(--ink-4); padding: 5px 7px;
+  font-family: "SF Mono", ui-monospace, Menlo, monospace; }
+.figcell .badge { position: absolute; top: 6px; left: 6px; min-width: 18px; height: 18px;
+  line-height: 18px; text-align: center; border-radius: 9px; font-size: 11px;
+  background: var(--accent, #1a5b2f); color: #fff; }
+.figcell .zoom { position: absolute; top: 6px; right: 6px; width: 20px; height: 20px;
+  appearance: none; border: 0; border-radius: 3px; cursor: pointer; font-size: 11px;
+  background: rgba(0,0,0,.55); color: #fff; opacity: 0; transition: opacity .12s; }
+.figcell:hover .zoom { opacity: 1; }
+
+.lightbox { position: fixed; inset: 0; z-index: 90; background: rgba(0,0,0,.86);
+  display: flex; align-items: center; justify-content: center; padding: 34px; cursor: zoom-out; }
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; background: #fff; }
+
+@media (max-width: 900px) {
+  .picker-main { grid-template-columns: 1fr; }
+  .picker-nav { position: static; max-height: 260px; }
+}
+
+.picker-nav-stage { font-size: 10px; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-4); padding: 11px 10px 5px; background: var(--tint);
+  border-top: 1px solid var(--rule); }
+.picker-nav > .picker-nav-stage:first-child { border-top: 0; }
+.picker-nav-dim { display: flex; justify-content: space-between; gap: 8px;
+  font-size: 11px; font-weight: 600; color: var(--ink-2);
+  padding: 7px 10px 5px; border-top: 1px solid var(--rule); }
+.picker-nav-dim .tally { font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 10px; color: var(--ink-4); font-weight: 400; }
+.picker-nav-row .pnm { padding-left: 2px; }
+
+.sync { display: inline-block; margin-left: 12px; padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; border: 1px solid var(--rule); color: var(--ink-4); }
+.sync-saved { border-color: var(--accent, #1a5b2f); color: var(--accent, #1a5b2f); }
+.sync-saving { border-color: var(--ink-4); color: var(--ink-3); }
+.sync-error { border-color: #a3341f; color: #a3341f; }
+.sync-offline { border-style: dashed; }
+
+.lens { flex: none; font-size: 9.5px; letter-spacing: .05em; padding: 1px 5px; border-radius: 2px;
+  font-family: "SF Mono", ui-monospace, Menlo, monospace; border: 1px solid currentColor; }
+.lens-ui { color: #1f5d7a; }
+.lens-ux { color: #7a4a1f; }
+.picker-nav-row.on .lens { color: inherit; opacity: .85; }
+.lens-lg { font-size: 11px; padding: 2px 7px; margin-left: 11px; vertical-align: middle; letter-spacing: .04em; }
+.lenshint { font-size: 12.5px; color: var(--ink-3); max-width: 80ch; margin: 0 0 4px; }
+.lenshint b { font-weight: 600; color: var(--ink-2); }
+
+.manualtag { display: inline-block; margin-left: 9px; padding: 1px 6px; border-radius: 2px;
+  font-size: 10px; letter-spacing: .04em; border: 1px dashed var(--ink-4); color: var(--ink-3); }
+
+.grouphead { margin-top: 30px; padding-bottom: 5px; border-bottom: 1px solid var(--ink-3);
+  font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
+.picker-paper.cand { opacity: .93; }
+.picker-paper.cand .picker-paper-head a { font-weight: 500; }
+.raternotes { margin: 7px 0 0; padding-left: 17px; font-size: 12px; color: var(--ink-3);
+  max-width: 82ch; }
+.raternotes li { margin-bottom: 3px; }
+.raternotes b { font-weight: 600; color: var(--ink-2); }
+.nofigs { font-size: 12px; margin-top: 10px; }

@@ -1,0 +1,101 @@
+{
+ "pattern": {
+  "pattern_id": "pat-018",
+  "pattern_name": "Addressable Segments",
+  "pattern_slug": "addressable-segments",
+  "short_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+  "definition": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object. Operations that would otherwise apply to the whole — editing, regenerating, tagging, attributing — apply per unit. The partition is materialized on screen, and its boundaries may themselves be adjustable.",
+  "structural_signature": "A single artifact is divided into a set of non-overlapping parts, each given an identity (a name, a type label, a card, a row). Each part carries its own handles, so the artifact has as many operation targets as it has parts, all simultaneously present. Segmentation may be automatic or user-adjusted, but the resulting units persist as the unit of interaction rather than dissolving back into the whole.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Persistent Structured Representation",
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "16841",
+   "title": "G-SAN: Rethinking Audio Navigation Beyond Time in Podcasts",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812915",
+   "system_id": "gsan",
+   "evidence": [
+    {
+     "quote": "(1) the Current Semantic Block displayed as transcript",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16862",
+   "title": "IntentFlow: Investigating Fluid Dynamics of Intent Communication in Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812999",
+   "system_id": "intentflow",
+   "evidence": [
+    {
+     "quote": "IntentFlow decomposes a user’s chat prompt into a structured representation consisting of a high-level goal and a set of low-level intents, which are externalized as editable components (Figure 3).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "16919",
+   "title": "DataSway: Vivifying Metaphoric Visualization with Animation Clip Generation and Coordination",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813048",
+   "system_id": "datasway",
+   "evidence": [
+    {
+     "quote": "(C) Keyframe editor for element-wise animation clips.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

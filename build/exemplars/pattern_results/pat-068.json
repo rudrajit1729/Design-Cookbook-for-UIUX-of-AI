@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-068",
+ "exemplars": [
+  {
+   "rid": "3208",
+   "title": "ClassMeta: Designing Interactive Virtual Classmate to Promote VR Classroom Participation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642947",
+   "final_score": 4.8,
+   "why": "ClassMeta deliberately stops at a partial answer and makes the student supply its completion, directly realizing the truncated-pipeline structure in an observable interaction.",
+   "over_the_runner_up": "It ranks above rid 3547 because withholding part of an answer and soliciting its completion demonstrates the human-supplied terminal step more literally than correctness-only feedback."
+  },
+  {
+   "rid": "3547",
+   "title": "Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Calibration on Learning Outcomes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713960",
+   "final_score": 4.55,
+   "why": "The system emits the penultimate result—whether the response is correct—but withholds the correct answer after an error, requiring the learner to determine it independently.",
+   "over_the_runner_up": "It ranks above rid 13637 because the withheld terminal value and the learner's responsibility to supply it are explicit, whereas conflict highlighting does not prove that suggested edits are an existing final pipeline stage."
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "final_score": 4.45,
+   "why": "Semantic Commit performs impact analysis but exposes only potential conflicts, reserving the consequential specification changes for the user to formulate and apply.",
+   "over_the_runner_up": "It earns the final place over rid 2257 because its intermediate-only output and withheld prescriptions are explicit, while the question-framed explanation evidence does not establish that the system computed and then suppressed a terminal entailment judgment."
+  }
+ ],
+ "notes": "I departed from the consensus by moving rid 3208 to first and excluding consensus leader rid 2257. I would adjust rid 2257 downward by more than 0.3 (from 4.67 to roughly 4.25) because its quote shows an unanswered question but does not establish the structural signature's computed-but-withheld terminal output or the absence of a reveal path. The selected evidence is still limited: none of the excerpts proves that no reveal control exists; rid 3208 states an intended participation benefit rather than a measured effect; rid 3547 does not isolate the effect of answer withholding; and rid 13637 does not prove that generating proposed changes is technically part of the same pipeline. Rid 13637 was retained despite that caveat because it supplies a strong non-educational instance of exposing diagnostic intermediates while reserving the final intervention for the user.",
+ "pattern_name": "Withheld Answer",
+ "category_id": "U03",
+ "rated": 17
+}

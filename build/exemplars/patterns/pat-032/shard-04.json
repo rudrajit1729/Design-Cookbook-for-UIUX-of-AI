@@ -1,0 +1,394 @@
+{
+ "pattern": {
+  "pattern_id": "pat-032",
+  "pattern_name": "Source Conditioned Generation",
+  "pattern_slug": "source-conditioned-generation",
+  "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+  "definition": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on. The user supplies material rather than a description of what they want. The output is a function of that material.",
+  "structural_signature": "The system exposes an ingestion path for a user-owned artifact (upload, parse, encode, capture) and routes it into the generator as conditioning state, either directly or after an encoding step. The generation cannot run without that artifact; changing it changes the output. The material is pre-existing with respect to the interaction — it is not authored in order to specify the request.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "16163",
+   "title": "3DALL-E: Integrating Text-to-Image AI in 3D Design Workflows",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3596098",
+   "system_id": "3dalle",
+   "evidence": [
+    {
+     "quote": "In the bottom left panel, we show how users could pass in image prompts and retrieve DALL-E generations",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "16260",
+   "title": "DesignPrompt: Using Multimodal Interaction for Design Exploration with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661588",
+   "system_id": "designprompt",
+   "evidence": [
+    {
+     "quote": "Top: Drag image from search to canvas (a), click to open meta-data display (b), and drag elements from canvas to AI toolbar (c).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16270",
+   "title": "Co-Creating Question-and-Answer Style Articles with Large Language Models for Research Promotion",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660705",
+   "system_id": "16270",
+   "evidence": [
+    {
+     "quote": "users select a research paper they published and start creating QA pairs in the editing space",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16464",
+   "title": "Prompt Machine: A Tangible Generative AI Tool for Supporting Children's Learning and Literacy",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735673",
+   "system_id": "16464",
+   "evidence": [
+    {
+     "quote": "(A) Pupils write assignments. (B) Pupils input their written assignments.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16594",
+   "title": "NoRe: Augmenting Journaling Experience with Generative AI for Music Creation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735845",
+   "system_id": "nore",
+   "evidence": [
+    {
+     "quote": "we developed NoRe, a system that transforms journal entries into personalized music using generative AI",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16661",
+   "title": "On Designing Visceral Encounters with Synthetic Intimate Imagery",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812969",
+   "system_id": "16661",
+   "evidence": [
+    {
+     "quote": "We present Photo BOO-th, an interactive installation that invites attendees to encounter NCSII of themselves, resulting in a creepy, visceral, and affective experience.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16680",
+   "title": "PrivacyMotiv: Vulnerability-Centered Persona Journeys for Empathic Privacy Reviews in UX Design",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813014",
+   "system_id": "privacymotiv",
+   "evidence": [
+    {
+     "quote": "PrivacyMotiv takes lo-fi user flows as input and generates three-tiered outputs",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16754",
+   "title": "Augmentiary: Exploring How LLM-Generated Interpretive Feedback Supports Meaning-Making in Reflective Journaling",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812859",
+   "system_id": "augmentiary",
+   "evidence": [
+    {
+     "quote": "Writers can compare feedback that either connects a passage to relevant past experiences or expands it through alternative perspectives",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16755",
+   "title": "PromptMirror: Visualizing LLM Use to Support STEM Student Reflection",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812863",
+   "system_id": "promptmirror",
+   "evidence": [
+    {
+     "quote": "A one-off, no-login upload page that accepts exports from multiple providers (e.g., ChatGPT, Claude, Gemini)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16885",
+   "title": "Re-Envisioning Instant Photography using Generative AI: An Exploratory Design Probe Using the UnReality Camera",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812872",
+   "system_id": "16885",
+   "evidence": [
+    {
+     "quote": "The combination of the prompts with the models (styles) and the original images results in the final images on the right.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16919",
+   "title": "DataSway: Vivifying Metaphoric Visualization with Animation Clip Generation and Coordination",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813048",
+   "system_id": "datasway",
+   "evidence": [
+    {
+     "quote": "In Stage I, guided by user intent alongside the visualization reference represented in SVG and raster image, a VLM synthesizes element-wise animation clips based on a textual description.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16931",
+   "title": "Is This the Real Me?: Investigating Algorithmic Self-Portraits as a Medium for Critical Reflection on Algorithmic Experiences on YouTube",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812910",
+   "system_id": "16931",
+   "evidence": [
+    {
+     "quote": "we developed TubeLens, which creates a user’s algorithmic self-portrait (Fig. 2) in a collage of algorithmic trait keywords and images inferred from their YouTube watch histories and mediates interactions with the portraits for reflection.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "16995",
+   "title": "Documentation Matters: Human-Centered AI System to Assist Data Science Code Documentation in Computational Notebooks",
+   "venue": "tochi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3489465",
+   "system_id": "16995",
+   "evidence": [
+    {
+     "quote": "When the user’s cursor is focused on a code cell, the UI will send the current code cell content to the server-side program",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "17083",
+   "title": "Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3609331",
+   "system_id": "marvista",
+   "evidence": [
+    {
+     "quote": "combines AI’s processing of the text, the user’s reading behavior, and user-generated data in the reading process",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

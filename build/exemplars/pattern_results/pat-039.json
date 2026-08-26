@@ -1,0 +1,53 @@
+{
+ "pattern_id": "pat-039",
+ "exemplars": [
+  {
+   "rid": "7479",
+   "title": "CanvasPic: An Interactive Tool for Freely Generating Facial Images Based on Spatial Layout",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650952",
+   "final_score": 4.75,
+   "why": "CanvasPic is the canonical Spatial Canvas exemplar: users reposition images on a two-dimensional layout, and the distances between them continuously determine each image attribute’s influence on the generated face. Moving unchanged elements therefore changes the request and its output through an explicit, inspectable spatial mapping.",
+   "over_the_runner_up": "It outranks Component-Wise Sketching because multiple pairwise distances continuously shape generation, making the whole spatial arrangement a richer specification than selection by distance to a single fixed center."
+  },
+  {
+   "rid": "5715",
+   "title": "Component-Wise Sketching and Generation for Car Interior Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790912",
+   "final_score": 4.55,
+   "why": "The system interprets component positions relative to the canvas center, automatically assembling the nearest components into a cabin preview. Because moving an otherwise unchanged component can include or exclude it from the generated configuration, the mechanism directly satisfies the pattern’s requirement that coordinates and distances function as specification.",
+   "over_the_runner_up": "It outranks CrossLit because its evidence establishes a precise coordinate-dependent rule on the canvas, whereas CrossLit demonstrates meaningful grouping but not that free placement or exact spatial position affects output."
+  },
+  {
+   "rid": "5384",
+   "title": "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791418",
+   "final_score": 4.4,
+   "why": "CrossLit turns users’ spatial organization of literature piles into document structure: each group formed in the visual editor becomes a drafted section in the text editor. The canvas is thus an executable specification for synthesis, with rearrangement across groups changing the generated outline and prose without requiring changes to the papers themselves.",
+   "over_the_runner_up": "It outranks ImaginationVellum because the evidence states a concrete mapping from spatial grouping to generated sections, while ImaginationVellum’s evidence calls the canvas an active prompt space without explaining how spatial relations are interpreted."
+  },
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "final_score": 4.12,
+   "why": "The whole 2D canvas is the prompt: strokes, placement and spatial relationships between elements are read as specification rather than as decoration around a text box. It is the fullest statement of the pattern in the candidate pool, since the canvas is not a staging area whose contents are later serialised into a prompt but is itself the active prompt space. Any tool with a freeform surface can adopt the move of treating arrangement as instruction.",
+   "over_the_runner_up": "Added by hand as an additional example; it did not displace a selected one.",
+   "added_manually": true,
+   "rater_consensus": 4.12,
+   "evidence_quote": "This means that ImaginationVellum employs the entire 2D canvas as an active prompt space",
+   "evidence_location": "abstract"
+  }
+ ],
+ "notes": "The selected set matches the consensus top three, but Component-Wise Sketching is promoted above CrossLit because its center-distance rule more completely proves the structural signature; this is only a rank departure, and no score adjustment exceeds 0.3. CanvasPic has the strongest evidence because its quote explicitly connects spatial distance to generative influence. Readers should be more cautious with CrossLit: the supplied evidence proves grouping-to-section generation but does not establish an unbounded canvas, free positioning, or sensitivity to coordinates within a group. The Component-Wise Sketching evidence clearly proves positional selection, although the quote alone does not explicitly establish that the surface is unbounded. The selected systems are distinct. Editorial addition: 13801 was added by hand as an additional example; the raters scored it 4.12 and it did not displace a selected exemplar.",
+ "pattern_name": "Spatial Canvas",
+ "category_id": "U01",
+ "rated": 17
+}

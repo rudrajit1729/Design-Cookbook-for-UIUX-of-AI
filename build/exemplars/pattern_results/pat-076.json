@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-076",
+ "exemplars": [
+  {
+   "rid": "13987",
+   "title": "Keyframer: A Design Probe for Exploring LLM Assistance in 2D Animation Design",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00014",
+   "final_score": 4.55,
+   "why": "Keyframer cleanly separates an imperceptible generated representation from its display layer: completed LLM-generated CSS is combined with the fixed source SVG and rendered as an inline animation that users can directly judge. The evidence identifies the representation, rendering operation, fixed asset, and displayed result.",
+   "over_the_runner_up": "Chosen over From Embeddings to Exploration because its ordinary CSS/SVG renderer is unambiguously separate from generation, whereas the latter relies on a learned decoder whose status as a content-neutral display layer is debatable."
+  },
+  {
+   "rid": "4755",
+   "title": "AgentHands: Generating Interactive Hand Gestures for Spatially Grounded Agent Conversations in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790938",
+   "final_score": 4.45,
+   "why": "AgentHands exposes the full temporal rendering pipeline: symbolic events are parsed into time-stamped poses and motions, then a distinct animation system renders synchronized, perceptible hands. It is a particularly strong exemplar of the pattern’s time-varying case and transfers readily to avatars, trajectories, and embodied agents.",
+   "over_the_runner_up": "Chosen over Usable and Fast Interactive Mental Face Reconstruction because the explicit event-to-pose-to-animation pipeline more clearly isolates a conventional renderer, while face reconstruction again depends on a learned generator as decoder."
+  },
+  {
+   "rid": "9372",
+   "title": "Illuminating Memory: Using Ambient Light to Enrich Generative Representations of Daily Life",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798359",
+   "final_score": 4.35,
+   "why": "The system maps model-produced RGB parameters and duration into perceptible ambient light through a fixed application-and-fade routine. This is an unusually pure physical-display instance: numeric output remains inaccessible as the intended experience until the designer-chosen lighting renderer embodies it.",
+   "over_the_runner_up": "Chosen over ViSTAR because its RGB-to-light mapping is simpler and more definitively content-preserving than pose retargeting, while also broadening the exemplar set beyond screen and avatar animation."
+  }
+ ],
+ "notes": "I departed from the consensus by excluding the second-ranked From Embeddings to Exploration and promoting Illuminating Memory from fourth. A learned latent decoder may synthesize details rather than function solely as the fixed, content-neutral renderer required by the structural signature; the RGB-to-light mapping is structurally cleaner and adds useful modality diversity. AgentHands was retained despite slight ambiguity about whether every event is model-generated because its parser-to-pose-to-animation separation is explicit. Readers should distrust claims about user impact: the supplied quotations establish implementation pipelines, not measured benefits. AgentHands is supported only by an abstract excerpt, and Illuminating Memory’s evidence does not describe the provenance or semantics of the RGB values beyond calling them model output.",
+ "pattern_name": "Perceptible Rendering",
+ "category_id": "U04",
+ "rated": 20
+}

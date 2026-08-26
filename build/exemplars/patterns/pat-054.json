@@ -1,0 +1,606 @@
+{
+ "pattern": {
+  "pattern_id": "pat-054",
+  "pattern_name": "Paired (Human-AI) Assessment",
+  "pattern_slug": "paired-human-ai-assessment",
+  "short_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other.",
+  "definition": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other. Typically the user commits to a position first and the model's position is then revealed, with a further step in which the user may revise. The juxtaposition, and the divergence it exposes, is the designed object.",
+  "structural_signature": "Two verdicts over the same item are held in the interface — one produced by the user, one by the system — and are displayed in the same view or in a fixed temporal order (user commits, system reveals, user re-decides). A revision affordance follows the reveal, and the difference between the two verdicts is itself rendered or computed.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 22,
+ "candidates": [
+  {
+   "rid": "1661",
+   "title": "Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581058",
+   "system_id": "1661",
+   "evidence": [
+    {
+     "quote": "we proposed to promote humans’ appropriate trust based on the CL of both sides at a task-instance level",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2711",
+   "title": "Are You Really Sure? Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642671",
+   "system_id": "2711",
+   "evidence": [
+    {
+     "quote": "individuals initially made a judgment and assessed their self-confdence, then received AI recommendations (with or without a confdence score), and ultimately made their fnal judgment",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3062",
+   "title": "Rehearsal: Simulating Conflict to Teach Conflict Resolution",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642159",
+   "system_id": "rehearsal",
+   "evidence": [
+    {
+     "quote": "Before revealing the simulation’s strategy, Rehearsal’s Feedback interaction prompts users to recall and recognize confict resolution strategies from IRP.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3661",
+   "title": "Towards Human-AI Deliberation: Design and Evaluation of LLM-Empowered Deliberative AI for AI-Assisted Decision-Making",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713423",
+   "system_id": "3661",
+   "evidence": [
+    {
+     "quote": "we introduce Human-AI Deliberation, an approach inspired by human deliberation theories that enables dimension-level opinion elicitation, iterative decision updates, and structured discussions between humans and AI",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4085",
+   "title": "Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713229",
+   "system_id": "4085",
+   "evidence": [
+    {
+     "quote": "To address potential human knowledge gaps, we introduce a framework for generating human-centered contrastive explanations which explain the difference between AI’s choice and a predicted, likely human choice about the same task.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4139",
+   "title": "To Rely or Not to Rely? Evaluating Interventions for Appropriate Reliance on Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714097",
+   "system_id": "4139",
+   "evidence": [
+    {
+     "quote": "For each question, participants first answered independently, then received LLM advice modified by one of three reliance interventions and answered the question again.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4733",
+   "title": "Understanding the Effects of AI-Assisted Critical Thinking on Human-AI Decision Making",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790785",
+   "system_id": "4733",
+   "evidence": [
+    {
+     "quote": "the main workflow of presenting the three types of issues in decision-maker’s argument, along with highlighting agreement between AI and human on reliable features",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5363",
+   "title": "Interface Support for Evaluating Disability Bias in AI-Generated Images",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791922",
+   "system_id": "5363",
+   "evidence": [
+    {
+     "quote": "The ratings for each image from the original set of ratings, and then for the second round of ratings after seeing an intervention, broken down by condition.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5657",
+   "title": "Editable XAI: Toward Bidirectional Human-AI Alignment with Co-Editable Explanations of Interpretable Attributes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791375",
+   "system_id": "editablexai",
+   "evidence": [
+    {
+     "quote": "b) User’s explanation rules canvas. c) User rule performance metrics. d) Enhancement actions. e) AI-enhanced explanation rules canvas.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5765",
+   "title": "More Isn't Always Better: Balancing Decision Accuracy and Conformity Pressures in Multi-AI Advice",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791648",
+   "system_id": "5765",
+   "evidence": [
+    {
+     "quote": "User interface for a single trial in the Income task. (A) Problem presentation. (B) Initial prediction. (C) AI advice with explanation and attention check (shown sequentially for multiple AIs). (D) Final decision.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5956",
+   "title": "Guided Reflection in AI-Assisted Decision-Making: Effects on AI Overreliance and Decision Accuracy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790632",
+   "system_id": "5956",
+   "evidence": [
+    {
+     "quote": "Participants received the treatment corresponding to their assigned condition and then made final decisions and repeated the belief elicitation for the same four cases.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "8514",
+   "title": "Redefining Research Crowdsourcing: Incorporating Human Feedback with LLM-Powered Digital Twins: Incorporating Human Feedback with LLM-Powered Digital Twins",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720269",
+   "system_id": "8514",
+   "evidence": [
+    {
+     "quote": "The testing survey interface with both digital twin and human responses.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9169",
+   "title": "ConvScale: Conversational Interviews for Scale-Aligned Measurement",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798684",
+   "system_id": "convscale",
+   "evidence": [
+    {
+     "quote": "Reflection interface enabling participants’ review of their self-reported scores and ConvScale scoring outcomes.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9260",
+   "title": "Exploring a Collaborative Gamified Approach to Vision-Language Model Evaluation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799410",
+   "system_id": "9260",
+   "evidence": [
+    {
+     "quote": "Both the human guesser and an AI agent compete to make correct predictions",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9275",
+   "title": "Fear Is a Bad Gambler: Designing for Cognitive Co-Creation in AI-Mediated Social Exposure",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798914",
+   "system_id": "9275",
+   "evidence": [
+    {
+     "quote": "an externalization architecture materializes the gap between user predictions and observed outcomes to prompt active belief revision",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9688",
+   "title": "Understanding the Affordances of Control in AI Reasoning for Human-AI Decision-Making",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798555",
+   "system_id": "9688",
+   "evidence": [
+    {
+     "quote": "Participants make their initial decision and report their confidence level.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9844",
+   "title": "Smell with Genji: Rediscovering Human Perception through an Olfactory Game with AI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799121",
+   "system_id": "9844",
+   "evidence": [
+    {
+     "quote": "fostering reflection through a dialogue that highlights the alignment and discrepancies between human and machine perception",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10282",
+   "title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789136",
+   "system_id": "10282",
+   "evidence": [
+    {
+     "quote": "The user solves each problem in three stages: independent decision-making based on their own knowledge, decision revision after viewing the AI advice, and trust update in the AI after observing decision accuracy (Figure 2).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13496",
+   "title": "CriTrainer: An Adaptive Training Tool for Critical Paper Reading",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606816",
+   "system_id": "critrainer",
+   "evidence": [
+    {
+     "quote": "In the AC-1 stage, users can draft a summary of the section (b2) and get feedback based on the AI-generated summary (b3)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14026",
+   "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00052",
+   "system_id": "14026",
+   "evidence": [
+    {
+     "quote": "After clicking “Done,” the system compares the user’s selections with the system-defined reference answer. Feedback is provided to indicate whether the user has correctly identified the key elements, along with suggestions for improvement. Users can also view a side-by-side comparison to understand any differences in interpretation.",
+     "location": "full text sec IV-B"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14746",
+   "title": "Designing for Appropriate Reliance: The Roles of AI Uncertainty Presentation, Initial User Decision, and User Demographics in AI-Assisted Decision-Making",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637318",
+   "system_id": "14746",
+   "evidence": [
+    {
+     "quote": "Participants first provide an initial response. Then, the AI prediction is revealed to the participants.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15275",
+   "title": "PracticeDAPR: An AI-based Education-Supported System for Art Therapy",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711112",
+   "system_id": "practicedapr",
+   "evidence": [
+    {
+     "quote": "Q&A Analysis - DAPR score evaluation - Write questions to ask the client Compare with AI mentor",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

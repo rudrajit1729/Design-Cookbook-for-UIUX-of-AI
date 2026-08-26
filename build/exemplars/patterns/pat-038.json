@@ -1,0 +1,666 @@
+{
+ "pattern": {
+  "pattern_id": "pat-038",
+  "pattern_name": "Model Internals View",
+  "pattern_slug": "model-internals-view",
+  "short_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate.",
+  "definition": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate. What is displayed is not the output but the machinery that produced it. The view supports operations over those quantities, such as ranking, pruning, or comparing them.",
+  "structural_signature": "The display is bound to intermediate values captured during inference rather than to the emitted result; those values are aggregated or projected into a view with its own controls (metric selectors, per-unit comparison, ablation toggles). Changing a control re-derives the view from the same captured values without re-running the user's task.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Analytics Dashboard",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 26,
+ "candidates": [
+  {
+   "rid": "2584",
+   "title": "PromptCharm: Text-to-Image Generation through Multi-modal Prompting and Refinement",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642803",
+   "system_id": "promptcharm",
+   "evidence": [
+    {
+     "quote": "The user can then examine the generated images with the help of model attention visua",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4679",
+   "title": "Augmenting Clinical Decision-Making with an Interactive and Interpretable AI Copilot: A Real-World User Study with Clinicians in Nephrology and Obstetrics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791458",
+   "system_id": "4679",
+   "evidence": [
+    {
+     "quote": "(B) an interactive list of critical risk factors with their adaptive importance scores enabling immediate dril…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5347",
+   "title": "Transformer Explainer: Learning LLM Transformers with Interactive Visual Explanation and Experimentation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791725",
+   "system_id": "5347",
+   "evidence": [
+    {
+     "quote": "Attention heads are depicted as a stack of cards, with transitions cycling smoothly through the stack in a looping animation.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8281",
+   "title": "Enhancing AI Explainability for Non-technical Users with LLM-Driven Narrative Gamification",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719795",
+   "system_id": "8281",
+   "evidence": [
+    {
+     "quote": "For this preliminary study, we chose to gamify interactive t-SNE projections of CNN embeddings because image classifiers are frequently encountered by non-technical AI users, such as in facial recognition apps [30]",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8558",
+   "title": "TELL-ME: Toward Personalized Explanations of Large Language Models",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719982",
+   "system_id": "tellme",
+   "evidence": [
+    {
+     "quote": "advanced users see heatmaps showing overall word influence, and experts receive detailed attribution scores for precise analysis",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8735",
+   "title": "Explaining Complex ML Models to Domain Experts Using LLM & Visualization: An Exploration in the French Breadmaking Industry",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706685",
+   "system_id": "8735",
+   "evidence": [
+    {
+     "quote": "The user may force a causal assumption or independence between two variables – this instance represents a causal relationship flowing from Shaping_Tearing to Kneading_Consistency",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10173",
+   "title": "iScore: Visual Analytics for Interpreting How Language Models Automatically Score Summaries",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645142",
+   "system_id": "iscore",
+   "evidence": [
+    {
+     "quote": "we characterized fundamental design challenges and goals around interpreting their models, including aggregating large text inputs, tracking score provenance, and scaling LLM interpretability methods",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10228",
+   "title": "Neural Transparency: Mechanistic Interpretability Interfaces for Anticipating Model Behaviors for Personalized AI",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789120",
+   "system_id": "10228",
+   "evidence": [
+    {
+     "quote": "we introduce an interface that enables neural transparency by exposing language model internals during the chatbot’s personality design",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10375",
+   "title": "-generAItor: Tree-in-the-loop Text Generation for Language Model Explainability and Adaptation",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3652028",
+   "system_id": "generaitor",
+   "evidence": [
+    {
+     "quote": "Edge width and label encode the probability of a node to follow its predecessor.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10527",
+   "title": "VisQA: X-raying Vision and Language Reasoning in Transformers",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114683",
+   "system_id": "visqa",
+   "evidence": [
+    {
+     "quote": "the result of the model is presented both as attention heads (internal structure of the model), as well as the top-5 predicted answers",
+     "location": "system sec 6.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10953",
+   "title": "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209479",
+   "system_id": "10953",
+   "evidence": [
+    {
+     "quote": "In PromptIDE, only the answer ranks of defined answer choices are compared against each other.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10955",
+   "title": "Visual Comparison of Language Model Adaptation",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209458",
+   "system_id": "10955",
+   "evidence": [
+    {
+     "quote": "the contextualized word embeddings extracted from layer 11 for the rotten-tomatoes and sst-2 sentime",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "11111",
+   "title": "How Does Attention Work in Vision Transformers? A Visual Analytics Attempt",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2023.3261935",
+   "system_id": "11111",
+   "evidence": [
+    {
+     "quote": "The Head Importance View (B) shows all heads in different importance metrics (B1) and dissects a head’s importance through partial pruning (B2, B3).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11339",
+   "title": "AttentionViz: A Global View of Transformer Attention",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327163",
+   "system_id": "attentionviz",
+   "evidence": [
+    {
+     "quote": "AttentionViz, our interactive visualization tool, allows users to explore transformer self-attention at scale by creating a joint embedding space for queries and keys.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11340",
+   "title": ": Visualizing and Understanding Commonsense Reasoning Capabilities of Natural Language Models",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327153",
+   "system_id": "11340",
+   "evidence": [
+    {
+     "quote": "(B) Then our system extracts commonsense knowledge in data input based on ConceptNet, and calculates the feature importance scores for individual words in questions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11632",
+   "title": "Visual Explanation for Open-Domain Question Answering With BERT",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3243676",
+   "system_id": "11632",
+   "evidence": [
+    {
+     "quote": "An illustration for the construction of a generation tree from attention matrices. Multi-layer raw attention (a) is refined into attention attribution (b) by (2).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11956",
+   "title": "ModalChorus: Visual Probing and Alignment of Multi-Modal Embeddings via Modal Fusion Map",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456387",
+   "system_id": "modalchorus",
+   "evidence": [
+    {
+     "quote": "ModalChorus: Visual Probing and Alignment of Multi-Modal Embeddings via Modal Fusion Map",
+     "location": "title"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12049",
+   "title": "VADIS: A Visual Analytics Pipeline for Dynamic Document Representation and Information-Seeking",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456339",
+   "system_id": "vadis",
+   "evidence": [
+    {
+     "quote": "Illustration of attention decomposition. Matrix V is the attention matrix of documents (di ) × tokens (w j )",
+     "location": "fig 6"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12770",
+   "title": "ConceptViz: A Visual Analytics Approach for Exploring Concepts in Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634806",
+   "system_id": "conceptviz",
+   "evidence": [
+    {
+     "quote": "SAEs address the polysemanticity problem in LLM neurons by projecting neuron activations into sparse, interpretable features.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13184",
+   "title": "KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694436",
+   "system_id": "keditvis",
+   "evidence": [
+    {
+     "quote": "Upon double-clicking the fact for editing, the edit view displayed the token ranking chart and the cosine similarities bar chart.",
+     "location": "system sec 5.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "system_id": "hilde",
+   "evidence": [
+    {
+     "quote": "H I LD E is a VSC ODE extension that visualizes an LLM’s token-level uncertainty and encourages interactive exploration",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "evidence": [
+    {
+     "quote": "We present an interactive exploration system — LAPEX— that uses a Variational Autoencoder (VAE) as a generative proxy over a model’s training distribution, turning the latent space into a navigable workspace for model sensemaking.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16545",
+   "title": "Hidden Layer Interaction: A Technique to Explore the Material of Generative AI",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735437",
+   "system_id": "16545",
+   "evidence": [
+    {
+     "quote": "we illustrate how this change in approach leads to new forms of interaction with the internal semantics of generative AI",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16818",
+   "title": "Exploring the Hidden Layers of Image Synthesis through Material-Driven Design Workshops with Fashion and Textile Practitioners",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813012",
+   "system_id": "16818",
+   "evidence": [
+    {
+     "quote": "we let users interact with the technology by manipulating the neurons that lie in its hidden layers",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16863",
+   "title": "Stepping Into the Black Box: Opening Up LLMs to Public Exploration Through Discursive Design",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812976",
+   "system_id": "16863",
+   "evidence": [
+    {
+     "quote": "exploring the “perspective” represented in the model’s output distributions",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17183",
+   "title": "Reading AI and Reading the World: Using an Interactive AI System to Promote Children&apos;s Understanding of AI Bias",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3762807",
+   "system_id": "17183",
+   "evidence": [
+    {
+     "quote": "visualizes the AI model’s classification as a dynamic word cloud (b)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

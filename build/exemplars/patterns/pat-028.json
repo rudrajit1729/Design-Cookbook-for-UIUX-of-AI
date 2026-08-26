@@ -1,0 +1,443 @@
+{
+ "pattern": {
+  "pattern_id": "pat-028",
+  "pattern_name": "Plan Preview",
+  "pattern_slug": "plan-preview",
+  "short_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+  "definition": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out. The plan is a visible object with its own structure — a diagram, a step list, a lookahead lane — and in several systems it is editable, so the user can alter the plan rather than react to its results. Commitment status may be encoded so the user can tell which parts are still revisable.",
+  "structural_signature": "A planning step emits an ordered structure of forthcoming operations that is rendered before any of them executes; execution then advances through that structure while it remains on screen. Where the structure is editable, edits to unexecuted elements change what will run; visual encoding distinguishes executed, committed, and still-provisional elements.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Editing a Generated Draft",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 16,
+ "candidates": [
+  {
+   "rid": "3392",
+   "title": "DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714115",
+   "system_id": "dynex",
+   "evidence": [
+    {
+     "quote": "The system first decomposes the project into steps that are modifiable by the user.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3512",
+   "title": "From Operation to Cognition: Automatic Modeling Cognitive Dependencies from User Demonstrations for GUI Task Automation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713356",
+   "system_id": "3512",
+   "evidence": [
+    {
+     "quote": "(c) confrm or modify the task graph, (d) save and execute the task graph",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3809",
+   "title": "Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713218",
+   "system_id": "planthenexecute",
+   "evidence": [
+    {
+     "quote": "the agents conducted step-wise planning and step-by-step execution in a simulation environment",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4142",
+   "title": "Jupybara: Operationalizing a Design Space for Actionable Data Analysis and Storytelling with LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713913",
+   "system_id": "jupybara",
+   "evidence": [
+    {
+     "quote": "For a complex user query in EDA, Jupybara identifies and presents an analysis plan",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4190",
+   "title": "DreamGarden: A Designer Assistant for Growing Games from a Single Prompt",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714233",
+   "system_id": "dreamgarden",
+   "evidence": [
+    {
+     "quote": "This system is presented to the user as a garden of plans and actions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5968",
+   "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791673",
+   "system_id": "cocoa",
+   "evidence": [
+    {
+     "quote": "the agent proposes an initial plan of execution to tackle a user request that the user can edit to their liking",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6148",
+   "title": "What Are You Doing?: Effects of Intermediate Feedback from Agentic LLM In-Car Assistants During Multi-Step Processing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790997",
+   "system_id": "6148",
+   "evidence": [
+    {
+     "quote": "We compare two feedback strategies: No Intermediate (NI) feedback (top), where the system acknowledges the request and remains silent until delivering the final result, versus Planning & Results (PR) feedback (bottom), where planned steps and intermediate…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8513",
+   "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720227",
+   "system_id": "realjam",
+   "evidence": [
+    {
+     "quote": "We enable real-time interactions using the concept of anticipation, where the agent continually predicts how the performance will unfold and visually conveys its plan to the user.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8770",
+   "title": "Demonstrating DreamGarden: A Designer Assistant for Growing Games from a Single Prompt",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721282",
+   "system_id": "demonstratingdreamgarden",
+   "evidence": [
+    {
+     "quote": "Our GUI features a node-based tree editor in which users can provide seed prompts, prune and expand action plans, and provide feedback in real time.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "9385",
+   "title": "Interaction as Intelligence: A Transparent, Fine-Grained Multi-Agent Deep Research System for Human-Agent Collaboration",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798906",
+   "system_id": "9385",
+   "evidence": [
+    {
+     "quote": "exposing intermediate plans and evidence",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "evidence": [
+    {
+     "quote": "(a) The system ingests a narrated demonstration, extracts atomic tasks, and presents editable human–cobot allocations with reasoning traces. (b) After validation, the system generates step-by-step instructions for both agents and allows triggerbased execution of cobot tasks.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12415",
+   "title": "LightVA: Lightweight Visual Analytics With LLM Agent-Based Task Planning and Execution",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3496112",
+   "system_id": "lightva",
+   "evidence": [
+    {
+     "quote": "we develop a system with a hybrid user interface that includes a task flow diagram for monitoring and managing the task planning process",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12862",
+   "title": "Urbanite: A Dataflow-Based Framework for Human-AI Interactive Alignment in Urban Visual Analytics",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634644",
+   "system_id": "urbanite",
+   "evidence": [
+    {
+     "quote": "(b) Based on the task, the LLM proposes a first sketch.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13606",
+   "title": "SketchGPT: A Sketch-based Multimodal Interface for Application-Agnostic LLM Interaction",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747598",
+   "system_id": "sketchgpt",
+   "evidence": [
+    {
+     "quote": "Users then enter a confirmation phase to preview and selectively execute tasks.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "system_id": "echoladder",
+   "evidence": [
+    {
+     "quote": "EchoLadder makes the process of AI scene modification transparent by displaying interactable suggestion modules.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15356",
+   "title": "ECHO: Enhancing Conversational Explainable AI through Tool-Augmented Language Models",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3734191",
+   "system_id": "echo",
+   "evidence": [
+    {
+     "quote": "These tools are then combined into a proposed plan that, when executed, addresses the user’s question.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-019",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "10383",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The quote nearly states the full signature: the system proposes first, the user evaluates that proposal, and a newly expressed preference is used to improve it. The mechanism is exceptionally clear and transferable, although iterative decision-support refinement is not especially non-obvious.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11931",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Comments are explicitly combined with the current response to produce its refinement, directly demonstrating state carryover and persistent artifact identity. The quote does not establish the initial proposal or repeated rounds, so it falls short of a perfect exemplar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13573",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Layered revisions to previously created images strongly establish persistent artifact identity and cumulative state. Continually adding world details supplies the reaction input, though the quote describes a design requirement rather than walking through the complete interaction loop.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5922",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: the user supplies the initial prompt, and APPO iteratively optimizes that prompt from preferences. The quote does not show a system-opened artifact whose previous output is carried forward and revised; it is closer to preference-guided prompt optimization.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence instantiates iterative prompt optimization, a neighboring mechanism, rather than proposal\u2013critique\u2013revision of one persistent system-proposed artifact."
+  },
+  {
+   "rid": "16676",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Parameterized edits, immediate rendering, and re-evaluation establish a useful iteration loop over a design. However, the quote does not identify the user's critique or explicitly say the current design is carried into each edit, and the street-level implementation is fairly specialized.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8532",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Users request modifications, inspect the resulting scene through queries, and issue further modifications, which is a clear cumulative verification-and-revision cycle. The initial system proposal is not evidenced, and the query-mediated 3D accessibility setting limits direct transfer somewhat.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13741",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The quote connects feedback on an existing artifact to incorporation and continued refinement, but it remains a high-level design goal. It does not specify the critique control, resulting edit, initial proposal, or how prior state is carried forward.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9078",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A concrete evaluation control triggers targeted regeneration without prompt rewriting, giving users a meaningful refinement path. The quote does not establish that regeneration edits the current explanation rather than drawing a replacement, so persistent artifact identity remains uncertain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16043",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Users revise individual sub-metaphors within chained iterations while referencing alternatives, preserving both the larger artifact and the edited component across rounds. The initial proposal and exact system response are not shown, but the cumulative revision structure is strong.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8412",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Generated outcomes are selectively folded back into an evolving 3D sketch backbone, and the cycle explicitly repeats while accumulating promising ideas. This strongly demonstrates history-dependent artifact development, although the user's critique operation is indirect and the 3D workflow is specialized.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13354",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The user judges an updated image and, if dissatisfied, changes the prompt, mask, or settings before inpainting it again. Inpainting plausibly preserves artifact identity, making this a clear revision loop, though the quote does not explicitly state whether every retry starts from the current image.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4142",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: the quote describes a Refiner and Critics passing a response between themselves. It supplies no evidence that a user's critique enters the loop, making this an automated critic\u2013refiner architecture rather than the specified user-driven pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence shows system components reviewing one another, not a user reacting to a proposal and driving its revision."
+  },
+  {
+   "rid": "13004",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Continuous test-case refinement without complete reconstruction supports persistent state and repeated editing. However, \u201cvisual feedback loops\u201d is underspecified: the quote does not show the user's critique, the system's concrete revision response, or the initial proposal.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5820",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "Progressive refinement of LLM outputs is topically consistent, but \u201ccollaborative iteration\u201d supplies almost none of the structural mechanism. The available evidence does not show an initial proposal, critique input, state carryover, or what the user manipulates.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13937",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Natural-language revisions modify an existing prototype, providing credible artifact persistence and a meaningful user control. The quote does not show the initial proposal, the system's returned revision, or an explicitly repeating critique cycle.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3895",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The generated code is evaluated against intent, the user refines the sketch accordingly, and generation repeats as an explicit input\u2013feedback cycle. The evidence is strong, although it does not quite establish whether each code result edits the current code or regenerates it from the evolving sketch.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13524",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: users rank different faces and the system extracts features to choose later candidates. Although feedback accumulates, the successive images are alternative draws rather than revisions of one identity-persistent artifact.",
+   "disqualify": true,
+   "disqualify_reason": "This is iterative preference learning/search over different candidates, not revision of the current artifact."
+  },
+  {
+   "rid": "5632",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The add-notations-and-generate loop explicitly repeats while progressively authoring and editing an artifact, which suggests cumulative state. The quotation is truncated and does not show how a reaction to one generated version is attached to that version in the next call.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15610",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Proposed options improve over time in relation to member preferences, but the quote does not show members reacting to a particular current proposal or how that proposal is revised. The mechanism could instead be autonomous preference aggregation over changing option sets.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8644",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: users refine textual descriptions after hearing generated samples, but the evidence does not say the current voice sample is carried forward or edited. This is consistent with repeated independent generation from an evolving prompt.",
+   "disqualify": true,
+   "disqualify_reason": "The quote supports prompt iteration over independently generated samples, not persistent-artifact revision."
+  },
+  {
+   "rid": "10219",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The same system prompt is explicitly refined over multiple rounds using discovered cases and user feedback, so artifact state accumulates rather than resetting. The initial system proposal and concrete UI exchange are missing, preventing a top score for mechanism clarity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12254",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: users reject images, while an evolutionary strategy changes prompts to produce later candidates. The object critiqued is not the artifact revised, and evolutionary search generally operates over candidate populations rather than one persistent image.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports preference-guided evolutionary search, not revision of the same critiqued artifact."
+  },
+  {
+   "rid": "14896",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: selecting image regions communicates search intent and presumably retrieves new results. Search results are replaceable candidates, not an artifact revised while preserving identity across rounds.",
+   "disqualify": true,
+   "disqualify_reason": "This is relevance feedback for iterative search, a neighboring pattern with no persistent revised artifact."
+  },
+  {
+   "rid": "7695",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "A caption persists across direct edits and repeated machine evaluations, so the state is cumulative and the controls are concrete. However, the user performs the revision and the system returns an evaluation, reversing the target pattern's user-critique-to-system-revision exchange.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16595",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Editable recommendations and structured refinement of music output suggest a proposal-led revision workflow. The abstract-level wording does not reveal what feedback is supplied, whether the current music is carried forward, or how the next version is generated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9494",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The system explicitly generates the initial mnemonic, after which learners repeatedly adjust named components and constraints of that mnemonic. This is a strong proposal-to-revision structure, although the quote only implies rather than states that each adjustment yields a revised version of the current mnemonic.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13743",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Disqualified rather than scored: users edit a graph representing the LLM's understanding, which is then used to generate code. This switches from an editable intermediate representation to a different output artifact instead of revising the current code with its critique.",
+   "disqualify": true,
+   "disqualify_reason": "The quote demonstrates editable intermediate-model steering, not identity-preserving revision of the proposed output."
+  },
+  {
+   "rid": "5740",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "A requested change produces an updated version of the same variable set and highlights the modifications, clearly demonstrating one revision transition. The quotation does not establish an initial proposal, critique cycle, or repetition across multiple rounds.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16742",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Iteratively refining patient-friendly explanations is compatible with the pattern and addresses a consequential task. The abstract fragment does not specify the initial proposal, physician critique, revision control, or whether one explanation persists through the iterations.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9487",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The system returns a proposed revised version of an existing script, so artifact identity is plausible and the interaction is concrete. But the only user input shown is requesting a review; the feedback appears system-generated, and no user critique or repeated cycle is evidenced.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-031",
+ "exemplars": [
+  {
+   "rid": "9215",
+   "title": "Disclose with Care: AI Scaffolds for Privacy in Chatbot Interviews",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798850",
+   "final_score": 3.6,
+   "why": "The system inserts a user-side review checkpoint after composition but before sharing, where post-editing directly determines the transmitted interview material. It strongly demonstrates gating and payload-changing control, although the evidence does not show system-computed annotations or scores.",
+   "over_the_runner_up": "Selected over Imago Obscura because the quote explicitly establishes a review step before transmission and confirms that edits determine what is shared, whereas Imago Obscura’s quote does not establish a send gate."
+  },
+  {
+   "rid": "13808",
+   "title": "Imago Obscura: An Image Privacy AI Co-pilot to Enable Identification and Mitigation of Risks",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747633",
+   "final_score": 3.7,
+   "why": "The system assesses an intended outgoing image for privacy risks and enables the user to mitigate those risks by editing the payload before sharing. This captures the pattern’s assess-inspect-edit sequence, though the evidence does not prove that sharing is technically gated by the inspection state.",
+   "over_the_runner_up": "Selected over the location-awareness app because it addresses privacy risks more broadly and more directly couples system identification with payload editing, while the runner-up is limited to inferable location cues."
+  },
+  {
+   "rid": "4036",
+   "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714074",
+   "final_score": 3.6,
+   "why": "The app identifies system-detectable location disclosures in photos, presents those risks for reflection, and provides concealment actions that can alter the outgoing image. The inspection-and-repair loop is clear, but the quote does not establish a mandatory review state or send action originating from it.",
+   "over_the_runner_up": "Selected over Standardized Soul because it includes a system-generated assessment and corresponding concealment actions, whereas the runner-up shows ordinary human refinement of an AI draft without an annotated inspection layer."
+  }
+ ],
+ "notes": "The final selection preserves the consensus top three, but slightly reorders confidence through adjusted scores: Imago Obscura receives the highest final score because it most clearly combines system assessment with editable mitigation, while Disclose with Care has the clearest transmission gate. No adjustment exceeds 0.3. Readers should distrust any implication that these are complete structural matches: none of the supplied quotes establishes every element of the signature. Rid 9215 does not show computed marks or scores, while rids 13808 and 4036 do not prove that transmission is gated or proceeds only from the inspection state. The evidence is also abstract-level or introductory rather than a detailed reconstruction of the interface.",
+ "pattern_name": "Pre-Send Inspection",
+ "category_id": "U07",
+ "rated": 10
+}

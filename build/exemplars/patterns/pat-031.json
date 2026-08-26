@@ -1,0 +1,284 @@
+{
+ "pattern": {
+  "pattern_id": "pat-031",
+  "pattern_name": "Pre-Send Inspection",
+  "pattern_slug": "pre-send-inspection",
+  "short_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it.",
+  "definition": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it. The user can edit, redact, or abstract before the content crosses the boundary. The design commitment is that the intervention is visible and happens on the user's side of the transmission.",
+  "structural_signature": "Transmission is gated by a review state in which the exact payload is rendered, annotated with system-computed marks or scores, and made editable; the send proceeds only from that state, and edits made there change what is transmitted. The processing that produces the annotation runs before the boundary crossing, so the gate is client-side with respect to the recipient.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Editing a Generated Draft",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 10,
+ "candidates": [
+  {
+   "rid": "2685",
+   "title": "CareJournal: A Voice-Based Conversational Agent for Supporting Care Communications",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642163",
+   "system_id": "carejournal",
+   "evidence": [
+    {
+     "quote": "The system allows participants to skip questions that they did not want to answer, confrms the accuracy of recorded responses, and asks participants for consent to share reactions with their care partners",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3606",
+   "title": "Rescriber: Smaller-LLM-Powered User-Led Data Minimization for LLM-Based Chatbots",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713701",
+   "system_id": "rescriber",
+   "evidence": [
+    {
+     "quote": "This allows users to alleviate their privacy concerns before sending data to GPT, giving them perceptible safeguards over the use of ChatGPT-like LLM-based conversational agents.",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4036",
+   "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714074",
+   "system_id": "4036",
+   "evidence": [
+    {
+     "quote": "The app prompted users to reflect on potential privacy leaks that a widely available LLM could easily detect, such as visual landmarks & cues that could reveal their location, and provided ways to conceal this information.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5071",
+   "title": "PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790919",
+   "system_id": "privweb",
+   "evidence": [
+    {
+     "quote": "subsequently providing an anonymized interface to the web agent model for task execution",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6048",
+   "title": "Supporting Informed Self-Disclosure: Design Recommendations for Presenting AI-Estimates of Privacy Risks to Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790472",
+   "system_id": "6048",
+   "evidence": [
+    {
+     "quote": "an unprecedented opportunity to present users with quantified disclosure-based re-identification risk",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8508",
+   "title": "Privacy Meets Explainability: Managing Confidential Data and Transparency Policies in LLM-Empowered Science",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720099",
+   "system_id": "8508",
+   "evidence": [
+    {
+     "quote": "We propose “DataShield\", a framework designed to detect confidential data leaks, summarize privacy policies, and visualize data flow, ensuring alignment with organizational policies and procedures.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8519",
+   "title": "ResponSight: Explainable and Collaborative Moderation Approach for Responsible Video Content in UGC Platform",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720230",
+   "system_id": "responsight",
+   "evidence": [
+    {
+     "quote": "In contrast, a proactive nurturing approach encourages users to reconsider harmful behavior before it occurs [57].",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9215",
+   "title": "Disclose with Care: AI Scaffolds for Privacy in Chatbot Interviews",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798850",
+   "system_id": "9215",
+   "evidence": [
+    {
+     "quote": "Instead of interrupting during the interview, we provide a review step after the interview so participants can decide what will be shared via post editing.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9597",
+   "title": "Standardized Soul: A Mixed-Methods Study on the Efficacy and User Perception of AI-Augmented Peer Support (AAPS) in College Mental Health Support",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798796",
+   "system_id": "9597",
+   "evidence": [
+    {
+     "quote": "Trained peer volunteers refine AI-generated drafts before delivering the final response to the help-seeker.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13808",
+   "title": "Imago Obscura: An Image Privacy AI Co-pilot to Enable Identification and Mitigation of Risks",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747633",
+   "system_id": "13808",
+   "evidence": [
+    {
+     "quote": "we introduce and evaluate Imago Obscura, an intent-aware AI-powered image-editing copilot that enables users to identify and mitigate privacy risks in images they intend to share.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  }
+ ]
+}

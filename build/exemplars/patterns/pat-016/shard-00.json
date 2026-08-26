@@ -1,0 +1,1088 @@
+{
+ "pattern": {
+  "pattern_id": "pat-016",
+  "pattern_name": "Structured Dialogue Flow",
+  "pattern_slug": "structured-dialogue-flow",
+  "short_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+  "definition": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion. The structure is a designed object, sometimes authorable by non-programmers.",
+  "structural_signature": "A graph or ordered stage list exists as an inspectable (often editable) object: nodes carry what the agent says or does, edges carry conditions evaluated on the interlocutor's response. The current node is persistent state, and a transition is computed at every turn, so the reachable next turns are a function of position in the structure.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "1642",
+   "title": "DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children's Why and How Questions",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581369",
+   "system_id": "dapie",
+   "evidence": [
+    {
+     "quote": "Starting from an existing long-form answer, it constructs a chain of explanatory units (i.e., an initial dialogue tree).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2384",
+   "title": "Teach AI How to Code: Using Large Language Models as Teachable Agents for Programming Education",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642349",
+   "system_id": "2384",
+   "evidence": [
+    {
+     "quote": "Instead of keeping AlgoBo as a passive tutee throughout a conversation, switching AlgoBo into an active questioner may scaffold learners to build knowledge step by step.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2642",
+   "title": "A Piece of Theatre: Investigating How Teachers Design LLM Chatbots to Assist Adolescent Cyberbullying Education",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642379",
+   "system_id": "2642",
+   "evidence": [
+    {
+     "quote": "Using large language models and prompt chaining, our tool allows teachers to prototype bespoke dialogue flows and chatbot utterances.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2685",
+   "title": "CareJournal: A Voice-Based Conversational Agent for Supporting Care Communications",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642163",
+   "system_id": "carejournal",
+   "evidence": [
+    {
+     "quote": "We integrated design considerations (Table 2) into separate conversational workfows for caregivers and care recipients using Voicefow6 [see also, 27], a blockbased web-based platform for designing high-fdelity, voice-based conversational agents.",
+     "location": "full text sec 3.4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2764",
+   "title": "Eternagram: Probing Player Attitudes Towards Climate Change Using a ChatGPT-driven Text-based Adventure",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642850",
+   "system_id": "eternagram",
+   "evidence": [
+    {
+     "quote": "Player-Ryno Interaction: Conversation fow during player-Ryno Interaction across diferent trigger states",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "3164",
+   "title": "MindfulDiary: Harnessing Large Language Model to Support Psychiatric Patients' Journaling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642937",
+   "system_id": "mindfuldiary",
+   "evidence": [
+    {
+     "quote": "MindfulDiary takes a state-based approach to safely comply with the experts’ guidelines while carrying on free-form conversations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3185",
+   "title": "ChaCha: Leveraging Large Language Models to Prompt Children to Share Their Emotions about Personal Events",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642152",
+   "system_id": "chacha",
+   "evidence": [
+    {
+     "quote": "The overview of conversational phases of the ChaCha dialogue system and transition rules among them. Each time the user enters a message, the system inspects the entire dialogue history by performing a test corresponding to the current phase to decide whether to proceed to another phase or stay.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3186",
+   "title": "Mathemyths: Leveraging Large Language Models to Teach Mathematical Language through Child-AI Co-Creative Storytelling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642647",
+   "system_id": "mathemyths",
+   "evidence": [
+    {
+     "quote": "the conversation experience is designed to emulate a joint storytelling activity while the AI partner guides children in this process through using three-part dialogue moves that adhere to the question-feedback-scafolding framework [102]",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3414",
+   "title": "AACessTalk: Fostering Communication between Minimally Verbal Autistic Children and Parents with Contextual Guidance and Card Recommendation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713792",
+   "system_id": "aacesstalk",
+   "evidence": [
+    {
+     "quote": "Finally, a shared turn pass button (Figure 1, bottom) serves as a turn-switching signal, reinforcing the concept of turn-taking in a tangible way.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3544",
+   "title": "Beyond the Dialogue: Multi-chatbot Group Motivational Interviewing for Premenstrual Syndrome (PMS) Management",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713918",
+   "system_id": "3544",
+   "evidence": [
+    {
+     "quote": "peer bots first responded, after with the participant was prompted to answer. After that, the participant was prompted by one of the three bots to answer the question.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3618",
+   "title": "Piecing Together Teamwork: A Responsible Approach to an LLM-based Educational Jigsaw Agent",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713349",
+   "system_id": "3618",
+   "evidence": [
+    {
+     "quote": "Our high-level goal is to create and implement a dialogue policy that is i) tightly aligned with theoretical and empirical work in collaborative learning and content support",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3690",
+   "title": "Scaffolded Turns and Logical Conversations: Designing Humanized LLM-Powered Conversational Agents for Hospital Admission Interviews",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714196",
+   "system_id": "3690",
+   "evidence": [
+    {
+     "quote": "dynamic topic management using graph-based conversation flows",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3972",
+   "title": "MVPrompt: Building Music-Visual Prompts for AI Artists to Craft Music Video Mise-en-scène",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713876",
+   "system_id": "mvprompt",
+   "evidence": [
+    {
+     "quote": "The four phases are conducted for each mise-en-scène element. With these four phases, users can gradually specify the mise-en-scène elements step-by-step.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4113",
+   "title": "Plurals: A System for Guiding LLMs via Simulated Social Ensembles",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713675",
+   "system_id": "plurals",
+   "evidence": [
+    {
+     "quote": "Structures shape the dynamics of information sharing and aggregation; Combination instructions provide an additional layer of control over how agents should incorporate each other's views.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "4206",
+   "title": "GPTCoach: Towards LLM-Based Physical Activity Coaching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713819",
+   "system_id": "gptcoach",
+   "evidence": [
+    {
+     "quote": "implements the onboarding conversation from an evidence-based coaching program, uses conversational strategies from motivational interviewing",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4264",
+   "title": "TeachTune: Reviewing Pedagogical Agents Against Diverse Student Profiles with Simulated Students",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714054",
+   "system_id": "teachtune",
+   "evidence": [
+    {
+     "quote": "Teachers can build PCAs with a graph-like state machine representation (Fig. 3)",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4674",
+   "title": "Hybrid LLM-Embedded Dialogue Agents for Learner Reflection: Designing Responsive and Theory-Driven Interactions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791582",
+   "system_id": "4674",
+   "evidence": [
+    {
+     "quote": "This diagram depicts our hybrid dialogue system architecture modeled as a Finite State Machine",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4832",
+   "title": "From Answer Givers to Design Mentors: Guiding LLMs with the Cognitive Apprenticeship Model",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791899",
+   "system_id": "4832",
+   "evidence": [
+    {
+     "quote": "A diagram of a three-stage structural feedback process showing the roles of Mentors and Mentees. In Phase 1, the mentee articulates their design problem through Articulating and Bounding.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4906",
+   "title": "Designing a Generative AI-Assisted Music Psychotherapy Tool for Deaf and Hard-of-Hearing Individuals",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791385",
+   "system_id": "4906",
+   "evidence": [
+    {
+     "quote": "The process consists of four states: Therapeutic connection (A), Making lyrics (B), Making music (C), and Song discussion (D). Each state contains the steps and required variables that serve as the criteria for proceeding to the next state.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5038",
+   "title": "Conversing with Objects toward Fluid Human and Artificial Identities during Life Transitions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790474",
+   "system_id": "5038",
+   "evidence": [
+    {
+     "quote": "Left: An example of a conversation from (a) to (b) in sequence, with chatbot prompts from 1 to 10 that form the structure of the conversation. Right: Explanations of the purpose of each prompt.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5100",
+   "title": "From Daily Song to Daily Self: Supporting Emotional Growth of Deaf and Hard-of-Hearing Individuals through Generative AI Songwriting",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791204",
+   "system_id": "5100",
+   "evidence": [
+    {
+     "quote": "(A) Conversation interface for songwriting with four dialogue phases",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5135",
+   "title": "I Felt Bad After We Ignored Her: Understanding How Interface-Driven Social Prominence Shapes Group Discussions with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791881",
+   "system_id": "5135",
+   "evidence": [
+    {
+     "quote": "Conceptual overview of the underlying system and decision tree used to steer the mechanisms in our GenAI agent’s response and turn-taking during a real-time discussion over video chat.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5414",
+   "title": "An LLM-Based Motivation-Aware Framework For AI Coaching For Behaviour Change",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791123",
+   "system_id": "5414",
+   "evidence": [
+    {
+     "quote": "This information is then passed to the phase manager (2) to determine the next coaching phase after a certain number of turns.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5526",
+   "title": "The RepairBot Framework: Touch-Aware Conversational Agent for Hands-on Clothes Repair",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791705",
+   "system_id": "5526",
+   "evidence": [
+    {
+     "quote": "The backend is built on Google Dialogfow ES [17], which uses a rulebased architecture to manage dialogue trees.",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5576",
+   "title": "It Seems to Understand My Heart: An Empirical Study of Persona-Driven Persuasive AI Agent for Aging-in-Place in Singapore",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791422",
+   "system_id": "5576",
+   "evidence": [
+    {
+     "quote": "(2) The GMMAR Framework for Conversational Agent design that structures empathetic interactions through sequential phases.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5690",
+   "title": "Scaffolded Vulnerability: Chatbot-Mediated Reciprocal Self-Disclosure and Need-Supportive Interaction in Couples",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791370",
+   "system_id": "5690",
+   "evidence": [
+    {
+     "quote": "Each bar (G1–G36) shows the duration of conversational phases. Partner Support ( PS , G1–G12) includes all seven phases",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5884",
+   "title": "Opportunities and Barriers for AI Feedback on Meeting Inclusion in Socioorganizational Teams",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791135",
+   "system_id": "5884",
+   "evidence": [
+    {
+     "quote": "By conversationally guiding the user through the Induced Hypocrisy Procedure, our AI agent encourages behavior change in accordance with feedback it delivers on behalf of others.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5953",
+   "title": "Supporting Effective Goal Setting with LLM-Based Chatbots",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791064",
+   "system_id": "5953",
+   "evidence": [
+    {
+     "quote": "Chatbots can provide guidance throughout interventions, thereby offering structured, incremental support rather than delivering all instructions at once.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6206",
+   "title": "Towards AI as Colleagues: Multi-Agent System Improves Structured Ideation Processes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790375",
+   "system_id": "6206",
+   "evidence": [
+    {
+     "quote": "The process begins with preparing the discussion by selecting AI colleagues (Step 1). The internal system first builds a persona ranking prompt, next selects the next persona, then buil…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6216",
+   "title": "Orchid-Creator: An Authoring Tool Supporting LLM-Driven Interactive Narrative Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791426",
+   "system_id": "orchidcreator",
+   "evidence": [
+    {
+     "quote": "In the second phase, authors arrange the phase 1’s content into a story graph and define the transition conditions between the nodes.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7045",
+   "title": "Preparing Children with Level 1 ASD for Social Interactions through Storytelling with Amy: An Exploratory Study",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585916",
+   "system_id": "7045",
+   "evidence": [
+    {
+     "quote": "As a storyteller, Amy uses a narrative-based conversation fow depicted in Figure 1 to explain social situations and describe appropriate responses that model proper behaviors.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7118",
+   "title": "Utilizing a Conversational Agent to Promote Self-efficacy in Children: A Pilot Study on Low Cognitive Ability Children with Attention Deficit Hyperactivity Disorder",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585887",
+   "system_id": "7118",
+   "evidence": [
+    {
+     "quote": "Furthermore, verbal scaffolding elements and the dialog structure of Goal-Plan-Do-Check, which is based on the self-instruction training structure, were used.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7136",
+   "title": "You Know What I'm Saying: Designing Conversational Strategies of AI Agent for Tip of the Tongue Phenomenon",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585670",
+   "system_id": "7136",
+   "evidence": [
+    {
+     "quote": "If users answered right away “Yes,” the situation was not considered a TOT. However, if the users were unable to recall the name and answered “No,” the situation was considered a TOT.",
+     "location": "full text sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7200",
+   "title": "ImpactBot: Chatbot Leveraging Language Models to Automate Feedback and Promote Critical Thinking Around Impact Statements",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3573844",
+   "system_id": "impactbot",
+   "evidence": [
+    {
+     "quote": "ImpactBot’s process flow in 3 recurrent phases, the use classifier, mitigation, and output prompt",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Bias and Fairness",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7428",
+   "title": "A Home Study of Parent-Child Co-Reading with a Bilingual Conversational Agent",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650836",
+   "system_id": "7428",
+   "evidence": [
+    {
+     "quote": "Rosita facilitates the co-reading experience by asking two questions after each page.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7448",
+   "title": "Advancing Knowledge Together: Integrating Large Language Model-based Conversational AI in Small Group Collaborative Learning",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650868",
+   "system_id": "7448",
+   "evidence": [
+    {
+     "quote": "Secondly, unlike most previous work, our chatbot focuses on guiding the group through stages of discussion, ensuring the completion of collaborative tasks.",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7537",
+   "title": "Engaging and Entertaining Adolescents in Health Education Using LLM-Generated Fantasy Narrative Games and Virtual Agents",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650983",
+   "system_id": "7537",
+   "evidence": [
+    {
+     "quote": "The dialog engine operates on a hierarchical transition network-based scripting language and utilizes template-based text generation to manage participant interactions.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7683",
+   "title": "Prompt-Gaming: A Pilot Study on LLM-Evaluating Agent in a Meaningful Energy Game",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650774",
+   "system_id": "promptgaming",
+   "evidence": [
+    {
+     "quote": "The game rules' have multiple functions as they describe: (1) mood of the game; (2) role of the LLM as mediator; (3) game elements (e.g., \"Grid size\", \"CO2 saved\" and \"People's satisfaction\") and how to present them; (4) how a solution should be evaluated; (5) how to present feedback when optimal and sub-optimal solutions are provided; (6) indications to when levels are successfully completed; and (7) an indication to start by asking the player's name.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8108",
+   "title": "A Self-Determination Theory-based Career Counseling Chatbot: Motivational Interactions to Address Career Decision-Making Difficulties and Enhance Engagement",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720286",
+   "system_id": "8108",
+   "evidence": [
+    {
+     "quote": "The interaction with the chatbots followed Harren's model, which consists of four stages: (1) awareness, (2) planning, (3) commitment, and (4) implementation.",
+     "location": "full text, sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8140",
+   "title": "Assessing Critical Thinking through a Multi-Agent LLM-Based Debate Chatbot",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721207",
+   "system_id": "8140",
+   "evidence": [
+    {
+     "quote": "The debate chatbot was designed to structure the debate process into four distinct stages: (1) Establishing Evidence, (2) Adding a Warrant, (3) Presenting a Rebuttal, and (4) Proposing a CounterRebuttal (see Table 1).",
+     "location": "system sec 2.2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

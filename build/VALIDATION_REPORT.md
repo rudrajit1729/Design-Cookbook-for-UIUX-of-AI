@@ -27,9 +27,9 @@ renumbered" rule, on instruction, and is safe only because these ids were never 
 
 | Source | Site | Category | Stage |
 |---|---|---|---|
-| U02 | **U01** | Input, Context & Specification | Setting the specs |
-| U01 | **U02** | Initiative & Intervention Timing | Setting the specs |
-| U03 | U03 | Constraints, Safety & Agency | Setting the specs |
+| U02 | **U01** | Input, Context & Specification | Setting the context |
+| U01 | **U02** | Initiative & Intervention Timing | Setting the context |
+| U03 | U03 | Constraints, Safety & Agency | Setting the context |
 | U10 | **U04** | Modality, Embodiment & Output Rendering | Working the output |
 | U04 | **U05** | Alternatives & Comparative Exploration | Working the output |
 | U05 | **U06** | Artifact Editing & Revision | Working the output |

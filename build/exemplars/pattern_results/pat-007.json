@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-007",
+ "exemplars": [
+  {
+   "rid": "10126",
+   "title": "From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645173",
+   "final_score": 4.6,
+   "why": "The system performs the complete perturb-and-compare loop: it applies a known keyword-removal transformation to an existing prompt, regenerates the image, and evaluates the altered result against the original, making the induced difference legible.",
+   "over_the_runner_up": "Chosen over rid 12842 because its evidence explicitly covers both controlled input alteration and comparison with the original output, whereas rid 12842’s quote establishes the perturbation controls but not the rerun or comparative display."
+  },
+  {
+   "rid": "12842",
+   "title": "Understanding Large Language Model Behaviors Through Interactive Counterfactual Generation and Analysis",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634646",
+   "final_score": 4.3,
+   "why": "Users directly parameterize the transformation by choosing granularity, preserving selected content, and specifying replacement rules, providing the clearest and most reusable control scheme for constructing interpretable counterfactual variants.",
+   "over_the_runner_up": "Chosen over rid 2325 because it exposes the transformation’s target, granularity, and rule explicitly, while ChainForge’s evidence only establishes simultaneous template testing around a shared variable."
+  },
+  {
+   "rid": "2325",
+   "title": "ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642016",
+   "final_score": 4.15,
+   "why": "ChainForge turns user-authored prompt-template variation into a batched model experiment while holding the input variable constant, so the template change becomes the organizing axis for comparing outputs.",
+   "over_the_runner_up": "Chosen over rid 11819 because ChainForge more clearly supports user-authored variations and a concrete simultaneous testing workflow, whereas KnowledgeVIS’s quote does not establish who constructs the controlled prompt variants or how they are manipulated."
+  }
+ ],
+ "notes": "The final selection retains the consensus top three, but scores rid 12842 and rid 2325 slightly below their consensus means because their quoted evidence does not explicitly show the model rerun and joined original-versus-altered output display required by the full structural signature. Rid 10126 has the strongest structural evidence, though even its quote leaves user authorship or parameterization of the redaction somewhat implicit. Readers should therefore treat only rid 10126 as a fully evidenced instance from the supplied quotations; the other two are strong exemplars whose complete comparison loops depend partly on their stated system contexts and titles.",
+ "pattern_name": "Perturb-and-Compare",
+ "category_id": "U05",
+ "rated": 17
+}

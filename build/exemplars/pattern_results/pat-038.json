@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-038",
+ "exemplars": [
+  {
+   "rid": "11111",
+   "title": "How Does Attention Work in Vision Transformers? A Visual Analytics Attempt",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2023.3261935",
+   "final_score": 4.7,
+   "why": "This is the strongest structural match: it exposes attention heads as internal units, supports comparison through selectable importance metrics, and lets users probe those quantities through partial pruning.",
+   "over_the_runner_up": "It outranks AttentionViz because the evidence explicitly establishes metric selection, per-head comparison, and ablation-like manipulation, not merely an interactive projection of internals."
+  },
+  {
+   "rid": "11339",
+   "title": "AttentionViz: A Global View of Transformer Attention",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327163",
+   "final_score": 4.4,
+   "why": "It turns transformer queries and keys into a scalable joint embedding where users can interactively explore self-attention as an analytical object rather than inspect only model outputs.",
+   "over_the_runner_up": "It outranks PromptIDE because its global projection exposes richer model machinery across transformer units, whereas PromptIDE's supplied evidence establishes only comparison among predefined answer ranks."
+  },
+  {
+   "rid": "10953",
+   "title": "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209479",
+   "final_score": 4.2,
+   "why": "PromptIDE directly surfaces and compares the ranks of defined answer choices, a non-emitted inference quantity explicitly covered by the pattern and readily transferable to constrained-generation and classification workflows.",
+   "over_the_runner_up": "It outranks HiLDE because the evidence identifies both the internal quantity and the operation performed on it—comparison—while HiLDE's quote leaves its interactive exploration controls unspecified."
+  }
+ ],
+ "notes": "The final selection retains the consensus top three; only small score adjustments were made, so none exceeds the 0.3 reporting threshold. Structural evidence is strongest for rid 11111. Readers should be more cautious with rid 11339 because its quote does not enumerate filters, comparison controls, or ablations, and with rid 10953 because it does not describe the visual encoding. None of the supplied quotes conclusively proves the strict cached-state clause—that controls re-derive a view from captured inference values without rerunning the user's task.",
+ "pattern_name": "Model Internals View",
+ "category_id": "U07",
+ "rated": 26
+}

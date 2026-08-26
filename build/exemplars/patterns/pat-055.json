@@ -1,0 +1,148 @@
+{
+ "pattern": {
+  "pattern_id": "pat-055",
+  "pattern_name": "Aggregated Summary Score",
+  "pattern_slug": "aggregated-summary-score",
+  "short_summary": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element.",
+  "definition": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element. The score stands in for the history that produced it; the individual contributions are not the readout. Its bounded range gives the user a position rather than a raw quantity.",
+  "structural_signature": "An accumulator over a stream of events is displayed as one scalar on a declared bounded interval, occupying a persistent, prominent slot in the layout. Structurally: many-to-one reduction, fixed range, single display element, updated as events arrive. No per-event breakdown is required for the pattern to hold, and the reduction function is the system's, not the user's. Transplants to any domain that scores a stream — a credit-style rating, a code-health number, a fitness ring.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 5,
+ "candidates": [
+  {
+   "rid": "3289",
+   "title": "Care-Based Eco-Feedback Augmented with Generative AI: Fostering Pro-Environmental Behavior through Emotional Attachment",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642296",
+   "system_id": "3289",
+   "evidence": [
+    {
+     "quote": "The energy level and the avatar contribute to timely and positive feedback of the system (Principle 2). To contribute to this principle, we designed the saving level in such a way that it cannot be negative.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5199",
+   "title": "CoBRA: Programming Cognitive Bias in Social Agents Using Classic Social Science Experiments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790804",
+   "system_id": "cobra",
+   "evidence": [
+    {
+     "quote": "(1) Cognitive Bias Index that measures the demonstrated cognitive bias of a social agent, by quantifying the agent’s reactions in a set of validated classic social science experiments",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6048",
+   "title": "Supporting Informed Self-Disclosure: Design Recommendations for Presenting AI-Estimates of Privacy Risks to Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790472",
+   "system_id": "6048",
+   "evidence": [
+    {
+     "quote": "this image depicts the risk meter design inspired by Ur et. al’s data-driven password meter from usable security & privacy literature",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8356",
+   "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719708",
+   "system_id": "gptfootprint",
+   "evidence": [
+    {
+     "quote": "In addition, there is an Eco Score, which can range from 0 to 100.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9465",
+   "title": "NeuroWise: A Multi-Agent LLM \"Glass-Box\" System for Practicing Double-Empathy Communication with Autistic Partners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798437",
+   "system_id": "neurowise",
+   "evidence": [
+    {
+     "quote": "Stress Bar: A visual indicator (0–100%) showing Alex’s current stress level, updated after each message.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

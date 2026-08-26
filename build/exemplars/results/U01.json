@@ -1,0 +1,105 @@
+{
+  "category_id": "U01",
+  "category_name": "Input, Context & Specification",
+  "exemplars": [
+    {
+      "rid": "6006",
+      "title": "Codesigning Ripplet: an LLM-Assisted Assessment Authoring System Grounded in a Conceptual Model of Teachers' Workflows",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3790418",
+      "pattern_id": "pat-027",
+      "pattern_name": "Specification by Demonstration",
+      "final_score": 4.95,
+      "why": "A teacher hand-edits one generated assessment question; the system infers why that change was made, materializes it as a reusable edit command, and reapplies it to questions in other assessments. The specification is never written down by the user at all - it is induced from a single corrective act and then becomes a durable, reusable object, which is the sharpest form of 'input as something other than a prompt' in the dimension. Anyone whose users already fix generated output by hand can lift it: watch the fix, generalize it, offer it back as a named operation.",
+      "over_the_runner_up": "Over GenNI (10539), whose quote shows the inversion from a goal text to inferred control states but never a later run conditioned on them, while Ripplet's coded quote carries exemplar, induction, materialized structure and reuse verbatim."
+    },
+    {
+      "rid": "4449",
+      "title": "AI-Instruments: Embodying Prompts as Instruments to Abstract & Reflect Graphical Interface Commands as General-Purpose Tools",
+      "venue": "chi-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3706598.3714259",
+      "pattern_id": "pat-022",
+      "pattern_name": "Artifact Derived Controls",
+      "final_score": 4.75,
+      "why": "Prompt fragments are generated from the image currently in hand, each fragment is rendered as a separately editable widget naming a dimension of that image, and changing one regenerates the image. The controls are therefore a function of the artifact rather than a fixed panel decided at design time - the reviewer confirmed derivation, addressable handles and re-parameterized regeneration all appear literally in the coded figure text. Any system that generates an artifact it cannot fully explain can adopt this: expose the artifact's own dimensions as the control surface.",
+      "over_the_runner_up": "Over DesignWeaver (3576), which makes the same image-derived-palette move in the same venue and year but whose quote leaves the regeneration half implicit - and whose score was hand-raised by the curator to reach that rank."
+    },
+    {
+      "rid": "3951",
+      "title": "Understanding and Supporting Formal Email Exchange by Answering AI-Generated Questions",
+      "venue": "chi-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3706598.3714016",
+      "pattern_id": "pat-015",
+      "pattern_name": "Question-Driven Elicitation",
+      "final_score": 4.70,
+      "why": "Questions are generated from the incoming email, the user answers a set of short questions, and the reply is the downstream product - the user composes neither the reply nor a prompt. It is the one elicitation instance where the whole signature is quoted rather than inferred, and where the material preceding the questions is a fixed external artifact rather than user-authored content, so the head-of-loop claim actually holds. The move transplants to any inbox-shaped task where an incoming artifact defines the slots a response must fill.",
+      "over_the_runner_up": "Over StepWrite (13647), whose adaptive policy is the more consequential system but whose excerpt, per the reviewer, never exposes the turn order or input-record schema - so its head-of-loop status rests on the phrase 'incrementally elicits' alone."
+    },
+    {
+      "rid": "7479",
+      "title": "CanvasPic: An Interactive Tool for Freely Generating Facial Images Based on Spatial Layout",
+      "venue": "chiea-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613905.3650952",
+      "pattern_id": "pat-039",
+      "pattern_name": "Spatial Canvas",
+      "final_score": 4.75,
+      "why": "Users position reference images on a two-dimensional layout and the distances between them determine how much each attribute influences the generated face; rearranging elements without editing any of them changes the output. This is the dimension's clearest case of a specification that lives in configuration rather than in content - nothing the user 'wrote' changed, only where things sit. Any system that blends several sources can borrow the mapping from arrangement to weighting.",
+      "over_the_runner_up": "Over CrossLit (5384), whose spatial relation is group membership only - a legitimate but coarser reading of the signature - and over Component-Wise Sketching (5715), whose entire center-distance rule rests on one incidental sentence the reviewer verified is not the paper's design move."
+    },
+    {
+      "rid": "3895",
+      "title": "Code Shaping: Iterative Code Editing with Free-form AI-Interpreted Sketching",
+      "venue": "chi-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3706598.3713822",
+      "pattern_id": "pat-040",
+      "pattern_name": "Sketch-Based Input",
+      "final_score": 4.55,
+      "why": "Free-form sketch annotations drawn directly on top of code and console output are interpreted as edit specifications for the underlying program, so the drawing surface and the artifact surface are the same surface. It is the only proof in the whole dimension that freehand marking as specification survives leaving visual media - the mechanism is about pointing at and marking up an artifact, not about drawing pictures. Any editor with a rendered artifact can adopt it.",
+      "over_the_runner_up": "Over ImaginationVellum (13801), which scores higher and is the tighter sketch-conditioning instance, but which would make this a third image-generation entry alongside AI-Instruments and CanvasPic and adds no channel the set does not already show."
+    }
+  ],
+  "notes": "Overrides of pattern-level judgements. (1) pat-015: the curator ranked StepWrite (13647, 4.83) above the email system (3951, 4.70) on breadth of mechanism while conceding the email system has the clearest literal structural evidence; reviewer 1 confirmed that concession and found StepWrite's head-of-loop status unquoted. Under a one-slot-per-pattern set the evidence claim wins, so 3951 leads. (2) pat-040: I took the lower-scoring Code Shaping over ImaginationVellum (4.85) on set-level range, not on evidence - ImaginationVellum's coded quote is stronger, and a reader who wants the canonical stroke-as-conditioning instance should go there. (3) pat-022: AI-Instruments' second candidacy under pat-027 (4.50) was dropped by both reviewers for the no-repeated-system rule and for a quote that shows no induction step; that drop is honoured here, and the system appears once, at pat-022.\n\nPatterns unrepresented: pat-032 Source Conditioned Generation, pat-034 Artifact Generation Property Controls, pat-035 Atomic AI Action Menu, pat-059 Inferred User State Driven Adaptation, pat-092 Natural-Language Control, pat-093 Familiar-Object Metaphor. Five slots against eleven patterns forces this. The most defensible complaint is pat-059: the dimension's own description names user-state signals as a specification source, and no exemplar covers them. I left it out because all three of its candidates are compromised - 12905 was verified as pure sensor infrastructure with no user-facing specification, which U01's classification boundary excludes; 9838's state is gaze-derived and equally close to that boundary; 9078, the soundest of the three, has an explanation-template inventory that is never enumerated and the lowest score band in the pattern. pat-092 was left out as the dimension's default move rather than its most instructive one, and its top-scored candidate (11792) was found unconfirmed by reviewer 1.\n\nWhat to distrust. Ripplet's quote does not say whether the induced edit command is inspectable or editable by the user - do not claim it. AI-Instruments does not state that the fragment set is automatically regenerated when the input image changes. The email system's quote establishes the questions and the answers but only implies how answers are assembled into the reply. CanvasPic's positioned elements are imported reference images, not the user's own material, so the surface is closer to a blend-weight canvas than an open workspace; the quote also does not establish an unbounded surface. Code Shaping's annotation vocabulary and the exact return of edited output for another drawing pass are not described, and its score was cut 0.35 from the raters' consensus by the curator for that reason. Two proposed promotions from reviewer 1 (rid 13373 RuleScope at pat-027, rid 10058 SeeChart at pat-034) are not present in this dimension's candidate file, so no bibliographic data exists for them here and they could not be selected.",
+  "near_misses": [
+    {
+      "rid": "13801",
+      "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+      "pattern_id": "pat-040",
+      "reason": "Higher-scoring and better-evidenced than Code Shaping within pat-040, but it would have been the set's third image-generation control surface; dropped on range, not on quality. Its duplicate pat-034 entry was separately dropped as a repeated system and as a pat-039-shaped mechanism misfiled."
+    },
+    {
+      "rid": "13647",
+      "title": "StepWrite: Adaptive Planning for Speech-Driven Text Generation",
+      "pattern_id": "pat-015",
+      "reason": "The dimension's second-highest score and the only case where elicitation is forced by a hands-free, eyes-free modality constraint rather than chosen as a UI style, but its excerpt does not expose the turn order, so the head-of-loop signature is inferred."
+    },
+    {
+      "rid": "15614",
+      "title": "Steering AI-driven Personalization of Scientific Text for General Audiences",
+      "pattern_id": "pat-034",
+      "reason": "The one candidate in the dimension whose writeup never outruns its coded text - named parameter, labelled 0-100 range, persistent slider, generation at the chosen value. Left out because a named slider bound to a range is the dimension's least surprising move, not because the evidence is weak."
+    },
+    {
+      "rid": "9078",
+      "title": "Ask, Verify, Refine: A Question-Aware Multimodal XUI with Feedback-Guided Refinement for Clinical Verification",
+      "pattern_id": "pat-059",
+      "reason": "The only user-state candidate that stays inside U01's boundary, since the state is intent inferred from the user's own question rather than from invisible sensing. Excluded on an unenumerated behavior inventory and the pattern's weak field, leaving user-state adaptation unrepresented."
+    },
+    {
+      "rid": "3590",
+      "title": "FusAIn: Composing Generative AI Visual Prompts Using Pen-based Interaction",
+      "pattern_id": "pat-093",
+      "reason": "The cleanest single source-domain-action-to-system-operation mapping in the candidate set (load a pen with an object or attribute, and that composes the prompt), but only one correspondence is evidenced and it is a fourth image-generation entry."
+    },
+    {
+      "rid": "5505",
+      "title": "CareerCraft: Supporting New Graduates on Job Hunting with LLM-Assisted Self-Construction of Career Profile",
+      "pattern_id": "pat-032",
+      "reason": "Document upload parsed into structured experience cards is the ingestion path that transfers furthest past its domain, but the quote's other source - 'free-text reflections' - may be authored for the workflow, which would violate the pattern's pre-existing-artifact requirement."
+    }
+  ]
+}

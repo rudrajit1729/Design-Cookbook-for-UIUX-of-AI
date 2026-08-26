@@ -1,0 +1,1354 @@
+{
+ "pattern": {
+  "pattern_id": "pat-048",
+  "pattern_name": "Simulated Counterparts",
+  "pattern_slug": "simulated-counterparts",
+  "short_summary": "A procedure defined over two or more roles is run by one person alone, with the model filling every role but theirs.",
+  "definition": "A procedure defined over two or more roles is run by one person alone, with the model filling every role but theirs. The scheduling and co-presence requirements disappear; the activity becomes asynchronous and single-user. The interaction retains the shape of the multi-party original.",
+  "structural_signature": "The system takes a procedure defined over n≥2 human participants and reassigns all roles but one to the model, leaving a single-user loop that runs at the remaining participant's own pace. Structurally: role count unchanged, human count reduced to one, synchronization constraint removed. Observable in the paper as a mapping from the multi-party procedure's roles onto the agent's behaviours. Transplants to pair programming, moderated review, negotiation practice, peer critique.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "AI-Mediated Collaboration",
+  "dimension": {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 51,
+ "candidates": [
+  {
+   "rid": "1174",
+   "title": "StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517479",
+   "system_id": "storybuddy",
+   "evidence": [
+    {
+     "quote": "StoryBuddy’s design highlighted the need for accommodating dynamic user needs between the desire for parent involvement and parent-child bonding and the goal of minimizing parent intervention when busy.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2384",
+   "title": "Teach AI How to Code: Using Large Language Models as Teachable Agents for Programming Education",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642349",
+   "system_id": "2384",
+   "evidence": [
+    {
+     "quote": "LBT with teachable AI agents (i.e., virtual tutees) can offer many advantages over LBT with humans.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2469",
+   "title": "Writer-Defined AI Personas for On-Demand Feedback Generation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642406",
+   "system_id": "2469",
+   "evidence": [
+    {
+     "quote": "It can be difficult for writers to get access to a target group during writing sessions, in time in between sessions, or at all.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "3016",
+   "title": "Designing Scaffolding Strategies for Conversational Agents in Dialog Task of Neurocognitive Disorders Screening",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642960",
+   "system_id": "3016",
+   "evidence": [
+    {
+     "quote": "Conversational agents (CAs) have been adopted to administer dialog-based NCD screening tests for their scalability compared to human-administered tests.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3062",
+   "title": "Rehearsal: Simulating Conflict to Teach Conflict Resolution",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642159",
+   "system_id": "rehearsal",
+   "evidence": [
+    {
+     "quote": "While confict roleplay with an expert is a proven and widely used technique [27], expert training is costly and scarce.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3386",
+   "title": "Designing LLM-Powered Multimodal Instructions to Support Rich Hands-on Skills Remote Learning: A Case Study with Massage Instructors and Learners",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713677",
+   "system_id": "3386",
+   "evidence": [
+    {
+     "quote": "To address C2: the system should integrate an LLM-powered teaching assistant to provide the learners with real-time feedback when the learners were not available.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3544",
+   "title": "Beyond the Dialogue: Multi-chatbot Group Motivational Interviewing for Premenstrual Syndrome (PMS) Management",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713918",
+   "system_id": "3544",
+   "evidence": [
+    {
+     "quote": "Drawing inspiration from the established benefits of group therapy, particularly the sense of belonging it fosters, we developed a multi-chatbot group motivational interviewing system.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3568",
+   "title": "Chorus of the Past: Toward Designing a Multi-agent Conversational Reminiscence System with Digital Artifacts for Older Adults",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713810",
+   "system_id": "3568",
+   "evidence": [
+    {
+     "quote": "Reminiscence has been shown to provide benefits for older adults, but traditionally relies on personal photos as memory cues and interactions with real people who may not always be available.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3611",
+   "title": "Noel: A Chatbot Persona to Support Children Designing for Others",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713836",
+   "system_id": "noel",
+   "evidence": [
+    {
+     "quote": "A chatbot persona could allow children to design for stakeholder groups that are challenging to involve directly in educational activities, such as people with disabilities.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3645",
+   "title": "Chatbots for Data Collection in Surveys: A Comparison of Four Theory-Based Interview Probes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714128",
+   "system_id": "3645",
+   "evidence": [
+    {
+     "quote": "While interviews naturally yield richer responses, they are challenging to conduct across diverse locations and large participant pools.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4052",
+   "title": "TutorUp: What If Your Students Were Simulated? Training Tutors to Address Engagement Challenges in Online Learning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713589",
+   "system_id": "tutorup",
+   "evidence": [
+    {
+     "quote": "TutorUp leverages GPT-4o [53] to simulate student conversations, presenting common scenarios of engagement challenges in online learning.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4072",
+   "title": "AI on My Shoulder: Supporting Emotional Labor in Front-Office Roles with an LLM-based Empathetic Coworker",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713705",
+   "system_id": "4072",
+   "evidence": [
+    {
+     "quote": "In traditional front-office work, coworkers are an important social resource. When a CSR encounters uncivil clients, they often consult their coworkers to assuage the excessive emotional labor",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4217",
+   "title": "Promoting Cognitive Health in Elder Care with Large Language Model-Powered Socially Assistive Robots",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713582",
+   "system_id": "4217",
+   "evidence": [
+    {
+     "quote": "older adults were more socially engaged in robot-administered tasks compared to those administered by a human",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4273",
+   "title": "Playing Dumb to Get Smart: Creating and Evaluating an LLM-based Teachable Agent within University Computer Science Classes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713644",
+   "system_id": "4273",
+   "evidence": [
+    {
+     "quote": "One potential solution to this challenge is for an expert to assume the role of a non-expert, allowing themselves to be taught by the learner.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5089",
+   "title": "Can LLM-Simulated Practice and Feedback Upskill Human Counselors? A Randomized Study with 90+ Novice Counselors",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791821",
+   "system_id": "5089",
+   "evidence": [
+    {
+     "quote": "which require access to trainers who can simulate a client interaction [7, 49] and provide expert supervision [109, 111], limiting training scale [6, 50]",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5443",
+   "title": "Who You Explain To Matters: Learning by Explaining to Conversational Agents with Different Pedagogical Roles",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790298",
+   "system_id": "5443",
+   "evidence": [
+    {
+     "quote": "A popular application of these agents is the teachable agent, in which a learner takes on the role of a teacher to instruct an AI agent",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5603",
+   "title": "Exploring Learners' Expectations and Engagement When Collaborating with Constructively Controversial Peer Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790796",
+   "system_id": "5603",
+   "evidence": [
+    {
+     "quote": "Peer AI agents offer a promising supplement for isolated learners by emulating the dynamics of realtime collaborative human partners.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5662",
+   "title": "When Workout Buddies Are Virtual: AI Agents and Human Peers in a Longitudinal Physical Activity Study",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790303",
+   "system_id": "5662",
+   "evidence": [
+    {
+     "quote": "We report a six-month randomized controlled trial (N=280) comparing individuals exercising alone, with a human peer, or with a large language model-driven SEP.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5681",
+   "title": "SoleCoach: Sole Pressure and IMU-based MLLMs for Skill Coaching",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791181",
+   "system_id": "solecoach",
+   "evidence": [
+    {
+     "quote": "In our approach, a large language model directly interprets foot pressure signals to provide actionable coaching, thereby supporting independent practice.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5758",
+   "title": "AmIWrite: Exploring Scalable One-on-One Handwriting-Based Tutoring for Mathematical Problem-Solving with an LLM-Powered AI Tutor",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790935",
+   "system_id": "amiwrite",
+   "evidence": [
+    {
+     "quote": "However, scaling such personalized handwriting-based tutoring remains challenging—human tutors cannot be available to every student on demand, and current online platforms often fail to recreate equivalent learning experiences.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5759",
+   "title": "Should the AI Speak First? Evaluating Proactive vs. Reactive Facilitation in Mixed-Reality Medical Training",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791910",
+   "system_id": "5759",
+   "evidence": [
+    {
+     "quote": "However, as simulation programs grow, the reliance on trained facilitators creates a persistent bottleneck: access becomes limited, feedback inconsistent, and sessions difficult to scale [100, 104].",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5774",
+   "title": "From Overload to Convergence: Supporting Multi-Issue Human-AI Negotiation with Bayesian Visualization",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790358",
+   "system_id": "5774",
+   "evidence": [
+    {
+     "quote": "The party across the table is not a person—it is an AI system that can track multiple issues at once, process hundreds of counter-offers per second, and infer your preferences from your bidding patterns.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5878",
+   "title": "Does Sequencing Matter? Evaluating AI and Human Simulations for High-Stakes Communication Training in Law Enforcement",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791909",
+   "system_id": "5878",
+   "evidence": [
+    {
+     "quote": "While live role-play with trained actors remains the gold standard, it is resource-intensive and emotionally demanding.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6058",
+   "title": "Agentic Audio Moderator vs Human Moderator in Think-Aloud Usability Testing: Results from a Randomized Controlled Trial: Results from a Randomized Controlled Trial",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791653",
+   "system_id": "6058",
+   "evidence": [
+    {
+     "quote": "Traditionally, human moderators guide these sessions by prompting participants, maintaining engagement, and ensuring data quality.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6191",
+   "title": "CoEmpaTeam: Enhancing Cognitive Empathy using LLM-based Avatars and Dynamic Role Play in Virtual Reality",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790389",
+   "system_id": "coempateam",
+   "evidence": [
+    {
+     "quote": "Moreover, they face challenges of scalability: classroom training requires significant resources and logistical efforts (e.g., traveling to a training site), while online tutorials are typically video- or text-based, relying on passive learning and offering lit…",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7533",
+   "title": "Empowering Learners: Chatbot-Mediated 'Learning-by-Teaching'",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650754",
+   "system_id": "7533",
+   "evidence": [
+    {
+     "quote": "‘Learningby-teaching’ approach is observed in online communities, but its efectiveness is dependent on humans (i.e., one needs another person to engage in ’learning-by-teaching’) [7, 46].",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7567",
+   "title": "Exploring the Use of Large Language Model-Driven Chatbots in Virtual Reality to Train Autistic Individuals in Job Communication Skills",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651996",
+   "system_id": "7567",
+   "evidence": [
+    {
+     "quote": "a trainee will always require a partner to",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7749",
+   "title": "Towards an Augmented Reality Agent to Support Communication for Nonspeaking Autistic People",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651063",
+   "system_id": "7749",
+   "evidence": [
+    {
+     "quote": "we build a system that allows an individual to wear an Augmented Reality (AR) headset and engage in spelling exercises on a holographic letterboard supported by a fully embodied, virtual CRP",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8557",
+   "title": "Synthetic Conversation: How Computing Researchers Engage Multi-Perspective Dialogues to Brainstorm Societal Impacts",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719747",
+   "system_id": "8557",
+   "evidence": [
+    {
+     "quote": "we explore how computing researchers brainstorm the negative societal impacts of computing innovations using a multi-agent dialog prototype called Weaver as a probe that represents synthetic stakeholder conversations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8605",
+   "title": "UXAgent: An LLM Agent-Based Usability Testing Framework for Web Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719729",
+   "system_id": "uxagent",
+   "evidence": [
+    {
+     "quote": "Recent advances in Large Language Model-simulated Agent (LLM Agent) research inspired us to design UXAgent to support UX researchers in evaluating and reiterating their usability testing study design before they conduct the real human-subject study.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8667",
+   "title": "YES AND: A Generative AI Multi-Agent Framework for Enhancing Diversity of Thought in Individual Ideation for Problem-Solving Through Confidence-Based Agent Turn-Taking",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720142",
+   "system_id": "yesand",
+   "evidence": [
+    {
+     "quote": "One of the persistent challenges with problem-solving in organisations is that while diversity of thought in ideation leads to more creative outcomes [13, 21, 48], individuals often lack access to others who could provide sufficient diversity when they need it.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "9001",
+   "title": "It Talks Like a Patient, But Feels Different: Co-Designing AI Standardized Patients with Medical Learners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798336",
+   "system_id": "9001",
+   "evidence": [
+    {
+     "quote": "Large language model (LLM)–based AI standardized patients (AISPs) promise flexible, on-demand practice, yet learners often report that they “talk like a patient but feel different.”",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9004",
+   "title": "Like Having Family Nearby: An LLM-Powered Family-Resembling Avatar for offering Psychological Support and Training Guidance during Stroke Rehabilitation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798321",
+   "system_id": "9004",
+   "evidence": [
+    {
+     "quote": "Due to work commitments, financial constraints, or other caregiving duties, a substantial number of patients lack consistent family presence altogether.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9076",
+   "title": "ArgueMate: Designing an Arguing Agent with Maximised Disagreement to Support Student Peer-Argumentation Exercise",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799300",
+   "system_id": "arguemate",
+   "evidence": [
+    {
+     "quote": "In peer-argumentation exercises, difficulties arise in pairing all students of the class with partners who hold opposing viewpoints, which are key to articulating cognitive confli",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9490",
+   "title": "PersonaCite: VoC-Grounded Interviewable Agentic Synthetic AI Personas for Verifiable User and Design Research",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798543",
+   "system_id": "personacite",
+   "evidence": [
+    {
+     "quote": "The examples shows a discussion between a designer and the synthetic person.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "11745",
+   "title": "Personalized Language Model Selection Through Gamified Elicitation of Contrastive Concept Preferences",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3296905",
+   "system_id": "11745",
+   "evidence": [
+    {
+     "quote": "In the competition level, the user plays against a virtual player. They both have the task of describing one concept, each player on its own.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12692",
+   "title": "HAT Swapping: Virtual Agents as Stand-Ins for Absent Human Instructors in Virtual Training",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3616749",
+   "system_id": "hatswapping",
+   "evidence": [
+    {
+     "quote": "enabling novel interaction paradigms like real-time substitution, where an EVA can temporarily take over from a human instructor to ensure task continuity [15, 57]",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13788",
+   "title": "PosterMate: Audience-driven Collaborative Persona Agents for Poster Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747769",
+   "system_id": "postermate",
+   "evidence": [
+    {
+     "quote": "But what if we construct target audiences as agents and have them provide feedback during the design process?",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14003",
+   "title": "Designing Conversational AI to Support Think-Aloud Practice in Technical Interview Preparation for CS Students",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00029",
+   "system_id": "14003",
+   "evidence": [
+    {
+     "quote": "However, access to mock interviews is often limited, requiring skilled peers or mentors who are familiar with the technical interview process",
+     "location": "related work II.A (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14007",
+   "title": "From Tool to Partner: Exploring the Roles of Embodiment on AI Agent in Pair Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00033",
+   "system_id": "14007",
+   "evidence": [
+    {
+     "quote": "Pair programming with AI often faces challenges in productive communication and engagement. Integrating embodiment offers a promising solution by making AI a more engaging and context-aware programming partner.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15120",
+   "title": "Generative Co-Learners: Enhancing Cognitive and Social Presence of Students in Asynchronous Learning with Generative AI",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701198",
+   "system_id": "15120",
+   "evidence": [
+    {
+     "quote": "this paper introduces Generative Co-Learners, a system designed to leverage generative AI-powered agents, simulating co-learners",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15126",
+   "title": "Conversate: Supporting Reflective Learning in Interview Practice Through Interactive Simulation and Dialogic Feedback",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701188",
+   "system_id": "conversate",
+   "evidence": [
+    {
+     "quote": "Research has shown that mock interviews can help alleviate some of these barriers by providing an opportunity for individuals to practice answering interview questions and receive feedback with the help of a practice interviewer [58].",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15599",
+   "title": "'Poker with Play Money': Exploring Psychotherapist Training with Virtual Patients",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757450",
+   "system_id": "15599",
+   "evidence": [
+    {
+     "quote": "In these exercises, a psychotherapist-in-training (a trainee) may practice delivering therapy with a peer or supervisor without putting a real patient at risk.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15643",
+   "title": "Wisdom of the Crowd, Without the Crowd: A Socratic LLM for Asynchronous Deliberation on Perspectivist Data",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757707",
+   "system_id": "15643",
+   "evidence": [
+    {
+     "quote": "we create a Socratic dialog system using Large Language Models (LLMs) to act as a deliberation partner in place of other crowdworkers",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15764",
+   "title": "FamilyDittos: Reimagining Intergenerational Interaction through Mimetic Agents",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757600",
+   "system_id": "familydittos",
+   "evidence": [
+    {
+     "quote": "When direct interaction is difficult, FamilyDitto can represent either party",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16465",
+   "title": "PersonaFlow: Designing LLM-Simulated Expert Perspectives for Enhanced Research Ideation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735789",
+   "system_id": "personaflow",
+   "evidence": [
+    {
+     "quote": "Generating interdisciplinary research ideas requires diverse domain expertise, but access to timely feedback is often limited by the availability of experts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16621",
+   "title": "The Benefits and Risks of LLMs for Facilitating Medical Decision-Making Among Laypersons",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735779",
+   "system_id": "16621",
+   "evidence": [
+    {
+     "quote": "The leftmost column details the the human-facilitated scenario of goal-oriented care from[48] and [53]. The remaining columns detail the proposed asynchronous scenario where LLMs might facilitate goals elicitation and patient education",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16742",
+   "title": "MediMate: Co-Crafting Patient-Centered Medical Explanations Using LLMs as a Rehearsal Partner",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812891",
+   "system_id": "medimate",
+   "evidence": [
+    {
+     "quote": "MediMate: Co-Crafting Patient-Centered Medical Explanations Using LLMs as a Rehearsal Partner",
+     "location": "title"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16784",
+   "title": "PsyMooc: Empowering Simulation-Based Educational Systems with LLM Agents to Train Clinical Interviewing Skills",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813015",
+   "system_id": "psymooc",
+   "evidence": [
+    {
+     "quote": "The virtual patients generate contextaware responses aligned with predefined communication skills criteria",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16815",
+   "title": "MIRA: A Human-AI Co-Creation Agent for Self-reflection through Squiggle Game",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813019",
+   "system_id": "mira",
+   "evidence": [
+    {
+     "quote": "Components of AI Agent(MIRA) compared to the traditional squiggle game",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16983",
+   "title": "Designing PairBuddy - A Conversational Agent for Pair Programming",
+   "venue": "tochi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3498326",
+   "system_id": "16983",
+   "evidence": [
+    {
+     "quote": "we prototyped PairBuddy—an interactive pair programming partner—based on research from conversational agents, software engineering, education, human-robot interactions, psychology, and artificial intelligence",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

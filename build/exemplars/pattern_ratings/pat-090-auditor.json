@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-090",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "1137",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 1,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote establishes explicit command-style invocation, but it also requires the user to specify model input. It does not show a continuation inserted at the caret in the same editor and is closer to explicit prompting than single-control continuation.",
+   "disqualify": true,
+   "disqualify_reason": "The cited evidence describes command invocation with specified input, not an on-demand continuation inserted at the current insertion point."
+  },
+  {
+   "rid": "1373",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "A writer presses Tab inside the text editor whenever a suggestion is wanted, cleanly demonstrating user-controlled timing without leaving the editing surface. The quote does not explicitly say that the suggestion is a continuation placed at the caret, preventing a top evidence score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2002",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This quote nearly states the structural signature verbatim: the user presses Tab, generation occurs only on request, and the preview appears immediately after the current caret in the text editor. Previewing rather than immediately committing the text does not undermine the timing-and-position mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2439",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 1,
+    "evidence_strength": 1
+   },
+   "reason": "Keyword-conditioned sentence generation is described, but neither a current insertion point nor same-surface continuation is shown. Entering comma-separated keywords also suggests a prompted generation workflow rather than the pattern's single-control interaction.",
+   "disqualify": true,
+   "disqualify_reason": "The quote supports keyword-conditioned generation, not a continuation summoned and inserted at the user's current position."
+  },
+  {
+   "rid": "2489",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote merely says that AI-generated code suggestions are offered during open coding. It provides no observable user trigger, cursor or insertion point, continuation behavior, or placement in the editable surface.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate any part of the pattern's trigger-and-insertion mechanism."
+  },
+  {
+   "rid": "3068",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The cursor is explicitly positioned at a particular code line and the user presses a control to request suggestions, strongly matching cursor- and action-determined timing. The control text is lost in the supplied quote, and the quote does not explicitly state where the result appears, so the evidence remains incomplete.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3524",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Inline querying is user-initiated, but the quote describes querying specialized assistants rather than generating a continuation at the current insertion point. No output placement or single-keystroke continuation behavior is evidenced.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports an inline prompting/query pattern, not insertion-point continuation."
+  },
+  {
+   "rid": "3862",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes a two-finger gesture that sets the cursor. It says nothing about requesting generation or receiving a continuation.",
+   "disqualify": true,
+   "disqualify_reason": "Cursor placement alone provides no evidence of the generation trigger or continuation required by the pattern."
+  },
+  {
+   "rid": "5782",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The title and quote together support an explicitly requested completion of a partially edited sketch: users establish the partial artifact and press a control. This is an interesting non-text transfer, but the evidence does not plainly show that the output is inserted at a current spatial insertion point on the same editable surface.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5968",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "The interaction is clearly user-invoked and contextual, but it operates on highlighted text through a hover button. That is a selection-scoped agent action, not a continuation inserted at the current caret.",
+   "disqualify": true,
+   "disqualify_reason": "The quote demonstrates selection-based agent invocation rather than insertion-point continuation."
+  },
+  {
+   "rid": "6049",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote strongly supports the broader idea of explicitly summoned assistance, but its outputs include suggestions, highlights, and comparisons for graders. It supplies no evidence of a generated continuation at a cursor in an editable artifact.",
+   "disqualify": true,
+   "disqualify_reason": "This is a neighboring on-demand assistance pattern; the defining continuation-and-insertion mechanism is absent."
+  },
+  {
+   "rid": "8246",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 3,
+    "interestingness": 1,
+    "evidence_strength": 1
+   },
+   "reason": "A button explicitly requests emotional-tag suggestions, so the timing is observable. Tags are classification annotations, however, not a continuation inserted at the user's current editing position.",
+   "disqualify": true,
+   "disqualify_reason": "The system generates tag suggestions rather than an insertion-point continuation."
+  },
+  {
+   "rid": "10049",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "The user clicks a control to obtain language-model continuations, directly supporting explicit timing and continuation. The quote does not establish a current caret or that suggestions appear in the same editable surface, so it is only a partial match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10127",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote supports inline continuation suggestions at word or sentence granularity, but it is truncated and identifies no user-fired control. The behavior could be proactive autocomplete, which is across the pattern's central timing boundary.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not show that generation occurs only when the user explicitly requests it."
+  },
+  {
+   "rid": "10179",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The named Generate at Cursor feature strongly establishes position-specific generation inside the description-authoring workflow, and the figure text indicates generated text appears there. The exact activating gesture is not stated as directly as in the strongest candidates, so it falls short of a perfect match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14006",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The user writes the current code prefix and presses a named shortcut each time the next implementation piece is wanted. This plainly captures user-determined timing and cursor-relative continuation, while the repeated human-in-the-loop decoding makes the otherwise familiar invocation mechanism substantively interesting.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "17071",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Users write in the artifact and explicitly request a suggestion through either a button or Tab, making invocation and timing clear. The quote does not expressly say that the result is inserted after the current caret, so it is strong but not definition-level evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

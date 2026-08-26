@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-042",
+ "exemplars": [
+  {
+   "rid": "8121",
+   "title": "Adapting Communication Styles in Health Chatbot using Large Language Models to Support Family Caregivers from Multicultural Backgrounds",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719711",
+   "final_score": 4.6,
+   "why": "The system cleanly separates task generation from a reusable persona-style slot: a therapist produces the substantive response, then a modifier consistently applies one of six selected communication styles. This is the clearest evidence that identity presentation can vary while the task and content pipeline remain fixed.",
+   "over_the_runner_up": "Chosen over rid 5396 because the separate modifier architecture directly demonstrates persona conditioning being applied to generated responses, whereas persistence in the bot-prompt editor is only implied."
+  },
+  {
+   "rid": "5396",
+   "title": "When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791480",
+   "final_score": 4.55,
+   "why": "A dedicated bot-prompt editor exposes name, role, purpose, personality, and tone independently from the knowledge base and turn-level conversation. The controls make the persona specification unusually visible, editable, and transferable to other chatbot-authoring interfaces.",
+   "over_the_runner_up": "Chosen over rid 6206 because it exposes the actual fields of the persistent character specification, while the expert-team evidence names personas and perspectives without showing their internal specification."
+  },
+  {
+   "rid": "6206",
+   "title": "Towards AI as Colleagues: Multi-Agent System Improves Structured Ideation Processes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790375",
+   "final_score": 4.45,
+   "why": "Users first select persona experts and then interact with agents that continue contributing from their assigned perspectives, establishing a visible select-once, apply-through-discussion relationship. It is a strong user-facing example of stable agent roles shaping subsequent output.",
+   "over_the_runner_up": "Chosen over rid 13413, the strongest excluded candidate, because the select-then-discuss sequence more directly establishes persistent per-agent identity; Social Simulacra does not clearly show that each member persona remains bound to one agent across outputs."
+  }
+ ],
+ "notes": "I departed substantially from the consensus by moving rid 8121 from fifth to first and excluding consensus leaders rid 13413 and rid 2592. Rid 8121 received a +0.25 adjustment because its two-stage architecture most clearly isolates style/persona from task content. Rid 13413 was excluded because its evidence establishes personas as simulation inputs but not persistent per-agent continuity; rid 2592 was excluded because its abstract asserts persona customization without exposing the specification fields, persistence, or application mechanism. No score adjustment exceeds 0.3. Readers should still treat persistence cautiously for rid 5396, where it is inferred from placement in the bot prompt, and for rid 6206, where repeated perspective-conditioned participation is strongly suggested but the persona schema is not shown. Rid 8121 is structurally strongest, but its six communication styles are thinner than full social identities or characters.",
+ "pattern_name": "Persona Assigned to Agents",
+ "category_id": "U10",
+ "rated": 30
+}

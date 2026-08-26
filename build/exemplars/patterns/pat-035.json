@@ -1,0 +1,316 @@
+{
+ "pattern": {
+  "pattern_id": "pat-035",
+  "pattern_name": "Atomic AI Action Menu",
+  "pattern_slug": "atomic-ai-action-menu",
+  "short_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+  "definition": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds. Invoking one runs its prompt against that unit. The user's expressive choice is reduced to picking which of the fixed actions to apply and to which unit.",
+  "structural_signature": "The content is partitioned into units; a fixed vocabulary of n named actions is defined once, system-wide; each unit exposes all n as invocable affordances, and invocation binds (action, unit) into a generation call. The action set does not vary by unit and is not editable by the user, so the interaction space is exactly units × actions. Transplants to any repository of units — a codebase with a fixed per-function action menu, a document set with a fixed per-section menu.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Predefined Parameters and Options",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 11,
+ "candidates": [
+  {
+   "rid": "2013",
+   "title": "ReadingQuizMaker: A Human-NLP Collaborative System that Supports Instructors to Design High-Quality Reading Quiz Questions",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580957",
+   "system_id": "readingquizmaker",
+   "evidence": [
+    {
+     "quote": "including 1) entity replacement that replaces frst-person pronouns as third-person pronouns; 2) paraphrase for single sentences (left); 3) summarization for paragraphs or long texts (right)",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3620",
+   "title": "LADICA: A Large Shared Display Interface for Generative AI Cognitive Assistance in Co-located Team Collaboration",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713289",
+   "system_id": "ladica",
+   "evidence": [
+    {
+     "quote": "Users can activate this feature by pressing the button next to an idea note. Then, they can choose a relation type to explore, and LADICA will generate potential thinking aspects associated with the idea based on the selected relation type.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3683",
+   "title": "BioSpark: Beyond Analogical Inspiration to LLM-augmented Transfer",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714053",
+   "system_id": "biospark",
+   "evidence": [
+    {
+     "quote": "action buttons, enabling users to save mechanisms",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4816",
+   "title": "Orality: A Semantic Canvas for Externalizing and Clarifying Thoughts with Speech",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791713",
+   "system_id": "orality",
+   "evidence": [
+    {
+     "quote": "For an existing topic group “Decision Making Challenges and Solutions” (left), user clicks the “Ask Me Questions” button, the system generates two guiding questions linked to the group (right).",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7932",
+   "title": "Leveraging ChatGPT for Adaptive Learning through Personalized Prompt-based Instruction: A CS1 Education Case Study",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3637148",
+   "system_id": "7932",
+   "evidence": [
+    {
+     "quote": "The platform features topics and subtopics, each supported by prompts for Explanation, Example, Exercise, and Exercise Solution",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8042",
+   "title": "A Mystery for You: A fact-checking game enhanced by large language models (LLMs) and a tangible interface",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648110",
+   "system_id": "8042",
+   "evidence": [
+    {
+     "quote": "The Actions include: 1) Investigate, 2) Interview, 3) Check Whatsapp Messages of, 4) Reverse Image Search, 5) Check Social Media Account of Figure 6: AI-generated news alerts and updates printed on thermal paper. Figure 4: Action Moves. The Actors include: A) Local Police, B) The Accused, C) Politicians, D) Journalists, E) Local Community, F) Protesters, G) Video Evidence, H) Photo Evidence, I) CCTV Footage, J) Local Authorities",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "system_id": "jamplate",
+   "evidence": [
+    {
+     "quote": "The reflection questions in the CA Template Plugin include: (a) What’s the takeaway of this competitor/column?, (b) How does this (competitor) compare to my idea?, and (c) How can I apply this competitor to inform my ideas? Users can click on the question and see an LLM generated answer intended to help users reflect.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13484",
+   "title": "Sensecape: Enabling Multilevel Exploration and Sensemaking with Large Language Models",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606756",
+   "system_id": "sensecape",
+   "evidence": [
+    {
+     "quote": "A user asks Sensecape to (1) generate a list of questions by selecting the node ‘Moving to San Francisco’ and the Qestions button in expand bar (Fig. 5)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13641",
+   "title": "GLITTER: An AI-assisted Platform for Material-Grounded Asynchronous Discussion in Flipped Learning",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747742",
+   "system_id": "glitter",
+   "evidence": [
+    {
+     "quote": "Students can activate this feature by clicking the ’Generate Summary’ button.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16464",
+   "title": "Prompt Machine: A Tangible Generative AI Tool for Supporting Children's Learning and Literacy",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735673",
+   "system_id": "16464",
+   "evidence": [
+    {
+     "quote": "(C) Pupils modify their texts using tangible prompt cubes.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16497",
+   "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735740",
+   "system_id": "16497",
+   "evidence": [
+    {
+     "quote": "Illustrations of the information aids: AI Score (F 1 ), AI Translation (F 2 ), AI Explanation (F 3 ), Example Sentence (F 4 ), and Frequency (F 5 ) for the four paraphrased suggestions of the original text",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

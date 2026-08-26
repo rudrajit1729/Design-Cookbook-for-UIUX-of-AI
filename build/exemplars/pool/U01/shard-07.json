@@ -1,0 +1,1731 @@
+{
+ "dimension": {
+  "category_id": "U01",
+  "category_name": "Input, Context & Specification",
+  "category_slug": "input-context-and-specification",
+  "stage": "Setting the context",
+  "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+  "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+  "pattern_count": 11,
+  "eligible_papers": 568,
+  "candidate_count": 568,
+  "patterns": [
+   {
+    "pattern_id": "pat-015",
+    "pattern_name": "Question-Driven Elicitation",
+    "short_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from."
+   },
+   {
+    "pattern_id": "pat-022",
+    "pattern_name": "Artifact Derived Controls",
+    "short_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates."
+   },
+   {
+    "pattern_id": "pat-027",
+    "pattern_name": "Specification by Demonstration",
+    "short_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification."
+   },
+   {
+    "pattern_id": "pat-032",
+    "pattern_name": "Source Conditioned Generation",
+    "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on."
+   },
+   {
+    "pattern_id": "pat-034",
+    "pattern_name": "Artifact Generation Property Controls",
+    "short_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance."
+   },
+   {
+    "pattern_id": "pat-035",
+    "pattern_name": "Atomic AI Action Menu",
+    "short_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds."
+   },
+   {
+    "pattern_id": "pat-039",
+    "pattern_name": "Spatial Canvas",
+    "short_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification."
+   },
+   {
+    "pattern_id": "pat-040",
+    "pattern_name": "Sketch-Based Input",
+    "short_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt."
+   },
+   {
+    "pattern_id": "pat-059",
+    "pattern_name": "Inferred User State Driven Adaptation",
+    "short_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings."
+   },
+   {
+    "pattern_id": "pat-092",
+    "pattern_name": "Natural-Language Control",
+    "short_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval."
+   },
+   {
+    "pattern_id": "pat-093",
+    "pattern_name": "Familiar-Object Metaphor",
+    "short_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation."
+   }
+  ]
+ },
+ "shard": 7,
+ "candidates": [
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "system_id": "4912",
+   "prefilter_score": 4.732,
+   "prefilter_parts": {
+    "relevance_density": 2.857,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 10.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Quologue is designed to work exclusively with users’ highlights data, rather than providing access to full e-books or their surrounding context.",
+     "evidence_location": "system sec 3.1.3 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2587",
+   "title": "AXNav: Replaying Accessibility Tests from Natural Language",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642777",
+   "system_id": "axnav",
+   "prefilter_score": 4.725,
+   "prefilter_parts": {
+    "relevance_density": 3.825,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.54
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we build a system that takes a manual accessibility test instruction in natural language (e.g., “Search for a show in VoiceOver”) as input",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9984",
+   "title": "ResonantLoom: From Prompting to Repair in Object-Centric Generative Sound Design",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799166",
+   "system_id": "resonantloom",
+   "prefilter_score": 4.724,
+   "prefilter_parts": {
+    "relevance_density": 2.624,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 9.92
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a user can input video and receive a generatedthen-decomposed multitrack in one step",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2013",
+   "title": "ReadingQuizMaker: A Human-NLP Collaborative System that Supports Instructors to Design High-Quality Reading Quiz Questions",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580957",
+   "system_id": "readingquizmaker",
+   "prefilter_score": 4.721,
+   "prefilter_parts": {
+    "relevance_density": 3.021,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 10.93
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "including 1) entity replacement that replaces frst-person pronouns as third-person pronouns; 2) paraphrase for single sentences (left); 3) summarization for paragraphs or long texts (right)",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13689",
+   "title": "PaperBridge: Crafting Research Narratives through Human-AI Co-Exploration",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747713",
+   "system_id": "paperbridge",
+   "prefilter_score": 4.69,
+   "prefilter_parts": {
+    "relevance_density": 2.74,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 10.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(1) Users begin by selecting relevant papers they wish to organize into a coherent narrative.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2168",
+   "title": "Enabling Conversational Interaction with Mobile UI using Large Language Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580895",
+   "system_id": "2168",
+   "prefilter_score": 4.679,
+   "prefilter_parts": {
+    "relevance_density": 2.179,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 9.07
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Conversational agents show the promise to allow users to interact with mobile devices using language.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "When an agent initiates a conversation, it can be either soliciting or providing information essential for the user to perform tasks on a mobile UI.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5441",
+   "title": "Can AI be a Social Buffer? Investigating the Effect of AI-assisted Cognitive Reappraisal and Narrative Perspectives on Managing Difficult Workplace Conversations over Email",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790331",
+   "system_id": "5441",
+   "prefilter_score": 4.675,
+   "prefilter_parts": {
+    "relevance_density": 1.975,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 8.62
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Screenshot of a difficult email, along with an AI-reframed positive message presented from a first-person perspective (bottom left) and an AI-reframed neutral message presented from a third-person perspective (bottom right).",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8397",
+   "title": "Improving User Engagement and Learning Outcomes in LLM-Based Python Tutor: A Study of PACE",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720240",
+   "system_id": "8397",
+   "prefilter_score": 4.675,
+   "prefilter_parts": {
+    "relevance_density": 1.675,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 7.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Skill levels were defined in the prompt using Bloom’s Taxonomy: \"lacking background knowledge\" mapped to \"Remember\" and \"Understand,\" \"syntax errors\" to \"Analyze,\" and \"logic implementation challenges\" to \"Apply\" and \"Create.\"",
+     "evidence_location": "system sec 3.2"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13185",
+   "title": "BiasField: Interactive Bias Probing of Machine Learning Datasets",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694439",
+   "system_id": "biasfield",
+   "prefilter_score": 4.674,
+   "prefilter_parts": {
+    "relevance_density": 0.174,
+    "focus": 3.0,
+    "evidence_location": 1.5,
+    "_density_raw": 4.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Therefore, our tool should support adaptive bias detection that automatically extracts the attributes relevant to a given dataset, facilitating a targeted analysis rather than relying on predefined attributes.",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The detected biases are then shown using a plant-growthbased visualization, allowing users to analyze and verif",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 2,
+   "factors": [
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "prefilter_score": 4.639,
+   "prefilter_parts": {
+    "relevance_density": 2.866,
+    "focus": 0.273,
+    "evidence_location": 1.5,
+    "_density_raw": 10.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "panel’s header, and displays contextually similar words for the",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 11,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2733",
+   "title": "CoPrompt: Supporting Prompt Sharing and Referring in Collaborative Natural Language Programming",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642212",
+   "system_id": "coprompt",
+   "prefilter_score": 4.607,
+   "prefilter_parts": {
+    "relevance_density": 3.728,
+    "focus": 0.429,
+    "evidence_location": 0.45,
+    "_density_raw": 13.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Leveraging the context offered by NL prompts allows programmers to effectively communicate with their collaborators using a more intuitive language without getting into the intricacies of low-level code",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9701",
+   "title": "ViDscribe: Multimodal AI for Customizing Audio Description and Question Answering in Online Videos",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798744",
+   "system_id": "vidscribe",
+   "prefilter_score": 4.602,
+   "prefilter_parts": {
+    "relevance_density": 3.273,
+    "focus": 0.429,
+    "evidence_location": 0.9,
+    "_density_raw": 11.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(B) Length: Adjusts the number of words per description using a slider (15-100 words)",
+     "evidence_location": "full text sec 3, customization controls"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9835",
+   "title": "Mirror of the Dividual: A Public-Space Multimodal Interactive System for Making Understanding Perceivable",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799110",
+   "system_id": "9835",
+   "prefilter_score": 4.586,
+   "prefilter_parts": {
+    "relevance_density": 2.711,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 10.13
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Instead of inferring static psychological traits, these states drive the Expression Strategy, dynamically modulating the system’s linguistic content, vocal pacing, and v…",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "During the main interaction phase, the system agent advances the dialogue through a sequence of open-ended questions.",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "14045",
+   "title": "SciConv: A Conversational Tool for Reproducibility",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00071",
+   "system_id": "sciconv",
+   "prefilter_score": 4.579,
+   "prefilter_parts": {
+    "relevance_density": 2.479,
+    "focus": 1.2,
+    "evidence_location": 0.9,
+    "_density_raw": 9.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The assistant prompts for execution commands, which it uses to analyze the code and infer relevant environment settings.",
+     "evidence_location": "full text sec III-C"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The reproducibility workflow begins with the researcher uploading a ZIP archive containing their project files (code, data, etc.).",
+     "evidence_location": "full text sec III-C"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6239",
+   "title": "Visualizing Tree-of-Analysis: Facilitating Conversational Visual Analytics for Novices",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791690",
+   "system_id": "6239",
+   "prefilter_score": 4.56,
+   "prefilter_parts": {
+    "relevance_density": 3.36,
+    "focus": 0.75,
+    "evidence_location": 0.45,
+    "_density_raw": 11.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Unlike traditional visual analytics (VA) systems that require users to master complex tool operations [48], CVA systems enable intuitive data exploration through natural language conversation.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13881",
+   "title": "DocDancer: Authoring Ultra-Responsive Documents with Layout Generation",
+   "venue": "vlhcc-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/vl-hcc57772.2023.00023",
+   "system_id": "docdancer",
+   "prefilter_score": 4.548,
+   "prefilter_parts": {
+    "relevance_density": 2.062,
+    "focus": 1.286,
+    "evidence_location": 1.2,
+    "_density_raw": 8.93
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "provides layout suggestions based on user-provided content and popular responsive patterns",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Built-in preview sliders for screen width and font size.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Bind different options to different content: for customer = new, show the gift card offer; for customer = existing, show the discount offer.",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13926",
+   "title": "BISCUIT: Scaffolding LLM-Generated Code with Ephemeral UIs in Computational Notebooks",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00012",
+   "system_id": "biscuit",
+   "prefilter_score": 4.537,
+   "prefilter_parts": {
+    "relevance_density": 3.137,
+    "focus": 0.5,
+    "evidence_location": 0.9,
+    "_density_raw": 11.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "B ISCUIT supported users for understanding LLM-generated code by surfacing key variables that users can experiment with",
+     "evidence_location": "full text, intro"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4884",
+   "title": "DesignTrace: Exploring, Iterating and Tracking Design Alternatives with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791036",
+   "system_id": "designtrace",
+   "prefilter_score": 4.535,
+   "prefilter_parts": {
+    "relevance_density": 3.002,
+    "focus": 0.333,
+    "evidence_location": 1.2,
+    "_density_raw": 10.88
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Designers can (a) extract semantic attributes from inspirational images and system-generated palette suggestions",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The user first adds relevant categories to the Palette and extracts a cup handle shape attribute from two cup images.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "16497",
+   "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735740",
+   "system_id": "16497",
+   "prefilter_score": 4.526,
+   "prefilter_parts": {
+    "relevance_density": 2.576,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 9.79
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Illustrations of the information aids: AI Score (F 1 ), AI Translation (F 2 ), AI Explanation (F 3 ), Example Sentence (F 4 ), and Frequency (F 5 ) for the four paraphrased suggestions of the original text",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1697",
+   "title": "The Entoptic Field Camera as Metaphor-Driven Research-through-Design with AI Technologies",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581175",
+   "system_id": "1697",
+   "prefilter_score": 4.482,
+   "prefilter_parts": {
+    "relevance_density": 1.482,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 7.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Entoptic Field Camera is a web application which, through GAN techniques, generates a synthetic output image in response to a user’s input image",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "4656",
+   "title": "InnerPond: Fostering Inter-Self Dialogue with a Multi-Agent Approach for Introspection",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791248",
+   "system_id": "innerpond",
+   "prefilter_score": 4.477,
+   "prefilter_parts": {
+    "relevance_density": 2.527,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 9.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Three-phase metaphor evolution for the dialogical space: From group chat as battle ring (Phase 1), to stones highlighting individuality yet emphasizing separation (Phase 2), to lotus leaves appearing distinct yet sharing roots, enabling a meta-position perspective (Phase 3).",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "4574",
+   "title": "SpeakEasy: Enhancing Text-to-Speech Interactions for Expressive Content Creation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714263",
+   "system_id": "speakeasy",
+   "prefilter_score": 4.449,
+   "prefilter_parts": {
+    "relevance_density": 3.399,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 12.08
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We propose simplifying TTS generation by allowing users to specify high-level context",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9537",
+   "title": "Reflexia: AI-Assisted Reflection on Personal Media Consumption",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798688",
+   "system_id": "reflexia",
+   "prefilter_score": 4.447,
+   "prefilter_parts": {
+    "relevance_density": 2.518,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 9.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "As a part of the setup process, users need to export their watch history JSON file via Google Takeout4 and upload it to the system.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9493",
+   "title": "Personalizing Human-LLM Interactions through Mixed Profiling",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799351",
+   "system_id": "9493",
+   "prefilter_score": 4.414,
+   "prefilter_parts": {
+    "relevance_density": 2.614,
+    "focus": 1.5,
+    "evidence_location": 0.3,
+    "_density_raw": 9.85
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We propose Mixed Profiling, a novel approach that combines standardized short questionnaires with adaptive LLM dialogs to create precise user profiles.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16841",
+   "title": "G-SAN: Rethinking Audio Navigation Beyond Time in Podcasts",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812915",
+   "system_id": "gsan",
+   "prefilter_score": 4.404,
+   "prefilter_parts": {
+    "relevance_density": 1.704,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 8.01
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "(2) the Semantic Control Layer with three regulation buttons",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "pattern_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "remapping familiar playback controls into meaning-oriented actions",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9200",
+   "title": "Designing for Adolescent Voice in Health Decisions: Embodied Conversational Agents for HPV Vaccination",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798846",
+   "system_id": "9200",
+   "prefilter_score": 4.398,
+   "prefilter_parts": {
+    "relevance_density": 2.469,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 9.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system uses the Transtheoretical Model (TTM) to match intervention intensity with a user's readiness to change",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5522",
+   "title": "MoSound: An Interactive Tool for Generative Sound Design in Motion Graphics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791162",
+   "system_id": "mosound",
+   "prefilter_score": 4.371,
+   "prefilter_parts": {
+    "relevance_density": 2.014,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 8.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "enables user-driven motion-to-sound mapping through control curves",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users begin by uploading a motion graphics",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7582",
+   "title": "GELEX: Generative AI-Hybrid System for Example-Based Learning",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650900",
+   "system_id": "gelex",
+   "prefilter_score": 4.359,
+   "prefilter_parts": {
+    "relevance_density": 1.859,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 8.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "users proceed to enter their recipe into a text editor",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system provides an adjustable slider, which allows the user to set the desired level of improvement (F1), thereby customizing the system’s number of changes to suit individual preferences and expertise.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6055",
+   "title": "Roomify: Spatially-Grounded Style Transformation for Immersive Virtual Environments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791803",
+   "system_id": "roomify",
+   "prefilter_score": 4.335,
+   "prefilter_parts": {
+    "relevance_density": 2.46,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 9.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The pipeline accepts two inputs: a 30-60 second monocular RGB video captured with Meta Quest 3, and multimodal user prompts (text and/or reference images) specifying aesthetic preferences.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4123",
+   "title": "Need Help? Designing Proactive AI Assistants for Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714002",
+   "system_id": "4123",
+   "prefilter_score": 4.333,
+   "prefilter_parts": {
+    "relevance_density": 3.283,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 11.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The programming context provides a shared workspace enabling the assistant to offer more relevant suggestions.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "prefilter_score": 4.302,
+   "prefilter_parts": {
+    "relevance_density": 2.769,
+    "focus": 0.333,
+    "evidence_location": 1.2,
+    "_density_raw": 10.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "pattern_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Text field for entering a natural language query to update the selected SnapGrid.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16754",
+   "title": "Augmentiary: Exploring How LLM-Generated Interpretive Feedback Supports Meaning-Making in Reflective Journaling",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812859",
+   "system_id": "augmentiary",
+   "prefilter_score": 4.298,
+   "prefilter_parts": {
+    "relevance_density": 2.498,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 9.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Writers can compare feedback that either connects a passage to relevant past experiences or expands it through alternative perspectives",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "11342",
+   "title": "PromptMagician: Interactive Prompt Engineering for Text-to-Image Creation",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327168",
+   "system_id": "promptmagician",
+   "prefilter_score": 4.292,
+   "prefilter_parts": {
+    "relevance_density": 2.363,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 9.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "pattern_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "mining special and related keywords from the prompts in the clusters",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "pattern_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "Users can input a prompt to describe the desired subjects and styles and configure the model hyper-parameters, including guidance scale and total generation.",
+     "evidence_location": "system sec 5.1 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15712",
+   "title": "AI That Helps Us Help Each Other: A Proactive System for Scaffolding Mentor-Novice Collaboration in Entrepreneurship Coaching",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757549",
+   "system_id": "15712",
+   "prefilter_score": 4.289,
+   "prefilter_parts": {
+    "relevance_density": 2.489,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 9.62
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This prototype system (A) asks novices questions about their projects and progress before meetings, and (B) presents mentors with summarized information on novices’ projects and updates.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7767",
+   "title": "Unlocking Memories with AI: Exploring the Role of AI-Generated Cues in Personal Reminiscing",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650979",
+   "system_id": "7767",
+   "prefilter_score": 4.272,
+   "prefilter_parts": {
+    "relevance_density": 1.772,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 8.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "It then plays voice stories previously recorded by the object's owners, allowing users to interact with the objects and their associated stories.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(3) Question generation: it utilizes an LLM to generate open-ended questions based on the stories attached to these objects.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9518",
+   "title": "Qualitative Coding Analysis through Open-Source Large Language Models: A User Study and Design Recommendations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798320",
+   "system_id": "9518",
+   "prefilter_score": 4.272,
+   "prefilter_parts": {
+    "relevance_density": 2.372,
+    "focus": 1.0,
+    "evidence_location": 0.9,
+    "_density_raw": 9.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can upload document files and query the system about their content, with contextual understanding enhanced by a large context window (e.g., extended token limits).",
+     "evidence_location": "full text sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "system_id": "jamplate",
+   "prefilter_score": 4.269,
+   "prefilter_parts": {
+    "relevance_density": 1.869,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 8.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) the reflective questions in the blue boxes generated by LLMs by feeding in the content from above red boxes, (c) users type out a response to the LLM generated questions in the red boxes",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "pattern_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The reflection questions in the CA Template Plugin include: (a) What’s the takeaway of this competitor/column?, (b) How does this (competitor) compare to my idea?, and (c) How can I apply this competitor to inform my ideas? Users can click on the question and see an LLM generated answer intended to help users reflect.",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9766",
+   "title": "Thank God I'm Fly!': A Gyaru Persona Chatbot for Adopting a Positive Mindset to Prevent and Mitigate Negative Emotions\n9767\tchiea-2026\tinclude\t10.1145/3772363.3799094\tiPoster: Content-Aware Layout Generation for Interactive Poster Design via Graph-Enhanced Diffusion Models\n9769\tchiea-2026\tinclude-b\t10.1145/3772363.3798512\tJust Listening Was Enough - Until It Wasn't\": Relationship-Stage-Aware Cognitive Scaffolding in AI Companions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798615",
+   "system_id": "9766",
+   "prefilter_score": 4.25,
+   "prefilter_parts": {
+    "relevance_density": 3.35,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 11.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "pattern_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "an AI agent “GYARU-AI” acts as a role model of Gyaru-mind and selects a response mode from the user’s input to balance empathetic and frank stances",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2812",
+   "title": "VAL: Interactive Task Learning with GPT Dialog Parsing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641915",
+   "system_id": "val",
+   "prefilter_score": 4.245,
+   "prefilter_parts": {
+    "relevance_density": 1.995,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 8.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "pattern_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "when VAL is unable to relate that command to existing task knowledge, it asks the user to define the steps of the command (see Figure 4)",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3554",
+   "title": "Closing the Loop between User Stories and GUI Prototypes: An LLM-Based Assistant for Cross-Functional Integration in Software Development",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713932",
+   "system_id": "3554",
+   "prefilter_score": 4.24,
+   "prefilter_parts": {
+    "relevance_density": 2.44,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 9.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "pattern_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our assistant displays user stories (2) imported from collaboration tools (e.g., JIRA) for prototype designers to reference while working.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

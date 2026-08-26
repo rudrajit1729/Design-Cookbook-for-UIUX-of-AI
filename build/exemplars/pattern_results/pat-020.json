@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-020",
+ "exemplars": [
+  {
+   "rid": "1322",
+   "title": "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517582",
+   "final_score": 4.9,
+   "why": "LLM intermediate results are materialized as readable, modifiable modules within an executable prompt chain, so user changes propagate structurally into later stages rather than merely annotating a finished output.",
+   "over_the_runner_up": "AI Chains is stronger than DesignPrompt because inspectable intermediates constitute its general execution architecture, not a single domain-specific prompt-construction step."
+  },
+  {
+   "rid": "16260",
+   "title": "DesignPrompt: Using Multimodal Interaction for Design Exploration with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661588",
+   "final_score": 4.7,
+   "why": "The system converts multimodal input into a visible model-facing prompt whose segments users can edit and reorder, making the intermediate representation concrete, legible, and consequential for generation.",
+   "over_the_runner_up": "DesignPrompt outranks SimStep because its evidence shows both the input-to-intermediate mapping and precise editing operations on the artifact used for generation."
+  },
+  {
+   "rid": "5855",
+   "title": "SimStep: Human-in-the-Loop Authoring of Interactive Educational Simulations Through Task-Level Abstractions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791514",
+   "final_score": 4.6,
+   "why": "SimStep surfaces three named task-level graph abstractions as intermediate objects that teachers inspect, edit, and verify while authoring the eventual simulation, replacing opaque generation with reviewable semantic stages.",
+   "over_the_runner_up": "SimStep is a stronger exemplar than Athena because its evidence explicitly establishes that the intermediate artifacts are surfaced and supports inspection, editing, and verification, whereas Athena's excerpt only implies those interactions."
+  }
+ ],
+ "notes": "I departed from the consensus order by selecting rid 5855 over rid 10198. Their consensus scores are nearly tied, but SimStep's quotation demonstrates the required human-facing operations—surfacing, inspection, editing, and verification—while Athena's abstract names shared intermediate representations without establishing that they are displayed or editable. Scores were only lightly adjusted, so no adjustment exceeds 0.3. The evidence remains excerpt-level: AI Chains does not detail the screen behavior; DesignPrompt's figure caption strongly implies but does not explicitly state that the edited final prompt is consumed by generation; and SimStep's caption calls the graphs intermediate but does not explicitly trace each edited graph into the final simulation. These limitations should temper claims about the complete end-to-end dataflow.",
+ "pattern_name": "Inspectable Intermediate Steps",
+ "category_id": "U07",
+ "rated": 30
+}

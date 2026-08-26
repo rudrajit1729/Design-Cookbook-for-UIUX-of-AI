@@ -1,0 +1,75 @@
+{
+ "category_id": "U07",
+ "category_name": "Explanation, Inspection & Verification",
+ "exemplars": [
+  {
+   "rid": "13743",
+   "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747668",
+   "pattern_id": "pat-025",
+   "pattern_name": "Interpretation Readback",
+   "final_score": 4.95,
+   "why": "Before it writes any code, the system externalizes what it thinks the user asked for - the coding tasks and their inferred relationships - as a directly manipulable object, and the user corrects that readback rather than re-wording the prompt. This is the dimension's sharpest case of a representation whose whole purpose is letting a person check the machine's construal at the point where a misreading is still cheap to fix. Any system that infers structure from an underspecified request (spec drafting, data cleaning, task delegation) can lift the emit-then-correct-the-readback channel unchanged.",
+   "over_the_runner_up": "IntentFlow makes the same move with a different artifact shape, but only NeuroSync's evidence states in one sentence that the corrected understanding is what conditions generation ('prior to code generation')."
+  },
+  {
+   "rid": "1322",
+   "title": "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517582",
+   "pattern_id": "pat-020",
+   "pattern_name": "Inspectable Intermediate Steps",
+   "final_score": 4.9,
+   "why": "The steps of an LLM pipeline and their intermediate results are materialized as readable, editable modules, so inspection happens on the execution architecture itself rather than on a finished answer. It earns its place because it is the dimension's general case - the intermediate is not one stage of a domain pipeline but the way the system runs - and it anchors the pre-2023 end of an otherwise 2024-2026 set. Any multi-step agent or pipeline builder can adopt the step-as-inspectable-object structure directly.",
+   "over_the_runner_up": "DesignPrompt shows the same materialized intermediate but only inside one prompt-construction step, and its figure caption implies rather than states that the edited prompt is what generation consumes."
+  },
+  {
+   "rid": "3246",
+   "title": "An AI-Resilient Text Rendering Technique for Reading and Skimming Documents",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642699",
+   "pattern_id": "pat-052",
+   "pattern_name": "Color Coded Content",
+   "final_score": 4.85,
+   "why": "Every word is rendered in a lightness that encodes the stage at which recursive compression would have cut it, so a model's judgment about importance is laid over the artifact without removing a single word of it. It is the one candidate that satisfies the pattern's strict clause - marks equal content units, and stripping the encoding restores the document exactly - which makes it the dimension's model for showing an AI assessment while leaving the evidence intact for the reader to overrule. Directly transferable to any per-unit model score over text: uncertainty, provenance, relevance, risk.",
+   "over_the_runner_up": "HaLLMark encodes a rarer property (authorship provenance) but only as a two-category span highlight; on the quote's face its human-authored text carries no value, so the exhaustive per-unit map is only 3246's."
+  },
+  {
+   "rid": "11111",
+   "title": "How Does Attention Work in Vision Transformers? A Visual Analytics Attempt",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2023.3261935",
+   "pattern_id": "pat-038",
+   "pattern_name": "Model Internals View",
+   "final_score": 4.7,
+   "why": "The Head Importance View shows every attention head under selectable importance metrics and lets the user dissect a head by partially pruning it, so the internals are manipulated rather than merely projected. It represents the 'internals' half of the dimension that nothing else in this set touches, and it is the only candidate where the inspection view carries its own controls - metric choice, per-unit comparison, an ablation - instead of being a static scatterplot. The metric-selector-plus-ablation structure transfers to any inspection UI over computed internals, from retrieval scoring to feature attribution.",
+   "over_the_runner_up": "AttentionViz is the better-known system, but its evidence is a one-sentence tool introduction that names a joint embedding and enumerates no controls, comparison, or ablation - the exact half of the signature that separates this pattern from a generic projection."
+  },
+  {
+   "rid": "8513",
+   "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720227",
+   "pattern_id": "pat-028",
+   "pattern_name": "Plan Preview",
+   "final_score": 4.58,
+   "why": "The agent continually predicts how the performance will unfold and shows that plan on a waterfall of upcoming chords, so the user reads what the system is about to do while it is doing it. It covers the 'planned actions' branch of the dimension and is its only real-time, non-textual case: verification here has to happen inside a few hundred milliseconds, which is the hardest version of the problem the dimension poses. The lookahead display generalizes to any agent whose next actions matter before they land - driving, live translation, autocomplete, task agents about to act.",
+   "over_the_runner_up": "DreamGarden's node-based tree shows plan editing but not execution advancing through the displayed plan, which is the persistence clause that distinguishes this pattern from the editable-intermediate patterns already represented by AI Chains."
+  }
+ ],
+ "notes": "Five patterns of thirteen are represented; one exemplar per pattern, no pattern taken twice, no repeated system. Overrides of pattern-level judgements: (1) pat-051's leader rid 4085 was set aside - the first reviewer showed its ranking sentence ('the supplied evidence also indicates improved decision-making skills') is absent from the coded evidence, and both reviewers note the paper is a Prolific vignette study whose own record codes pat-054 central, so it sits between two patterns; rid 17234 is the better pat-051 instance but its token-level uncertainty highlighting is the same inline per-unit encoding move as 3246, so pat-051 went unrepresented rather than duplicating it. (2) pat-036's Automatic Histograms (rid 7464) has the cleanest evidence in the whole dimension and was still dropped: aggregate-select-filter-detail is the default thing a designer builds first (criterion 5 floor) and is documented far outside this cookbook, whereas the internals and plan-preview branches are named in the dimension's own description and had no other route in. (3) pat-001 goes unrepresented on set grounds: the reviewers between them show its lead candidate rid 8598 is the pattern's flagged source-link extension and the fourth mark-then-hover paper in the pool, and rid 2553's three-region mapping rests on a figure caption alone. Unrepresented patterns: pat-001, pat-031, pat-036, pat-037, pat-051, pat-053, pat-054, pat-055. Distrust list for writeups: 1322's rendering evidence comes from a quote coded to a different pattern (pat-086) in the same paper, so its 4.9 is not wholly earned inside pat-020; 8513's coded quote establishes only the persistence clause - ordering, editability and provisional-versus-committed encoding come from a reviewer's full-text reading, not from the coded record, so do not describe the waterfall's controls; 11111 does not prove the strict cached-state clause (that a control re-derives the view without rerunning the task); no candidate in this dimension has a verified outcome magnitude, so impact claims are plausible, not measured. Three candidates should be treated as disqualified rather than merely low: rid 3579 (coded quote is a textbook definition with citations, and the paper has no LLM component), rid 5199 (the Cognitive Bias Index is a user-set generation parameter and an offline evaluation metric, never a displayed readout), rid 13808 (the coded pat-031 quote only names the system; the mechanism its writeup describes is assembled from quotes coded to other patterns).",
+ "near_misses": [
+  {"rid": "7464", "title": "Automatic Histograms: Leveraging Language Models for Text Dataset Exploration", "pattern_id": "pat-036", "reason": "The best-evidenced candidate in the dimension - LLM-derived distribution, selection as filter, filtered example table - but overview-plus-detail is the most conventional move in the pool, and its slot bought the unrepresented internals and plan-preview branches instead."},
+  {"rid": "17234", "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions", "pattern_id": "pat-051", "reason": "The strongest pat-051 evidence (metadata source, one-to-one token attachment, a completion-alone condition demonstrating removability), but per-token highlighting is 3246's design move in a different attribute; its pat-052 entry is separately unusable, being a background sentence about prior work."},
+  {"rid": "9410", "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Oriented Human-Robot Collaboration", "pattern_id": "pat-028", "reason": "The only candidate where a previewed plan commits to physical action, and the most complete preview-edit-validate-execute chain in its pattern; lost the slot to ReaLJam on pattern cap and on ReaLJam's unique provisional-versus-committed rendering during live execution."},
+  {"rid": "9215", "title": "Disclose with Care: AI Scaffolds for Privacy in Chatbot Interviews", "pattern_id": "pat-031", "reason": "The dimension's only representation acting before a boundary crossing rather than after output delivery, and a controlled comparison of three gate designs; excluded because its 3.6 rests on a coded quote that supplies the review gate but no system-computed annotation - the completing evidence exists only in a reviewer's full-text reading of Figure 1."},
+  {"rid": "8356", "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs", "pattern_id": "pat-055", "reason": "The dimension's only aggregated scalar quality readout, and a reviewer's full text check supports the bounded scale and per-event accumulation the 2.8 assumed were missing; still excluded because on the coded record it is a single caption clause naming a score, which cannot carry a top-five slot."},
+  {"rid": "2553", "title": "Generating Automatic Feedback on UI Mockups with Large Language Models", "pattern_id": "pat-001", "reason": "The only candidate with a one-selection identity mapping across three regions (feedback text, Figma canvas, Layers panel), which is what pat-001 is supposed to contribute; the evidence is a figure caption only, and correspondence-by-highlight is the pool's most crowded move."}
+ ]
+}

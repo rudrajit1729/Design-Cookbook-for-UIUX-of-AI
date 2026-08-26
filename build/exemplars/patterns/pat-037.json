@@ -1,0 +1,811 @@
+{
+ "pattern": {
+  "pattern_id": "pat-037",
+  "pattern_name": "Unit Visualization Views",
+  "pattern_slug": "unit-visualization-views",
+  "short_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates.",
+  "definition": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates. Position encodes relatedness computed by the system, so proximity is meaningful. Queries and selections act on the map by re-weighting or re-highlighting it rather than by returning a separate result list.",
+  "structural_signature": "A layout algorithm assigns each item a position in a shared 2-D space from a computed similarity or relation structure; the resulting arrangement is rendered as a pannable/zoomable canvas that is the main navigation control. Interaction operates on positions and neighbourhoods, and any query result is expressed as a change to the map's state rather than as a new view.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Embedding Projection",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 31,
+ "candidates": [
+  {
+   "rid": "97",
+   "title": "LINGO : Visually Debiasing Natural Language Instructions to Support Task Diversity",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14840",
+   "system_id": "lingo",
+   "evidence": [
+    {
+     "quote": "Select a task to analyze based on the sentence embedding space of task instructions.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "343",
+   "title": "CUPID: Contextual Understanding of Prompt-conditioned Image Distributions",
+   "venue": "cgf-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1111/cgf.15086",
+   "system_id": "cupid",
+   "evidence": [
+    {
+     "quote": "contextualized embeddings of objects, those found within images, are mapped to a low-dimensional space via density-based embeddings",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "627",
+   "title": "LayerFlow : Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70123",
+   "system_id": "layerflow",
+   "evidence": [
+    {
+     "quote": "the individual layers are visualized as scatterplots, one scatterplot representing embeddings extracted from one layer",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3502",
+   "title": "GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713502",
+   "system_id": "genpara",
+   "evidence": [
+    {
+     "quote": "visualization of the design space to understand the distribution of design parameters (T2)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3662",
+   "title": "Exploring Empty Spaces: Human-in-the-Loop Data Augmentation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713491",
+   "system_id": "3662",
+   "evidence": [
+    {
+     "quote": "The main visualization in our interface is the Embedding View, where we plot each sentence in the dataset as a point (Figure 3A).",
+     "location": "system sec 5.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5425",
+   "title": "Req2CAD: bridging functional requirements and parametric CAD models to support conceptual 3D design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791949",
+   "system_id": "req2cad",
+   "evidence": [
+    {
+     "quote": "(b) Arranging and clustering inferred CAD components based on geometric and topological similarity to support design space exploration and inspire ideas…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7913",
+   "title": "Accelerating Scoping Reviews: A Case Study in the User-Centered Design of an AI-Enabled Interdisciplinary Research Tool",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3637110",
+   "system_id": "7913",
+   "evidence": [
+    {
+     "quote": "Data is visualized with a relationship-preserving two-dimensional representation via t-SNE.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "8281",
+   "title": "Enhancing AI Explainability for Non-technical Users with LLM-Driven Narrative Gamification",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719795",
+   "system_id": "8281",
+   "evidence": [
+    {
+     "quote": "Here, we present a scenario featuring our design probe of an interactive t-SNE projection of ResNet-34's CIFAR-10 embeddings to demonstrate the general approach of our gamification.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9072",
+   "title": "Anthology: AI-Augmented Sensemaking Interface to Reduce Radicalization in Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799062",
+   "system_id": "anthology",
+   "evidence": [
+    {
+     "quote": "Full View displays all topical utterances as a semantic landscape where spatial proximity indicates thematic similarity, with different shapes and colors representing narrative clusters.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9402",
+   "title": "Knight Path: Supporting Player Sense-making in Game Narratives via Visual Scaffolding and Spoiler-Aware AI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798468",
+   "system_id": "9402",
+   "evidence": [
+    {
+     "quote": "Knight Path utilizes a region-centric narrative mind map to facilitate narrative reconstruction during gameplay.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10186",
+   "title": "OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789225",
+   "system_id": "ontoscope",
+   "evidence": [
+    {
+     "quote": "The ontology scope is modelled as a 2D grid of subdomains (x-axis) and term granularities (y-axis). Each cell is a conceptual region, defined by a specific subdomain and granularity level, where competency questions (CQs) are placed and assessed.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10481",
+   "title": "VITALITY: Promoting Serendipitous Discovery of Academic Literature with Transformers & Visual Analytics",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114820",
+   "system_id": "vitality",
+   "evidence": [
+    {
+     "quote": "(C) Visualization Canvas shows an interactive 2-D UMAP projection of the embedding",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11342",
+   "title": "PromptMagician: Interactive Prompt Engineering for Text-to-Image Creation",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327168",
+   "system_id": "promptmagician",
+   "evidence": [
+    {
+     "quote": "The images are positioned based on their semantic embedding (Section 4.2), and the keywords are positioned near their most related image clusters",
+     "location": "system sec 5.1 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "11470",
+   "title": "PhraseMap: Attention-Based Keyphrases Recommendation for Information Seeking",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2022.3225114",
+   "system_id": "phrasemap",
+   "evidence": [
+    {
+     "quote": "The main component of our approach is a PhraseMap, where nodes and edges represent the extracted keyphrases and their relationships, respectively, from a large corpus.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11956",
+   "title": "ModalChorus: Visual Probing and Alignment of Multi-Modal Embeddings via Modal Fusion Map",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456387",
+   "system_id": "modalchorus",
+   "evidence": [
+    {
+     "quote": "Multi-modal embeddings and concepts extracted from text and images are first projected with Modal Fusion Map, a novel modality-fusing DR method we propose.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12049",
+   "title": "VADIS: A Visual Analytics Pipeline for Dynamic Document Representation and Information-Seeking",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456339",
+   "system_id": "vadis",
+   "evidence": [
+    {
+     "quote": "Illustration of traditional document map compared with document map for a specific perspective",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12275",
+   "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3539779",
+   "system_id": "maico",
+   "evidence": [
+    {
+     "quote": "To get an overview of the samples, Brachtel then explores the space (T2) with a similarity-based layout to visualize all samples as dots simultaneously.",
+     "location": "full text, system sec III-F"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12305",
+   "title": "PrompTHis: Visualizing the Process and Influence of Prompt Editing During Text-to-Image Creation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3408255",
+   "system_id": "prompthis",
+   "evidence": [
+    {
+     "quote": "The Image Variant Graph models prompt differences as edges between corresponding images and presents the distances between images through projection.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12372",
+   "title": "HINTs: Sensemaking on Large Collections of Documents With Hypergraph Visualization and INTelligent Agents",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3459961",
+   "system_id": "hints",
+   "evidence": [
+    {
+     "quote": "(b) The center area of Cluster View shows the topic structure of the corpus using Gosper curves.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "evidence": [
+    {
+     "quote": "are placed based on their similarity using a t-SNE layout, with",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12537",
+   "title": "JailbreakHunter: A Visual Analytics Approach for Jailbreak Prompts Discovery From Large-Scale Human-LLM Conversational Datasets",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3557568",
+   "system_id": "jailbreakhunter",
+   "evidence": [
+    {
+     "quote": "Interactions: Following WizMap, the projection plane supports semantic zooming. Users also have the ability to configure",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12656",
+   "title": "Litforager: Exploring Multimodal Literature Foraging Strategies in Immersive Sensemaking",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3616732",
+   "system_id": "litforager",
+   "evidence": [
+    {
+     "quote": "enable researchers to forage and visualize paper nodes within an immersive literature network graph in VR",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12750",
+   "title": "Latent Space Map for Visual Utilization of Generated Data",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3614247",
+   "system_id": "12750",
+   "evidence": [
+    {
+     "quote": "This paper presents Latent Space Map that projects a GLS onto a plane to help users locate regions rich in desirable GSs",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12770",
+   "title": "ConceptViz: A Visual Analytics Approach for Exploring Concepts in Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634806",
+   "system_id": "conceptviz",
+   "evidence": [
+    {
+     "quote": "the user observes query-relevant features (blue points) distributed across several semantic regions in the concept space",
+     "location": "system sec 6.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12805",
+   "title": "DKMap: Interactive Exploration of Vision-Language Alignment in Multimodal Embeddings via Dynamic Kernel Enhanced Projection",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642641",
+   "system_id": "dkmap",
+   "evidence": [
+    {
+     "quote": "After selection, the view (Fig. 6 (b)) presents the corresponding map, which is the major component of our system featuring our DKMap method.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12991",
+   "title": "DAVA: Decoding Art With Visual Analytics Through Feature Modeling and Multi-Agent Collaboration",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3653892",
+   "system_id": "dava",
+   "evidence": [
+    {
+     "quote": "To support intuitive exploration of the three-level features, we project high-dimensional features into a two-dimensional space (T1).",
+     "location": "system sec 5.A (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13804",
+   "title": "Policy Maps: Tools for Guiding the Unbounded Space of LLM Behaviors",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747680",
+   "system_id": "13804",
+   "evidence": [
+    {
+     "quote": "We introduce Policy Projector,3 an open-source4 LLM policy mapmaking tool that consists of two main components: (1) a Map Visualization to review existing cases, concepts, and policies and (2) an Authoring Flow to address policy gaps and update the policy map.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "14017",
+   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00043",
+   "system_id": "convomap",
+   "evidence": [
+    {
+     "quote": "ConvoMap can then visualize hundreds of MAS conversations by representing messages as points on a 2D map that encode their semantic meanings and interactions between agents.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15324",
+   "title": "ComViewer: An Interactive Visual Tool to Help Viewers Seek Social Support in Online Mental Health Communities",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710904",
+   "system_id": "comviewer",
+   "evidence": [
+    {
+     "quote": "With ComViewer, viewers can filter posts of different topics and find supportive comments via a zoomable circle packing visual component that adapts to searched keywords.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "evidence": [
+    {
+     "quote": "The base view of both the Static and Interactive conditions is a 2D scatter plot of embedded dataset instances.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16043",
+   "title": "Metaphorian: Leveraging Large Language Models to Support Extended Metaphor Creation for Science Writing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595996",
+   "system_id": "metaphorian",
+   "evidence": [
+    {
+     "quote": "The spatial distance between the tenor node and clusters on the map represents the semantic distance between them.",
+     "location": "full text sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

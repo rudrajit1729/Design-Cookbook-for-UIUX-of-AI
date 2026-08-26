@@ -1,0 +1,475 @@
+{
+ "pattern": {
+  "pattern_id": "pat-044",
+  "pattern_name": "Role-Play Scenario",
+  "pattern_slug": "role-play-scenario",
+  "short_summary": "The system generates a bounded scenario and places the user inside it as a participant rather than as an operator addressing a tool.",
+  "definition": "The system generates a bounded scenario and places the user inside it as a participant rather than as an operator addressing a tool. The user acts in role, and the model plays the other parties or the environment; the run can be repeated. What the user produces during the run is behaviour in the scenario, not a request to the model.",
+  "structural_signature": "Control flow: a setup step fixes the scenario's parameters (topic, role, self-representation), after which the interface switches into an in-scenario mode where the user's turns are read as actions of a participant and the model's turns are read as the world's response. The scenario has an entry and an exit, and re-entry restarts it rather than continuing it. The signature is the *frame switch* — user input stops being instructions to a system and becomes conduct inside a generated world. Transplants to sales rehearsal, incident drills, or a generated market a strategy is tested against.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Role-Playing Agent",
+  "dimension": {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "9182",
+   "title": "Dear Friend: Alleviating Anxiety through Co-creative Virtual Agent in Dual-Atmosphere Environments",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798472",
+   "system_id": "9182",
+   "evidence": [
+    {
+     "quote": "For specific phobias in realistic exposure scenes, the virtual friend acted as a vital emotional anchor",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9275",
+   "title": "Fear Is a Bad Gambler: Designing for Cognitive Co-Creation in AI-Mediated Social Exposure",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798914",
+   "system_id": "9275",
+   "evidence": [
+    {
+     "quote": "which are then explored through dynamically generated social simulations designed to maintain realistic yet safe interaction dynamics",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9326",
+   "title": "GenerPlay: Bridging Asynchronous Intergenerational Communication Through Generative Interactive Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798448",
+   "system_id": "generplay",
+   "evidence": [
+    {
+     "quote": "We utilize an interactive narrative game generation system to facilitate asynchronous intergenerational communication.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9465",
+   "title": "NeuroWise: A Multi-Agent LLM \"Glass-Box\" System for Practicing Double-Empathy Communication with Autistic Partners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798437",
+   "system_id": "neurowise",
+   "evidence": [
+    {
+     "quote": "NeuroWise is a web-based practice environment where users engage in text-based conversations with an AI-simulated autistic partner named “Alex.”",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9505",
+   "title": "Playing the Monograph: Retrieval-Augmented Generation for Interactive Ethnography",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798374",
+   "system_id": "9505",
+   "evidence": [
+    {
+     "quote": "The player begins by establishing a field camp on the Trobriand Islands, where the LLM generates scenarios inspired by Malinowski’s Argonauts of the Western Pacific [12].",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9513",
+   "title": "Prompting Destiny: Negotiating Socialization and Growth in an LLM-Mediated Speculative Gameworld",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798749",
+   "system_id": "9513",
+   "evidence": [
+    {
+     "quote": "We present an LLM-mediated role-playing game that supports reflection on socialization, moral responsibility, and educational role positioning.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10165",
+   "title": "AI Comes Out of the Closet: Using AI-Generated Virtual Characters to Help Individuals Practice LGBTQIA+ Advocacy",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645213",
+   "system_id": "10165",
+   "evidence": [
+    {
+     "quote": "a pedagogical tool that utilizes virtual characters and large language models to create a space for individuals to actively engage with and explore social scenarios and practice LGBTQIA+ advocacy",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10248",
+   "title": "Intelligent Tutoring in a Driving Simulator: Enhancing Driving Proficiency With AI-Driven Skill Assessment and Personalized Coaching Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789060",
+   "system_id": "10248",
+   "evidence": [
+    {
+     "quote": "Three main modules with individual AI models are developed in the CARLA driving simulator (described in Section 4.2): driving skill assessment, on-board driving assistance and CARLAsimulated tailored driving scenario generation, as shown in Figure 1.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "14003",
+   "title": "Designing Conversational AI to Support Think-Aloud Practice in Technical Interview Preparation for CS Students",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00029",
+   "system_id": "14003",
+   "evidence": [
+    {
+     "quote": "Technical Interview Simulation introduces an AI-facilitated mock interview system that simulates a technical interview experience through voice-based natural conversation (Fig. 1).",
+     "location": "system sec III.A (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15126",
+   "title": "Conversate: Supporting Reflective Learning in Interview Practice Through Interactive Simulation and Dialogic Feedback",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701188",
+   "system_id": "conversate",
+   "evidence": [
+    {
+     "quote": "the user flow begins with the user entering the job title they want to practice an interview for. They then engage in an Interview Simulation session with an AI agent.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15162",
+   "title": "Social Life Simulation for Non-Cognitive Skills Learning",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711068",
+   "system_id": "15162",
+   "evidence": [
+    {
+     "quote": "we designed and developed an interactive platform called SimuLife++, allowing users to take on the role of the protagonist who interacts with either one or multiple LLM-enabled characters in challenging social scenarios",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15419",
+   "title": "Breaking the News: Taking the Roles of Influencer vs. Journalist in a LLM-Based Game for Raising Misinformation Awareness",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3748600",
+   "system_id": "15419",
+   "evidence": [
+    {
+     "quote": "Breaking the News is an online player-versus-player (PvP) game where players generate or debunk misinformation to win the trust of public opinion, represented by five LLM-driven personas.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15599",
+   "title": "'Poker with Play Money': Exploring Psychotherapist Training with Virtual Patients",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757450",
+   "system_id": "15599",
+   "evidence": [
+    {
+     "quote": "Large language modeldriven virtual agents offer a potential avenue to mitigate these limitations and offer lower-risk role-play.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16468",
+   "title": "ELLMA-T: an Embodied LLM-agent for Supporting English Language Learning in Social VR",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735786",
+   "system_id": "ellmat",
+   "evidence": [
+    {
+     "quote": "The agent (ELLMA-T) engages with the users in role-play conversations based on real-life scenarios, providing interactive and adaptive language practice in VRChat.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16472",
+   "title": "Cracking Aegis: An Adversarial LLM-based Game for Raising Awareness of Vulnerabilities in Privacy Protection",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735812",
+   "system_id": "16472",
+   "evidence": [
+    {
+     "quote": "Cracking Aegis (Fig.2) is a dialogue-based serious game where players take on the role of an agent from the Deep Blue Tech Group, a cutting-edge technology company.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16742",
+   "title": "MediMate: Co-Crafting Patient-Centered Medical Explanations Using LLMs as a Rehearsal Partner",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812891",
+   "system_id": "medimate",
+   "evidence": [
+    {
+     "quote": "structures patient profiles to drive the system’s simulation and guided exercises",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16784",
+   "title": "PsyMooc: Empowering Simulation-Based Educational Systems with LLM Agents to Train Clinical Interviewing Skills",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813015",
+   "system_id": "psymooc",
+   "evidence": [
+    {
+     "quote": "PsyMooc supports standardized psychiatric interview training across diverse patient conditions",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

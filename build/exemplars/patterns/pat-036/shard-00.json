@@ -1,0 +1,1043 @@
+{
+ "pattern": {
+  "pattern_id": "pat-036",
+  "pattern_name": "Overview-plus-Detail",
+  "pattern_slug": "overview-plus-detail",
+  "short_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+  "definition": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item. Interaction at a coarser level selects the population shown at the finer level. The finest level exposes the individual case behind the aggregate.",
+  "structural_signature": "A hierarchy of at least two views over one collection, ordered by an aggregation relation: the coarse view displays a function of many items, the fine view displays items themselves. A selection in the coarse view is a filter that defines the fine view's contents, and the levels are simultaneously present or one-click reachable. The ordering is asymmetric — the fine level cannot substitute for the coarse one.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Hierarchical Exploration",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "3579",
+   "title": "Malleable Overview-Detail Interfaces",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714164",
+   "system_id": "3579",
+   "evidence": [
+    {
+     "quote": "The overview-detail design pattern describes interfaces that typically consist of two views: an overview that presents a collection of items along with their key attributes and a detail view that provides an in-depth look at a selected item, including many, if not all, of its attributes [63, 69].",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3863",
+   "title": "Media Bias Detector: Designing and Implementing a Tool for Real-Time Selection and Framing Bias Analysis in News Coverage",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713716",
+   "system_id": "3863",
+   "evidence": [
+    {
+     "quote": "we allow users to click through a hierarchy of news topics and subtopics to zoom into news of interest",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5222",
+   "title": "MIND: Empowering Mental Health Clinicians with Multimodal Data Insights through a Narrative Dashboard",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790529",
+   "system_id": "mind",
+   "evidence": [
+    {
+     "quote": "Drill-down panel for a patient data insight. Users can open the panel by clicking the drill-down button in L1. Each section provides detailed information for clinicians to explore underlying data",
+     "location": "fig 6"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5292",
+   "title": "Design and Multi-level Evaluation of MAP-X: a Medically Aligned, Patient-Centered AI Explanation System",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790971",
+   "system_id": "5292",
+   "evidence": [
+    {
+     "quote": "The MAP-X progressive disclosure interface is designed to reduce cognitive load.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5313",
+   "title": "DiLLS: Interactive Diagnosis of LLM-based Multi-agent Systems via Layered Summary of Agent Behaviors",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790815",
+   "system_id": "dills",
+   "evidence": [
+    {
+     "quote": "we propose a framework for extracting, organizing, and presenting agent behaviors at multiple levels",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5347",
+   "title": "Transformer Explainer: Learning LLM Transformers with Interactive Visual Explanation and Experimentation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791725",
+   "system_id": "5347",
+   "evidence": [
+    {
+     "quote": "The tool integrates an overview illustrating the Transformer’s data flow with on-demand explanations that gradually reveal mathematical details.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5902",
+   "title": "Helping Johnny Make Sense of Privacy Policies with LLMs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791465",
+   "system_id": "5902",
+   "evidence": [
+    {
+     "quote": "Clicking the smiley opens an Overview Panel (left) summarizing key privacy issues, with navigation to a Dynamic Dashboard and chat interface.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6200",
+   "title": "Vipera: Blending Visual and LLM-Driven Guidance for Systematic Auditing of Text-to-Image Generative AI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791942",
+   "system_id": "vipera",
+   "evidence": [
+    {
+     "quote": "The size of each node reflects the number of images containing that object or attribute. Hovering over an attribute node displays a bar chart of evaluation results.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7464",
+   "title": "Automatic Histograms: Leveraging Language Models for Text Dataset Exploration",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650798",
+   "system_id": "7464",
+   "evidence": [
+    {
+     "quote": "When the user selects an entity in a distribution (Figure 4), the entity is highlighted, and the data table is fltered to only show examples that contain that entity.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "7627",
+   "title": "LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650755",
+   "system_id": "7627",
+   "evidence": [
+    {
+     "quote": "visual analytics workflows for users to obtain the visual summary of the results from the side-by-side ratings while inspecting corresponding individual examples",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "7645",
+   "title": "Machine-Assisted Error Discovery in Conversational AI Systems",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651120",
+   "system_id": "7645",
+   "evidence": [
+    {
+     "quote": "Clicking on a difference triggers a preview of it where (1) the right panel lists the systemgenerated annotations with those differences and (2) the bottom panel is populated with additional statistics about the selected difference.",
+     "location": "full text sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8499",
+   "title": "PolicyPulse: LLM-Synthesis Tool for Policy Researchers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720266",
+   "system_id": "policypulse",
+   "evidence": [
+    {
+     "quote": "PolicyPulse returns an organized list of themes (e.g., “Biodiversity Loss” or “Carbon Pricing”), supporting each theme with relevant quotes from real-life anecdotes",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "8527",
+   "title": "SPHERE: Supporting Personalized Feedback at Scale in Programming Classrooms with Structured Review of Generative AI Outputs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720203",
+   "system_id": "sphere",
+   "evidence": [
+    {
+     "quote": "Critical Issue Recommendation Panel consists of Scatterplot, Critical Issue View and Detailed Issue.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8954",
+   "title": "Boosting Diary Study Outcomes with a Fine-Tuned Large Language Model",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719287",
+   "system_id": "8954",
+   "evidence": [
+    {
+     "quote": "Users can click on each sentiment category through an intuitive interface to view the associated diary entries, thereby gaining deeper insights into students’ unique thought processes.",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9223",
+   "title": "Dr.Ei: A Two-Stage, Multi-Agent, Multimodal Clinical Decision Support Workflow for Clinician Sensemaking",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798870",
+   "system_id": "drei",
+   "evidence": [
+    {
+     "quote": "Stage 1 enforces an overview-first entry point: clinicians can rapidly orient to the case using an integrated summary while retaining access to per-modality evidence for deeper inspection",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9602",
+   "title": "StoryCrafter: A Graph-Based Co-Creative AI System Supporting Parental Story Re-Authoring",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798778",
+   "system_id": "storycrafter",
+   "evidence": [
+    {
+     "quote": "Left: Graph-based overview of the story structure. Right: Expanded modal view shown when a story chunk is selected.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789088",
+   "system_id": "dscodecomparator",
+   "evidence": [
+    {
+     "quote": "DSCode Comparator allows code to be viewed from different levels of granularity, from individual lines of code to comparisons across prompts and tasks.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11339",
+   "title": "AttentionViz: A Global View of Transformer Attention",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327163",
+   "system_id": "attentionviz",
+   "evidence": [
+    {
+     "quote": "Users can click on any plot in Matrix View to zoom into Single View",
+     "location": "system sec 5.3.2 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11340",
+   "title": ": Visualizing and Understanding Commonsense Reasoning Capabilities of Natural Language Models",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327153",
+   "system_id": "11340",
+   "evidence": [
+    {
+     "quote": "The Subset View (B) summarizes the context alignment between model behavior and ConceptNet knowledge over different subsets. The Instance View (C) provides",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11632",
+   "title": "Visual Explanation for Open-Domain Question Answering With BERT",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3243676",
+   "system_id": "11632",
+   "evidence": [
+    {
+     "quote": "The system summarizes the data flow within and between modules in the OpenQA model as the decision process takes place at the summary, instance and candidate levels.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11975",
+   "title": "LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456354",
+   "system_id": "11975",
+   "evidence": [
+    {
+     "quote": "DG1. Facilitate seamless interactions between aggregated data and individual examples, allowing users to explore data subsets in various ways and examine relevant examples.",
+     "location": "full text sec 3.2 (design goals)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12012",
+   "title": "StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456363",
+   "system_id": "stugptviz",
+   "evidence": [
+    {
+     "quote": "Instructors can then select specific students or tasks for deeper analysis of studentChatGPT conversations.",
+     "location": "system sec 4.1 (R1)"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12247",
+   "title": "InsightLens: Augmenting LLM-Powered Data Analysis With Interactive Insight Management and Navigation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567131",
+   "system_id": "insightlens",
+   "evidence": [
+    {
+     "quote": "an insight-level overview should be provided, with details on demand to inspect each insight with its supporting evidence and other related insights",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12281",
+   "title": "AgentLens: Visual Analysis for Agent Behaviors in LLM-Based Autonomous Systems",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3394053",
+   "system_id": "agentlens",
+   "evidence": [
+    {
+     "quote": "When users notice a specific phenomenon or behavior from the Outline View and wish to further explore it, they can click on the corresponding time point on an agent curve to access more details (R1) in the Agent View.",
+     "location": "full text, system sec V-B"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12372",
+   "title": "HINTs: Sensemaking on Large Collections of Documents With Hypergraph Visualization and INTelligent Agents",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3459961",
+   "system_id": "hints",
+   "evidence": [
+    {
+     "quote": "To facilitate incremental sensemaking, it is important to support users to drill down from a high-level overview to intermediate abstractions.",
+     "location": "full text sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12537",
+   "title": "JailbreakHunter: A Visual Analytics Approach for Jailbreak Prompts Discovery From Large-Scale Human-LLM Conversational Datasets",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3557568",
+   "system_id": "jailbreakhunter",
+   "evidence": [
+    {
+     "quote": "We have designed a workflow with three analysis levels: group-level, conversationlevel, and turn-level.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12559",
+   "title": "Concept Lens: Visual Comparison and Evaluation of Generative Model Manipulations",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3564537",
+   "system_id": "12559",
+   "evidence": [
+    {
+     "quote": "of a hierarchical organization of (a) concepts and (b) codes, and (c) a grid-based view that shows images generated by combinations of codes (rows) and concepts",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12590",
+   "title": "JailbreakLens: Visual Analysis of Jailbreak Attacks Against Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3575694",
+   "system_id": "jailbreaklens",
+   "evidence": [
+    {
+     "quote": "by category and denoted by their serial numbers. The categories are collapsed by default to visualize their aggregated",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12608",
+   "title": "Save It for the \"Hot\" Day: An LLM-Empowered Visual Analytics System for Heat Risk Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3586689",
+   "system_id": "12608",
+   "evidence": [
+    {
+     "quote": "This process creates a two-level hierarchical topic structure.",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12770",
+   "title": "ConceptViz: A Visual Analytics Approach for Exploring Concepts in Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634806",
+   "system_id": "conceptviz",
+   "evidence": [
+    {
+     "quote": "Starting at a high-level view, user identify broad conceptual areas like scientific and sports. Drilling down into the scientific region reveals intermediate clusters focused on food concepts.",
+     "location": "system sec 6.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12805",
+   "title": "DKMap: Interactive Exploration of Vision-Language Alignment in Multimodal Embeddings via Dynamic Kernel Enhanced Projection",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642641",
+   "system_id": "dkmap",
+   "evidence": [
+    {
+     "quote": "A Plotly-based implementation of DKMap for computational notebook features dynamic zooming, which can progressively reveal local details with kernel enhanced projection, enabling the exploration of instance-level attributes.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12821",
+   "title": "VisMoDAI: Visual Analytics for Evaluating and Improving Corruption Robustness of Vision-Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634257",
+   "system_id": "vismodai",
+   "evidence": [
+    {
+     "quote": "(C) interactive scatterplot and three-layer axis view for pattern discovery and instance inspection",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12832",
+   "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634265",
+   "system_id": "12832",
+   "evidence": [
+    {
+     "quote": "T1 - Enable multiple levels of story exploration. To accommodate a wide range of analysis workflows [G1], we support both high-level (e.g., chapters) and low-level (e.g., scenes) exploration of stories.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12991",
+   "title": "DAVA: Decoding Art With Visual Analytics Through Feature Modeling and Multi-Agent Collaboration",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3653892",
+   "system_id": "dava",
+   "evidence": [
+    {
+     "quote": "Exploration begins with (A) Structural Feature Overview (T1), which clusters facial expressions, body poses, and co-occurrence relations, allowing users to scan the dataset and select patterns of interest (T2). Selected clusters lead to (B) Pattern Exploration (T3), where correlation analysis, timelines, and metadata (T4) reveal latent semantic and temporal patterns.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13182",
+   "title": "Illuminating LLM Coding Agents: Visual Analytics for Deeper Understanding and Enhancement",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694444",
+   "system_id": "13182",
+   "evidence": [
+    {
+     "quote": "The coding plan (b), generated code (c), and code analysis report (d), can be presented on demand while interacting with the tree",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13212",
+   "title": "Compendia: Automated Visual Storytelling Generation From Online Article Collection",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3663204",
+   "system_id": "compendia",
+   "evidence": [
+    {
+     "quote": "beginning with the Thematic Overview (in Fig.2 B ), which provides a high-level summary of all extracted data facts as clusters; and followed by the Story View (in Fig.2 B ), accessible by scrolling or selecting a cluster, which enables detailed exploration of data facts in that cluster",
+     "location": "system sec 3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13484",
+   "title": "Sensecape: Enabling Multilevel Exploration and Sensemaking with Large Language Models",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606756",
+   "system_id": "sensecape",
+   "evidence": [
+    {
+     "quote": "providing a comprehensive overview of the information space",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13663",
+   "title": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747689",
+   "system_id": "visegpt",
+   "evidence": [
+    {
+     "quote": "(B2) A tailored Gantt chart providing an overview of test results; (B3) A detail view displaying the test c",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13727",
+   "title": "RAGTrace: Understanding and Refining Retrieval-Generation Dynamics in Retrieval-Augmented Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747741",
+   "system_id": "ragtrace",
+   "evidence": [
+    {
+     "quote": "the system supports a multi-level analysis approach, ∗ Equal contribution. † Corresponding author. ranging from high-level performance evaluation to fine-grained examination of retrieval relevance, generation fidelity, and crosscomponent interactions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "13793",
+   "title": "Meridian: A Design Framework for Malleable Overview-Detail Interfaces",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747654",
+   "system_id": "meridian",
+   "evidence": [
+    {
+     "quote": "Overview-detail interfaces (ODIs), which present an overview of multiple items alongside a detailed view of a selected item, are ubiquitously implemented in software interfaces.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

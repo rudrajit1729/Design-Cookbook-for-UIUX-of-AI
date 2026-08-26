@@ -1,0 +1,1268 @@
+{
+ "pattern": {
+  "pattern_id": "pat-034",
+  "pattern_name": "Artifact Generation Property Controls",
+  "pattern_slug": "artifact-generation-property-controls",
+  "short_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+  "definition": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance. Setting the value re-runs or re-renders under the new setting. The dimension exists before any particular content and persists across generations.",
+  "structural_signature": "A named parameter with an ordered range (short/moderate/long; 1D distance; temperature; abstraction level) is surfaced as a persistent control widget bound to that range. The control does not create content; it scales an already-defined property of whatever content is produced, and the same control is available for every output. Multiple such parameters may be exposed together as a configuration panel.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Predefined Parameters and Options",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 48,
+ "candidates": [
+  {
+   "rid": "869",
+   "title": "GANSlider: How Users Control Generative Models for Images using Multiple Sliders with and without Feedforward Information",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502141",
+   "system_id": "ganslider",
+   "evidence": [
+    {
+     "quote": "The output image of the generative model is the sum of all slider edits.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "1907",
+   "title": "The less I type, the better: How AI Language Models can Enhance or Impede Communication for AAC Users",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581560",
+   "system_id": "1907",
+   "evidence": [
+    {
+     "quote": "a ‘variability’ slider to adjust the temperature of the model, and thus the diversity of the responses generated",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2221",
+   "title": "GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581226",
+   "system_id": "ganravel",
+   "evidence": [
+    {
+     "quote": "(d) The weights of the examples can be changed using the ‘+’ and ‘-’ buttons.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2563",
+   "title": "RoomDreaming: Generative-AI Approach to Facilitating Iterative, Preliminary Interior Design Exploration",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642901",
+   "system_id": "roomdreaming",
+   "evidence": [
+    {
+     "quote": "The user can then control adherence to existing elements",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2940",
+   "title": "Rambler: Supporting Writing With Speech via LLM-Assisted Gist Manipulation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642217",
+   "system_id": "rambler",
+   "evidence": [
+    {
+     "quote": "From left to right, example text in three Rambles is presented at all four Semantic Zoom levels: full transcript, 50% length, 25% length, and 10% length.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3388",
+   "title": "FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713863",
+   "system_id": "fontcraft",
+   "evidence": [
+    {
+     "quote": "The slider enables users to explore the one-dimensional latent subspace determined by either Bayesian optimization or multimodal reference inputs (see Section 4.4).",
+     "location": "system sec 3.2.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3591",
+   "title": "VeriPlan: Integrating Formal Verification and LLMs into End-User Planning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714113",
+   "system_id": "veriplan",
+   "evidence": [
+    {
+     "quote": "In addition to the LLM planner, VeriPlan includes three additional core features—a rule translator, flexibility sliders, and a model checker—that engage users in the verification process.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3796",
+   "title": "WhatELSE: Shaping Narrative Spaces at Configurable Level of Abstraction for AI-bridged Interactive Storytelling",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713363",
+   "system_id": "whatelse",
+   "evidence": [
+    {
+     "quote": "an abstraction ladder to confgure the abstraction level",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "3849",
+   "title": "AIFiligree: A Generative AI Framework for Designing Exquisite Filigree Artworks",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713281",
+   "system_id": "aifiligree",
+   "evidence": [
+    {
+     "quote": "supports reference image weighting and parameter adjustments for generated images",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3862",
+   "title": "Exploring Mobile Touch Interaction with Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713554",
+   "system_id": "3862",
+   "evidence": [
+    {
+     "quote": "two control mappings: spreadto-generate and pinch-to-shorten",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3908",
+   "title": "TutorCraftEase: Enhancing Pedagogical Question Creation with Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713731",
+   "system_id": "tutorcraftease",
+   "evidence": [
+    {
+     "quote": "TutorCraftEase enables the rapid generation of questions at varying difficulty levels with a single click",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4170",
+   "title": "AdaptiveSliders: User-aligned Semantic Slider-based Editing of Text-to-Image Model Output",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714292",
+   "system_id": "adaptivesliders",
+   "evidence": [
+    {
+     "quote": "Slider-based editing is a recent approach wherein the image's semantic attributes are manipulated via sliders.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4215",
+   "title": "Leveraging Multimodal LLM for Inspirational User Interface Search",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714213",
+   "system_id": "4215",
+   "evidence": [
+    {
+     "quote": "considering user-adjusted semantic weights to prioritize certain elements",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4519",
+   "title": "MoWa: An Authoring Tool for Refining AI-Generated Human Avatar Motions Through Latent Waveform Manipulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714253",
+   "system_id": "mowa",
+   "evidence": [
+    {
+     "quote": "The system offers a set of sliders based on animation principles identified during the formative study, enabling users to adjust the overall feel of the motion through slider configurations.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4810",
+   "title": "PrevizWhiz: Combining Rough 3D Scenes and 2D Video to Guide Generative Video Previsualization",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790534",
+   "system_id": "previzwhiz",
+   "evidence": [
+    {
+     "quote": "Each row shows four resemblance levels (Strict, Faithful, Flexible, and Loose) which progressively relax the degree of adherence to the original 3D input (column 0).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4820",
+   "title": "RAG Without the Lag: Enabling \"What-If\" Analysis for Retrieval-Augmented Generation Pipelines",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790874",
+   "system_id": "4820",
+   "evidence": [
+    {
+     "quote": "In raggy’s Retriever cell, users can (A) adjust hyperparameters (e.g., retrieval method, chunk size)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4840",
+   "title": "AI for Creativity: A GenAI-Based Approach for Early Concept Design and Its Impact on Senior Architects",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791643",
+   "system_id": "4840",
+   "evidence": [
+    {
+     "quote": "select architectural keywords, adjust parameter sliders (e.g., WWR and shading type), upload reference images, and generate sets of concept images",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5199",
+   "title": "CoBRA: Programming Cognitive Bias in Social Agents Using Classic Social Science Experiments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790804",
+   "system_id": "cobra",
+   "evidence": [
+    {
+     "quote": "The user specifies desired bias levels in terms of the Cognitive Bias Index (CBI), for example, a framing effect of 2.6 on a 0–4 scale under the Asian Disease paradigm.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5284",
+   "title": "InterFlow: Designing Unobtrusive AI to Empower Interviewers in Semi-Structured Interviews",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790866",
+   "system_id": "interflow",
+   "evidence": [
+    {
+     "quote": "It further supports information capture with three levels of automation: manual entry, AI-assisted summary with user-specified focus, and a co-interview agent that proactively surfaces potential follow-up points.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5347",
+   "title": "Transformer Explainer: Learning LLM Transformers with Interactive Visual Explanation and Experimentation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791725",
+   "system_id": "5347",
+   "evidence": [
+    {
+     "quote": "(B) interactively manipulate often-confused hyperparameters, such as temperature and sampling strategies, to understand their effects on prediction determinism",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6257",
+   "title": "EUREXA: End-User Reconfiguration of Environment with eXplainable Augmentation for Generative Fabrication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791934",
+   "system_id": "eurexa",
+   "evidence": [
+    {
+     "quote": "Finally, the process enters design iteration and refinement, where the user stays in the loop by adjusting parameters to meet functional requirements.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6492",
+   "title": "TaleBrush: Visual Sketching of Story Generation with Pretrained Language Models",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519873",
+   "system_id": "talebrush",
+   "evidence": [
+    {
+     "quote": "The writer can specify the level of surprise for the generation. When “Surprise in a separate panel” is checked, TaleBrush shows a panel where they can draw a thin green line to specify the surprise level.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "7439",
+   "title": "AI-Generated Media for Exploring Alternate Realities",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650861",
+   "system_id": "7439",
+   "evidence": [
+    {
+     "quote": "Users engage with eight question cards spanning key AI topics, inputting their opinions through range sliders that highlight the spectrum of views on AI.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "7582",
+   "title": "GELEX: Generative AI-Hybrid System for Example-Based Learning",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650900",
+   "system_id": "gelex",
+   "evidence": [
+    {
+     "quote": "The system provides an adjustable slider, which allows the user to set the desired level of improvement (F1), thereby customizing the system’s number of changes to suit individual preferences and expertise.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7691",
+   "title": "Recourse for Reclamation: Chatting with Generative Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650999",
+   "system_id": "7691",
+   "evidence": [
+    {
+     "quote": "we provide users a novel mechanism to achieve their desired prediction by dynamically setting thresholds for toxicity filtering",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8292",
+   "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720189",
+   "system_id": "expandora",
+   "evidence": [
+    {
+     "quote": "Users can specify exploratory intentions by selecting parts of a prompt to refine, choosing between adding details or generating alternatives, and adjusting the desired novelty level.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "8322",
+   "title": "Exploring the Efficacy of a Chatbot Training Application in Alleviating Graduate Students' Public-Speaking Anxiety During Q&A",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720177",
+   "system_id": "8322",
+   "evidence": [
+    {
+     "quote": "three audience difficulty levels that are made implemented: Friendly (Level 1), Down-to-business (Level 2), and Critical (Level 3)",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8510",
+   "title": "Prompt it Colorful with Rainbow Bot: Enhancing Video-Based Collaborative Learning by using a Multi-Party AI-Driven Chatbot",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720278",
+   "system_id": "8510",
+   "evidence": [
+    {
+     "quote": "the chatbot offers customizable settings, enabling students to choose the type of content, response length, and whether to include multiple perspectives",
+     "location": "full text sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8978",
+   "title": "Sip Your Emotions: Blending Emotion and Data in Cocktail Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721336",
+   "system_id": "8978",
+   "evidence": [
+    {
+     "quote": "Users can refine their “emotional curve” to produce unique personalized cocktails, each reflecting a distinct affective profile.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9402",
+   "title": "Knight Path: Supporting Player Sense-making in Game Narratives via Visual Scaffolding and Spoiler-Aware AI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798468",
+   "system_id": "9402",
+   "evidence": [
+    {
+     "quote": "By allowing players to control information depth through tiered spoiler levels",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9701",
+   "title": "ViDscribe: Multimodal AI for Customizing Audio Description and Question Answering in Online Videos",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798744",
+   "system_id": "vidscribe",
+   "evidence": [
+    {
+     "quote": "(B) Length: Adjusts the number of words per description using a slider (15-100 words)",
+     "location": "full text sec 3, customization controls"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10058",
+   "title": "SeeChart: Enabling Accessible Visualizations Through Interactive Natural Language Interface For People with Visual Impairments",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584099",
+   "system_id": "seechart",
+   "evidence": [
+    {
+     "quote": "moderate length, however, users can adjust the summary length by pressing 1 (short), 2 (moderate), or 3 (long) (DP-4)",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "11973",
+   "title": "Towards Dataset-Scale and Feature-Oriented Evaluation of Text Summarization in Large Language Model Prompts",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456398",
+   "system_id": "11973",
+   "evidence": [
+    {
+     "quote": "select a feature configuration that consists of a subset of features and corresponding target ranges",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13462",
+   "title": "Beyond Text Generation: Supporting Writers with Continuous Automatic Text Summaries",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545672",
+   "system_id": "13462",
+   "evidence": [
+    {
+     "quote": "Summary levels range from full text, to selected (central) sentences, down to a collection of keywords.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13670",
+   "title": "CineVision: An Interactive Pre-visualization Storyboard System for Director-Cinematographer Collaboration",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747793",
+   "system_id": "cinevision",
+   "evidence": [
+    {
+     "quote": "The Relighting: (1) Noon. (2) Night. (3) Sunrise or Sunset. (4) Soft Light (5) Hard Light (6) Key Light.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "system_id": "imaginationvellum",
+   "evidence": [
+    {
+     "quote": "mapping different spatial dimensions (e.g., 1D changes in relative distance, or 2D layout changes) to changes of prompts (e.g., changing weight of input tokens) or other generation parameters (e.g., weights, temperature/CFG)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "13881",
+   "title": "DocDancer: Authoring Ultra-Responsive Documents with Layout Generation",
+   "venue": "vlhcc-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/vl-hcc57772.2023.00023",
+   "system_id": "docdancer",
+   "evidence": [
+    {
+     "quote": "Built-in preview sliders for screen width and font size.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14012",
+   "title": "Codigen: Enhancing Personalized Programming Education with Visual Authoring and LLMs",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00038",
+   "system_id": "codigen",
+   "evidence": [
+    {
+     "quote": "The menus include the type of material to generate based (explanations, examples, and exercises); the programming concept of focus (variables, conditions, arrays, loops, and functions); the theme of interest (gaming, music, art and graphics, social media, sports and fitness, cooking and recipes, environmental sustainability, and travel and exploration); the learner level (novice, intermediate, advanced); the number of items to generate; the programming language (JavaScript); and finally, the selection of languages for the generation (Arabic, Chinese, Dutch, etc.).",
+     "location": "full text sec IV"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14596",
+   "title": "Inform, Explain, or Control: Techniques to Adjust End-User Performance Expectations for a Conversational Agent Facilitating Group Chat Discussions",
+   "venue": "cscw-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3610192",
+   "system_id": "14596",
+   "evidence": [
+    {
+     "quote": "The FacilitatorBot detects Dragon as an under-contributing member and asks Dragon to adjust the sensitivity of the detection algorithm using a 3-point scale.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "15614",
+   "title": "Steering AI-driven Personalization of Scientific Text for General Audiences",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757660",
+   "system_id": "15614",
+   "evidence": [
+    {
+     "quote": "Our tool features an interactive slider that allows users to steer the degree of personalization from 0 (weakly relatable) to 100 (strongly relatable), leveraging LLMs to generate the translations with chosen degrees.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16255",
+   "title": "GenFrame - Embedding Generative AI Into Interactive Artifacts",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660750",
+   "system_id": "16255",
+   "evidence": [
+    {
+     "quote": "The Guidance knob controls the CFG scale, which is a hyperparameter controlling how strictly or freely the model should follow the prompt.",
+     "location": "full text, fine-tuning art styles"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "16462",
+   "title": "Describe Now: User-Driven Audio Description for Blind and Low Vision Individuals",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735685",
+   "system_id": "16462",
+   "evidence": [
+    {
+     "quote": "In a study, 20 BLV participants activated audio descriptions for seven different video genres with two levels of detail: concise and detailed.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16544",
+   "title": "Towards Holistic Prompt Craft",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735414",
+   "system_id": "16544",
+   "evidence": [
+    {
+     "quote": "The UI surfaces controls for the diffusion level (i.e., strength of the AI) and seed.",
+     "location": "full text fig 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16545",
+   "title": "Hidden Layer Interaction: A Technique to Explore the Material of Generative AI",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735437",
+   "system_id": "16545",
+   "evidence": [
+    {
+     "quote": "The interface consists of a drop-down menu to select a Layer and a slider to select a Channel (a).",
+     "location": "fig 7"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16652",
+   "title": "TaskLens: Generating Task-Conditioned Scaffolded Interfaces for Learning Professional Creative Software",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813081",
+   "system_id": "tasklens",
+   "evidence": [
+    {
+     "quote": "The scaffolded interface supports userselectable levels of complexity, which enables beginners to start with fundamental functions and expand the interface as they gain proficiency.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16683",
+   "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813005",
+   "system_id": "ideablocks",
+   "evidence": [
+    {
+     "quote": "range (controlled through the typicality slider)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16818",
+   "title": "Exploring the Hidden Layers of Image Synthesis through Material-Driven Design Workshops with Fashion and Textile Practitioners",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813012",
+   "system_id": "16818",
+   "evidence": [
+    {
+     "quote": "Vertical and Horizontal sliders let users target specific neuron ranges within a channel, and Method and Factor controls let apply manipulation technique.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17083",
+   "title": "Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3609331",
+   "system_id": "marvista",
+   "evidence": [
+    {
+     "quote": "Before reading an article, Marvista helps a user plan what to read by filtering text based on how much time one can spend, based on which Marvista highlights the most summative subset of the text to read that stays within the user’s time budget (b).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

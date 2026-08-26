@@ -1,0 +1,105 @@
+{
+ "category_id": "U05",
+ "category_name": "Alternatives & Comparative Exploration",
+ "exemplars": [
+  {
+   "rid": "10160",
+   "title": "DataDive: Supporting Readers' Contextualization of Statistical Statements with Data Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645155",
+   "pattern_id": "pat-002",
+   "pattern_name": "Candidate Gallery",
+   "final_score": 4.78,
+   "why": "For one statistical statement the system forks into several LLM-generated guiding questions, shows them together in a side panel, and selecting one commits: it drives the data match and the visualization that follows. This is the dimension's cleanest single-decision-point gallery because the choice is not cosmetic, it determines what is explored next. Anyone whose system produces several equally plausible framings of the same request can lift the shape: emit the framings as questions, show them as a set, let the selection be the branch commit.",
+   "over_the_runner_up": "Over AnnotateGPT (6169), whose four options are guesses at what the user's own annotation meant rather than alternative outputs held before commitment, so the generated artifact is never actually forked."
+  },
+  {
+   "rid": "12304",
+   "title": "Visual Analysis of Prediction Uncertainty in Neural Networks for Deep Image Synthesis",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3406959",
+   "pattern_id": "pat-004",
+   "pattern_name": "Side-by-Side Comparison",
+   "final_score": 4.35,
+   "why": "The user assigns two uncertainty-estimation methods to slots from a drop-down, their heatmaps are placed in parallel regions, and the views are linked so selecting a region in one highlights the same region in the others. That linkage is the part most side-by-side designs omit: parallel placement alone makes differences visible, corresponding-part alignment makes them readable. The mechanism is domain-free — selected pair, parallel slots, brushed correspondence — and transplants to any two comparable renderings of the same underlying object.",
+   "over_the_runner_up": "Over VideoDiff (4474), which scores higher but whose alignment-and-diff claim rests on an abstract sentence with simultaneous display unconfirmed and a toggle coded on the same record, while 12304's slot assignment, parallel placement and alignment are each stated outright in the full text."
+  },
+  {
+   "rid": "13588",
+   "title": "Spellburst: A Node-based Interface for Exploratory Creative Coding with Natural Language Prompts",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606719",
+   "pattern_id": "pat-005",
+   "pattern_name": "Branching Exploration",
+   "final_score": 4.95,
+   "why": "Alternatives are the interface: a node graph in which branching and merging are first-class operations, so variations coexist as visible lineages instead of overwriting one another, and the exploration history is preserved. It is the only candidate in the pool where alternatives recombine rather than merely accumulate, which is the non-obvious half of branching and the reason it beats a plain undo tree. Any tool whose users iterate by 'try this instead' can adopt the move: keep prior generations as addressable parents, make forking and merging explicit acts rather than version-control chores.",
+   "over_the_runner_up": "Over Branchat (9118), which names the fork control more precisely but only lets branches coexist, where Spellburst also lets them rejoin without destroying their separate histories."
+  },
+  {
+   "rid": "10126",
+   "title": "From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645173",
+   "pattern_id": "pat-007",
+   "pattern_name": "Perturb-and-Compare",
+   "final_score": 4.6,
+   "why": "Keywords are redacted from a prompt the model has already run, the model is rerun on the altered prompt, and the altered image is scored and displayed against the original with a keyword heat map keyed to what was removed. This is the only candidate that closes the whole loop — transformation, rerun, joined original-versus-variant display — so the comparison set is manufactured by the interface rather than found, and the manipulated dimension organizes the display. The signature carries far past image generation: a spreadsheet what-if sweep, a compiler flag sweep, or an injected-decoy retrieval audit is the same machine.",
+   "over_the_runner_up": "Over the counterfactual-generation system (12842), which evidences richer user-authored perturbation rules but neither the rerun nor the paired display, i.e. the comparison half of Perturb-and-Compare."
+  },
+  {
+   "rid": "7000",
+   "title": "Investigating Semantically-enhanced Exploration of GAN Latent Space via a Digital Mood Board",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585740",
+   "pattern_id": "pat-041",
+   "pattern_name": "Pick and Combine",
+   "final_score": 4.7,
+   "why": "On a mood board the user draws a selection around one group of images, clicks a pop-up 'mix' icon, selects a second group, clicks again, and gets a style mixture of the two — operand selection and operator invocation are visibly separate acts, twice over, with the operator named in the UI. This is the dimension's fusion move rather than its choice move: alternatives are combined instead of one being picked and the rest discarded. Any system holding a set of retained generations can add it — make the items selectable, put the combining operation on the canvas next to them, return the result into the same space.",
+   "over_the_runner_up": "Over VoiceForge (8644), whose weight sliders expose continuous position between operands but whose operands are reference recordings and product a synthesized voice, so 'same space as the arguments' is inferred from modality rather than shown."
+  }
+ ],
+ "notes": "Five slots, six patterns, so the set covers five patterns one apiece and leaves pat-006 Multi-Model Output Comparison unrepresented. That is the deliberate override. Both reviewers argued pat-006 must hold a slot because it is the thinnest pattern (10 rated) and its one surviving candidate, DSCode Comparator (10200), is fully evidenced — but on screen 10200 makes the same move as 12304: an input is held, several generators or methods produce comparable outputs, and the outputs are read side by side. The only difference is that 10200's slot occupants are LLMs and 12304's are uncertainty-estimation methods. Given 'no two exemplars making the same design move in different words', one had to go, and 12304 additionally evidences brushed corresponding-part alignment and user slot assignment, which 10200 does not. A reader who wants the held-input fan-out framing specifically should go to 10200 first.\n\nOther pattern-level judgements overridden: pat-004's curator ranked 4474 (4.70) and 10955 (4.40) above 12304 (4.35); I took the lowest-scored of the three because it is the only one whose full signature was confirmed against full text, 10955's supposed comparison-mode control turned out to be inherited juxtaposition/superposition vocabulary rather than a user-facing mechanism, and 4474's simultaneity is curator inference from an abstract. pat-002's curator promoted 6169 into its top three; a reviewer reading the full text found its four options are intent classification of the user's annotation, not forked outputs, so nothing from pat-002 beyond DataDive was considered. 7136 (Tip-Pong) and 4519 (MoWa) were treated as disqualified on reviewer full-text checks — the first is a Wizard-of-Oz probe with scripted conversational stimuli, the second's three-model fan-out belongs to a formative-study stimulus set with different prompts per model, not to the tool.\n\nDistrust list. 12304's slot-assignment claim comes from a pat-006 row on the same record at medium confidence, not from its pat-004 quote. Spellburst's non-destructiveness is corroborated by a second coded row rather than quoted, and no evidence anywhere on the record shows a control for switching which path is active — treat that clause as unverified. 10126's transformation reads as system-driven ('systematically redacts'); nothing shows the user authoring or parameterizing the redaction, so the 'user-specified transformation rule' half of the pattern is unevidenced here. 7000 shows no continuous control between operands and, like every pat-041 candidate, no evidence that a fused result can become a later operand. None of the five supplies measured user outcomes for the comparison mechanism itself.\n\nChainForge (2325) appeared twice, under pat-006 and pat-007; it is absent from the final set entirely, which incidentally resolves the repeated-system violation, but its coded workflow varies model and prompt template together and so evidences neither pattern cleanly.",
+ "near_misses": [
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "pattern_id": "pat-006",
+   "reason": "Genuinely confirmed held-input fan-out to multiple LLMs with side-by-side code comparison, and the only evidenced instance of an unrepresented pattern — cut solely because its on-screen move duplicates 12304's and its evidence stops short of alignment or source labelling."
+  },
+  {
+   "rid": "4474",
+   "title": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
+   "pattern_id": "pat-004",
+   "reason": "Higher-scored and the pool's only time-based multimodal comparison (synchronized timelines, transcripts, previews), but its evidence is abstract-only, parallel simultaneous placement is curator inference, and a toggle coded on the same record cuts against it."
+  },
+  {
+   "rid": "9118",
+   "title": "Branchat: A Tree-Structured Interface for Efficient Revisitation in Long-Horizon LLM Conversations",
+   "pattern_id": "pat-005",
+   "reason": "The most precisely named fork control in the pool (select any retained node as parent, spawn a divergent branch) and the only branching instance in the conversation domain, but it is an extended abstract and conversation-tree branching is the expected move rather than a non-obvious one."
+  },
+  {
+   "rid": "12842",
+   "title": "Understanding Large Language Model Behaviors Through Interactive Counterfactual Generation and Analysis",
+   "pattern_id": "pat-007",
+   "reason": "Supplies exactly what 10126 lacks — user-chosen perturbation granularity, preserved content, and replacement rules — but its evidence never establishes the rerun or the joined original-versus-variant display."
+  },
+  {
+   "rid": "8644",
+   "title": "VoiceForge: A Text-Driven Character Voice Generation System for Narrative Content Creation",
+   "pattern_id": "pat-041",
+   "reason": "Adjustable per-reference weights are the pool's only continuous position-between-operands control, but '1-3 references' admits the degenerate single-operand case and the operands (recordings) are not in the product's space, making it closer to multi-reference conditioning than an operator over peers."
+  },
+  {
+   "rid": "16267",
+   "title": "DanceGen: Supporting Choreography Ideation and Prototyping with Generative AI",
+   "pattern_id": "pat-041",
+   "reason": "Confirms operand selection and a blend returning a same-space artifact, but documents no blend control, weighting, or presentation of the fused result, so a designer cannot rebuild the operation from it."
+  }
+ ]
+}

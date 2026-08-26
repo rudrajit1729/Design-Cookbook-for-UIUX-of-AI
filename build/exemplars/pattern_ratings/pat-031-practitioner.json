@@ -1,0 +1,146 @@
+{
+ "pattern_id": "pat-031",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "2685",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "The quote supports a user-side accuracy-and-consent checkpoint before care responses are shared. However, it does not show the exact outgoing payload rendered with system-computed annotations or made editable, so it is only a partial instance of the structural signature. Its outcome impact is plausible, but the available evidence does not establish more than confirmation, skipping, and consent.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3606",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The intervention explicitly occurs before data is sent across the boundary and addresses a consequential privacy breakdown. User-led minimization is broadly transferable and more interesting than a generic warning, but the quote does not specify whether users see the exact payload, how risks are annotated, what editing controls exist, or whether sending is structurally gated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4036",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "This is a legible inspect-and-repair loop: the system identifies location leaks in photos users intend to share, prompts reflection, and offers concealment actions. It plausibly changes the transmitted image and addresses risks users cannot easily detect themselves. The evidence does not establish an explicit review state that gates sharing, and the location-inference mechanism is somewhat image-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The cited evidence describes providing an anonymized interface directly to a web-agent model. It does not demonstrate a visible user-side review checkpoint, an assessed rendering of the outgoing payload, user editing, or a send action from that state.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence quote does not support Pre-Send Inspection's defining user-visible inspection and editing gate."
+  },
+  {
+   "rid": "6048",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Quantified re-identification risk could supply the assessment component of this pattern and could influence disclosure decisions. But the quote supplies no outgoing-payload rendering, transmission checkpoint, annotations tied to payload elements, editing controls, or evidence that edits determine what is sent. Impact and implementation are therefore unjudgeable beyond the stated design opportunity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8508",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote names leak detection, policy summarization, and data-flow visualization, but it does not describe inspection of a specific outgoing payload or a user-controlled, editable send gate. The available evidence supports general privacy monitoring and explainability, not this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence quote does not support the defining pre-transmission review, editing, and send-gating mechanism."
+  },
+  {
+   "rid": "8519",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote is a general rationale for encouraging reconsideration before harmful behavior. It contains no evidence of an interface that renders and assesses the exact outgoing payload, allows editing, and gates transmission.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence quote is topical to preemptive intervention but does not support the Pre-Send Inspection mechanism at all."
+  },
+  {
+   "rid": "9215",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote plainly describes a post-composition, pre-sharing review step in which participants edit the material and decide what will be shared. This closely captures the user-side gate and establishes that edits affect transmission. It stops short of showing system-computed annotations, marks, or scores on the payload, preventing a top representativeness score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9597",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Human refinement of an AI-generated draft before delivery clearly establishes an editable pre-send state whose output becomes the transmitted response. The mechanism transfers well to many generated-message workflows and is consequential in mental-health support. However, the evidence shows no system assessment or annotated inspection layer, making it closer to ordinary draft editing than the full pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13808",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system assesses images users intend to share and lets them mitigate identified privacy risks, providing a strong inspect-and-repair mechanism before a boundary crossing. Intent-aware risk detection makes the move non-obvious and consequential. The quote does not confirm that sharing is gated by the review state or specify how findings are rendered and edited, while its implementation is tied to images.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

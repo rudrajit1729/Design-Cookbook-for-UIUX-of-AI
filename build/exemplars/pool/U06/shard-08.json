@@ -1,0 +1,388 @@
+{
+ "dimension": {
+  "category_id": "U06",
+  "category_name": "Artifact Editing & Revision",
+  "category_slug": "artifact-editing-and-revision",
+  "stage": "Acting on the output",
+  "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+  "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+  "pattern_count": 10,
+  "eligible_papers": 328,
+  "candidate_count": 328,
+  "patterns": [
+   {
+    "pattern_id": "pat-010",
+    "pattern_name": "Prefilled Editable Templates",
+    "short_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state."
+   },
+   {
+    "pattern_id": "pat-018",
+    "pattern_name": "Addressable Segments",
+    "short_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object."
+   },
+   {
+    "pattern_id": "pat-019",
+    "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+    "short_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact."
+   },
+   {
+    "pattern_id": "pat-021",
+    "pattern_name": "Localized Tweaking Support",
+    "short_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent."
+   },
+   {
+    "pattern_id": "pat-024",
+    "pattern_name": "Program-as-Output",
+    "short_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact."
+   },
+   {
+    "pattern_id": "pat-029",
+    "pattern_name": "Reverse Engineered Representation",
+    "short_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates."
+   },
+   {
+    "pattern_id": "pat-030",
+    "pattern_name": "Two-Way Sync View",
+    "short_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others."
+   },
+   {
+    "pattern_id": "pat-095",
+    "pattern_name": "Manual Fallback Editing",
+    "short_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt."
+   },
+   {
+    "pattern_id": "pat-096",
+    "pattern_name": "Accept/Reject Controls",
+    "short_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary."
+   },
+   {
+    "pattern_id": "pat-097",
+    "pattern_name": "Mid-Run Intervention",
+    "short_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends."
+   }
+  ]
+ },
+ "shard": 8,
+ "candidates": [
+  {
+   "rid": "10181",
+   "title": "SenseMate: An Accessible and Beginner-Friendly Human-AI Platform for Qualitative Data Analysis",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645194",
+   "system_id": "sensemate",
+   "prefilter_score": 1.834,
+   "prefilter_parts": {
+    "relevance_density": 0.034,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 8.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "For each recommendation, users can perform various actions (C).",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4509",
+   "title": "Social Simulation for Everyday Self-Care: Design Insights from Leveraging VR, AR, and LLMs for Practicing Stress Relief",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713115",
+   "system_id": "4509",
+   "prefilter_score": 1.817,
+   "prefilter_parts": {
+    "relevance_density": 0.017,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 6.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-097",
+     "pattern_name": "Mid-Run Intervention",
+     "pattern_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "At any point, the user may trigger the breathwork guidance and conduct box breathing while the simulation is paused (right).",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4426",
+   "title": "ELMI: Interactive and Intelligent Sign Language Translation of Lyrics for Song Signing",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713973",
+   "system_id": "elmi",
+   "prefilter_score": 1.637,
+   "prefilter_parts": {
+    "relevance_density": 0.587,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 12.93
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ELMI enables users to edit glosses line-byline, with real-time synced lyric and music video snippets.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Accessibility",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "650",
+   "title": "DataWeaver: Authoring Data-Driven Narratives through the Integrated Composition of Visualization and Text",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70098",
+   "system_id": "dataweaver",
+   "prefilter_score": 1.62,
+   "prefilter_parts": {
+    "relevance_density": 0.57,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 12.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "DATAW EAVER enables users to create data narratives anchored to data facts derived from “call-out” interactions, i.e., user-initiated highlights of visualization elements that prompt relevant narrative content.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-030",
+     "pattern_name": "Two-Way Sync View",
+     "pattern_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "we present an integrated authoring framework and system, DATAW EAVER, that supports both visualization-to-text and text-to-visualization composition",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16742",
+   "title": "MediMate: Co-Crafting Patient-Centered Medical Explanations Using LLMs as a Rehearsal Partner",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812891",
+   "system_id": "medimate",
+   "prefilter_score": 1.437,
+   "prefilter_parts": {
+    "relevance_density": 0.537,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "physicians to rehearse and iteratively refine patient-friendly explanations using LLM-generated analogies in a low-stakes setting",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14046",
+   "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00072",
+   "system_id": "snapclass",
+   "prefilter_score": 1.267,
+   "prefilter_parts": {
+    "relevance_density": 0.067,
+    "focus": 0.3,
+    "evidence_location": 0.9,
+    "_density_raw": 9.19
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In the grading system, a large language model (LLM)-powered rubric generator creates an initial set of rubric items for teachers to review, customize, and apply.",
+     "evidence_location": "full text sec III-A"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5445",
+   "title": "DiaryPlay: AI-Assisted Creation of Interactive Story Vignettes for Everyday Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790572",
+   "system_id": "diaryplay",
+   "prefilter_score": 1.131,
+   "prefilter_parts": {
+    "relevance_density": 0.402,
+    "focus": 0.429,
+    "evidence_location": 0.3,
+    "_density_raw": 12.12
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Authoring Component visually elicits three core elements (environment, characters, events) through automation and author refinement.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3528",
+   "title": "SET-PAiREd: Designing for Parental Involvement in Learning with an AI-Assisted Educational Robot",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713330",
+   "system_id": "setpaired",
+   "prefilter_score": 0.8,
+   "prefilter_parts": {
+    "relevance_density": 0.0,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 6.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We developed a prototype interface, PAiREd, with a learning companion robot to deliver LLM-generated educational content that can be reviewed and revised by parents.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

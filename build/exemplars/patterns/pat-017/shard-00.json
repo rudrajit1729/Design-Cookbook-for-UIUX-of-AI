@@ -1,0 +1,1086 @@
+{
+ "pattern": {
+  "pattern_id": "pat-017",
+  "pattern_name": "Staged Pipeline",
+  "pattern_slug": "staged-pipeline",
+  "short_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+  "definition": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives. The interface makes the ordering visible and moves the user along it, one stage at a time. Iteration within a stage or between neighbouring stages may be permitted, but the sequence itself is not authored by the user.",
+  "structural_signature": "A stage list S1…Sn exists in the system independent of any particular input, and each stage has its own module, section, or screen. The surface encodes the order (sections laid out in workflow order, a guided sequence of overlays, a chain of modules each consuming the previous one's output), and advancement is by completing or passing a stage rather than by free navigation. The number and identity of stages are constant across runs.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Step-by-Step Workflow",
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "97",
+   "title": "LINGO : Visually Debiasing Natural Language Instructions to Support Task Diversity",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14840",
+   "system_id": "lingo",
+   "evidence": [
+    {
+     "quote": "we develop LINGO, a novel visual analytics interface that supports an effective, task-driven workflow to (1) help identify bias in natural language task instructions, (2) alter (or create) task instructions to reduce bias, and (3) evaluate pre-trained model performance on debiased task instructions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "1627",
+   "title": "Co-Writing Screenplays and Theatre Scripts with Language Models: Evaluation by Industry Professionals",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581225",
+   "system_id": "1627",
+   "evidence": [
+    {
+     "quote": "Dramatron starts from a log line to generate a title and characters.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "2423",
+   "title": "ReelFramer: Human-AI Co-Creation for News-to-Video Translation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642868",
+   "system_id": "reelframer",
+   "evidence": [
+    {
+     "quote": "Screenshot of ReelFramer Stage 1: Scriptwriting: 1) extract news information, 2) generate and edit script premises, and 3) generate and edit scripts.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "2489",
+   "title": "CollabCoder: A Lower-barrier, Rigorous Workflow for Inductive Collaborative Qualitative Analysis with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642002",
+   "system_id": "collabcoder",
+   "evidence": [
+    {
+     "quote": "The workfow consists of three key stages: 1) Independent Open Coding, facilitated by on-demand code suggestions from LLMs, producing initial codes; 2) Iterative Discussion, focusing on confict mediation within the coding team",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2527",
+   "title": "AI-Augmented Brainwriting: Investigating the use of LLMs in group ideation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642414",
+   "system_id": "2527",
+   "evidence": [
+    {
+     "quote": "This paper explores twofold aspects of integrating LLMs into the creative process – the divergence stage of idea generation, and the convergence stage of evaluation and selection of ideas.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2588",
+   "title": "BIDTrainer: An LLMs-driven Education Tool for Enhancing the Understanding and Reasoning in Bio-inspired Design",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642887",
+   "system_id": "bidtrainer",
+   "evidence": [
+    {
+     "quote": "(1.2) or (2.2) learn by asking for knowledge explanations or reasoning assistance, (3) elaborate the design, (4) get the learning evalu",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2704",
+   "title": "TypeDance: Creating Semantic Typographic Logos from Image through Personalized Generation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642185",
+   "system_id": "typedance",
+   "evidence": [
+    {
+     "quote": "it instantiates the design workfow and empowers creators to (a) ideate with an interpretable AI agent, (b) select the typeface at diferent granularity and imagery from images",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2721",
+   "title": "C2Ideas: Supporting Creative Interior Color Design Ideation with a Large Language Model",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642224",
+   "system_id": "c2ideas",
+   "evidence": [
+    {
+     "quote": "C2Ideas integrates a three-stage process: Idea Prompting stage distills user intentions into color linguistic prompts; Word-Color Association stage transforms the prompts into semantically and stylistically coherent color schemes; and Interior Coloring stage assigns colors to interior elements complying with design principles.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "2861",
+   "title": "PlantoGraphy: Incorporating Iterative Design Process into Generative Artificial Intelligence for Landscape Rendering",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642824",
+   "system_id": "plantography",
+   "evidence": [
+    {
+     "quote": "A two-stage pipeline is incorporated: first, the concretization module transforms conceptual ideas into concrete scene layouts with a domain-oriented large language model; and second, the illustration module converts scene layouts into realistic landscape renderings with a layout-guided diffusion model fine-tuned through Low-Rank Adaptation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "2966",
+   "title": "IntentTuner: An Interactive Framework for Integrating Human Intentions in Fine-tuning Text-to-Image Generative Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642165",
+   "system_id": "intenttuner",
+   "evidence": [
+    {
+     "quote": "General workflow. The input Raw Image Set is enhanced during the Data Pre-processing phase by cropping, categorizing, and tagging according to the intended requirements, producing images and captions that align with the intention. Next, using the processed image-caption pairs, the Model Training begins.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3157",
+   "title": "Facilitating Self-Guided Mental Health Interventions Through Human-Language Model Interaction: A Case Study of Cognitive Restructuring",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642761",
+   "system_id": "3157",
+   "evidence": [
+    {
+     "quote": "The system involves (a-b) describing the context by participants, (c-d) LM-assisted identification of thinking traps, and (e-g) LM-assisted writing of reframed thoughts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3196",
+   "title": "ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642229",
+   "system_id": "chatscratch",
+   "evidence": [
+    {
+     "quote": "When using ChatScratch, the child frst (a) plans and creates assets with an AI-empowered interactive storyboard",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3316",
+   "title": "VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642867",
+   "system_id": "vivid",
+   "evidence": [
+    {
+     "quote": "VIVID’s key components of Initial Generation : (A1) User uploads lecture video; (A2) User trims a video section to convert",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3371",
+   "title": "Influencer: Empowering Everyday Users in Creating Promotional Posts via AI-infused Exploration and Customization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713309",
+   "system_id": "influencer",
+   "evidence": [
+    {
+     "quote": "we developed Infuencer, an interactive, AI-empowered, and canvas-based tool that helps design novices in four main steps of promotional post design (i.e., ideation, context-aware exploration, customization, and post generation), all through a set of simple interactive blocks (Figure 2)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3392",
+   "title": "DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714115",
+   "system_id": "dynex",
+   "evidence": [
+    {
+     "quote": "The system has 2 stages: (1) Design Exploration through the Design Matrix, where the system helps the user identify the person, approach, and interaction paradigm of the application.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3483",
+   "title": "LumaDreams: Designing Positive Dream Meaning-Making for Daily Empowerment",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713495",
+   "system_id": "lumadreams",
+   "evidence": [
+    {
+     "quote": "LumaDreams is an innovative mobile application that leverages multiple machine learning models to enable users to journal, visualize, transform, and reflect on their dreams.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3584",
+   "title": "HarmonyCut: Supporting Creative Chinese Paper-cutting Design with Form and Connotation Harmony",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714159",
+   "system_id": "harmonycut",
+   "evidence": [
+    {
+     "quote": "A general two-stage (ideation and composition) workflow and design space (four factors and one element) for GenAI-aided paper-cutting design is outlined from the two-step formative study",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3820",
+   "title": "ProductMeta: An Interactive System for Metaphorical Product Design Ideation with Multimodal Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713935",
+   "system_id": "productmeta",
+   "evidence": [
+    {
+     "quote": "decomposes the design process into iterative modules and framework-based interfaces",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3922",
+   "title": "ArtMentor: AI-Assisted Evaluation of Artworks to Explore Multimodal Large Language Models Capabilities",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713274",
+   "system_id": "artmentor",
+   "evidence": [
+    {
+     "quote": "Instead of directly evaluating the art pieces, we divide the process into multiple sub-processes, including entity recognition, commentary generation, and suggestion generation, thereby embodying the principle of progressively approaching target skills.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3969",
+   "title": "Creative Blends of Visual Concepts",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713683",
+   "system_id": "3969",
+   "evidence": [
+    {
+     "quote": "Creative Blends operates through a multi-stage pipeline.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3972",
+   "title": "MVPrompt: Building Music-Visual Prompts for AI Artists to Craft Music Video Mise-en-scène",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713876",
+   "system_id": "mvprompt",
+   "evidence": [
+    {
+     "quote": "Overview of MVPrompt workflow. MVPrompt operates to specify mise-en-scène in two stages: (A) Ideation on the Visual Theme.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4002",
+   "title": "Friction: Deciphering Writing Feedback into Writing Revisions through LLM-Assisted Reflection",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714316",
+   "system_id": "friction",
+   "evidence": [
+    {
+     "quote": "Users engage in a reflective cycle through three key stages to revise their essays based on feedback.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4025",
+   "title": "Can AI Prompt Humans? Multimodal Agents Prompt Players? Game Actions and Show Consequences to Raise Sustainability Awareness",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713661",
+   "system_id": "4025",
+   "evidence": [
+    {
+     "quote": "Sequential visualization of the game’s narrative structure across seven key stages: (1) game initiation, (2) opening sequence introducing the protagonist’s world, (3) NPC interactions, (4) time travel mechanics, (5) player assessment phases, (6) critical decision point, and (7) branching endings (Alternative or Bad) based on player choice…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4036",
+   "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714074",
+   "system_id": "4036",
+   "evidence": [
+    {
+     "quote": "(a) Analysis phase: where users get information of the location leaks in the photo they uploaded, (b) Edit phase: where users can mask location information, (c) Review phase: where users can verify the final photo",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4068",
+   "title": "BrickSmart: Leveraging Generative AI to Support Children's Spatial Language Learning in Family Block Play",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714212",
+   "system_id": "bricksmart",
+   "evidence": [
+    {
+     "quote": "addresses this gap by providing spatial language guidance through a structured three-step process: Discovery & Design, Build & Learn, and Explore & Expand",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4082",
+   "title": "From Words to Wonder: Designing and Evaluating an AI-Empowered Creative Storytelling System for Elementary Children",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713478",
+   "system_id": "4082",
+   "evidence": [
+    {
+     "quote": "While interacting with it, the child begins by selecting a character (Fig. 2a) and defining the character’s personalities (Fig. 2b). Next, the child selects three sequential story scenes (Fig. 2c) and defines three character-emotions associated with each scene (Fig. 2d).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4333",
+   "title": "Persona-L has Entered the Chat: Leveraging LLMs and Ability-based Framework for Personas of People with Complex Needs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713445",
+   "system_id": "4333",
+   "evidence": [
+    {
+     "quote": "Phases in User Interface Design: The \"Profile Phase\" involves persona customization and theme selection. The \"Ability Phase\" allows users to explore and select key abilities under a specific theme. The \"Interaction Phase\" facilitates user engagement with the personas LLMs and provides tools for saving and documenting interactions.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "4408",
+   "title": "PromptHive: Bringing Subject Matter Experts Back to the Forefront with Collaborative Prompt Engineering for Educational Content Creation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714051",
+   "system_id": "prompthive",
+   "evidence": [
+    {
+     "quote": "The PromptHive Interface and Workflow: (1) Load: Import textbook lessons and problems by pasting a link to a structured data source. (2) Author: Create hint prompts and view the output generated for a variety of problems from different lessons using sampling buttons.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4417",
+   "title": "FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713686",
+   "system_id": "fusionprotor",
+   "evidence": [
+    {
+     "quote": "We proposed a step-by-step generation pipeline in FusionProtor, effectively transiting 3D prototypes from physical to virtual and low- to high-fidelity for rapid ideation and iteration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4446",
+   "title": "Productive vs. Reflective: How Different Ways of Integrating AI into Design Workflows Affect Cognition and Motivation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713649",
+   "system_id": "4446",
+   "evidence": [
+    {
+     "quote": "Across conditions, the plugin provides instructions for each step of the template to support participant interaction with the workspace.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4474",
+   "title": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713417",
+   "system_id": "videodiff",
+   "evidence": [
+    {
+     "quote": "creators can generate and review multiple AI recommendations for each editing process: creating a rough cut, inserting B-rolls, and adding text effects",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4621",
+   "title": "Exploring Customizable Interactive Tools for Therapeutic Homework Support in Mental Health Counseling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790569",
+   "system_id": "4621",
+   "evidence": [
+    {
+     "quote": "Overview of the three-step flow for configuring a therapist-facing tool TheraTrack.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4720",
+   "title": "From Crafting Text to Crafting Thought: Grounding AI Writing Support to Writing Center Pedagogy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790292",
+   "system_id": "4720",
+   "evidence": [
+    {
+     "quote": "The system operates in two key stages: (1) a preparation and goal-setting stage, where writers input context, upload texts",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4727",
+   "title": "ViSTAR: Virtual Skill Training with Augmented Reality with 3D Avatars and LLM coaching agent",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790634",
+   "system_id": "vistar",
+   "evidence": [
+    {
+     "quote": "ViSTAR is designed based on the Behavioral Skills Training (BST) teaching framework with four key steps: instruction, modeling, rehearsal, and feedback.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4810",
+   "title": "PrevizWhiz: Combining Rough 3D Scenes and 2D Video to Guide Generative Video Previsualization",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790534",
+   "system_id": "previzwhiz",
+   "evidence": [
+    {
+     "quote": "The workflow integrates frame-level image restyling with adjustable resemblance, time-based editing through motion paths or external video inputs, and refinement into high-fidelity video clips.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4893",
+   "title": "Designing Scaffolding Cards to Facilitate LLM-Based Socratic Instruction: An Exploratory Study of Response Strategies to Support Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791696",
+   "system_id": "4893",
+   "evidence": [
+    {
+     "quote": "A recommended three-step procedure for card usage: a) Cluster Browse, b) Strategy Browse, and c) Frame Complete.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4898",
+   "title": "MindfulAgents: Personalizing Mindfulness Meditation via an Expert-Aligned Multi-Agent System",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791817",
+   "system_id": "mindfulagents",
+   "evidence": [
+    {
+     "quote": "The MindfulAgents interface (Sec. 4.4) provides a smooth user flow that goes through these steps.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4907",
+   "title": "InkIdeator: Supporting Chinese-Style Visual Design Ideation via AI-Infused Exploration of Chinese Paintings",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791675",
+   "system_id": "inkideator",
+   "evidence": [
+    {
+     "quote": "The system supports three iterative stages of Chinese-style visual design ideation—Search Reference, Analyze Reference, and Visualize Ideas—each addressing key challenges.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5018",
+   "title": "Privy: Envisioning and Mitigating Privacy Risks for Consumer-facing AI Product Concepts",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791279",
+   "system_id": "privy",
+   "evidence": [
+    {
+     "quote": "Privy leads users through a structured workflow: they first enter a natural language description of the product and its data sources; then outline use cases and associated beneficiaries; specify the AI capabilities and requirements to support those use-cases",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5090",
+   "title": "I Can Be Anything! Bridging Today and the Future through Generative AI-driven Self-represented Career Imagination for Children",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790985",
+   "system_id": "5090",
+   "evidence": [
+    {
+     "quote": "Through a step-by-step process of taking a photo, exploring career options, imagining actions, and building story strips, children see themselves embedded in AI-generated narratives.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  }
+ ]
+}

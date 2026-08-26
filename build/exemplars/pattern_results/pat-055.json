@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-055",
+ "exemplars": [
+  {
+   "rid": "8356",
+   "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719708",
+   "final_score": 2.8,
+   "why": "The Eco Score is explicitly presented as one scalar on a fixed 0–100 scale, directly establishing the pattern’s bounded summary-score readout, though the evidence does not reveal its inputs, accumulation rule, update behavior, or visual prominence.",
+   "over_the_runner_up": "It ranks above CoBRA because its evidence establishes both a score and a declared bounded interval, whereas the Cognitive Bias Index is not shown as a fixed-scale interface element."
+  },
+  {
+   "rid": "5199",
+   "title": "CoBRA: Programming Cognitive Bias in Social Agents Using Classic Social Science Experiments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790804",
+   "final_score": 2.5,
+   "why": "The Cognitive Bias Index clearly performs the pattern’s defining many-to-one reduction by quantifying an agent’s reactions across a set of experiments, but the evidence does not establish a bounded scale, persistent UI display, headline prominence, or streaming updates.",
+   "over_the_runner_up": "It ranks above NeuroWise because it demonstrably aggregates multiple underlying reactions, while the Stress Bar is described only as a gauge of current state."
+  },
+  {
+   "rid": "9465",
+   "title": "NeuroWise: A Multi-Agent LLM \"Glass-Box\" System for Practicing Double-Empathy Communication with Autistic Partners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798437",
+   "final_score": 2.1,
+   "why": "The Stress Bar supplies a prominent-looking single 0–100% value that updates after each message, but the excerpt identifies it as current stress and never demonstrates an accumulator over message history, making it a borderline neighboring state-gauge example.",
+   "over_the_runner_up": "It remains in the final set only because no additional candidate record was supplied; its bounded, event-updated display at least captures more of the visible structural mechanics than an unbounded raw quantity would."
+  }
+ ],
+ "notes": "I departed from the consensus by promoting rid 8356 from third to first: it is the only candidate whose evidence explicitly joins a named summary score to a fixed bounded interval. I demoted rid 5199 by 0.42 because its quote supports an aggregate evaluation metric but not the required interface display, bounded range, or streaming behavior. I demoted rid 9465 by 0.83 because its evidence describes a current-state gauge rather than a score standing in for accumulated history. All three remain weak or partial exemplars: none of the supplied quotes establishes the full structural signature, and only three of the stated five candidate records were provided, so the third selection could not be compared with the two omitted candidates.",
+ "pattern_name": "Aggregated Summary Score",
+ "category_id": "U07",
+ "rated": 5
+}

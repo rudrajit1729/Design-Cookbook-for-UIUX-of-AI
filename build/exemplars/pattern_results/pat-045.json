@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-045",
+ "exemplars": [
+  {
+   "rid": "10263",
+   "title": "ChoiceMates: Supporting Unfamiliar Online Decision-Making with Multi-Agent Conversational Interactions",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789107",
+   "final_score": 4.93,
+   "why": "The user occupies a visible hub role with unique controls to broadcast to all agents, address selected spokes, or recruit new ones; agent participation and system behavior therefore depend directly on role and population composition.",
+   "over_the_runner_up": "ChoiceMates edges out ClassAid because its broadcast, subset-addressing, and agent-recruitment controls expose the hub-and-spoke topology more directly and make it more domain-independent."
+  },
+  {
+   "rid": "4623",
+   "title": "ClassAid: A Real-time Instructor-AI-Student Orchestration System for Classroom Programming Activities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790824",
+   "final_score": 4.9,
+   "why": "Students interact with personalized TA agents while an instructor observes those interactions through a separate dashboard and alone can change agent modes, creating concurrent and operationally interdependent student, instructor, and agent roles.",
+   "over_the_runner_up": "ClassAid ranks above ScamPilot because its observe-and-intervene loop coordinates many simultaneous student-agent spokes and transfers readily to other supervised human-agent settings."
+  },
+  {
+   "rid": "5619",
+   "title": "ScamPilot: Simulating Conversations with LLMs to Protect Against Online Scams",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791313",
+   "final_score": 4.67,
+   "why": "A scammer agent attacks, a target agent responds, and the human supplies real-time advice specifically to the target, making all three role slots, their unequal input rights, and their structural dependency unusually explicit.",
+   "over_the_runner_up": "ScamPilot is preferred over GraftMind because its evidence specifies three asymmetric roles and the permitted interaction path, whereas GraftMind's excerpt leaves its mediator's three assistance mechanisms undescribed."
+  }
+ ],
+ "notes": "I departed from the consensus by selecting fourth-ranked ScamPilot instead of third-ranked GraftMind. The small score adjustment reflects ScamPilot's stronger fit to the structural signature: its quote directly establishes three simultaneous, differentiated roles and role-specific input, while GraftMind clearly shows mediation but provides less evidence about participant rights and system behavior. ChoiceMates and ClassAid retain their consensus scores. Readers should be cautious that all three selections are supported only by brief excerpts—two abstracts and one abstract-level description—so implementation details, temporal simultaneity, and empirical impact cannot be fully audited from the supplied evidence alone.",
+ "pattern_name": "Multiparty Hub and Spoke",
+ "category_id": "U10",
+ "rated": 30
+}

@@ -1,0 +1,1101 @@
+{
+ "pattern": {
+  "pattern_id": "pat-002",
+  "pattern_name": "Candidate Gallery",
+  "pattern_slug": "candidate-gallery",
+  "short_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+  "definition": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set. The user's control is exercised by choosing one member of the set rather than by editing or re-specifying. The chosen item is committed downstream and the unchosen ones are discarded or backgrounded.",
+  "structural_signature": "Control flow forks at one point into N ≥ 2 outputs of the same type, all rendered simultaneously in a bounded display region (a row, a side-by-side triple, a separate list beside the working surface). A selection event on one member is the commit action: it writes that member into the downstream state and terminates the other branches. The multiplicity is in the outputs, not in the operations offered over one output, and the set is resolved in a single act.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Multiple Suggestions Shown Together",
+  "dimension": {
+   "category_id": "U05",
+   "category_name": "Alternatives & Comparative Exploration",
+   "category_description": "How multiple possibilities are presented, previewed, maintained, blended, or compared before commitment.",
+   "classification_boundary": "Requires a visible choice or comparison mechanism, not backend candidate-set processing alone.",
+   "stage": "Acting on the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "5782",
+   "title": "Less Redraw, More Explore: Suggestion and Completion for Sketch-to-Image",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791026",
+   "system_id": "5782",
+   "evidence": [
+    {
+     "quote": "These four sketches, together with the user’s original input sketch, are displayed as alternatives in the gallery.",
+     "location": "system sec 3.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5828",
+   "title": "VidTune: Creating Video Soundtracks with Generative Music and Video-Based Thumbnails",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791572",
+   "system_id": "vidtune",
+   "evidence": [
+    {
+     "quote": "VidTune generates 4 candidate music tracks from a single prompt (Figure 2E) by expanding the prompt into four different alternatives and generating one track along with a descriptive title for each.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5922",
+   "title": "Preference-Guided Prompt Optimization for Text-to-Image Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791443",
+   "system_id": "5922",
+   "evidence": [
+    {
+     "quote": "the user simply needs to iteratively select the generation results they prefer among options that are most aligned with their implicit goals",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6005",
+   "title": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790742",
+   "system_id": "historypalette",
+   "evidence": [
+    {
+     "quote": "HistoryPalette presents 4 generated design alternatives per request using Stable Diffusion XL [51] and ControlNet [83].",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6143",
+   "title": "Iconix: Controlling Semantics and Style in Progressive Icon Grids Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790694",
+   "system_id": "iconix",
+   "evidence": [
+    {
+     "quote": "Our design choice is to present a list of scored concepts for quick comparison and selection, and a tree-structure visualization of semantic relations for deeper, more exploratory ideation.",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6169",
+   "title": "AnnotateGPT: Designing Human-AI Collaboration in Pen-Based Document Annotation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790867",
+   "system_id": "annotategpt",
+   "evidence": [
+    {
+     "quote": "When activated, agent (1) proposes four purposes; the user selects one, which triggers agent (2) to generate feedback.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6284",
+   "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790553",
+   "system_id": "papertok",
+   "evidence": [
+    {
+     "quote": "On the left panel are four hook options with matching scripts.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6885",
+   "title": "Collaborative Diffusion: Boosting Designerly Co-Creation with Generative AI",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585680",
+   "system_id": "6885",
+   "evidence": [
+    {
+     "quote": "four new images are returned, based on the image and the refned prompt",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7136",
+   "title": "You Know What I'm Saying: Designing Conversational Strategies of AI Agent for Tip of the Tongue Phenomenon",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585670",
+   "system_id": "7136",
+   "evidence": [
+    {
+     "quote": "An OA represents three potentially relevant answers (e.g., \"Maybe it’s Emma Watson, Daniel Radcliffe, or Rupert Grint”) according to the flow of the conversation, and participants can choose from these answers.",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7441",
+   "title": "ARtVista: Gateway To Empower Anyone Into Artist",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650760",
+   "system_id": "artvista",
+   "evidence": [
+    {
+     "quote": "ARtVista not only recommends reference images aligned with users’ abstract ideas and generates sketches for users to draw",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7467",
+   "title": "Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651093",
+   "system_id": "7467",
+   "evidence": [
+    {
+     "quote": "ExploreLLM generates personalized options for users to choose from.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7714",
+   "title": "StoryPrompt: Exploring the Design Space of an AI-Empowered Creative Storytelling System for Elementary Children",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651118",
+   "system_id": "storyprompt",
+   "evidence": [
+    {
+     "quote": "the child needs to select the keywords (nouns) from a set of words generated by ChatGPT to create two storylines (two paragraphs) for each scene (Figure 1e)",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8256",
+   "title": "DocVoyager: Anticipating User's Information Needs and Guiding Document Reading through Question Answering",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719846",
+   "system_id": "docvoyager",
+   "evidence": [
+    {
+     "quote": "DocVoyager leverages Large Language Models (LLMs) to anticipate users’ information needs and dynamically suggests questions based on prior interactions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "8292",
+   "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720189",
+   "system_id": "expandora",
+   "evidence": [
+    {
+     "quote": "(a) The user begins by entering a prompt, and the system generates four initial images.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "8782",
+   "title": "Demonstration of GazeNoter: Enhancing AR Note-Taking Through Gaze-Based Selection of LLM Suggestions",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721274",
+   "system_id": "demonstrationofgazenoter",
+   "evidence": [
+    {
+     "quote": "Once a keyword is selected, the system automatically composes 3 candidate sentences via the LLM senten",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9122",
+   "title": "Bridging Pedagogy and Play: Introducing a Language Mapping Interface for Human-AI Co-Creation in Educational Game Design",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798862",
+   "system_id": "9122",
+   "evidence": [
+    {
+     "quote": "For each component, the assistant asks guidance questions, checks whether responses are specific enough to translate into design constraints, and proposes a small set of candidate options to support refinement through selection and revision.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9237",
+   "title": "Empowering Users Through Conversational Explanations: Interplay of Choice Architecture and Linguistic Styles in Music Recommenders",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799036",
+   "system_id": "9237",
+   "evidence": [
+    {
+     "quote": "we explore how offering multiple choices versus a single recommendation, combined with four distinct verbal styles (metadata, descriptive, comparative, imagery), shapes users' autonomy and competence",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9282",
+   "title": "Flavor-Aware AI for Pre-Decision Support in Everyday Food Practices",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798732",
+   "system_id": "9282",
+   "evidence": [
+    {
+     "quote": "Instead of returning extensive recipe lists, FlavorLoop deliberately generates a small set of complete, feasible meal options",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9368",
+   "title": "I Thought It Through, I Built It Whole!': An AI-Powered Tool to Support Children's Engineering Thinking Activities in the Family Context",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798952",
+   "system_id": "9368",
+   "evidence": [
+    {
+     "quote": "the system generates four real-time 2D renderings, which children can select one that best matches their ideas or regenerate (Figure 1e)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9388",
+   "title": "Intone your Talk: Voice Output Communication Aids with Individualized Voices for Augmented Communicators",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799323",
+   "system_id": "9388",
+   "evidence": [
+    {
+     "quote": "Participants listen to two candidate voices and indicate which one they prefer (see Fig. 1).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9489",
+   "title": "PerforMagic: Coordinating Bodily Performance and Camera Movement in AI Video Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798782",
+   "system_id": "performagic",
+   "evidence": [
+    {
+     "quote": "Based on this description, the system suggests three suitable camera movements selected from a predefined set of cinematic shot types.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9494",
+   "title": "Personalizing Kanji Memorization: Designing Adaptive Mnemonics Based on Learner Preferences Using Large Language Models",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798551",
+   "system_id": "9494",
+   "evidence": [
+    {
+     "quote": "Provide users with a selection of semantic and visual keyword options to choose from",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9505",
+   "title": "Playing the Monograph: Retrieval-Augmented Generation for Interactive Ethnography",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798374",
+   "system_id": "9505",
+   "evidence": [
+    {
+     "quote": "Each turn presents a scene description, an accompanying image, three AI-generated response options,",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9512",
+   "title": "PromptHelper: A Prompt Recommender System for Encouraging Creativity in AI Chatbot Interactions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798681",
+   "system_id": "prompthelper",
+   "evidence": [
+    {
+     "quote": "Clicking (a) surfaces PromptHelper, (b), which displays contextually relevant follow-up prompt suggestions, based on the user’s last prompt and the model’s response.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10017",
+   "title": "Expressive Communication: Evaluating Developments in Generative Models and Steering Interfaces for Music Creation",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511159",
+   "system_id": "10017",
+   "evidence": [
+    {
+     "quote": "A composer using the Radio Interface requests randomly generated options of the full-length phrase of music, and selects the one that best matches her goals.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10049",
+   "title": "Wordcraft: Story Writing With Large Language Models",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511105",
+   "system_id": "wordcraft",
+   "evidence": [
+    {
+     "quote": "Figure 1 (left) shows Wordcraft performing text infilling by suggesting alternatives for a selected passage of text, which the 843 user can splice into their story.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10124",
+   "title": "SynthScribe: Deep Multimodal Tools for Synthesizer Sound Retrieval and Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645158",
+   "system_id": "synthscribe",
+   "evidence": [
+    {
+     "quote": "a user centered genetic algorithm by which completely new sounds can be created and selected given the users",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10127",
+   "title": "Enhancing Peer Review with AI-Powered Suggestion Generation Assistance: Investigating the Design Dynamics",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645169",
+   "system_id": "10127",
+   "evidence": [
+    {
+     "quote": "They also preferred to see multiple suggestions as opposed to only one, as a single suggestion does not necessarily contain all the possible ideas on how to continue the text.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10160",
+   "title": "DataDive: Supporting Readers' Contextualization of Statistical Statements with Data Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645155",
+   "system_id": "datadive",
+   "evidence": [
+    {
+     "quote": "our tool uses an LLM-powered pipeline to generate candidates of relevant contexts and poses them as guiding questions to the user as potential contexts for exploration. When the user selects a question, DataDive employs visualizations to further help the user compare and explore contextually relevant data.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10177",
+   "title": "ConstitutionMaker: Interactively Critiquing Large Language Models by Converting Feedback into Principles",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645144",
+   "system_id": "constitutionmaker",
+   "evidence": [
+    {
+     "quote": "at each conversational turn, ConstitutionMaker provides three candidate responses from the bot (Figure 2D) that the user can",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10186",
+   "title": "OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789225",
+   "system_id": "ontoscope",
+   "evidence": [
+    {
+     "quote": "LLM-based systems can generate many candidate CQs to guide these decisions, but current tools underuse this potential",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10187",
+   "title": "Rationalizer: Leveraging LLM to Support User Providing the Rationales Behind the Rating of Likert Scale Questionnaires",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789171",
+   "system_id": "rationalizer",
+   "evidence": [
+    {
+     "quote": "Steps (1–4) show how the experimenter prepare the study context, the participant provide Likert rating, select generated rationales, and type his own rationales for each Liker item with support from the rationales generator.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10199",
+   "title": "AutoStructGUI: Bridging Design and Implementation of GUI through Structured Layout Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789058",
+   "system_id": "autostructgui",
+   "evidence": [
+    {
+     "quote": "(3) The GUI Recommendation Window (Figure 7 C) displays fve system-recommended GUI layouts in both global and local recommendation modes",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10256",
+   "title": "CoLyricist: Enhancing Lyric Writing with AI through Workflow-Aligned Support",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789099",
+   "system_id": "colyricist",
+   "evidence": [
+    {
+     "quote": "If users fnd any of the suggested phrases or words appealing, they can copy them into the \"Keyword/Key phrase\" text box.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10375",
+   "title": "-generAItor: Tree-in-the-loop Text Generation for Language Model Explainability and Adaptation",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3652028",
+   "system_id": "generaitor",
+   "evidence": [
+    {
+     "quote": "Our approach allows interactions on multiple levels and offers an iterative pipeline that encompasses generating, exploring, and comparing output candidates",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "11733",
+   "title": "AutoTitle: An Interactive Title Generator for Visualizations",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3290241",
+   "system_id": "autotitle",
+   "evidence": [
+    {
+     "quote": "(c) the representative title view. (d) the alternative title view presents a list of alternative titles",
+     "location": "fig 6"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making"
+   ]
+  },
+  {
+   "rid": "11931",
+   "title": "Smartboard: Visual Exploration of Team Tactics with LLM Agent",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456200",
+   "system_id": "smartboard",
+   "evidence": [
+    {
+     "quote": "Users can select one of the alternatives to iterate the tactical simulation.",
+     "location": "system sec 6 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 13,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12078",
+   "title": "ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3368621",
+   "system_id": "chartgpt",
+   "evidence": [
+    {
+     "quote": "ChartGPT is designed to generate a set of top-k charts (k=3 by default) in response to a given utterance.",
+     "location": "full text sec IV-E"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12236",
+   "title": "MineVRA: Exploring the Role of Generative AI-Driven Content Development in XR Environments through a Context-Aware Approach",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3549160",
+   "system_id": "minevra",
+   "evidence": [
+    {
+     "quote": "(b) After pressing the \"Generate Images\" button, 4 images are generated (c) The user selects an image",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12275",
+   "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3539779",
+   "system_id": "maico",
+   "evidence": [
+    {
+     "quote": "allows composers and other music creators to interactively generate, explore, select, edit, and compare samples from generative music models",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

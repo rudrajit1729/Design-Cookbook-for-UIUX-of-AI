@@ -1,0 +1,1893 @@
+{
+ "dimension": {
+  "category_id": "U07",
+  "category_name": "Explanation, Inspection & Verification",
+  "category_slug": "explanation-inspection-and-verification",
+  "stage": "Taking in the output",
+  "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+  "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+  "pattern_count": 13,
+  "eligible_papers": 361,
+  "candidate_count": 361,
+  "patterns": [
+   {
+    "pattern_id": "pat-001",
+    "pattern_name": "Linked Views",
+    "short_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible."
+   },
+   {
+    "pattern_id": "pat-020",
+    "pattern_name": "Inspectable Intermediate Steps",
+    "short_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read."
+   },
+   {
+    "pattern_id": "pat-025",
+    "pattern_name": "Interpretation Readback",
+    "short_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it."
+   },
+   {
+    "pattern_id": "pat-028",
+    "pattern_name": "Plan Preview",
+    "short_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out."
+   },
+   {
+    "pattern_id": "pat-031",
+    "pattern_name": "Pre-Send Inspection",
+    "short_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it."
+   },
+   {
+    "pattern_id": "pat-036",
+    "pattern_name": "Overview-plus-Detail",
+    "short_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item."
+   },
+   {
+    "pattern_id": "pat-037",
+    "pattern_name": "Unit Visualization Views",
+    "short_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates."
+   },
+   {
+    "pattern_id": "pat-038",
+    "pattern_name": "Model Internals View",
+    "short_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate."
+   },
+   {
+    "pattern_id": "pat-051",
+    "pattern_name": "Elements for Process Disclosure",
+    "short_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning."
+   },
+   {
+    "pattern_id": "pat-052",
+    "pattern_name": "Color Coded Content",
+    "short_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight."
+   },
+   {
+    "pattern_id": "pat-053",
+    "pattern_name": "Artifact Flagging and Annotations",
+    "short_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it."
+   },
+   {
+    "pattern_id": "pat-054",
+    "pattern_name": "Paired (Human-AI) Assessment",
+    "short_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other."
+   },
+   {
+    "pattern_id": "pat-055",
+    "pattern_name": "Aggregated Summary Score",
+    "short_summary": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element."
+   }
+  ]
+ },
+ "shard": 3,
+ "candidates": [
+  {
+   "rid": "14001",
+   "title": "DeckFlow: Specification Decomposition on a Multimodal Generative Canvas",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00027",
+   "system_id": "deckflow",
+   "prefilter_score": 5.575,
+   "prefilter_parts": {
+    "relevance_density": 3.946,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 6.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Action Card spawns multiple Text Cards containing the constructed prompts (f), and images are generated using them (e).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "system_id": "13637",
+   "prefilter_score": 5.571,
+   "prefilter_parts": {
+    "relevance_density": 3.321,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 5.12
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "pattern_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The human-readable intent specification serves as an intermediate layer for enhancing common ground between the human and the AI, and grounds the AI’s decision-making.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The color-coding of cards marked as conflicts drew user attention sometimes entirely away from manual inspection of nonmarked cards.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "9260",
+   "title": "Exploring a Collaborative Gamified Approach to Vision-Language Model Evaluation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799410",
+   "system_id": "9260",
+   "prefilter_score": 5.543,
+   "prefilter_parts": {
+    "relevance_density": 3.443,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 5.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-054",
+     "pattern_name": "Paired (Human-AI) Assessment",
+     "pattern_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Both the human guesser and an AI agent compete to make correct predictions",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-055",
+     "pattern_name": "Aggregated Summary Score",
+     "pattern_summary": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "with scoring designed to reward descriptions that humans can understand but AI struggles with",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "12837",
+   "title": "InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634639",
+   "system_id": "insightchaser",
+   "prefilter_score": 5.54,
+   "prefilter_parts": {
+    "relevance_density": 3.611,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 5.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can hover over the colored entities in the insight view to highlight relevant subgraphs in the context view and linked visual elements in the visualization view.",
+     "evidence_location": "system sec 5.1 (full text)"
+    },
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "pattern_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "the visualization automatically zooms to the appropriate canvas area, forming a coordinated overview-detail [11] display in combination with the linking view",
+     "evidence_location": "system sec 5.2 (full text)"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The enhancement view (Fig. 5(B)) presents a visual reasoning path based on visual-text links (R4).",
+     "evidence_location": "system sec 5.2 (full text)"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "We use distinct colors to represent different entity types to enhance readability: red for explicit entities and yellow for implicit entities.",
+     "evidence_location": "system sec 5.1 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1723",
+   "title": "PaTAT: Human-AI Collaborative Qualitative Coding with Explainable Interactive Rule Synthesis",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581352",
+   "system_id": "patat",
+   "prefilter_score": 5.519,
+   "prefilter_parts": {
+    "relevance_density": 3.519,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 5.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(3) A pattern rule panel that displays synthesized rules and supports rule inspection and manipulation (Fig. 3-C).",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(2) The pattern flter shows all the items that matched that pattern.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "reviewing explanations of model recommendations and synthesized rules",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "pattern_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "(3) When a user hovers over a highlighted item, all matching patterns are displayed.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10953",
+   "title": "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209479",
+   "system_id": "10953",
+   "prefilter_score": 5.506,
+   "prefilter_parts": {
+    "relevance_density": 3.306,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 5.1
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-038",
+     "pattern_name": "Model Internals View",
+     "pattern_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In PromptIDE, only the answer ranks of defined answer choices are compared against each other.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5163",
+   "title": "OpenCD: Empowering Diagnosis of Children's Mathematical Cognition through Open-ended Multimodal Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790318",
+   "system_id": "opencd",
+   "prefilter_score": 5.499,
+   "prefilter_parts": {
+    "relevance_density": 4.449,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 8.68
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "it combines VisionLanguage Models (VLMs) and expert models to generate interactive diagnostic graphs and reports with traceability back to behavioral evidence",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12248",
+   "title": "ChartInsighter: An Approach for Mitigating Hallucination in Time-Series Chart Summary Generation With a Benchmark Dataset",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567122",
+   "system_id": "chartinsighter",
+   "prefilter_score": 5.48,
+   "prefilter_parts": {
+    "relevance_density": 3.23,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 4.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "hovering over the sentence containing data references highlighted the corresponding portion",
+     "evidence_location": "system sec 6.4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12862",
+   "title": "Urbanite: A Dataflow-Based Framework for Human-AI Interactive Alignment in Urban Visual Analytics",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634644",
+   "system_id": "urbanite",
+   "prefilter_score": 5.478,
+   "prefilter_parts": {
+    "relevance_density": 3.778,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 6.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) Based on the task, the LLM proposes a first sketch.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "(b) They create flood simulation nodes for a Chicago-area town and document them using dataflow- and node-level explanations.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10126",
+   "title": "From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645173",
+   "system_id": "10126",
+   "prefilter_score": 5.458,
+   "prefilter_parts": {
+    "relevance_density": 2.758,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 4.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This study focuses on bridging this gap by developing and evaluating explanation techniques for T2I models, targeting inexperienced end users.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Redacted prompt explanation and keyword heat map.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U05"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8513",
+   "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720227",
+   "system_id": "realjam",
+   "prefilter_score": 5.441,
+   "prefilter_parts": {
+    "relevance_density": 3.641,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 5.83
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We enable real-time interactions using the concept of anticipation, where the agent continually predicts how the performance will unfold and visually conveys its plan to the user.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "Keys for sustained notes are highlighted for the human (orange) and agent (blue).",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5968",
+   "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791673",
+   "system_id": "cocoa",
+   "prefilter_score": 5.44,
+   "prefilter_parts": {
+    "relevance_density": 3.565,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 5.71
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the agent proposes an initial plan of execution to tackle a user request that the user can edit to their liking",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2477",
+   "title": "Human-LLM Collaborative Annotation Through Effective Verification of LLM Labels",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641960",
+   "system_id": "2477",
+   "prefilter_score": 5.426,
+   "prefilter_parts": {
+    "relevance_density": 3.626,
+    "focus": 1.5,
+    "evidence_location": 0.3,
+    "_density_raw": 5.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "LLM-generated explanations can provide additional information to the verifier model as well as help humans better understand LLM labels.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-054",
+     "pattern_name": "Paired (Human-AI) Assessment",
+     "pattern_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "we investigate the impact of presenting LLM labels and explanations on human re-annotation through crowdsourced studies",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 2,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13235",
+   "title": "NewsVis: GenAI-Based Visual Storytelling for Corporate Financial News",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3668994",
+   "system_id": "newsvis",
+   "prefilter_score": 5.425,
+   "prefilter_parts": {
+    "relevance_density": 3.55,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 5.69
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "News Re-presentation View (Fig. 3 A) provides traceability for the narrative synthesis. While its primary function is to reveal how the AI structured the story, it supports critical fine-tuning, such as modifying generated captions (Fig. 3c) or inserting missing narrative elements (Fig. 3b).",
+     "evidence_location": "system sec 4.A.2 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "11470",
+   "title": "PhraseMap: Attention-Based Keyphrases Recommendation for Information Seeking",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2022.3225114",
+   "system_id": "phrasemap",
+   "prefilter_score": 5.372,
+   "prefilter_parts": {
+    "relevance_density": 3.672,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 5.96
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-037",
+     "pattern_name": "Unit Visualization Views",
+     "pattern_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The main component of our approach is a PhraseMap, where nodes and edges represent the extracted keyphrases and their relationships, respectively, from a large corpus.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Zoomed view of map view: (1) two color schema, colored for (A) overview and (B-D) information seeking",
+     "evidence_location": "fig 6"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6169",
+   "title": "AnnotateGPT: Designing Human-AI Collaboration in Pen-Based Document Annotation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790867",
+   "system_id": "annotategpt",
+   "prefilter_score": 5.371,
+   "prefilter_parts": {
+    "relevance_density": 2.971,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 4.48
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "pattern_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(c) The assistant will guess the purpose of the annotation.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "pattern_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "(c) The user taps on the cluster/annotation to activate and open the assistant.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9490",
+   "title": "PersonaCite: VoC-Grounded Interviewable Agentic Synthetic AI Personas for Verifiable User and Design Research",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798543",
+   "system_id": "personacite",
+   "prefilter_score": 5.363,
+   "prefilter_parts": {
+    "relevance_density": 3.413,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 5.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Personas respond only when supported by evidence and explicitly acknowledge gaps in available data.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Persona interaction and reaction simulation with response-level source attribution is enabled via data-grounded conversational AI, with expli…",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10218",
+   "title": "RDoFlow: Automatically assessing under-specified statistical analyses in HCI",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789160",
+   "system_id": "rdoflow",
+   "prefilter_score": 5.343,
+   "prefilter_parts": {
+    "relevance_density": 3.093,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 4.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We revealed how the LLM derived scores, without implying infallibility.",
+     "evidence_location": "system sec 7"
+    },
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Specifcally, we accompanied each automated judgment with textual evidence from the paper and let the user correct it if necessary.",
+     "evidence_location": "system sec 7"
+    }
+   ],
+   "other_dimensions": [
+    "U03"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "6317",
+   "title": "Facilitating Proactive and Reactive Guidance for Decision Making on the Web: A Design Probe with WebSeek",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791945",
+   "system_id": "6317",
+   "prefilter_score": 5.342,
+   "prefilter_parts": {
+    "relevance_density": 3.809,
+    "focus": 0.333,
+    "evidence_location": 1.2,
+    "_density_raw": 6.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(D) The “source” button is clicked to locate the data source on the web.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11931",
+   "title": "Smartboard: Visual Exploration of Team Tactics with LLM Agent",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456200",
+   "system_id": "smartboard",
+   "prefilter_score": 5.311,
+   "prefilter_parts": {
+    "relevance_density": 3.58,
+    "focus": 0.231,
+    "evidence_location": 1.5,
+    "_density_raw": 5.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The explanation provides insights into the agent’s decision-making process (R4), significantly enhancing the transparency and understanding of tactics.",
+     "evidence_location": "system sec 5.2 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 13,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2721",
+   "title": "C2Ideas: Supporting Creative Interior Color Design Ideation with a Large Language Model",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642224",
+   "system_id": "c2ideas",
+   "prefilter_score": 5.297,
+   "prefilter_parts": {
+    "relevance_density": 3.047,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 4.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In particular, Prompts Generation leverages LLMs to decompose user’s input into a set of domain-oriented prompts",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "We also develop an interactive interface that enables fexible user refnement and interpretable reasoning.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "6179",
+   "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human-AI Collaboration: Seeing Eye to Eye",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791059",
+   "system_id": "6179",
+   "prefilter_score": 5.292,
+   "prefilter_parts": {
+    "relevance_density": 3.992,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 6.85
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "pattern_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "It integrates three components: (1) joint attention coordination for fluid focus alignment, (2) revisable memory to maintain evolving common ground, and (3) reflective feedback allowing users to clarify and refine AI’s understanding.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2584",
+   "title": "PromptCharm: Text-to-Image Generation through Multi-modal Prompting and Refinement",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642803",
+   "system_id": "promptcharm",
+   "prefilter_score": 5.287,
+   "prefilter_parts": {
+    "relevance_density": 3.337,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 5.12
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) Given an initial prompt from a user, PromptCharm first suggests an initial refinement based on a prompt optimization model.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-038",
+     "pattern_name": "Model Internals View",
+     "pattern_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The user can then examine the generated images with the help of model attention visua",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5458",
+   "title": "Sensemaking in Multi-Agent LLM Interfaces: How Users Interpret Transparency and Trustworthiness Cues",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791157",
+   "system_id": "5458",
+   "prefilter_score": 5.262,
+   "prefilter_parts": {
+    "relevance_density": 3.062,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 4.71
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Each variant instantiates a distinct combination of transparency-related design dimensions to surface multi-agent reasoning to the user.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12608",
+   "title": "Save It for the \"Hot\" Day: An LLM-Empowered Visual Analytics System for Heat Risk Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3586689",
+   "system_id": "12608",
+   "prefilter_score": 5.245,
+   "prefilter_parts": {
+    "relevance_density": 3.078,
+    "focus": 0.667,
+    "evidence_location": 1.5,
+    "_density_raw": 4.73
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "glyph will synchronously center and highlight the corresponding",
+     "evidence_location": "system sec (full text)"
+    },
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "pattern_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This process creates a two-level hierarchical topic structure.",
+     "evidence_location": "system sec (full text)"
+    },
+    {
+     "pattern_id": "pat-037",
+     "pattern_name": "Unit Visualization Views",
+     "pattern_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "through hex bin visualizations of topics and news glyphs. To",
+     "evidence_location": "intro (full text)"
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "pattern_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "highlight relevant sentences pertaining to “risk,” “cause,” “consequence,” and “advice” within full text, which improves the",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "prefilter_score": 5.189,
+   "prefilter_parts": {
+    "relevance_density": 3.489,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 5.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) The system ingests a narrated demonstration, extracts atomic tasks, and presents editable human–cobot allocations with reasoning traces. (b) After validation, the system generates step-by-step instructions for both agents and allows triggerbased execution of cobot tasks.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12832",
+   "title": "Story Ribbons: Reimagining Storyline Visualizations with Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634265",
+   "system_id": "12832",
+   "prefilter_score": 5.179,
+   "prefilter_parts": {
+    "relevance_density": 2.179,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 3.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "T5 - Connect visuals to raw text.",
+     "evidence_location": "system sec 3.2"
+    },
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "pattern_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "T1 - Enable multiple levels of story exploration. To accommodate a wide range of analysis workflows [G1], we support both high-level (e.g., chapters) and low-level (e.g., scenes) exploration of stories.",
+     "evidence_location": "system sec 3.2"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We aim to provide explanations of LLMgenerated data to maintain transparency and protect user trust [G2].",
+     "evidence_location": "system sec 3.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "5071",
+   "title": "PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790919",
+   "system_id": "privweb",
+   "prefilter_score": 5.156,
+   "prefilter_parts": {
+    "relevance_density": 2.956,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 4.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-031",
+     "pattern_name": "Pre-Send Inspection",
+     "pattern_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "subsequently providing an anonymized interface to the web agent model for task execution",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "pattern_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "For private information with relatively low sensitivity, to flag detected sensitive private information directly on the webpage.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The activity Log provides transparency into the agent’s privacy control state",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "3809",
+   "title": "Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713218",
+   "system_id": "planthenexecute",
+   "prefilter_score": 5.155,
+   "prefilter_parts": {
+    "relevance_density": 3.855,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 6.35
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the agents conducted step-wise planning and step-by-step execution in a simulation environment",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9215",
+   "title": "Disclose with Care: AI Scaffolds for Privacy in Chatbot Interviews",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798850",
+   "system_id": "9215",
+   "prefilter_score": 5.137,
+   "prefilter_parts": {
+    "relevance_density": 3.687,
+    "focus": 1.0,
+    "evidence_location": 0.45,
+    "_density_raw": 5.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-031",
+     "pattern_name": "Pre-Send Inspection",
+     "pattern_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Instead of interrupting during the interview, we provide a review step after the interview so participants can decide what will be shared via post editing.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2812",
+   "title": "VAL: Interactive Task Learning with GPT Dialog Parsing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641915",
+   "system_id": "val",
+   "prefilter_score": 5.103,
+   "prefilter_parts": {
+    "relevance_density": 4.053,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 7.07
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Acquired knowledge is human interpretable and generalizes to support execution of novel tasks without additional training.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10198",
+   "title": "Athena: Intermediate Representations for Iterative Scaffolded App Generation with an LLM",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789133",
+   "system_id": "athena",
+   "prefilter_score": 5.102,
+   "prefilter_parts": {
+    "relevance_density": 4.373,
+    "focus": 0.429,
+    "evidence_location": 0.3,
+    "_density_raw": 8.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we introduce Athena, a prototype application generation environment that demonstrates how the use of shared intermediate representations, including an app storyboard, data model, and GUI skeletons, can help a developer work with an LLM in an iterative fashion to craft a complete user interface",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5489",
+   "title": "ARify: Leveraging Narrated Instructional Videos to Create Augmented Reality Tutorials for Procedural Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790715",
+   "system_id": "arify",
+   "prefilter_score": 5.091,
+   "prefilter_parts": {
+    "relevance_density": 3.291,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 5.1
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b-1) The Tutorial Planner proposes an initial tutorial structure that the user inspects and refines in the Tutorial Structure Editor.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10260",
+   "title": "RankCut: A Ranking-Based LLM Approach to Extractive Summarization for Transcript-Based Video Editing",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789115",
+   "system_id": "rankcut",
+   "prefilter_score": 5.074,
+   "prefilter_parts": {
+    "relevance_density": 3.199,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 4.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "converting opaque model output into verifiable units within standard video editing workflows",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "pattern_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Auto shows a prompt-driven plan preview and then compiles a cut without exposing span-level timeline markers before assembly.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The Timeline displays the output color-coded markers with normalized confidence scores and short excerpts.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "pattern_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The Timeline (bottom) displays color-coded markers aligned to sentence timecodes.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "621",
+   "title": "VizTA: Enhancing Comprehension of Distributional Visualization with Visual-Lexical Fused Conversational Interface",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70110",
+   "system_id": "vizta",
+   "prefilter_score": 5.059,
+   "prefilter_parts": {
+    "relevance_density": 4.159,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 7.5
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our formative study highlights the expectations for both lexical and visual feedback, as well as the importance of explicitly linking these two modalities throughout the conversation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13743",
+   "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747668",
+   "system_id": "neurosync",
+   "prefilter_score": 5.057,
+   "prefilter_parts": {
+    "relevance_density": 4.007,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 6.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "pattern_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we propose direct intent–task matching, a new human–LLM interaction paradigm that externalizes and enables direct manipulation of the LLM understanding, i.e., the coding tasks and their relationships inferred by the LLM prior to code generation",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "which employs a knowledge distillation pipeline to extract LLM understanding, user intents, and their mappings, and enhances the alignment by allowing users to intuitively inspect and edit them via visualizations",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16711",
+   "title": "Who Did What? Designing Avatars for Explainable Multi-Agent Systems in Knowledge Work",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812981",
+   "system_id": "16711",
+   "prefilter_score": 5.038,
+   "prefilter_parts": {
+    "relevance_density": 2.788,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 4.24
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a detailed step-by-step textual explanation can be used to explain which agents were involved and what their individual contributions were",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7627",
+   "title": "LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650755",
+   "system_id": "7627",
+   "prefilter_score": 5.028,
+   "prefilter_parts": {
+    "relevance_density": 1.828,
+    "focus": 2.0,
+    "evidence_location": 1.2,
+    "_density_raw": 3.01
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "pattern_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "visual analytics workflows for users to obtain the visual summary of the results from the side-by-side ratings while inspecting corresponding individual examples",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "pattern_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Users can inspect the individual ratings to see the detailed rationales used by the raters.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U05"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13986",
+   "title": "DevTales: A Tool for Providing Narrative Code Histories into Developer Workflows",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00013",
+   "system_id": "devtales",
+   "prefilter_score": 5.025,
+   "prefilter_parts": {
+    "relevance_density": 3.458,
+    "focus": 0.667,
+    "evidence_location": 0.9,
+    "_density_raw": 5.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "pattern_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "3-way linking between the Subgoal view, Story view, and the code itself.",
+     "evidence_location": "full text sec III-C"
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "pattern_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Annotations with related subgoal information when user hovers their mouse over code, allowing them to decide more quickly whether they want to investigate the history further.",
+     "evidence_location": "full text sec III-C"
+    },
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "pattern_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Users can browse through the high level subgoals of the original developer and see web searches and code changes made within each subgoal. Both the web search tabs and code change tabs are expandable.",
+     "evidence_location": "full text sec III-B1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10255",
+   "title": "Canvas3D: Empowering Precise Spatial Control for Image Generation with Constraints from a 3D Virtual Canvas",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789142",
+   "system_id": "canvas3d",
+   "prefilter_score": 5.019,
+   "prefilter_parts": {
+    "relevance_density": 2.819,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 4.25
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "pattern_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system parses this prompt to create an interactive 3D environment, referred to as \"canvas\" (b).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

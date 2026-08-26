@@ -1,0 +1,483 @@
+{
+ "pattern": {
+  "pattern_id": "pat-068",
+  "pattern_name": "Withheld Answer",
+  "pattern_slug": "withheld-answer",
+  "short_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+  "definition": "The system runs the pipeline that would produce a terminal output but does not emit that output. What it emits instead is one step short — candidates, marked passages, correctness without the answer, questions — and the person supplies the missing final step.",
+  "structural_signature": "The last stage of the pipeline is truncated at the presentation boundary: what reaches the screen is an intermediate of the process whose end product is withheld, and the interface exposes no control that reveals it. The user's action supplies the terminal value, so the loop cannot close without a human act.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 17,
+ "candidates": [
+  {
+   "rid": "2257",
+   "title": "Don't Just Tell Me, Ask Me: AI Systems that Intelligently Frame Explanations as Questions Improve Human Logical Discernment Accuracy over Causal AI explanations",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580672",
+   "system_id": "2257",
+   "evidence": [
+    {
+     "quote": "AI system asks participants about the causal link between a reason and the system label. It takes a similar form as the causal AI explanation but does not make it clear whether the label actually follows from the reason.",
+     "location": "full text sec 4.2 Explanation Feedback"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2588",
+   "title": "BIDTrainer: An LLMs-driven Education Tool for Enhancing the Understanding and Reasoning in Bio-inspired Design",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642887",
+   "system_id": "bidtrainer",
+   "evidence": [
+    {
+     "quote": "The process starts with an incomplete link, \"elephant trunks -> strong, fexible\", without the application.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2978",
+   "title": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642773",
+   "system_id": "codeaid",
+   "evidence": [
+    {
+     "quote": "We developed CodeAid, an LLM-powered programming assistant delivering helpful, technically correct responses, without revealing code solutions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3208",
+   "title": "ClassMeta: Designing Interactive Virtual Classmate to Promote VR Classroom Participation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642947",
+   "system_id": "classmeta",
+   "evidence": [
+    {
+     "quote": "When answering the question, the agent will intentionally answer a partial of the question, thereby giving the students the opportunity to complete the answer and increasing their participation.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3547",
+   "title": "Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Calibration on Learning Outcomes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713960",
+   "system_id": "3547",
+   "evidence": [
+    {
+     "quote": "After completing a quiz, students were informed whether their answers were correct or incorrect, but correct answers for the incorrect responses were not revealed, encouraging self-guided learning.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3863",
+   "title": "Media Bias Detector: Designing and Implementing a Tool for Real-Time Selection and Framing Bias Analysis in News Coverage",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713716",
+   "system_id": "3863",
+   "evidence": [
+    {
+     "quote": "is not to determine the media bias of each publisher for the user",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4720",
+   "title": "From Crafting Text to Crafting Thought: Grounding AI Writing Support to Writing Center Pedagogy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790292",
+   "system_id": "4720",
+   "evidence": [
+    {
+     "quote": "Writor helps writers revise text by setting goals, providing balanced feedback, and engaging in conversations without generating text verbatim.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4880",
+   "title": "Actor's Note: Examining the Role of AI-Generated Questions in Character Journaling for Actor Training",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790370",
+   "system_id": "4880",
+   "evidence": [
+    {
+     "quote": "We reframe large language models not as co-authors but as maieutic partners—tools that guide reflection through context-aware questioning rather than producing text on behalf of the user.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4893",
+   "title": "Designing Scaffolding Cards to Facilitate LLM-Based Socratic Instruction: An Exploratory Study of Response Strategies to Support Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791696",
+   "system_id": "4893",
+   "evidence": [
+    {
+     "quote": "could mitigate overreliance by engaging learners with LLM-generated questions rather than passively seeking answers from LLMs",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5267",
+   "title": "WordCraft: Scaffolding the Keyword Method for L2 Vocabulary Learning with Multimodal LLMs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790668",
+   "system_id": "wordcraft",
+   "evidence": [
+    {
+     "quote": "Two user studies demonstrate that WordCraft not only preserves the generation effect but also achieves high levels of effectiveness and usability.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8137",
+   "title": "ArtBot: An Exploration into AI's Potential for Guiding Art Analysis",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720181",
+   "system_id": "artbot",
+   "evidence": [
+    {
+     "quote": "Naturally, due to the Socratic method implemented in the system prompt, once the first message is sent, the ArtBot will take over, prompting the user with its questions about the work.",
+     "location": "full text, sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9097",
+   "title": "Belief Explorer: A Preliminary Evaluation of AI-Mediated Socratic Dialogue for Epistemic Reflection",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799391",
+   "system_id": "9097",
+   "evidence": [
+    {
+     "quote": "Socratic dialogue where the AI poses probing questions rather than direct answers",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "system_id": "13637",
+   "evidence": [
+    {
+     "quote": "The Check for Conflicts button provides the ability to perform impact analysis [6], which only highlights potential conflicts without suggesting changes, allowing the user to get a sense of how much effort a change might require.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "14012",
+   "title": "Codigen: Enhancing Personalized Programming Education with Visual Authoring and LLMs",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00038",
+   "system_id": "codigen",
+   "evidence": [
+    {
+     "quote": "C O D I G E N augments prompts before sending them to the LLM to ensure that AI guides the learners instead of simply providing them with solutions.",
+     "location": "full text sec IV"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14026",
+   "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00052",
+   "system_id": "14026",
+   "evidence": [
+    {
+     "quote": "We introduce CounterQuill, a human-AI collaborative system that helps everyday users with writing empathetic counterspeech—not by generating automatic replies, but by educating them through reflection and response.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15643",
+   "title": "Wisdom of the Crowd, Without the Crowd: A Socratic LLM for Asynchronous Deliberation on Perspectivist Data",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757707",
+   "system_id": "15643",
+   "evidence": [
+    {
+     "quote": "engaging in higher-order cognitive processes to facilitate an outcome instead of serving as a question-answering system",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15684",
+   "title": "Interaction Configurations and Prompt Guidance in Conversational AI for Question Answering in Human-AI Teams",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757486",
+   "system_id": "15684",
+   "evidence": [
+    {
+     "quote": "emphasizing crucial parts of reference documents to aid human responses",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

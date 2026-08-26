@@ -1,0 +1,1093 @@
+{
+ "pattern": {
+  "pattern_id": "pat-047",
+  "pattern_name": "Role Asymmetric Views",
+  "pattern_slug": "role-asymmetric-views",
+  "short_summary": "One system presents deliberately different surfaces to different classes of participant, so what each party can see and do depends on their role.",
+  "definition": "One system presents deliberately different surfaces to different classes of participant, so what each party can see and do depends on their role. The asymmetry is designed rather than incidental: some information is withheld from one side, or an extra channel exists for the other. The parties nonetheless act on a shared underlying state.",
+  "structural_signature": "A single backend serves two or more role-specific front-ends or channels whose contents differ by construction; a role assignment determines which view a session receives; at least one channel is private to one role. State written by any role is visible to the others only through their own role's view.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "1174",
+   "title": "StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517479",
+   "system_id": "storybuddy",
+   "evidence": [
+    {
+     "quote": "The directions of the pointers on modules indicate whether the module interacts with the parents (right) or the children (left).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2485",
+   "title": "Collaborative School Mental Health System: Leveraging a Conversational Agent for Enhancing Children's Executive Function",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642593",
+   "system_id": "2485",
+   "evidence": [
+    {
+     "quote": "These applications include an Android-based program equipped with a conversational agent to aid children in their daily tasks, a mobile application designed for parental monitoring, and a webpage intended for teacher management (Figure 1).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3164",
+   "title": "MindfulDiary: Harnessing Large Language Model to Support Psychiatric Patients' Journaling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642937",
+   "system_id": "mindfuldiary",
+   "evidence": [
+    {
+     "quote": "MindfulDiary, which consists of two main components: (1) a patient mobile app for daily record-keeping and (2) a clinician dashboard that allows professionals to access and use these daily records in a clinical setting (See Figure 1)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3414",
+   "title": "AACessTalk: Fostering Communication between Minimally Verbal Autistic Children and Parents with Contextual Guidance and Card Recommendation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713792",
+   "system_id": "aacesstalk",
+   "evidence": [
+    {
+     "quote": "AACessTalk provides real-time guides to the parent to engage the child in conversation and, in turn, recommends contextual vocabulary cards to the child.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3528",
+   "title": "SET-PAiREd: Designing for Parental Involvement in Learning with an AI-Assisted Educational Robot",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713330",
+   "system_id": "setpaired",
+   "evidence": [
+    {
+     "quote": "The system consists of three key components: prompt instructions and data, the web application (which includes both the editor and activity interfaces), and the robot interaction module.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3623",
+   "title": "Accompany Sleep: Using GenAI to Create Bedtime Stories for Mediating Parent-Child Relationships in LBC Families",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713192",
+   "system_id": "3623",
+   "evidence": [
+    {
+     "quote": "Accompany Sleep consists of an application (a bedtime storymaking app for parents) and hardware (a bedtime story projector for children).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3836",
+   "title": "I Need Your Help! : Facilitating Psychological Communication Between Left-Behind Children and Their Parents with an AI-Powered Sandbox",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713660",
+   "system_id": "3836",
+   "evidence": [
+    {
+     "quote": "Remote monitoring; (e) Psychoeducational learning; (f) Communicate with child",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3944",
+   "title": "Generative Role-Play Communication Training in Virtual Reality for Autistic Individuals: A Study on Job Coach Experiences in Vocational Training Programs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713507",
+   "system_id": "3944",
+   "evidence": [
+    {
+     "quote": "The platform includes a web interface for writing prompts to set scenarios and reviewing trainees’ transcripts from training sessions",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4065",
+   "title": "TeamVision: An AI-powered Learning Analytics System for Supporting Reflection in Team-based Healthcare Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713395",
+   "system_id": "teamvision",
+   "evidence": [
+    {
+     "quote": "(B) Educators can filter and customise data visualisations to fit their approach, while (C) students view performance a…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4186",
+   "title": "Enhancing Pediatric Communication: The Role of an AI-Driven Chatbot in Facilitating Child-Parent-Provider Interaction",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713134",
+   "system_id": "4186",
+   "evidence": [
+    {
+     "quote": "The information from the Child Bot's conversation is delivered to the Expert Bot as a communication scenario.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4238",
+   "title": "Sustaining Human Agency, Attending to Its Cost: An Investigation into Generative AI Design for Non-Native Speakers' Language Use",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713626",
+   "system_id": "4238",
+   "evidence": [
+    {
+     "quote": "Composition of information in the task materials and its distribution between non-native speaking information seekers and native speaking information providers.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4600",
+   "title": "eaSEL: Promoting Social-Emotional Learning and Parent-Child Interaction through AI-Mediated Content Consumption",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713405",
+   "system_id": "easel",
+   "evidence": [
+    {
+     "quote": "Example parent interface showing a summary of the show, the social emotional skill detected, the child’s activity playback, and generated conversation starters.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4623",
+   "title": "ClassAid: A Real-time Instructor-AI-Student Orchestration System for Classroom Programming Activities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790824",
+   "system_id": "classaid",
+   "evidence": [
+    {
+     "quote": "We designed ClassAid, a real-time orchestration system that integrates a student interface (Fig. 2) and an instructor dashboard (Fig. 4) to support programming instruction in live classroom settings.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4750",
+   "title": "Through the Lens of Human-Human Collaboration: An Configurable Research Platform for Exploring Human-Agent Collaboration",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790879",
+   "system_id": "4750",
+   "evidence": [
+    {
+     "quote": "researcher interface allows researchers to configure experiment setup, monitor live sessions, and analyze result; participant interface enables human participants to engage with other participants and LLM agents",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "4818",
+   "title": "SeeSawBot: An LLM-Driven Chatbot Mediating Across Private and Shared Slack Channels to Support Team Dynamics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791880",
+   "system_id": "seesawbot",
+   "evidence": [
+    {
+     "quote": "we introduce SeeSawBot, an LLM-driven chatbot that operates across private DMs and public channels",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4871",
+   "title": "AI of Oz: Enhancing Wizard of Oz Studies in HCI with AI Assistance for Human Moderation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791324",
+   "system_id": "4871",
+   "evidence": [
+    {
+     "quote": "enabling the wizard to monitor interactions, maintain control, and intervene when necessary to guide the CA",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5022",
+   "title": "DiagLink: A Dual-User Diagnostic Assistance System by Synergizing Experts with LLMs and Knowledge Graphs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791724",
+   "system_id": "diaglink",
+   "evidence": [
+    {
+     "quote": "The system provides a role-adaptive interface",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5427",
+   "title": "Proactive AI as a Catalyst for Creativity? Balancing Human Agency and AI Contribution in Collaborative Story Writing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790848",
+   "system_id": "5427",
+   "evidence": [
+    {
+     "quote": "(b) is the control panel displaying suggestion drafts from AI assistant for the wizard, and (c) is the editor for the wizard to edit AI suggestion draft or compose their own suggestion.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5432",
+   "title": "Prototyping Multimodal GenAI Real-Time Agents with Counterfactual Replays and Hybrid Wizard-of-Oz",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790800",
+   "system_id": "5432",
+   "evidence": [
+    {
+     "quote": "(2) using the wizard interface, they can trigger various model inference calls such as (3) task phase classification and (4) message generation; (5) wizards can optionally send generated messages to the user’s SocraBot interface",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Guidance and Feedback"
+   ]
+  },
+  {
+   "rid": "5536",
+   "title": "AskNow: An LLM-powered Interactive System for Real-Time Question Answering in Large-Scale Classrooms",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790328",
+   "system_id": "asknow",
+   "evidence": [
+    {
+     "quote": "AskNow consisted of a student and an instructor interfaces.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6023",
+   "title": "CHOIR: A Chatbot-mediated Organizational Memory Leveraging Communication in University Research Labs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791314",
+   "system_id": "choir",
+   "evidence": [
+    {
+     "quote": "A questioner may ask CHOIR and receive a document-grounded answer, optionally share the Q&A exchange for broader discussion, and from these interactions, knowledge can be extracted and reviewed by the manager.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6220",
+   "title": "Collaborative Upstanding: Exploring Conversational Strategies for Cyberbullying Upstanding Education",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791859",
+   "system_id": "6220",
+   "evidence": [
+    {
+     "quote": "The co-pilot interface (right) includes a live log of bystander behaviors so far in the session.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "evidence": [
+    {
+     "quote": "The extension tracks data scientists’ data operations in each notebook cell. The visualization dashboard, designed for domain experts, communicates each change to a dataframe with a text summary and a grid-based visualization (SnapGrid) on a data version card",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7777",
+   "title": "Virtual Triplets: A Mixed Modal Synchronous and Asynchronous Collaboration with Human-Agent Interaction in Virtual Reality",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650766",
+   "system_id": "7777",
+   "evidence": [
+    {
+     "quote": "C) The instructor accesses the bird’s-eye view with the left controller",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8062",
+   "title": "Ask Sir Oliver Ingham: LLM-based Social Simulations for History Education",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719728",
+   "system_id": "8062",
+   "evidence": [
+    {
+     "quote": "(a) Map Exploration and NPC Interaction Interface (b) Active Quest List Panel (c) NPC Dialogue Interface (d) Teacher's Map Management Interface (e) NPC Generation and Management Interface (f) NPC Persona Customization Panel",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8731",
+   "title": "Evaluating an AI Bi-Directional System for Communication Between Deaf and Hard of Hearing Individuals and Hearing Persons: A Pilot Case Study",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706678",
+   "system_id": "8731",
+   "evidence": [
+    {
+     "quote": "Fig. 1 illustrates the system architecture with featuring bi-directional information flow: sign language from D/HH users was recognized and translated for hearing individuals as spoken language, while spoken language was rendered into sign language via an image-based digital human-like avatar.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "8930",
+   "title": "Grannify - Sustainable Living through Generational Knowledge",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720306",
+   "system_id": "8930",
+   "evidence": [
+    {
+     "quote": "The personas helped us visualize the differing experiences of younger and older users through two User-Flow Diagrams, each reflecting the specific journey of each user group.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8954",
+   "title": "Boosting Diary Study Outcomes with a Fine-Tuned Large Language Model",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719287",
+   "system_id": "8954",
+   "evidence": [
+    {
+     "quote": "The system offers instructors a global view of diary analyses and visualizations, facilitating instructional reflection and decisionmaking from overall trends or class-level perspectives.",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9128",
+   "title": "C-A2Meet: Malleable, Role-Aware AI Interfaces for Video Conferencing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798532",
+   "system_id": "ca2meet",
+   "evidence": [
+    {
+     "quote": "(A) Role-differentiated surfaces: Facilitator View badge indicates role-restricted components visible only to hosts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9200",
+   "title": "Designing for Adolescent Voice in Health Decisions: Embodied Conversational Agents for HPV Vaccination",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798846",
+   "system_id": "9200",
+   "evidence": [
+    {
+     "quote": "parents interact with an animated physician using education and motivational interviewing techniques, while adolescents can choose between an age-appropriate doctor or a narrative fantasy game",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9203",
+   "title": "Designing for Staying with Emotions: An AR System Driven by Generative AI to Support Emotional Participation in Children with Autism",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798902",
+   "system_id": "9203",
+   "evidence": [
+    {
+     "quote": "a child-facing AR interaction interface, a generative AI-based emotional feedback module, and a parent-facing collaborative regulation int",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9326",
+   "title": "GenerPlay: Bridging Asynchronous Intergenerational Communication Through Generative Interactive Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798448",
+   "system_id": "generplay",
+   "evidence": [
+    {
+     "quote": "The system employs an asymmetric media design: for older adults, it preserves familiar text or voice communication modalities",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9498",
+   "title": "PlanningConnect: Bridging Collaborative Gaps in Urban Land Use Planning with an End-to-End Multi-Agent Framework",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798641",
+   "system_id": "planningconnect",
+   "evidence": [
+    {
+     "quote": "To address communication opacity, unstructured conflict management, and power imbalances, we introduce PlanningConnect, a web-based multi-agent framework with role-specific interfaces facilitating AI-mediated participatory planning.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "9672",
+   "title": "Towards building a research platform to accelerate the science of Conversational AI",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799071",
+   "system_id": "9672",
+   "evidence": [
+    {
+     "quote": "The platform supports a researcher-facing authoring interface for composing multi-stage",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10257",
+   "title": "DesignBridge: Bridging Designer Expertise and User Preferences through AI-Enhanced Co-Design for Fashion",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789081",
+   "system_id": "designbridge",
+   "evidence": [
+    {
+     "quote": "The system includes dedicated interfaces for both designers and users to support a collaborative and iterative design process.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12333",
+   "title": "A Wizard of Oz Study of Guidance Strategies and Dynamics",
+   "venue": "tvcg",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3418782",
+   "system_id": "12333",
+   "evidence": [
+    {
+     "quote": "The user view provides this information as a mirror image of the user's visualization interface.",
+     "location": "full text, system sec IV-C"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14046",
+   "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00072",
+   "system_id": "snapclass",
+   "evidence": [
+    {
+     "quote": "Left: SnapClass student view. Studnets work on Snap coding environment on the left side, and view assignment instructions, raise hand for help and chat with SnapBot. Right: SnapBot teacher view of individual student chat history within an assignment and a summary of the chat.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14564",
+   "title": "Wizundry: A Cooperative Wizard of Oz Platform for Simulating Future Speech-based Interfaces with Multiple Wizards",
+   "venue": "cscw-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3579591",
+   "system_id": "wizundry",
+   "evidence": [
+    {
+     "quote": "The Wizundry consists of two interfaces: the Wizard interface (Fig 1) and the end-user interface (Fig 2).",
+     "location": "system sec 3.1 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15127",
+   "title": "Customizing Generated Signs and Voices of AI Avatars: Deaf-Centric Mixed-Reality Design for Deaf-Hearing Communication",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710953",
+   "system_id": "15127",
+   "evidence": [
+    {
+     "quote": "The top row illustrates scenarios that the DHH users would like to view on their MR glass, while the bottom row shows what they wish their hearing counterparts to see on theirs in the communication exchange.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "15610",
+   "title": "Leveraging Large Language Models for Collective Decision-Making",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757418",
+   "system_id": "15610",
+   "evidence": [
+    {
+     "quote": "At each round, the system shows each member the current decision of the group, and each member can privately communicate with the system about their individual preferences or opinions in their natural languages.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

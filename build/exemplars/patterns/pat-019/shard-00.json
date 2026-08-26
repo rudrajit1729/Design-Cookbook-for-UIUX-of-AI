@@ -1,0 +1,1091 @@
+{
+ "pattern": {
+  "pattern_id": "pat-019",
+  "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+  "pattern_slug": "propose-critique-revise-iterative-refinement",
+  "short_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+  "definition": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact. The cycle repeats without returning to a blank specification.",
+  "structural_signature": "A cycle in the control graph in which the previous output is carried into the next call together with the user's critique. Artifact identity persists across iterations — the next state is an edit of the current one, not an independent draw — so the state at round n depends on rounds 1 through n-1.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "2221",
+   "title": "GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581226",
+   "system_id": "ganravel",
+   "evidence": [
+    {
+     "quote": "we propose GANravel—a user-driven direction disentanglement tool that complements the existing GAN architectures and allows users to improve editing directions iteratively",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2452",
+   "title": "When He Feels Cold, He Goes to the Seahorse - Blending Generative AI into Multimaterial Storymaking for Family Expressive Arts Therapy",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642852",
+   "system_id": "2452",
+   "evidence": [
+    {
+     "quote": "Such (re-)generation cycles could run many times",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3157",
+   "title": "Facilitating Self-Guided Mental Health Interventions Through Human-Language Model Interaction: A Case Study of Cognitive Restructuring",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642761",
+   "system_id": "3157",
+   "evidence": [
+    {
+     "quote": "Randomized controlled trial to estimate the effects of enabling participants to iteratively edit reframes through increased interaction with the language model (N=2,165).",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3467",
+   "title": "Sonora: Human-AI Co-Creation of 3D Audio Worlds and its Impact on Anxiety and Cognitive Load",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713316",
+   "system_id": "sonora",
+   "evidence": [
+    {
+     "quote": "At any point, users have the option to add or remove individual sounds, such as birds chirping or waves crashing, by simply speaking to the AI.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3617",
+   "title": "Generative and Malleable User Interfaces with Generative and Evolving Task-Driven Data Model",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713285",
+   "system_id": "3617",
+   "evidence": [
+    {
+     "quote": "End-users can easily modify and extend the interfaces via natural language and direct manipulation, with these interactions translated into changes in the underlying model.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3895",
+   "title": "Code Shaping: Iterative Code Editing with Free-form AI-Interpreted Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713822",
+   "system_id": "3895",
+   "evidence": [
+    {
+     "quote": "If the resulting code does not match the programmer’s intent, they can refine their sketches, creating an iterative cycle of input and feedback.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4142",
+   "title": "Jupybara: Operationalizing a Design Space for Actionable Data Analysis and Storytelling with LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713913",
+   "system_id": "jupybara",
+   "evidence": [
+    {
+     "quote": "The Refiner then improves the response and sends the revised version back to the Critics for further review.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4314",
+   "title": "GenComUI: Exploring Generative Visual Aids as Medium to Support Task-Oriented Human-Robot Communication",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714238",
+   "system_id": "gencomui",
+   "evidence": [
+    {
+     "quote": "(A) Multi-turn and iterative communication for robot task customization, showing progressive visual feedback as users specify and modify task requirements",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4504",
+   "title": "Investigating Context-Aware Collaborative Text Entry on Smartphones using Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713944",
+   "system_id": "4504",
+   "evidence": [
+    {
+     "quote": "The prompt for regenerating suggestions (i.e., when the user inputs instructions on the panel and requests regeneration) has the same structure as the above one",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4574",
+   "title": "SpeakEasy: Enhancing Text-to-Speech Interactions for Expressive Content Creation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714263",
+   "system_id": "speakeasy",
+   "evidence": [
+    {
+     "quote": "enabling iterative refinement with high-level feedback",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4668",
+   "title": "Promptimizer: User-Led Prompt Optimization for Personal Content Classification",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790923",
+   "system_id": "promptimizer",
+   "evidence": [
+    {
+     "quote": "Puffin supports users in making meaningful refinements on their prompt filter in four ways.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4835",
+   "title": "Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790974",
+   "system_id": "cerebra",
+   "evidence": [
+    {
+     "quote": "and supports iterative refinement to improve generated scripts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "system_id": "iruler",
+   "evidence": [
+    {
+     "quote": "To qualify user-defined criteria, we recursively used iRULER with a rubric-of-rubrics to iteratively refine rubrics.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5063",
+   "title": "DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of Task-Oriented Interfaces",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790441",
+   "system_id": "duetui",
+   "evidence": [
+    {
+     "quote": "This LLM-empowered system unfolds alongside task progress through a bidirectional context loop",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5168",
+   "title": "ReVisor: A Reflective Design Tool for Instructional Designers to Improve Teacher Training Materials via AI Discussions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790456",
+   "system_id": "revisor",
+   "evidence": [
+    {
+     "quote": "(3) generating concrete revision suggestions, and (4) providing simulated real-time feedback on edited materials",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5281",
+   "title": "ProVoice: Designing Proactive Functionality for In-Vehicle Conversational Assistants using Multi-Objective Bayesian Optimization to Enhance Driver Experience",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791877",
+   "system_id": "provoice",
+   "evidence": [
+    {
+     "quote": "Interior questionnaire, presented after locating a final parking destination. Drivers are asked to rate the IVCA variant on mental demand, predictability, and usefulness.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5326",
+   "title": "SketchDynamics: Exploring Free-Form Sketches for Dynamic Intent Expression in Animation Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791071",
+   "system_id": "sketchdynamics",
+   "evidence": [
+    {
+     "quote": "(3) iterative refinement with contextual editing",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5632",
+   "title": "Notational Animating: An Interactive Approach to Creating and Editing Animation Keyframes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790707",
+   "system_id": "5632",
+   "evidence": [
+    {
+     "quote": "By iterating this loop (add notations and generate), the artist progressively authors and edits a",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5740",
+   "title": "LAPS: Automating Hypothesis-Driven Statistical Analysis of Public Survey Using Large Language Models",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791665",
+   "system_id": "laps",
+   "evidence": [
+    {
+     "quote": "(b) Variable Selector responds with an updated variable set that incorporates the requested changes and highlights the modifcations.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5820",
+   "title": "LL.me: Supporting Identity Work through Human-AI Alignment",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790890",
+   "system_id": "llme",
+   "evidence": [
+    {
+     "quote": "LL.me was designed to support collaborative iteration, enabling users to progressively refine LLM outputs until a final aligned representation is achieved.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5855",
+   "title": "SimStep: Human-in-the-Loop Authoring of Interactive Educational Simulations Through Task-Level Abstractions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791514",
+   "system_id": "simstep",
+   "evidence": [
+    {
+     "quote": "We instantiate this approach in SimStep, an authoring environment that scaffolds simulation design with four abstractions, including Concept Graph, Scenario Graph, Learning Goal Graph, and UI Graph, and introduces an inverse correction process to revise hidden model assumptions without requiring code manipulation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5922",
+   "title": "Preference-Guided Prompt Optimization for Text-to-Image Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791443",
+   "system_id": "5922",
+   "evidence": [
+    {
+     "quote": "The user provides an initial prompt, and our APPO edits it iteratively based on the user’s preferences until a satisfactory results that meet the specific goal.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6237",
+   "title": "Data-Prompt Co-Evolution: Growing Test Sets to Refine LLM Behavior",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791222",
+   "system_id": "6237",
+   "evidence": [
+    {
+     "quote": "enabling a new workflow: data-prompt co-evolution, where a living test set and prompt instructions evolve in tandem",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "6284",
+   "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790553",
+   "system_id": "papertok",
+   "evidence": [
+    {
+     "quote": "Researchers can then refine based on their preferences with further prompting.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7695",
+   "title": "SciCapenter: Supporting Caption Composition for Scientific Figures with Machine-Generated Captions and Ratings",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650738",
+   "system_id": "scicapenter",
+   "evidence": [
+    {
+     "quote": "Users can directly edit captions in SciCapenter, resubmit for revised evaluations, and iteratively refine them.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8412",
+   "title": "Introducing 3D Sketching to Overcome Challenges of View-Consistency and Progressive Development in 2D Generative AI-Based Car Exterior Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719731",
+   "system_id": "8412",
+   "evidence": [
+    {
+     "quote": "• Update the 3D sketch backbone with new 3D curves based on the generated outcomes to accumulate promising ideas, and repeat these steps as many times as needed.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "8532",
+   "title": "SceneGenA11y: How can Runtime Generative tools improve the Accessibility of a Virtual 3D Scene?",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720265",
+   "system_id": "scenegena11y",
+   "evidence": [
+    {
+     "quote": "The system facilitates a query-modification loop, allowing users to request modifications within a category, verify the changes through queries, and iteratively refine with additional queries and modifications.",
+     "location": "full text sec 3.5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8644",
+   "title": "VoiceForge: A Text-Driven Character Voice Generation System for Narrative Content Creation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720140",
+   "system_id": "voiceforge",
+   "evidence": [
+    {
+     "quote": "The system generates a speech sample with test text, allowing users to iteratively refine their descriptions until achieving the desired voice.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9046",
+   "title": "AI-Driven Co-Construction of Synthetic Personas for Early-Stage B2B User Research: An Exploratory Study",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798319",
+   "system_id": "9046",
+   "evidence": [
+    {
+     "quote": "Our findings show that synthetic persona value lies not in one-shot accuracy but in iterative refinement, and highlight the need for context-aware trust support.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9078",
+   "title": "Ask, Verify, Refine: A Question-Aware Multimodal XUI with Feedback-Guided Refinement for Clinical Verification",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798745",
+   "system_id": "9078",
+   "evidence": [
+    {
+     "quote": "To enable iterative verification, a lightweight feedback mechanism is provided: users evaluate explanation quality against predefined criteria and can trigger targeted regeneration without rewriting prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9180",
+   "title": "DashChat: Interactive Authoring of Performance Dashboard Design Prototypes through Conversation with LLM-Powered Agents",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798634",
+   "system_id": "dashchat",
+   "evidence": [
+    {
+     "quote": "Nemo proceeds with a series of iterative refinements using a combination of natural language commands and guided interactive elements",
+     "location": "full text sec VI.B"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9301",
+   "title": "From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798904",
+   "system_id": "9301",
+   "evidence": [
+    {
+     "quote": "critic-guided reflection, combined with human supervisory input, reduces modeling errors and increases complexity and quality of the result",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9487",
+   "title": "PedaCo-Gen: Scaffolding Pedagogical Agency in Human-AI Collaborative Video Authoring",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798741",
+   "system_id": "pedacogen",
+   "evidence": [
+    {
+     "quote": "When clicking the Request Review button, users receive feedback along with a proposed revised script (Fig. 1-d).",
+     "location": "full text, sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9494",
+   "title": "Personalizing Kanji Memorization: Designing Adaptive Mnemonics Based on Learner Preferences Using Large Language Models",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798551",
+   "system_id": "9494",
+   "evidence": [
+    {
+     "quote": "we design and implement an iOS prototype that generates initial mnemonics and enables learners to iteratively adjust component keywords, narrative style, and story constraints.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9836",
+   "title": "MnemoMaker: Creator, Curator, or Something Else? Exploring Human-AI Mnemonic Co-Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799137",
+   "system_id": "mnemomaker",
+   "evidence": [
+    {
+     "quote": "MnemoMaker's co-creation workflow for generating and adapting AI-generated verbal and visual mnemonics.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10219",
+   "title": "Un-default Behavior Tuning: Specifying Model Behavior outside the Norm with LLM Self-Playing and Self-Improving",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789119",
+   "system_id": "10219",
+   "evidence": [
+    {
+     "quote": "self-improvement—iteratively refining the system prompt based on the discovered cases and user feedback",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10227",
+   "title": "Interactive Reasoning: Visualizing and Controlling Chain-of-Thought Reasoning in Large Language Models",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789091",
+   "system_id": "10227",
+   "evidence": [
+    {
+     "quote": "Interactive Reasoning should allow users to directly give feedback to the intermediate reasoning process of the model, in line with the principles of direct manipulation of LLMs [45, 63].",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10278",
+   "title": "Gazeify Then Voiceify: Physical Object Referencing Through Gaze and Voice Interaction with Displayless Smart Glasses",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789112",
+   "system_id": "10278",
+   "evidence": [
+    {
+     "quote": "If a selection error is detected, users can issue a voice command to make corrections. The glasses will then describe the updated selection for confir",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10383",
+   "title": "I Want It That Way: Enabling Interactive Decision Support Using Large Language Models and Constraint Programming",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3685053",
+   "system_id": "10383",
+   "evidence": [
+    {
+     "quote": "The loop is initiated via an initial time suggestion (or set of suggestions) by the system presented to the user (A). During Preference Construction users evaluate a proposed suggestion (B) and either express a new preference (C) to improve the given suggestion, or a…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11792",
+   "title": "Interactive Table Synthesis With Natural Language",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3329120",
+   "system_id": "11792",
+   "evidence": [
+    {
+     "quote": "enables interactive table refining through supplementary instructions (c), (d)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-052",
+ "exemplars": [
+  {
+   "rid": "3246",
+   "title": "An AI-Resilient Text Rendering Technique for Reading and Skimming Documents",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642699",
+   "final_score": 4.85,
+   "why": "Each word carries its recursive-compression stage through text lightness, producing an unusually exact one-to-one encoding that preserves the document’s wording, order, and layout while revealing a continuous importance hierarchy.",
+   "over_the_runner_up": "It outranks HaLLMark because the evidence explicitly establishes an exhaustive per-word value mapping, whereas HaLLMark leaves the treatment of human-authored or otherwise unmarked text implicit."
+  },
+  {
+   "rid": "2937",
+   "title": "The HaLLMark Effect: Supporting Provenance and Transparent Use of Large Language Models in Writing with Interactive Visualization",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641895",
+   "final_score": 4.4,
+   "why": "Orange and green styling encodes AI-written and AI-influenced spans directly in the intact document, making authorship provenance inspectable without a separate annotation region.",
+   "over_the_runner_up": "It narrowly outranks uncertainty highlighting because its evidence specifies both the encoded categories and their visual mapping, while the uncertainty paper’s quote does not identify the highlighting scale."
+  },
+  {
+   "rid": "17234",
+   "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3702320",
+   "final_score": 4.3,
+   "why": "Uncertainty is attached to individual code tokens and rendered on those tokens in place, closely matching the pattern while helping programmers locate potentially consequential completion errors.",
+   "over_the_runner_up": "It outranks Annota because token-level uncertainty is a more general and consequential inspection mechanism than Annota’s conventional categorical highlighting of relevance and missed annotations."
+  }
+ ],
+ "notes": "The final three follow the consensus order, with only small score adjustments. The strongest evidence belongs to rid 3246, whose quote directly establishes the attribute, unit, and visual mapping. Readers should be more cautious about rid 2937 because the quote does not explicitly explain how human-authored text is encoded, and about rid 17234 because it establishes token-level highlighting but omits the precise visual scale and any measured benefit. None of the supplied excerpts demonstrates outcome magnitude, so impact claims remain plausible rather than verified.",
+ "pattern_name": "Color Coded Content",
+ "category_id": "U07",
+ "rated": 26
+}

@@ -1,0 +1,146 @@
+{
+ "pattern_id": "pat-031",
+ "lens": "researcher",
+ "ratings": [
+  {
+   "rid": "2685",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "The quote establishes a user-side confirmation and consent step before care reactions are shared, so it partially resembles a transmission gate. It does not show the outgoing payload rendered with system-computed annotations, nor clearly say that users can edit or redact it at that checkpoint. The move is useful but familiar, and its fit to the full structural signature is weak on the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3606",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "User-led data minimization before content reaches GPT addresses the correct boundary and could materially change privacy outcomes across many chatbot domains. However, the quote does not establish that Rescriber renders the exact payload with computed marks or scores, makes it editable in a review state, or gates sending from that state. The title suggests a relatively interesting local-model design, but the interface mechanism cannot be reconstructed from the provided evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4036",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "This is a strong image-domain instance: the system assesses material users may share, identifies inferable location cues, prompts reflection, and offers ways to conceal them. That closes the loop from inspection to payload modification and addresses a non-obvious privacy failure. The quote does not explicitly confirm a send gate or describe the exact annotation UI, and transfer beyond image privacy requires adaptation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The evidence describes supplying an anonymized interface to a web-agent model, not a visible user-side review state. It shows neither the outgoing payload, a system assessment presented to the user, user editing, nor send-time gating. Automatic anonymization may be valuable, but it is structurally different from Pre-Send Inspection.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence does not support the pattern assignment: it describes an anonymized model interface without any user-visible, editable pre-transmission checkpoint."
+  },
+  {
+   "rid": "6048",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Quantified re-identification risk could become an informative annotation in a pre-send inspection design, and the risk-estimation idea has broad potential. But the evidence only identifies an opportunity to present a risk value. It does not demonstrate an implemented interface, an exact outgoing payload, editing or redaction, or a transmission gate.",
+   "disqualify": true,
+   "disqualify_reason": "The quote is a design opportunity rather than evidence of an interface implementing the pattern's visible, editable pre-send review state."
+  },
+  {
+   "rid": "8508",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "Detecting confidential leaks and visualizing data flow are adjacent privacy and explainability mechanisms, but the quote does not place them in a checkpoint before transmission. It also provides no evidence that the exact payload is annotated, editable, and gated. Impact and novelty cannot be established from a proposed framework description alone.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports privacy detection and data-flow visualization, but not Pre-Send Inspection's user-visible, editable transmission gate."
+  },
+  {
+   "rid": "8519",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "Encouraging reconsideration before harmful behavior occurs is temporally proactive, but timing alone is not this pattern. The quote does not show the proposed outgoing video or post, a system-computed assessment attached to it, an editable review state, or sending from that state. The cited sentence is a general design rationale rather than evidence of the mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "The quote supports a generic proactive intervention, not inspection and editing of an assessed outgoing payload before transmission."
+  },
+  {
+   "rid": "9215",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote plainly establishes a review step before interview material is shared and says post-editing determines the transmitted payload. That is a clear, consequential gate with strong transfer potential to other disclosure settings. Its fit is incomplete because the evidence does not show any system-computed marks, scores, or assessment displayed alongside the material; review-after-composition is also a fairly established interaction move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9597",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "The generated response is refined before delivery, clearly making transmission contingent on human review and allowing edits to alter what the recipient receives. This is consequential in mental-health peer support and cleanly illustrates editing a generated draft. Still, the quote provides no separate system assessment or annotations on the payload, and human editing of an AI draft is now a settled design pattern rather than a substantial expansion of the design space.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13808",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Imago Obscura most closely matches the signature: it operates on the image users intend to share, computes privacy risks, exposes those risks for identification, and lets users mitigate them through image editing before sharing. The assess-then-edit loop plausibly changes disclosure outcomes and generalizes conceptually beyond images. The quote does not explicitly state that sending is technically gated or describe the annotation rendering, so impact and evidence stop short of 5.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

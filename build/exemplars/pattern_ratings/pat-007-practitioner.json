@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-007",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "666",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The anchor/test-concept workflow suggests a controlled contrast, but the quote only says that bias queries produce candidates. It does not establish alteration of an already-run input, rerunning the same model, or a paired output display. Impact is plausible from the title but not demonstrated by the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2325",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Testing several user-authored templates simultaneously while holding the input variable constant closely matches a prompt-level perturb-and-compare sweep. The mechanism is portable and concrete, although the quote does not explicitly identify an original template as the baseline or describe the resulting comparison display.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5582",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Comparing generations under controlled conditions supports the comparison half of the pattern and offers an interesting alternative to gold standards. However, the evidence does not specify the altered input, user-controlled transformation, rerun flow, or interface display, so rebuildability and pattern centrality remain uncertain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8558",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Changing a small set of input features to produce counterfactual explanations is broadly transferable and can materially improve understanding. The quote does not say whether users author the changes, whether the original and altered inputs use the same model, or whether their outputs are visibly compared, making this only a partial match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9311",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Holding linguistic content constant while varying accent and perceived gender is a legible controlled perturbation with strong bias-audit value. But the quote describes a study design rather than a user-parameterized interface and provides no evidence of an original-versus-altered output display.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10126",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is the cleanest instance: systematically remove prompt keywords, rerun image generation, and compare original and altered images through similarity. The transformation, outputs, and comparison are all explicit and readily transferable to other model inputs, though the available evidence does not establish measured user impact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10173",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote only describes interpreting two plagiarized summaries across two runs. It supplies no controlled, known alteration of a held input and no comparison keyed to a user-specified transformation.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support a Perturb-and-Compare assignment: repeated runs on two summaries are not an interface-induced controlled perturbation."
+  },
+  {
+   "rid": "10953",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Users explore prompt variations and test every variation against the same set of examples, providing a clear, reusable sweep mechanism. The quote does not explicitly describe an original baseline or the visual form of the output comparison, and prompt-variant testing is useful but relatively expected.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11819",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Simultaneously evaluating prompts designed to isolate a dependent variable strongly reflects controlled perturbation organized around the manipulated dimension. It is highly portable, although the evidence does not fully specify how users construct variants or how original and altered outputs are joined on screen.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12469",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Keyword and paraphrase perturbations are known, reusable transformation strategies, and the title implies testing and iteration. The supplied fragment does not show a held baseline, model reruns, comparison display, or the user's control over parameters, so it cannot establish the complete pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12559",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Editing examples along precomputed directions could instantiate controlled model manipulations, and the title signals visual comparison. The evidence fragment is too incomplete to reveal what users do, whether the same model is rerun, or what paired outputs appear, so all judgments must remain conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12590",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A strategy selector that exposes perturbation results in a dedicated column suggests a visible comparison organized by known transformation strategy. The quote does not establish how perturbations are authored, whether a clean baseline is retained, or whether original and altered outputs are directly paired.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12821",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Applying known image corruptions, regenerating captions, and evaluating the results closely matches a robustness-oriented perturb-and-compare pipeline. The mechanism transfers readily beyond captioning, but the quote does not explicitly state that users parameterize corruptions or that clean and corrupted outputs are presented together.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12842",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Users choose perturbation granularity and customize rules for fixing and replacing input segments, giving designers a highly concrete and transferable control mechanism. The title supports counterfactual analysis, but the quote itself does not explicitly describe the original-versus-altered output display, preventing maximum evidence strength.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13413",
+   "scores": {
+    "representativeness": 3,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 3
+   },
+   "reason": "Changing a social-system design or inserting an intervention and observing shifted simulated behavior is an unusually consequential, portable what-if mechanism. The evidence does not show whether an already-run scenario is retained as a baseline, whether users parameterize the change, or how outputs are visibly compared, so it is not a clean structural match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15884",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Sampling latent locations, decoding them into inputs, and reevaluating a classifier provides interactive model probing. However, these samples are an exploratory field rather than clearly controlled variants of one held input, and the quote supplies no original-versus-altered comparison keyed to a user-specified rule.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16494",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 3
+   },
+   "reason": "User-known spy objects act as controlled negative tests, making model errors especially readable; this is a compelling transplantation of induced-decoy auditing. The quote does not establish an original run, a corresponding altered run, or a paired display, so it demonstrates the perturbation logic more strongly than the full comparison structure.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

@@ -1,0 +1,1948 @@
+{
+ "dimension": {
+  "category_id": "U06",
+  "category_name": "Artifact Editing & Revision",
+  "category_slug": "artifact-editing-and-revision",
+  "stage": "Acting on the output",
+  "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+  "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+  "pattern_count": 10,
+  "eligible_papers": 328,
+  "candidate_count": 328,
+  "patterns": [
+   {
+    "pattern_id": "pat-010",
+    "pattern_name": "Prefilled Editable Templates",
+    "short_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state."
+   },
+   {
+    "pattern_id": "pat-018",
+    "pattern_name": "Addressable Segments",
+    "short_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object."
+   },
+   {
+    "pattern_id": "pat-019",
+    "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+    "short_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact."
+   },
+   {
+    "pattern_id": "pat-021",
+    "pattern_name": "Localized Tweaking Support",
+    "short_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent."
+   },
+   {
+    "pattern_id": "pat-024",
+    "pattern_name": "Program-as-Output",
+    "short_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact."
+   },
+   {
+    "pattern_id": "pat-029",
+    "pattern_name": "Reverse Engineered Representation",
+    "short_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates."
+   },
+   {
+    "pattern_id": "pat-030",
+    "pattern_name": "Two-Way Sync View",
+    "short_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others."
+   },
+   {
+    "pattern_id": "pat-095",
+    "pattern_name": "Manual Fallback Editing",
+    "short_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt."
+   },
+   {
+    "pattern_id": "pat-096",
+    "pattern_name": "Accept/Reject Controls",
+    "short_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary."
+   },
+   {
+    "pattern_id": "pat-097",
+    "pattern_name": "Mid-Run Intervention",
+    "short_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends."
+   }
+  ]
+ },
+ "shard": 3,
+ "candidates": [
+  {
+   "rid": "8317",
+   "title": "Exploring Visual Prompts: Refining Images with Scribbles and Annotations in Generative AI Image Tools",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719802",
+   "system_id": "8317",
+   "prefilter_score": 5.32,
+   "prefilter_parts": {
+    "relevance_density": 3.37,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 24.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Illustration of the Three Input Methods Tested in the Study: (from left to right) text prompts (typed instructions requiring inpainting for area selection), annotations (text or visual symbols on the image, with optional inpainting selected by the user), and scribbles (freeform scribbles on the image, with optional inpainting selected by …",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Moreover, research has primarily focused on input methods for ideation, with limited attention to refinement tasks.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5488",
+   "title": "SoundStager: Interactive Design of Story-Driven GenAI Soundscapes for Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790870",
+   "system_id": "soundstager",
+   "prefilter_score": 5.306,
+   "prefilter_parts": {
+    "relevance_density": 3.806,
+    "focus": 0.3,
+    "evidence_location": 1.2,
+    "_density_raw": 26.47
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(A) Stem View displays editable layers for keynote, signal, soundmark, and archetypal sounds, supporting fine-grained control.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "SoundStager’s interface for AI-assisted sound design, supporting iterative, story-driven soundscape creation through a mix of conversational and manual control.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9385",
+   "title": "Interaction as Intelligence: A Transparent, Fine-Grained Multi-Agent Deep Research System for Human-Agent Collaboration",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798906",
+   "system_id": "9385",
+   "prefilter_score": 5.305,
+   "prefilter_parts": {
+    "relevance_density": 3.605,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 25.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-097",
+     "pattern_name": "Mid-Run Intervention",
+     "pattern_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "allowing users to intervene at intermediate checkpoints",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(E) Report revision",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "16919",
+   "title": "DataSway: Vivifying Metaphoric Visualization with Animation Clip Generation and Coordination",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813048",
+   "system_id": "datasway",
+   "prefilter_score": 5.268,
+   "prefilter_parts": {
+    "relevance_density": 3.018,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 22.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(C) Keyframe editor for element-wise animation clips.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Leveraging state-of-the-art code generation techniques, we hope to convert textual descriptions of users to guide animation generation.",
+     "evidence_location": "system sec 4 (DG1)"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Users can also impose layout-centric coordination using direct manipulation.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16923",
+   "title": "MindTrellis: Co-Creating Knowledge Structures with AI through Interactive Visual Exploration",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813045",
+   "system_id": "mindtrellis",
+   "prefilter_score": 5.26,
+   "prefilter_parts": {
+    "relevance_density": 4.36,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 28.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We present MindTrellis, an interactive visual system that addresses this gap by letting users and AI collaboratively build a knowledge graph combining document-derived and user-contributed knowledge.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5384",
+   "title": "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791418",
+   "system_id": "crosslit",
+   "prefilter_score": 5.259,
+   "prefilter_parts": {
+    "relevance_density": 4.209,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 27.71
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-030",
+     "pattern_name": "Two-Way Sync View",
+     "pattern_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "CrossLit allows researchers to group and annotate papers visually while generating aligned textual structures, and to edit text that automatically updates visual representations.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10177",
+   "title": "ConstitutionMaker: Interactively Critiquing Large Language Models by Converting Feedback into Principles",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645144",
+   "system_id": "constitutionmaker",
+   "prefilter_score": 5.238,
+   "prefilter_parts": {
+    "relevance_density": 3.538,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 25.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The three principle elicitation features: kudos, critique and rewrite.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12319",
+   "title": "SPROUT: An Interactive Authoring Tool for Generating Programming Tutorials With the Visualization of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3410523",
+   "system_id": "sprout",
+   "prefilter_score": 5.205,
+   "prefilter_parts": {
+    "relevance_density": 3.505,
+    "focus": 0.2,
+    "evidence_location": 1.5,
+    "_density_raw": 25.26
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The tutorial view (Fig. 3(B)) displays the text content generated by LLM with a block-based structure, where a block presents a paragraph.",
+     "evidence_location": "full text, system sec V-A"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "These prompt strategies empower authors to iteratively refine and customize the programming tutorial content according to their individual preferences and needs.",
+     "evidence_location": "full text, system sec IV-B"
+    },
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "they can simply brush their target code snippet and click the floating button to effortlessly add new content to the current tutorial",
+     "evidence_location": "full text, system sec V-B"
+    },
+    {
+     "pattern_id": "pat-097",
+     "pattern_name": "Mid-Run Intervention",
+     "pattern_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "users can use the Pause option to halt the generation process and review the current tutorial content",
+     "evidence_location": "full text, system sec V-B"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 15,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4835",
+   "title": "Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790974",
+   "system_id": "cerebra",
+   "prefilter_score": 5.17,
+   "prefilter_parts": {
+    "relevance_density": 3.37,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 24.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "and supports iterative refinement to improve generated scripts",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The Script View, which visualizes the structure of the generated SQL using a data flow diagram. This view displays input database tables (B1) and subqueries (B3), with links between nodes indicating dependencies (B2).",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16595",
+   "title": "It's more of a vibe I'm going for: Designing Text-to-Music Generation Interfaces for Video Creators",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735814",
+   "system_id": "16595",
+   "prefilter_score": 5.156,
+   "prefilter_parts": {
+    "relevance_density": 4.427,
+    "focus": 0.429,
+    "evidence_location": 0.3,
+    "_density_raw": 29.49
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we developed a creative assistant for music generation using editable vibe-based recommendations and structured refinement of music output",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4519",
+   "title": "MoWa: An Authoring Tool for Refining AI-Generated Human Avatar Motions Through Latent Waveform Manipulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714253",
+   "system_id": "mowa",
+   "prefilter_score": 5.119,
+   "prefilter_parts": {
+    "relevance_density": 3.119,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 23.05
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "MoWa is a system designed to take AI-generated motions as input and enhance their expressiveness.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "the system also supports editing at the keyframe level, which enables users to fine-tune individual poses within the motion",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9762",
+   "title": "XAgen: An Explainability Tool for Identifying and Correcting Failures in Multi-Agent Workflows",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798531",
+   "system_id": "xagen",
+   "prefilter_score": 5.117,
+   "prefilter_parts": {
+    "relevance_density": 3.488,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 25.15
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "log visualization, which parses complex raw terminal logs into an interactive flowchart of agents, tasks, and tools",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "XAgen helped users locate failures more easily, attribute to specific agents or steps, and iteratively improve configurations",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6135",
+   "title": "CritiqueCrew: Orchestrating Multi-Perspective Conversational Design Critique",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791391",
+   "system_id": "critiquecrew",
+   "prefilter_score": 5.102,
+   "prefilter_parts": {
+    "relevance_density": 3.102,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 23.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Designers first select target frames and provide contextual inputs such as product goals and brand keywords synthesized into a structured agenda by the Lead Coordinator",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-029",
+     "pattern_name": "Reverse Engineered Representation",
+     "pattern_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Through the Figma Plugin API, the frontend can read design layer data from the canvas in real…",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "DG2: Seamlessly translating critique into actionable solutions. Rather than delivering abstract suggestions, CritiqueCrew provides interactive remediation tools that allow designers to preview and apply modifications directly within their design context.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13937",
+   "title": "In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00023",
+   "system_id": "13937",
+   "prefilter_score": 5.092,
+   "prefilter_parts": {
+    "relevance_density": 2.767,
+    "focus": 1.125,
+    "evidence_location": 1.2,
+    "_density_raw": 21.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To allow testers to rapidly modify prototypes (e.g., in response to in-the-wild inspirations), MobileMaker also supports NL revisions (Fig. 2E).",
+     "evidence_location": "full text sec IV-B2"
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system then uses a few-shot LLM prompt to instantly generate a prototype. Each example in the few-shot prompt consists of an input NL request and output JSON specification, which encompasses configurations for input, action, and output widgets and as detailed previously.",
+     "evidence_location": "full text sec IV-B1"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Alternatively, users can create or revise prototypes with natural language via the ”Revise with AI” panel (E).",
+     "evidence_location": "full text fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2654",
+   "title": "SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions for Blind or Low-Vision Viewers",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642632",
+   "system_id": "spica_audiodesc",
+   "prefilter_score": 5.059,
+   "prefilter_parts": {
+    "relevance_density": 4.159,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 27.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Spica ofers interactive mechanisms for supporting temporal navigation of frame captions and spatial exploration of objects within key frames.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10243",
+   "title": "Vistoryteller: Designing Data Stories with LLM Agent-Based Generation and Interactive User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789086",
+   "system_id": "vistoryteller",
+   "prefilter_score": 5.036,
+   "prefilter_parts": {
+    "relevance_density": 3.203,
+    "focus": 0.333,
+    "evidence_location": 1.5,
+    "_density_raw": 23.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The editing panel (Fig. 7B) enables direct manipulation of data facts (Eq. 1). Specifically, altering the type automatically updates the chart style; adjusting the measure or breakdown reconfigures data columns or visual encodings; and modifying the subspace updates the data scope.",
+     "evidence_location": "system sec 6.1"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "with options to regenerate or define custom themes",
+     "evidence_location": "system sec 6.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10187",
+   "title": "Rationalizer: Leveraging LLM to Support User Providing the Rationales Behind the Rating of Likert Scale Questionnaires",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789171",
+   "system_id": "rationalizer",
+   "prefilter_score": 5.019,
+   "prefilter_parts": {
+    "relevance_density": 3.069,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 22.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(c) Text feld where participants can enter their own rationales (…",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16676",
+   "title": "StreetDesignAI: Broadening Designer Perspectives Through Multi-Persona Evaluation of Cycling Infrastructure",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812888",
+   "system_id": "streetdesignai",
+   "prefilter_score": 5.0,
+   "prefilter_parts": {
+    "relevance_density": 2.75,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 21.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(3) visualization-driven iteration through parameterized design edits that are rendered at the street level and immediately re-evaluated",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6284",
+   "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790553",
+   "system_id": "papertok",
+   "prefilter_score": 4.982,
+   "prefilter_parts": {
+    "relevance_density": 2.482,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 20.5
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In Step 2: Storyboarding (Figure 2b), users are presented with a potential script as segmented scenes, each paired with a corresponding visual to be generated.",
+     "evidence_location": "system sec 4.1"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Researchers can then refine based on their preferences with further prompting.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "On the right panel is an editor where the currently selected script is displayed, so users can refine their narrative.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14978",
+   "title": "Grounding with Structure: Exploring Design Variations of Grounded Human-AI Collaboration in a Natural Language Interface",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3686902",
+   "system_id": "14978",
+   "prefilter_score": 4.975,
+   "prefilter_parts": {
+    "relevance_density": 4.175,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 27.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "1) a grounding interface allows users to start with a provisional input and then invite a conversational agent to complete their input",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12862",
+   "title": "Urbanite: A Dataflow-Based Framework for Human-AI Interactive Alignment in Urban Visual Analytics",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634644",
+   "system_id": "urbanite",
+   "prefilter_score": 4.936,
+   "prefilter_parts": {
+    "relevance_density": 3.236,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 23.95
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(c) The user accepts nodes for geometry and score calculation, using code generation to fill them in.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4871",
+   "title": "AI of Oz: Enhancing Wizard of Oz Studies in HCI with AI Assistance for Human Moderation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791324",
+   "system_id": "4871",
+   "prefilter_score": 4.931,
+   "prefilter_parts": {
+    "relevance_density": 2.431,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 20.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(E) Response options (AI-suggested, Default, Manual).",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The moderator can approve, edit, or replace suggestions(DG2).",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10078",
+   "title": "ScatterShot: Interactive In-context Example Curation for Text Transformation",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584059",
+   "system_id": "scattershot",
+   "prefilter_score": 4.918,
+   "prefilter_parts": {
+    "relevance_density": 2.968,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 22.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can make edits to LLM outputs, sort the candidates into positive demonstrative examples (+), negative ones (-), or just not include the candidate (O).",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "helps users label more efficiently with the help of an LLM and the current example set",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16542",
+   "title": "Varif.ai to Vary and Verify User-Driven Diversity in Scalable Image Generation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735847",
+   "system_id": "16542",
+   "prefilter_score": 4.908,
+   "prefilter_parts": {
+    "relevance_density": 4.008,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 26.91
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "employs text-to-image and Large Language Models to iteratively i) (re)generate a set of images",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "11792",
+   "title": "Interactive Table Synthesis With Natural Language",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3329120",
+   "system_id": "11792",
+   "prefilter_score": 4.884,
+   "prefilter_parts": {
+    "relevance_density": 2.934,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 22.34
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "enables interactive table refining through supplementary instructions (c), (d)",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "NL2Rigel can interpret the given NL instructions into a table synthesis pipeline corresponding to Rigel specifications, a declarative language for tabular data transformation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4884",
+   "title": "DesignTrace: Exploring, Iterating and Tracking Design Alternatives with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791036",
+   "system_id": "designtrace",
+   "prefilter_score": 4.867,
+   "prefilter_parts": {
+    "relevance_density": 2.7,
+    "focus": 0.667,
+    "evidence_location": 1.5,
+    "_density_raw": 21.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) apply attributes to selected regions or the whole image using lasso selections",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users add attributes by (a) typing manually, (b) selecting suggested tags, or (c) extracting from an image or image region.",
+     "evidence_location": "system sec 5.1"
+    },
+    {
+     "pattern_id": "pat-030",
+     "pattern_name": "Two-Way Sync View",
+     "pattern_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "semantic artifacts support extraction, creation, and composition, and visual artifacts support diverse editing. Both operate in parallel or cumulatively and are bidirectionally transformable.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13715",
+   "title": "SQUIRE: Interactive UI Authoring via Slot QUery Intermediate REpresentations",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747672",
+   "system_id": "squire",
+   "prefilter_score": 4.866,
+   "prefilter_parts": {
+    "relevance_density": 2.666,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 21.25
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "All interactions are explicitly scoped, with guarantees on what portions of the UI will and will not be mutated.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "The Sqire system incrementally generates a tree-based intermediate representation A that concisely encodes high level architecture as a component hierarchy.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14000",
+   "title": "The Command Line GUIde: Graphical Interfaces from Man Pages via AI",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00026",
+   "system_id": "14000",
+   "prefilter_score": 4.851,
+   "prefilter_parts": {
+    "relevance_density": 2.851,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 22.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-030",
+     "pattern_name": "Two-Way Sync View",
+     "pattern_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "GUI DE offers the user a bidirectional interface for authoring a command: the selected options in the GUI updates live as they type a command, and, in the reverse, graphical interaction on the GUI edits the command.",
+     "evidence_location": "intro (full text)"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "GUI DE provides an AI prompt box 2 for generating and editing commands, similar to recent AI terminal apps [2].",
+     "evidence_location": "system sec II (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13726",
+   "title": "Flowco: Mixed-Initiative Authoring of Reliable End-to-End Data Analyses via Dataflow Graphs and LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747636",
+   "system_id": "flowco",
+   "prefilter_score": 4.833,
+   "prefilter_parts": {
+    "relevance_density": 2.733,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 21.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In response, Flowco synthesizes the requirements and Python code for that node and runs it, after which Flowco presents a fragment of the dataset in the canvas.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Alex selects the node and D examines the full dataset in the navigable view presented to the right in the details panel.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4232",
+   "title": "Why So Serious? Exploring Timely Humorous Comments in AAC Through AI-Powered Interfaces",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714102",
+   "system_id": "4232",
+   "prefilter_score": 4.817,
+   "prefilter_parts": {
+    "relevance_density": 2.867,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 22.24
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) context selection from the transcript",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13703",
+   "title": "Synthia: Visually Interpreting and Synthesizing Feedback for Writing Revision",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747703",
+   "system_id": "synthia",
+   "prefilter_score": 4.817,
+   "prefilter_parts": {
+    "relevance_density": 4.142,
+    "focus": 0.375,
+    "evidence_location": 0.3,
+    "_density_raw": 27.52
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "strategize their revisions by breaking down large feedback collections into interactive visual bubbles that can be clustered, colored, and resized to reveal patterns and highlight valuable suggestions",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4729",
+   "title": "ADCanvas: Accessible and Conversational Audio Description Authoring for Blind and Low Vision Creators",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791158",
+   "system_id": "adcanvas",
+   "prefilter_score": 4.813,
+   "prefilter_parts": {
+    "relevance_density": 2.884,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 22.25
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ADCanvas processes the video’s audio track and populates the script editor with AD script: a list of timestamped entries, each followed by a suggested line of AD (Figure 1-d)",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The user can also edit the AD script through the WebVTT-based AD editor (d, d2) line by li…",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5627",
+   "title": "When Should Users Check? Modeling Confirmation Frequency in Multi-Step Agentic AI Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790655",
+   "system_id": "5627",
+   "prefilter_score": 4.757,
+   "prefilter_parts": {
+    "relevance_density": 3.857,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 26.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-097",
+     "pattern_name": "Mid-Run Intervention",
+     "pattern_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "48 participants monitored AI agents and repaired their mistakes while executing tasks",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4676",
+   "title": "Hey Dashboard!: Supporting Voice, Text, and Pointing Modalities in Dashboard Onboarding using Large Language Models",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791766",
+   "system_id": "4676",
+   "prefilter_score": 4.699,
+   "prefilter_parts": {
+    "relevance_density": 2.599,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 20.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "pattern_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When a user selects a region, the system captures its coordinates and maps them onto the dashboard layout to answer pointed questions.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13660",
+   "title": "Shape n' Swarm: Hands-on, Shape-aware Generative Authoring with Swarm UI and LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747781",
+   "system_id": "13660",
+   "prefilter_score": 4.673,
+   "prefilter_parts": {
+    "relevance_density": 3.773,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 26.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system employs multiple script-generating LLM agents that work together to handle user inputs for three major generative tasks: (1) thematically interpreting the shapes created by users; (2) creating animations for the manipulated shape; and (3) fexibly building interaction by mapping I/O.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13373",
+   "title": "RuleScope: Semantic-Aware Authoring of Data Validation Rules",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3697222",
+   "system_id": "rulescope",
+   "prefilter_score": 4.664,
+   "prefilter_parts": {
+    "relevance_density": 2.264,
+    "focus": 0.9,
+    "evidence_location": 1.5,
+    "_density_raw": 19.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "For direct parameter modifications, the Refiner supports editing the validation rule configuration file directly",
+     "evidence_location": "system sec 4.3 (full text)"
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "pattern_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Refiner subsequently triggers the Implementer (Section IV-B) with modified parameters to re-validate the dataset.",
+     "evidence_location": "system sec 4.3 (full text)"
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "pattern_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) Rule Implementer converts validation rules into executable functions;",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "1) Direct parameter modification for simple refinement, such as True/False settings in missing value detection;",
+     "evidence_location": "system sec 4.3 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13794",
+   "title": "ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747644",
+   "system_id": "respark",
+   "prefilter_score": 4.663,
+   "prefilter_parts": {
+    "relevance_density": 2.163,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 18.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The report is divided into six interdependent segments, each corresponding to an analytical objective and report content (Figure 3d).",
+     "evidence_location": "system sec 5"
+    },
+    {
+     "pattern_id": "pat-029",
+     "pattern_name": "Reverse Engineered Representation",
+     "pattern_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we present ReSpark, a system that leverages large language models (LLMs) to reverse-engineer analysis logic from existing reports and adapt it to new datasets.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10223",
+   "title": "Criticality: Scaffolding Decision-Making with Interactive Critical Thinking and Evidence-Based Reasoning Traces",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789077",
+   "system_id": "criticality",
+   "prefilter_score": 4.651,
+   "prefilter_parts": {
+    "relevance_density": 2.951,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 22.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Assumptions having insufficient supporting evidence from the data are toggled off by default shown as low opacity (A). The user can inspect the individual evidence (B) and override the decision",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "pattern_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "On pressing the auto-fix button (B), Criticality suggests the fixed content and contrasts it to the existing content (C).",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8751",
+   "title": "Rambler in the Wild: A Diary Study of LLM-Assisted Writing With Speech",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706676",
+   "system_id": "8751",
+   "prefilter_score": 4.649,
+   "prefilter_parts": {
+    "relevance_density": 3.32,
+    "focus": 0.429,
+    "evidence_location": 0.9,
+    "_density_raw": 24.48
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Semantic Split operates on an individual Ramble to divide one Ramble into N Rambles based on its content (the scissors button in Figure 1).",
+     "evidence_location": "full text sec 2"
+    },
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "pattern_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Each recording is transcribed by a real-time STT API and then preprocessed with an LLM that automatically cleans up any disfluencies and punctuation errors, completes broken sentences, and smooths transitions in the raw transcript.",
+     "evidence_location": "full text sec 2"
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "pattern_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "Rambler also provides manual editing functions. Manual Merge concatenates the text of two Rambles into one Ramble (through drag and drop).",
+     "evidence_location": "full text sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13551",
+   "title": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606723",
+   "system_id": "style2fab",
+   "prefilter_score": 4.634,
+   "prefilter_parts": {
+    "relevance_density": 2.834,
+    "focus": 1.5,
+    "evidence_location": 0.3,
+    "_density_raw": 22.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "pattern_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We introduce a method for automatically segmenting 3D models into functional and aesthetic elements.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Sensemaking",
+    "Risk of Harm and Accountability"
+   ]
+  }
+ ]
+}

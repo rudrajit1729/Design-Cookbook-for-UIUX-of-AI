@@ -1,0 +1,668 @@
+{
+ "pattern": {
+  "pattern_id": "pat-019",
+  "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+  "pattern_slug": "propose-critique-revise-iterative-refinement",
+  "short_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact.",
+  "definition": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact. The cycle repeats without returning to a blank specification.",
+  "structural_signature": "A cycle in the control graph in which the previous output is carried into the next call together with the user's critique. Artifact identity persists across iterations — the next state is an edit of the current one, not an independent draw — so the state at round n depends on rounds 1 through n-1.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "11931",
+   "title": "Smartboard: Visual Exploration of Team Tactics with LLM Agent",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456200",
+   "system_id": "smartboard",
+   "evidence": [
+    {
+     "quote": "We add comments along with the current response to guide the agent in refining its response.",
+     "location": "system sec 5.4 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 13,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12254",
+   "title": "Human-Guided Image Generation for Expanding Small-Scale Training Image Datasets",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567053",
+   "system_id": "12254",
+   "evidence": [
+    {
+     "quote": "In this strategy, users only need to provide feedback on the images (e.g., which images are undesired). Then, an evolutionary-algorithm-based strategy is utilized to automatically refine the prompts to accommodate the feedback.",
+     "location": "system sec 5.3.1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12777",
+   "title": "MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633884",
+   "system_id": "misvisfix",
+   "evidence": [
+    {
+     "quote": "These components operate in sequence while facilitating iterative refinement through user interaction.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13004",
+   "title": "Interactive Visual Assessment for Text-to-Image Generation Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3658714",
+   "system_id": "13004",
+   "evidence": [
+    {
+     "quote": "Through interactive visualizations and visual feedback loops, users can continuously refine test cases without requiring complete dataset reconstruction, ensuring the testing process remains effective as models advance.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13354",
+   "title": "Orchestrating Generative AI Paradigms With Human-in-the-Loop for 3D Generation",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3695993",
+   "system_id": "13354",
+   "evidence": [
+    {
+     "quote": "If satisfied, they can save the updated images for 3D reconstruction; otherwise, they may adjust the inpainting settings, prompt description, or mask and perform the inpainting process again.",
+     "location": "system sec 3.2 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13373",
+   "title": "RuleScope: Semantic-Aware Authoring of Data Validation Rules",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3697222",
+   "system_id": "rulescope",
+   "evidence": [
+    {
+     "quote": "The Refiner subsequently triggers the Implementer (Section IV-B) with modified parameters to re-validate the dataset.",
+     "location": "system sec 4.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13510",
+   "title": "Promptify: Text-to-Image Generation through Interactive Prompt Exploration with Large Language Models",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606725",
+   "system_id": "promptify",
+   "evidence": [
+    {
+     "quote": "Promptify should support the iterative workfow that includes ideation of subject matters and styles",
+     "location": "system sec 4 (D2)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13524",
+   "title": "Usable and Fast Interactive Mental Face Reconstruction",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606795",
+   "system_id": "13524",
+   "evidence": [
+    {
+     "quote": "Over multiple iterations, the system shows diferent face images to the user, which they have to rank according to the perceived similarity with their mental image. This feedback is used to extract relevant image features across iterati…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13573",
+   "title": "WorldSmith: Iterative and Expressive Prompting for World Building with a Generative AI",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606772",
+   "system_id": "worldsmith",
+   "evidence": [
+    {
+     "quote": "The system needs to allow users to continually incorporate new details into their world. Therefore, the prototype should facilitate the ability to make layered revisions to images that users have previously created.",
+     "location": "system sec 4 (D2)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13649",
+   "title": "NoteIt: A System Converting Instructional Videos to Interactable Notes Through Multimodal Video Understanding",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747626",
+   "system_id": "noteit",
+   "evidence": [
+    {
+     "quote": "With NoteIt’s interface, users can interact with the system to further customize the content and presentation formats of the notes according to their preferences.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "system_id": "echoladder",
+   "evidence": [
+    {
+     "quote": "EchoLadder accepts users’ verbal instructions at varied levels of abstraction and spatial specificity, generates concrete design suggestions throughout a progressive UIST ’25, September 28-October 1, 2025, Busan, Republic of Korea design process.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13741",
+   "title": "StoryEnsemble: Enabling Dynamic Exploration & Iteration in the Design Process with AI and Forward-Backward Propagation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747772",
+   "system_id": "storyensemble",
+   "evidence": [
+    {
+     "quote": "DG2. Enable on-demand feedback (N8, N9). Offer real-time feedback on design artifacts and streamline its incorporation, encouraging users to reflect and continuously refine ideas with tight feedback loops.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13743",
+   "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747668",
+   "system_id": "neurosync",
+   "evidence": [
+    {
+     "quote": "enables users to refine this understanding through graph-based visualizations, and feeds the refined understanding back to the LLM to generate code that more accuratel",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13791",
+   "title": "Steering Semantic Data Processing With DocWrangler",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747625",
+   "system_id": "13791",
+   "evidence": [
+    {
+     "quote": "(ii) LLM-Assisted Prompt Refinement that transforms user notes into improved operations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13937",
+   "title": "In Situ AI Prototyping: Infusing Multimodal Prompts into Mobile Settings with MobileMaker",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00023",
+   "system_id": "13937",
+   "evidence": [
+    {
+     "quote": "To allow testers to rapidly modify prototypes (e.g., in response to in-the-wild inspirations), MobileMaker also supports NL revisions (Fig. 2E).",
+     "location": "full text sec IV-B2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14896",
+   "title": "The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3641019",
+   "system_id": "14896",
+   "evidence": [
+    {
+     "quote": "Moreover, it allows users to easily give feedback on the search results by selecting semantic regions in the images to further express their fine-grained intents.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "15610",
+   "title": "Leveraging Large Language Models for Collective Decision-Making",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757418",
+   "system_id": "15610",
+   "evidence": [
+    {
+     "quote": "The system refines and improves its proposed options over time, ensuring that many of the members’ individual preferences are satisfied in an equitable way.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15877",
+   "title": "Context-Mediated Domain Adaptation in Multi-Agent Sensemaking Systems EICS003",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3812772",
+   "system_id": "15877",
+   "evidence": [
+    {
+     "quote": "rings represent iterative interaction cycles; thicker rings indicate more edits required, and thinner rings indicate reduced editing effort",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16043",
+   "title": "Metaphorian: Leveraging Large Language Models to Support Extended Metaphor Creation for Science Writing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595996",
+   "system_id": "metaphorian",
+   "evidence": [
+    {
+     "quote": "MetaphorBranch enhances chained iterations of sub-metaphors (DG4; Fig. 5). Users can iteratively revise individual sub-metaphors by referencing alternative ideas for them.",
+     "location": "full text sec 5.4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16542",
+   "title": "Varif.ai to Vary and Verify User-Driven Diversity in Scalable Image Generation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735847",
+   "system_id": "16542",
+   "evidence": [
+    {
+     "quote": "employs text-to-image and Large Language Models to iteratively i) (re)generate a set of images",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "16595",
+   "title": "It's more of a vibe I'm going for: Designing Text-to-Music Generation Interfaces for Video Creators",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735814",
+   "system_id": "16595",
+   "evidence": [
+    {
+     "quote": "we developed a creative assistant for music generation using editable vibe-based recommendations and structured refinement of music output",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16676",
+   "title": "StreetDesignAI: Broadening Designer Perspectives Through Multi-Persona Evaluation of Cycling Infrastructure",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812888",
+   "system_id": "streetdesignai",
+   "evidence": [
+    {
+     "quote": "(3) visualization-driven iteration through parameterized design edits that are rendered at the street level and immediately re-evaluated",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16682",
+   "title": "SketchConcept: Sketching-based Concept Composition for Product Design using Multimodal Large Language Model",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813080",
+   "system_id": "sketchconcept",
+   "evidence": [
+    {
+     "quote": "Workflow of concept refinement. (a) sketch and description of the user; (b) refined design description; (c) images generated with the refined description",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16742",
+   "title": "MediMate: Co-Crafting Patient-Centered Medical Explanations Using LLMs as a Rehearsal Partner",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812891",
+   "system_id": "medimate",
+   "evidence": [
+    {
+     "quote": "physicians to rehearse and iteratively refine patient-friendly explanations using LLM-generated analogies in a low-stakes setting",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

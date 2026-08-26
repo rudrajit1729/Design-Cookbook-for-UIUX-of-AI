@@ -1,0 +1,534 @@
+{
+ "dimensions": [
+  {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_slug": "input-context-and-specification",
+   "stage": "Setting the context",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "pattern_count": 11,
+   "eligible_papers": 568,
+   "candidate_count": 568,
+   "patterns": [
+    {
+     "pattern_id": "pat-015",
+     "pattern_name": "Question-Driven Elicitation",
+     "short_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from."
+    },
+    {
+     "pattern_id": "pat-022",
+     "pattern_name": "Artifact Derived Controls",
+     "short_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates."
+    },
+    {
+     "pattern_id": "pat-027",
+     "pattern_name": "Specification by Demonstration",
+     "short_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification."
+    },
+    {
+     "pattern_id": "pat-032",
+     "pattern_name": "Source Conditioned Generation",
+     "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on."
+    },
+    {
+     "pattern_id": "pat-034",
+     "pattern_name": "Artifact Generation Property Controls",
+     "short_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance."
+    },
+    {
+     "pattern_id": "pat-035",
+     "pattern_name": "Atomic AI Action Menu",
+     "short_summary": "Instead of an open input box, the system attaches the same small, named menu of prepared prompts to every content unit it holds."
+    },
+    {
+     "pattern_id": "pat-039",
+     "pattern_name": "Spatial Canvas",
+     "short_summary": "The user places elements on an open two-dimensional surface and the system reads their positions and relations as specification."
+    },
+    {
+     "pattern_id": "pat-040",
+     "pattern_name": "Sketch-Based Input",
+     "short_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt."
+    },
+    {
+     "pattern_id": "pat-059",
+     "pattern_name": "Inferred User State Driven Adaptation",
+     "short_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings."
+    },
+    {
+     "pattern_id": "pat-092",
+     "pattern_name": "Natural-Language Control",
+     "short_summary": "The user states in language what they want to be true of the artifact, and the system performs the corresponding edit or retrieval."
+    },
+    {
+     "pattern_id": "pat-093",
+     "pattern_name": "Familiar-Object Metaphor",
+     "short_summary": "The system borrows the vocabulary of an already-known artifact — a spreadsheet, a paint palette, a plant, a social feed — and uses it wholesale as the surface through which the user acts, rather than devising controls specific to the underlying operation."
+    }
+   ]
+  },
+  {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_slug": "initiative-and-intervention-timing",
+   "stage": "Setting the context",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "pattern_count": 6,
+   "eligible_papers": 184,
+   "candidate_count": 184,
+   "patterns": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "short_summary": "Output is emitted without a user request immediately preceding it."
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "short_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs."
+    },
+    {
+     "pattern_id": "pat-012",
+     "pattern_name": "Live Side Panel",
+     "short_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state."
+    },
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "short_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step."
+    },
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "short_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close."
+    },
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "short_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it."
+    }
+   ]
+  },
+  {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_slug": "constraints-safety-and-agency",
+   "stage": "Setting the context",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "pattern_count": 5,
+   "eligible_papers": 168,
+   "candidate_count": 168,
+   "patterns": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take."
+    },
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "short_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run."
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "short_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output."
+    },
+    {
+     "pattern_id": "pat-071",
+     "pattern_name": "Protected Region",
+     "short_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user."
+    },
+    {
+     "pattern_id": "pat-072",
+     "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+     "short_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text."
+    }
+   ]
+  },
+  {
+   "category_id": "U04",
+   "category_name": "Modality, Embodiment & Rendering",
+   "category_slug": "modality-embodiment-and-output-rendering",
+   "stage": "Taking in the output",
+   "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+   "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+   "pattern_count": 12,
+   "eligible_papers": 399,
+   "candidate_count": 399,
+   "patterns": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "short_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane."
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "short_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel."
+    },
+    {
+     "pattern_id": "pat-050",
+     "pattern_name": "Generative Filters",
+     "short_summary": "A chain of generative transformations is placed inside the user's perceptual path, so that what the user perceives is the pipeline's reconstruction rather than the captured signal."
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "short_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation."
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "short_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement."
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "short_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy."
+    },
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "short_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another."
+    },
+    {
+     "pattern_id": "pat-064",
+     "pattern_name": "Nonvisual Navigation",
+     "short_summary": "A structured artifact is exposed as a traversable graph of positions that the user steps through with discrete commands, with the system's response delivered on a nonvisual channel."
+    },
+    {
+     "pattern_id": "pat-065",
+     "pattern_name": "Nonvisual Task Delegation",
+     "short_summary": "The user hands a whole multi-step task to the system through a non-visual act and then stops attending to it; there is no display at any point in the loop."
+    },
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "short_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form."
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "short_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable."
+    },
+    {
+     "pattern_id": "pat-078",
+     "pattern_name": "Composite Glyph",
+     "short_summary": "Rather than reusing a standard chart type, the system introduces a new graphical mark whose geometry is designed around the specific property being communicated."
+    }
+   ]
+  },
+  {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_slug": "explanation-inspection-and-verification",
+   "stage": "Taking in the output",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "pattern_count": 13,
+   "eligible_papers": 361,
+   "candidate_count": 361,
+   "patterns": [
+    {
+     "pattern_id": "pat-001",
+     "pattern_name": "Linked Views",
+     "short_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible."
+    },
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "short_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read."
+    },
+    {
+     "pattern_id": "pat-025",
+     "pattern_name": "Interpretation Readback",
+     "short_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it."
+    },
+    {
+     "pattern_id": "pat-028",
+     "pattern_name": "Plan Preview",
+     "short_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out."
+    },
+    {
+     "pattern_id": "pat-031",
+     "pattern_name": "Pre-Send Inspection",
+     "short_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it."
+    },
+    {
+     "pattern_id": "pat-036",
+     "pattern_name": "Overview-plus-Detail",
+     "short_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item."
+    },
+    {
+     "pattern_id": "pat-037",
+     "pattern_name": "Unit Visualization Views",
+     "short_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates."
+    },
+    {
+     "pattern_id": "pat-038",
+     "pattern_name": "Model Internals View",
+     "short_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate."
+    },
+    {
+     "pattern_id": "pat-051",
+     "pattern_name": "Elements for Process Disclosure",
+     "short_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning."
+    },
+    {
+     "pattern_id": "pat-052",
+     "pattern_name": "Color Coded Content",
+     "short_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight."
+    },
+    {
+     "pattern_id": "pat-053",
+     "pattern_name": "Artifact Flagging and Annotations",
+     "short_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it."
+    },
+    {
+     "pattern_id": "pat-054",
+     "pattern_name": "Paired (Human-AI) Assessment",
+     "short_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other."
+    },
+    {
+     "pattern_id": "pat-055",
+     "pattern_name": "Aggregated Summary Score",
+     "short_summary": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element."
+    }
+   ]
+  },
+  {
+   "category_id": "U05",
+   "category_name": "Alternatives & Comparative Exploration",
+   "category_slug": "alternatives-and-comparative-exploration",
+   "stage": "Acting on the output",
+   "category_description": "How multiple possibilities are presented, previewed, maintained, blended, or compared before commitment.",
+   "classification_boundary": "Requires a visible choice or comparison mechanism, not backend candidate-set processing alone.",
+   "pattern_count": 6,
+   "eligible_papers": 215,
+   "candidate_count": 215,
+   "patterns": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "short_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set."
+    },
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "short_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly."
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "short_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along."
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "short_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together."
+    },
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "short_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one."
+    },
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "short_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand."
+    }
+   ]
+  },
+  {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_slug": "artifact-editing-and-revision",
+   "stage": "Acting on the output",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "pattern_count": 10,
+   "eligible_papers": 328,
+   "candidate_count": 328,
+   "patterns": [
+    {
+     "pattern_id": "pat-010",
+     "pattern_name": "Prefilled Editable Templates",
+     "short_summary": "The system pre-populates the working artifact with generated content that occupies its final position, and the user's task begins from that filled state."
+    },
+    {
+     "pattern_id": "pat-018",
+     "pattern_name": "Addressable Segments",
+     "short_summary": "A continuous artifact is partitioned into named units, and each unit becomes an independently addressable object."
+    },
+    {
+     "pattern_id": "pat-019",
+     "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+     "short_summary": "The system opens with a concrete proposal rather than an empty field; the user reacts to it; the reaction becomes an input that yields a revised version of the same artifact."
+    },
+    {
+     "pattern_id": "pat-021",
+     "pattern_name": "Localized Tweaking Support",
+     "short_summary": "The user designates a sub-extent of the artifact and the generative operation applies to exactly that extent."
+    },
+    {
+     "pattern_id": "pat-024",
+     "pattern_name": "Program-as-Output",
+     "short_summary": "The model's output is not the artifact the user wanted but a generator of it: code, a hierarchical program, or a parameterized template that must be executed or instantiated to yield the artifact."
+    },
+    {
+     "pattern_id": "pat-029",
+     "pattern_name": "Reverse Engineered Representation",
+     "short_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates."
+    },
+    {
+     "pattern_id": "pat-030",
+     "pattern_name": "Two-Way Sync View",
+     "short_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others."
+    },
+    {
+     "pattern_id": "pat-095",
+     "pattern_name": "Manual Fallback Editing",
+     "short_summary": "Alongside the generative route, the interface keeps a route by which the user authors the same material directly: a free-text field, editable nodes, a custom operation, a user-added prompt."
+    },
+    {
+     "pattern_id": "pat-096",
+     "pattern_name": "Accept/Reject Controls",
+     "short_summary": "Every system-produced item arrives with the same small, closed set of actions attached to it, so the user's response to any suggestion is drawn from a uniform vocabulary."
+    },
+    {
+     "pattern_id": "pat-097",
+     "pattern_name": "Mid-Run Intervention",
+     "short_summary": "A process that would otherwise run to completion is made interruptible: the user can halt it, change its parameters while it continues, or leave it before it ends."
+    }
+   ]
+  },
+  {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_slug": "workflow-history-and-session-structure",
+   "stage": "Fitting into the work",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "pattern_count": 4,
+   "eligible_papers": 342,
+   "candidate_count": 342,
+   "patterns": [
+    {
+     "pattern_id": "pat-016",
+     "pattern_name": "Structured Dialogue Flow",
+     "short_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion."
+    },
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "short_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives."
+    },
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "short_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot."
+    },
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "short_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded."
+    }
+   ]
+  },
+  {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_slug": "workspace-layout-and-tool-integration",
+   "stage": "Fitting into the work",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "pattern_count": 7,
+   "eligible_papers": 410,
+   "candidate_count": 410,
+   "patterns": [
+    {
+     "pattern_id": "pat-026",
+     "pattern_name": "Unified Workspace",
+     "short_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state."
+    },
+    {
+     "pattern_id": "pat-057",
+     "pattern_name": "Companion Chat Panel",
+     "short_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact."
+    },
+    {
+     "pattern_id": "pat-086",
+     "pattern_name": "Fixed Functional Panel Layout",
+     "short_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use."
+    },
+    {
+     "pattern_id": "pat-087",
+     "pattern_name": "Dual Artifact Presentation Modes",
+     "short_summary": "The same content is made available under two different presentation or interaction disciplines, and a selection determines which is in force."
+    },
+    {
+     "pattern_id": "pat-088",
+     "pattern_name": "AI Panels for Host Application",
+     "short_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow."
+    },
+    {
+     "pattern_id": "pat-089",
+     "pattern_name": "Chat Panels",
+     "short_summary": "The interaction surface is a vertically scrolling transcript of alternating turns with a persistent composition area anchored below it."
+    },
+    {
+     "pattern_id": "pat-091",
+     "pattern_name": "In-Situ Agent Presence",
+     "short_summary": "The system's activity is rendered within the work surface itself — as cursors, marks, live strokes, or attached companions — instead of being confined to a separate conversation panel."
+    }
+   ]
+  },
+  {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_slug": "agent-identity-and-multi-party-roles",
+   "stage": "Fitting into the work",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "pattern_count": 6,
+   "eligible_papers": 343,
+   "candidate_count": 343,
+   "patterns": [
+    {
+     "pattern_id": "pat-042",
+     "pattern_name": "Persona Assigned to Agents",
+     "short_summary": "A character specification — a name, personality, social role, or narrative voice — is attached to the generative agent and held constant across its turns."
+    },
+    {
+     "pattern_id": "pat-044",
+     "pattern_name": "Role-Play Scenario",
+     "short_summary": "The system generates a bounded scenario and places the user inside it as a participant rather than as an operator addressing a tool."
+    },
+    {
+     "pattern_id": "pat-045",
+     "pattern_name": "Multiparty Hub and Spoke",
+     "short_summary": "More than one party is present at the same system instance at the same time — two humans, a dyad, a group, or humans plus a population of agents — and the design allocates distinct roles among them."
+    },
+    {
+     "pattern_id": "pat-047",
+     "pattern_name": "Role Asymmetric Views",
+     "short_summary": "One system presents deliberately different surfaces to different classes of participant, so what each party can see and do depends on their role."
+    },
+    {
+     "pattern_id": "pat-048",
+     "pattern_name": "Simulated Counterparts",
+     "short_summary": "A procedure defined over two or more roles is run by one person alone, with the model filling every role but theirs."
+    },
+    {
+     "pattern_id": "pat-094",
+     "pattern_name": "Artifact as Interlocutor",
+     "short_summary": "The object the user is authoring is instantiated as a conversational agent, and the user develops it by talking to it in character rather than by editing a representation of it."
+    }
+   ]
+  }
+ ]
+}

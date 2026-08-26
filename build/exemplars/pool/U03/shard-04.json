@@ -1,0 +1,369 @@
+{
+ "dimension": {
+  "category_id": "U03",
+  "category_name": "Constraints, Guardrails & Reserved Control",
+  "category_slug": "constraints-safety-and-agency",
+  "stage": "Setting the context",
+  "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+  "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+  "pattern_count": 5,
+  "eligible_papers": 168,
+  "candidate_count": 168,
+  "patterns": [
+   {
+    "pattern_id": "pat-033",
+    "pattern_name": "Output Templates",
+    "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take."
+   },
+   {
+    "pattern_id": "pat-067",
+    "pattern_name": "User-Authored Rules",
+    "short_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run."
+   },
+   {
+    "pattern_id": "pat-068",
+    "pattern_name": "Withheld Answer",
+    "short_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output."
+   },
+   {
+    "pattern_id": "pat-071",
+    "pattern_name": "Protected Region",
+    "short_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user."
+   },
+   {
+    "pattern_id": "pat-072",
+    "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+    "short_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text."
+   }
+  ]
+ },
+ "shard": 4,
+ "candidates": [
+  {
+   "rid": "14019",
+   "title": "Co-Advisor: Learning Programming Strategies in Context",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00045",
+   "system_id": "14019",
+   "prefilter_score": 1.9,
+   "prefilter_parts": {
+    "relevance_density": 0.0,
+    "focus": 1.0,
+    "evidence_location": 0.9,
+    "_density_raw": 0.0
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Prompt 1: Analyze the code and errors and generate contextAttribute JSON object with the following attributes: description: general description of the problem, supportiveLinks: reference link related to the defect, category: type of programming problems",
+     "evidence_location": "full text sec V-A"
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "The description of the problem and possible supporting links are shown to the user . The category is used in the mapping protocol to match the relevant strategy (Section V-B), and the rest is used in the second prompt.",
+     "evidence_location": "full text sec V-A"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3564",
+   "title": "OmniQuery: Contextually Augmenting Captured Multimodal Memories to Enable Personal Question Answering",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713448",
+   "system_id": "omniquery",
+   "prefilter_score": 1.857,
+   "prefilter_parts": {
+    "relevance_density": 0.557,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 0.4
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We conducted a one-month diary study to collect realistic user queries and generated a taxonomy of necessary contextual information for integrating with captured memories.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "14012",
+   "title": "Codigen: Enhancing Personalized Programming Education with Visual Authoring and LLMs",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00038",
+   "system_id": "codigen",
+   "prefilter_score": 1.795,
+   "prefilter_parts": {
+    "relevance_density": 0.295,
+    "focus": 0.6,
+    "evidence_location": 0.9,
+    "_density_raw": 0.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Prompting followed a few-shot with three examples, a template with variables, and a structured output (title, description, instructions, outcome, code blocks).",
+     "evidence_location": "full text sec IV-A"
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "C O D I G E N augments prompts before sending them to the LLM to ensure that AI guides the learners instead of simply providing them with solutions.",
+     "evidence_location": "full text sec IV"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2978",
+   "title": "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642773",
+   "system_id": "codeaid",
+   "prefilter_score": 1.77,
+   "prefilter_parts": {
+    "relevance_density": 0.72,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 0.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We developed CodeAid, an LLM-powered programming assistant delivering helpful, technically correct responses, without revealing code solutions.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15032",
+   "title": "TreeQuestion: Assessing Conceptual Learning Outcomes with LLM-Generated Multiple-Choice Questions",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3686970",
+   "system_id": "treequestion",
+   "prefilter_score": 1.705,
+   "prefilter_parts": {
+    "relevance_density": 0.655,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 0.47
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "generates a set of multiple-choice questions organized in a tree-like structure",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10262",
+   "title": "Visual Lyrics: Generating Animated Text for Music Lyric Videos with an Augmented Text Editor",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789072",
+   "system_id": "10262",
+   "prefilter_score": 1.672,
+   "prefilter_parts": {
+    "relevance_density": 0.622,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 0.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We examined existing lyric videos to distill a taxonomy and design guidelines, informing the design of Visual Lyrics.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "system_id": "jamplate",
+   "prefilter_score": 1.26,
+   "prefilter_parts": {
+    "relevance_density": 0.36,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 0.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we explore an alternative approach for interacting with LLMs, not via chat, but rather through structured templates",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5574",
+   "title": "PrivacyAkinator: Articulating Key Privacy Design Decisions by Answering LLM-Generated Multiple-choice Questions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790408",
+   "system_id": "privacyakinator",
+   "prefilter_score": 1.062,
+   "prefilter_parts": {
+    "relevance_density": 0.262,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 0.25
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a universal privacy representation that abstracts privacy-related design decisions into data flows and stakeholder interactions",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

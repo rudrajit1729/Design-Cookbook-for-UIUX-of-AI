@@ -1,0 +1,472 @@
+{
+ "pattern": {
+  "pattern_id": "pat-090",
+  "pattern_name": "On-Demand Suggestion",
+  "pattern_slug": "on-demand-suggestion",
+  "short_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+  "definition": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it. The user does not leave the editing surface to make the request or to receive the result.",
+  "structural_signature": "A single user-triggered control whose output is inserted at the current insertion point of the same editable surface. There is no separate request window and no navigation step; when the control is not fired, nothing is generated, so the output's position and timing are both determined by the user's cursor and keystroke.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 17,
+ "candidates": [
+  {
+   "rid": "1137",
+   "title": "Discovering the Syntax and Strategies of Natural Language Programming with Generative Language Models",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501870",
+   "system_id": "1137",
+   "evidence": [
+    {
+     "quote": "GenLine’s design provides an interaction style more similar to invoking a command, and less like autocomplete: the user must explicitly specify the input to send to the model",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "1373",
+   "title": "CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities",
+   "venue": "chi",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502030",
+   "system_id": "coauthor",
+   "evidence": [
+    {
+     "quote": "Our interface was a text editor in which writers press the tab key to get suggestions from the system whenever desired.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2002",
+   "title": "Choice Over Control: How Users Write with Large Language Models using Diegetic and Non-Diegetic Prompting",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580969",
+   "system_id": "2002",
+   "evidence": [
+    {
+     "quote": "When a user requests a new suggestion ( TAB ) a preview of the suggestion appears after the current caret position in the text editor.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2439",
+   "title": "DiaryMate: Understanding User Perceptions and Experience in Human-AI Collaboration for Personal Journaling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642693",
+   "system_id": "diarymate",
+   "evidence": [
+    {
+     "quote": "(A) Generate using keywords: This feature allows users to tailor sentence output using input comma-separated keywords.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2489",
+   "title": "CollabCoder: A Lower-barrier, Rigorous Workflow for Inductive Collaborative Qualitative Analysis with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642002",
+   "system_id": "collabcoder",
+   "evidence": [
+    {
+     "quote": "In the independent open coding phase, CollabCoder ofers AI-generated code suggestions and records decision-making data.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3068",
+   "title": "Validating AI-Generated Code with Live Programming",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642495",
+   "system_id": "3068",
+   "evidence": [
+    {
+     "quote": "With the cursor positioned at line 7, she presses and to ask for suggestions.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3524",
+   "title": "Script&Shift: A Layered Interface Paradigm for Integrating Content Development and Rhetorical Strategy with LLM Writing Assistants",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714119",
+   "system_id": "scriptshift",
+   "evidence": [
+    {
+     "quote": "(A) Scripting enables users to query several specialized Writer’s Friends inline.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "3862",
+   "title": "Exploring Mobile Touch Interaction with Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713554",
+   "system_id": "3862",
+   "evidence": [
+    {
+     "quote": "Placing two fingers on the screen sets the cursor",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5782",
+   "title": "Less Redraw, More Explore: Suggestion and Completion for Sketch-to-Image",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791026",
+   "system_id": "5782",
+   "evidence": [
+    {
+     "quote": "Instead of completing a full sketch, users can choose to draw only part of the object and press Sketch.",
+     "location": "system sec 3.2 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5968",
+   "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791673",
+   "system_id": "cocoa",
+   "evidence": [
+    {
+     "quote": "A user invokes the agent on a piece of text in the document by clicking on the “Invoke agent” button that appears on hover whenever text is highlighted.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6049",
+   "title": "EvaluAId: Human-AI Collaborative Evaluation of Open-Ended Student Essays",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790814",
+   "system_id": "evaluaid",
+   "evidence": [
+    {
+     "quote": "Throughout EvaluAId, the AI acts as an on-demand assistant: it surfaces suggestions, highlights, and comparisons that graders explicitly invoke, inspect, edit, and approve.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8246",
+   "title": "Designing for an AI-Augmented Journaling Experience: Balancing Guidance and Autonomy for Deeper Emotional Insight",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719887",
+   "system_id": "8246",
+   "evidence": [
+    {
+     "quote": "When the user clicks the Detect Tags button in the top-left corner (Figure 2), the system suggests possible emotional tags (e.g., “anxiety,” “joy”) based on the text content.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "10049",
+   "title": "Wordcraft: Story Writing With Large Language Models",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511105",
+   "system_id": "wordcraft",
+   "evidence": [
+    {
+     "quote": "(right) Shows how a user can click ‘generate text’ (4) to get suggestions for continuations from the language model.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10127",
+   "title": "Enhancing Peer Review with AI-Powered Suggestion Generation Assistance: Investigating the Design Dynamics",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645169",
+   "system_id": "10127",
+   "evidence": [
+    {
+     "quote": "Users write feedback on a business project of a peer and receive possible words, sentences, or expressions to continue their text with, either inline (A) o…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10179",
+   "title": "FigurA11y: AI Assistance for Writing Scientific Alt Text",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645212",
+   "system_id": "figura11y",
+   "evidence": [
+    {
+     "quote": "On the right, it shows (C) the description authoring field, (D) the Generate at Cursor feature with generated initial text below, (E) the Potential User Questions request button and results, and…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "system_id": "hilde",
+   "evidence": [
+    {
+     "quote": "he starts by writing the function signature and then presses CMD/CTRL+I every time he wants to prompt H I LD E to complete the next piece of its implementation.",
+     "location": "full text sec III-A"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "17071",
+   "title": "Where to Hide a Stolen Elephant: Leaps in Creative Writing with Multimodal Machine Intelligence",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3511599",
+   "system_id": "17071",
+   "evidence": [
+    {
+     "quote": "users write text (C) and can request suggestion by invoking the Suggestion buton (E) or using the tab key",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  }
+ ]
+}

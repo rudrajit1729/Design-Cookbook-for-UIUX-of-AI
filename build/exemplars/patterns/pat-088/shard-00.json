@@ -1,0 +1,1058 @@
+{
+ "pattern": {
+  "pattern_id": "pat-088",
+  "pattern_name": "AI Panels for Host Application",
+  "pattern_slug": "ai-panels-for-host-application",
+  "short_summary": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow.",
+  "definition": "The generative capability is attached to a host artifact that the system did not author — a third-party application, a web page, a chat client, an established workflow. The host keeps its own structure and remains usable without the addition. The design move is the attachment point: where in the host the capability is inserted.",
+  "structural_signature": "Two separable layers exist: a pre-existing host surface with its own controls and content, and an added layer (plugin, browser extension overlay, injected step, docked component) that renders generated content into or beside the host. The added layer is anchored to identifiable host locations — particular spans of host content, particular stages of the host's flow, particular composition steps — and the anchoring, not the generation, is what the paper specifies. Detaching the layer leaves the host intact.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "910",
+   "title": "VocabEncounter: NMT-powered Vocabulary Learning by Presenting Computer-Generated Usages of Foreign Words into Users' Daily Lives",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501839",
+   "system_id": "vocabencounter",
+   "evidence": [
+    {
+     "quote": "Example pipeline of how VocabEncounter presents translated phrases containing specifed foreign words in our proof-of-concept Chrome extension.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1168",
+   "title": "Stylette: Styling the Web with Natural Language",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501931",
+   "system_id": "stylette",
+   "evidence": [
+    {
+     "quote": "Stylette is implemented as a Chrome Extension and, using a method similar to Tanner et al.’s [58], it saves the user’s changes in the browser’s memory so that they persist when the user returns to the page.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1457",
+   "title": "What It Wants Me To Say: Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580817",
+   "system_id": "1457",
+   "evidence": [
+    {
+     "quote": "We built two systems, implemented as Microsoft Excel spreadsheet add-ins.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1894",
+   "title": "Notable: On-the-fly Assistant for Data Storytelling in Computational Notebooks",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580965",
+   "system_id": "notable",
+   "evidence": [
+    {
+     "quote": "Second, the tools are better to be integrated with existing tools, i.e., existing computational notebook environments and commonly used presentation tools.",
+     "location": "system sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "1960",
+   "title": "Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581566",
+   "system_id": "1960",
+   "evidence": [
+    {
+     "quote": "These insights informed Visual Captions, a real-time system that integrates with a video conferencing platform to enrich verbal communication.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2288",
+   "title": "Charagraph: Interactive Generation of Charts for Realtime Annotation of Data-Rich Paragraphs",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581091",
+   "system_id": "charagraph",
+   "evidence": [
+    {
+     "quote": "this visualization comprises text annotations overlaying the document and a chart",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2436",
+   "title": "Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642149",
+   "system_id": "selenite",
+   "evidence": [
+    {
+     "quote": "After the user 1) searches and finds an initial webpage-of-interest to read, Selenite provides: 2) global grounding with a set of common criteria as well as options encountered so far, 3) local grounding with in-situ annotations of criteria per paragraph",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2491",
+   "title": "DiaryHelper: Exploring the Use of an Automatic Contextual Information Recording Agent for Elicitation Diary Study",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642853",
+   "system_id": "diaryhelper",
+   "evidence": [
+    {
+     "quote": "DiaryHelper was embedded into the Slack platform1 , a widely recognized workplace messaging application, where each participant could post recorded diaries in a private channel.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2553",
+   "title": "Generating Automatic Feedback on UI Mockups with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642782",
+   "system_id": "2553",
+   "evidence": [
+    {
+     "quote": "We implemented a Figma plugin that takes in a UI design and a set of written heuristics, and renders automatically-generated feedback as constructive",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2654",
+   "title": "SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions for Blind or Low-Vision Viewers",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642632",
+   "system_id": "spica_audiodesc",
+   "evidence": [
+    {
+     "quote": "Spica augments existing ADs by adding interactivity, spatial sound efects, and individual object descriptions without requiring additional human annotation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2680",
+   "title": "DirectGPT: A Direct Manipulation Interface to Interact with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642462",
+   "system_id": "directgpt",
+   "evidence": [
+    {
+     "quote": "This idea is exemplified in DirectGPT, a user interface layer on top of ChatGPT that works by transforming direct manipulation actions to engineered prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2763",
+   "title": "OutlineSpark: Igniting AI-powered Presentation Slides Creation from Computational Notebooks through Outlines",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642865",
+   "system_id": "outlinespark",
+   "evidence": [
+    {
+     "quote": "OutlineSpark is an interactive AI-powered JupyterLab plugin designed to facilitate the creation of presentation slides from computational notebooks using outlines.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2867",
+   "title": "Explainable Notes: Examining How to Unlock Meaning in Medical Notes with Interactivity and Artificial Intelligence",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642573",
+   "system_id": "2867",
+   "evidence": [
+    {
+     "quote": "An explainable note is an augmented progress note that provides integrated support for directing attention, supporting phrase-level understanding, and tracing lines of reasoning.",
+     "location": "full text sec 8.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2881",
+   "title": "Meta-Manager: A Tool for Collecting and Exploring Meta Information about Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642676",
+   "system_id": "metamanager",
+   "evidence": [
+    {
+     "quote": "we have developed the “Meta-Manager”, a Visual Studio Code extension, with a supplementary browser extension, that automatically collects and organizes changes made to code while keeping track of the provenance of each part of the code",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2986",
+   "title": "LumiMood: A Creativity Support Tool for Designing the Mood of a 3D Scene",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642440",
+   "system_id": "lumimood",
+   "evidence": [
+    {
+     "quote": "LumiMood is an automatic mood design tool for 3D scenes, which works within the Unity engine.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3196",
+   "title": "ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642229",
+   "system_id": "chatscratch",
+   "evidence": [
+    {
+     "quote": "The step-by-step code assistant (Figure 2.b), maintains the original Scratch GUI while incorporating a Scratch-specialized large language model (LLM).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3252",
+   "title": "Farsight: Fostering Responsible AI Awareness During AI Application Prototyping",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642335",
+   "system_id": "farsight",
+   "evidence": [
+    {
+     "quote": "Farsight is designed to be a plugin of any web-based prompt-crafting tools.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3300",
+   "title": "Ivie: Lightweight Anchored Explanations of Just-Generated Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642239",
+   "system_id": "ivie",
+   "evidence": [
+    {
+     "quote": "We introduce an extension to the programming assistant called Ivie, or instantly visible in-situ explanations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3308",
+   "title": "AI-Assisted Causal Pathway Diagram for Human-Centered Design",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642179",
+   "system_id": "3308",
+   "evidence": [
+    {
+     "quote": "we developed a plugin in Miro [73], a widely used diagramming platform",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3405",
+   "title": "GistVis: Automatic Generation of Word-scale Visualizations from Data-rich Documents",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713881",
+   "system_id": "gistvis",
+   "evidence": [
+    {
+     "quote": "GistVis enables automatic generation of word-scale visualizations from data-rich documents.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3554",
+   "title": "Closing the Loop between User Stories and GUI Prototypes: An LLM-Based Assistant for Cross-Functional Integration in Software Development",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713932",
+   "system_id": "3554",
+   "evidence": [
+    {
+     "quote": "this paper proposes an LLM-based assistant as a Figma plug-in that bridges the gap between user stories and GUI prototyping",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3606",
+   "title": "Rescriber: Smaller-LLM-Powered User-Led Data Minimization for LLM-Based Chatbots",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713701",
+   "system_id": "rescriber",
+   "evidence": [
+    {
+     "quote": "We developed Rescriber, a Chrome extension prototype, to help users minimize data when interacting with LLM-based conversational agents like ChatGPT.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "3645",
+   "title": "Chatbots for Data Collection in Surveys: A Comparison of Four Theory-Based Interview Probes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714128",
+   "system_id": "3645",
+   "evidence": [
+    {
+     "quote": "The chatbot is running on a university server and integrates into already established survey platforms as an HTML iframe element [116].",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3723",
+   "title": "Amuse: Human-AI Collaborative Songwriting with Multimodal Inspirations",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713818",
+   "system_id": "amuse",
+   "evidence": [
+    {
+     "quote": "a Chrome extension, appears as a floating window within the Hookpad interface",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "3904",
+   "title": "InsightBridge: Enhancing Empathizing with Users through Real-Time Information Synthesis and Visual Communication",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713640",
+   "system_id": "insightbridge",
+   "evidence": [
+    {
+     "quote": "InsightBridge is a plugin developed in Miro, a widely-used diagramming whiteboard platform for empathy-building",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3927",
+   "title": "Social-RAG: Retrieving from Group Interactions to Socially Ground AI Generation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713749",
+   "system_id": "socialrag",
+   "evidence": [
+    {
+     "quote": "We implement this in PaperPing, a system for posting paper recommendations in group chat",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "4090",
+   "title": "CodeA11y: Making AI Coding Assistants Useful for Accessible Web Development",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713335",
+   "system_id": "codea11y",
+   "evidence": [
+    {
+     "quote": "To address these issues, we developed CodeA11y, a GitHub Copilot Extension, that suggests accessibility-compliant code and displays manual validation reminders.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4124",
+   "title": "Toward Personalizable AI Node Graph Creative Writing Support: Insights on Preferences for Generative AI Features and Information Presentation Across Story Writing Processes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713569",
+   "system_id": "4124",
+   "evidence": [
+    {
+     "quote": "we leverage FigJam’s interface and graph editing features (D1; Section 5.1) and extend it through a plugin (StoryNode) with generative AI (D2; Sections 5.2 and 5.3) and format conversion (D3; Section 5.2) features (Figure 1)",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "4142",
+   "title": "Jupybara: Operationalizing a Design Space for Actionable Data Analysis and Storytelling with LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713913",
+   "system_id": "jupybara",
+   "evidence": [
+    {
+     "quote": "Jupybara is a Jupyter Notebook extension, embedding the AI assistant within an environment familiar to data analysts (D1).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4144",
+   "title": "ChainBuddy: An AI-assisted Agent System for Generating LLM Pipelines",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714085",
+   "system_id": "chainbuddy",
+   "evidence": [
+    {
+     "quote": "We built ChainBuddy on top of an existing open-source visual environment, ChainForge [1]",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4200",
+   "title": "TableNarrator: Making Image Tables Accessible to Blind and Low Vision People",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714329",
+   "system_id": "tablenarrator",
+   "evidence": [
+    {
+     "quote": "TableNarrator can be integrated as a modular component into existing screen readers (such as NVDA, VoiceOver) through an AI model interface provided by software development kit (SDK) and platform-native APIs",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4270",
+   "title": "InstructPipe: Generating Visual Blocks Pipelines with Human Instructions and LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713905",
+   "system_id": "instructpipe",
+   "evidence": [
+    {
+     "quote": "The user can frst click on the “InstructPipe” button on the top-right corner of the interface in (b).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4305",
+   "title": "ASHABot: An LLM-Powered Chatbot to Support the Informational Needs of Community Health Workers",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713680",
+   "system_id": "ashabot",
+   "evidence": [
+    {
+     "quote": "ASHABot is an LLM-powered, expert-in-the-loop, WhatsApp-based chatbot system.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4310",
+   "title": "Do It For Me vs. Do It With Me: Investigating User Perceptions of Different Paradigms of Automation in Copilots for Feature-Rich Software",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713431",
+   "system_id": "4310",
+   "evidence": [
+    {
+     "quote": "(b) Visual references of the UI elements in-context to user’s tasks and application are provided within the step-by-step guidance",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4446",
+   "title": "Productive vs. Reflective: How Different Ways of Integrating AI into Design Workflows Affect Cognition and Motivation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713649",
+   "system_id": "4446",
+   "evidence": [
+    {
+     "quote": "we built a collaborative whiteboard plugin that integrates an LLM into design templates to facilitate reflective brainstorming activities",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4506",
+   "title": "Canvil: Designerly Adaptation for LLM-Powered User Experiences",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713139",
+   "system_id": "canvil",
+   "evidence": [
+    {
+     "quote": "We then built Canvil, a Figma widget that operationalizes designerly adaptation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4676",
+   "title": "Hey Dashboard!: Supporting Voice, Text, and Pointing Modalities in Dashboard Onboarding using Large Language Models",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791766",
+   "system_id": "4676",
+   "evidence": [
+    {
+     "quote": "We implemented Diana using the Microsoft Power BI Embedded report [26] to integrate our solution within an existing commercial dashboard tool such as Microsoft Power BI.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4692",
+   "title": "The Invisible Mentor: Inferring User Actions from Screen Recordings to Recommend Better Workflows",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790294",
+   "system_id": "4692",
+   "evidence": [
+    {
+     "quote": "The assistant appears in a task pane alongside the spreadsheet, following the familiar layout of Excel Copilot to minimize design variance that could influence user study outcomes.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4818",
+   "title": "SeeSawBot: An LLM-Driven Chatbot Mediating Across Private and Shared Slack Channels to Support Team Dynamics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791880",
+   "system_id": "seesawbot",
+   "evidence": [
+    {
+     "quote": "We implemented SeeSawBot as a chatbot in a Slack workspace with multiple team-specific channels.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4876",
+   "title": "The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790621",
+   "system_id": "4876",
+   "evidence": [
+    {
+     "quote": "We developed Celestial, implemented as a Storybook.js add-on, to support exploration of distinguishing variations of UI components.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

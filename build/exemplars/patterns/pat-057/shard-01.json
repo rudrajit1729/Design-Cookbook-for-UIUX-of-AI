@@ -1,0 +1,461 @@
+{
+ "pattern": {
+  "pattern_id": "pat-057",
+  "pattern_name": "Companion Chat Panel",
+  "pattern_slug": "companion-chat-panel",
+  "short_summary": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact.",
+  "definition": "A free-form conversational channel is live at the same time as a non-conversational artifact the user is attending to, and the turns are about that artifact. The artifact persists on display; the dialogue neither replaces it nor is required to advance it.",
+  "structural_signature": "Two concurrently live regions (possibly on two devices): one holds a persistent artifact that is not consumed by the exchange, the other accepts an unbounded number of user-authored natural-language turns scoped to that artifact. Removing the dialogue channel leaves the artifact usable; removing the artifact leaves the dialogue without a referent.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Chat-Based Interaction",
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "10239",
+   "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789057",
+   "system_id": "codevoyager",
+   "evidence": [
+    {
+     "quote": "(c) Chatbot Panel supports text-based interactions, where users can issue GRAPH, MODIFY, or GENERAL queries to obtain explanations or perform actions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10243",
+   "title": "Vistoryteller: Designing Data Stories with LLM Agent-Based Generation and Interactive User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789086",
+   "system_id": "vistoryteller",
+   "evidence": [
+    {
+     "quote": "a dialogue panel (Fig. 7a1) for interacting with agents to adjust the story",
+     "location": "system sec 6.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12316",
+   "title": "Enhancing Data Literacy On-Demand: LLMs as Guides for Novices in Chart Interpretation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3413195",
+   "system_id": "12316",
+   "evidence": [
+    {
+     "quote": "In the chatting interface (b), the LLM provides assistance in chart comprehension.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12372",
+   "title": "HINTs: Sensemaking on Large Collections of Documents With Hypergraph Visualization and INTelligent Agents",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3459961",
+   "system_id": "hints",
+   "evidence": [
+    {
+     "quote": "The Analysis View (Figure 3-d) is an intelligent chatbot agent that assists users in analyzing the selected documents (T4).",
+     "location": "full text sec 6.3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12730",
+   "title": "CausalChat: Interactive Causal Model Development and Refinement Using Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3602448",
+   "system_id": "causalchat",
+   "evidence": [
+    {
+     "quote": "constructing detailed causal networks through conversation",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12769",
+   "title": "NLI4VolVis: Natural Language Interaction for Volume Visualization via LLM Multi-Agents and Editable 3D Gaussian Splatting",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633888",
+   "system_id": "nli4volvis",
+   "evidence": [
+    {
+     "quote": "The NLI4VolVis interface consists of four key components: (a) panel, (b) rendering window, (c) chat widget, and (d) action log.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12841",
+   "title": "Automatic Semantic Alignment of Flow Pattern Representations for Exploration with Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634650",
+   "system_id": "12841",
+   "evidence": [
+    {
+     "quote": "As shown in Fig. 5, our interface includes two main views: a dialogue window and a flow visualization window.",
+     "location": "system sec 4 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12991",
+   "title": "DAVA: Decoding Art With Visual Analytics Through Feature Modeling and Multi-Agent Collaboration",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3653892",
+   "system_id": "dava",
+   "evidence": [
+    {
+     "quote": "Finally, (C) Interdisciplinary Interpretation (T5, T6) engages domain-informed agents in dialogue with the user, offering cross-domain perspectives and guiding interpretation.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13531",
+   "title": "Graphologue: Exploring Large Language Model Responses with Interactive Diagrams",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606737",
+   "system_id": "graphologue",
+   "evidence": [
+    {
+     "quote": "Further, users can interact with ∗ Both authors contributed equally to this research. the diagrams to fexibly adjust the graphical presentation and to submit context-specifc prompts to obtain more information.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13641",
+   "title": "GLITTER: An AI-assisted Platform for Material-Grounded Asynchronous Discussion in Flipped Learning",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747742",
+   "system_id": "glitter",
+   "evidence": [
+    {
+     "quote": "After completing their independent reading, students can click the “Show Public” button (H) to access and view their peers’ discussion contributions.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13675",
+   "title": "StreetViewAI: Making Street View Accessible Using Context-Aware Multimodal AI",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747756",
+   "system_id": "streetviewai",
+   "evidence": [
+    {
+     "quote": "(c) chat with a multimodal AI agent about the scene and local geography while virtually explori…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13786",
+   "title": "NarraGuide: an LLM-based Narrative Mobile Robot for Remote Place Exploration",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747697",
+   "system_id": "narraguide",
+   "evidence": [
+    {
+     "quote": "User interface displayed on a monitor. Remote users interact with the robot using dialogues and see the video livestreamed from the robot’s camera.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13934",
+   "title": "Cocobo: Exploring Large Language Models as the Engine for End-User Robot Programming",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00020",
+   "system_id": "cocobo",
+   "evidence": [
+    {
+     "quote": "Cocobo’s interface includes a conversational UI and a flowchart editor.",
+     "location": "system sec 3.A (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14009",
+   "title": "TraceMate: Collaborating with AI in Test-Driven Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00035",
+   "system_id": "tracemate",
+   "evidence": [
+    {
+     "quote": "On the left, the code editing panel ( 1 ) hosts the student’s Java source, while the chat panel to its right supports multi-turn dialogue.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15126",
+   "title": "Conversate: Supporting Reflective Learning in Interview Practice Through Interactive Simulation and Dialogic Feedback",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701188",
+   "system_id": "conversate",
+   "evidence": [
+    {
+     "quote": "Furthermore, to incorporate the social component, Conversate engages users in a Dialogic Feedback process with the LLM agent.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16705",
+   "title": "RoboBlockly Studio: Conversational Block Programming with Embodied Robot Feedback for Computational Thinking",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813071",
+   "system_id": "roboblocklystudio",
+   "evidence": [
+    {
+     "quote": "scaffolding reflection through pedagogically grounded AI dialogue",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

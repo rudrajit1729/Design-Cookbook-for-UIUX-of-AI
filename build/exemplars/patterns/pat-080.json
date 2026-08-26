@@ -1,0 +1,917 @@
+{
+ "pattern": {
+  "pattern_id": "pat-080",
+  "pattern_name": "Revisitable History",
+  "pattern_slug": "revisitable-history",
+  "short_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+  "definition": "Prior states and actions are retained as first-class records rather than discarded when superseded. The interface exposes them as a navigable set the user can return to, resume from, or play back in time order. History is an object in the system, not just a side effect of use.",
+  "structural_signature": "Every state change appends an addressable record (a version, a modification entry, an accept/reject/edit event, a timestamped frame). The interface renders the record set as a navigable structure — a list, a stream, a timeline — and supports two operations over it: returning to a past state and continuing from there, and traversing the sequence in temporal order. Records survive the session and the same view may serve live and retrospective inspection.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 33,
+ "candidates": [
+  {
+   "rid": "1373",
+   "title": "CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities",
+   "venue": "chi",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502030",
+   "system_id": "coauthor",
+   "evidence": [
+    {
+     "quote": "The dataset and an interface for replaying the writing sessions are publicly available at https://coauthor.stanford.edu.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2486",
+   "title": "Metamorpheus: Interactive, Affective, and Creative Dream Narration Through Metaphorical Visual Storytelling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642410",
+   "system_id": "metamorpheus",
+   "evidence": [
+    {
+     "quote": "The current generated images dangle from the anchor points, and previous generations are preserved above. Users can click on previous generations to switch it into dis",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2881",
+   "title": "Meta-Manager: A Tool for Collecting and Exploring Meta Information about Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642676",
+   "system_id": "metamanager",
+   "evidence": [
+    {
+     "quote": "This zoomed-in portion shows around 120 edits between Version 710 and Version 830, with the scrubber set around Version 740, when a user pasted code from Stack Overfow.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2937",
+   "title": "The HaLLMark Effect: Supporting Provenance and Transparent Use of Large Language Models in Writing with Interactive Visualization",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641895",
+   "system_id": "2937",
+   "evidence": [
+    {
+     "quote": "B) The timeline shows the prompts (blue or purple tiles) in the context of the user’s writing behavior (e.g., writing a new sentence).",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3388",
+   "title": "FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713863",
+   "system_id": "fontcraft",
+   "evidence": [
+    {
+     "quote": "Moreover, FontCraft allows users to revisit previous designs, retracting their earlier choices in the preferential Bayesian optimization process.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3704",
+   "title": "Interactive Debugging and Steering of Multi-Agent AI Systems",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713581",
+   "system_id": "3704",
+   "evidence": [
+    {
+     "quote": "the ability to edit and reset prior agent messages",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "3857",
+   "title": "Data Formulator 2: Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713296",
+   "system_id": "dataformulator2",
+   "evidence": [
+    {
+     "quote": "lets users navigate their iteration history and reuse previous designs",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4816",
+   "title": "Orality: A Semantic Canvas for Externalizing and Clarifying Thoughts with Speech",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791713",
+   "system_id": "orality",
+   "evidence": [
+    {
+     "quote": "Clicking the “Thought Evolution” button pops up a timeline window, hovering on which will make the canvas layout go back to that stage with a smooth animated transition.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4884",
+   "title": "DesignTrace: Exploring, Iterating and Tracking Design Alternatives with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791036",
+   "system_id": "designtrace",
+   "evidence": [
+    {
+     "quote": "Its interactive branching structure helps them maintain visual consistency across design iterations; remember and revisit earlier design decisions; and see connections across ideas.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "system_id": "4912",
+   "evidence": [
+    {
+     "quote": "Quologue Archive. Here, users can filter out the highlights they have not remixed on Quologue by clicking the “remixes only” button on the top right corner.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5432",
+   "title": "Prototyping Multimodal GenAI Real-Time Agents with Counterfactual Replays and Hybrid Wizard-of-Oz",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790800",
+   "system_id": "5432",
+   "evidence": [
+    {
+     "quote": "The toolkit enables iteratively testing and refining prompt strategies for multimodal real-time agent systems by replaying user session videos.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Guidance and Feedback"
+   ]
+  },
+  {
+   "rid": "6005",
+   "title": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790742",
+   "system_id": "historypalette",
+   "evidence": [
+    {
+     "quote": "We present HistoryPalette, a system that supports exploration and reuse of prior designs in generative image creation and editing.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6237",
+   "title": "Data-Prompt Co-Evolution: Growing Test Sets to Refine LLM Behavior",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791222",
+   "system_id": "6237",
+   "evidence": [
+    {
+     "quote": "The left panel supports authoring and tracking prompt instructions across versions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "6309",
+   "title": "Homeroom: A Value-Aligned and Community-Centered Homeschooling Platform",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791698",
+   "system_id": "homeroom",
+   "evidence": [
+    {
+     "quote": "AI checks coverage, depth, and engagement, and links recommendations to specific school board standards, while a review workspace captures human judgment. Materials are versioned and can be published to circles or the public repository for re…",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6492",
+   "title": "TaleBrush: Visual Sketching of Story Generation with Pretrained Language Models",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519873",
+   "system_id": "talebrush",
+   "evidence": [
+    {
+     "quote": "The writer can compare previously generated stories with a drop-down list (A). When the drop-down is open, the fortune arcs of all stored stories are visualized in low opacity on the canvas (B).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "7634",
+   "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651115",
+   "system_id": "7634",
+   "evidence": [
+    {
+     "quote": "A navigator on the left of the page provides a compact view of the data operation history with clickable circles for navigation",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7777",
+   "title": "Virtual Triplets: A Mixed Modal Synchronous and Asynchronous Collaboration with Human-Agent Interaction in Virtual Reality",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650766",
+   "system_id": "7777",
+   "evidence": [
+    {
+     "quote": "VTs facilitate the recording and playback of the instructor’s demonstrations for students",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9155",
+   "title": "Cognitive Prosthetic: An AI-Enabled Multimodal System for Episodic Recall in Knowledge Work",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798940",
+   "system_id": "9155",
+   "evidence": [
+    {
+     "quote": "Figure 4 shows the timeline-based navigation view, enabling users to browse",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10268",
+   "title": "FuzzySeek: Multimodal Refinement of Imprecise Video Queries for Moment Retrieval",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789095",
+   "system_id": "fuzzyseek",
+   "evidence": [
+    {
+     "quote": "(3) Query rollback to enable iterative back and forth exploration to enable direct or exploratory searches",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10412",
+   "title": "Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents",
+   "venue": "tiis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3744750",
+   "system_id": "10412",
+   "evidence": [
+    {
+     "quote": "The Thread panel retains a history of modifications that a user can return to and further refine at any time.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11435",
+   "title": ": Visualization of AI-Assisted Task Guidance in AR",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327396",
+   "system_id": "11435",
+   "evidence": [
+    {
+     "quote": "ARGUS is a visual analytics tool for real-time and historical evaluation of sensor and model outputs of AR task assistants.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "11931",
+   "title": "Smartboard: Visual Exploration of Team Tactics with LLM Agent",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456200",
+   "system_id": "smartboard",
+   "evidence": [
+    {
+     "quote": "Users can click nodes in the tree diagram to select a specific tactic state and view the corresponding constraint list. Simultaneously, information in the setup view and the simulation view will roll back to that state.",
+     "location": "system sec 6.4 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 13,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12281",
+   "title": "AgentLens: Visual Analysis for Agent Behaviors in LLM-Based Autonomous Systems",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3394053",
+   "system_id": "agentlens",
+   "evidence": [
+    {
+     "quote": "whenever the user changes the focus point from time point A to time point B, they can right-click the mouse to replay a fast-forward recording of that period of time in the Monitor View",
+     "location": "full text, system sec V-C"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12305",
+   "title": "PrompTHis: Visualizing the Process and Influence of Prompt Editing During Text-to-Image Creation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3408255",
+   "system_id": "prompthis",
+   "evidence": [
+    {
+     "quote": "Besides Image Variant Graph, PrompTHis also incorporates a detailed prompt-image history and a navigation mini-map.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "evidence": [
+    {
+     "quote": "tracking mechanism to monitor the various versions of a prompt",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12599",
+   "title": "Visualizationary: Automating Design Feedback for Visualization Designers Using Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3579700",
+   "system_id": "visualizationary",
+   "evidence": [
+    {
+     "quote": "Viewing a project shows a timeline of the revisions and allows",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13749",
+   "title": "Answering Developer Questions with Annotated Agent-Discovered Program Traces",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747652",
+   "system_id": "13749",
+   "evidence": [
+    {
+     "quote": "Replayable walkthrough of code exploration. The walkthrough begins at the code location selected by the programmer and reveals only the relevant steps leading to the target snippet (➊).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "system_id": "imaginationvellum",
+   "evidence": [
+    {
+     "quote": "Temporal replay and visualization of provenance make ideation trajectories actionable",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "14005",
+   "title": "Towards Human-AI Collaboration for Misapplication Detection in Programming Exercises",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00031",
+   "system_id": "14005",
+   "evidence": [
+    {
+     "quote": "The interface includes a class-wide timeline (Feature A) which allows instructors to view student progress at any point since the exercise began, as well as playback controls (Feature B) that let them replay this timeline at various speeds.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14039",
+   "title": "Curompt: A Spatially Situated Interface for Generative AI in 3D Design Software",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00065",
+   "system_id": "curompt",
+   "evidence": [
+    {
+     "quote": "To maintain understandability and editable history, the assistant writes out what it is changing, each object has its own chat log, and the system maintains a global timeline that can be used to revert any AI action.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "15683",
+   "title": "DesignMemo: Integrating Discussion Context into Online Collaboration with Enhanced Design Rationale Tracking",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757579",
+   "system_id": "designmemo",
+   "evidence": [
+    {
+     "quote": "As users submit their work, the system stores both the transcripts and design histories.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16267",
+   "title": "DanceGen: Supporting Choreography Ideation and Prototyping with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661594",
+   "system_id": "dancegen",
+   "evidence": [
+    {
+     "quote": "The system records the text prompts utilized to generate and edit dance sequences, enabling the tracking of choreographic ideas and creative attempts over time.",
+     "location": "full text, system sec 5.2.3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16594",
+   "title": "NoRe: Augmenting Journaling Experience with Generative AI for Music Creation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735845",
+   "system_id": "nore",
+   "evidence": [
+    {
+     "quote": "NoRe supports comprehensive archiving of both journal entries and their corresponding musical outputs, reinforcing the practice of revisiting and reflecting on past experiences",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

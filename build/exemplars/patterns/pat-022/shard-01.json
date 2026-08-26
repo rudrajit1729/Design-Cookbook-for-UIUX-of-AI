@@ -1,0 +1,366 @@
+{
+ "pattern": {
+  "pattern_id": "pat-022",
+  "pattern_name": "Artifact Derived Controls",
+  "pattern_slug": "artifact-derived-controls",
+  "short_summary": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates.",
+  "definition": "The system derives a set of discrete terms, attributes, or dimensions from the material at hand and then puts that derived set on screen as the thing the user manipulates. The user steers subsequent behaviour by editing, weighting, selecting or deselecting members of the extracted set rather than by rewriting free text. The set is content-specific: a different input yields a different set of handles.",
+  "structural_signature": "A derivation step produces a finite list of named items from the current input; those items are rendered as individually addressable widgets (chips, rows, sliders, editable fields); manipulating them re-parameterizes the downstream operation. The handle set is regenerated when the input changes, so the control panel's contents are data-dependent rather than fixed at design time.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Editing a Generated Draft",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "12842",
+   "title": "Understanding Large Language Model Behaviors Through Interactive Counterfactual Generation and Analysis",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634646",
+   "system_id": "12842",
+   "evidence": [
+    {
+     "quote": "From the user’s input prototype sentences, such as a medical question in this example, the system generates meaningful segments for perturbation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "13481",
+   "title": "Opal: Multimodal Image Generation for News Illustration",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545621",
+   "system_id": "opal",
+   "evidence": [
+    {
+     "quote": "From the news-related text, Opal generates keywords and tones, as well as icons that can visualize those keywords and tones.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13713",
+   "title": "Rethinking Dataset Discovery with DataScout",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747727",
+   "system_id": "13713",
+   "evidence": [
+    {
+     "quote": "Dana uses semantic (C) attribute and (D) granularity filter suggestions to narrow…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13926",
+   "title": "BISCUIT: Scaffolding LLM-Generated Code with Ephemeral UIs in Computational Notebooks",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00012",
+   "system_id": "biscuit",
+   "evidence": [
+    {
+     "quote": "B ISCUIT supported users for understanding LLM-generated code by surfacing key variables that users can experiment with",
+     "location": "full text, intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "14001",
+   "title": "DeckFlow: Specification Decomposition on a Multimodal Generative Canvas",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00027",
+   "system_id": "deckflow",
+   "evidence": [
+    {
+     "quote": "The Goal Card then creates an Action Card (c) with labels connected to discrete Text Cards (d), extracted from her highlevel prompt: Style: “Chinese traditional”, Subject: “landscape”, Key Elements: “traditional pavilion”, Lighting: “soft and diffuse”",
+     "location": "system sec III (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16044",
+   "title": "GANCollage: A GAN-Driven Digital Mood Board to Facilitate Ideation in Creativity Support",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3596072",
+   "system_id": "gancollage",
+   "evidence": [
+    {
+     "quote": "Goal 2: Provide customisable data-driven semantic atributes over visual ideas to help users interact with the AI..",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16260",
+   "title": "DesignPrompt: Using Multimodal Interaction for Design Exploration with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661588",
+   "system_id": "designprompt",
+   "evidence": [
+    {
+     "quote": "using common tools (c) as well as additional semantic meta-data of the moodboard images (d). Designers can compose multimodal GenAI prompts with images (e), colors, semantics and text (f) and fnely tune their…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16496",
+   "title": "DesignFromX: Empowering Consumer-Driven Design Space Exploration through Feature Composition of Referenced Products",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735824",
+   "system_id": "designfromx",
+   "evidence": [
+    {
+     "quote": "(C) A feature analysis of the queried component is provided by the system, where users can choose the features they admire",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16595",
+   "title": "It's more of a vibe I'm going for: Designing Text-to-Music Generation Interfaces for Video Creators",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735814",
+   "system_id": "16595",
+   "evidence": [
+    {
+     "quote": "They can optionally edit any of the prompt's properties before clicking \"Re-Generate\"",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16651",
+   "title": "DepthScape: Authoring 2.5D Designs via Depth Estimation, Semantic Understanding, and Geometry Extraction",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813038",
+   "system_id": "depthscape",
+   "evidence": [
+    {
+     "quote": "DepthScape employs a vision-language model to analyze source images, extracting key visual components as content anchors to enable direct",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16685",
+   "title": "DesignerlyLoop: Forming Design Intent through Curated Reasoning for Human-LLM Alignment",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812885",
+   "system_id": "designerlyloop",
+   "evidence": [
+    {
+     "quote": "Users input design context in (a.1), generating an editable keyword pipeline (a.2).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "16862",
+   "title": "IntentFlow: Investigating Fluid Dynamics of Intent Communication in Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812999",
+   "system_id": "intentflow",
+   "evidence": [
+    {
+     "quote": "exploration is supported through the intent dimension section, which exposes adjustable dimensions for each intent using multiple UI controls such as radio buttons, sliders, and tags",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "16921",
+   "title": "Elemental Alchemist: A Generative Interface for Semantic Control of Particle Systems Across Dynamic Levels of Abstraction",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812946",
+   "system_id": "16921",
+   "evidence": [
+    {
+     "quote": "a generative control panel that surfaces relevant technical parameters and abstracts them to generate mid-level semantic attributes and high-level conceptual controls",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "pattern_id": "pat-096",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "2002",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "The quote clearly specifies disposition of the current suggestion\u2014accept with Enter or cancel with Esc/continued typing\u2014and explains the resulting document state. However, it does not establish repeated co-located controls across multiple items, and cancellation has multiple interaction paths, so the full uniform closed-set signature is only partially demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2423",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Suggestions receive an enumerable action vocabulary, but that vocabulary explicitly changes between workflow steps: regeneration alone in the first step versus accept/regenerate/edit later. This conflicts with the pattern's requirement that the same controls remain constant across items and the session.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2439",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "The quote gives a clean three-way disposition for an LLM recommendation: incorporate, ignore, or request another. It strongly supports a fixed response vocabulary, although it does not explicitly show co-location or confirm that every recommendation is independently controlled.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4871",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Approve, edit, or replace is a small, enumerable vocabulary applied to suggestions and materially preserves moderator oversight. The quote does not show the controls' placement, their invariance across suggestions, or whether actions operate on one suggestion without affecting others.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5024",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Adopt, edit, or dismiss closely matches the intended disposition vocabulary, and the randomized-trial title suggests consequential use. The abstract-level quote does not establish per-item attachment, control placement, or constancy across all suggestions, so representativeness remains moderate.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6099",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "The quote explicitly names an accept/reject interface for concrete generated transformations, making the controls consequential. It does not say whether each transformation has its own identical control group or whether acceptance and rejection are the exhaustive per-item paths.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8246",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Accept, reject, or refine is an appropriate closed-looking action set for generated tags. However, the controls occur in settings, and the quote does not establish whether they are attached to each tag individually rather than configuring tags collectively.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9370",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote reports a temporal distribution of Delegate, Expansion, and Dismissal categories. It does not describe controls, system-produced items, per-item disposition, or a closed action group.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support the Accept/Reject Controls assignment at all; it only names categories in a temporal distribution."
+  },
+  {
+   "rid": "9674",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "Each system-flagged issue is listed with acknowledge or dismiss actions, directly supporting repeated per-item controls and independent disposition. The quote does not explicitly prove that no other disposition paths exist, but it is otherwise a clean instance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9836",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The truncated quote establishes that users can accept or modify something in the scaffolded workflow, but it neither completes the action set nor identifies its attachment to each generated mnemonic. Closedness, uniformity, and item-level independence cannot be judged from the supplied fragment.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10078",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is an unusually direct match: each LLM-output candidate receives the same explicit three-way disposition\u2014positive example, negative example, or excluded\u2014with optional editing. The fixed vocabulary operates at candidate level, is readily rebuildable, and generalizes well beyond text transformation; using dispositions to curate demonstrations is also less routine than ordinary accept/reject.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10164",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The interaction performs a pairwise preference comparison between the current and previous images. A swipe disposes of the pairwise comparison rather than independently accepting or rejecting one generated item while leaving other items untouched.",
+   "disqualify": true,
+   "disqualify_reason": "This instantiates a neighboring pairwise-comparison/preference-navigation pattern, not per-item Accept/Reject Controls."
+  },
+  {
+   "rid": "10177",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote only names three feedback-elicitation features\u2014kudos, critique, and rewrite. It does not identify a system-produced item, a disposition outcome, per-item attachment, or a closed accept/reject control group.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports feedback-mode elicitation rather than the structural signature of Accept/Reject Controls."
+  },
+  {
+   "rid": "10181",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "\u201cFor each recommendation\u201d directly supports item-level attachment, but \u201cvarious actions\u201d neither enumerates the controls nor explains their outcomes. The defining closed and uniform vocabulary therefore cannot be verified, and the mechanism is not rebuildable from this evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10260",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The quote supplies an explicit recurring action vocabulary for markers, but merge inherently involves multiple items and demotion may alter relative ordering. Those operations weaken the signature that each action disposes of one item while leaving all others untouched.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13665",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The quote explicitly says that each suggestion can individually be previewed, applied, undone, or regenerated. This is the strongest direct evidence of a uniform per-item control group, with clear user actions and system consequences; the reversible vocabulary also transfers readily beyond VR design.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14009",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "The patch receives an explicit Accept/Reject choice, and the quote precisely states the result of either action. It is a strong conventional instance, although only one patch interaction is described and rejection can lead to either reversion or clarification, leaving session-wide uniformity less certain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15431",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "Regenerate and Pin plausibly dispose of an individual generated highlight, but View is not itself a disposition and the quote is truncated. It does not demonstrate identical controls across highlights, a closed set, or that actions leave other items untouched.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

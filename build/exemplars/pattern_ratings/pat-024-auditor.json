@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-024",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "12840",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Exceptionally clean signature: the output is explicitly a functional, parameterized generator rather than a visualization, and rebinding datasets, palettes, or chart settings yields new artifacts. The quote directly establishes a reusable family-producing intermediate.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13987",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote supplies the complete prompt \u2192 animation code \u2192 inline rendering pipeline and, unusually, confirms direct editing of the intermediate code. This is a strong, transferable instance, though impact evidence is limited to the design description.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13588",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Programs persist as addressable sketch nodes and are compiled and rendered into a distinct canvas artifact. The quote establishes the producer-to-artifact boundary, but not parameter rebinding or editing without another model call.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4270",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A generated specification is compiled and rendered into an editable node-graph pipeline, making the intermediate representation concrete. It is slightly less canonical because the desired artifact may itself be the programming pipeline, and persistence or rebinding is not stated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13726",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Flowco synthesizes code for an addressable dataflow node, executes it, and displays a downstream data result. This clearly shows program \u2192 execution \u2192 artifact, although reuse under changed bindings is not evidenced.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7813",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The pseudocode-to-interpreter-to-node-graph sequence supports an intermediate representation, but the rendered graph may merely visualize the target program rather than constitute a separate desired artifact. Editing, persistence, and re-execution are absent from the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11792",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Natural language becomes a declarative Rigel transformation pipeline, plausibly producing tables downstream. The quote establishes the structured program but does not directly show execution, the resulting table, or persistent rebinding.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16652",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "The quote explicitly states that generated implementation code is executed to produce scaffolded interfaces, cleanly separating producer and artifact. Task-conditioned interface generation is consequential and non-obvious, but intermediate editing and reuse are not shown.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12159",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Structured JSON is the model output and backend modules execute it to realize an XR world, directly supporting the core pipeline. The quote does not establish named editable parts, persistence, or changed bindings without regeneration.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13789",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Generated AR application code is compiled at runtime, so a producer precedes the running application. However, the quote omits the prompting interaction, downstream result, editability, and reuse, making this a generic code-generation instance rather than a full structural match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14038",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Saving the entire generated workflow as JSON for future use strongly establishes persistence and execution without another generation call. The quote is excellent on reuse but does not itself describe execution, parameters, or workflow parts.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "743",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote explicitly contrasts direct geometry generation with generating CAD programs that produce geometry, precisely stating the pattern's defining producer\u2013artifact distinction. Hierarchy and solver support suggest structure, though the supplied evidence does not explicitly demonstrate editing or rebinding.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13960",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Generating one JavaScript function per visual block creates a named, addressable program structure. The quote does not show compilation, execution, the downstream artifact, or persistence, so the complete signature remains only partially supported.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5579",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Parametric models whose geometric features can be changed to explore alternatives satisfy the diagnostic of rebinding without fresh generation. The quote is weaker on whether the LLM outputs the persistent parametric producer and how it is executed.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10473",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Obtaining a glyph renderer rather than a single glyph is a meaningful generator-as-output move, potentially reusable across data. The short figure caption does not show execution, parameter changes, persistence, or how automatic generation participates.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13660",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The LLM agents generate scripts for animation and interaction, which could function as intermediate producers. The evidence does not show those scripts being exposed, edited, persisted, or executed into distinct artifacts, so the structural match is incomplete.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13624",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "A generated TypeScript function is plainly programmatic output, but the quote stops before execution or any downstream artifact. It also provides no evidence that the function is editable, persistent, parameterized, or reusable without the model.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9055",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The prompt produces an actionbrush represented by particle-system parameters, which can generate many painted dynamics rather than one final mark. This is a compelling parameterized producer, although execution, subsequent parameter editing, and persistence are not explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10229",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A synthesized reusable workflow is strongly aligned with a persistent producer that can automate future tasks without regeneration. The supplied sentence does not reveal its structure, execution behavior, editable arguments, or resulting web artifact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13937",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "The quote mentions JSON specifications only as outputs in few-shot examples, not clearly as the system's actual persistent intermediate. It says the system generates a prototype but does not demonstrate specification \u2192 execution \u2192 prototype or reusable bindings.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13373",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Converting validation rules into executable functions is adjacent to Program-as-Output, but the quote does not establish that these functions are model outputs, that they produce a downstream artifact, or that users edit and re-execute them.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5326",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The evidence gives a clean input \u2192 vector animation code \u2192 rendered video pipeline, plainly distinguishing the program from the artifact. Persistence, direct code editing, named parameters, and regeneration-free variation are not demonstrated, preventing a top representativeness score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10210",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "User input becomes VQL and is then rendered into a visualization, directly exhibiting an executable description between request and artifact. The quote does not establish that VQL remains user-addressable, editable, or reusable under new bindings.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16919",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The statement is an aspirational design goal\u2014\u201cwe hope to\u201d\u2014and only says code generation may guide animation generation. It does not document a built interface, an executable intermediate, execution, persistence, or a downstream artifact.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence is prospective and does not support an implemented Program-as-Output mechanism."
+  },
+  {
+   "rid": "8366",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Generated HTML is rendered into a distinct interactive GUI, cleanly demonstrating program \u2192 execution \u2192 artifact in a widely transferable medium. The evidence does not show the HTML persisting as an editable producer or being rebound without another model call.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9841",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote explicitly traces LLM output to shader code, real-time compilation, and application to video, providing a very clear executable pipeline. It lacks evidence of persistent shader editing, named parameters, or reuse under changed bindings.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5182",
+   "scores": {
+    "representativeness": 3,
+    "impact": 5,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Speech \u2192 code generation \u2192 code execution clearly places a program between instruction and drone behavior. The code may be an ephemeral control plan rather than a persistent editable producer, and neither its structure nor the resulting action is described in the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8133",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The user's description becomes a programming language corresponding to visual blocks, creating a plausible addressable intermediate. The quote does not show execution into a mobile app, persistence, editing, or argument-based variation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9554",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Generating executable, engine-native UXML/USS code rather than only a mockup strongly implies a downstream rendered GameUI. The quote itself stops before execution and provides no evidence of code editing, persistence, or reusable parameters.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10383",
+   "scores": {
+    "representativeness": 3,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Natural-language preferences become Python constraint functions, an addressable program representation likely consumed by the scheduler. However, the quote does not show function execution, the resulting schedule, persistence, or rebinding, so the complete pattern is not directly evidenced.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

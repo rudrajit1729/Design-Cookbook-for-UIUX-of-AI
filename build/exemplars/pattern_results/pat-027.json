@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-027",
+ "exemplars": [
+  {
+   "rid": "6006",
+   "title": "Codesigning Ripplet: an LLM-Assisted Assessment Authoring System Grounded in a Conceptual Model of Teachers' Workflows",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790418",
+   "final_score": 4.95,
+   "why": "A manual edit to one finished question is interpreted, generalized into a reusable edit command, and applied to other questions—the clearest complete demonstration-to-operative-specification loop in the candidates.",
+   "over_the_runner_up": "Selected over GenNI because the evidence explicitly shows the demonstration, induction rationale, materialized reusable structure, and subsequent reuse, whereas GenNI's quote does not explicitly show later application."
+  },
+  {
+   "rid": "10539",
+   "title": "GenNI: Human-AI Collaboration for Data-Backed Text Generation",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114845",
+   "final_score": 4.72,
+   "why": "The user supplies a desired finished text and the system reverses generation to recover control states, making an induced parameterization—not the exemplar—the operative specification.",
+   "over_the_runner_up": "Selected over AI-Instruments because the quote explicitly identifies the exemplar, inversion step, and resulting control states, while AI-Instruments leaves its grounding mechanism comparatively compressed."
+  },
+  {
+   "rid": "4449",
+   "title": "AI-Instruments: Embodying Prompts as Instruments to Abstract & Reflect Graphical Interface Commands as General-Purpose Tools",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714259",
+   "final_score": 4.5,
+   "why": "A concrete example or result is grounded into an instrument, reifying the demonstrated behavior as a reusable general-purpose interface-command abstraction.",
+   "over_the_runner_up": "Selected over AgentPbD because it turns an exemplar into an explicit general-purpose tool abstraction, closer to the pattern's editable operative structure than a workflow whose inspectability or editability is not evidenced."
+  }
+ ],
+ "notes": "I retained the consensus top three and their order after checking the structural signature. I slightly lowered AI-Instruments because its abstract-level quote does not expose the grounding interaction, later execution, or user editability; that third selection is consequently less secure than the first two. GenNI also lacks explicit evidence of later reuse or editing of the inferred control states. Ripplet has the strongest evidence, although the supplied quote still does not explicitly say whether users can inspect or revise the inferred command. No score adjustment exceeds 0.3.",
+ "pattern_name": "Specification by Demonstration",
+ "category_id": "U01",
+ "rated": 25
+}

@@ -1,0 +1,200 @@
+{
+ "pattern": {
+  "pattern_id": "pat-064",
+  "pattern_name": "Nonvisual Navigation",
+  "pattern_slug": "nonvisual-navigation",
+  "short_summary": "A structured artifact is exposed as a traversable graph of positions that the user steps through with discrete commands, with the system's response delivered on a nonvisual channel.",
+  "definition": "A structured artifact is exposed as a traversable graph of positions that the user steps through with discrete commands, with the system's response delivered on a nonvisual channel. Position within the structure is announced, so the user's location is part of the output rather than something read off a display. The artifact is not flattened into a single linear description.",
+  "structural_signature": "The artifact is parsed into addressable nodes (items, points, layers, regions); the input surface is a small set of discrete move commands (next, previous, into, out of) plus queries; each move emits a nonvisual rendering of the node reached together with an orientation cue naming where in the structure that node sits. The load-bearing property is the *persistent cursor*: state is carried between commands so the same key means different things at different positions. Transplants to any structured content and any nonvisual channel — a directory tree read aloud, a menu stepped through by haptics.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U04",
+   "category_name": "Modality, Embodiment & Rendering",
+   "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+   "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 7,
+ "candidates": [
+  {
+   "rid": "832",
+   "title": "ImageExplorer: Multi-Layered Touch Exploration to Encourage Skepticism Towards Imperfect AI-Generated Image Captions",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501966",
+   "system_id": "imageexplorer",
+   "evidence": [
+    {
+     "quote": "The frst information layer shows primary objects in the image outlined with polygonal boundaries. After double tapping on an object, users enter the second information layer, which shows rectangular bounding boxes around various detailed sub-objects.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2654",
+   "title": "SPICA: Interactive Video Content Exploration through Augmented Audio Descriptions for Blind or Low-Vision Viewers",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642632",
+   "system_id": "spica_audiodesc",
+   "evidence": [
+    {
+     "quote": "B) Frame-Level Caption List. Users can use arrow keys on the keyboard to",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4729",
+   "title": "ADCanvas: Accessible and Conversational Audio Description Authoring for Blind and Low Vision Creators",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791158",
+   "system_id": "adcanvas",
+   "evidence": [
+    {
+     "quote": "ADCanvas allows the user to control the video (a) through both screen reader compatible buttons (a) and hotkeys (b).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5580",
+   "title": "GeoVisA11y: An AI-based Geovisualization Question-Answering System for Screen-Reader Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790334",
+   "system_id": "geovisa11y",
+   "evidence": [
+    {
+     "quote": "(B) TAB focuses on an initial state, then arrow keys navigate to adjacent states in cardinal directions. (C) Example navigation from Kansas to Nebraska using the up arrow.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "5950",
+   "title": "From Struggle to Success: Context-Aware Guidance for Screen Reader Users in Computer Use",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790661",
+   "system_id": "5950",
+   "evidence": [
+    {
+     "quote": "AskEase dialog: pop-up with a question input field and chat history view, showing one user question and its AI reply at a time, with Previous/Next buttons to navigate through the multi-turn chat history..",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10058",
+   "title": "SeeChart: Enabling Accessible Visualizations Through Interactive Natural Language Interface For People with Visual Impairments",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584099",
+   "system_id": "seechart",
+   "evidence": [
+    {
+     "quote": "if there are multiple charts on a web page, the SeeChart system reconstructs all of them and user can navigate between them by pressing N (next) and P (previ…",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "13675",
+   "title": "StreetViewAI: Making Street View Accessible Using Context-Aware Multimodal AI",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747756",
+   "system_id": "streetviewai",
+   "evidence": [
+    {
+     "quote": "We introduce StreetViewAI, the first-ever accessible street view tool, which combines context-aware, multimodal AI, accessible navigation controls, and conversational speech.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

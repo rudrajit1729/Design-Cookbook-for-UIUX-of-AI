@@ -59,7 +59,7 @@ def _():
     assert ids == ["U%02d" % i for i in range(1, 11)], ids
     assert [c["category_order"] for c in D["categories"]] == list(range(1, 11))
     stages = D["migration"]["stages"]
-    assert [s["name"] for s in stages] == ["Setting the specs", "Taking in the output",
+    assert [s["name"] for s in stages] == ["Setting the context", "Taking in the output",
                                            "Acting on the output", "Fitting into the work"]
     assert [s["stage_order"] for s in stages] == [1, 2, 3, 4]
     covered = [cid for s in stages for cid in s["categories"]]

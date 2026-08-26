@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-096",
+ "exemplars": [
+  {
+   "rid": "10078",
+   "title": "ScatterShot: Interactive In-context Example Curation for Text Transformation",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584059",
+   "final_score": 4.7,
+   "why": "Each LLM-output candidate is individually assigned through the same explicit three-way vocabulary—positive example, negative example, or excluded—making this the cleanest evidence of a fixed, repeated per-item disposition mechanism; the resulting choices also become demonstrations that shape subsequent model behavior.",
+   "over_the_runner_up": "Chosen over EchoLadder because its evidence enumerates a clearer closed set of mutually exclusive dispositions, whereas EchoLadder mixes dispositions with preview and undo operations."
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "final_score": 4.4,
+   "why": "Every suggestion can individually be previewed, applied, undone, or regenerated, directly establishing a stable action vocabulary and item-level scope while supporting incremental construction of a complex VR environment.",
+   "over_the_runner_up": "Chosen over the flagged-issue panel because the evidence explicitly says that each suggestion is handled individually and gives a more complete account of the available actions."
+  },
+  {
+   "rid": "9674",
+   "title": "Tracking, Retrieving, and Auditing for Coherent Epics in Online Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798905",
+   "final_score": 3.9,
+   "why": "The conflict panel presents multiple system-flagged issues with the same acknowledge-or-dismiss actions, providing stronger evidence of a repeated, co-located per-item control group than candidates describing only one active suggestion or patch.",
+   "over_the_runner_up": "Chosen over TraceMate despite its lower consensus score because the quote demonstrates controls repeated across a list of generated items, while TraceMate documents Accept/Reject only for a single current patch and gives rejection branching consequences."
+  }
+ ],
+ "notes": "I retained the first two consensus choices but promoted rid 9674 above rid 14009. The departure is structural: rid 9674 describes a list of flagged items carrying acknowledge/dismiss actions, whereas rid 14009 does not establish repetition across items and allows Reject to produce more than one consequence. No score adjustment exceeds 0.3. Readers should still treat closure cautiously: none of the three excerpts explicitly proves that no alternative disposition path exists. ScatterShot's optional editing may sit outside its three-way classification vocabulary; EchoLadder's preview and undo are lifecycle operations rather than mutually exclusive final dispositions; and rid 9674 leaves independent state changes and exhaustiveness implicit.",
+ "pattern_name": "Accept/Reject Controls",
+ "category_id": "U06",
+ "rated": 18
+}

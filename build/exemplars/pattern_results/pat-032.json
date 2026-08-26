@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-032",
+ "exemplars": [
+  {
+   "rid": "1423",
+   "title": "GANSpiration: Balancing Targeted and Serendipitous Inspiration in User Interface Design with Style-Based Generative Adversarial Network",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517511",
+   "final_score": 4.55,
+   "why": "GANSpiration is the cleanest structural match: it ingests the user’s preliminary design image, encodes that artifact into latent conditioning state, and uses it to generate design inspiration whose output changes with the supplied draft.",
+   "over_the_runner_up": "It ranks above CareerCraft because the evidence establishes an unambiguous artifact-to-conditioning-state path, without relying partly on text that may have been authored specifically for the interaction."
+  },
+  {
+   "rid": "5505",
+   "title": "CareerCraft: Supporting New Graduates on Job Hunting with LLM-Assisted Self-Construction of Career Profile",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791221",
+   "final_score": 4.48,
+   "why": "CareerCraft exposes a concrete ingestion-and-transformation pipeline in which user-uploaded documents and prior reflections are processed by an LLM into predefined experience cards, turning material the user already has into structured generative output.",
+   "over_the_runner_up": "It ranks above the immersive-diary exemplar because its document-to-structured-record mechanism is more readily transferable across domains and more directly illustrates the stated structured-fields sub-pattern."
+  },
+  {
+   "rid": "8351",
+   "title": "From Photos to Immersive Memories: Awakening the Past with Panoramic Environments",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720170",
+   "final_score": 4.46,
+   "why": "The system conditions generation on a clearly pre-existing, multimodal personal artifact—diary text, photographs, and EXIF metadata—and transforms those records into a VR environment intended to preserve their original context.",
+   "over_the_runner_up": "It ranks above TubeLens because the evidence identifies the ingested source representations and their generated destination more concretely, while TubeLens leaves the watch-history import and inference pipeline unspecified."
+  }
+ ],
+ "notes": "I promoted GANSpiration from third to first because its quote most completely exposes the structural signature: artifact ingestion, latent encoding, and downstream transformation. I retained CareerCraft but placed it second because its uploaded-document path is strong while its free-text reflections may have been produced for the workflow. I selected the immersive-memory system over consensus runner-up TubeLens: TubeLens is conceptually compelling, but its high rater spread and missing import/consent and inference details make it weaker as a reconstructable structural exemplar. Readers should also distrust any implication that the available quotes fully document the interfaces: GANSpiration’s quote omits the later generation controls, CareerCraft does not distinguish pre-existing from workflow-authored reflections, and the immersive-memory quote does not specify its capture or upload interaction.",
+ "pattern_name": "Source Conditioned Generation",
+ "category_id": "U01",
+ "rated": 30
+}

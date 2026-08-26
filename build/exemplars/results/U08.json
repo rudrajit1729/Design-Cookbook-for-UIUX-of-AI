@@ -1,0 +1,76 @@
+{
+ "category_id": "U08",
+ "category_name": "Workflow, History & Session Structure",
+ "exemplars": [
+  {
+   "rid": "3185",
+   "title": "ChaCha: Leveraging Large Language Models to Prompt Children to Share Their Emotions about Personal Events",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642152",
+   "pattern_id": "pat-016",
+   "pattern_name": "Structured Dialogue Flow",
+   "final_score": 4.65,
+   "why": "An authored phase graph with transition rules governs the dialogue: the system holds the current phase as persistent state, applies a phase-specific test to the conversation after every message, and makes an explicit stay-or-advance decision. It is the only candidate in U08 whose evidence shows the control structure operating at runtime rather than sitting in a static diagram, and the only one with a deployed study population, so it is where criterion 2 has anything to stand on. Any designer building a protocol-driven agent — intake, tutoring, screening — can lift the per-turn transition test directly.",
+   "over_the_runner_up": "It beats Orchid-Creator because Orchid-Creator evidences only the authoring representation, while ChaCha evidences the representation actually running a conversation."
+  },
+  {
+   "rid": "5353",
+   "title": "Criticmate: Stagewise Human-AI Co-Critique in Single-Screen UI Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790929",
+   "pattern_id": "pat-017",
+   "pattern_name": "Staged Pipeline",
+   "final_score": 4.95,
+   "why": "Three designer-fixed stages — Perception, Comprehension, Projection — are constant across runs and each carries a distinct epistemic role, with sibling coded rows confirming they are separately instantiated. It is the one staging rationale in the dimension that is not task chunking: the boundaries exist to stop the model and the designer from critiquing before they have observed, which is the non-obvious move criterion 5 asks for. Any workflow where premature judgement is the failure mode can copy the discipline of making observation its own stage.",
+   "over_the_runner_up": "It beats the analysis-edit-review pipeline in rid 4036 because that sequence is the default anyone would build for find-a-problem-and-fix-it, whereas separating observation from interpretation is a deliberate constraint on the AI's reasoning order."
+  },
+  {
+   "rid": "10222",
+   "title": "CoAutoML: User Interface Framework for Machine Learning Novices using LLM-based AutoML and Test-Driven Machine Teaching",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789153",
+   "pattern_id": "pat-017",
+   "pattern_name": "Staged Pipeline",
+   "final_score": 4.48,
+   "why": "A visual workflow panel displays step-by-step progress across five constant, designer-fixed stages (data upload, domain knowledge, test-cases, ML task formulation, AutoML process). This is the dimension's most literal evidence for the signature clause 'the surface encodes the order', and the only candidate that plainly satisfies U08's classification boundary that the process structure be exposed to users rather than held internally. The panel is a lift-anywhere device for any multi-step AI pipeline aimed at non-experts.",
+   "over_the_runner_up": "It beats rid 4036 because its stages are evidenced as a surface the user sees, while rid 4036's three phases are the mechanics of a pre-send privacy inspection loop that is coded as a different pattern."
+  },
+  {
+   "rid": "14044",
+   "title": "ProDec: Automated Prompt Decomposition",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00070",
+   "pattern_id": "pat-023",
+   "pattern_name": "Goal Decomposition",
+   "final_score": 4.2,
+   "why": "Each prompt is decomposed at runtime into its own dependency-linked subtasks, rendered as discrete interface steps that the user can inspect, modify, and execute individually before the whole runs. It is the only decomposition candidate covering the signature's 'by the system, the user, or both' clause, and its per-portion execution is corroborated by the same paper's separately coded evidence. Screen-native and hardware-free, it transfers to any prompt-driven tool.",
+   "over_the_runner_up": "It beats the higher-scoring Spark because the half of Spark's mechanism that distinguishes it — enactment through a physical robot — is exactly the half that does not transfer off that hardware, while ProDec's editable subtask graph does."
+  },
+  {
+   "rid": "10412",
+   "title": "Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents",
+   "venue": "tiis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3744750",
+   "pattern_id": "pat-080",
+   "pattern_name": "Revisitable History",
+   "final_score": 4.8,
+   "why": "The Thread panel retains a history of modifications that the user can return to and further refine at any time, making superseded states addressable records rather than discarded ones. It is the only evidence in the dimension for the signature's defining operation — returning to a past state and continuing from there, not merely reverting — so without it U08 cannot illustrate that half of the pattern at all. The panel generalizes to any AI tool where exploration branches and dead ends are normal.",
+   "over_the_runner_up": "It beats Curompt's global revert timeline because reverting restores a past state while the Thread panel resumes work from it, which is the operation the pattern is named for."
+  }
+ ],
+ "notes": "Five slots, four patterns, so one pattern carries two. I gave the pair to pat-017 Staged Pipeline and say so deliberately: neither entry alone represents it. Criticmate supplies the only non-obvious staging rationale in the dimension but its evidence is abstract-only and never shows a user seeing the stages; CoAutoML supplies the visible ordered progress panel that is what U08's classification boundary ('the process structure must be exposed to users') actually requires. They also sit in unrelated domains (UI critique vs. ML tooling for novices), so they are not the same move twice. Overrides of pattern-level judgement: (1) I dropped Spark (rid 10246, 4.30) for ProDec (rid 14044, 4.20) against the pat-023 curator's ordering — Spark's distinguishing clause is robot enactment, which fails criterion 3 (weight 0.20) off that hardware, and ProDec restores user-editable control structure to a set that would otherwise be entirely designer-fixed and system-held. (2) I dropped Orchid-Creator (rid 6216, 4.60) even though it is the dimension's only directly authored, editable control graph; with one pat-016 slot, ChaCha's runtime evidence and deployed population win, and ProDec partially covers the user-editable half. (3) I dropped Curompt (rid 14039, 4.75) despite it being the strongest transferability case, because its timeline evidences rollback but not resumption, and 10412 covers the operation the pattern is defined by. All three reviewer DEMOTE calls (4906, 4036, 7490, 14005) are accepted and none of those papers appear. Distrust: every exemplar here is design description only — no outcome evidence anywhere in U08 except ChaCha's deployment. Criticmate's writeup claim that it 'preserves editability without letting users author the sequence' is not supportable from an abstract and should not be printed. 10412's evidence comes from figure text, so 'the Thread panel' is described from a figure label. ChaCha's phase structure is shown in a system-architecture figure aimed at readers, not demonstrably at the child user, so its satisfaction of the exposure boundary is inferred from the authored-protocol framing. CoAutoML evidences visible staging, not enforced staging. ProDec's serial handling comes from a sibling coded row rather than the headline quote. Two signature clauses go uncovered across the whole dimension and the cookbook should say so rather than paper over them: chronological playback of a history (the only candidate offering it, rid 14005, records other people's activity for an instructor and has no return-and-continue at all), and final-artifact assembly from decomposed parts.",
+ "near_misses": [
+  {"rid": "6216", "title": "Orchid-Creator: An Authoring Tool Supporting LLM-Driven Interactive Narrative Creation", "pattern_id": "pat-016", "reason": "The dimension's only hand-authored, editable node-and-condition graph, and reviewer-confirmed; lost the single pat-016 slot to ChaCha because its evidence stops at the authoring representation and shows no runtime state or per-turn transition."},
+  {"rid": "14039", "title": "Curompt: A Spatially Situated Interface for Generative AI in 3D Design Software", "pattern_id": "pat-080", "reason": "A global timeline making every AI action revertible is the most transferable history mechanism in U08, but it evidences rollback without resumption, and one pat-080 slot goes to the return-and-continue operation the pattern is defined by."},
+  {"rid": "10246", "title": "From Visual to Multimodal Programming: Designing an Interface to Externalize Decomposition Thinking for Novice Learners", "pattern_id": "pat-023", "reason": "Covers both per-input decomposition and enactment of the steps, but the enactment runs through a physical robot, so the clause that distinguishes it from ProDec is the clause that does not transfer; assembly is also absent by design."},
+  {"rid": "4036", "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs", "pattern_id": "pat-017", "reason": "Reviewer-demoted for representativeness: the three phases are the mechanics of a pre-send privacy inspection coded to pat-031, and detect-act-verify is the least non-obvious staging in the pool."},
+  {"rid": "4906", "title": "Designing a Generative AI-Assisted Music Psychotherapy Tool for Deaf and Hard-of-Hearing Individuals", "pattern_id": "pat-016", "reason": "Reviewer-demoted as evidence unconfirmed: the four gated states are pat-017's completion-gating signature, not pat-016's per-turn conditional transitions, and the curator concedes the structure is not shown to be user-inspectable — the case U08's boundary excludes."},
+  {"rid": "7490", "title": "CoExplorer: Generative AI Powered 2D and 3D Adaptive Interfaces to Support Intentionality in Video Meetings", "pattern_id": "pat-023", "reason": "Reviewer-demoted: meeting agenda segments are not sub-parts handled serially toward an artifact, the serial-handling evidence lives on a different pattern, and it is an extended abstract at the lowest score in the dimension."},
+  {"rid": "14005", "title": "Towards Human-AI Collaboration for Misapplication Detection in Programming Exercises", "pattern_id": "pat-080", "reason": "Reviewer-demoted as evidence contradicted: the timeline replays other people's activity for an instructor observer, with no return-to-a-past-state-and-continue operation; covering playback with a paper that misses the pattern's core operation is the wrong trade."}
+ ]
+}

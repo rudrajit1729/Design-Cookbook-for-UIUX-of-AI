@@ -1,0 +1,776 @@
+{
+ "pattern": {
+  "pattern_id": "pat-009",
+  "pattern_name": "Proactive Support",
+  "pattern_slug": "proactive-support",
+  "short_summary": "Output is emitted without a user request immediately preceding it.",
+  "definition": "Output is emitted without a user request immediately preceding it. The trigger is a timer, a change in sensed or task state, or the system's own decision that intervention is warranted, and the user takes no action to summon what appears.",
+  "structural_signature": "An output-producing edge in the control graph whose predecessor is not a user event: a clock, a state-change condition, or an internal decision step. There is no request object attributable to the user for that output, and the interface offers no control the user could have withheld to prevent it appearing at that moment.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Proactive Suggestions",
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "10346",
+   "title": "Conversational Context-sensitive Ad Generation with a Few Core-Queries",
+   "venue": "tiis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3588578",
+   "system_id": "10346",
+   "evidence": [
+    {
+     "quote": "Another unique point is that the modified Core-Query offers users speaking in front of the CoCoA system a list of context-sensitive advertisements.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12085",
+   "title": "LEVA: Using Large Language Models to Enhance Visual Analytics",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3368060",
+   "system_id": "leva",
+   "evidence": [
+    {
+     "quote": "we use large language models to recommend insights based on the analysis of system status and data to facilitate mixed-initiative exploration",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12247",
+   "title": "InsightLens: Augmenting LLM-Powered Data Analysis With Interactive Insight Management and Navigation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567131",
+   "system_id": "insightlens",
+   "evidence": [
+    {
+     "quote": "The framework automatically runs in the background throughout the analysis process without disrupting the conversational workflow (R4).",
+     "location": "full text sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12333",
+   "title": "A Wizard of Oz Study of Guidance Strategies and Dynamics",
+   "venue": "tvcg",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3418782",
+   "system_id": "12333",
+   "evidence": [
+    {
+     "quote": "In our study interface, users do not have an explicit option to ask for guidance, e.g., by clicking a button.",
+     "location": "full text, system sec IV-B"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12566",
+   "title": "ActiveAR: Augmented Reality Task Support System With Proactive Context and Virtual Content Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567346",
+   "system_id": "activear",
+   "evidence": [
+    {
+     "quote": "Our system dynamically proposes suitable virtual content and placements based on the context and the user’s progress, helping them complete",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12806",
+   "title": "ProactiveVA: Proactive Visual Analytics with LLM-Based UI Agent",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642628",
+   "system_id": "proactiveva",
+   "evidence": [
+    {
+     "quote": "We propose a ProactiveVA framework in which LLM-powered UI agent monitors user interactions and delivers context-aware assistance proactively.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12905",
+   "title": "Enhancing Perceived Empathy in Empathic Mixed Reality Agents via Context-Aware Adaptation",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3646601",
+   "system_id": "12905",
+   "evidence": [
+    {
+     "quote": "the virtual agent paused the game and explained the reason for the interruption along with instructions on how to resume",
+     "location": "full text sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13132",
+   "title": "Tuning Immersion and Performance with Adaptive Generative Music in VR",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3679907",
+   "system_id": "13132",
+   "evidence": [
+    {
+     "quote": "prompts in Google’s MusicFXDJ evolved dynamically with task progression (e.g., increasing intensity as arrows decreased)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13515",
+   "title": "CrossTalk: Intelligent Substrates for Language-Oriented Interaction in Video-Based Communication and Collaboration",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606773",
+   "system_id": "crosstalk",
+   "evidence": [
+    {
+     "quote": "Beyond transmitting audio, videos, and messages, we envision digital communication media as proactive facilitators that can provide unobtrusive assistance to enhance communication and collaboration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13626",
+   "title": "AROMA: Mixed-Initiative AI Assistance for Non-Visual Cooking by Grounding Multimodal Information Between Reality and Videos",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747650",
+   "system_id": "aroma",
+   "evidence": [
+    {
+     "quote": "Aroma uses a mixed-initiative approach: it responds to user requests while also proactively monitoring the video stream to offer timely alerts and guidance.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13690",
+   "title": "Towards Unobtrusive Physical AI: Augmenting Everyday Objects with Intelligence and Robotic Movement for Proactive Assistance",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747726",
+   "system_id": "13690",
+   "evidence": [
+    {
+     "quote": "Consider if familiar objects instead proactively assisted users, e.g., a stapler moving across the table to help users organize documents",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13698",
+   "title": "Scaling Context-Aware Task Assistants that Learn from Demonstration and Adapt through Mixed-Initiative Dialogue",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747700",
+   "system_id": "13698",
+   "evidence": [
+    {
+     "quote": "while PrISM-Observer [6] enables proactive interventions by reminding users of important steps as they approach the appropriate time to perform them.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13720",
+   "title": "Sensible Agent: A Framework for Unobtrusive Interaction with Proactive AR Agents",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747748",
+   "system_id": "13720",
+   "evidence": [
+    {
+     "quote": "Sensible Agent proactively prompts the user based on context, toggles context-adaptive unobtrusive interactions, and suggests different types of queries bas…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13765",
+   "title": "GestureCoach: Rehearsing for Engaging Talks with LLM-Driven Gesture Recommendations",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747705",
+   "system_id": "gesturecoach",
+   "evidence": [
+    {
+     "quote": "GestureCoach combines an LLM-driven gesture recommendation model with a rehearsal interface that proactively cues speakers to gesture appropriately.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13772",
+   "title": "ProMemAssist: Exploring Timely Proactive Assistance Through Working Memory Modeling in Multi-Modal Wearable Devices",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747770",
+   "system_id": "promemassist",
+   "evidence": [
+    {
+     "quote": "Messages with high predicted utility are delivered as proactive voice assistance, while F ○ lower-utility messages may be deferred for later evaluation or discarded.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13807",
+   "title": "Vid2Coach: Transforming How-To Videos into Task Assistants",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747612",
+   "system_id": "vid2coach",
+   "evidence": [
+    {
+     "quote": "proactive feedback, and answers to user questions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13996",
+   "title": "Dynamite: Real-Time Debriefing Slide Authoring through AI-Enhanced Multimodal Interaction",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00023",
+   "system_id": "dynamite",
+   "evidence": [
+    {
+     "quote": "When a high-priority change is detected, the system notifies the instructor via a non-disruptive toast alert.",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14005",
+   "title": "Towards Human-AI Collaboration for Misapplication Detection in Programming Exercises",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00031",
+   "system_id": "14005",
+   "evidence": [
+    {
+     "quote": "Second, it should identify students who appear to be progressing toward misapplications during an exercise without real-time instructor intervention.",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14007",
+   "title": "From Tool to Partner: Exploring the Roles of Embodiment on AI Agent in Pair Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00033",
+   "system_id": "14007",
+   "evidence": [
+    {
+     "quote": "Proactive responses controlled by researchers occur and were triggered based on observed hesitation or task-related pauses.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "14019",
+   "title": "Co-Advisor: Learning Programming Strategies in Context",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00045",
+   "system_id": "14019",
+   "evidence": [
+    {
+     "quote": "Co-Advisor provides feedback (A, D) if the user performs the wrong action by making the wrong decision (B) or inserting the wrong value (C)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14541",
+   "title": "To Err is AI: Imperfect Interventions and Repair in a Conversational Agent Facilitating Group Chat Discussions",
+   "venue": "cscw-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3579532",
+   "system_id": "14541",
+   "evidence": [
+    {
+     "quote": "CAs can analyze group conversations using machine learning techniques and make timely interventions by sending supervisory messages such as encouraging balanced participation.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14596",
+   "title": "Inform, Explain, or Control: Techniques to Adjust End-User Performance Expectations for a Conversational Agent Facilitating Group Chat Discussions",
+   "venue": "cscw-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3610192",
+   "system_id": "14596",
+   "evidence": [
+    {
+     "quote": "We built a facilitator CA that detects a member who has low contribution during a synchronous group chat discussion and asks the person to participate more.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "14932",
+   "title": "Conversational Agents to Facilitate Deliberation on Harmful Content in WhatsApp Groups",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3687030",
+   "system_id": "14932",
+   "evidence": [
+    {
+     "quote": "It scans content in a group, gets activated on what it thinks is harmful",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15198",
+   "title": "DanModCap: Designing a Danmaku Moderation Tool for Video-Sharing Platforms that Leverages Impact Captions with Large Language Models",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710954",
+   "system_id": "danmodcap",
+   "evidence": [
+    {
+     "quote": "we propose a proactive moderation approach inspired by Impact Captions, a visual technique used in East Asian variety shows",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15482",
+   "title": "Large Language Model Agents for Improving Engagement with Behavior Change Interventions: Application to Digital Mindfulness",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757619",
+   "system_id": "15482",
+   "evidence": [
+    {
+     "quote": "Participants were reminded via email every other day, over a period of three weeks, to engage in mindfulness exercises, totaling 10 reminders",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "15712",
+   "title": "AI That Helps Us Help Each Other: A Proactive System for Scaffolding Mentor-Novice Collaboration in Entrepreneurship Coaching",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757549",
+   "system_id": "15712",
+   "evidence": [
+    {
+     "quote": "The human-AI coaching system leverages a cognitive coaching model and LLM to proactively scaffold novice reflection, support mentor preparation, and adapt to evolving contexts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16313",
+   "title": "The CoExplorer Technology Probe: A Generative AI-Powered Adaptive Interface to Support Intentionality in Planning and Running Video Meetings",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661507",
+   "system_id": "16313",
+   "evidence": [
+    {
+     "quote": "Upon recognition of a phase transition, CoExplorer notifies users and modifies the display to accommodate the new phase.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16714",
+   "title": "When Systems Take Initiative: A Design Framework for Adaptive, Mixed-initiative Database Querying",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812906",
+   "system_id": "16714",
+   "evidence": [
+    {
+     "quote": "while proactively intervening and adapting its responses to users’ evolving cognitive needs",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17248",
+   "title": "CLARA: AI-Mediated Facilitation for Enhancing Group Cognition and Cohesion in Remote Collaboration",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3786325",
+   "system_id": "clara",
+   "evidence": [
+    {
+     "quote": "CLARA employs real-time multimodal assessment of group states, providing adaptive cognitive prompts to optimise task focus and affective cues to foster positive dynamics.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

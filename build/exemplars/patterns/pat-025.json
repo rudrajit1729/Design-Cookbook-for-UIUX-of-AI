@@ -1,0 +1,996 @@
+{
+ "pattern": {
+  "pattern_id": "pat-025",
+  "pattern_name": "Interpretation Readback",
+  "pattern_slug": "interpretation-readback",
+  "short_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it.",
+  "definition": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it. The user can therefore see where the system's understanding diverges from their own, and in several cases can edit that understanding directly. The displayed object stands between the user's input and whatever the system produces next.",
+  "structural_signature": "An inference step over the user's input emits a named artifact (graph, keyword overlay, natural-language restatement, schema instance) that is rendered persistently on screen; downstream behaviour is conditioned on that artifact. Where the artifact is editable, edits to it — not to the original input — are the channel by which the user corrects the system.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Editing a Generated Draft",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 37,
+ "candidates": [
+  {
+   "rid": "631",
+   "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70112",
+   "system_id": "interchat",
+   "evidence": [
+    {
+     "quote": "users interact with visualizations to express analytical intents and inspect inferred intents through visual connections",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1457",
+   "title": "What It Wants Me To Say: Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580817",
+   "system_id": "1457",
+   "evidence": [
+    {
+     "quote": "The result is visible as a new column in the sheet (F1), and a grounded utterance representing the code is visible (D1). Right: the user has edited the grounded utterance via the text boxes (D1 ⇒ D2) and submitted i",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1661",
+   "title": "Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581058",
+   "system_id": "1661",
+   "evidence": [
+    {
+     "quote": "The human capability modeling process. The whole process goes through four steps. Step 1: Collect user predictions. Step 2: Generate initialized decision models. Step 3: Interactively modify decision models. Step 4: Apply decision models to estimate correctness likelihood.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2491",
+   "title": "DiaryHelper: Exploring the Use of an Automatic Contextual Information Recording Agent for Elicitation Diary Study",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642853",
+   "system_id": "diaryhelper",
+   "evidence": [
+    {
+     "quote": "DiaryHelper can predict fve dimensions of contextual information and confrm with participants.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3512",
+   "title": "From Operation to Cognition: Automatic Modeling Cognitive Dependencies from User Demonstrations for GUI Task Automation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713356",
+   "system_id": "3512",
+   "evidence": [
+    {
+     "quote": "We propose TaskMind, a system that automatically identifes the semantics of operations, and the cognitive dependencies between operations from demonstrations, building a user-interpretable task graph.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4314",
+   "title": "GenComUI: Exploring Generative Visual Aids as Medium to Support Task-Oriented Human-Robot Communication",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714238",
+   "system_id": "gencomui",
+   "evidence": [
+    {
+     "quote": "User Intention Understanding Module: Analyzes user input and dialogue context to understand communication progress, tracks task specifications, and plans appropriate responses, including visual aids generation and code updates.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5033",
+   "title": "XSynth: GenAI-Empowered Shared Mental Model Building for Conceptual Design Collaboration in Extended Reality",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790350",
+   "system_id": "xsynth",
+   "evidence": [
+    {
+     "quote": "XSynth scaffolds designers’ reasoning, externalizes individual mental models as knowledge graphs, CHI ’26, April 13–17, 2026, Barcelona, Spain and merges them into a unified graph to facilitate SMMs building.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5176",
+   "title": "From Conversation to Human-AI Common Ground: Extracting Cognitive Workflows for Reuse in Sense-making Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791669",
+   "system_id": "5176",
+   "evidence": [
+    {
+     "quote": "(A) AI extracts a structured workflow representation from natural conversation, using a reasoning-aware workflow schema.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5558",
+   "title": "PlayWrite: A Multimodal System for AI Supported Narrative Co-Authoring Through Play in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791159",
+   "system_id": "playwrite",
+   "evidence": [
+    {
+     "quote": "A multi-agent AI pipeline interprets these actions into Intent Frames—structured narrative beats visualized as rearrangeable story marbles on a timeline.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5632",
+   "title": "Notational Animating: An Interactive Approach to Creating and Editing Animation Keyframes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790707",
+   "system_id": "5632",
+   "evidence": [
+    {
+     "quote": "(2) a two-level feedback mechanism that communicates how notations are interpreted and resolve ambiguities (DG3: provide structured feedback)",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6089",
+   "title": "Just-In-Time Objectives: A General Approach for Specialized AI Interactions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790713",
+   "system_id": "6089",
+   "evidence": [
+    {
+     "quote": "We turn these objectives into first-class interactive objects that are visible, modifiable, and equipped to powerfully steer any number of downstream AI systems.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6169",
+   "title": "AnnotateGPT: Designing Human-AI Collaboration in Pen-Based Document Annotation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790867",
+   "system_id": "annotategpt",
+   "evidence": [
+    {
+     "quote": "(c) The assistant will guess the purpose of the annotation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6178",
+   "title": "KNIT: Computational Boundary Objects for Real-Time Convergence in Interdisciplinary Teams",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791921",
+   "system_id": "knit",
+   "evidence": [
+    {
+     "quote": "We present KNIT, an AI-mediated framework that conceptualises AI-generated artefacts as computational boundary objects.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6179",
+   "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human-AI Collaboration: Seeing Eye to Eye",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791059",
+   "system_id": "6179",
+   "evidence": [
+    {
+     "quote": "It integrates three components: (1) joint attention coordination for fluid focus alignment, (2) revisable memory to maintain evolving common ground, and (3) reflective feedback allowing users to clarify and refine AI’s understanding.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8405",
+   "title": "IntentPrism: Human-AI Intent Manifestation for Web Information Foraging",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719744",
+   "system_id": "intentprism",
+   "evidence": [
+    {
+     "quote": "We introduce IntentPrism, an approach to explicitly visualizing LLM-recognized user intents in a web information foraging task, in order to facilitate human-AI collaboration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8978",
+   "title": "Sip Your Emotions: Blending Emotion and Data in Cocktail Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721336",
+   "system_id": "8978",
+   "evidence": [
+    {
+     "quote": "The system features an intuitive interface where users can input emotional descriptions, visualize emotional vectors, and fine-tune their “emotional curve.”",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9400",
+   "title": "Kairotask: Probing the Bridge Between Vague Intents and Spatiotemporal Contexts",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798333",
+   "system_id": "kairotask",
+   "evidence": [
+    {
+     "quote": "By introducing benign friction through an inference-confirmation loop, Kairotask assists users in concretizing execution contexts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9539",
+   "title": "Reframing Human-AI Interaction through Tangible, Multisensory Interfaces",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798597",
+   "system_id": "9539",
+   "evidence": [
+    {
+     "quote": "Emotional keywords appear as floating text projected onto the teapot, making the AI’s interpretation partially visible.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9700",
+   "title": "Verbalizing LLMs' Assumptions About the User to Calibrate Expectations and Reduce Sycophancy",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798611",
+   "system_id": "9700",
+   "evidence": [
+    {
+     "quote": "We introduce Verbalized Assumptions, a framework for revealing an LLM’s implicit assumptions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Perspective-Taking",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9835",
+   "title": "Mirror of the Dividual: A Public-Space Multimodal Interactive System for Making Understanding Perceivable",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799110",
+   "system_id": "9835",
+   "evidence": [
+    {
+     "quote": "We present Mirror of the Dividual, a deployable public-space multimodal interactive installation that externalizes multimodal state interpretation within interaction to support a perceivable sense of being understood.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "10153",
+   "title": "ExpressEdit: Video Editing with Natural Language and Sketching",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645164",
+   "system_id": "expressedit",
+   "evidence": [
+    {
+     "quote": "users can examine the summary of the system’s processing results that shows how each part of the NL part of the command was interpreted by the system and the reasoning behind each suggested edit’s temporal and spatial location (DG-3)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10221",
+   "title": "Adaptive Prompt Elicitation for Text-to-Image Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789149",
+   "system_id": "10221",
+   "evidence": [
+    {
+     "quote": "(C) updating its belief about user intent (solid curve) to align with the user’s latent intent (dotted curve) based on responses",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10255",
+   "title": "Canvas3D: Empowering Precise Spatial Control for Image Generation with Constraints from a 3D Virtual Canvas",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789142",
+   "system_id": "canvas3d",
+   "evidence": [
+    {
+     "quote": "The system parses this prompt to create an interactive 3D environment, referred to as \"canvas\" (b).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13591",
+   "title": "From Gap to Synergy: Enhancing Contextual Understanding through Human-Machine Collaboration in Personalized Systems",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606741",
+   "system_id": "13591",
+   "evidence": [
+    {
+     "quote": "He talks in natural language with LangAware (left), which considers extra contexts and replies with an interactive interface displaying a natural language explanation (lower-middle) and several selectable phrases (upper-middle), each linked to a bo…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "system_id": "13637",
+   "evidence": [
+    {
+     "quote": "The human-readable intent specification serves as an intermediate layer for enhancing common ground between the human and the AI, and grounds the AI’s decision-making.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13743",
+   "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747668",
+   "system_id": "neurosync",
+   "evidence": [
+    {
+     "quote": "we propose direct intent–task matching, a new human–LLM interaction paradigm that externalizes and enables direct manipulation of the LLM understanding, i.e., the coding tasks and their relationships inferred by the LLM prior to code generation",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14038",
+   "title": "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00064",
+   "system_id": "agentpbd",
+   "evidence": [
+    {
+     "quote": "By observing the workflow visualization, users can easily understand and grasp the functionality and intent of the workflow at the task level.",
+     "location": "full text sec III-C"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14978",
+   "title": "Grounding with Structure: Exploring Design Variations of Grounded Human-AI Collaboration in a Natural Language Interface",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3686902",
+   "system_id": "14978",
+   "evidence": [
+    {
+     "quote": "The agent generates a workflow and translates the flow back to an NL utterance (B), which allows the user to observe",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16234",
+   "title": "GlassMail: Towards Personalised Wearable Assistant for On-the-Go Email Creation on Smart Glasses",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660683",
+   "system_id": "glassmail",
+   "evidence": [
+    {
+     "quote": "2) GlassMail then displays its understanding of the email with word-level chunking and provides the user with optional opportunities for clarifcation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16459",
+   "title": "Design Probes for AI-Driven AAC: Addressing Complex Communication Needs in Aphasia",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735736",
+   "system_id": "16459",
+   "evidence": [
+    {
+     "quote": "System 1 allows users to check and confirm intended words using AI-generated images.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16684",
+   "title": "ToMigo: Interpretable Design Concept Graphs for Aligning Generative AI with Creative Intent",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813064",
+   "system_id": "tomigo",
+   "evidence": [
+    {
+     "quote": "ToMigo represents AI interpretations of user intent as interpretable and controllable design concept graphs.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16757",
+   "title": "Narrative Plasticity and State Stickiness: Designing Hybrid AI Systems for High-Stakes Communication",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813073",
+   "system_id": "16757",
+   "evidence": [
+    {
+     "quote": "notepads sought to expose state as something users can inspect and modify through dialogue",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16859",
+   "title": "Distill: Uncovering the True Intent behind Human-Robot Communication",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813000",
+   "system_id": "distill",
+   "evidence": [
+    {
+     "quote": "progressively revealing aspects of the user’s ground-truth intent from (1) natural language and (2) procedural traces to (3) filtered, (4) abstracted, and (5) grouped task specifications",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16862",
+   "title": "IntentFlow: Investigating Fluid Dynamics of Intent Communication in Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812999",
+   "system_id": "intentflow",
+   "evidence": [
+    {
+     "quote": "The system decomposes a user’s vague input into a high-level goal and a set of low-level intents, externalized as editable components.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "16899",
+   "title": "Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813056",
+   "system_id": "16899",
+   "evidence": [
+    {
+     "quote": "The study hypothesizes that if the system could infer the intent behind an image selection, it could offer intent-based suggestions to help users refine their choices",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16921",
+   "title": "Elemental Alchemist: A Generative Interface for Semantic Control of Particle Systems Across Dynamic Levels of Abstraction",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812946",
+   "system_id": "16921",
+   "evidence": [
+    {
+     "quote": "Elemental Alchemist decomposes user intent into a three-level hierarchy of controls. A) Example decomposition of user intent.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16931",
+   "title": "Is This the Real Me?: Investigating Algorithmic Self-Portraits as a Medium for Critical Reflection on Algorithmic Experiences on YouTube",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812910",
+   "system_id": "16931",
+   "evidence": [
+    {
+     "quote": "TubeLens invites users to engage with their algorithmic selves through self-portraits accompanied by dispositional keywords and explanations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Bias and Fairness"
+   ]
+  }
+ ]
+}

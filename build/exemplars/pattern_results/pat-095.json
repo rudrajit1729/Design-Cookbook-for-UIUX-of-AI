@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-095",
+ "exemplars": [
+  {
+   "rid": "4884",
+   "title": "DesignTrace: Exploring, Iterating and Tracking Design Alternatives with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791036",
+   "final_score": 4.7,
+   "why": "DesignTrace is the clearest structural match: manual typing, suggested tags, and image-based extraction are concurrently available routes into the identical attribute slot. Because all three routes share one schema, the artifact can mix contributions freely and remains fully operable without generation.",
+   "over_the_runner_up": "It ranks above Synthetic Conversation because the evidence names the exact input routes and explicitly shows three-way convergence on one attribute representation, rather than merely showing generated and user-added items sharing a collection."
+  },
+  {
+   "rid": "8557",
+   "title": "Synthetic Conversation: How Computing Researchers Engage Multi-Perspective Dialogues to Brainstorm Societal Impacts",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719747",
+   "final_score": 4.6,
+   "why": "Generated stakeholders and manually added stakeholders occupy the same collection, while generated entries remain editable and removable. This establishes a shared artifact that can retain both generated and user-authored contributions without making manual authorship a separate fallback mode.",
+   "over_the_runner_up": "It ranks above MindTrellis because its evidence identifies concrete manual operations—add, edit, and remove—and clearly places user-authored entries alongside generated ones in the same collection."
+  },
+  {
+   "rid": "16923",
+   "title": "MindTrellis: Co-Creating Knowledge Structures with AI through Interactive Visual Exploration",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813045",
+   "final_score": 4.3,
+   "why": "MindTrellis explicitly combines document-derived AI knowledge and user-contributed knowledge in one collaboratively built graph. The persistent graph is therefore a mixed-provenance artifact whose node-and-edge structure accepts contributions from either route.",
+   "over_the_runner_up": "It ranks above ExpressEdit because the evidence explicitly confirms that AI-derived and manual contributions coexist in one artifact, whereas ExpressEdit establishes equivalent edit routes but does not show that their contributions are jointly recorded."
+  }
+ ],
+ "notes": "The final selection preserves the consensus top three, but the scores reflect a structural-signature review rather than mechanically copying the means. MindTrellis was reduced from 4.45 to 4.3 because its abstract establishes mixed-source convergence but omits the concrete user input gesture, schema details, and evidence that no mode switch is required. That omission is the main point readers should distrust. Synthetic Conversation is strong at the collection level, although the quote does not independently prove the generated and manual routes are simultaneously visible. DesignTrace has the most complete supplied evidence; even there, the quote establishes a shared attribute slot more clearly than it establishes the absence of a mode switch. No adjustment exceeds 0.3.",
+ "pattern_name": "Manual Fallback Editing",
+ "category_id": "U06",
+ "rated": 31
+}

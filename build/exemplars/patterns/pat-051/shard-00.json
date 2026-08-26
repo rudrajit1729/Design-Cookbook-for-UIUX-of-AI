@@ -1,0 +1,1067 @@
+{
+ "pattern": {
+  "pattern_id": "pat-051",
+  "pattern_name": "Elements for Process Disclosure",
+  "pattern_slug": "elements-for-process-disclosure",
+  "short_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning.",
+  "definition": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning. The disclosure adds no new task content.",
+  "structural_signature": "A secondary display element bound one-to-one to a primary output element, carrying process metadata rather than task content. Its content is produced by or read from the producing pipeline, not from the user's material; removing it leaves the output intact and the task still performable.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "627",
+   "title": "LayerFlow : Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70123",
+   "system_id": "layerflow",
+   "evidence": [
+    {
+     "quote": "we present LayerFlow – a visual analytics workspace that displays embeddings in an interlinked projection design and communicates the transformation, representation, and interpretation uncertainty",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2257",
+   "title": "Don't Just Tell Me, Ask Me: AI Systems that Intelligently Frame Explanations as Questions Improve Human Logical Discernment Accuracy over Causal AI explanations",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580672",
+   "system_id": "2257",
+   "evidence": [
+    {
+     "quote": "Causal AI-Explanation: The AI system gives a reason for why the label is logically valid or logically invalid.",
+     "location": "full text sec 4.2 Explanation Feedback"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2477",
+   "title": "Human-LLM Collaborative Annotation Through Effective Verification of LLM Labels",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641960",
+   "system_id": "2477",
+   "evidence": [
+    {
+     "quote": "LLM-generated explanations can provide additional information to the verifier model as well as help humans better understand LLM labels.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2682",
+   "title": "RELIC: Investigating Large Language Model Responses using Self-Consistency",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641904",
+   "system_id": "relic",
+   "evidence": [
+    {
+     "quote": "Previous human-AI interaction studies found that displaying the model’s confidence level (usually represented with a score or score interval) is an efficient way to help users make correct decisions",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making"
+   ]
+  },
+  {
+   "rid": "2711",
+   "title": "Are You Really Sure? Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642671",
+   "system_id": "2711",
+   "evidence": [
+    {
+     "quote": "Step 2: They then received AI suggestions (with or without AI confdence).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2714",
+   "title": "EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642216",
+   "system_id": "evallm",
+   "evidence": [
+    {
+     "quote": "DG2: Facilitate inspection of automatic evaluations through explanations.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2937",
+   "title": "The HaLLMark Effect: Supporting Provenance and Transparent Use of Large Language Models in Writing with Interactive Visualization",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641895",
+   "system_id": "2937",
+   "evidence": [
+    {
+     "quote": "We argue that a system that captures the provenance of interaction with an LLM can help writers retain their agency, conform to policies, and communicate their use of AI to publishers and readers transparently.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3547",
+   "title": "Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Calibration on Learning Outcomes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713960",
+   "system_id": "3547",
+   "evidence": [
+    {
+     "quote": "Screenshot of the experiment condition intervention with an attention-weighted visualization of interaction and performance data alongside the AI-predicted posttest score.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3586",
+   "title": "From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713133",
+   "system_id": "3586",
+   "evidence": [
+    {
+     "quote": "Large language models (LLMs), with their exceptional conversational and analytical capabilities, present great opportunities to enhance AI-assisted decision making in the absence of AI explanations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3842",
+   "title": "eXplainMR: Generating Real-time Textual and Visual eXplanations to Facilitate UltraSonography Learning in MR",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714015",
+   "system_id": "explainmr",
+   "evidence": [
+    {
+     "quote": "without explanations on why an action was recommended",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4055",
+   "title": "Fostering Appropriate Reliance on Large Language Models: The Role of Explanations, Sources, and Inconsistencies",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714020",
+   "system_id": "4055",
+   "evidence": [
+    {
+     "quote": "Through a think-aloud study in which participants use an LLM-infused application to answer objective questions, we identify several features of LLM responses that shape users’ reliance: explanations (supporting details for answers), inconsistencies in explanations, and sources.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4085",
+   "title": "Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713229",
+   "system_id": "4085",
+   "evidence": [
+    {
+     "quote": "A simplified illustration of (a) unilateral explanations, which list all the features contributing to the AI’s decision, and (b) contrastive explanations, which highlight the differences between the AI’s choice and a likely human response for an exercise recommendation task.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4832",
+   "title": "From Answer Givers to Design Mentors: Guiding LLMs with the Cognitive Apprenticeship Model",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791899",
+   "system_id": "4832",
+   "evidence": [
+    {
+     "quote": "this guideline instructs the AI to use three core principles throughout the interaction: Verbalize (making its thought process explicit), Generalize (connecting specific advice to broader design principles for knowledge transfer), and Exemplify (situating feedback in real-world contexts)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "system_id": "iruler",
+   "evidence": [
+    {
+     "quote": "Users can then get Justified feedback by clicking for (b) Why and (d) Why Not explanations.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5064",
+   "title": "Bridging Gulfs in UI Generation through Semantic Guidance",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791966",
+   "system_id": "5064",
+   "evidence": [
+    {
+     "quote": "DG2 Transparent Analysis tackles the gulf of evaluation by extracting and presenting the semantic decisions that the model enacted in the generated UI.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5094",
+   "title": "DraftMarks: Enhancing Transparency in Human-AI Co-Writing Through Interactive Skeuomorphic Process Traces",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791109",
+   "system_id": "draftmarks",
+   "evidence": [
+    {
+     "quote": "We introduce DraftMarks, an augmented reading tool that surfaces the human–AI writing process through familiar physical metaphors.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5292",
+   "title": "Design and Multi-level Evaluation of MAP-X: a Medically Aligned, Patient-Centered AI Explanation System",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790971",
+   "system_id": "5292",
+   "evidence": [
+    {
+     "quote": "(b) Key Factors: Highlights specific acoustic features contributing to the score.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5313",
+   "title": "DiLLS: Interactive Diagnosis of LLM-based Multi-agent Systems via Layered Summary of Agent Behaviors",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790815",
+   "system_id": "dills",
+   "evidence": [
+    {
+     "quote": "DC2 Elicit hidden thoughts of agent behaviors. Our experts noted that when constructing an overview of the system’s execution, they often needed to extract information that was not explicitly provided in the logs or model outp…",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5396",
+   "title": "When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791480",
+   "system_id": "5396",
+   "evidence": [
+    {
+     "quote": "Response confidence indicator and explanation.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5458",
+   "title": "Sensemaking in Multi-Agent LLM Interfaces: How Users Interpret Transparency and Trustworthiness Cues",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791157",
+   "system_id": "5458",
+   "evidence": [
+    {
+     "quote": "Each variant instantiates a distinct combination of transparency-related design dimensions to surface multi-agent reasoning to the user.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5763",
+   "title": "Open-ended Structured Question Assessment with Human-LLM Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791034",
+   "system_id": "5763",
+   "evidence": [
+    {
+     "quote": "It combines chain-of-thought prompting with scoring point– and response-level in-context learning to enable interpretable LLM grading and iterative refinement from instructor feedback.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5820",
+   "title": "LL.me: Supporting Identity Work through Human-AI Alignment",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790890",
+   "system_id": "llme",
+   "evidence": [
+    {
+     "quote": "This figure shows LL.me’s Alignment Flow Screen. (1) Explain the experience statement; (2) Explain the rationale; (3) Explain the feedback",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5956",
+   "title": "Guided Reflection in AI-Assisted Decision-Making: Effects on AI Overreliance and Decision Accuracy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790632",
+   "system_id": "5956",
+   "evidence": [
+    {
+     "quote": "(A) The AI’s recommendation and explanation.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "6049",
+   "title": "EvaluAId: Human-AI Collaborative Evaluation of Open-Ended Student Essays",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790814",
+   "system_id": "evaluaid",
+   "evidence": [
+    {
+     "quote": "Provenance (e.g., selected snippets and retrieved sources) is kept visible.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6057",
+   "title": "Plotania: Exploring Transparency Trade-offs in AI Co-Writing Through Virtual Readers and Transparent Attribution",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790926",
+   "system_id": "plotania",
+   "evidence": [
+    {
+     "quote": "Transparent attribution raised awareness of AI contributions but triggered identity anxiety and reduced AI usage.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6148",
+   "title": "What Are You Doing?: Effects of Intermediate Feedback from Agentic LLM In-Car Assistants During Multi-Step Processing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790997",
+   "system_id": "6148",
+   "evidence": [
+    {
+     "quote": "We investigate feedback timing and verbosity from agentic LLM-based in-car assistants through a controlled, mixed-methods study (N=45) comparing planned steps and intermediate results feedback against silent operation with final-only response.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6152",
+   "title": "ORAgen Fables: Advancing the Design and Management of Content Attribution",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791227",
+   "system_id": "oragenfables",
+   "evidence": [
+    {
+     "quote": "Through the design, exhibition, and study of a collaborative storytelling tool, ORAgen Fables, we introduce technologies which enable detailed attribution and media provenance and explore contemporary attitudes and concerns about attribution.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6176",
+   "title": "Supporting Learners' Use of Imperfect Generative Pedagogical Chatbots: The Role of Chatbot Response Uncertainty and Reduced Verbosity",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791940",
+   "system_id": "6176",
+   "evidence": [
+    {
+     "quote": "To address these challenges, this work examines two chatbot design options in a STEM learning context: introducing verbal uncertainty and reducing response verbosity.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6201",
+   "title": "More Human or More AI? Visualizing Human-AI Collaboration Disclosures in Journalistic News Production",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791288",
+   "system_id": "6201",
+   "evidence": [
+    {
+     "quote": "Within journalistic editorial processes, disclosing AI usage is currently limited to simplistic labels, which misses the nuance of how humans and AI collaborated on a news article.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6911",
+   "title": "Engage AI and Child in Explanatory Dialogue on Commonsense Reasoning",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585699",
+   "system_id": "6911",
+   "evidence": [
+    {
+     "quote": "certain information, such as the AI’s reasoning paths, may be conveyed via specialized visualization more efciently",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7633",
+   "title": "Leveraging Large Language Models for Realizing Truly Intelligent User Interfaces",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650949",
+   "system_id": "7633",
+   "evidence": [
+    {
+     "quote": "The system shall make it clear how suggestions are Mention the model (e.g., ChatGPT), model input, and generated. prompt.",
+     "location": "system sec 2.1 (guidelines table)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8182",
+   "title": "CLONE: Synthetic Guideline-based Clinical Reasoning with Large Language Models for Early Diagnosis of Mild Cognitive Impairment",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720111",
+   "system_id": "clone",
+   "evidence": [
+    {
+     "quote": "Moreover, the synthesized guideline enhanced rationale quality, making rationales more consistent, correct, specific, helpful, and human-like compared to baselines.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8245",
+   "title": "Designing for Qualitative Evaluation of Synthetic Medical Data",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720274",
+   "system_id": "8245",
+   "evidence": [
+    {
+     "quote": "The reviewer starts by gaining a basic understanding of the criteria used to generate the SD and the training data3 . This involves four main components (Appendix, Figure 5): information about the training data, the purpose of the generation (whose importance is highlighted in [9]), the generative model used, and generation parameters.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "8306",
+   "title": "Exploring Human-AI Collaborative Writing of Product Descriptions on Online Flea Market Apps from the Sellers' and Buyers' Perspectives",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719718",
+   "system_id": "8306",
+   "evidence": [
+    {
+     "quote": "two types of labels were displayed (\"This text was written by AI\" and \"This text was written with AI\" in Japanese) indicating the degree of AI involvement",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8334",
+   "title": "Fact or Fiction? Exploring Explanations to Identify Factual Confabulations in RAG-Based LLM Systems",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720249",
+   "system_id": "8334",
+   "evidence": [
+    {
+     "quote": "Screenshot of factual explanation including prompt, GenAI response, treatment, classification decision, and subjective measurements.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8519",
+   "title": "ResponSight: Explainable and Collaborative Moderation Approach for Responsible Video Content in UGC Platform",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720230",
+   "system_id": "responsight",
+   "evidence": [
+    {
+     "quote": "By offering transparent, explainable feedback, this system enables users to understand the rationale behind moderation decisions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8529",
+   "title": "Scaling Analysis of Creative Activity Traces via Fuzzy Linkography",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720184",
+   "system_id": "8529",
+   "evidence": [
+    {
+     "quote": "“Fuzzy” lighter-colored links thereby serve to communicate model uncertainty about move association",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8558",
+   "title": "TELL-ME: Toward Personalized Explanations of Large Language Models",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719982",
+   "system_id": "tellme",
+   "evidence": [
+    {
+     "quote": "TELL-ME provides feature ablation, counterfactual, and self-explainability explanations on text generation tasks.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8793",
+   "title": "INDRA: Interactive Deep-dreaming Robotic Artist. Painting with a Real-Time Embodied AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721117",
+   "system_id": "indra",
+   "evidence": [
+    {
+     "quote": "The avatar’s modules are separated into distinct body parts to provide real-time transparency into INDRA’s internal processes, helping users understand how their voice, sketches, or physical painting are driving AI behavior.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "8941",
+   "title": "Transparent Hearts: Balancing Privacy and Trust in AI-Generated Self-Presentation for Online Dating",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720311",
+   "system_id": "8941",
+   "evidence": [
+    {
+     "quote": "In addition to user-controlled AI-disclosure toggles and explanations of AI-use, the prototype includes a conflict resolution mechanic for when two users have mismatched AI disclosure settings.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "pattern_id": "pat-030",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "2288",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A canonical instance: text annotations and a chart are explicitly interactive, synchronized representations, with changes in either reflected in the other. The quote plainly supplies the bidirectional propagation mechanism; impact is scored from the interface description because outcome evidence is unavailable.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3976",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes generation in both directions between motion and text, but not concurrent editable views backed by a shared model. This is bidirectional cross-modal generation, a neighboring mechanism, rather than demonstrated synchronization.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not establish concurrently displayed, independently editable representations or propagation of edits between them."
+  },
+  {
+   "rid": "4127",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "A sketch-to-design-to-sketch loop indicates round-trip generation, but the fragment does not show simultaneous views, write access in both views, or synchronization after edits. No stronger inference is possible from the supplied text.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports an iterative round-trip workflow, not the structural signature of synchronized editable sibling views."
+  },
+  {
+   "rid": "5384",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Visual paper groupings and annotations generate aligned textual structures, while text edits automatically update the visual representation. This clearly closes the loop across two editable representations, though the exact reconciliation rules are not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5657",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes translation among a proxy decision tree, user-written rules, and a neural-network graph, plus optimization of the tree. It does not say these are concurrent user-editable views whose changes synchronize with one another.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence demonstrates model translation and collaborative optimization, not a Two-Way Sync View."
+  },
+  {
+   "rid": "5916",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "\u201cSynchronized image-text co-editing\u201d strongly signals two editable representations kept aligned and makes the pattern central. The quote is nevertheless only a summary label: it does not specify what edits propagate, how synchronization works, or whether both views remain directly editable after conversion.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9301",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote identifies bidirectional object editing between Blender and Three.js and real-time scene synchronization, closely matching two writable views of one 3D scene. Its transferability is somewhat constrained by the particular applications and integration, and impact cannot be established beyond plausible workflow value.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10210",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Bidirectional editing with updates across modalities directly supports mutual propagation and appears to be a named system capability. However, the quote does not identify the representations, their on-screen relationship, user operations, or reconciliation behavior, so scoring remains conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13599",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The user can edit the same outline through either a text editor or visual canvas, and the system synchronizes the two workspaces. This is an unusually complete statement of two peer representations, write access from either, and propagation through a shared artifact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13731",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote clearly shows visual manipulations producing suggested text edits, but gives no reverse path in which text edits update the visualizations. It therefore demonstrates visual programming or one-way projection rather than a closed synchronization loop.",
+   "disqualify": true,
+   "disqualify_reason": "Only visual-to-text propagation is evidenced; bidirectional synchronization is not supported."
+  },
+  {
+   "rid": "13987",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Both the code and properties editors permit direct editing, and edits in either are reflected in the corresponding editor. This plainly matches sibling editable views with mutual propagation, although the quote omits detailed mapping or conflict behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14000",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote explicitly describes both directions: typed command edits update selected GUI options live, and GUI interactions edit the command. It is a clean, reconstructable example of synchronized textual and graphical authoring views.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14029",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Synchronized bidirectional updates among natural language, SQL, and visual blocks directly state the pattern and extend it to three representations. The specific user operations and reconciliation rules are absent, preventing a top mechanism-clarity score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16921",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Synchronization across abstraction levels is topical, but the quote only identifies a hierarchy organizing several kinds of controls. It does not establish distinct concurrent representations, editability at each level, or propagation in both directions.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate the pattern\u2019s multiple editable views or closed bidirectional update loop."
+  }
+ ]
+}

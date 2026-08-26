@@ -1,0 +1,657 @@
+{
+ "pattern": {
+  "pattern_id": "pat-027",
+  "pattern_name": "Specification by Demonstration",
+  "pattern_slug": "specification-by-demonstration",
+  "short_summary": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification.",
+  "definition": "Instead of describing what they want, the user supplies one or more instances of it, and the system generalizes or inverts those instances into the operative specification. The supplied artifact is treated as a definition of desired behaviour, not merely as content to draw on. What the system produces from it — a template, a constraint graph, a set of control states, a reusable action — is what governs subsequent generation.",
+  "structural_signature": "The input slot accepts finished exemplars; an induction step converts them into a reusable structure (template, constraint set, parameter assignment, recorded macro); that structure, and not the exemplars, is what conditions later runs and what the user can edit. Adding or removing exemplars changes the induced structure.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Editing a Generated Draft",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 25,
+ "candidates": [
+  {
+   "rid": "1661",
+   "title": "Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581058",
+   "system_id": "1661",
+   "evidence": [
+    {
+     "quote": "We first modeled humans’ CL by approximating their decision-making models and computing their potential performance in similar instances.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2221",
+   "title": "GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581226",
+   "system_id": "ganravel",
+   "evidence": [
+    {
+     "quote": "(a) The positive and negative examples can be selected from the gallery.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2966",
+   "title": "IntentTuner: An Interactive Framework for Integrating Human Intentions in Fine-tuning Text-to-Image Generative Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642165",
+   "system_id": "intenttuner",
+   "evidence": [
+    {
+     "quote": "IntentTuner enables users to articulate training intentions with imagery exemplars and textual descriptions, automatically converting them into effective data augmentation strategies.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3512",
+   "title": "From Operation to Cognition: Automatic Modeling Cognitive Dependencies from User Demonstrations for GUI Task Automation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713356",
+   "system_id": "3512",
+   "evidence": [
+    {
+     "quote": "In the demonstration phase, the user interacts with the GUI to search for and summarize a keyword’s introduction.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3748",
+   "title": "AppAgent: Multimodal Agents as Smartphone Users",
+   "venue": "chi",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713600",
+   "system_id": "appagent",
+   "evidence": [
+    {
+     "quote": "through autonomous exploration or by observing human demonstrations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3796",
+   "title": "WhatELSE: Shaping Narrative Spaces at Configurable Level of Abstraction for AI-bridged Interactive Storytelling",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713363",
+   "system_id": "whatelse",
+   "evidence": [
+    {
+     "quote": "creates narrative possibility spaces from example stories",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "4067",
+   "title": "End User Authoring of Personalized Content Classifiers: Comparing Example Labeling, Rule Writing, and LLM Prompting",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713691",
+   "system_id": "4067",
+   "evidence": [
+    {
+     "quote": "With the Label System, users label example comments to create a personal moderation classifier.",
+     "location": "full text sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4098",
+   "title": "Dango: A Mixed-Initiative Data Wrangling System using Large Language Model",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714135",
+   "system_id": "dango",
+   "evidence": [
+    {
+     "quote": "users can first demonstrate their desired actions on the tables in Dango (Step1)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4449",
+   "title": "AI-Instruments: Embodying Prompts as Instruments to Abstract & Reflect Graphical Interface Commands as General-Purpose Tools",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714259",
+   "system_id": "4449",
+   "evidence": [
+    {
+     "quote": "(3) Grounding to instantiate an instrument from an example, result, or extrapolation directly from another instrument.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6006",
+   "title": "Codesigning Ripplet: an LLM-Assisted Assessment Authoring System Grounded in a Conceptual Model of Teachers' Workflows",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790418",
+   "system_id": "6006",
+   "evidence": [
+    {
+     "quote": "A teacher manually edits a question, and then the system infers why this change was made and creates a reusable edit command, which can be reapplied to questions in other assessments.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6355",
+   "title": "PromptMaker: Prompt-based Prototyping with Large Language Models",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3503564",
+   "system_id": "promptmaker",
+   "evidence": [
+    {
+     "quote": "The structured mode (1b) helps users make few-shot prompts more conveniently, by allowing them to insert one set of examples per row",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7708",
+   "title": "SonifyAR: Context-Aware Sound Effect Generation in Augmented Reality",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650927",
+   "system_id": "sonifyar",
+   "evidence": [
+    {
+     "quote": "SonifyAR implements a Programming by Demonstration (PbD) AR authoring pipeline.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "evidence": [
+    {
+     "quote": "First, it uses a video of a skilled operator performing the assembly manually while explaining their actions aloud.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10078",
+   "title": "ScatterShot: Interactive In-context Example Curation for Text Transformation",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584059",
+   "system_id": "scattershot",
+   "evidence": [
+    {
+     "quote": "The in-context learning capabilities of LLMs like GPT-3 allow annotators to customize an LLM to their specific tasks with a small number of examples.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10146",
+   "title": "PDFChatAnnotator: A Human-LLM Collaborative Multi-Modal Data Annotation Tool for PDF-Format Catalogs",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645174",
+   "system_id": "pdfchatannotator",
+   "evidence": [
+    {
+     "quote": "During the annotation process, users can influence the LLM through multiple rounds of communication and example establishment via the provided interfaces.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10473",
+   "title": "GlyphCreator: Towards Example-based Automatic Generation of Circular Glyphs",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114877",
+   "system_id": "glyphcreator",
+   "evidence": [
+    {
+     "quote": "We aim to help users design and create circular glyphs through a novel example-based approach.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "10539",
+   "title": "GenNI: Human-AI Collaboration for Data-Backed Text Generation",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114845",
+   "system_id": "genni",
+   "evidence": [
+    {
+     "quote": "(M3) inferred control a reversed version of generation, where the user provides a goal text, and the control states are inferred.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "11418",
+   "title": "Data Formulator: AI-Powered Concept-Driven Visualization Authoring",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3326585",
+   "system_id": "11418",
+   "evidence": [
+    {
+     "quote": "Data Formulator employs both natural language interaction (for deriving concepts) and programming-by-example approach (for building custom concepts).",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "system_id": "datawink",
+   "evidence": [
+    {
+     "quote": "We introduce DataWink, an interactive by-example authoring tool for reusing and adapting SVG-based visualizations.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "13373",
+   "title": "RuleScope: Semantic-Aware Authoring of Data Validation Rules",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3697222",
+   "system_id": "rulescope",
+   "evidence": [
+    {
+     "quote": "2) Example-driven refinement, where experts demonstrate valid/invalid cases by selecting data instances;",
+     "location": "system sec 4.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13698",
+   "title": "Scaling Context-Aware Task Assistants that Learn from Demonstration and Adapt through Mixed-Initiative Dialogue",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747700",
+   "system_id": "13698",
+   "evidence": [
+    {
+     "quote": "First, our tracking algorithm effectively learns sensor representation for steps in procedures from a single demonstration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13700",
+   "title": "Log2Plan: An Adaptive GUI Automation Framework Integrated with Task Mining Approach",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747663",
+   "system_id": "log2plan",
+   "evidence": [
+    {
+     "quote": "To support personalization and reuse, it employs a task mining approach from user behavior logs that identifies user-specific patterns.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13794",
+   "title": "ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747644",
+   "system_id": "respark",
+   "evidence": [
+    {
+     "quote": "ReSpark helps users generate new data reports by reusing existing ones. It begins by ranking reports based on their alignment with the target dataset to assist in selecting a reference report (a).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14038",
+   "title": "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00064",
+   "system_id": "agentpbd",
+   "evidence": [
+    {
+     "quote": "We present AgentPbD, a system that synthesizes task-level agentic workflows from a single user demonstration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16713",
+   "title": "Exploring Fairy Cursor as a Form of AI Agent for In-the-Flow Assistance: Design Opportunities and Challenges",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813082",
+   "system_id": "16713",
+   "evidence": [
+    {
+     "quote": "Spells are a) recorded, reified, and composable actions",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

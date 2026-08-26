@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-016",
+ "exemplars": [
+  {
+   "rid": "3185",
+   "title": "ChaCha: Leveraging Large Language Models to Prompt Children to Share Their Emotions about Personal Events",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642152",
+   "final_score": 4.65,
+   "why": "ChaCha provides the most complete runtime realization of the pattern: it maintains a current conversational phase, applies a phase-specific test to dialogue history after every message, and explicitly decides whether to remain or transition.",
+   "over_the_runner_up": "Selected over Orchid-Creator because the evidence specifies persistent runtime state and per-turn transition computation, whereas Orchid-Creator’s excerpt primarily establishes the authoring representation."
+  },
+  {
+   "rid": "6216",
+   "title": "Orchid-Creator: An Authoring Tool Supporting LLM-Driven Interactive Narrative Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791426",
+   "final_score": 4.6,
+   "why": "Orchid-Creator turns conversational control into a directly authorable object: authors arrange content into graph nodes and define the conditions governing transitions between them.",
+   "over_the_runner_up": "Selected over the music-psychotherapy tool because its editable story graph and author-defined transitions more clearly establish that the control structure is inspectable and user-authored."
+  },
+  {
+   "rid": "4906",
+   "title": "Designing a Generative AI-Assisted Music Psychotherapy Tool for Deaf and Hard-of-Hearing Individuals",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791385",
+   "final_score": 4.5,
+   "why": "The tool defines four named states whose internal steps and required variables serve as explicit advancement criteria, closely matching a condition-governed finite-state workflow.",
+   "over_the_runner_up": "Selected over TeamWise because it identifies concrete states and transition-gating variables, while TeamWise establishes only a predefined macro-sequence without explaining how transitions are computed."
+  }
+ ],
+ "notes": "I reversed the top two consensus candidates because ChaCha’s excerpt demonstrates more of the full structural signature at runtime, including current-phase tests and a stay-or-advance decision on every turn. I also promoted rid 4906 over consensus-ranked rid 9621: TeamWise is a useful hybrid of authored sequence and generated utterances, but its evidence does not expose transition rules or persistent state. No score adjustment exceeds 0.3. All three selections rely on short excerpts rather than complete system descriptions, and none provides outcome evidence. In particular, Orchid-Creator’s excerpt does not confirm runtime state persistence, while rid 4906’s excerpt does not establish how visibly or directly end users can inspect or edit the four-state structure.",
+ "pattern_name": "Structured Dialogue Flow",
+ "category_id": "U08",
+ "rated": 30
+}

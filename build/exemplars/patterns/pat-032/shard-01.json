@@ -1,0 +1,1073 @@
+{
+ "pattern": {
+  "pattern_id": "pat-032",
+  "pattern_name": "Source Conditioned Generation",
+  "pattern_slug": "source-conditioned-generation",
+  "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+  "definition": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on. The user supplies material rather than a description of what they want. The output is a function of that material.",
+  "structural_signature": "The system exposes an ingestion path for a user-owned artifact (upload, parse, encode, capture) and routes it into the generator as conditioning state, either directly or after an encoding step. The generation cannot run without that artifact; changing it changes the output. The material is pre-existing with respect to the interaction — it is not authored in order to specify the request.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "4534",
+   "title": "LitLinker: Supporting the Ideation of Interdisciplinary Contexts with Large Language Models for Teaching Literature in Elementary Schools",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714111",
+   "system_id": "litlinker",
+   "evidence": [
+    {
+     "quote": "LitLinker can recommend interdisciplinary topics and contextualize them with literary elements (e.g., paragraphs, viewpoints) in the reading materials",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4810",
+   "title": "PrevizWhiz: Combining Rough 3D Scenes and 2D Video to Guide Generative Video Previsualization",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790534",
+   "system_id": "previzwhiz",
+   "evidence": [
+    {
+     "quote": "we present PrevizWhiz, a system that leverages rough 3D scenes in combination with generative image and video models to create stylized video previews",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4835",
+   "title": "Cerebra: Aligning Implicit Knowledge in Interactive SQL Authoring",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790974",
+   "system_id": "cerebra",
+   "evidence": [
+    {
+     "quote": "Cerebra automatically retrieves implicit knowledge from historical SQL scripts based on user instructions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4880",
+   "title": "Actor's Note: Examining the Role of AI-Generated Questions in Character Journaling for Actor Training",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790370",
+   "system_id": "4880",
+   "evidence": [
+    {
+     "quote": "Onboarding flow, from script upload and role selection to auto-generated character profile and dashboard access.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "system_id": "4912",
+   "evidence": [
+    {
+     "quote": "Quologue is designed to work exclusively with users’ highlights data, rather than providing access to full e-books or their surrounding context.",
+     "location": "system sec 3.1.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5009",
+   "title": "Does Personalized Nudging Wear Off? A Longitudinal Study of AI Self-Modeling for Behavioral Engagement",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791777",
+   "system_id": "5009",
+   "evidence": [
+    {
+     "quote": "AI self-modeling, which generates personalized portrayals of one’s ideal self, has shown promise for motivating behavior change, yet prior work largely examines short-term effects.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5090",
+   "title": "I Can Be Anything! Bridging Today and the Future through Generative AI-driven Self-represented Career Imagination for Children",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790985",
+   "system_id": "5090",
+   "evidence": [
+    {
+     "quote": "(A) Cartoonize: a child’s photo is transformed into a cartoon-style image using pre-defined editing prompt.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5124",
+   "title": "DeepAware: Using Experiential Deepfake Simulations to Enhance Cybersecurity Awareness in Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791492",
+   "system_id": "deepaware",
+   "evidence": [
+    {
+     "quote": "This figure illustrates how a user’s photo and custom voice ID are taken as input.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5132",
+   "title": "Collaposer: Transforming Photo Collections into Visual Assets for Storytelling with Collages",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791160",
+   "system_id": "collaposer",
+   "evidence": [
+    {
+     "quote": "we propose Collaposer, a tool that transforms a collection of photos into organized, ready-to-use visual cutouts based on user-provided story descriptions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5168",
+   "title": "ReVisor: A Reflective Design Tool for Instructional Designers to Improve Teacher Training Materials via AI Discussions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790456",
+   "system_id": "revisor",
+   "evidence": [
+    {
+     "quote": "We present ReVisor, a reflective tool that helps instructional designers iteratively refine training materials by (1) analyzing classroom transcripts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5239",
+   "title": "DuoDrama: Supporting Screenplay Refinement Through LLM-Assisted Human Reflection",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790568",
+   "system_id": "duodrama",
+   "evidence": [
+    {
+     "quote": "Control Panel manages screenplay materials and roles to set the stage for high-quality simulation (DG1) and ensure screenplay alignment (DG2).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5240",
+   "title": "InfoAlign: A Human-AI Co-Creation System for Storytelling with Infographics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791844",
+   "system_id": "infoalign",
+   "evidence": [
+    {
+     "quote": "we developed InfoAlign, a human–AI co-creation system that transforms long or unstructured text into stories, recommends semantically aligned visual designs, and generates layout blueprints",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5270",
+   "title": "ASafePlace: User-Led Personalization of VR Relaxation via an Art Therapy Activity",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790571",
+   "system_id": "asafeplace",
+   "evidence": [
+    {
+     "quote": "In parallel, large language models (LLMs) process users’ verbalization about their Safe Place, together with associated personal life experiences and emotional or sensory memories to produce personalization inputs.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5314",
+   "title": "AI Personalization Paradox: Reading Highlights for Personalized AI-Assisted Writing Increases Engagement but Undermines Autonomy and Ownership",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791502",
+   "system_id": "5314",
+   "evidence": [
+    {
+     "quote": "User highlights (Personalization condition) and text chunks (Baseline condition) are separately vectorized and stored in a vector database according to the assigned conditions.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5336",
+   "title": "DOLLama: Fostering Family Anti-Bullying Learning through AI-Augmented, Toy-Mediated Educational Drama",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790687",
+   "system_id": "dollama",
+   "evidence": [
+    {
+     "quote": "We introduce DOLLama, an AI-powered projection-augmented interactive system that transforms children’s toys and family-created stories into gamified anti-bullying vignettes.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5385",
+   "title": "Remembering with Reminiscope: Codesigning with Generative AI for Reminiscence Among Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791390",
+   "system_id": "5385",
+   "evidence": [
+    {
+     "quote": "participants created textile collages inspired by personal memories and then used generative AI to transform these creations into memory-related video content",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5441",
+   "title": "Can AI be a Social Buffer? Investigating the Effect of AI-assisted Cognitive Reappraisal and Narrative Perspectives on Managing Difficult Workplace Conversations over Email",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790331",
+   "system_id": "5441",
+   "evidence": [
+    {
+     "quote": "Screenshot of a difficult email, along with an AI-reframed positive message presented from a first-person perspective (bottom left) and an AI-reframed neutral message presented from a third-person perspective (bottom right).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5445",
+   "title": "DiaryPlay: AI-Assisted Creation of Interactive Story Vignettes for Everyday Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790572",
+   "system_id": "diaryplay",
+   "evidence": [
+    {
+     "quote": "The Interactive Vignette Authoring Component takes the author’s text story as input, extracts core elements (environment, characters, and events), and guides the author in refining them into structured interactive vignette elements.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5486",
+   "title": "Protosampling: Enabling Free-Form Convergence of Sampling and Prototyping through Canvas-Driven Visual AI Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791884",
+   "system_id": "protosampling",
+   "evidence": [
+    {
+     "quote": "(1) blends the spaces for thinking and creation, where both references and generated assets co-exist in one space",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5488",
+   "title": "SoundStager: Interactive Design of Story-Driven GenAI Soundscapes for Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790870",
+   "system_id": "soundstager",
+   "evidence": [
+    {
+     "quote": "(A) The system generates a video summary that captures the overall narrative and emotional tone of the clip.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5501",
+   "title": "Ambiguous Loss: Facilitating Refugee Families' Sense of Home through AI-Powered Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791368",
+   "system_id": "5501",
+   "evidence": [
+    {
+     "quote": "b) Family members upload individual images of cultural or personal significance",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5505",
+   "title": "CareerCraft: Supporting New Graduates on Job Hunting with LLM-Assisted Self-Construction of Career Profile",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791221",
+   "system_id": "careercraft",
+   "evidence": [
+    {
+     "quote": "Raw inputs, including user-uploaded documents and free-text reflections, are first transformed into experience cards (DG1) by the LLM1",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5522",
+   "title": "MoSound: An Interactive Tool for Generative Sound Design in Motion Graphics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791162",
+   "system_id": "mosound",
+   "evidence": [
+    {
+     "quote": "Users begin by uploading a motion graphics",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5601",
+   "title": "Helping Me Versus Doing It for Me: Designing for Agency in LLM-Infused Writing Tools for Science Journalism",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790372",
+   "system_id": "5601",
+   "evidence": [
+    {
+     "quote": "Pitch Suggest supported idea generation and drafting based on the journalist’s writing history, thematic interests, and pitching style (Figure 4), i.e., personalization.",
+     "location": "full text sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5820",
+   "title": "LL.me: Supporting Identity Work through Human-AI Alignment",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790890",
+   "system_id": "llme",
+   "evidence": [
+    {
+     "quote": "we designed LL.me, a web-based probe based on bi-directional alignment that utilizes users’ resumes and guides them through iterative cycles of refining AI-generated self-representations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5828",
+   "title": "VidTune: Creating Video Soundtracks with Generative Music and Video-Based Thumbnails",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791572",
+   "system_id": "vidtune",
+   "evidence": [
+    {
+     "quote": "Once the user uploads a video, they enter basic project details: title, video type, target audience, and soundtrack goal.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5837",
+   "title": "LingoLift: Supporting Educators in Personalized Oral Language Teaching for Autistic Children through Content Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790284",
+   "system_id": "lingolift",
+   "evidence": [
+    {
+     "quote": "LingoLift, which supports educators to create interestbased, ability-adapted, and coherent teaching materials according to children’s profiles",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5896",
+   "title": "AI Twin: Enhancing ESL Speaking Practice through AI Self-Clones of a Better Me",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790266",
+   "system_id": "5896",
+   "evidence": [
+    {
+     "quote": "The process begins with initialization, where the learner registers their voice to create a personalized clone.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5938",
+   "title": "Reminiscences of Futures (RoF): Designing and Studying Encounters with Embodied, AI-Generated Future Selves",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791750",
+   "system_id": "5938",
+   "evidence": [
+    {
+     "quote": "It synthesizes voice and appearance from personal data and generates three projections of the user ten years ahead, situated within a tunnel-like installation that evokes a time-slip experience.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5960",
+   "title": "Who moved my heart brush? Realms of the Heart: A Human-AI Collaborative Gamified Adjuvant Treatment Application for Depressed Teens Based on Painting Therapy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791812",
+   "system_id": "5960",
+   "evidence": [
+    {
+     "quote": "Users need to collect and unlock heart brushes outdoors by taking photos with the iPad.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6029",
+   "title": "AI-generated AR Reassembly Guidance from Disassembly Videos to Scaffold Everyday Repair",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790494",
+   "system_id": "6029",
+   "evidence": [
+    {
+     "quote": "We introduce RePairAR, a system that leverages multimodal large language models (MLLMs) to generate",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6055",
+   "title": "Roomify: Spatially-Grounded Style Transformation for Immersive Virtual Environments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791803",
+   "system_id": "roomify",
+   "evidence": [
+    {
+     "quote": "The pipeline accepts two inputs: a 30-60 second monocular RGB video captured with Meta Quest 3, and multimodal user prompts (text and/or reference images) specifying aesthetic preferences.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6229",
+   "title": "LingoQ: Bridging the Gap between EFL Learning and Work through AI-Generated Work-Related Quizzes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791342",
+   "system_id": "lingoq",
+   "evidence": [
+    {
+     "quote": "We present LingoQ, an AI-mediated system that allows workers to practice English using quizzes generated from their LLM queries during work.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6270",
+   "title": "Vidmento: Creating Video Stories through Context-Aware Expansion with Generative Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791337",
+   "system_id": "vidmento",
+   "evidence": [
+    {
+     "quote": "Building on these insights and established filmmaking principles, we developed Vidmento, a tool for authoring hybrid video stories that combine captured and generated media through context-aware expansion.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6298",
+   "title": "PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790966",
+   "system_id": "pasta",
+   "evidence": [
+    {
+     "quote": "Overview of PASTA’s system workflow, from user-provided model card input to structured, multi-policy compliance evaluation output.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7200",
+   "title": "ImpactBot: Chatbot Leveraging Language Models to Automate Feedback and Promote Critical Thinking Around Impact Statements",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3573844",
+   "system_id": "impactbot",
+   "evidence": [
+    {
+     "quote": "ImpactBot is a chatbot that leverages two fine-tuned state-of-theart RoBERTa models to promote critical reflection around mitigating potential negative impacts of technology, using a textual impact statement as input.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Bias and Fairness",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7230",
+   "title": "Objectify: Better Living Through Anticipatory, Just-for-you 3D Printing!",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3582748",
+   "system_id": "objectify",
+   "evidence": [
+    {
+     "quote": "A user’s information is processed by a sequence of advanced AI algorithms to create unique objects for them in the physical world just-in-time.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7461",
+   "title": "AscleAI: A LLM-based Clinical Note Management System for Enhancing Clinician Productivity",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650784",
+   "system_id": "ascleai",
+   "evidence": [
+    {
+     "quote": "Clinicians also have an option to store their clinical notes in the database, ensuring a comprehensive repository of pertinent healthcare information.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7479",
+   "title": "CanvasPic: An Interactive Tool for Freely Generating Facial Images Based on Spatial Layout",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650952",
+   "system_id": "canvaspic",
+   "evidence": [
+    {
+     "quote": "We introduce CanvasPic, a novel generation tool with a 2D spatial layout that allows users to import real-world images as references and generate desired results by adjusting the distances and attributes of these reference images.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7497",
+   "title": "Contextual AI Journaling: Integrating LLM and Time Series Behavioral Sensing Technology to Promote Self-Reflection and Well-being using the MindScape App",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650767",
+   "system_id": "contextualaijournaling",
+   "evidence": [
+    {
+     "quote": "we discuss the MindScape contextual journal App design that uses LLMs and behavioral sensing to generate contextual and personalized journaling prompts crafted to encourage self-refection and emotional development",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  }
+ ]
+}

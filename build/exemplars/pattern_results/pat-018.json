@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-018",
+ "exemplars": [
+  {
+   "rid": "13462",
+   "title": "Beyond Text Generation: Supporting Writers with Continuous Automatic Text Summaries",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545672",
+   "final_score": 4.8,
+   "why": "This is the most complete match to the structural signature: every paragraph in one continuous text becomes a persistent card, and reorder, delete, and merge operations are explicitly scoped to those cards.",
+   "over_the_runner_up": "Chosen over rid 4266 because the evidence establishes both a one-to-one partition and concrete unit-level operations, while rid 4266 establishes typed blocks but does not enumerate their handles."
+  },
+  {
+   "rid": "4266",
+   "title": "Compositional Structures as Substrates for Human-AI Co-creation Environment: A Design Approach and A Case Study",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713401",
+   "final_score": 4.6,
+   "why": "The narrative remains visibly and persistently structured as a linear sequence of typed section and paragraph blocks, providing addressable units at two useful granularities and making the mechanism broadly transferable.",
+   "over_the_runner_up": "Chosen over rid 16862 because its linear blocks form a clearer non-overlapping partition, whereas IntentFlow’s high-level goal and low-level intents may be overlapping semantic layers."
+  },
+  {
+   "rid": "16862",
+   "title": "IntentFlow: Investigating Fluid Dynamics of Intent Communication in Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812999",
+   "final_score": 4.48,
+   "why": "IntentFlow converts a monolithic prompt into persistent, named goal and intent components that can be edited independently, demonstrating that addressable segmentation can apply to intent structure as well as document layout.",
+   "over_the_runner_up": "Chosen over rid 9433 because it supports revision of each component, while Mapping Movies uses its exceptionally clear segment cards primarily for navigation and playback."
+  }
+ ],
+ "notes": "I departed substantially from the consensus by promoting rid 13462 from sixth to first and excluding consensus leader rid 13585. The +0.37 adjustment for rid 13462 reflects its unusually complete evidence for the structural signature: exhaustive paragraph-to-card mapping plus explicit per-unit operations. Rid 13585 has a powerful object-oriented framework and operation set, but its quote does not establish that the cells partition one continuous artifact into non-overlapping parts. Evidence should still be treated cautiously: none of the selected quotes supplies outcome evidence; rid 4266 does not explicitly list block-level controls; and rid 16862 does not prove that its goal and intent components are non-overlapping.",
+ "pattern_name": "Addressable Segments",
+ "category_id": "U06",
+ "rated": 30
+}

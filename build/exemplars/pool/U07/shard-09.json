@@ -1,0 +1,122 @@
+{
+ "dimension": {
+  "category_id": "U07",
+  "category_name": "Explanation, Inspection & Verification",
+  "category_slug": "explanation-inspection-and-verification",
+  "stage": "Taking in the output",
+  "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+  "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+  "pattern_count": 13,
+  "eligible_papers": 361,
+  "candidate_count": 361,
+  "patterns": [
+   {
+    "pattern_id": "pat-001",
+    "pattern_name": "Linked Views",
+    "short_summary": "Two or more display regions show the same underlying items under different encodings, and a correspondence between them is maintained and made visible."
+   },
+   {
+    "pattern_id": "pat-020",
+    "pattern_name": "Inspectable Intermediate Steps",
+    "short_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read."
+   },
+   {
+    "pattern_id": "pat-025",
+    "pattern_name": "Interpretation Readback",
+    "short_summary": "The system displays its own reading of what the user supplied — the construal, the inferred intent, the context it thinks it is in — as a first-class object rather than only acting on it."
+   },
+   {
+    "pattern_id": "pat-028",
+    "pattern_name": "Plan Preview",
+    "short_summary": "Before acting, the system displays the sequence of actions it intends to take, and that display persists as the actions are carried out."
+   },
+   {
+    "pattern_id": "pat-031",
+    "pattern_name": "Pre-Send Inspection",
+    "short_summary": "A checkpoint is interposed between composing content and transmitting it, at which the outgoing payload is displayed to the user together with the system's assessment of it."
+   },
+   {
+    "pattern_id": "pat-036",
+    "pattern_name": "Overview-plus-Detail",
+    "short_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item."
+   },
+   {
+    "pattern_id": "pat-037",
+    "pattern_name": "Unit Visualization Views",
+    "short_summary": "A large collection of items is projected into a two-dimensional layout, and that layout — not a list, not a feed — is the primary surface the user navigates."
+   },
+   {
+    "pattern_id": "pat-038",
+    "pattern_name": "Model Internals View",
+    "short_summary": "Quantities from inside the computation — attention weights, token or answer ranks, per-head importance, the spans the model relied on — are surfaced as a view the user can read and manipulate."
+   },
+   {
+    "pattern_id": "pat-051",
+    "pattern_name": "Elements for Process Disclosure",
+    "short_summary": "Alongside an output, the system displays information about how that output came about: the derivation of a score, a confidence value, an uncertainty estimate, a quality diagnosis, or the agent's own stated reasoning."
+   },
+   {
+    "pattern_id": "pat-052",
+    "pattern_name": "Color Coded Content",
+    "short_summary": "Every unit of displayed content — a word, line, span, or segment — carries a value on some attribute, and that value is rendered by altering the appearance of the unit in place: colour, opacity, weight."
+   },
+   {
+    "pattern_id": "pat-053",
+    "pattern_name": "Artifact Flagging and Annotations",
+    "short_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it."
+   },
+   {
+    "pattern_id": "pat-054",
+    "pattern_name": "Paired (Human-AI) Assessment",
+    "short_summary": "The interface puts the system's assessment next to the user's own assessment of the same thing, so the two can be read against each other."
+   },
+   {
+    "pattern_id": "pat-055",
+    "pattern_name": "Aggregated Summary Score",
+    "short_summary": "Many underlying events or measurements are collapsed into one number on a fixed scale, and that number is the interface's headline element."
+   }
+  ]
+ },
+ "shard": 9,
+ "candidates": [
+  {
+   "rid": "5715",
+   "title": "Component-Wise Sketching and Generation for Car Interior Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790912",
+   "system_id": "5715",
+   "prefilter_score": 1.049,
+   "prefilter_parts": {
+    "relevance_density": 0.32,
+    "focus": 0.429,
+    "evidence_location": 0.3,
+    "_density_raw": 0.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-020",
+     "pattern_name": "Inspectable Intermediate Steps",
+     "pattern_summary": "The pipeline from input to output passes through a named intermediate artifact that is rendered for the user to read.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This pre-visualization then serves as input for generating high-quality renderings.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

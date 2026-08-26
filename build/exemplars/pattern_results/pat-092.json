@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-092",
+ "exemplars": [
+  {
+   "rid": "11792",
+   "title": "Interactive Table Synthesis With Natural Language",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3329120",
+   "final_score": 4.5,
+   "why": "Natural language is explicitly the primary interaction modality for transforming a separate table artifact, making substitution for a complex transformation-control vocabulary the system’s central claim.",
+   "over_the_runner_up": "It edges out Stylette because “primary interaction modality” provides stronger evidence that language substitutes for conventional controls, while table transformations also demonstrate a broader operational repertoire than styling alone."
+  },
+  {
+   "rid": "1168",
+   "title": "Stylette: Styling the Web with Natural Language",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501931",
+   "final_score": 4.4,
+   "why": "Users express desired styling goals in natural language and the system changes a separate website artifact, cleanly instantiating outcome-oriented control in place of CSS and visual style manipulation.",
+   "over_the_runner_up": "It ranks above NL2Color because the same goal-to-edit mechanism applies across the broader web-styling vocabulary rather than only chart palettes."
+  },
+  {
+   "rid": "11389",
+   "title": "NL2Color: Refining Color Palettes for Charts with Natural Language",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3326522",
+   "final_score": 4.3,
+   "why": "The evidence explicitly connects natural-language expressions of desired outcomes to refinement of a separately represented chart palette, closely matching both the pattern’s outcome orientation and artifact/control separation.",
+   "over_the_runner_up": "It displaces LLMR because “expressions of their desired outcomes” establishes the required outcome-not-procedure structure more directly than LLMR’s generic claim of creating and modifying scenes using language."
+  }
+ ],
+ "notes": "I departed from the consensus by excluding rid 350 and rid 3216 and promoting rid 11389. AVA is conceptually compelling, but its supplied quote says only “user instructions,” not natural language, so the evidence does not establish the pattern’s defining channel. LLMR explicitly names natural language, but its quote does not show that users state outcomes rather than procedures; NL2Color does. Readers should distrust any strong claim that these systems eliminate parallel direct-manipulation controls: none of the supplied excerpts proves that conventional handles are unavailable, although rid 11792’s “primary interaction modality” comes closest. No selected score was adjusted by more than 0.3.",
+ "pattern_name": "Natural-Language Control",
+ "category_id": "U01",
+ "rated": 30
+}

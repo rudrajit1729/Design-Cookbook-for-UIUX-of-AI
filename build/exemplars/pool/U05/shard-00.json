@@ -1,0 +1,1751 @@
+{
+ "dimension": {
+  "category_id": "U05",
+  "category_name": "Alternatives & Comparative Exploration",
+  "category_slug": "alternatives-and-comparative-exploration",
+  "stage": "Acting on the output",
+  "category_description": "How multiple possibilities are presented, previewed, maintained, blended, or compared before commitment.",
+  "classification_boundary": "Requires a visible choice or comparison mechanism, not backend candidate-set processing alone.",
+  "pattern_count": 6,
+  "eligible_papers": 215,
+  "candidate_count": 215,
+  "patterns": [
+   {
+    "pattern_id": "pat-002",
+    "pattern_name": "Candidate Gallery",
+    "short_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set."
+   },
+   {
+    "pattern_id": "pat-004",
+    "pattern_name": "Side-by-Side Comparison",
+    "short_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly."
+   },
+   {
+    "pattern_id": "pat-005",
+    "pattern_name": "Branching Exploration",
+    "short_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along."
+   },
+   {
+    "pattern_id": "pat-006",
+    "pattern_name": "Multi-Model Output Comparison",
+    "short_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together."
+   },
+   {
+    "pattern_id": "pat-007",
+    "pattern_name": "Perturb-and-Compare",
+    "short_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one."
+   },
+   {
+    "pattern_id": "pat-041",
+    "pattern_name": "Pick and Combine",
+    "short_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand."
+   }
+  ]
+ },
+ "shard": 0,
+ "candidates": [
+  {
+   "rid": "5628",
+   "title": "Branching Foresight - A Novel Interaction Concept for AI-generated Scenario Exploration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3793527",
+   "system_id": "5628",
+   "prefilter_score": 7.821,
+   "prefilter_parts": {
+    "relevance_density": 5.321,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 14.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We therefore adopt a mechanism that lets users repeatedly choose among AI-generated alternatives, building on the branching-graph concept",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(i) a branching map that visualizes choices across +5, +10, and +15 years",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7627",
+   "title": "LLM Comparator: Visual Analytics for Side-by-Side Evaluation of Large Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650755",
+   "system_id": "7627",
+   "prefilter_score": 7.649,
+   "prefilter_parts": {
+    "relevance_density": 5.449,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 22.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To evaluate the quality of responses from an LLM (A), users can compare them with those from a baseline LLM (B).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U07"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12275",
+   "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3539779",
+   "system_id": "maico",
+   "prefilter_score": 7.648,
+   "prefilter_parts": {
+    "relevance_density": 5.398,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 15.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "allows composers and other music creators to interactively generate, explore, select, edit, and compare samples from generative music models",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "using some notes to prime a model (primer input), we sample up to 10 models simultaneously and up to 15 different temperature values to represent each model's output diversity",
+     "evidence_location": "full text, system sec III-D"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9388",
+   "title": "Intone your Talk: Voice Output Communication Aids with Individualized Voices for Augmented Communicators",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799323",
+   "system_id": "9388",
+   "prefilter_score": 7.591,
+   "prefilter_parts": {
+    "relevance_density": 5.091,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 10.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Participants listen to two candidate voices and indicate which one they prefer (see Fig. 1).",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9282",
+   "title": "Flavor-Aware AI for Pre-Decision Support in Everyday Food Practices",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798732",
+   "system_id": "9282",
+   "prefilter_score": 7.488,
+   "prefilter_parts": {
+    "relevance_density": 4.988,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 9.96
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Instead of returning extensive recipe lists, FlavorLoop deliberately generates a small set of complete, feasible meal options",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9608",
+   "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798883",
+   "system_id": "9608",
+   "prefilter_score": 7.48,
+   "prefilter_parts": {
+    "relevance_density": 5.423,
+    "focus": 0.857,
+    "evidence_location": 1.2,
+    "_density_raw": 16.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "explored through design variables that generate alternatives",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ProtoFlow structures interaction design from scenario components, supports exploration through design variable nodes, and integrates designs across research goals using layers.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "12821",
+   "title": "VisMoDAI: Visual Analytics for Evaluating and Improving Corruption Robustness of Vision-Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634257",
+   "system_id": "vismodai",
+   "prefilter_score": 7.393,
+   "prefilter_parts": {
+    "relevance_density": 5.193,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 12.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "pattern_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The pipeline for evaluating corruption robustness in image captioning comprises two primary stages: (A) the workflow for applying data corruption and (B) the subsequent process of generating image captions and evaluating the results.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "11975",
+   "title": "LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456354",
+   "system_id": "11975",
+   "prefilter_score": 7.352,
+   "prefilter_parts": {
+    "relevance_density": 5.295,
+    "focus": 0.857,
+    "evidence_location": 1.2,
+    "_density_raw": 13.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can compare and contrast the textual outputs generated by their LLM (Model A) against a baseline (Model B).",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the AutoSxS pipeline first obtains responses from the test and baseline models for each of the prompts",
+     "evidence_location": "full text sec 2 (background)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789088",
+   "system_id": "dscodecomparator",
+   "prefilter_score": 7.327,
+   "prefilter_parts": {
+    "relevance_density": 5.27,
+    "focus": 0.857,
+    "evidence_location": 1.2,
+    "_density_raw": 13.56
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "allowing for direct comparisons of its functionality, length, and efficiency across multiple models",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Given a user prompt (and optionally a dataset), the DSCode Comparator invokes multiple LLMs to generate code.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7467",
+   "title": "Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651093",
+   "system_id": "7467",
+   "prefilter_score": 7.228,
+   "prefilter_parts": {
+    "relevance_density": 4.528,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 6.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "ExploreLLM generates personalized options for users to choose from.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Developed initial idea of prompt decomposition and tree-based design and interaction.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2408",
+   "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642794",
+   "system_id": "creativeconnect",
+   "prefilter_score": 7.217,
+   "prefilter_parts": {
+    "relevance_density": 4.86,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 9.04
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "when the user chooses a set of keywords to recombine, the system generates multiple drafts with diverse ways of combining them (DG 3)",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "pattern_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "which is the process of extracting the elements or aspects from multiple references, considering connections between them [31], and blending those to gain novel design ideas [2]",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12842",
+   "title": "Understanding Large Language Model Behaviors Through Interactive Counterfactual Generation and Analysis",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634646",
+   "system_id": "12842",
+   "prefilter_score": 7.165,
+   "prefilter_parts": {
+    "relevance_density": 5.065,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 10.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "pattern_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "which includes selecting a proper granularity (e.g., words, phrases, sentences) to perform perturbations and customizing the perturbation rules, e.g., fixing some sentences and replacing some segments with alternatives",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The system generates two sets of candidate replacements to assist users in selecting suitable alternatives.",
+     "evidence_location": "fig 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "4199",
+   "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714057",
+   "system_id": "ideasynth",
+   "prefilter_score": 7.04,
+   "prefilter_parts": {
+    "relevance_density": 5.04,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 10.07
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the user can externalize idea facets as nodes and explore and expand ideas in a tree-like hierarchical structure",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "allow researchers to iteratively refine them by creating and exploring variations and combinations",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4474",
+   "title": "VideoDiff: Human-AI Video Co-Creation with Alternatives",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713417",
+   "system_id": "videodiff",
+   "prefilter_score": 7.002,
+   "prefilter_parts": {
+    "relevance_density": 4.835,
+    "focus": 0.667,
+    "evidence_location": 1.5,
+    "_density_raw": 8.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When the user uploads a video, VideoDiff first generates 10 rough cut recommendations.",
+     "evidence_location": "system sec 4.2"
+    },
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "VideoDiff simplifies comparisons by aligning videos and highlighting differences through timelines, transcripts, and video previews.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "pattern_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Or they can refine or recombine existing variations or regenerate a new variation using text prompts.",
+     "evidence_location": "system sec 4.2"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "prefilter_score": 6.915,
+   "prefilter_parts": {
+    "relevance_density": 5.142,
+    "focus": 0.273,
+    "evidence_location": 1.5,
+    "_density_raw": 12.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "pattern_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "strategies: keyword perturbations, paraphrasing perturbations,",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "(E) obtaining recommendations for prompt template alteration, and (F) testing generated templates on in or out of distribution data points.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "The panel’s footer (b10) acts as a version comparison tool",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 11,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "11819",
+   "title": "KnowledgeVIS: Interpreting Language Models by Comparing Fill-in-the-Blank Prompts",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3346713",
+   "system_id": "knowledgevis",
+   "prefilter_score": 6.906,
+   "prefilter_parts": {
+    "relevance_density": 4.656,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 6.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "pattern_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To enable more effective prompt testing, we can evaluate multiple prompts simultaneously that isolate dependent variables, such as the bold subjects in Table 1",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "8538",
+   "title": "ShoeGenAI: A Creativity Support Tool for High-Feasible Shoe Product Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721204",
+   "system_id": "shoegenai",
+   "prefilter_score": 6.533,
+   "prefilter_parts": {
+    "relevance_density": 4.733,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 7.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "pattern_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) The combiner component allows the user to blend the upper and sole of two different shoe images.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8644",
+   "title": "VoiceForge: A Text-Driven Character Voice Generation System for Narrative Content Creation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720140",
+   "system_id": "voiceforge",
+   "prefilter_score": 6.449,
+   "prefilter_parts": {
+    "relevance_density": 4.349,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 5.47
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "pattern_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the system offers an auxiliary audio mixing control panel (Figure 1(b)) that allows users to blend 1-3 reference audio samples with adjustable weights for fine-tuned customization.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13630",
+   "title": "ShoeGenAI: A Creativity Support Tool Bridging Design Intention and Feasibility in Shoe Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747691",
+   "system_id": "shoegenai",
+   "prefilter_score": 6.369,
+   "prefilter_parts": {
+    "relevance_density": 4.119,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 5.05
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-041",
+     "pattern_name": "Pick and Combine",
+     "pattern_summary": "The user selects two or more existing items and invokes an operation whose product is a single fused result rather than either operand.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) The combiner component allows the user to blend the upper and sole of two different shoe images.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "By producing multiple high-feasibility outputs, designers can express their intended vision more effectively, reducing the repetitive and time-consuming task of manually editing or merging reference images.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making"
+   ]
+  },
+  {
+   "rid": "5244",
+   "title": "Building Benchmarks from the Ground Up: Community-Centered Evaluation of LLMs in Healthcare Chatbot Settings",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791172",
+   "system_id": "5244",
+   "prefilter_score": 6.077,
+   "prefilter_parts": {
+    "relevance_density": 3.377,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 3.79
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Each cell in the 3 × 3 grid shows violin plots of score distributions for three evaluated models (Sarvam-M, LLaMA-405B, Qwen3) under a specific evaluator–language combination.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "640",
+   "title": "An Interactive Visual Enhancement for Prompted Programmatic Weak Supervision in Text Classification",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70131",
+   "system_id": "640",
+   "prefilter_score": 7.264,
+   "prefilter_parts": {
+    "relevance_density": 5.014,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 10.04
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This approach aids users in constructing a structured development space that can provide candidate prompts to quickly converge on their ideas (R1).",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6005",
+   "title": "HistoryPalette: Supporting Exploration and Reuse of Past Alternatives in Image Generation and Editing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790742",
+   "system_id": "historypalette",
+   "prefilter_score": 7.103,
+   "prefilter_parts": {
+    "relevance_density": 5.474,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 24.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "HistoryPalette presents 4 generated design alternatives per request using Stable Diffusion XL [51] and ControlNet [83].",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8782",
+   "title": "Demonstration of GazeNoter: Enhancing AR Note-Taking Through Gaze-Based Selection of LLM Suggestions",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721274",
+   "system_id": "demonstrationofgazenoter",
+   "prefilter_score": 7.047,
+   "prefilter_parts": {
+    "relevance_density": 5.347,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 14.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Once a keyword is selected, the system automatically composes 3 candidate sentences via the LLM senten",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "system_id": "hilde",
+   "prefilter_score": 6.947,
+   "prefilter_parts": {
+    "relevance_density": 5.372,
+    "focus": 0.375,
+    "evidence_location": 1.2,
+    "_density_raw": 14.84
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "displays local alternatives the model considered at a particular decision point",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4916",
+   "title": "PleaSQLarify: Visual Pragmatic Repair for Natural Language Database Querying",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791265",
+   "system_id": "pleasqlarify",
+   "prefilter_score": 6.887,
+   "prefilter_parts": {
+    "relevance_density": 4.937,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 9.53
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(2) The system generates an initial action space of possible SQL interpretations.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16497",
+   "title": "Design Opportunities for Explainable AI Paraphrasing Tools: A User Study with Non-native English Speakers",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735740",
+   "system_id": "16497",
+   "prefilter_score": 6.862,
+   "prefilter_parts": {
+    "relevance_density": 4.912,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 9.48
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The interface features two panes: (A) a pane displaying four paraphrased suggestions for the user's input text",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3414",
+   "title": "AACessTalk: Fostering Communication between Minimally Verbal Autistic Children and Parents with Contextual Guidance and Card Recommendation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713792",
+   "system_id": "aacesstalk",
+   "prefilter_score": 6.848,
+   "prefilter_parts": {
+    "relevance_density": 5.219,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 12.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "On the parent’s turn, the system displays guide messages and example utterances that the parent can refer to when responding to the chi…",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10173",
+   "title": "iScore: Visual Analytics for Interpreting How Language Models Automatically Score Summaries",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645142",
+   "system_id": "iscore",
+   "prefilter_score": 6.816,
+   "prefilter_parts": {
+    "relevance_density": 5.116,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 11.34
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-007",
+     "pattern_name": "Perturb-and-Compare",
+     "pattern_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Above, a learning engineer interprets how two plagiarized summaries are scored across two runs (Sect. 5).",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "we developed iScore, an interactive visual analytics tool for learning engineers to upload, score, and compare multiple summaries simultaneously",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "5922",
+   "title": "Preference-Guided Prompt Optimization for Text-to-Image Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791443",
+   "system_id": "5922",
+   "prefilter_score": 6.805,
+   "prefilter_parts": {
+    "relevance_density": 4.605,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 6.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the user simply needs to iteratively select the generation results they prefer among options that are most aligned with their implicit goals",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2429",
+   "title": "How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642698",
+   "system_id": "2429",
+   "prefilter_score": 6.779,
+   "prefilter_parts": {
+    "relevance_density": 4.579,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 6.35
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) offering either breadth-first and depth-first RQ generation (see Figure 4)",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "3820",
+   "title": "ProductMeta: An Interactive System for Metaphorical Product Design Ideation with Multimodal Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713935",
+   "system_id": "productmeta",
+   "prefilter_score": 6.738,
+   "prefilter_parts": {
+    "relevance_density": 4.809,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 8.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system generates source inspirations from three perspectives: visceral, behavioral, and reflective for designers to choose from",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "enable users to quickly discover, implement, and compare creative mapping approaches",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8292",
+   "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720189",
+   "system_id": "expandora",
+   "prefilter_score": 6.574,
+   "prefilter_parts": {
+    "relevance_density": 4.374,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 5.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) The user begins by entering a prompt, and the system generates four initial images.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The results are displayed in a mindmap-like interface that encourages non-linear workflows.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "12304",
+   "title": "Visual Analysis of Prediction Uncertainty in Neural Networks for Deep Image Synthesis",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3406959",
+   "system_id": "12304",
+   "prefilter_score": 6.559,
+   "prefilter_parts": {
+    "relevance_density": 4.63,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 6.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Placing heatmaps side-by-side allows a direct comparison of the patterns of uncertainty and error between the two selected uncertainty estimation methods.",
+     "evidence_location": "full text, system sec 5.1"
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "our tool allows comparison between two uncertainty methods at a time. If other uncertainty methods are available, users can interactively select any pair of methods using the model selection drop-down at the top.",
+     "evidence_location": "full text, system sec 5.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "1907",
+   "title": "The less I type, the better: How AI Language Models can Enhance or Impede Communication for AAC Users",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581560",
+   "system_id": "1907",
+   "prefilter_score": 6.544,
+   "prefilter_parts": {
+    "relevance_density": 5.244,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 12.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "these technologies may fundamentally change how users interact with AAC devices as users transition from typing their own phrases to prompting and selecting AI-generated phrases",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10955",
+   "title": "Visual Comparison of Language Model Adaptation",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209458",
+   "system_id": "10955",
+   "prefilter_score": 6.503,
+   "prefilter_parts": {
+    "relevance_density": 4.553,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 6.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "juxtapositon where two models are displayed next to each other and superposition, where two models are displayed in one visualization",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-006",
+     "pattern_name": "Multi-Model Output Comparison",
+     "pattern_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Concept Prediction Similarity shows two sentiment classifiers (see A). Compared to the sst-2 model (contour borders), the rottentomatoes model (filled areas) classifies sentences with occurrences of positive and negative human qualities more often as NEGATIVE (B)",
+     "evidence_location": "fig 6"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "4361",
+   "title": "Beyond Code Generation: LLM-supported Exploration of the Program Design Space",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714154",
+   "system_id": "4361",
+   "prefilter_score": 6.467,
+   "prefilter_parts": {
+    "relevance_density": 5.167,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 12.49
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We contribute an IDE that supports program design through generating and showing new ways to frame problems alongside alternative solutions",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "In a user study, we find that with our IDE, users combine and parallelize design phases to explore a broader design space",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7069",
+   "title": "Spot The Difference: AI, Please Make This for Me!",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585879",
+   "system_id": "7069",
+   "prefilter_score": 6.443,
+   "prefilter_parts": {
+    "relevance_density": 2.993,
+    "focus": 3.0,
+    "evidence_location": 0.45,
+    "_density_raw": 3.24
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-004",
+     "pattern_name": "Side-by-Side Comparison",
+     "pattern_summary": "Two or more instances of the same kind of artifact are displayed simultaneously in parallel regions so that their differences can be read off directly.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the \"Spot-the-Difference\" presents a pair of images that have several different parts",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13800",
+   "title": "AmbigChat: Interactive Hierarchical Clarification for Ambiguous Open-Domain Question Answering",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747686",
+   "system_id": "ambigchat",
+   "prefilter_score": 6.442,
+   "prefilter_parts": {
+    "relevance_density": 4.042,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 4.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Based on the disambiguation tree that AmbigChat constructs given an ambiguous user query, AmbigChat dynamically generates interactive disambiguation widgets for the corresponding tree node (a).",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users can traverse the tree to explore answers via interactive disambiguation widgets and expand the conversation by referencing tree nodes through drag and drop.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9326",
+   "title": "GenerPlay: Bridging Asynchronous Intergenerational Communication Through Generative Interactive Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798448",
+   "system_id": "generplay",
+   "prefilter_score": 6.431,
+   "prefilter_parts": {
+    "relevance_density": 4.502,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 6.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-005",
+     "pattern_name": "Branching Exploration",
+     "pattern_summary": "The interaction is organized as a tree or open graph in which alternatives coexist, rather than as a single ordered track the user advances along.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "DMC is used to construct choice-based branching paths",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "12795",
+   "title": "Sel3DCraft: Interactive Visual Prompts for User-Friendly Text-to-3D Generation",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633875",
+   "system_id": "sel3dcraft",
+   "prefilter_score": 6.376,
+   "prefilter_parts": {
+    "relevance_density": 4.426,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 5.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-002",
+     "pattern_name": "Candidate Gallery",
+     "pattern_summary": "At a single decision point the system emits more than one alternative for the same request and presents them together as a set.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A dual-branch pipeline then generates/retrieves corresponding multi-view images, displayed in an interactive satellite view for 3D perception.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  }
+ ]
+}

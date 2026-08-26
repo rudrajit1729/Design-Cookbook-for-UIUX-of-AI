@@ -1,0 +1,146 @@
+{
+ "pattern_id": "pat-029",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "196",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A terrain is decomposed into an extracted signature, regenerated as a structural replica, and then edited by adding or removing features. This closely matches inverse recovery followed by structure-level editing, although the terrain-specific signature limits direct transfer and the quote does not describe the editing UI or re-render loop.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4497",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system converts a finished PDF logo into HTML and enriches that representation through visual analysis, while the title establishes creation and editing as the purpose. The ingestion and recovered representation are concrete and portable, but the provided evidence does not explicitly show users manipulating the HTML or how changes re-render the logo.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9489",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Reconstructing a recorded performance in a virtual environment plausibly creates an intermediate representation for camera exploration, but the quote identifies no typed structure, editable fields or layers, or binding from edits back to rendered video. It is therefore only a partial, conservatively scored match on the available evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10269",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The quote explicitly describes reverse-engineering finished video into an editable text prompt, making the recovered generator\u2014not the video surface\u2014the editing object. This is an unusually clean statement of the pattern and a non-obvious interaction move, though the evidence does not specify the editing controls or complete prompt-to-video update loop.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10473",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Decoding visual encodings and extracting layout from an example clearly supplies the inverse-recovery half of the pattern. However, the quote does not establish that the recovered encoding and layout become a user-editable representation or that edits re-render the glyph, so impact and pattern fit remain uncertain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12840",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is the clearest structural decomposition in the set: an existing SVG is reorganized into semantic layers while its visual encoding and underlying data are recovered for reuse and adaptation. The recovered representation is specific enough to rebuild conceptually and transfers to many structured visual artifacts, although the quote does not detail the user-facing editing interaction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13731",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes a story graph but provides no evidence that it was reverse-engineered from a finished story artifact, rather than generated or authored directly. It therefore does not support the defining ingestion-and-recovery mechanism of this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence quote does not support the pattern assignment: it shows a structured representation but no reverse engineering from an existing rendered artifact."
+  },
+  {
+   "rid": "13794",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Recovering analysis logic from finished reports and adapting it to new datasets strongly reflects lost-source reconstruction and has broad potential beyond reports. The evidence does not say what form the recovered logic takes, whether users directly manipulate it, or how it is bound to report regeneration, keeping it short of a clean structural-signature match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16651",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Transforming a flat image into depth-aware 3D geometry is a meaningful inverse reconstruction, and the authoring title suggests that the result supports editing. Still, the quote emphasizes automatic placement and rendering behavior rather than a visible recovered structure that users manipulate, so the central interaction loop is under-specified.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16922",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The task explicitly recovers both data and visualization specifications from existing SVG, Canvas, or chart artifacts, producing the two structures normally used to generate the rendered result. This is concrete and broadly reusable, though some inputs are source or rendering scripts rather than truly source-lost surfaces, and the quote does not show how users edit the recovery or trigger re-rendering.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}
