@@ -1,0 +1,286 @@
+{
+ "pattern_id": "pat-076",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "4727",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "A clean generate-then-render pipeline: the model emits joint coordinates and rotations, and a fixed retargeting stage makes them perceptible through a rigged avatar. The mechanism is highly rebuildable and transfers to other pose, motion, and trajectory outputs; impact is plausible for skill training, though outcomes are not shown in the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4755",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote clearly identifies an intermediate event stream, a parser producing time-stamped poses, and an animation renderer. This is a strong, reproducible rendering stack, although the quote does not explicitly establish that every runtime event is model-generated or whether users also see another representation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4906",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Visual rendering of generated music for Deaf and hard-of-hearing users plausibly makes otherwise inaccessible output appreciable, giving the move meaningful accessibility impact. However, the truncated quote says nothing about the source representation, visualization mapping, determinism, or what is actually displayed, so the mechanism cannot be rebuilt from the evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5828",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Valence, energy, genre, and instrument information are mapped to visible thumbnail attributes through a concrete cross-modal encoding. It is transferable to previewing other temporal media, but it is less cleanly this pattern because music is already perceptible, video subjects supplement the track representation, and the evidence does not establish that the thumbnail is the user's sole display layer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6025",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Laying scenarios out as image sequences resembles spatial sampling of time-varying output, but the quote does not identify the generated representation or the mapping into images. The images could be direct generative outputs rather than a deterministic, content-preserving renderer, so impact and novelty are conservatively scored from the title and quote only.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7267",
+   "scores": {
+    "representativeness": 0,
+    "impact": 3,
+    "generalizability": 1,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 0
+   },
+   "reason": "The pipeline is clearly described, but its second stage is diffusion-based image generation rather than a fixed display renderer. The translation synthesizes realistic image content beyond a deterministic visualization of pose data, contradicting the pattern's no-added-content boundary.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes a generative image-to-image transformation, not a deterministic, content-preserving renderer attached to model output."
+  },
+  {
+   "rid": "7832",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 0
+   },
+   "reason": "The system maps real-time brainwave measurements to CG properties, but the quoted source representation is sensor data rather than model-generated output. It is data visualization or biofeedback, not the specified generation-to-rendering structure.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence shows rendering of measured brainwave data but no model-generated representation to which a display renderer is attached."
+  },
+  {
+   "rid": "8174",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Generated dances are made inspectable as spatially arranged movement sequences with corresponding descriptions, closely matching the signature's sampled sequence treatment. The specific visual encoding and conversion pipeline remain underspecified, and transfer is somewhat constrained by the traditional dance vocabulary.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8296",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The prototype makes inferred emotional tone perceptible through voice and facial expression, with plausible accessibility value. The quote collapses LLM inference, avatar behavior, speech, and rendering into one conversion, so it does not expose an intermediate model representation or a fixed content-preserving mapping clearly enough to rebuild.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8524",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Action Units provide a symbolic facial-expression representation that GANimation turns into visible animation, and restoring intentional expression for ALS patients is a consequential capability. The pipeline is concrete, though GAN-based synthesis is less clearly deterministic and content-neutral than a conventional renderer, and transfer depends on facial assets and AU-compatible models.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8529",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 0
+   },
+   "reason": "Fuzzy linkography turns activity logs into inspectable graphics, but the source is recorded user activity rather than a representation produced by a model. It therefore exemplifies trace visualization, not this pattern's model-output rendering stage.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence concerns graphical summaries of user activity logs and does not establish any model-generated representation."
+  },
+  {
+   "rid": "9321",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "The system converts autoencoder-detected temporal eye-drift patterns into ambient audio, directly matching the pattern's sonification transplant and enabling passive, accessible monitoring. The cross-domain principle is highly portable, but the quote does not specify how drift variables map to sound parameters, limiting rebuildability.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9372",
+   "scores": {
+    "representativeness": 5,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This is an unusually clean instance: model-produced RGB parameters are deterministically applied to ambient lights for a specified duration and then faded to black. The parameter-to-physical-display mechanism is explicit and broadly transplantable; the supplied evidence does not demonstrate how much it improves memory or user outcomes.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10401",
+   "scores": {
+    "representativeness": 0,
+    "impact": 3,
+    "generalizability": 2,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 0
+   },
+   "reason": "The quote says the latent vector is input to the model and the face image is that model's generated output. It does not show a model first producing an imperceptible representation followed by a separate designer-chosen display renderer.",
+   "disqualify": true,
+   "disqualify_reason": "The cited mechanism is latent input followed by model generation, not model output followed by a separate deterministic renderer."
+  },
+  {
+   "rid": "12458",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Mapping generated data-fact candidates into Vega-Lite strongly suggests symbolic model output rendered through a fixed visualization grammar, a highly reusable implementation pattern. The quote is truncated before it states the specification or visible result, so exact mechanics and impact cannot be confirmed from the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13524",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The reconstruction network explicitly emits a latent vector, which a fixed pretrained generator decodes into the face the user can judge. Both stages are named and rebuildable, and the rendering is essential to completing the reconstruction task; transfer is strong across latent-output systems, though the concrete decoder is face-domain-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13987",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Generated CSS is detected as a complete symbolic artifact and deterministically executed with the original SVG to produce an inline animation preview. This is exceptionally clear and portable across code-generated visual artifacts, though immediate preview rendering is a relatively expected design move and the evidence does not show whether code remains visible alongside the preview.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15884",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The interface connects a visible 2D point to its otherwise imperceptible N-dimensional representation, decodes that representation, and displays the reconstructed image and prediction. This makes latent model behavior inspectable through a concrete interaction, although the learned decoder may be considered part of the model rather than a purely designer-authored display layer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16267",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Representing generated dance sequences with an SMPL mesh plausibly converts pose or motion parameters into perceptible choreography and could materially support prototyping. The short quote does not state the source representation, renderer, temporal presentation, or user-visible interaction, so mechanism and evidence scores remain conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16494",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Transforming model outputs into a binary heatmap is a direct, portable output-to-display mapping that plausibly enables reliability inspection without ground truth. However, the quote is truncated after naming green, leaving the encoded variable, thresholding rule, legend, and user interaction unavailable; the exact mechanism therefore cannot be rebuilt from this evidence alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

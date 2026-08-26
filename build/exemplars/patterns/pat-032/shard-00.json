@@ -1,0 +1,1031 @@
+{
+ "pattern": {
+  "pattern_id": "pat-032",
+  "pattern_name": "Source Conditioned Generation",
+  "pattern_slug": "source-conditioned-generation",
+  "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+  "definition": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on. The user supplies material rather than a description of what they want. The output is a function of that material.",
+  "structural_signature": "The system exposes an ingestion path for a user-owned artifact (upload, parse, encode, capture) and routes it into the generator as conditioning state, either directly or after an encoding step. The generation cannot run without that artifact; changing it changes the output. The material is pre-existing with respect to the interaction — it is not authored in order to specify the request.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "969",
+   "title": "Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502087",
+   "system_id": "promptiverse",
+   "evidence": [
+    {
+     "quote": "lecture designers can create a large number of diverse scaffolding prompts by extracting rich knowledge graphs from a video script",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1423",
+   "title": "GANSpiration: Balancing Targeted and Serendipitous Inspiration in User Interface Design with Style-Based Generative Adversarial Network",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517511",
+   "system_id": "ganspiration",
+   "evidence": [
+    {
+     "quote": "GANSpiration takes a preliminary design image as input then transforms it into a latent code.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "1697",
+   "title": "The Entoptic Field Camera as Metaphor-Driven Research-through-Design with AI Technologies",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581175",
+   "system_id": "1697",
+   "evidence": [
+    {
+     "quote": "The Entoptic Field Camera is a web application which, through GAN techniques, generates a synthetic output image in response to a user’s input image",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "1966",
+   "title": "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580930",
+   "system_id": "introbot",
+   "evidence": [
+    {
+     "quote": "leverages the social media data of users to assist their familiarization process",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2074",
+   "title": "StyleMe: Towards Intelligent Fashion Generation with Designer Style",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581377",
+   "system_id": "styleme",
+   "evidence": [
+    {
+     "quote": "Given the clothing pictures specified by the designer, StyleMe can use deep learning based generative model to generate clothing sketches that are consistent with the designer style.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2181",
+   "title": "AngleKindling: Supporting Journalistic Angle Ideation with Large Language Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580907",
+   "system_id": "anglekindling",
+   "evidence": [
+    {
+     "quote": "After experimenting with a few datasets, we chose press releases as our source to support angle-exploration.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2258",
+   "title": "CatAlyst: Domain-Extensible Intervention for Preventing Task Procrastination Using Large Generative Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581133",
+   "system_id": "catalyst",
+   "evidence": [
+    {
+     "quote": "In the writing task, for instance, we provided the text in progress to a model for predicting the text to follow.",
+     "location": "system sec 3.1.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2304",
+   "title": "Slide4N: Creating Presentation Slides from Computational Notebooks with Human-AI Collaboration",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580753",
+   "system_id": "slide4n",
+   "evidence": [
+    {
+     "quote": "We propose a human-AI collaborative approach and operationalize it within Slide4N",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2385",
+   "title": "Open Sesame? Open Salami! Personalizing Vocabulary Assessment-Intervention for Children via Pervasive Profiling and Bespoke Storybook Generation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642580",
+   "system_id": "2385",
+   "evidence": [
+    {
+     "quote": "We propose “Open Sesame? Open Salami! (OSOS)”, a personalized vocabulary assessment and intervention system with pervasive language profling and targeted storybook generation",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2486",
+   "title": "Metamorpheus: Interactive, Affective, and Creative Dream Narration Through Metaphorical Visual Storytelling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642410",
+   "system_id": "metamorpheus",
+   "evidence": [
+    {
+     "quote": "engages users in a creative visual storytelling of emotional experiences during dreams",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2515",
+   "title": "Narrating Fitness: Leveraging Large Language Models for Reflective Fitness Tracker Data Interpretation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642032",
+   "system_id": "2515",
+   "evidence": [
+    {
+     "quote": "We then used the prompt to implement a web page which generated narratives based on the users’ tracker data.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "2563",
+   "title": "RoomDreaming: Generative-AI Approach to Facilitating Iterative, Preliminary Interior Design Exploration",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642901",
+   "system_id": "roomdreaming",
+   "evidence": [
+    {
+     "quote": "The system analyzes the user-input room image, employing depth and segmentation estimators to capture Elements and Spatial Information.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2638",
+   "title": "Personalizing Products with Stylized Head Portraits for Self-Expression",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642391",
+   "system_id": "2638",
+   "evidence": [
+    {
+     "quote": "we present PicMe, a design support tool that converts user face photos into stylized head portraits as vector graphics that can be used to personalize products",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2704",
+   "title": "TypeDance: Creating Semantic Typographic Logos from Image through Personalized Generation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642185",
+   "system_id": "typedance",
+   "evidence": [
+    {
+     "quote": "After selecting an appropriate image, she uploads it to the IMAGERY by click",
+     "location": "system sec 6.1.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2986",
+   "title": "LumiMood: A Creativity Support Tool for Designing the Mood of a 3D Scene",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642440",
+   "system_id": "lumimood",
+   "evidence": [
+    {
+     "quote": "LumiMood takes the current scene as the input and stylizes the mood of the scene by adjusting the lighting and the post-processing efects.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3316",
+   "title": "VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642867",
+   "system_id": "vivid",
+   "evidence": [
+    {
+     "quote": "the potential use of large language models (LLM) to transform a monologue lecture script into pedagogically meaningful dialogue",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3332",
+   "title": "PaperWeaver: Enriching Topical Paper Alerts by Contextualizing Recommended Papers with User-collected Papers",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642196",
+   "system_id": "paperweaver",
+   "evidence": [
+    {
+     "quote": "we present PaperWeaver, an enriched paper alerts system that provides contextualized text descriptions of recommended papers based on user-collected papers",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3409",
+   "title": "IEDS: Exploring an Intelli-Embodied Design Space Combining Designer, AR, and GAI to Support Industrial Conceptual Design",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713528",
+   "system_id": "ieds",
+   "evidence": [
+    {
+     "quote": "By leveraging GAI, IEDS frst interprets design intentions from designers’ physical design representations and textual requirements, then refnes them …",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3431",
+   "title": "D-Twins: Your Digital Twin Designed for Real-Time Boredom Intervention",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714163",
+   "system_id": "dtwins",
+   "evidence": [
+    {
+     "quote": "Initially, we collected users’ natural language expressions to capture their unique characteristics.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3554",
+   "title": "Closing the Loop between User Stories and GUI Prototypes: An LLM-Based Assistant for Cross-Functional Integration in Software Development",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713932",
+   "system_id": "3554",
+   "evidence": [
+    {
+     "quote": "Our assistant displays user stories (2) imported from collaboration tools (e.g., JIRA) for prototype designers to reference while working.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3564",
+   "title": "OmniQuery: Contextually Augmenting Captured Multimodal Memories to Enable Personal Question Answering",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713448",
+   "system_id": "omniquery",
+   "evidence": [
+    {
+     "quote": "OmniQuery is able to answer complex personal questions (a) on individuals’ captured memories (b), such as captured photos, saved screenshots, and recorded videos.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "3568",
+   "title": "Chorus of the Past: Toward Designing a Multi-agent Conversational Reminiscence System with Digital Artifacts for Older Adults",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713810",
+   "system_id": "3568",
+   "evidence": [
+    {
+     "quote": "the system employs a glasses-free 3D monitor, displaying a nostalgic artifact—either a generic nostalgic object 3D model or a personal photo—in the center, with two agents—an older agent and a younger agent—positioned in the bottom left and right corners respectively",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3590",
+   "title": "FusAIn: Composing Generative AI Visual Prompts Using Pen-based Interaction",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714027",
+   "system_id": "fusain",
+   "evidence": [
+    {
+     "quote": "These pens can extract and load multiple visual details from inspirational images and can be used individually or together.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "3623",
+   "title": "Accompany Sleep: Using GenAI to Create Bedtime Stories for Mediating Parent-Child Relationships in LBC Families",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713192",
+   "system_id": "3623",
+   "evidence": [
+    {
+     "quote": "Parents upload daily life content through the app, and the system uses ChatGPT4o to create bedtime stories projected to the LBC.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3836",
+   "title": "I Need Your Help! : Facilitating Psychological Communication Between Left-Behind Children and Their Parents with an AI-Powered Sandbox",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713660",
+   "system_id": "3836",
+   "evidence": [
+    {
+     "quote": "analyze creations for psychological insights",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3887",
+   "title": "UrbAI: Exploring the Possibilities of Generative AI Image Processing to Promote Citizen Participation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713803",
+   "system_id": "urbai",
+   "evidence": [
+    {
+     "quote": "capture an image of the current urban landscape",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3972",
+   "title": "MVPrompt: Building Music-Visual Prompts for AI Artists to Craft Music Video Mise-en-scène",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713876",
+   "system_id": "mvprompt",
+   "evidence": [
+    {
+     "quote": "MVPrompt initially analyzes the user’s music file and suggests three aesthetic themes.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4093",
+   "title": "Letters from Future Self: Augmenting the Letter-Exchange Exercise with LLM-based Agents to Enhance Young Adults' Career Exploration",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714206",
+   "system_id": "4093",
+   "evidence": [
+    {
+     "quote": "that each participant created, which served as the foundation for future selves embodied by LLM agents",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4109",
+   "title": "Exploring Personalized Health Support through Data-Driven, Theory-Guided LLMs: A Case Study in Sleep Health",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713852",
+   "system_id": "4109",
+   "evidence": [
+    {
+     "quote": "integrates wearable device data, contextual information, and a contextual multi-armed bandit model to suggest tailored sleepenhancing activities",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "4123",
+   "title": "Need Help? Designing Proactive AI Assistants for Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714002",
+   "system_id": "4123",
+   "evidence": [
+    {
+     "quote": "The programming context provides a shared workspace enabling the assistant to offer more relevant suggestions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4171",
+   "title": "ExploreSelf: Fostering User-driven Exploration and Reflection on Personal Challenges with Adaptive Guidance by Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713883",
+   "system_id": "exploreself",
+   "evidence": [
+    {
+     "quote": "the ExploreSelf generates “Themes”—potential areas of reflection—based on the initial narrative provided by the user",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4198",
+   "title": "Toward Affective Empathy via Personalized Analogy Generation: A Case Study on Microaggression",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714122",
+   "system_id": "4198",
+   "evidence": [
+    {
+     "quote": "Given an Original 𝑀𝐴, a target emotion, and a user’s personal information, EmoSync generates an Analogical 𝑀𝐴 personalized to the user.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4206",
+   "title": "GPTCoach: Towards LLM-Based Physical Activity Coaching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713819",
+   "system_id": "gptcoach",
+   "evidence": [
+    {
+     "quote": "incorporates wearable data to create personalized physical activity plans",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4280",
+   "title": "Leveraging AI-Generated Emotional Self-Voice to Nudge People towards their Ideal Selves",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713359",
+   "system_id": "4280",
+   "evidence": [
+    {
+     "quote": "combining emotionally expressive language models and voice cloning technologies to render customized responses in the user's own voice",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4287",
+   "title": "Understanding and Supporting Peer Review Using AI-reframed Positive Summary",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713219",
+   "system_id": "4287",
+   "evidence": [
+    {
+     "quote": "we provided critical feedback based on participants' writing at stage 1",
+     "location": "full text, method sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4354",
+   "title": "Proxona: Supporting Creators' Sensemaking and Ideation with LLM-Powered Audience Personas",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714034",
+   "system_id": "proxona",
+   "evidence": [
+    {
+     "quote": "We present Proxona, an LLM-powered system that transforms static audience comments into interactive, multi-dimensional personas",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4417",
+   "title": "FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713686",
+   "system_id": "fusionprotor",
+   "evidence": [
+    {
+     "quote": "Initially, she built the basic scale and shape with the low-fidelity physical prototype (Figure 3 A ○).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4433",
+   "title": "Plume: Scaffolding Text Composition in Dashboards",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713580",
+   "system_id": "plume",
+   "evidence": [
+    {
+     "quote": "Plume employs large language models (LLMs) to generate contextually appropriate content",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4456",
+   "title": "Reimagining Personal Data: Unlocking the Potential of AI-Generated Images in Personal Data Meaning-Making",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713722",
+   "system_id": "4456",
+   "evidence": [
+    {
+     "quote": "Informed by this study, we designed a web-based application as a probe that represents personal data through generative images utilizing Open AI’s GPT-4 model and DALL-E 3.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4481",
+   "title": "GenieWizard: Multimodal App Feature Discovery with Large Language Models",
+   "venue": "chi",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714327",
+   "system_id": "geniewizard",
+   "evidence": [
+    {
+     "quote": "GenieWizard’s suggestion generation pipeline starts from developerprovided code signatures and generates feature suggestions through an automated pipeline.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

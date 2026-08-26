@@ -1,0 +1,314 @@
+{
+ "pattern_id": "pat-054",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "1661",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "The task-instance comparison of human and AI correctness likelihood fits the paired-assessment idea and targets appropriate reliance. However, the quote does not establish that the human produces the human-side assessment, how the pair appears in the interface, or whether divergence and revision are supported, so mechanism and evidence scores remain conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2711",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This clearly implements the commit\u2013reveal\u2013redecide sequence: an initial human judgment and confidence assessment, AI advice and optional confidence, then a final judgment. It is highly rebuildable and domain-independent, though the quote does not say that the interface explicitly renders the difference between verdicts.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3062",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Prompting users to identify a strategy before revealing the simulation's strategy resembles a human-first/system-reveal sequence. The interaction is concrete, but the evidence does not establish two retained verdicts, an explicit comparison, or post-reveal revision, making it only a partial instance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3661",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Human and AI opinions are elicited at the same dimension level and decisions can be updated iteratively, which plausibly exposes disagreement and affects decisions. The abstract-level quote does not specify the on-screen juxtaposition, commit/reveal order, or how differences are rendered.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4085",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The system contrasts the AI choice with a predicted likely human choice, not with the actual user's own committed assessment. That removes the defining human half of the paired human\u2013AI assessment mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern's required actual user-produced assessment; it uses a model-predicted generic human choice instead."
+  },
+  {
+   "rid": "4139",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Participants answer independently, receive LLM advice, and answer the same question again. This is a clean and transferable commit\u2013reveal\u2013revise mechanism, although the quote does not show that disagreement is explicitly visualized or computed.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4733",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The interface analyzes the user's argument and explicitly highlights agreement between human and AI on the same features, making correspondence itself a visible object. Presenting issue types also plausibly supports revision, but the supplied evidence does not state the interaction order or revision affordance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5363",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote compares human ratings before and after an intervention. It does not identify any system-produced assessment paired with the user's assessment.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence shows two rounds of human ratings, not human and AI verdicts over the same item."
+  },
+  {
+   "rid": "5657",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The figure labels show a user's rule canvas and an AI-enhanced version, but not two assessments or verdicts over the same item. Co-editing or enhancement alone does not demonstrate this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes successive rule artifacts rather than paired human and system assessments."
+  },
+  {
+   "rid": "5765",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The trial has a highly legible initial human prediction, sequential AI advice, and final decision. It is a strong temporal implementation with meaningful reliance consequences, though explicit disagreement rendering is absent and the core move is relatively conventional.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5956",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote establishes repeated human decisions and beliefs before and after a treatment but does not show an AI verdict, paired presentation, or human\u2013AI difference.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support a system assessment paired with the user's assessment."
+  },
+  {
+   "rid": "8514",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Showing digital-twin and human responses together is a direct static pairing over survey items and makes comparison possible. The quote does not explain how differences are marked, whether users commit before reveal, or whether they can revise; impact is also difficult to judge from the available title and caption.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9169",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A dedicated reflection interface places participants' self-reported scores against ConvScale's scoring outcomes, closely matching the pattern's defining juxtaposition. It is concrete and transferable to other assessment systems, although the quote does not explicitly mention difference computation or revision.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9260",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Human and AI agents make comparable predictions in the same game, so two verdicts over common items are central. Competition makes their outcomes readable against each other, but the evidence does not show commit/reveal sequencing, an explicit divergence display, or revision.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9275",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The architecture contrasts a user's prediction with the subsequently observed real-world outcome. That may support belief revision, but the second assessment is not an AI-produced verdict.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted comparison is human prediction versus observed outcome, not human assessment versus system assessment."
+  },
+  {
+   "rid": "9688",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote documents only the participant's initial decision and confidence. It provides no evidence of an AI assessment, comparison, reveal, or revision.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern assignment beyond the human assessment step."
+  },
+  {
+   "rid": "9844",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The dialogue explicitly highlights alignment and discrepancies between human and machine perception, making divergence the designed object. This strongly matches the conceptual core, but the evidence is intent-level and does not specify the concrete screen state, ordering, or revision affordance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10282",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The three-stage sequence\u2014independent decision, revision after AI advice, and trust update after accuracy feedback\u2014is explicit and readily rebuildable. It addresses reliance and transfers broadly, although the quote does not say that the human\u2013AI difference is separately rendered or computed.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13496",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Users produce a summary and receive feedback grounded in an AI-generated summary of the same section, giving the system a reference against which the human artifact is assessed. The quote does not say the AI summary or differences are displayed, nor that users re-decide, so this is a peripheral instance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14026",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This is the cleanest supplied instance: the user commits selections, the system compares them with its reference answer, computes correctness, and offers a side-by-side view of interpretive differences. It is directly rebuildable and broadly transferable, though the basic comparison move is not especially surprising and revision is not explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14746",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The user commits an initial response before the AI prediction is revealed, directly establishing two temporally ordered verdicts over the same item. The mechanism is transferable and relevant to reliance, but the quote does not establish an explicit difference display or a subsequent revision step.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15275",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 2,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The fragment suggests that learners write questions or conduct an analysis and compare their work with an AI mentor. It may instantiate paired assessment, but the relationship among the DAPR score, the user's response, and the mentor response is too compressed to reconstruct confidently; transfer beyond the specialized training workflow is also uncertain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

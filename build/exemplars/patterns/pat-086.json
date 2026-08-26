@@ -1,0 +1,4566 @@
+{
+ "pattern": {
+  "pattern_id": "pat-086",
+  "pattern_name": "Fixed Functional Panel Layout",
+  "pattern_slug": "fixed-functional-panel-layout",
+  "short_summary": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use.",
+  "definition": "The screen is divided into a fixed number of persistent regions, each with an assigned function that does not change during use. The partition is stated as a design decision: which functions get their own region, and where each sits. Regions may differ in what they permit, for instance which of them accepts typing.",
+  "structural_signature": "A stable spatial decomposition of one workspace into n named regions, each bound to a function (input, corpus, codebook, canvas, generated output, controls). Region identity and position persist across the session; content changes inside a region but its role does not. Spatial arrangement may encode something further — process order, or an editability asymmetry between regions.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 171,
+ "candidates": [
+  {
+   "rid": "627",
+   "title": "LayerFlow : Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70123",
+   "system_id": "layerflow",
+   "evidence": [
+    {
+     "quote": "The workspace consists of two setting sidebars, and one main view, which is displayed in the middle of the screen.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "643",
+   "title": "SUPQA: LLM-based Geo-Visualization for Subjective Urban Performance Question-Answering",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70106",
+   "system_id": "supqa",
+   "evidence": [
+    {
+     "quote": "The system consists of three main views: map view, navigation view, and annotation view, as shown in Figure 1.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2013",
+   "title": "ReadingQuizMaker: A Human-NLP Collaborative System that Supports Instructors to Design High-Quality Reading Quiz Questions",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580957",
+   "system_id": "readingquizmaker",
+   "evidence": [
+    {
+     "quote": "The ReadingQuizMaker interface contains a Navigation Bar (a), a Paper Panel (middle), and a Qestion Authoring Panel (right).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2074",
+   "title": "StyleMe: Towards Intelligent Fashion Generation with Designer Style",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581377",
+   "system_id": "styleme",
+   "evidence": [
+    {
+     "quote": "The user interface of StyleMe system consists of four parts, (1) inspiration pictures area is used for users to browse clothing pictures and select pictures to generate sketches; (2) drawing board area is used to show the generated sketch from selected clothing picture, and the designer can modify the sketch; (3) reference pictures area is used for users to browse clothing style and select pictures to transfer style; (4) exhibition board area is used to display a list of clothing pictures after style transfer.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2170",
+   "title": "Supporting Novices Author Audio Descriptions via Automatic Feedback",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581023",
+   "system_id": "2170",
+   "evidence": [
+    {
+     "quote": "The video pane is on the left. On the right, we present the scene’s start time, closed captions (CC), scene descriptions (SD), and feedback as table columns.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2429",
+   "title": "How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642698",
+   "system_id": "2429",
+   "evidence": [
+    {
+     "quote": "CoQuest enables Human-AI co-creation of research questions (RQs) using LLMs through a three-panel design: RQ Flow Editor, Paper Graph Visualizer, and AI Thoughts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "2486",
+   "title": "Metamorpheus: Interactive, Affective, and Creative Dream Narration Through Metaphorical Visual Storytelling",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642410",
+   "system_id": "metamorpheus",
+   "evidence": [
+    {
+     "quote": "The interface of Metamorpheus comprises A) an image in display, B) a text bubble, and C) a storyline visualisation",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2627",
+   "title": "Jigsaw: Supporting Designers to Prototype Multimodal Applications by Chaining AI Foundation Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641920",
+   "system_id": "jigsaw",
+   "evidence": [
+    {
+     "quote": "The following outlines Jigsaw’s four major components: the (1) Catalog Panel, (2) Assembly Panel, (3) Input and Output Panels, and (4) Assembly Assistant.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2682",
+   "title": "RELIC: Investigating Large Language Model Responses using Self-Consistency",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641904",
+   "system_id": "relic",
+   "evidence": [
+    {
+     "quote": "of the Prompt Inputter (Figure 1A), the Response View (Figure 1B)",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making"
+   ]
+  },
+  {
+   "rid": "2704",
+   "title": "TypeDance: Creating Semantic Typographic Logos from Image through Personalized Generation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642185",
+   "system_id": "typedance",
+   "evidence": [
+    {
+     "quote": "In TypeDance, the components that follow the design workfow are organized in a cohesive U-shaped layout on the interface, with the main canvas at the center, as depicted in Fig. 5.",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2714",
+   "title": "EvalLM: Interactive Evaluation of Large Language Model Prompts on User-Defined Criteria",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642216",
+   "system_id": "evallm",
+   "evidence": [
+    {
+     "quote": "EvalLM is composed of three main panels: generation, data, and evaluation.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2733",
+   "title": "CoPrompt: Supporting Prompt Sharing and Referring in Collaborative Natural Language Programming",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642212",
+   "system_id": "coprompt",
+   "evidence": [
+    {
+     "quote": "The CoPrompt user interface includes (a) a block-based rich text editor for NL inputs, which consists of prompt blocks and execution code blocks. (b) Prompt Wiki: a multi-hierarchy wiki displaying tasks and prompts, (c) a message panel",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2937",
+   "title": "The HaLLMark Effect: Supporting Provenance and Transparent Use of Large Language Models in Writing with Interactive Visualization",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641895",
+   "system_id": "2937",
+   "evidence": [
+    {
+     "quote": "There are three toggle buttons on top of the editor to turn on and of the three views (columns) of the interface.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2977",
+   "title": "DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642639",
+   "system_id": "dynavis",
+   "evidence": [
+    {
+     "quote": "Figure 1 shows the UI of DynaVis, which contains four main components: (a) the data panel, (b) the command bar for specifying visualization and editing commands, (c) the visualization panel that shows the current working chart, and (d) the panel of synthesized dynamic widgets that users can use to manage widgets and edit the working chart.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3151",
+   "title": "Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642400",
+   "system_id": "luminate",
+   "evidence": [
+    {
+     "quote": "Luminate interface consists of two main sections: (A) text editor and (F) exploration view.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "3171",
+   "title": "Marco: Supporting Business Document Workflows via Collection-Centric Information Foraging with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641969",
+   "system_id": "marco",
+   "evidence": [
+    {
+     "quote": "Marco integrates three views: a Document View renders a PDF document, a Notebook View provides document-centered actions leveraging LLMs, and a Table View provides a collection-level overview.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3388",
+   "title": "FontCraft: Multimodal Font Design Using Interactive Bayesian Optimization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713863",
+   "system_id": "fontcraft",
+   "evidence": [
+    {
+     "quote": "As shown in Figure 2, our UI contains the character design area, the multimodal input area, the character collection area, and the history area.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3426",
+   "title": "Exploring the Potential of Music Generative AI for Music-Making by Deaf and Hard of Hearing People",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714298",
+   "system_id": "3426",
+   "evidence": [
+    {
+     "quote": "The interface consists of three main components: a music generation interface (a), a converter that transforms AI-generated music into visual and tactile feedback (b), and a visual interface (c) on the right for editing musical elements at specific time …",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3508",
+   "title": "EvAlignUX: Advancing UX Evaluation through LLM-Supported Metrics Exploration",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714045",
+   "system_id": "evalignux",
+   "evidence": [
+    {
+     "quote": "EvAlignUX comprises three main panels, each powered by large language models (LLMs): the project IDEATION Panel (left), the METRICS EXPLORER Panel (center), and the IMPACT AND RISK Panel (right).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3584",
+   "title": "HarmonyCut: Supporting Creative Chinese Paper-cutting Design with Form and Connotation Harmony",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714159",
+   "system_id": "harmonycut",
+   "evidence": [
+    {
+     "quote": "In HarmonyCut, the components aligned with the design workflow and the goals are arranged within a three-panel interface, with the primary mood board centrally positioned, as illustrated in Figure 3.",
+     "location": "system sec 6.3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3820",
+   "title": "ProductMeta: An Interactive System for Metaphorical Product Design Ideation with Multimodal Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713935",
+   "system_id": "productmeta",
+   "evidence": [
+    {
+     "quote": "consisting of (a) Source Exploration Module, (b) Mapping Exploration Module, and (c) Design Proposal Construction Module",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3904",
+   "title": "InsightBridge: Enhancing Empathizing with Users through Real-Time Information Synthesis and Visual Communication",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713640",
+   "system_id": "insightbridge",
+   "evidence": [
+    {
+     "quote": "The user interface of InsightBridge , which includes three main views: manipulation panel (1), persona empathy map area (2) for information synthesis, and visual area (3) for visual communication.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3908",
+   "title": "TutorCraftEase: Enhancing Pedagogical Question Creation with Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713731",
+   "system_id": "tutorcraftease",
+   "evidence": [
+    {
+     "quote": "TutorCraftEase’s interface consists of three panels",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3969",
+   "title": "Creative Blends of Visual Concepts",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713683",
+   "system_id": "3969",
+   "evidence": [
+    {
+     "quote": "The interface consists of four distinct modules: the expression input module (a), the prompt exploration module (b, c, d), the visual blend exploration module (e), and the similarity visualization module (f).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4002",
+   "title": "Friction: Deciphering Writing Feedback into Writing Revisions through LLM-Assisted Reflection",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714316",
+   "system_id": "friction",
+   "evidence": [
+    {
+     "quote": "(A) The Essay Panel displays the user’s uploaded essay.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4052",
+   "title": "TutorUp: What If Your Students Were Simulated? Training Tutors to Address Engagement Challenges in Online Learning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713589",
+   "system_id": "tutorup",
+   "evidence": [
+    {
+     "quote": "TutorUp consists of multiple views and functions, including Scenario Selection (A), Scenario Description (B), Math Problem (C), and Student Information (D), which displays details for three students (D1, D2, and D3) under each scenario.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4195",
+   "title": "CoExploreDS: Framing and Advancing Collaborative Design Space Exploration Between Human and AI",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713869",
+   "system_id": "coexploreds",
+   "evidence": [
+    {
+     "quote": "it integrates four panels: the main canvas (Figure 4(A)), the bottom toolbar (Figure 4(B)), a real-time design space visualization map display (Figure 4(C)), and a Quick Assist panel (Figure 4(D))",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4199",
+   "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714057",
+   "system_id": "ideasynth",
+   "evidence": [
+    {
+     "quote": "On the left is the Literature Review Panel 1 ○, where the user can search and add papers to the collection, and generate literature summary and analysis.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4266",
+   "title": "Compositional Structures as Substrates for Human-AI Co-creation Environment: A Design Approach and A Case Study",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713401",
+   "system_id": "4266",
+   "evidence": [
+    {
+     "quote": "(c) four views in VideOrigami’s user interface maps to a corresponding composition structure",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4433",
+   "title": "Plume: Scaffolding Text Composition in Dashboards",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713580",
+   "system_id": "plume",
+   "evidence": [
+    {
+     "quote": "The user starts by adding frames to the canvas (A), dragging in charts from the charts drawer (B), and then editing text by following text suggestions in the sidebar (C).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4589",
+   "title": "CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714272",
+   "system_id": "cardioai",
+   "evidence": [
+    {
+     "quote": "CardioAI: a multimodal AI system to support clinicians for remote monitoring and risk detection of cancer patients’ cardiotoxicity risk. The UI has five modules",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4637",
+   "title": "Towards Better Health Conversations: The Benefits of Context-seeking",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3793199",
+   "system_id": "4637",
+   "evidence": [
+    {
+     "quote": "Bottom shows a 2-column design in which the current answer is shown in the right column, while clarifying questions are displayed underneath user prompts on the left.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "4643",
+   "title": "PolicyPad: Collaborative Prototyping of LLM Policies",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791689",
+   "system_id": "policypad",
+   "evidence": [
+    {
+     "quote": "Policy designers work together in real time (left) to draft policy statements in PolicyPad’s collaborative editor (middle), while experimenting with the model’s policy-informed behavior in a private sidebar (right).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "4679",
+   "title": "Augmenting Clinical Decision-Making with an Interactive and Interpretable AI Copilot: A Real-World User Study with Clinicians in Nephrology and Obstetrics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791458",
+   "system_id": "4679",
+   "evidence": [
+    {
+     "quote": "The dashboard features (A) a dynamic risk trajectory visualization over the patient’s visits that externalizes memory-intensive trend analysis",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4810",
+   "title": "PrevizWhiz: Combining Rough 3D Scenes and 2D Video to Guide Generative Video Previsualization",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790534",
+   "system_id": "previzwhiz",
+   "evidence": [
+    {
+     "quote": "(b) 3D Environment Panel for setting up cameras (b1), lens and lighting, and (b2) exploring the 3D scene pan/tilt/orbit controls. (c) Timeline Panel for blocking camera, avatar, and element movements, including (c1) camera tracks,",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4823",
+   "title": "Orca: Browsing at Scale Through User-Driven and AI-Facilitated Orchestration Across Malleable Webpages",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790335",
+   "system_id": "orca_browsing",
+   "evidence": [
+    {
+     "quote": "The Orca interface features a Web Canvas (b), where webpages can be spatially arranged and organized, and a side panel (a), which can be toggled (1) or set to fullscreen (4).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4840",
+   "title": "AI for Creativity: A GenAI-Based Approach for Early Concept Design and Its Impact on Senior Architects",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791643",
+   "system_id": "4840",
+   "evidence": [
+    {
+     "quote": "The interface comprises three main sections: (A) AI Generation, where users interact with GPT in a chat panel",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4871",
+   "title": "AI of Oz: Enhancing Wizard of Oz Studies in HCI with AI Assistance for Human Moderation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791324",
+   "system_id": "4871",
+   "evidence": [
+    {
+     "quote": "User interface of the AI of Oz system : (A) Real-time monitoring screen of the participant, (B) Monitoring screen of the ECA, (C) Conversation summary, (D) Recommended response, (E) Default response, (F) Chat history, (G) User input interface.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4880",
+   "title": "Actor's Note: Examining the Role of AI-Generated Questions in Character Journaling for Actor Training",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790370",
+   "system_id": "4880",
+   "evidence": [
+    {
+     "quote": "Actor’s Note main interface showing (A) a character profile derived from script, role, rehearsal stage, and performance date",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "system_id": "iruler",
+   "evidence": [
+    {
+     "quote": "The (A) Writing Panel displays the current draft.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4904",
+   "title": "PoemPalette: Facilitating Poetry Creative Exploration and Foundational Understanding through the Ideorealm Alignment of Paintings and Poems",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791460",
+   "system_id": "poempalette",
+   "evidence": [
+    {
+     "quote": "PoemPalette Interface. (A) Poetry–Painting Workspace: Supports editing and generation of visual poetry, allowing poetry enthusiasts to create and modify poem-derived symbols.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4906",
+   "title": "Designing a Generative AI-Assisted Music Psychotherapy Tool for Deaf and Hard-of-Hearing Individuals",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791385",
+   "system_id": "4906",
+   "evidence": [
+    {
+     "quote": "The interface of a music psychotherapy assistive tool. The left panel shows the CA-based conversational interface for songwriting",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4907",
+   "title": "InkIdeator: Supporting Chinese-Style Visual Design Ideation via AI-Infused Exploration of Chinese Paintings",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791675",
+   "system_id": "inkideator",
+   "evidence": [
+    {
+     "quote": "The interface of InkIdeator including: The Symbols Association Panel (A) recommends and explains cultural symbols based on the input design theme. The Image Library (B) allows searching examples from both our annotated Chinese painting dataset and online sources.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5022",
+   "title": "DiagLink: A Dual-User Diagnostic Assistance System by Synergizing Experts with LLMs and Knowledge Graphs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791724",
+   "system_id": "diaglink",
+   "evidence": [
+    {
+     "quote": "Physician interface, consisting of three components: patient information (A), medical knowledge (B), and diagnostic reasoning (C).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5202",
+   "title": "ChatLearn: Leveraging Non-Native Speaker Communication Challenges as Language Learning Opportunities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791839",
+   "system_id": "chatlearn",
+   "evidence": [
+    {
+     "quote": "ChatLearn interface. In addition to the baseline functions, ChatLearn integrates learning-oriented features: (4) Expression Explorer for actively noticing and querying expressions, (5) Expression Extractor for extracting and mapping scaffolded native-language input to target-language expressions, and (6) Contextual Review Cards for recall…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5220",
+   "title": "CaseMaster: Designing and Evaluating a Probe for Oral Case Presentation Training with LLM Assistance",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790304",
+   "system_id": "casemaster",
+   "evidence": [
+    {
+     "quote": "During the Preparation Stage, users can choose a patient from the (A) Patient List, review detailed information in the (B) Patient Record, and draft and refine their presentation within the (C) Preparation Panel.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5239",
+   "title": "DuoDrama: Supporting Screenplay Refinement Through LLM-Assisted Human Reflection",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790568",
+   "system_id": "duodrama",
+   "evidence": [
+    {
+     "quote": "The panels in the frontend interface of the DuoDrama, mapped to design goals (DGs).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "5267",
+   "title": "WordCraft: Scaffolding the Keyword Method for L2 Vocabulary Learning with Multimodal LLMs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790668",
+   "system_id": "wordcraft",
+   "evidence": [
+    {
+     "quote": "WordCraft consists of four primary views: (A) Word Overview, which provides key information about the target word; (B) Keyword Selection, which supports keyword identification and fosters deeper comprehension; (C) Association Construction, which connects the selected keywords to the target meaning; and (D) Image Formation",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5314",
+   "title": "AI Personalization Paradox: Reading Highlights for Personalized AI-Assisted Writing Increases Engagement but Undermines Autonomy and Ownership",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791502",
+   "system_id": "5314",
+   "evidence": [
+    {
+     "quote": "The interface includes four main components. (1) Reading panel allows reading and highlights. (2) The AI suggestion panel enables writers to compose prompts and get suggestions from AI.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5353",
+   "title": "Criticmate: Stagewise Human-AI Co-Critique in Single-Screen UI Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790929",
+   "system_id": "criticmate",
+   "evidence": [
+    {
+     "quote": "The Target Panel (A) displays the task description and the static mobile UI screenshot that serves as the evaluation target.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5361",
+   "title": "Instructional Mechanisms for Professional Writing: A Comparison of Scaffolded Annotation and ChatGPT",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790915",
+   "system_id": "5361",
+   "evidence": [
+    {
+     "quote": "Lettersmith interface while drafting a cover letter with a checklist (left), annotated example (right), and tagging ability (highlighted text)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5396",
+   "title": "When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791480",
+   "system_id": "5396",
+   "evidence": [
+    {
+     "quote": "The right panel is the chatbot testing section, where learners can select an AI model for …",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5425",
+   "title": "Req2CAD: bridging functional requirements and parametric CAD models to support conceptual 3D design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791949",
+   "system_id": "req2cad",
+   "evidence": [
+    {
+     "quote": "It consists of (a) Function Decomposition Panel for decomposing basic sub-functions from the design problem; (b) Structure Exploration Panel for exploring the design space and inducing the representative structure pattern corresponding to one or more basic sub-functions.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5443",
+   "title": "Who You Explain To Matters: Learning by Explaining to Conversational Agents with Different Pedagogical Roles",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790298",
+   "system_id": "5443",
+   "evidence": [
+    {
+     "quote": "The left panel displays the task problem, while the right panel shows the chat interface where participants explained to the agent.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5488",
+   "title": "SoundStager: Interactive Design of Story-Driven GenAI Soundscapes for Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790870",
+   "system_id": "soundstager",
+   "evidence": [
+    {
+     "quote": "The Generation Panel (A) allows users to analyze the video and generate sound effects through \"Sound Chat\". Information Panel (B) provides a video summary and scene-based analysis…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5522",
+   "title": "MoSound: An Interactive Tool for Generative Sound Design in Motion Graphics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791162",
+   "system_id": "mosound",
+   "evidence": [
+    {
+     "quote": "Automatically detected events are shown along with suggested sound descriptions in the Event Panel (A). The Timeline View (F) shows the chosen events. The Motion Analysis Panel allows users to track objects (B), generate sounds (C), and choose motion mappings (D,E).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5559",
+   "title": "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790352",
+   "system_id": "twistlens",
+   "evidence": [
+    {
+     "quote": "(a) Input Panel – upload an image and docent text; (b) Analysis Panel – extract key categories and cue phrases; (c) Segmentation Panel – highlight image regions with color masks",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5657",
+   "title": "Editable XAI: Toward Bidirectional Human-AI Alignment with Co-Editable Explanations of Interpretable Attributes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791375",
+   "system_id": "editablexai",
+   "evidence": [
+    {
+     "quote": "The interface has a key component for reading and editing rules, complemented by panels that display dataset attributes, model performance, and AI enhancement.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5670",
+   "title": "Evalet: Evaluating Large Language Models through Functional Fragmentation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790285",
+   "system_id": "evalet",
+   "evidence": [
+    {
+     "quote": "Evalet consists of two main components: (A) Information Panel and (B) Map Visualization.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5717",
+   "title": "HapticLens: Interactive Vibrotactile Haptic Generation from Spatially Localized Video Motion",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790269",
+   "system_id": "hapticlens",
+   "evidence": [
+    {
+     "quote": "The interface is organized into two rows of panes (Figure 4). The top row displays the video clip alongside outputs of the vision algorithms, while the bottom row provides configuration controls and previews of the resulting haptic signals.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5763",
+   "title": "Open-ended Structured Question Assessment with Human-LLM Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791034",
+   "system_id": "5763",
+   "evidence": [
+    {
+     "quote": "(B) The grading results of the LLM are visually exposed to the instructor in three panels.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5895",
+   "title": "LLM-box vs. Thinking-box: Designing for Deliberate User Engagement with Distorted Information in Conversational Search",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790271",
+   "system_id": "5895",
+   "evidence": [
+    {
+     "quote": "Each system consists of A the task–description panel, B the conversationalsearch panel (LLM–user dialog), and C the panel where users’ selected “content to be verified” is stored",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5916",
+   "title": "Vistoria: A Multimodal System to Support Fictional Story Writing through Instrumental Image-Text Co-Editing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790400",
+   "system_id": "vistoria",
+   "evidence": [
+    {
+     "quote": "Vistoria’s interface: a left Text Editor, a central Cluster panel (can be collapsed when not used), and a right free-form Canvas.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6049",
+   "title": "EvaluAId: Human-AI Collaborative Evaluation of Open-Ended Student Essays",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790814",
+   "system_id": "evaluaid",
+   "evidence": [
+    {
+     "quote": "The interface features a Grading Canvas for organizing graded and ungraded essays (Fig. 1A), a Rubric Workbench for navigating criteria and quality levels (Fig. 1B), an Essay Reader (Fig. 1C), and a Feedback Composer (Fig. 3).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6057",
+   "title": "Plotania: Exploring Transparency Trade-offs in AI Co-Writing Through Virtual Readers and Transparent Attribution",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790926",
+   "system_id": "plotania",
+   "evidence": [
+    {
+     "quote": "Complete writing environment integrating six core components: (a) story canvas, (b) AI functions, (c) main editor, (d) virtual reader, (e) real-time attribution statistics, and (f) character dashboard.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6143",
+   "title": "Iconix: Controlling Semantics and Style in Progressive Icon Grids Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790694",
+   "system_id": "iconix",
+   "evidence": [
+    {
+     "quote": "The system comprises five coordinated modules: (A) Input Concept; (B) Related Concept Analysis (showing candidate ratings); (C) Semantic Exploration (visualizing associations and prompts); (D) Visual Simplification; and (E) the Dual-Axis Icon Grid for compar",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6167",
+   "title": "PointAloud: An Interaction Suite for AI-Supported Pointer-Centric Think-Aloud Computing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790797",
+   "system_id": "pointaloud",
+   "evidence": [
+    {
+     "quote": "Screenshot of the PointAloud system: (A) Main canvas with activated 2D view containing sketches on a floor plan with an unfolded TalkNote card and TalkPointer next to the mouse cursor; (B) TalkExplorer sidebar for browsing and filtering of captured TalkNotes; (C) Menu bar with controls for starting/stopping transcription and switching bet…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "6176",
+   "title": "Supporting Learners' Use of Imperfect Generative Pedagogical Chatbots: The Role of Chatbot Response Uncertainty and Reduced Verbosity",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791940",
+   "system_id": "6176",
+   "evidence": [
+    {
+     "quote": "The learning session page with the chatbot, reading materials, and Google search engine on the left, and learning objective guiding questions and T/F practice problems on the right.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6200",
+   "title": "Vipera: Blending Visual and LLM-Driven Guidance for Systematic Auditing of Text-to-Image Generative AI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791942",
+   "system_id": "vipera",
+   "evidence": [
+    {
+     "quote": "The Vipera interface. (A) The input box for creating prompts and specifying the number of images. (B) The analysis view for interactive auditing.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6237",
+   "title": "Data-Prompt Co-Evolution: Growing Test Sets to Refine LLM Behavior",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791222",
+   "system_id": "6237",
+   "evidence": [
+    {
+     "quote": "The right panel manages data: the top section maintains a living test set with model responses from both prior and curren",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "6238",
+   "title": "Surfacing Governing Principles for Chatbots: A Workbench and Comparative Study",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790612",
+   "system_id": "6238",
+   "evidence": [
+    {
+     "quote": "Its main interface provides seamless access to three primary panels: the Chatbot Evaluation panel, the Principles List panel (both discussed below), and the Chatbot List panel.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6270",
+   "title": "Vidmento: Creating Video Stories through Context-Aware Expansion with Generative Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791337",
+   "system_id": "vidmento",
+   "evidence": [
+    {
+     "quote": "Our interface comprises two linked views that bridge the visual and voiceover components of narrated video stories.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "6317",
+   "title": "Facilitating Proactive and Reactive Guidance for Decision Making on the Web: A Design Probe with WebSeek",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791945",
+   "system_id": "6317",
+   "evidence": [
+    {
+     "quote": "(B) The instance view, a canvas holding the created data instances. They can either be data tables (B1-B4) or visualizations (B5).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7464",
+   "title": "Automatic Histograms: Leveraging Language Models for Text Dataset Exploration",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650798",
+   "system_id": "7464",
+   "evidence": [
+    {
+     "quote": "The left side (Figure 1(A)) is a scrollable list of examples. The right side contains the automatically generated distributions (Figure 1(B)).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "7479",
+   "title": "CanvasPic: An Interactive Tool for Freely Generating Facial Images Based on Spatial Layout",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650952",
+   "system_id": "canvaspic",
+   "evidence": [
+    {
+     "quote": "Our interface. The interface comprises four components: a) Reference image bar, b) Spatial layout workspace, c) Results panel, and d) History module.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7553",
+   "title": "Exploring How Multiple Levels of GPT-Generated Programming Hints Support or Disappoint Novices",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650937",
+   "system_id": "7553",
+   "evidence": [
+    {
+     "quote": "LLM Hint Factory Interface. (1) Problem description; (2) Code editor; (3) Hint Section;",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7695",
+   "title": "SciCapenter: Supporting Caption Composition for Scientific Figures with Machine-Generated Captions and Ratings",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650738",
+   "system_id": "scicapenter",
+   "evidence": [
+    {
+     "quote": "Overview of SciCapenter system interface. PDF Upload Panel (A): A drag-and-drop interface for uploading PDF files. Navigation Bar (B): A horizontal bar showing a list of figures extracted from the uploaded document.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8151",
+   "title": "Balancing Human Agency and AI Autonomy in Human-AI Idea Selection",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719880",
+   "system_id": "8151",
+   "evidence": [
+    {
+     "quote": "IdeaMap human-AI group brainstorming system, featuring a sidebar with all usernames and their associated colors (left), a chatroom for communicating and sharing ideas (middle), and an ideation map visualization based on posted ideas (right).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "8189",
+   "title": "CaseMaster: Designing a Probe for Oral Case Presentation Training with LLM Assistance",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720206",
+   "system_id": "casemaster",
+   "evidence": [
+    {
+     "quote": "During the Preparation Stage, users can choose a patient from the (A) Patient List, review detailed information in the (B) Patient Record, and draft and refine their presentation within the (C) Preparation Panel.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8256",
+   "title": "DocVoyager: Anticipating User's Information Needs and Guiding Document Reading through Question Answering",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719846",
+   "system_id": "docvoyager",
+   "evidence": [
+    {
+     "quote": "(a) The Main QA Panel presents suggested questions based on the user’s reading goal. (b) Explanations accompany the questions to show relevance.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "8404",
+   "title": "Inspo: Writing with Crowds Alongside AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720193",
+   "system_id": "inspo",
+   "evidence": [
+    {
+     "quote": "Inspo contains (A) a text editor, (B) a suggestion panel, and (C) a sidebar.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance"
+   ]
+  },
+  {
+   "rid": "8513",
+   "title": "ReaLJam: Real-Time Human-AI Music Jamming with Reinforcement Learning-Tuned Transformers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720227",
+   "system_id": "realjam",
+   "evidence": [
+    {
+     "quote": "In the ReaLJam interface, a user is presented with a piano at the bottom of the screen, a control bar at the top, and a grid region in the middle where upcoming chords will appear.",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8557",
+   "title": "Synthetic Conversation: How Computing Researchers Engage Multi-Perspective Dialogues to Brainstorm Societal Impacts",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719747",
+   "system_id": "8557",
+   "evidence": [
+    {
+     "quote": "The prototype interface (Weaver) includes the (1) playground for engaging in the synthetic conversation on the left; and (2) the consequence summary found based on the ongoing synthetic conversations on the right.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8630",
+   "title": "Vipera: Towards systematic auditing of generative text-to-image models at scale",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719757",
+   "system_id": "vipera",
+   "evidence": [
+    {
+     "quote": "The Vipera interface. (A) The input box for creating prompts and specifying the number of images. (B) The analysis view showing the prompts, images, scene graph, and auditing suggestions. (C) The note view for composing an auditing report.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9384",
+   "title": "InterPilot: Exploring the Design Space of AI-assisted Job Interview Support for HR Professionals",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798373",
+   "system_id": "interpilot",
+   "evidence": [
+    {
+     "quote": "the system integrates three components (A, B, C)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9433",
+   "title": "Mapping Movies: A Mind-Map Approach to Aphasia-Friendly Video",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798702",
+   "system_id": "9433",
+   "evidence": [
+    {
+     "quote": "The Split view consists of three components: the Video Player (blue box), the Video Summary (yellow box), and the Interactive Mind Map (green box).",
+     "location": "system sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "9487",
+   "title": "PedaCo-Gen: Scaffolding Pedagogical Agency in Human-AI Collaborative Video Authoring",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798741",
+   "system_id": "pedacogen",
+   "evidence": [
+    {
+     "quote": "Overview of the PedaCo-Gen system interface for human-AI collaborative educational video authoring. (a) Learning Content Input Panel (b) Principles and Constraints Settings Panel (c) Review Instructions Panel (d) Script Review Results Panel (e) Generated Video Script Panel (f) Generated Video Preview Player (g) Workflow Progress Bar.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9524",
+   "title": "ReFashionPal: Exploring AI Assistant Embedded in How-to Videos to Support Garment Repurposing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798775",
+   "system_id": "refashionpal",
+   "evidence": [
+    {
+     "quote": "The interface of ReFashionPal. (A) video panel: displays the selected short video.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9595",
+   "title": "Sportoonizer: Augmenting Sports Highlights' Narratives via AI-Generated Manga B-Roll",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799102",
+   "system_id": "sportoonizer",
+   "evidence": [
+    {
+     "quote": "This interactive dashboard facilitates the creation process through four coordinated views",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9608",
+   "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798883",
+   "system_id": "9608",
+   "evidence": [
+    {
+     "quote": "(A) The left sidebar organizes design goals, rationales, and cross-goal relationships.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "9624",
+   "title": "Telehealth Consent Assistant: Prototype and UX Insights",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798990",
+   "system_id": "9624",
+   "evidence": [
+    {
+     "quote": "the interface is divided into two main sections: the form interface (left) and the AI assistant interface (right)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9674",
+   "title": "Tracking, Retrieving, and Auditing for Coherent Epics in Online Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798905",
+   "system_id": "9674",
+   "evidence": [
+    {
+     "quote": "The interface adopts a three-column layout (Figure 2): chapter navigation (left), immersive writing (center), and an assistance sidebar (right) with character cards and conflict detection.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10088",
+   "title": "The Programmer's Assistant: Conversational Interaction with a Large Language Model for Software Development",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584037",
+   "system_id": "10088",
+   "evidence": [
+    {
+     "quote": "The Programmer's Assistant. The user interface provides a code editor on the left (A) and a chat pane on the right (B).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10146",
+   "title": "PDFChatAnnotator: A Human-LLM Collaborative Multi-Modal Data Annotation Tool for PDF-Format Catalogs",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645174",
+   "system_id": "pdfchatannotator",
+   "evidence": [
+    {
+     "quote": "PDFChatAnnotator’s user interface: (A) upload button, (B) preprocess button, (C) file browser window showcasing a page from a porcelain catalog, including details about the porcelain’s name, era, and various descriptions",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10176",
+   "title": "AI for Low-Code for AI",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645203",
+   "system_id": "10176",
+   "evidence": [
+    {
+     "quote": "LowCoder interface with labeled components, described in the text.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10178",
+   "title": "Empirical Evidence on Conversational Control of GUI in Semantic Automation",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645172",
+   "system_id": "10178",
+   "evidence": [
+    {
+     "quote": "Main UI View comprising of chat component (left) and conversation starters (right).",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10181",
+   "title": "SenseMate: An Accessible and Beginner-Friendly Human-AI Platform for Qualitative Data Analysis",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645194",
+   "system_id": "sensemate",
+   "evidence": [
+    {
+     "quote": "The overall layout of the SenseMate platform. Content is organized in two columns",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10185",
+   "title": "LLM-based In-situ Thought Exchanges for Critical Paper Reading",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789069",
+   "system_id": "10185",
+   "evidence": [
+    {
+     "quote": "The user interface consists of a custom PDF viewer, a left Comment Pane, and a right Section Pane.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10199",
+   "title": "AutoStructGUI: Bridging Design and Implementation of GUI through Structured Layout Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789058",
+   "system_id": "autostructgui",
+   "evidence": [
+    {
+     "quote": "AutoStructGUI consists of four main GUI components: (1) The GUI Overview Editor (Figure 7 A) allows users to view the GUI efects in real time, use automation functions, and edit component attributes. (2) The Component Selection Panel (Figure 7 B) is used in automatic recommendation functions, allowing users to select the required components and their quantities quickly.",
+     "location": "system sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10221",
+   "title": "Adaptive Prompt Elicitation for Text-to-Image Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789149",
+   "system_id": "10221",
+   "evidence": [
+    {
+     "quote": "The left area functions as feature specification, consisting of (A) question panel that presents visual queries, and (B) requirements panel that presents visual feature requirements specified during the interactions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10222",
+   "title": "CoAutoML: User Interface Framework for Machine Learning Novices using LLM-based AutoML and Test-Driven Machine Teaching",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789153",
+   "system_id": "coautoml",
+   "evidence": [
+    {
+     "quote": "Our system integrates three core components: (1) a conversational LLM interface (left) for ML task guidance",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10239",
+   "title": "CodeVoyager: Integrating Interactive Visual Aids with LLMs for Code Comprehension",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789057",
+   "system_id": "codevoyager",
+   "evidence": [
+    {
+     "quote": "User interface of CodeVoyager. (a) Navigation Bar allows quick toggling between panels. (b) File Browser presents the project’s hierarchical structure.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10261",
+   "title": "Script2Screen: Supporting Dialogue-Centric Scriptwriting with Interactive Audiovisual Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789075",
+   "system_id": "script2screen",
+   "evidence": [
+    {
+     "quote": "Writers can select a workspace from the Scenes navigation bar (A), where the corresponding script loads into the Script Editor (B).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10263",
+   "title": "ChoiceMates: Supporting Unfamiliar Online Decision-Making with Multi-Agent Conversational Interactions",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789107",
+   "system_id": "choicemates",
+   "evidence": [
+    {
+     "quote": "Agents populate the conversation space to converse with the user, identifying key criteria and options in their utterances (1). The Conversation History automatically lists those criteria and options mentioned by agents (2).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10265",
+   "title": "SCSimulator: An Exploratory Visual Analytics Framework for Partner Selection in Supply Chains through LLM-driven Multi-Agent Simulation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789061",
+   "system_id": "scsimulator",
+   "evidence": [
+    {
+     "quote": "The SCSimulator simulation interface incorporates five main views, each serving a distinct purpose.",
+     "location": "system sec 4.2.2"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10375",
+   "title": "-generAItor: Tree-in-the-loop Text Generation for Language Model Explainability and Adaptation",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3652028",
+   "system_id": "generaitor",
+   "evidence": [
+    {
+     "quote": "To support these tasks, we present generAItor, a visual analytics technique, augmenting the central beam search tree with various task-specific widgets, providing targeted visualizations and interaction possibilities.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10912",
+   "title": "DashBot: Insight-Driven Dashboard Generation Based on Deep Reinforcement Learning",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209468",
+   "system_id": "dashbot",
+   "evidence": [
+    {
+     "quote": "The interface consists of a table view (A), a topic list (B), a chart editor (C), a canvas view (D), and a recommendation view (E).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10955",
+   "title": "Visual Comparison of Language Model Adaptation",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209458",
+   "system_id": "10955",
+   "evidence": [
+    {
+     "quote": "The workspace contains three views: Adapter Composition View (A), which lists adapters from AdapterHub repository, Explanation Composition View (B) for modular explanation generation, and Visual Comparison View (Workspace) for model comparison",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "11342",
+   "title": "PromptMagician: Interactive Prompt Engineering for Text-to-Image Creation",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327168",
+   "system_id": "promptmagician",
+   "evidence": [
+    {
+     "quote": "The user interface of PromptMagician consists of four views.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "11974",
+   "title": "AdversaFlow: Visual Red Teaming for Large Language Models with Multi-Level Adversarial Flow",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456150",
+   "system_id": "adversaflow",
+   "evidence": [
+    {
+     "quote": "The interface of AdversaFlow includes a Control Panel (A) to configure model parameters and adjust data sampling",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12012",
+   "title": "StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456363",
+   "system_id": "stugptviz",
+   "evidence": [
+    {
+     "quote": "The Filter View (A) offers an overview and enables filtering of tasks and students through the Task Overview (a1) and Student Overview (a2).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12247",
+   "title": "InsightLens: Augmenting LLM-Powered Data Analysis With Interactive Insight Management and Navigation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567131",
+   "system_id": "insightlens",
+   "evidence": [
+    {
+     "quote": "The user interface of InsightLens. The Chat Window (A) enables conversational interactions between users and LLMs. The Insight Details (B) displays the currently focused insight’s summary with its relevant data context and supporting evidence.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12281",
+   "title": "AgentLens: Visual Analysis for Agent Behaviors in LLM-Based Autonomous Systems",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3394053",
+   "system_id": "agentlens",
+   "evidence": [
+    {
+     "quote": "The user interface of AgentLens comprises three views.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12304",
+   "title": "Visual Analysis of Prediction Uncertainty in Neural Networks for Deep Image Synthesis",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3406959",
+   "system_id": "12304",
+   "evidence": [
+    {
+     "quote": "Our visual analytics interface has three main components: (A) Parallel Coordinates Plot (PCP), (B) Uncertainty and Error heatmap plots, and (C) Image view panel",
+     "location": "full text, system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12305",
+   "title": "PrompTHis: Visualizing the Process and Influence of Prompt Editing During Text-to-Image Creation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3408255",
+   "system_id": "prompthis",
+   "evidence": [
+    {
+     "quote": "The interface of PrompTHis, which consists of Image Variant Graph (a), a history box (b), a navigation mini-map (c), a control panel (d), and a creation panel (e).",
+     "location": "full text fig 7"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12311",
+   "title": "WonderFlow: Narration-Centric Design of Animated Data Videos",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3411575",
+   "system_id": "wonderflow",
+   "evidence": [
+    {
+     "quote": "Users can first select the text phrases in the narration editor (a) and visual elements from the canvas (b) to form text-visual links. Then they can apply an animation preset selected in the animation effect panel (c) to the visual elements.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12319",
+   "title": "SPROUT: An Interactive Authoring Tool for Generating Programming Tutorials With the Visualization of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3410523",
+   "system_id": "sprout",
+   "evidence": [
+    {
+     "quote": "The system interface of SPROUT. The Code View (A) displays the source code. The Tutorial View (B) presents the LLM-generated tutorial content.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 15,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12372",
+   "title": "HINTs: Sensemaking on Large Collections of Documents With Hypergraph Visualization and INTelligent Agents",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3459961",
+   "system_id": "hints",
+   "evidence": [
+    {
+     "quote": "The HINTs system consists of three main views: Cluster View, Document View, and Analysis View.",
+     "location": "full text sec 6"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12428",
+   "title": "FinFlier: Automating Graphical Overlays for Financial Visualizations With Knowledge-Grounding Large Language Model",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3514138",
+   "system_id": "finflier",
+   "evidence": [
+    {
+     "quote": "We design an interface for our system which consists of four views, as shown in Figure 9: (A) Data Table, (B) Narrative Panel, (C) Data Chart, and (D) Design Panel.",
+     "location": "system sec 4.3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "evidence": [
+    {
+     "quote": "PROMPTAID’s interface consists of six main linked sections which support (A) selecting models, domains and entering custom prompt templates",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12472",
+   "title": "VISTA: A Visual Analytics Framework to Enhance Foundation Model-Generated Data Labels",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535896",
+   "system_id": "vista",
+   "evidence": [
+    {
+     "quote": "A Label View presents groups of labels in a grid-based layout, allowing for label issue validation; B Issue Pattern View organizes segment-label pairs into data groups based on their common patterns",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12537",
+   "title": "JailbreakHunter: A Visual Analytics Approach for Jailbreak Prompts Discovery From Large-Scale Human-LLM Conversational Datasets",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3557568",
+   "system_id": "jailbreakhunter",
+   "evidence": [
+    {
+     "quote": "The visualizations comprise four main views. The Filter Panel",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12590",
+   "title": "JailbreakLens: Visual Analysis of Jailbreak Attacks Against Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3575694",
+   "system_id": "jailbreaklens",
+   "evidence": [
+    {
+     "quote": "Users configure jailbreak questions and templates in the Configuration View (A), overview their jailbreak performance in the Summary View (B1)",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12608",
+   "title": "Save It for the \"Hot\" Day: An LLM-Empowered Visual Analytics System for Heat Risk Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3586689",
+   "system_id": "12608",
+   "evidence": [
+    {
+     "quote": "The Meteorological Panel (A) facilitates numerical understanding of meteorology, including temporal trends (A1), temporal distribution (A2), and spatial distribution (A3).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12730",
+   "title": "CausalChat: Interactive Causal Model Development and Refinement Using Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3602448",
+   "system_id": "causalchat",
+   "evidence": [
+    {
+     "quote": "It includes (A) the Control Panel for specifying fundamental parameters and tracking the",
+     "location": "fig 9"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12750",
+   "title": "Latent Space Map for Visual Utilization of Generated Data",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3614247",
+   "system_id": "12750",
+   "evidence": [
+    {
+     "quote": "The system interface primarily consists of two components: (a) Global View and (b) Local View. (c) Control Panel and (d) Information Panel are provided to facilitate user interactions",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12769",
+   "title": "NLI4VolVis: Natural Language Interaction for Volume Visualization via LLM Multi-Agents and Editable 3D Gaussian Splatting",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633888",
+   "system_id": "nli4volvis",
+   "evidence": [
+    {
+     "quote": "the interface consists of four main components, arranged from left to right: the control panel, rendering window, chat widget, and action log",
+     "location": "system sec 3.5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12770",
+   "title": "ConceptViz: A Visual Analytics Approach for Exploring Concepts in Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634806",
+   "system_id": "conceptviz",
+   "evidence": [
+    {
+     "quote": "consists of six interconnected views: (A) Concept Query View for building and refining queries, (B) SAE Discovery View for identifying relevant SAE models",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12777",
+   "title": "MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633884",
+   "system_id": "misvisfix",
+   "evidence": [
+    {
+     "quote": "MisVisFix dashboard. Panel A displays the original misleading visualization with interactive issue localization",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "12792",
+   "title": "HypoChainer: A Collaborative System Combining LLMs and Knowledge Graphs for Hypothesis-Driven Scientific Discovery",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633887",
+   "system_id": "hypochainer",
+   "evidence": [
+    {
+     "quote": "Working alongside domain experts, we have designed a frontend interface to support scientific discovery workflows through a set of dedicated modules, namely Control Panel, Embedding View, Chatbot, Prediction View, Hypothesis View, Chain View, and Retrieval View.",
+     "location": "system sec 4.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12795",
+   "title": "Sel3DCraft: Interactive Visual Prompts for User-Friendly Text-to-3D Generation",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633875",
+   "system_id": "sel3dcraft",
+   "evidence": [
+    {
+     "quote": "The user interface of Sel3DCraft includes the Model Input View (A); the Image Browser View (B), which covers the generated and retrieved images (B1), the multi-view hybrid-level scoring function (B2), and the scoring rationale (B3); the 3D Viewer View (C); the Text Exploration View (D); and the Keyword Contribution View (E).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12805",
+   "title": "DKMap: Interactive Exploration of Vision-Language Alignment in Multimodal Embeddings via Dynamic Kernel Enhanced Projection",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642641",
+   "system_id": "dkmap",
+   "evidence": [
+    {
+     "quote": "As shown in Fig. 6, the system consists of four views: (a) Settings Panel, (b) Overview, (c) Keyword Distribution View, and (d) Instance View.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12837",
+   "title": "InsightChaser: Enhancing Visual Reasoning of Sports Tactical Visualization with Visual-Text Linking",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634639",
+   "system_id": "insightchaser",
+   "evidence": [
+    {
+     "quote": "Our system is designed based on the summarized requirements of casual fans and contains three views: linking view, enhancement view, and edit view.",
+     "location": "system sec 5 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "system_id": "datawink",
+   "evidence": [
+    {
+     "quote": "(A) Canvas panel–Users can upload a reference, browse different bookmarked visualization designs, and edit the visual elements in the generated layer.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "12851",
+   "title": "Conch: Competitive Debate Analysis via Visualizing Clash Points and Hierarchical Strategies",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634629",
+   "system_id": "conch",
+   "evidence": [
+    {
+     "quote": "The user interface of Conch. (A) Overview consists of two parts: the Process View (A0) and the Session View (A1) showing the evolution and interactions of debate among blocks based on clash points, disagreements, and viewpoints",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12934",
+   "title": "GenFODrawing: Supporting Creative Found Object Drawing With Generative AI",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3626754",
+   "system_id": "genfodrawing",
+   "evidence": [
+    {
+     "quote": "As illustrated in Fig. 4, GenFODrawing, consists of three panels to facilitate the creation of found object drawings for users.",
+     "location": "system sec 4.2 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "13183",
+   "title": "RAGExplorer: A Visual Analytics System for the Comparative Diagnosis of RAG Systems",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694443",
+   "system_id": "ragexplorer",
+   "evidence": [
+    {
+     "quote": "Component Configuration View (A) allows users to define an experimental space by selecting options for each RAG component.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "13184",
+   "title": "KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694436",
+   "system_id": "keditvis",
+   "evidence": [
+    {
+     "quote": "The system provides (A1) an LLM chat view for interactive dialogue, (A2) a knowledge graph, and (A3) management of editing facts and testing prompts.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13373",
+   "title": "RuleScope: Semantic-Aware Authoring of Data Validation Rules",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3697222",
+   "system_id": "rulescope",
+   "evidence": [
+    {
+     "quote": "The interface of RuleScope. (a) Validate View contains a matrix-based visualization of validation rules and their results; (b) Data View displays detailed data and corresponding validation results; (c) Detail View includes a setting panel for validation rules (c1), validation card panel that presents an overview of validation rules (c2), …",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13419",
+   "title": "CodeToon: Story Ideation, Auto Comic Generation, and Structure Mapping for Code-Driven Storytelling",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545617",
+   "system_id": "codetoon",
+   "evidence": [
+    {
+     "quote": "System interface: (A) drop-down allows users to check potential code examples for basic programming concepts, (B) code container, (C) button that generates story template from code in code container, (D) story template, (E) drawing canvas for comics, (F) tool palette, (G) style palette, and (H) buttons for changing the interface layout",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13531",
+   "title": "Graphologue: Exploring Large Language Model Responses with Interactive Diagrams",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606737",
+   "system_id": "graphologue",
+   "evidence": [
+    {
+     "quote": "The Graphologue interface, including the question input box (a), text response blocks (b), and the diagrams (c).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13536",
+   "title": "XCreation: A Graph-based Crossmodal Generative Creativity Support Tool",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606826",
+   "system_id": "xcreation",
+   "evidence": [
+    {
+     "quote": "The main user interface of XCreation is composed of three parts: the text part, the graph part, and the image part.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13641",
+   "title": "GLITTER: An AI-assisted Platform for Material-Grounded Asynchronous Discussion in Flipped Learning",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747742",
+   "system_id": "glitter",
+   "evidence": [
+    {
+     "quote": "Glitter’s interface features a left panel for reading (E) and a right panel for discussion (F) that support pre-class learning.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13643",
+   "title": "GenTune: Toward Traceable Prompts to Improve Controllability of Image Refinement in Environment Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747774",
+   "system_id": "gentune",
+   "evidence": [
+    {
+     "quote": "The main interface of GenTune includes: (A) The main image panel",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13652",
+   "title": "DialogLab: Authoring, Simulating, and Testing Dynamic Human-AI Group Conversations",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747696",
+   "system_id": "dialoglab",
+   "evidence": [
+    {
+     "quote": "First, users author the group dynamics by dragging participants from the (a) Avatar Library and contents from the (b) Content Library to the (d) Scene Panel.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13663",
+   "title": "ViseGPT: Towards Better Alignment of LLM-generated Data Wrangling Scripts and User Prompts",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747689",
+   "system_id": "visegpt",
+   "evidence": [
+    {
+     "quote": "A screenshot of the ViseGPT user interface. After users send a prompt to ViseGPT (A), the response content in the reply box (B) is organized into three components:",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13667",
+   "title": "MACEDON : Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747655",
+   "system_id": "macedon",
+   "evidence": [
+    {
+     "quote": "It provides three basic dashboards: (A) Evaluation Dashboard provides the current score of their code in five dimensions(clarity, documentation, redundancy, time efficiency, and space efficiency); (B) a button for user to trigger Optimization Dashboard; (C) Optimization Dashboard provides…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13678",
+   "title": "InReAcTable: LLM-powered Interactive Visual Data Story Construction from Tabular Data",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747719",
+   "system_id": "inreactable",
+   "evidence": [
+    {
+     "quote": "The user interface of InReAcTable system consists of three interconnected panels: the data subspace selection panel, the iterative exploration panel, and the insight information panel, as shown in Fig. 4.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13703",
+   "title": "Synthia: Visually Interpreting and Synthesizing Feedback for Writing Revision",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747703",
+   "system_id": "synthia",
+   "evidence": [
+    {
+     "quote": "The interface of Synthia consists of four main sections: Essay Panel (Fig. 3A), Bubble Canvas (Fig. 3B), Feedback Gallery (Fig. 3C), and Revision Panel (Fig. 3D).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13726",
+   "title": "Flowco: Mixed-Initiative Authoring of Reliable End-to-End Data Analyses via Dataflow Graphs and LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747636",
+   "system_id": "flowco",
+   "evidence": [
+    {
+     "quote": "The Flowco user interface, as shown in Figure 3, is divided into three panels: The project panel on the left encompasses global actions and the “Ask Me Anything!” (AMA) chat box; the canvas in the center is the visual editor for Flowco dataflow graphs; and the details panel on the right presents details of the selected node during editing.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14017",
+   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00043",
+   "system_id": "convomap",
+   "evidence": [
+    {
+     "quote": "ConvoMap’s user interface is organized into three panels: a Topic Overview (Figure 1.1), a Semantic Map (Figure 1.2), and a Conversation Detailed View (Figure 1.3).",
+     "location": "full text sec IV-A"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14706",
+   "title": "HearHere: Mitigating Echo Chambers in News Consumption through an AI-based Web System",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637340",
+   "system_id": "hearhere",
+   "evidence": [
+    {
+     "quote": "HearHere facilitates the key processes of news information consumption through two visualizations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "15120",
+   "title": "Generative Co-Learners: Enhancing Cognitive and Social Presence of Students in Asynchronous Learning with Generative AI",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701198",
+   "system_id": "15120",
+   "evidence": [
+    {
+     "quote": "An overview of GCL user interface. There are four panels: (A) a main video panel for displaying the learning content; (B) a function panel with a text and code editor",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15190",
+   "title": "SimSpark: Interactive Simulation of Social Media Behaviors",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711066",
+   "system_id": "simspark",
+   "evidence": [
+    {
+     "quote": "(B1) Avatar Panel displays agents’ avatars. (B2) Basic Information Panel allows users to configure demographic information and social habits of selected agents. (C) Timeline shows the public events and simulation process.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "15268",
+   "title": "MeetMap: Real-Time Collaborative Dialogue Mapping with LLMs in Online Meetings",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711030",
+   "system_id": "meetmap",
+   "evidence": [
+    {
+     "quote": "The system has the following components: (1) a Video Panel and (2) a Task Panel, which displays the meeting agenda; (3) a Topic Timeline Panel, which shows turn exchanges and conversation topics chrono…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15324",
+   "title": "ComViewer: An Interactive Visual Tool to Help Viewers Seek Social Support in Online Mental Health Communities",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710904",
+   "system_id": "comviewer",
+   "evidence": [
+    {
+     "quote": "ComViewer supports this flow with a Zoomable Posts Panel, a Note-taking Panel, and a Questioning Panel.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15614",
+   "title": "Steering AI-driven Personalization of Scientific Text for General Audiences",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757660",
+   "system_id": "15614",
+   "evidence": [
+    {
+     "quote": "The translation panel has the main personalization features (Figure 1 A , B , C ).",
+     "location": "system sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15661",
+   "title": "Polymind: Parallel Visual Diagramming with Large Language Models to Support Prewriting Through Microtasks",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757497",
+   "system_id": "polymind",
+   "evidence": [
+    {
+     "quote": "The interface of Polymind comprises: A. a diagramming canvas B. a toolbar C. a task board",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15674",
+   "title": "AI-Based Speaking Assistant: Supporting Non-Native Speakers' Speaking in Real-Time Multilingual Communication",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757455",
+   "system_id": "15674",
+   "evidence": [
+    {
+     "quote": "Web interface with AISA. Where to represents the components of the interface; to represents NNSs’ operation steps when using AISA. Specifically, basic information header; game instruction button.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15682",
+   "title": "EchoMind: Supporting Real-time Complex Problem Discussions through Human-AI Collaborative Facilitation",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757587",
+   "system_id": "echomind",
+   "evidence": [
+    {
+     "quote": "The interface of EchoMind includes transcription area (A) and issue map area (B).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16043",
+   "title": "Metaphorian: Leveraging Large Language Models to Support Extended Metaphor Creation for Science Writing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595996",
+   "system_id": "metaphorian",
+   "evidence": [
+    {
+     "quote": "The Metaphorian interface is divided into (a) the Text Editor, where users can write text and (b) the Metaphor Creation Support area, where users can search, extend, and iteratively modify metaphors.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16165",
+   "title": "Artinter: AI-powered Boundary Objects for Commissioning Visual Arts",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595961",
+   "system_id": "artinter",
+   "evidence": [
+    {
+     "quote": "Artinter interface. Artinter is composed of a sketch pad (a) and a mood board (b).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16260",
+   "title": "DesignPrompt: Using Multimodal Interaction for Design Exploration with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661588",
+   "system_id": "designprompt",
+   "evidence": [
+    {
+     "quote": "Amy launches DesignPrompt, and an interface containing a search engine, moodboard canvas, image meta-data display and AI image generation tool shows up as shown in Fig.2.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16494",
+   "title": "IKIWISI: An Interactive Visual Pattern Generator for Evaluating the Reliability of Vision-Language Models Without Ground Truth",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735754",
+   "system_id": "ikiwisi",
+   "evidence": [
+    {
+     "quote": "The interface shows model and video selection options (A-C), video keyframes (D), object selection panel (E), and the core binary heat map (F)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16542",
+   "title": "Varif.ai to Vary and Verify User-Driven Diversity in Scalable Image Generation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735847",
+   "system_id": "16542",
+   "evidence": [
+    {
+     "quote": "The user interface of Varif.ai comprises four main panels.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "16685",
+   "title": "DesignerlyLoop: Forming Design Intent through Curated Reasoning for Human-LLM Alignment",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812885",
+   "system_id": "designerlyloop",
+   "evidence": [
+    {
+     "quote": "DesignerlyLoop comprises two canvas interfaces: (B) Design Intent Canvas, and (C) LLM Reasoning Canvas.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "16762",
+   "title": "ClayScape: A GenAI-Supported Workflow for Designing Chinese Style Ceramics with Clay 3D Printing",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812941",
+   "system_id": "clayscape",
+   "evidence": [
+    {
+     "quote": "The interface of ClayScape consists of three interconnected workspaces: an AI prompt area, a 3D design preview, and a clay print preview (see Fig. 11).",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16887",
+   "title": "MetaEmbody: Supporting Embodied Metaphor Ideation for Tangible Interaction Design",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812967",
+   "system_id": "metaembody",
+   "evidence": [
+    {
+     "quote": "It is structured into three main panels: (1) Analogical Context Exploration, (2) Embodied Metaphor Mapping, and (3) Tangible Object Construction.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16919",
+   "title": "DataSway: Vivifying Metaphoric Visualization with Animation Clip Generation and Coordination",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813048",
+   "system_id": "datasway",
+   "evidence": [
+    {
+     "quote": "The user interface of DataSway. (A) SVG preview panel.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16920",
+   "title": "AnimationDiff: A Visual Comparison Tool for Generated 3D Character Animations",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812971",
+   "system_id": "animationdiff",
+   "evidence": [
+    {
+     "quote": "Users can see the played animations in the main camera view (a). Users can further see the four loaded animations in the timeline view and scrub the timeline slider (b).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17103",
+   "title": "MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback",
+   "venue": "tochi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3694681",
+   "system_id": "memovis",
+   "evidence": [
+    {
+     "quote": "Overall, MemoVis includes a 3D explorer (Fig. 1a), where feedback providers can explore different viewpoints of the 3D model, and a rich-text editor (Fig. 1b) where the textual feedback is typed.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

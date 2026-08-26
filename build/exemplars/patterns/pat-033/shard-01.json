@@ -1,0 +1,1073 @@
+{
+ "pattern": {
+  "pattern_id": "pat-033",
+  "pattern_name": "Output Templates",
+  "pattern_slug": "output-templates",
+  "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+  "definition": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take. Generation is validated against or rendered into that structure rather than emitted as free text. The structure exists at the type level: it applies to every output the system produces, not just this one.",
+  "structural_signature": "A named structure with enumerated parts (fields, sections, component types, category labels) is defined independently of any single generation and is stored in the system. The generator's output is emitted into, checked against, or parsed by that structure, and downstream rendering is per-part: each part gets its own visual slot, colour, or handle. Outputs that do not conform are corrected or rejected before display.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "6141",
+   "title": "CASEbot: A Conversational Agent for Structuring and Personalizing the Design of Self-Experiments in Personal Health",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791551",
+   "system_id": "casebot",
+   "evidence": [
+    {
+     "quote": "We leverage genAI to design a system that can collect users’ context and preferences and merge them with an ideal structure to support self-experiment design.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6239",
+   "title": "Visualizing Tree-of-Analysis: Facilitating Conversational Visual Analytics for Novices",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791690",
+   "system_id": "6239",
+   "evidence": [
+    {
+     "quote": "we visualize this tree, with AI outputs as nodes (containing two cue types) and user queries as edges (categorized by seven query types), to provide novices with an overview of their analysis journey",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U05"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6298",
+   "title": "PASTA: A Scalable Framework for Multi-Policy AI Compliance Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790966",
+   "system_id": "pasta",
+   "evidence": [
+    {
+     "quote": "a comprehensive model-card format supporting descriptive inputs across development stages",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6300",
+   "title": "Zenergy: Designing Taoist-Inspired Transformative Nature Imagery for Everyday Empowerment",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790421",
+   "system_id": "zenergy",
+   "evidence": [
+    {
+     "quote": "The LLM parses the user’s emotion and context, applies the system prompt and the threestage meditation prompt (Purification, Oneness, Refresh), and generates a personalized meditation script.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6307",
+   "title": "GenFaceUI: Meta-Design of Generative Personalized Facial Expression Interfaces for Intelligent Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790653",
+   "system_id": "genfaceui",
+   "evidence": [
+    {
+     "quote": "The backend assembles prompts from four modules (Default Prompt, SVG Template, Design Rules, Context Rules), while the frontend provides Design Mode and Test Mode for iterative design–test–sel",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "7421",
+   "title": "We Need Structured Output: Towards User-centered Constraints on Large Language Model Output",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650756",
+   "system_id": "7421",
+   "evidence": [
+    {
+     "quote": "However, to integrate them into current developer workflows, it is essential to constrain their outputs to follow specific formats or standards.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "8138",
+   "title": "ArtifactShow: Incorporating Generative AI into Narrative Visualization for Interactive Cultural Experience",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720160",
+   "system_id": "artifactshow",
+   "evidence": [
+    {
+     "quote": "To extract key information, we reorganized these data into ten fields: collection name, species of the animals, material, size, technique, time period (year), dynasty, location, China-related and description.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8234",
+   "title": "Demystifying Mental Health Reports Through an LLM-based Approach",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720208",
+   "system_id": "8234",
+   "evidence": [
+    {
+     "quote": "we designed a document (named Case History Taking Template (CHTT)) to segment various concepts and parameters in case history taking",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8367",
+   "title": "GeneyMAP: Designing GenAI-empowered User Journey Mapping Tool",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720075",
+   "system_id": "geneymap",
+   "evidence": [
+    {
+     "quote": "F2-Mapping user information. Building on identified data patterns, this function organizes insights into a journey framework, detailing user actions, thoughts, emotions, and goals in a sequential format.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8429",
+   "title": "LIGS: Developing an LLM-infused Game System for Emergent Narrative",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720212",
+   "system_id": "ligs",
+   "evidence": [
+    {
+     "quote": "As shown in Figure 1, game world is composed of four classes, each designed to fulfill specific roles within the game and inheriting from the base structure of object: object represents all entities; space serves as the highestlevel parent, defining areas (e.g., rooms) that can contain other objects; character describes entities capable of autonomous perception, reasoning, and action; and player represents agents controlled by the user.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "8433",
+   "title": "LearnMate: Enhancing Online Education with LLM-Powered Personalized Learning Plans and Support",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719857",
+   "system_id": "learnmate",
+   "evidence": [
+    {
+     "quote": "Our approach adapts the personalized learning framework by Graham et al. [18], which includes different dimensions of goals, time, place, pace, and path to support effective personalized learning.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8519",
+   "title": "ResponSight: Explainable and Collaborative Moderation Approach for Responsible Video Content in UGC Platform",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720230",
+   "system_id": "responsight",
+   "evidence": [
+    {
+     "quote": "we integrate key dimensions of responsibility in content moderation and propose six core dimensions for responsible video detection",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8527",
+   "title": "SPHERE: Supporting Personalized Feedback at Scale in Programming Classrooms with Structured Review of Generative AI Outputs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720203",
+   "system_id": "sphere",
+   "evidence": [
+    {
+     "quote": "Instructors select the critical issues for feedback, which are then summarized and categorized to create Feedback Templates (3).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8732",
+   "title": "Evaluating an AI Documentation Assistant for Anesthesiology Teams",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706658",
+   "system_id": "8732",
+   "evidence": [
+    {
+     "quote": "Screenshots of the feedback interface on the initial prototype and the running system, which informed the anesthesia teams of successful automatic documentation. If the closed-loop communication was complete, the system documented (1) at what time the anesthesiologists ordered (2) what dosage for (3) which medication and (4) whether this …",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8794",
+   "title": "KaraokAI: Exploring the Potential of AI-Generated Karaoke for Academic Conferences and Research Experiences",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721113",
+   "system_id": "karaokai",
+   "evidence": [
+    {
+     "quote": "These blueprints are stored to be used as structural templates for the lyrics generation.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8978",
+   "title": "Sip Your Emotions: Blending Emotion and Data in Cocktail Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721336",
+   "system_id": "8978",
+   "evidence": [
+    {
+     "quote": "Through natural language processing and an emotion-embedding approach, we map textual input onto base spirits, flavors, and garnishes.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9028",
+   "title": "A Human-AI Collaboration System for ADHD Assessment from Primary School Reports",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798770",
+   "system_id": "9028",
+   "evidence": [
+    {
+     "quote": "We present a Human–AI collaboration system that augments the existing validated paper-based ADHD ZEBRA diagnosis instrument for school reports",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9078",
+   "title": "Ask, Verify, Refine: A Question-Aware Multimodal XUI with Feedback-Guided Refinement for Clinical Verification",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798745",
+   "system_id": "9078",
+   "evidence": [
+    {
+     "quote": "The clinician question taxonomy presented by [6] is adopted as the basis for mapping each question type to the minimal explanation components required in a multimodal interface (Table 1).",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9086",
+   "title": "AutismCarebot: Emotion-First, Source-Aware Conversational Support for Autistic Users",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798986",
+   "system_id": "autismcarebot",
+   "evidence": [
+    {
+     "quote": "AutismCarebot follows a consistent response pattern: (1) acknowledge the emotional situation of a user, (2) normalizing the experience, (3) offer optional guidance with a clear, structured next step",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9122",
+   "title": "Bridging Pedagogy and Play: Introducing a Language Mapping Interface for Human-AI Co-Creation in Educational Game Design",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798862",
+   "system_id": "9122",
+   "evidence": [
+    {
+     "quote": "In the tool, users and an LLM assistant collaboratively develop a structured language that maps pedagogy to gameplay through four linked components.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9169",
+   "title": "ConvScale: Conversational Interviews for Scale-Aligned Measurement",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798684",
+   "system_id": "convscale",
+   "evidence": [
+    {
+     "quote": "The scoring process was constrained to follow the original scale’s response anchors (e.g., 1 = Strongly Disagree and 7 = Strongly Agree).",
+     "location": "system sec 2.1.2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9180",
+   "title": "DashChat: Interactive Authoring of Performance Dashboard Design Prototypes through Conversation with LLM-Powered Agents",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798634",
+   "system_id": "dashchat",
+   "evidence": [
+    {
+     "quote": "the use of a strict DSL prevents the LLM from generating arbitrary structures or commands",
+     "location": "full text sec V.D"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9268",
+   "title": "Externalizing Intent: Preserving Semantic Alignment in Graphic Recording Generation from Dialogue",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798935",
+   "system_id": "9268",
+   "evidence": [
+    {
+     "quote": "we define an intent structure that makes the dialogue understanding and structuring judgments embedded in expert graphic recorders' practices tractable within a generation process",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "9303",
+   "title": "From Needs to Design: Bridging Intimate Gaps with LLM-Augmented Nonviolent Communication",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798539",
+   "system_id": "9303",
+   "evidence": [
+    {
+     "quote": "By structuring raw emotional outbursts into NVC's four-element framework, the system provides a structured reframing of emotional communication",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9312",
+   "title": "From Text-First to Structure-First: A Visual Pipeline for Narrative Writing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799344",
+   "system_id": "9312",
+   "evidence": [
+    {
+     "quote": "Writers first select a narrative schema, which defines the sections and their intended functions.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9338",
+   "title": "HabitTune: AI-Generated Personalized Children's Songs for Positive Habit Development",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798832",
+   "system_id": "habittune",
+   "evidence": [
+    {
+     "quote": "The prompt produces a structured verse–chorus format",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9384",
+   "title": "InterPilot: Exploring the Design Space of AI-assisted Job Interview Support for HR Professionals",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798373",
+   "system_id": "interpilot",
+   "evidence": [
+    {
+     "quote": "generate follow-up questions based on the STAR framework (Situation, Task, Action, Result)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9430",
+   "title": "Making SDV UX Designable: A Framework for Structuring Scenarios and LLM-Assisted Expansion",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799070",
+   "system_id": "9430",
+   "evidence": [
+    {
+     "quote": "Building on this framework, we introduce an LLM-assisted scenario expansion approach that systematically explores diverse, context-dependent UX scenarios while maintaining structural consistency and technical plausibility.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "9525",
+   "title": "ReMe: Scaffolding Personalized Cognitive Training via Controllable LLM-Mediated Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798695",
+   "system_id": "reme",
+   "evidence": [
+    {
+     "quote": "ReMe features a modular Puzzle Engine that represents training activities as reusable puzzle groups specified by structured templates and constraint rules, enabling rapid development of dialogue-based word games and personalized tasks grounded in user context.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9554",
+   "title": "SPRITE: From Static Mockups to Engine-Ready GameUI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798742",
+   "system_id": "sprite",
+   "evidence": [
+    {
+     "quote": "(1) Semantic Scaffolding, VLM infers a schema-guided hierarchical YAML",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9587",
+   "title": "SocialCue: Exploring the Design Space of Social Wayfinding Assistants for Blind and Low Vision People",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799011",
+   "system_id": "socialcue",
+   "evidence": [
+    {
+     "quote": "This module generates a structured JSON profile per person that includes their clothing, whether they are wearing glasses, their hair color, hairstyle and eye color when visible.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9608",
+   "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798883",
+   "system_id": "9608",
+   "evidence": [
+    {
+     "quote": "the system should provide these constituent elements—user actions, system events, and contextual information—as the base unit of construction",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "9700",
+   "title": "Verbalizing LLMs' Assumptions About the User to Calibrate Expectations and Reduce Sycophancy",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798611",
+   "system_id": "9700",
+   "evidence": [
+    {
+     "quote": "we prompt the LLM to “output your mental model of User A. Estimate structured beliefs about User A along the following dimensions.”",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Perspective-Taking",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10038",
+   "title": "NewsPod: Automatic and Interactive News Podcasts",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511147",
+   "system_id": "newspod",
+   "evidence": [
+    {
+     "quote": "with each segment structured as a Question and Answer conversation, whose goal is to engage the listener",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "system_id": "jamplate",
+   "evidence": [
+    {
+     "quote": "we explore an alternative approach for interacting with LLMs, not via chat, but rather through structured templates",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10186",
+   "title": "OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789225",
+   "system_id": "ontoscope",
+   "evidence": [
+    {
+     "quote": "Example of constructing three CQ patterns in RevOnt [29]. Step 1 verbalises an RDF triple from the music domain. Step 2 abstracts it into a schemalevel triple for ontology definition.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10194",
+   "title": "SPICA: Scalable and Personalized Conversational Agent Framework for AAC Users",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789116",
+   "system_id": "spica_aac",
+   "evidence": [
+    {
+     "quote": "Illustrative example of a Profile Card representation summarizing a user’s communication preferences, tone, access method, and personal context. The card acts as a compact knowledge schema retrieved by SPICA during real-time conversation.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10198",
+   "title": "Athena: Intermediate Representations for Iterative Scaffolded App Generation with an LLM",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789133",
+   "system_id": "athena",
+   "evidence": [
+    {
+     "quote": "Athena maintains three types of IRs, which are used as building blocks to scaffold code generation: a Storyboard, Data Model, and multiple GUI Skeletons.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10199",
+   "title": "AutoStructGUI: Bridging Design and Implementation of GUI through Structured Layout Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789058",
+   "system_id": "autostructgui",
+   "evidence": [
+    {
+     "quote": "The framework adopts trees as the representation of GUI layouts, exploits a Transformer architecture, and uses two schemes for the serialization of GUI layout trees, enabling both global and local generation of",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789088",
+   "system_id": "dscodecomparator",
+   "evidence": [
+    {
+     "quote": "Annotation Pipeline: Code segments are labeled using a controlled annotation list.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

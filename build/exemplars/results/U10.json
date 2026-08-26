@@ -1,0 +1,105 @@
+{
+  "category_id": "U10",
+  "category_name": "Agent Identity & Multi-Party Roles",
+  "exemplars": [
+    {
+      "rid": "5396",
+      "title": "When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3791480",
+      "pattern_id": "pat-042",
+      "pattern_name": "Persona Assigned to Agents",
+      "final_score": 4.55,
+      "why": "A dedicated bot-prompt editor exposes the agent's specification as editable fields — bot name, role and purpose, personality and tone, rules and constraints — held in a panel distinct from the knowledge base and the testing panel. It is U10's cleanest case of identity itself being the user-facing surface: a non-expert authors the persona, then talks to what they authored. Any chatbot-authoring or assistant-configuration product can lift the field set and the editor/knowledge/test three-panel split directly.",
+      "over_the_runner_up": "Chosen over rid 8121, whose two-stage pipeline varies register (Authoritative, Concise, Talkative) applied downstream as an output rewrite — architecturally tidy, but a repaint stage is neither a visible role nor a party, which U10's boundary requires."
+    },
+    {
+      "rid": "3062",
+      "title": "Rehearsal: Simulating Conflict to Teach Conflict Resolution",
+      "venue": "chi-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613904.3642159",
+      "pattern_id": "pat-044",
+      "pattern_name": "Role-Play Scenario",
+      "final_score": 4.93,
+      "why": "The user enters a conflict as themselves, rehearses against a believable simulated interlocutor, and can rerun the encounter counterfactually with 'what if?' variations. It is the only candidate in the dimension whose evidence covers the restart clause that separates a role-play scenario from ordinary simulated dialogue: re-entry re-runs the world rather than continuing the transcript. Any training, negotiation, or interviewing tool can adopt the enact-then-rerun loop without the conflict-resolution framing.",
+      "over_the_runner_up": "Chosen over rid 3944 because 3944's quote lists an avatar and an authoring interface side by side without showing the switch into role or any restart, and its setup surface belongs to a coach rather than the participant."
+    },
+    {
+      "rid": "10263",
+      "title": "ChoiceMates: Supporting Unfamiliar Online Decision-Making with Multi-Agent Conversational Interactions",
+      "venue": "iui-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3742413.3789107",
+      "pattern_id": "pat-045",
+      "pattern_name": "Multiparty Hub and Spoke",
+      "final_score": 4.93,
+      "why": "The user holds a visible hub role with differentiated addressing rights — broadcast to all agents, tag a subset, or recruit new agents into the space — so the multi-party topology is exposed as controls rather than implied by a scenario. Hovering an agent reveals its profile and the criteria it values, individuating the spokes on screen. The control vocabulary is domain-independent: any tool with more than one assistant can copy broadcast / subset / recruit.",
+      "over_the_runner_up": "Chosen over rid 4623, whose actual structural content is two role-specific surfaces over one backend with a dashboard private to the instructor — the role-asymmetric-views move, already led here by rid 7634."
+    },
+    {
+      "rid": "7634",
+      "title": "Leveraging Large Language Models to Enhance Domain Expert Inclusion in Data Science Workflows",
+      "venue": "chiea-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613905.3651115",
+      "pattern_id": "pat-047",
+      "pattern_name": "Role Asymmetric Views",
+      "final_score": 4.9,
+      "why": "One tracked dataframe state is rendered through two professional surfaces: a notebook extension for the data scientist and a dashboard for the domain expert, where code operations arrive as text summaries and SnapGrid version cards. The difference between views is by construction, not by permission toggles, which is what makes it teachable. The expert-plus-practitioner split transplants to clinical, legal, or operations tooling unchanged.",
+      "over_the_runner_up": "Chosen over rid 3414, whose own separately coded evidence puts parent and child on one shared tablet screen — affirmatively contrary to the pattern's requirement of role-specific front-ends with a private channel."
+    },
+    {
+      "rid": "15643",
+      "title": "Wisdom of the Crowd, Without the Crowd: A Socratic LLM for Asynchronous Deliberation on Perspectivist Data",
+      "venue": "cscw-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3757707",
+      "pattern_id": "pat-048",
+      "pattern_name": "Simulated Counterparts",
+      "final_score": 4.75,
+      "why": "An established crowd-deliberation procedure is kept intact while the other crowdworkers are replaced by a Socratic LLM partner, leaving one human inside an otherwise unchanged multi-role process. Every clause of the substitution is named in the evidence: the procedure, the displaced role, and the phrase 'in place of'. It shows the move where the point is epistemic rather than interpersonal rehearsal, which is where it generalizes — any panel, review, or deliberation workflow can be collapsed to one participant this way.",
+      "over_the_runner_up": "Chosen over rid 4052, which is a fourth instance of 'the model plays the difficult counterpart while you practise' — the same lesson rid 3062 already carries more completely."
+    }
+  ],
+  "notes": "Both reviewers' evidence checks overrode the pattern-level ranking in three places. pat-042: the curator's first place, rid 8121, was dropped — its varying slot is communication register applied as a post-hoc rewrite of finished text, which is an output transform rather than a user-facing identity, and U10's classification boundary excludes it; its stated reason for beating rid 5396 (persistence shown vs. implied) also fails, since neither quote states persistence. pat-045: rid 4623 (ClassAid) was set aside because both reviewers found its quote describes role-specific front-ends over shared state with an instructor-only channel — the pat-047 signature, already led by rid 7634 — and because leading it under pat-045 would double-book that move. pat-047: rid 5432 was set aside on the same boundary ground as 8121; a Wizard-of-Oz console is constitutively hidden from the end user, so its asymmetry is between experimenter and participant, not between parties in the system's social organization. One exemplar per pattern; no pattern is doubled and no liberty was taken. pat-094 (Artifact as Interlocutor) is unrepresented: its only candidate, rid 3352 CharacterMeet, scores 2.9 (1.6 below the rest of the field) and one reviewer found the record affirmatively contradicts the signature — the same paper's other coded evidence names editable Character Description fields alongside the conversation, which is the arrangement pat-094 is defined against. The pattern has 7 edges corpus-wide and only 2 rated candidates, so this is a corpus coverage gap rather than a curation error; it should be re-mined rather than filled. Reviewers proposed three promotions from outside the candidate list — rid 13413 (Social Simulacra) for pat-042, rid 16983 (PairBuddy) for pat-048, rid 5108 (Moodialogue) for pat-094. None could be executed here: the input file carries no title, venue, year, or URL for those records, and bibliographic fields must come verbatim from it. They are worth auditioning on a pass that includes their records, particularly rid 13413, since 'simulated' population is named in the dimension definition and no surviving exemplar covers identity at population scale. What to distrust: (1) rid 7634's evidence shows state flowing notebook-to-dashboard only, so the signature's bidirectional visibility is confirmed in one direction. (2) rid 5396's persistence across turns is inferred from the specification's placement in the bot prompt, not stated; U10 is also a secondary aspect of that paper, whose other central codings are process disclosure and model comparison. (3) rid 10263 and rid 15643 rest on abstract-level quotes, so simultaneity and outcomes cannot be audited from what is coded. (4) The surviving set skews toward practice/training and education domains, and no exemplar comes from software engineering or any production work setting.",
+  "near_misses": [
+    {
+      "rid": "8121",
+      "title": "Adapting Communication Styles in Health Chatbot using Large Language Models to Support Family Caregivers from Multicultural Backgrounds",
+      "pattern_id": "pat-042",
+      "reason": "Cleanest slot/content separation in the dimension, but the slot holds communication register applied as a downstream rewrite of already-generated text — an output transform, not a user-facing role or party, so it falls outside U10's classification boundary."
+    },
+    {
+      "rid": "4623",
+      "title": "ClassAid: A Real-time Instructor-AI-Student Orchestration System for Classroom Programming Activities",
+      "pattern_id": "pat-045",
+      "reason": "Strong paper, misfiled pattern: its quote names a student interface and an instructor dashboard over one orchestration backend, which is pat-047 — where rid 7634 already leads with two genuinely different professional surfaces and a more transferable expert/practitioner split."
+    },
+    {
+      "rid": "5619",
+      "title": "ScamPilot: Simulating Conversations with LLMs to Protect Against Online Scams",
+      "pattern_id": "pat-045",
+      "reason": "Three role slots with unequal input rights, but two of the three are model-played and the interaction survives removing the human, so the reading its evidence supports is closer to simulated counterparts with a coaching channel than to hub-and-spoke; it is also the fourth rehearse-a-hard-conversation entry in the candidate pool."
+    },
+    {
+      "rid": "5432",
+      "title": "Prototyping Multimodal GenAI Real-Time Agents with Counterfactual Replays and Hybrid Wizard-of-Oz",
+      "pattern_id": "pat-047",
+      "reason": "The only candidate with an explicitly private control channel and gated propagation, which is the pattern's decisive clause — but the second role belongs to a hidden researcher, so as a U10 exemplar it teaches study infrastructure rather than an interface move."
+    },
+    {
+      "rid": "3544",
+      "title": "Beyond the Dialogue: Multi-chatbot Group Motivational Interviewing for Premenstrual Syndrome (PMS) Management",
+      "pattern_id": "pat-048",
+      "reason": "The only n>2 case of role substitution, which would have shown the pattern's range past the dyad, but its pat-048-coded quote states an inspiration and a system category; the sentences that would confirm the bots occupy the absent peers' seats are coded to other patterns. Re-code and it becomes a live contender."
+    },
+    {
+      "rid": "3352",
+      "title": "CharacterMeet: Supporting Creative Writers' Entire Story Character Construction Processes Through Conversation with LLM-Powered Chatbot Avatars",
+      "pattern_id": "pat-094",
+      "reason": "pat-094's only viable candidate, dropped because the record contradicts the signature — a separate editable Character Description form appears alongside the conversation — and the coded quote is a research-question framing rather than a mechanism. Leaves the pattern unrepresented."
+    }
+  ]
+}

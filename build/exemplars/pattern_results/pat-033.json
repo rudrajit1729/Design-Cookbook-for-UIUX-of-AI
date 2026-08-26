@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-033",
+ "exemplars": [
+  {
+   "rid": "5176",
+   "title": "From Conversation to Human-AI Common Ground: Extracting Cognitive Workflows for Reuse in Sense-making Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791669",
+   "final_score": 4.78,
+   "why": "A reusable, independently defined schema requires extracted workflows to take the form of dependency-linked phases with explicit inputs, activities, decisions, and outputs. It is a particularly strong exemplar because the template captures the structure of reasoning itself, not merely the formatting of a response.",
+   "over_the_runner_up": "It ranks above IntelliCircos because its phase-and-dependency schema is substantially more transferable across domains while remaining explicit enough to reconstruct."
+  },
+  {
+   "rid": "623",
+   "title": "IntelliCircos: A Data-driven and AI-powered Authoring Tool for Circos Plots",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70118",
+   "final_score": 4.6,
+   "why": "The system defines a concrete generative grammar with fixed start and end markers, named CIRCOS, RING, and TRACK elements, nesting and cardinality rules, separators, and an outside-to-inside ordering constraint. This is the clearest evidence among the candidates of an output being parseable—and therefore checkable and renderable—against a stored structural contract.",
+   "over_the_runner_up": "It ranks above the narrative-writing system because its evidence specifies the template's delimiters, hierarchy, multiplicity, and ordering, whereas the narrative-schema quote establishes sections and functions but not conformance mechanics."
+  },
+  {
+   "rid": "9312",
+   "title": "From Text-First to Structure-First: A Visual Pipeline for Narrative Writing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799344",
+   "final_score": 4.52,
+   "why": "Writers visibly choose a reusable narrative schema before generation, and that schema predetermines both the output sections and the function each section must serve. It cleanly demonstrates the section-skeleton form of Output Templates as an interaction-level constraint rather than a hidden prompt convention.",
+   "over_the_runner_up": "It ranks above Just-In-Time Objectives because selecting a stored schema visibly governs the organization and semantic roles of the generated artifact, while the JSON example only evidences three response fields and their value constraints."
+  }
+ ],
+ "notes": "I departed from the consensus by moving rid 623 from fifth to second and excluding consensus runner-up rid 6089. IntelliCircos received a +0.27 adjustment because its quoted evidence most fully exposes a reconstructable structural signature: named types, delimiters, nesting, cardinality, separation, and ordering. Rid 9312 received a small uplift because the template is visibly selected before generation and determines section-level output. Rid 6089 was excluded because its quote establishes a JSON field contract but does not show per-field rendering, validation, rejection, or correction; it is valid but comparatively close to ordinary structured-response formatting. Readers should distrust any stronger claims about validation or downstream rendering for all three picks: none of the supplied excerpts explicitly documents rejection or correction of nonconforming outputs, and the rendering implication is strongest—but still partly inferred—for IntelliCircos. The evidence for rid 5176 also establishes schema extraction and reuse more clearly than it establishes enforcement during every generation.",
+ "pattern_name": "Output Templates",
+ "category_id": "U03",
+ "rated": 30
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-002",
+ "exemplars": [
+  {
+   "rid": "10160",
+   "title": "DataDive: Supporting Readers' Contextualization of Statistical Statements with Data Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645155",
+   "final_score": 4.78,
+   "why": "DataDive generates multiple contextual questions for one statistical statement, presents them as alternatives, and lets the user select one to initiate the corresponding visualization and data exploration. The evidence captures the candidate fork, visible choice, single selection, and downstream commitment with unusual completeness.",
+   "over_the_runner_up": "Chosen over AnnotateGPT because its candidate selection is equally explicit but demonstrates the pattern in a richer, broadly transferable sensemaking task rather than an intent-routing step."
+  },
+  {
+   "rid": "6169",
+   "title": "AnnotateGPT: Designing Human-AI Collaboration in Pen-Based Document Annotation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790867",
+   "final_score": 4.5,
+   "why": "AnnotateGPT proposes four same-type annotation purposes, the user selects one, and that choice triggers a second agent to generate feedback. This is a particularly clean account of multiplicity being resolved through one selection that commits the workflow downstream.",
+   "over_the_runner_up": "Chosen over the conversational tip-of-the-tongue system because the evidence explicitly identifies both the single selected candidate and the resulting downstream state transition."
+  },
+  {
+   "rid": "7136",
+   "title": "You Know What I'm Saying: Designing Conversational Strategies of AI Agent for Tip of the Tongue Phenomenon",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585670",
+   "final_score": 4.52,
+   "why": "The agent presents three potentially relevant answers together in a conversational turn, and the participant chooses among them to resolve the current uncertainty. The fixed candidate count, same-type alternatives, and direct selection make the gallery structure readily reconstructable from the evidence.",
+   "over_the_runner_up": "Chosen over Preference-Guided Prompt Optimization because it clearly presents three alternatives at one decision point, whereas that paper's evidence omits simultaneous presentation and describes an iterative preference loop rather than a single-act resolution."
+  }
+ ],
+ "notes": "I departed from the consensus order by excluding rid 5922, despite its second-place mean, and promoting rid 6169 into the final three. The 5922 evidence establishes selection among generated options but does not establish that they are rendered simultaneously, and its iterative optimization loop weakens the pattern's single-decision-point and single-act resolution requirements; its high rater spread reflects this ambiguity. No selected score was adjusted by more than 0.3. Readers should still treat the exact visual layout as unverified for all three: the excerpts establish presented alternatives and selection, but only rid 7136 explicitly states a fixed set of three answers, while none explicitly documents how rejected branches are visually discarded or backgrounded. Rid 7136 also leaves the downstream state change more implicit than rid 10160 and rid 6169.",
+ "pattern_name": "Candidate Gallery",
+ "category_id": "U05",
+ "rated": 30
+}

@@ -1,0 +1,48 @@
+{
+ "pattern_id": "pat-071",
+ "lens": "researcher",
+ "ratings": [
+  {
+   "rid": "6055",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote establishes preservation of functional and geometric properties during style transformation, but not the pattern\u2019s required protected subset: it does not show automatically identified artifact regions that generation is forbidden to modify or occlude. \u201cSpatial containers\u201d may encode constraints, but the available evidence is too general to establish Protected Region rather than functionality-preserving transformation.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate both an automatically computed protected region and generation-time enforcement against altering that region."
+  },
+  {
+   "rid": "13551",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This is an unusually clean and consequential instance: functionality-aware segmentation partitions a contributed 3D model into functional and aesthetic regions, after which generation can alter the aesthetic complement without affecting protected functional segments. Protecting fabrication-critical geometry makes personalization practically usable rather than merely safer-looking. The automatic semantic partition is a distinctive design move transferable to other structured artifacts, though the evidence does not expose enough implementation or interaction detail for maximum mechanism clarity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16164",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "CICADA plainly implements the provenance form of Protected Region: user-authored strokes define the protected set automatically, and a generation-time penalty prevents moving, overdrawing, or occluding them. The mechanism is exceptionally legible and transfers directly to text, code, layout, and other mixed-authorship artifacts. It meaningfully preserves user contribution and agency, although protecting prior user strokes is somewhat less novel than Style2Fab\u2019s inferred functional segmentation, and the title indicates that the paper\u2019s principal contribution is the study of perceived agency rather than this mechanism itself.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

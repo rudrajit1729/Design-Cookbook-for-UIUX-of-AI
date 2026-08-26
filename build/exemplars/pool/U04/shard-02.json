@@ -1,0 +1,1910 @@
+{
+ "dimension": {
+  "category_id": "U04",
+  "category_name": "Modality, Embodiment & Rendering",
+  "category_slug": "modality-embodiment-and-output-rendering",
+  "stage": "Taking in the output",
+  "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+  "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+  "pattern_count": 12,
+  "eligible_papers": 399,
+  "candidate_count": 399,
+  "patterns": [
+   {
+    "pattern_id": "pat-043",
+    "pattern_name": "Embodied Avatar",
+    "short_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane."
+   },
+   {
+    "pattern_id": "pat-049",
+    "pattern_name": "Space Registered Overlay",
+    "short_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel."
+   },
+   {
+    "pattern_id": "pat-050",
+    "pattern_name": "Generative Filters",
+    "short_summary": "A chain of generative transformations is placed inside the user's perceptual path, so that what the user perceives is the pipeline's reconstruction rather than the captured signal."
+   },
+   {
+    "pattern_id": "pat-060",
+    "pattern_name": "Multimodal Input",
+    "short_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation."
+   },
+   {
+    "pattern_id": "pat-061",
+    "pattern_name": "Tangible Interaction",
+    "short_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement."
+   },
+   {
+    "pattern_id": "pat-062",
+    "pattern_name": "Voice Interaction",
+    "short_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy."
+   },
+   {
+    "pattern_id": "pat-063",
+    "pattern_name": "Multimodal Output",
+    "short_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another."
+   },
+   {
+    "pattern_id": "pat-064",
+    "pattern_name": "Nonvisual Navigation",
+    "short_summary": "A structured artifact is exposed as a traversable graph of positions that the user steps through with discrete commands, with the system's response delivered on a nonvisual channel."
+   },
+   {
+    "pattern_id": "pat-065",
+    "pattern_name": "Nonvisual Task Delegation",
+    "short_summary": "The user hands a whole multi-step task to the system through a non-visual act and then stops attending to it; there is no display at any point in the loop."
+   },
+   {
+    "pattern_id": "pat-074",
+    "pattern_name": "Non-Readable to Natural Language Conversion",
+    "short_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form."
+   },
+   {
+    "pattern_id": "pat-076",
+    "pattern_name": "Perceptible Rendering",
+    "short_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable."
+   },
+   {
+    "pattern_id": "pat-078",
+    "pattern_name": "Composite Glyph",
+    "short_summary": "Rather than reusing a standard chart type, the system introduces a new graphical mark whose geometry is designed around the specific property being communicated."
+   }
+  ]
+ },
+ "shard": 2,
+ "candidates": [
+  {
+   "rid": "9427",
+   "title": "Making Charts Speak: LLM-Based Conversational Chart Question Answering for Blind and Low-Vision Users",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799030",
+   "system_id": "9427",
+   "prefilter_score": 6.552,
+   "prefilter_parts": {
+    "relevance_density": 4.452,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 32.33
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system generates automatic summaries identifying chart type, describing data ranges, highlighting key patterns",
+     "evidence_location": "system sec 4.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16886",
+   "title": "Editing Reality: Designing In-Situ Co-Creation with Generative AI in Mixed Reality",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813087",
+   "system_id": "16886",
+   "prefilter_score": 6.531,
+   "prefilter_parts": {
+    "relevance_density": 5.031,
+    "focus": 1.2,
+    "evidence_location": 0.3,
+    "_density_raw": 40.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a mixed reality system that enables in-situ co-creation with generative AI directly within physical environments",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the system supports embodied and iterative creation through speech, sketching, and direct manipulation",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "15599",
+   "title": "'Poker with Play Money': Exploring Psychotherapist Training with Virtual Patients",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757450",
+   "system_id": "15599",
+   "prefilter_score": 6.528,
+   "prefilter_parts": {
+    "relevance_density": 4.728,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 35.98
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The twenty virtual patient avatar options",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8177",
+   "title": "Bringing Everyday Objects to Life in Augmented Reality with AI-Powered Talking Characters",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719978",
+   "system_id": "8177",
+   "prefilter_score": 6.525,
+   "prefilter_parts": {
+    "relevance_density": 4.025,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 28.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AI-powered AR characters embodying everyday objects.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "With an AR headset or a smartphone, the user views these animated characters overlaid on physical objects and participates in dynamic dialogues with them thanks to language, vision and speech AI.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(b) The tissue character reacts to being tapped by the user on the phone screen with an exclamation mark and a corresponding verbal response.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8974",
+   "title": "MIRAbot: A Rearview Mirror Driving Assistant for Semi-Autonomous Vehicles",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721354",
+   "system_id": "mirabot",
+   "prefilter_score": 6.487,
+   "prefilter_parts": {
+    "relevance_density": 4.287,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 30.51
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "MIRAbot enriches the in-car experience with expressive eyes, anthropomorphic movements, and voice prompts.",
+     "evidence_location": "full text abstract"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "MIRAbot rotates to support three modes: (top middle) facing the passenger for communication, (right) functioning as a rearview mirror, and (bottom middle) facing outward to scan for potential threats.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Semi-autonomous vehicle, Society of Autonomous Engineers (SAE) Level 3, Robotic object, Vehicle robot, Conversational voice agent, In-vehicle intelligent agent (IVIA), Handover, Takeover Request (TOR)",
+     "evidence_location": "full text keywords"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9254",
+   "title": "Exploring Natural Language Prompts for Privacy Settings in VR",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798950",
+   "system_id": "9254",
+   "prefilter_score": 6.477,
+   "prefilter_parts": {
+    "relevance_density": 3.777,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 26.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "users can speak the prompt to the system",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12599",
+   "title": "Visualizationary: Automating Design Feedback for Visualization Designers Using Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3579700",
+   "system_id": "visualizationary",
+   "prefilter_score": 6.473,
+   "prefilter_parts": {
+    "relevance_density": 4.673,
+    "focus": 0.3,
+    "evidence_location": 1.5,
+    "_density_raw": 34.52
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "and then generate automatic design guidance using an LLM as a",
+     "evidence_location": "intro (full text)"
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "map is overlaid as a heatmap on the chart image. The most",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13814",
+   "title": "Guided Reality: Generating Visually-Enriched AR Task Guidance with LLMs and Vision Models",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747784",
+   "system_id": "13814",
+   "prefilter_score": 6.473,
+   "prefilter_parts": {
+    "relevance_density": 4.273,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 30.45
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "extract spatial information about key interaction points in the real world, and 4) embed visual guidance in physical space to support task execution",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(3) scraping the printed object with an animated tool",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8532",
+   "title": "SceneGenA11y: How can Runtime Generative tools improve the Accessibility of a Virtual 3D Scene?",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720265",
+   "system_id": "scenegena11y",
+   "prefilter_score": 6.471,
+   "prefilter_parts": {
+    "relevance_density": 5.142,
+    "focus": 0.429,
+    "evidence_location": 0.9,
+    "_density_raw": 44.94
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The multimodal item selection includes two methods: pointand-click and natural language.",
+     "evidence_location": "full text sec 3.4"
+    },
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "the system then displays its information: its name, description, and its location relative to the player, which is calculated by a function, not the LLM",
+     "evidence_location": "full text sec 3.4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4755",
+   "title": "AgentHands: Generating Interactive Hand Gestures for Spatially Grounded Agent Conversations in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790938",
+   "system_id": "agenthands",
+   "prefilter_score": 6.463,
+   "prefilter_parts": {
+    "relevance_density": 3.763,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 26.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we propose AgentHands, an LLM-powered XR system that equips agents with hands to render responses clearer and more engaging",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AgentHands animates the agent to move towards the orchid and point directly to its aerial roots while sharing a fun fact",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "At runtime, a parser converts events into time-stamped poses and motions, driving an animation system that renders expressive hands synchronized with speech.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "this point, together with head pose and the egocentric first-person view are sent to the back-end LLM engine",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5794",
+   "title": "Memory Printer: Exploring Everyday Reminiscing by Combining Slow Design with Generative AI-based Image Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791325",
+   "system_id": "5794",
+   "prefilter_score": 6.459,
+   "prefilter_parts": {
+    "relevance_density": 4.259,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 30.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Memory printer that allows users to recreate their memory scenes using GAI and print them as memoryphoto.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9234",
+   "title": "EmoFriends: A Modular Toolkit for Prototyping Customizable Emotion-Aware Companions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798439",
+   "system_id": "emofriends",
+   "prefilter_score": 6.454,
+   "prefilter_parts": {
+    "relevance_density": 4.204,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 30.15
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a modular prototyping toolkit for transforming familiar toys into customizable, emotion-aware companions",
+     "evidence_location": "intro"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "A speech-to-text interface captures vocal input, which is processed by a large language model (LLM) to generate context-sensitive, emotionaware responses",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13629",
+   "title": "Empowering Children to Create AI-Enabled Augmented Reality Experiences",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747662",
+   "system_id": "13629",
+   "prefilter_score": 6.384,
+   "prefilter_parts": {
+    "relevance_density": 3.984,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 28.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "an AR-based and AI-powered visual programming environment that empowers children to create, customize, and program 3D characters overlaid onto the physical world",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "enables children to create virtual characters and accessories using text-to-3D generative AI models, and to animate these characters through auto-rigging and body tracking",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(b) In Run mode, users execute the program by sticking out their hand to touch the character in AR, mimicking a patting action in the physical world.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13128",
+   "title": "Perceive, Adapt, and Interact: An Intelligent Virtual Agent for Education in Mixed Reality",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3679911",
+   "system_id": "13128",
+   "prefilter_score": 6.38,
+   "prefilter_parts": {
+    "relevance_density": 3.68,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 26.09
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The core capabilities that enable an IVA to act as a virtual tutor can include an embodied presence that naturally engages the learner, perceives and interacts with their physical environment, and offers adaptive guidance based on the learner’s progress.",
+     "evidence_location": "system sec 3.2"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Spatial mapping using Magic Leap 2.",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Our framework comprises six core components: the user, speech manager, conversational component, perception component, the IVA itself, and its cognitive model.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10331",
+   "title": "Auto-Icon+: An Automated End-to-End Code Generation Tool for Icon Designs in UI Development",
+   "venue": "tiis-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3531065",
+   "system_id": "autoicon",
+   "prefilter_score": 6.374,
+   "prefilter_parts": {
+    "relevance_density": 3.074,
+    "focus": 3.0,
+    "evidence_location": 0.3,
+    "_density_raw": 21.71
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We then propose an approach based on a deep learning model and computer vision methods to convert the composed icon image to fonts with descriptive labels, thereby reducing the laborious manual effort for developers and facilitating UI development.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4917",
+   "title": "Augmenting Imagery with Multimodal Vibrotactile Representations: Touch, Feel, and Hear",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791493",
+   "system_id": "4917",
+   "prefilter_score": 6.373,
+   "prefilter_parts": {
+    "relevance_density": 5.073,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 42.35
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A custom multilocal vibrotactile tablet played patterns on 10 material images (e.g., wood, stone, glass).",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We augment material images with multimodal vibrotactile patterns and evaluate four generation pipelines.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "AP2: prompt to audio, then pattern",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16711",
+   "title": "Who Did What? Designing Avatars for Explainable Multi-Agent Systems in Knowledge Work",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812981",
+   "system_id": "16711",
+   "prefilter_score": 6.371,
+   "prefilter_parts": {
+    "relevance_density": 5.321,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 56.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we propose avatars that make agents’ expertise and contributions transparent",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9368",
+   "title": "I Thought It Through, I Built It Whole!': An AI-Powered Tool to Support Children's Engineering Thinking Activities in the Family Context",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798952",
+   "system_id": "9368",
+   "prefilter_score": 6.368,
+   "prefilter_parts": {
+    "relevance_density": 4.439,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 32.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A 3D blueprint highlights structural vulnerabilities (Figure 1g) to guide a 1:1 physical assembly with EPP foam blocks and parental support (Figure 1h).",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "After sketching, children give a verbal description to clarify intent",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5807",
+   "title": "RAVEN: Realtime Accessibility in Virtual ENvironments for Blind and Low-Vision People",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791616",
+   "system_id": "raven",
+   "prefilter_score": 6.289,
+   "prefilter_parts": {
+    "relevance_density": 4.039,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 28.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Dez first requests a description of the scene. Within seconds, the system replies: “You are located at a dark street corner. . . In front of you, there is a mysterious parked car. . .",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9504",
+   "title": "Playground+: an AI-MR System for Adaptable Open-Ended Family Physical Activity Play",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798573",
+   "system_id": "playground",
+   "prefilter_score": 6.273,
+   "prefilter_parts": {
+    "relevance_density": 3.873,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 27.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Ephemeral cues move with their associated entities and are used to indicate anticipated actions, targets, and directions of movement. Phase-stable cues persist throughout a phase and remain at fixed positions, functioning as game elements.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Example outputs of Playground+: (a) Obstacle Race, where household objects are used as obstacles; (b) Hopscotch, generated as request when no objects are present in the scene; (c) Toy Toss, ideated and generated by the system when the user shows no preference.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13626",
+   "title": "AROMA: Mixed-Initiative AI Assistance for Non-Visual Cooking by Grounding Multimodal Information Between Reality and Videos",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747650",
+   "system_id": "aroma",
+   "prefilter_score": 6.256,
+   "prefilter_parts": {
+    "relevance_density": 3.556,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 25.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Aroma helps the user access video recipes by allowing them to communicate their perceived non-visual information ( N ) about the food, such as texture, smell, taste, etc., along with real-time visual information captured by a wearable camera ( v ).",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system comprises four modules to extract knowledge from video recipes, analyze visual information from real-world cooking states, interact with the user through sound, and a module to manage history and agent context.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U02"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16583",
+   "title": "Reshaping Craft Learning: Insights from Designing an AI-Augmented MR System for Wheel-Throwing",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735844",
+   "system_id": "16583",
+   "prefilter_score": 6.253,
+   "prefilter_parts": {
+    "relevance_density": 4.053,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 28.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(b) system setup showing an experienced participant wearing the headset and shaping a ceramic piece under the system's guidance; (c) guidance interface displaying the suggestion functionality",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7749",
+   "title": "Towards an Augmented Reality Agent to Support Communication for Nonspeaking Autistic People",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651063",
+   "system_id": "7749",
+   "prefilter_score": 6.247,
+   "prefilter_parts": {
+    "relevance_density": 3.997,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 28.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We embodied a virtual CRP agent (the ViC) into our initial holographic spelling system. The ViC was designed and animated using Character Creator 4, iClone 8, and Unity’s animation state machine architecture.",
+     "evidence_location": "system sec 5"
+    },
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "we also wanted to include verbal and visual feedback in a similar way that a real, human CRP would",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9539",
+   "title": "Reframing Human-AI Interaction through Tangible, Multisensory Interfaces",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798597",
+   "system_id": "9539",
+   "prefilter_score": 6.239,
+   "prefilter_parts": {
+    "relevance_density": 3.239,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 22.71
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A projector displays the selected text around the participant’s hand. The text follows the hand’s movement and scales with proximity, creating the sensation of physically holding and moving the phrase.",
+     "evidence_location": "system sec 3.1"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We present a tangible, multisensory AI system that translates personal text into tea.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13690",
+   "title": "Towards Unobtrusive Physical AI: Augmenting Everyday Objects with Intelligence and Robotic Movement for Proactive Assistance",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747726",
+   "system_id": "13690",
+   "prefilter_score": 6.236,
+   "prefilter_parts": {
+    "relevance_density": 3.736,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 26.52
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the system executes the action in the physical space, with the selected object(s) performing system-determined motion",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9004",
+   "title": "Like Having Family Nearby: An LLM-Powered Family-Resembling Avatar for offering Psychological Support and Training Guidance during Stroke Rehabilitation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798321",
+   "system_id": "9004",
+   "prefilter_score": 6.235,
+   "prefilter_parts": {
+    "relevance_density": 4.935,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 38.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We explore a family-resembling avatar that offers psychological support and training guidance when relatives cannot be present.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4034",
+   "title": "CARING-AI: Towards Authoring Context-aware Augmented Reality INstruction through Generative Artificial Intelligence",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713348",
+   "system_id": "caringai",
+   "prefilter_score": 6.232,
+   "prefilter_parts": {
+    "relevance_density": 3.832,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 27.38
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "to generate humanoid-avatar animation as AR instructions that blend in the context spatially and temporally",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) Using CARING-AI, authors frst speak their intended instruction content",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-076",
+     "pattern_name": "Perceptible Rendering",
+     "pattern_summary": "The model produces output in a representation the user cannot perceive directly — parameter streams, coordinate sequences, symbolic structures — and the system attaches a renderer that turns it into something viewable.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "In the manual task instruction domains, humanoid avatars are the preferred options of visualization [13, 22], because they can convey spatial and temporal instructions on complex sequences of tasks, such as machine tasks, assembly tasks, manual skill learning, and medical training.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13614",
+   "title": "Talking Spell: A Wearable System Enabling Real-Time Anthropomorphic Voice Interaction with Everyday Objects",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747617",
+   "system_id": "13614",
+   "prefilter_score": 6.226,
+   "prefilter_parts": {
+    "relevance_density": 3.226,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 22.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Talking Spell consists the scope (camera for detecting objects) and wand (sensor to allow spell casting",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This system empowers users to actively engage with their personal belongings, enabling both object recognition and verbal dialogue.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13148",
+   "title": "Exploring Mediation by an Embodied Virtual Agent in Immersive Triadic Collaborative Decision-Making",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3679103",
+   "system_id": "13148",
+   "prefilter_score": 6.222,
+   "prefilter_parts": {
+    "relevance_density": 4.122,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 29.46
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Multiuser-Agent Collaborative System: A) Room status UI, B) Embodied Virtual Agent",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "present",
+     "confidence": "low",
+     "evidence_quote": "The virtual environment featured three designable rooms and three additional decorative spaces (lounges and meeting rooms), creating a realistic office setting Fig. 2A).",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Personalization",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "6191",
+   "title": "CoEmpaTeam: Enhancing Cognitive Empathy using LLM-based Avatars and Dynamic Role Play in Virtual Reality",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790389",
+   "system_id": "coempateam",
+   "prefilter_score": 6.197,
+   "prefilter_parts": {
+    "relevance_density": 4.397,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 31.74
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Avatars used in the CoEmpaTeam system. From left to right: Alice, Benji, and Caden.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12566",
+   "title": "ActiveAR: Augmented Reality Task Support System With Proactive Context and Virtual Content Management",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567346",
+   "system_id": "activear",
+   "prefilter_score": 6.194,
+   "prefilter_parts": {
+    "relevance_density": 4.094,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 29.09
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "and uses this context information to automatically select appropriate virtual content and display positions.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "of a set of voice commands for object-centric virtual content",
+     "evidence_location": "system sec (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5665",
+   "title": "Storycaster: An AI System for Immersive Room-based Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791305",
+   "system_id": "storycaster",
+   "prefilter_score": 6.187,
+   "prefilter_parts": {
+    "relevance_density": 3.487,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 24.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Unlike headset-based VR, Storycaster preserves spatial awareness, using live camera feeds to augment the walls with cylindrical projections, allowing users to create worlds that blend with their physical surroundings.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Participants interact by speaking aloud; their input is captured by a room microphone, transcribed with Azure Speech to Text services, and processed by the Narrator agent.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10233",
+   "title": "From Prompt to Presence: Co-Creating Personalised Emotional Sanctuaries in VR with Generative AI",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789067",
+   "system_id": "10233",
+   "prefilter_score": 6.168,
+   "prefilter_parts": {
+    "relevance_density": 4.218,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 30.2
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Within this space, they can interact with the embodied virtual companion and explore the ambient setting.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8793",
+   "title": "INDRA: Interactive Deep-dreaming Robotic Artist. Painting with a Real-Time Embodied AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721117",
+   "system_id": "indra",
+   "prefilter_score": 6.154,
+   "prefilter_parts": {
+    "relevance_density": 3.529,
+    "focus": 1.125,
+    "evidence_location": 1.5,
+    "_density_raw": 24.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To further enhance INDRA’s approachability and clarify its internal processes, we developed a 3D avatar in the form of a mecha maneki-neko.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "INDRA integrates robotic painting with advanced AI processes, including speech recognition, computer vision, and generative image synthesis to facilitate co-creation.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-061",
+     "pattern_name": "Tangible Interaction",
+     "pattern_summary": "At least one end of the interaction loop lives in matter rather than pixels: objects are grasped, moved, or posed to issue commands, or the system's output is delivered as physical motion, staged space, or a tangible arrangement.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "INDRA differs from existing AI art generators and art robots in its turn-based framework, where user and robot actively share the same canvas.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7777",
+   "title": "Virtual Triplets: A Mixed Modal Synchronous and Asynchronous Collaboration with Human-Agent Interaction in Virtual Reality",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650766",
+   "system_id": "7777",
+   "prefilter_score": 6.15,
+   "prefilter_parts": {
+    "relevance_density": 5.1,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 43.98
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "a virtual agent takes over in the instructor’s absence, ensuring continuous support",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13145",
+   "title": "It's All in the Personality: A Comparative Study of Real, Ideal, and Customized Virtual Instructors for AR Assembly Tasks",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3680646",
+   "system_id": "13145",
+   "prefilter_score": 6.139,
+   "prefilter_parts": {
+    "relevance_density": 3.639,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 25.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "While embodied conversational agents driven by Large Language Models (LLMs) are emerging as valuable tools for instruction in Augmented Reality (AR), a key challenge lies in crafting their personalities to optimize both instructional efficacy and user engagement.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "User Interaction Layer Participants interacted naturally via voice (microphone) and visual input (overhead RGB camera), enabling blended verbal and visual communication for task guidance and verification.",
+     "evidence_location": "system sec 3.2.2"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "present",
+     "confidence": "low",
+     "evidence_quote": "Annotated photos showing a participant performing the assembly task in the experiment with (a) the real instructor and (b) a virtual instructor.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-062",
+     "pattern_name": "Voice Interaction",
+     "pattern_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Input Processing Layer Real-time speech transcription was handled using Azure’s Speech-to-Text API [47]",
+     "evidence_location": "system sec 3.2.2"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "14039",
+   "title": "Curompt: A Spatially Situated Interface for Generative AI in 3D Design Software",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00065",
+   "system_id": "curompt",
+   "prefilter_score": 6.114,
+   "prefilter_parts": {
+    "relevance_density": 4.714,
+    "focus": 0.5,
+    "evidence_location": 0.9,
+    "_density_raw": 35.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-060",
+     "pattern_name": "Multimodal Input",
+     "pattern_summary": "Two or more physically distinct input channels — typed text, drawn marks, speech, pointing, body pose, GUI controls — are accepted for the same operation.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We demonstrate in the video how the design of these interactions are paired with implicit text inputs that enable novel collaborations between the user and AI assistant.",
+     "evidence_location": "full text sec III"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "13171",
+   "title": "From Structure to Semantics: Hypergraph-Based AR Assembly Guidance with LLM-Mediated Narration",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3679877",
+   "system_id": "13171",
+   "prefilter_score": 6.101,
+   "prefilter_parts": {
+    "relevance_density": 3.901,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 27.7
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-074",
+     "pattern_name": "Non-Readable to Natural Language Conversion",
+     "pattern_summary": "Material that is not prose — extracted data, code, an algorithmic sequence, a probability, a structure — is converted into natural language and delivered in that form.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our method can translate the tedious assembly sequence into a narration polished by LLM narrators, improving both task perfo",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Assembly Hypergraph with LLM-Mediated Narration and Augmented Reality (AR) guidance.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U03"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9247",
+   "title": "Everyone Deserves a Teacher They Like: Designing Personality-Matched Multimodal Educational Agents in Virtual Reality",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798875",
+   "system_id": "9247",
+   "prefilter_score": 6.095,
+   "prefilter_parts": {
+    "relevance_density": 4.645,
+    "focus": 1.0,
+    "evidence_location": 0.45,
+    "_density_raw": 34.32
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-043",
+     "pattern_name": "Embodied Avatar",
+     "pattern_summary": "The agent is given a rendered body — an animated character, a 3-D figure, an on-screen avatar, a participant tile — and the user addresses that figure rather than a text pane.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Virtual humans represent an important form of the educational agent, which are widely employed to guide learners, deliver instructional content, and scaffold learning activities",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3842",
+   "title": "eXplainMR: Generating Real-time Textual and Visual eXplanations to Facilitate UltraSonography Learning in MR",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714015",
+   "system_id": "explainmr",
+   "prefilter_score": 6.07,
+   "prefilter_parts": {
+    "relevance_density": 4.37,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 31.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-063",
+     "pattern_name": "Multimodal Output",
+     "pattern_summary": "One unit of system output is rendered in two or more sensory or representational channels at once — text plus speech, text plus image plus sound, or one language plus another.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "textual and visual explanations for each recommended move",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-049",
+     "pattern_name": "Space Registered Overlay",
+     "pattern_summary": "Generated content is placed in the coordinate frame of a real scene, or of captured video of one, and attached to a referent within it rather than to a panel.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "while treating a desk surface as the patient",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,290 @@
+{
+ "pattern": {
+  "pattern_id": "pat-042",
+  "pattern_name": "Persona Assigned to Agents",
+  "pattern_slug": "persona-assigned-to-agents",
+  "short_summary": "A character specification — a name, personality, social role, or narrative voice — is attached to the generative agent and held constant across its turns.",
+  "definition": "A character specification — a name, personality, social role, or narrative voice — is attached to the generative agent and held constant across its turns. It is treated as a design element that can be set, swapped, or compared, independent of the task the agent performs.",
+  "structural_signature": "A persistent specification slot, separate from turn-level content, is applied to every generated turn. Changing only that slot changes the voice and role of all subsequent output while task, inputs, and every other interface element stay fixed; the slot is a controlled variable of the system, not a property of any one response.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Role-Playing Agent",
+  "dimension": {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "16465",
+   "title": "PersonaFlow: Designing LLM-Simulated Expert Perspectives for Enhanced Research Ideation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735789",
+   "system_id": "personaflow",
+   "evidence": [
+    {
+     "quote": "Persona Node and Customizer: The Persona Node interface provides an overview of each expert persona’s profile information including name and characteristics.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16472",
+   "title": "Cracking Aegis: An Adversarial LLM-based Game for Raising Awareness of Vulnerabilities in Privacy Protection",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735812",
+   "system_id": "16472",
+   "evidence": [
+    {
+     "quote": "Aegis is designed to resist simple questioning, displaying a proud, guarded, and often dismissive demeanor.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16507",
+   "title": "Exploring the Potential of Metacognitive Support Agents for Human-AI Co-Creation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735785",
+   "system_id": "16507",
+   "evidence": [
+    {
+     "quote": "(1) SocratAIs, a Socratic agent that asks reflective questions to prompt deeper reflection-in-action, and (2) HephAIstus that prompts task planning and diagramming supported by suggestions for design strategies and software operation",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16541",
+   "title": "Customizable AI for Depression Care: Improving the User Experience of Large Language Model-Driven Chatbots",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735795",
+   "system_id": "16541",
+   "evidence": [
+    {
+     "quote": "This interface allows users with depression to define the identity traits, conversational style, and activation conditions of the chatbot, \"Cici.\"",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16676",
+   "title": "StreetDesignAI: Broadening Designer Perspectives Through Multi-Persona Evaluation of Cycling Infrastructure",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812888",
+   "system_id": "streetdesignai",
+   "evidence": [
+    {
+     "quote": "receive parallel feedback from simulated cyclist personas spanning confident to cautious users",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16782",
+   "title": "Understanding Down Syndrome Stereotypes in LLM-Based Personas",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812894",
+   "system_id": "16782",
+   "evidence": [
+    {
+     "quote": "a system that leverages large language models (LLMs) and retrieval-augmented generation (RAG) to model personas of people with Down syndrome",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "16784",
+   "title": "PsyMooc: Empowering Simulation-Based Educational Systems with LLM Agents to Train Clinical Interviewing Skills",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813015",
+   "system_id": "psymooc",
+   "evidence": [
+    {
+     "quote": "features diverse virtual psychiatric patients",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16785",
+   "title": "ConSearcher: Supporting Conversational Information Seeking in Online Communities with Member Personas",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813049",
+   "system_id": "consearcher",
+   "evidence": [
+    {
+     "quote": "an LLM-powered tool with dynamically generated member personas based on user queries to facilitate conversational search in the community",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16913",
+   "title": "Implicit Affective Steering: A Design Probe for Generative Curatorial Storytelling",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812861",
+   "system_id": "16913",
+   "evidence": [
+    {
+     "quote": "choose an interpretive voice to constrain rhetorical stance",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17263",
+   "title": "Constella: Supporting Storywriters&apos; Interconnected Character Creation through LLM-Based Multi-Agents",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3796234",
+   "system_id": "constella",
+   "evidence": [
+    {
+     "quote": "JOURNALS produces diary entries from multiple characters according to a shared theme, revealing their internal emotions, thoughts, and behaviors (DG 2).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-006",
+ "exemplars": [
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789088",
+   "final_score": 4.35,
+   "why": "The evidence directly establishes one shared prompt—and optionally one shared dataset—being dispatched to multiple LLMs, while the system’s explicit purpose supplies the common comparison frame for their code outputs.",
+   "over_the_runner_up": "Selected over MoWa because multiple-model invocation and output comparison are both central and explicit, whereas MoWa’s evidence establishes the fan-out more clearly than the comparative presentation."
+  },
+  {
+   "rid": "4519",
+   "title": "MoWa: An Authoring Tool for Refining AI-Generated Human Avatar Motions Through Latent Waveform Manipulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714253",
+   "final_score": 4.25,
+   "why": "Its quote closely matches the structural signature: three distinct text-to-motion generators process the same prompt and return three model-derived motion alternatives for the user’s authoring workflow.",
+   "over_the_runner_up": "Selected over ChainForge because MoWa explicitly holds the prompt constant while varying three generators, whereas ChainForge’s quoted description also varies prompts and therefore documents a less structurally pure instance."
+  },
+  {
+   "rid": "2325",
+   "title": "ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642016",
+   "final_score": 4.1,
+   "why": "Cross-model responses are visibly compared in a shared graphical environment, making the pattern a central, highly transferable interaction despite incomplete evidence about unchanged-input dispatch.",
+   "over_the_runner_up": "Selected over LLM Comparator because the quoted evidence describes cross-model comparison as a function of the authors’ own interface, while LLM Comparator’s only supplied mechanism quote concerns a background AutoSxS pipeline."
+  }
+ ],
+ "notes": "I departed from the consensus by moving rid 4519 above rid 2325: MoWa’s evidence more directly proves the defining held-input, varied-generator structure, while ChainForge’s quote combines model comparison with prompt variation. No score was adjusted by more than 0.3. Readers should distrust any stronger claim that these excerpts prove simultaneous execution or explicit source labels: none does. DSCode Comparator and MoWa also lack direct quoted evidence of the exact common-frame layout, while ChainForge does not explicitly establish that an unchanged prompt is sent to every model.",
+ "pattern_name": "Multi-Model Output Comparison",
+ "category_id": "U05",
+ "rated": 10
+}

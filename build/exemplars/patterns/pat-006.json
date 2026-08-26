@@ -1,0 +1,284 @@
+{
+ "pattern": {
+  "pattern_id": "pat-006",
+  "pattern_name": "Multi-Model Output Comparison",
+  "pattern_slug": "multi-model-output-comparison",
+  "short_summary": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together.",
+  "definition": "A single user request is dispatched unchanged to several distinct models at once, and their outputs are returned together. The variation the user sees comes from the difference between generators rather than from sampling one generator repeatedly. The outputs are attributable to their sources and set against each other.",
+  "structural_signature": "Fan-out control flow: one input, n parallel invocations differing only in which backend is called, n outputs collected and presented in a common frame with source attribution. The key structural fact is that the *generator* is the varied dimension while the input is held constant — the inverse of perturbation probing. Transplants to any plural-backend setting: several solvers, several translation engines, several search indices.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Multiple Suggestions Shown Together",
+  "dimension": {
+   "category_id": "U05",
+   "category_name": "Alternatives & Comparative Exploration",
+   "category_description": "How multiple possibilities are presented, previewed, maintained, blended, or compared before commitment.",
+   "classification_boundary": "Requires a visible choice or comparison mechanism, not backend candidate-set processing alone.",
+   "stage": "Acting on the output"
+  }
+ },
+ "eligible": 10,
+ "candidates": [
+  {
+   "rid": "2325",
+   "title": "ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642016",
+   "system_id": "chainforge",
+   "evidence": [
+    {
+     "quote": "ChainForge provides a graphical interface for comparison of responses across models and prompt variations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3655",
+   "title": "Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713181",
+   "system_id": "3655",
+   "evidence": [
+    {
+     "quote": "Likewise, four different LLMs articulated the text attributes needed for rating the text quality of each dimension, as shown in Figure 2 (A).",
+     "location": "system sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "4519",
+   "title": "MoWa: An Authoring Tool for Refining AI-Generated Human Avatar Motions Through Latent Waveform Manipulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714253",
+   "system_id": "mowa",
+   "evidence": [
+    {
+     "quote": "Users begin by generating desired human avatar motion animations using three different text-to-motion models [34, 92, 114] (Figure 5 – (a)), each of which processes the prompt to produce a unique motion sequence.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5244",
+   "title": "Building Benchmarks from the Ground Up: Community-Centered Evaluation of LLMs in Healthcare Chatbot Settings",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791172",
+   "system_id": "5244",
+   "evidence": [
+    {
+     "quote": "Each cell in the 3 × 3 grid shows violin plots of score distributions for three evaluated models (Sarvam-M, LLaMA-405B, Qwen3) under a specific evaluator–language combination.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Accessibility",
+    "Coordination and Equitable Participation",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "5396",
+   "title": "When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791480",
+   "system_id": "5396",
+   "evidence": [
+    {
+     "quote": "We integrated hallucination-awareness scaffolds such as confidence indicators, fact-checking, repeated questioning, and model comparison.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5582",
+   "title": "PCGEF: A Framework for Diagnosing Subjective Alignment in Human-Centered Persona-Conditioned Generation",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791402",
+   "system_id": "pcgef",
+   "evidence": [
+    {
+     "quote": "We instantiate PCGEF in a red-wine description task with a 2×2 factorial design involving 34 participants and four mid-scale, open-weight LLMs.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "7645",
+   "title": "Machine-Assisted Error Discovery in Conversational AI Systems",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651120",
+   "system_id": "7645",
+   "evidence": [
+    {
+     "quote": "annotating suspicious events between ofine model outputs and the production model output using diferences",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10200",
+   "title": "DSCode Comparator: An Interactive Interface for Comparing Models and Evaluating Code for Data Science Tasks",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789088",
+   "system_id": "dscodecomparator",
+   "evidence": [
+    {
+     "quote": "Given a user prompt (and optionally a dataset), the DSCode Comparator invokes multiple LLMs to generate code.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "11975",
+   "title": "LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456354",
+   "system_id": "11975",
+   "evidence": [
+    {
+     "quote": "the AutoSxS pipeline first obtains responses from the test and baseline models for each of the prompts",
+     "location": "full text sec 2 (background)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12777",
+   "title": "MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633884",
+   "system_id": "misvisfix",
+   "evidence": [
+    {
+     "quote": "Visualization generation workflow using Claude and GPT.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  }
+ ]
+}

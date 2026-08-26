@@ -1,0 +1,265 @@
+{
+ "pattern": {
+  "pattern_id": "pat-029",
+  "pattern_name": "Reverse Engineered Representation",
+  "pattern_slug": "reverse-engineered-representation",
+  "short_summary": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates.",
+  "definition": "A finished artifact that the system did not produce is decomposed back into an underlying structure — data table, encoding spec, component graph, layered representation — and that recovered structure becomes the object the user manipulates. The original rendered form is treated as output whose source has been lost and must be reconstructed. Editing happens on the recovered structure, not on the surface.",
+  "structural_signature": "An ingestion step takes a rendered or compiled artifact and emits a structured representation of it (typed nodes, fields, layers, specs); that representation is bound to the editing surface, and changes to it re-render the artifact. The recovery is inverse to the artifact's own production pipeline, and the representation is richer than the surface it was derived from.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Persistent Structured Representation",
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "eligible": 10,
+ "candidates": [
+  {
+   "rid": "196",
+   "title": "Interactive Authoring of Terrain using Diffusion Models",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14941",
+   "system_id": "196",
+   "evidence": [
+    {
+     "quote": "Inverse terrain modeling: a structural replica of a terrain can be generated from the extracted signature and subsequently edited by the user to introduce or remove features.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4497",
+   "title": "LogoMotion: Visually-Grounded Code Synthesis for Creating and Editing Animation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714155",
+   "system_id": "logomotion",
+   "evidence": [
+    {
+     "quote": "In Step 1, a PDF of a logo is converted into an HTML representation of the canvas. In Step 2, LogoMotion augments the HTML with information from visual analysis steps.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [],
+   "factors": [
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9489",
+   "title": "PerforMagic: Coordinating Bodily Performance and Camera Movement in AI Video Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798782",
+   "system_id": "performagic",
+   "evidence": [
+    {
+     "quote": "The system then reconstructs the performance in a virtual environment, enabling users to reason about and explore camera movements in relation to their embodied actions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10269",
+   "title": "Rewriting Video: Text-Driven Reauthoring of Video Footage",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789098",
+   "system_id": "10269",
+   "evidence": [
+    {
+     "quote": "(1) a generative reconstruction algorithm that reverse-engineers video into an editable text prompt",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10473",
+   "title": "GlyphCreator: Towards Example-based Automatic Generation of Circular Glyphs",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2021.3114877",
+   "system_id": "glyphcreator",
+   "evidence": [
+    {
+     "quote": "The visual encodings are decoded and the layout is extracted by a CNN model.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "system_id": "datawink",
+   "evidence": [
+    {
+     "quote": "restructures the SVG specification into semantically rich layers, extracts critical visual information for reverse engineering, and infers the concrete visual encoding scheme and the precise data used in the reference",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "13731",
+   "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747758",
+   "system_id": "13731",
+   "evidence": [
+    {
+     "quote": "This representation shows all the entities in the story as nodes with their name and an emoji representing them (Figure 3.b). The actions between the entities are represented as directed edges with a label describing the action in one or two words.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13794",
+   "title": "ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747644",
+   "system_id": "respark",
+   "evidence": [
+    {
+     "quote": "we present ReSpark, a system that leverages large language models (LLMs) to reverse-engineer analysis logic from existing reports and adapt it to new datasets.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16651",
+   "title": "DepthScape: Authoring 2.5D Designs via Depth Estimation, Semantic Understanding, and Geometry Extraction",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813038",
+   "system_id": "depthscape",
+   "evidence": [
+    {
+     "quote": "Using monocular depth reconstruction, DepthScape transforms images into 3D reconstructions, where visual contents are placed to automatically achieve realistic occlusion and perspective foreshortening.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16922",
+   "title": "Proteus: Shapeshifting Desktop Visualizations for Mobile via Multi-level Intelligent Adaptation",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813097",
+   "system_id": "proteus",
+   "evidence": [
+    {
+     "quote": "Your task is to recover the underlying dataset and visualization specifications from given source code (e.g., SVG, Canvas, or chart-rendering scripts)",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,450 @@
+{
+ "pattern": {
+  "pattern_id": "pat-007",
+  "pattern_name": "Perturb-and-Compare",
+  "pattern_slug": "perturb-and-compare",
+  "short_summary": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one.",
+  "definition": "The interface takes an input the model has already been run on, applies a controlled alteration to it, re-runs the model, and presents the altered-input output against the original one. The alteration is authored or parameterized by the user, and its known content is what makes the resulting difference readable. The comparison, not either output alone, is the thing the user is given.",
+  "structural_signature": "Control flow: for a held input x, the system constructs one or more variants x' by a user-specified transformation rule (granularity, target, magnitude), executes the same model on x and each x', and joins the outputs into a paired or batched display keyed to the transformation that produced each. The distinguishing structure is that the delta is *induced by the interface* rather than found in the data, so the manipulated dimension is known to the system and can be used as the organizing axis of the display. This transplants: the same signature describes a spreadsheet what-if sweep, a compiler flag sweep, or an injected-decoy audit of a retrieval index.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Side-by-Side Comparison",
+  "dimension": {
+   "category_id": "U05",
+   "category_name": "Alternatives & Comparative Exploration",
+   "category_description": "How multiple possibilities are presented, previewed, maintained, blended, or compared before commitment.",
+   "classification_boundary": "Requires a visible choice or comparison mechanism, not backend candidate-set processing alone.",
+   "stage": "Acting on the output"
+  }
+ },
+ "eligible": 17,
+ "candidates": [
+  {
+   "rid": "666",
+   "title": "Interactive Discovery and Exploration of Visual Bias in Generative Text-to-Image Models",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70135",
+   "system_id": "666",
+   "evidence": [
+    {
+     "quote": "The ViBEx workflow: Users define anchor and test concepts and subsequently perform bias queries, resulting in bias candidates.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "2325",
+   "title": "ChainForge: A Visual Toolkit for Prompt Engineering and LLM Hypothesis Testing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642016",
+   "system_id": "chainforge",
+   "evidence": [
+    {
+     "quote": "Users can test different templates at once by using the same input variable (in {} brackets).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5582",
+   "title": "PCGEF: A Framework for Diagnosing Subjective Alignment in Human-Centered Persona-Conditioned Generation",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791402",
+   "system_id": "pcgef",
+   "evidence": [
+    {
+     "quote": "Unlike prior persona-aware approaches, PCGEF compares model generations under controlled conditions rather than relying on gold standards or LLM judges.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "8558",
+   "title": "TELL-ME: Toward Personalized Explanations of Large Language Models",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719982",
+   "system_id": "tellme",
+   "evidence": [
+    {
+     "quote": "Counterfactuals provide selective explanations by focusing on a few critical input feature changes, thereby creating simpler explanations supporting users",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9311",
+   "title": "From Seeing it to Experiencing it: Interactive Evaluation of Intersectional Voice Bias in Human-AI Speech Interaction",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798677",
+   "system_id": "9311",
+   "evidence": [
+    {
+     "quote": "This approach allowed us to hold linguistic content constant while systematically varying voice characteristics including accent and perceived gender.",
+     "location": "full text sec 2 (study design)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10126",
+   "title": "From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645173",
+   "system_id": "10126",
+   "evidence": [
+    {
+     "quote": "This technique systematically redacts or removes keywords from prompts to gauge their impact on the generated image. RPE evaluates the similarity between the original and altered images.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10173",
+   "title": "iScore: Visual Analytics for Interpreting How Language Models Automatically Score Summaries",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645142",
+   "system_id": "iscore",
+   "evidence": [
+    {
+     "quote": "Above, a learning engineer interprets how two plagiarized summaries are scored across two runs (Sect. 5).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "10953",
+   "title": "Interactive and Visual Prompt Engineering for Ad-hoc Task Adaptation with Large Language Models",
+   "venue": "tvcg-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/tvcg.2022.3209479",
+   "system_id": "10953",
+   "evidence": [
+    {
+     "quote": "Example of PromptIDE’s interface to explore variations of different prompts. Each variation is tested against up to twenty data examples",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "11819",
+   "title": "KnowledgeVIS: Interpreting Language Models by Comparing Fill-in-the-Blank Prompts",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3346713",
+   "system_id": "knowledgevis",
+   "evidence": [
+    {
+     "quote": "To enable more effective prompt testing, we can evaluate multiple prompts simultaneously that isolate dependent variables, such as the bold subjects in Table 1",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "12469",
+   "title": "PromptAid: Visual Prompt Exploration, Perturbation, Testing and Iteration for Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3535332",
+   "system_id": "promptaid",
+   "evidence": [
+    {
+     "quote": "strategies: keyword perturbations, paraphrasing perturbations,",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12559",
+   "title": "Concept Lens: Visual Comparison and Evaluation of Generative Model Manipulations",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3564537",
+   "system_id": "12559",
+   "evidence": [
+    {
+     "quote": "and editing them in various pre-computed directions (2). Next, image features",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12590",
+   "title": "JailbreakLens: Visual Analysis of Jailbreak Attacks Against Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3575694",
+   "system_id": "jailbreaklens",
+   "evidence": [
+    {
+     "quote": "Users can toggle to check the perturbation results of a particular strategy using the radio box at the top of the column.",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "12821",
+   "title": "VisMoDAI: Visual Analytics for Evaluating and Improving Corruption Robustness of Vision-Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634257",
+   "system_id": "vismodai",
+   "evidence": [
+    {
+     "quote": "The pipeline for evaluating corruption robustness in image captioning comprises two primary stages: (A) the workflow for applying data corruption and (B) the subsequent process of generating image captions and evaluating the results.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12842",
+   "title": "Understanding Large Language Model Behaviors Through Interactive Counterfactual Generation and Analysis",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634646",
+   "system_id": "12842",
+   "evidence": [
+    {
+     "quote": "which includes selecting a proper granularity (e.g., words, phrases, sentences) to perform perturbations and customizing the perturbation rules, e.g., fixing some sentences and replacing some segments with alternatives",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "13413",
+   "title": "Social Simulacra: Creating Populated Prototypes for Social Computing Systems",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545616",
+   "system_id": "13413",
+   "evidence": [
+    {
+     "quote": "We demonstrate that social simulacra shift the behaviors that they generate appropriately in response to design changes, and that they enable exploration of “what if?” scenarios where community members or moderators intervene.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback"
+   ]
+  },
+  {
+   "rid": "15884",
+   "title": "From Embeddings to Exploration: Engineering Interactive Latent Space Visualizations for AI Model Sensemaking EICS012",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816764",
+   "system_id": "15884",
+   "evidence": [
+    {
+     "quote": "To enable continuous probing in the Interactive version, the latent grid densely samples the 2D projection and decodes each sampled location into an input that can be re-evaluated by the target classifier.",
+     "location": "full text sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16494",
+   "title": "IKIWISI: An Interactive Visual Pattern Generator for Evaluating the Reliability of Vision-Language Models Without Ground Truth",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735754",
+   "system_id": "ikiwisi",
+   "evidence": [
+    {
+     "quote": "IKIWISI introduces \"spy objects\"—adversarial instances users know are absent—to discern models hallucinating on nonexistent items.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-035",
+ "exemplars": [
+  {
+   "rid": "7932",
+   "title": "Leveraging ChatGPT for Adaptive Learning through Personalized Prompt-based Instruction: A CS1 Education Case Study",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3637148",
+   "final_score": 4.22,
+   "why": "This is the strongest structural exemplar: topics and subtopics form the content units, while every unit is supported by the same four named prompt actions—Explanation, Example, Exercise, and Exercise Solution—producing a clear units × actions interaction space.",
+   "over_the_runner_up": "It ranks above Jamplate because the evidence explicitly associates one complete, repeated four-action vocabulary with both topics and subtopics, whereas Jamplate does not establish that all three questions appear for every unit."
+  },
+  {
+   "rid": "10180",
+   "title": "Jamplate: Exploring LLM-Enhanced Templates for Idea Reflection",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645196",
+   "final_score": 3.98,
+   "why": "Jamplate exposes three prepared reflection questions and makes each directly invocable: clicking a question generates an answer grounded in the competitor or column being examined. The fixed choices and resulting action–unit binding are unusually concrete and reproducible.",
+   "over_the_runner_up": "It ranks above LADICA because it names the complete prepared prompt vocabulary and explicitly connects clicking each prompt to an LLM-generated answer, while LADICA leaves its relation types unnamed."
+  },
+  {
+   "rid": "3620",
+   "title": "LADICA: A Large Shared Display Interface for Generative AI Cognitive Assistance in Co-located Team Collaboration",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713289",
+   "final_score": 3.78,
+   "why": "Each idea note has an adjacent AI affordance through which the user chooses a prepared relation type; LADICA then generates thinking aspects conditioned on that specific note and choice. This clearly demonstrates atomic action–unit binding in a repository of collaborative ideas.",
+   "over_the_runner_up": "It ranks above Sensecape because LADICA evidences a menu-like choice among relation types for each idea note, whereas the supplied Sensecape evidence establishes only one Questions action rather than a repeated menu of actions."
+  }
+ ],
+ "notes": "The final selection retains the consensus top three; no score was adjusted by more than 0.3. The main evidentiary weakness is that none of the excerpts explicitly proves every requirement of the strict signature: system-wide invariance, non-editability, and universal availability on every unit. This uncertainty is smallest for rid 7932. Jamplate does not conclusively show that every competitor or column receives all three questions, and LADICA neither names the relation-type vocabulary nor explicitly confirms that it is identical across all notes. These are therefore structural exemplars based on the supplied interface descriptions, not definitive proof of exact Cartesian completeness.",
+ "pattern_name": "Atomic AI Action Menu",
+ "category_id": "U01",
+ "rated": 11
+}

@@ -1,0 +1,1515 @@
+{
+ "pattern": {
+  "pattern_id": "pat-059",
+  "pattern_name": "Inferred User State Driven Adaptation",
+  "pattern_slug": "inferred-user-state-driven-adaptation",
+  "short_summary": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings.",
+  "definition": "The system holds a variable describing the user — mental state, intent, goal, emotion, skill level — and its current value selects among enumerated alternative behaviors: different strategies, presentation forms, or difficulty settings. The same task content is routed through different branches depending on the value.",
+  "structural_signature": "A discrete branch, lookup table, or mapping between a state variable and a fixed set of named alternative behaviors, evaluated before output is produced. The alternatives are enumerable and the mapping is authored at design time, so the behavior set is finite and the state variable is the only thing selecting among its members.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Context-Aware Adaptation",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 58,
+ "candidates": [
+  {
+   "rid": "1661",
+   "title": "Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581058",
+   "system_id": "1661",
+   "evidence": [
+    {
+     "quote": "Interface of different conditions. (A) Human Only. (B) AI Confidence. (C) Direct Display. (D) Adaptive Workflow. (E) Adaptive Recommendation.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2831",
+   "title": "VirtuWander: Enhancing Multi-modal Interaction for Virtual Tour Guidance through Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642235",
+   "system_id": "virtuwander",
+   "evidence": [
+    {
+     "quote": "Design framework for LLM-based multi-modal feedback within various guidance-seeking contexts in virtual tour experiences.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3004",
+   "title": "MindShift: Leveraging Large Language Models for Mental-States-Based Problematic Smartphone Use Intervention",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642790",
+   "system_id": "mindshift",
+   "evidence": [
+    {
+     "quote": "Summary of Persuasion Strategies under Diferent Mental States. In the table, each color denotes the corresponding persuasion strategy applicable to this scenario.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3346",
+   "title": "Towards Building Condition-Based Cross-Modality Intention-Aware Human-AI Cooperation under VR Environment",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642360",
+   "system_id": "3346",
+   "evidence": [
+    {
+     "quote": "This design, utilizes “condition” as the core to describe tasks, dynamically match user interactions with intentions, and empower generations of various tailored multi-modal AI responses.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3431",
+   "title": "D-Twins: Your Digital Twin Designed for Real-Time Boredom Intervention",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714163",
+   "system_id": "dtwins",
+   "evidence": [
+    {
+     "quote": "Based on the classification result, D-Twins initiates conversations as interventions",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3586",
+   "title": "From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713133",
+   "system_id": "3586",
+   "evidence": [
+    {
+     "quote": "we then propose an algorithmic framework to characterize the effects of LLM-powered analysis on human decisions and dynamically decide which analysis to present",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3618",
+   "title": "Piecing Together Teamwork: A Responsible Approach to an LLM-based Educational Jigsaw Agent",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713349",
+   "system_id": "3618",
+   "evidence": [
+    {
+     "quote": "used data from steps 3 and 4 to train a decision tree model to classify group’s collaborative states, which ultimately is",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3691",
+   "title": "Mentigo: An Intelligent Agent for Mentoring Students in the Creative Problem Solving Process",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713952",
+   "system_id": "mentigo",
+   "evidence": [
+    {
+     "quote": "three functions: Stage Decision, State Determine, and Strategy Selection",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3693",
+   "title": "AI-Enabled Conversational Journaling for Advancing Parkinson's Disease Symptom Tracking",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714280",
+   "system_id": "3693",
+   "evidence": [
+    {
+     "quote": "The NLU module tokenizes the user input and predicts the user’s intent. This predicted intent is then passed on to the response generation module, which uses both the intent and the …",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "3829",
+   "title": "Relational AI: Facilitating Intergroup Cooperation with Socially Aware Conversational Support",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713757",
+   "system_id": "relationalai",
+   "evidence": [
+    {
+     "quote": "adapts suggestions based on whether the conversation",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4106",
+   "title": "Persistent Assistant: Seamless Everyday AI Interactions via Intent Grounding and Multimodal Feedback",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714317",
+   "system_id": "4106",
+   "evidence": [
+    {
+     "quote": "As grounding increases, speech feedback becomes simpler, transitioning from detailed explanations to concise summaries and abstract recomm",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4386",
+   "title": "Since U Been Gone: Augmenting Context-Aware Transcriptions for Re-Engaging in Immersive VR Meetings",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714078",
+   "system_id": "4386",
+   "evidence": [
+    {
+     "quote": "EngageSync adapts content based on user context, referring to their engagement and attention state in the meeting.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4623",
+   "title": "ClassAid: A Real-time Instructor-AI-Student Orchestration System for Classroom Programming Activities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790824",
+   "system_id": "classaid",
+   "evidence": [
+    {
+     "quote": "Instructors can configure the Agent to provide technical feedback (direct coding solutions), heuristic feedback (hint-based guidance), automatic feedback (autonomously selecting technical or heuristic support), or silent operation (no AI support).",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4672",
+   "title": "GraftMind: Facilitating Group Ideation with AI-Mediated Idea Sharing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791388",
+   "system_id": "graftmind",
+   "evidence": [
+    {
+     "quote": "The state inference algorithm then determines the user’s current cognitive needs based on the internal similarity of their ideas. The system generates assistance according to the selected strategy",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4700",
+   "title": "Hear You in Silence: Designing for Active Listening in Human Interaction with Conversational Agents Using Context-Aware Pacing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791238",
+   "system_id": "4700",
+   "evidence": [
+    {
+     "quote": "A Conversational Agent (CA) with Context-Aware Pacing adapts its response timing to the situation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5052",
+   "title": "AgentCoach: LLM-Based Adaptive Coaching Feedback for Motor Skill Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791652",
+   "system_id": "agentcoach",
+   "evidence": [
+    {
+     "quote": "DG3 — Progress Adapted Feedback. Adapt verbal feedback to the learner’s CP-wise progress with different intents.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5095",
+   "title": "Shall We Dig Deeper?: Designing and Evaluating Strategies for LLM Agents to Advance Knowledge Co-Construction in Asynchronous Online Discussions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790551",
+   "system_id": "5095",
+   "evidence": [
+    {
+     "quote": "we adopt a refined four-phase coding scheme to examine knowledge co-construction in asynchronous discussions: Phase1 Initiation: Introducing novel perspectives without engaging in interactive discourse with others.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "5266",
+   "title": "Surfacing and Applying Meaning: Supporting Hermeneutical Autonomy for LGBTQ+ People in Taiwan",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790816",
+   "system_id": "5266",
+   "evidence": [
+    {
+     "quote": "with four modes of interaction: reflection, validation, discussion, and allyship",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5414",
+   "title": "An LLM-Based Motivation-Aware Framework For AI Coaching For Behaviour Change",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791123",
+   "system_id": "5414",
+   "evidence": [
+    {
+     "quote": "the motivational language detector (1) estimates user’ levels of motivation following MI coding convention [3]",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "5576",
+   "title": "It Seems to Understand My Heart: An Empirical Study of Persona-Driven Persuasive AI Agent for Aging-in-Place in Singapore",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791422",
+   "system_id": "5576",
+   "evidence": [
+    {
+     "quote": "agent personas embody culturally authentic characteristics that align with user needs",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6155",
+   "title": "State Your Intention to Steer Your Attention: An AI Assistant for Intentional Digital Living",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791404",
+   "system_id": "6155",
+   "evidence": [
+    {
+     "quote": "The system continuously monitors the user’s on-screen activity to detect when they diverge from the stated intention (DG2).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6229",
+   "title": "LingoQ: Bridging the Gap between EFL Learning and Work through AI-Generated Work-Related Quizzes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791342",
+   "system_id": "lingoq",
+   "evidence": [
+    {
+     "quote": "The AI’s responses for three major types of query intents—Look up ( b ○), Translate ○), and Proofread ( f ○)—provide the UI components tailored to each query type.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6246",
+   "title": "FeelWave: Enabling Emotion-Aware Voice Interaction through Noise-Robust mmWave Emotion Sensing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790631",
+   "system_id": "feelwave",
+   "evidence": [
+    {
+     "quote": "It extracts robust vocal information from mmWave signals, applies audio-to-mmWave transfer learning for efficient emotion recognition, and employs chain-ofthought-based query optimization to enable emotion-adaptive responses.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7118",
+   "title": "Utilizing a Conversational Agent to Promote Self-efficacy in Children: A Pilot Study on Low Cognitive Ability Children with Attention Deficit Hyperactivity Disorder",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585887",
+   "system_id": "7118",
+   "evidence": [
+    {
+     "quote": "A customized procedure was provided in three grades, according to the child’s Korean version of the ADHD rating scale (K-ARS) score. The higher the K-ARS score, the more detailed the daily tasks.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7534",
+   "title": "Empowering Personalized Learning through a Conversation-based Tutoring System with Student Modeling",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651122",
+   "system_id": "7534",
+   "evidence": [
+    {
+     "quote": "a conversation-based tutor utilizing LLM with prompt engineering that incorporates student assessment outcomes and various instructional strategies",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7622",
+   "title": "Keep Eyes on the Sentence: An Interactive Sentence Simplification System for English Learners Based on Eye Tracking and Large Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650792",
+   "system_id": "7622",
+   "evidence": [
+    {
+     "quote": "a difculty detection server deducing sentence comprehension from fxation and sentence data using a user-specifc model",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7718",
+   "title": "Supporting Novice Researchers to Write Literature Review using Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650787",
+   "system_id": "7718",
+   "evidence": [
+    {
+     "quote": "LitWeaver determines the stage of the literature review based on the content in the Notion document to provide an objective (A2), directions (A3), and AI-driven support features (A4) accordingly.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8120",
+   "title": "AdaptAI: A Personalized Solution to Sense Your Stress, Fix Your Mess, and Boost Productivity",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720284",
+   "system_id": "adaptai",
+   "evidence": [
+    {
+     "quote": "addressing the psychological state of the user, utilizing heart activity analysis to adapt tone of the conversational agent dynamically, incorporating motivational elements during stress periods, while providing solutions to user's task queries",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8123",
+   "title": "Adaptive Learning Companions: Enhancing Education with Biosignal-Driven Digital Human",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719877",
+   "system_id": "8123",
+   "evidence": [
+    {
+     "quote": "an Adaptive Learning component that dynamically adjusts the learning content based on the user's state, and a Biosignal component that acquires and processes physiological data",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8397",
+   "title": "Improving User Engagement and Learning Outcomes in LLM-Based Python Tutor: A Study of PACE",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720240",
+   "system_id": "8397",
+   "evidence": [
+    {
+     "quote": "Skill levels were defined in the prompt using Bloom’s Taxonomy: \"lacking background knowledge\" mapped to \"Remember\" and \"Understand,\" \"syntax errors\" to \"Analyze,\" and \"logic implementation challenges\" to \"Apply\" and \"Create.\"",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8558",
+   "title": "TELL-ME: Toward Personalized Explanations of Large Language Models",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719982",
+   "system_id": "tellme",
+   "evidence": [
+    {
+     "quote": "TELL-ME bridges this gap by tailoring explanations to three distinct user groups: beginners, advanced users, and experts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8670",
+   "title": "ZzzMate: A Self-Conscious Emotion-Aware Chatbot for Sleep Intervention",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720224",
+   "system_id": "zzzmate",
+   "evidence": [
+    {
+     "quote": "ZzzMate incorporates a novel emotion detection model that identifies self-conscious emotions from user interactions, which then informs a large language model (LLM) to generate empathetic responses.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8933",
+   "title": "Le Petit Care: A Child-Attuned Design for Personalized ADHD Symptom Management Through AI-powered Extended Reality",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720300",
+   "system_id": "8933",
+   "evidence": [
+    {
+     "quote": "Building on this analysis, it provides personalized behavioral development training",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9012",
+   "title": "What Can I Control?: Designing an Attribution Reframing Chatbot for Early-Career Employees' Workplace Stress Management",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798873",
+   "system_id": "9012",
+   "evidence": [
+    {
+     "quote": "AR chatbot system in the external-uncontrollable attribution scenario.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9078",
+   "title": "Ask, Verify, Refine: A Question-Aware Multimodal XUI with Feedback-Guided Refinement for Clinical Verification",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798745",
+   "system_id": "9078",
+   "evidence": [
+    {
+     "quote": "In the interface, the predicted question type becomes an explicit interaction handle: it routes explanation delivery by selecting an intent-aligned template and specifying what evidence and justification are shown.",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9200",
+   "title": "Designing for Adolescent Voice in Health Decisions: Embodied Conversational Agents for HPV Vaccination",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798846",
+   "system_id": "9200",
+   "evidence": [
+    {
+     "quote": "The system uses the Transtheoretical Model (TTM) to match intervention intensity with a user's readiness to change",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9244",
+   "title": "Every Persona Has Their Palette: Persona-Based Color Highlighting for Emotional Expression in Text Chat",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799029",
+   "system_id": "9244",
+   "evidence": [
+    {
+     "quote": "Chat interface with persona-aligned keyword highlighting",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9247",
+   "title": "Everyone Deserves a Teacher They Like: Designing Personality-Matched Multimodal Educational Agents in Virtual Reality",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798875",
+   "system_id": "9247",
+   "evidence": [
+    {
+     "quote": "we propose a multimodal educational agent system that automatically matches agent personalities to individual learners based on empirical data from user studies",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9399",
+   "title": "Just-in-Time Tokens: Adaptive Token Pacing for Cognitive-Friendly LLM Streaming",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798936",
+   "system_id": "9399",
+   "evidence": [
+    {
+     "quote": "This signal allows Just-in-Time to select different pacing profiles for short factual answers versus long explanatory responses (DG3).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9504",
+   "title": "Playground+: an AI-MR System for Adaptable Open-Ended Family Physical Activity Play",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798573",
+   "system_id": "playground",
+   "evidence": [
+    {
+     "quote": "Using a ceiling-mounted projector and webcam, the CHI EA ’26, April 13–17, 2026, Barcelona, Spain system delivers multimodal guidance that accommodates different parental roles and children’s developmental levels.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9529",
+   "title": "Reading the Mood Behind Words: Integrating Prosody-Derived Emotional Context into Socially Responsive VR Agents",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798643",
+   "system_id": "9529",
+   "evidence": [
+    {
+     "quote": "The agent detects the user’s vocal prosody (Happy, Sad, Angry) and generates an affectively congruent response, recognizing the emotional intent behind the neutral text.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9604",
+   "title": "StreAM: An LLM-Based System for Stress-Adaptive Meditation at Work",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798694",
+   "system_id": "stream",
+   "evidence": [
+    {
+     "quote": "StreAM continuously monitors heart rate variability to identify heightened stress levels and initiate an adaptive meditation session guided by a large language model.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9766",
+   "title": "Thank God I'm Fly!': A Gyaru Persona Chatbot for Adopting a Positive Mindset to Prevent and Mitigate Negative Emotions\n9767\tchiea-2026\tinclude\t10.1145/3772363.3799094\tiPoster: Content-Aware Layout Generation for Interactive Poster Design via Graph-Enhanced Diffusion Models\n9769\tchiea-2026\tinclude-b\t10.1145/3772363.3798512\tJust Listening Was Enough - Until It Wasn't\": Relationship-Stage-Aware Cognitive Scaffolding in AI Companions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798615",
+   "system_id": "9766",
+   "evidence": [
+    {
+     "quote": "an AI agent “GYARU-AI” acts as a role model of Gyaru-mind and selects a response mode from the user’s input to balance empathetic and frank stances",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9835",
+   "title": "Mirror of the Dividual: A Public-Space Multimodal Interactive System for Making Understanding Perceivable",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799110",
+   "system_id": "9835",
+   "evidence": [
+    {
+     "quote": "Instead of inferring static psychological traits, these states drive the Expression Strategy, dynamically modulating the system’s linguistic content, vocal pacing, and v…",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "9838",
+   "title": "Portable Somatic Wearable: AI-Assisted Reflection Through Gaze-Derived Somatic Markers",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799134",
+   "system_id": "9838",
+   "evidence": [
+    {
+     "quote": "When low hesitation is detected, the AI prompts narrative continuation. In medium hesitation states, it holds space with open-ended or non-directive prompts. High hesitation triggers reflective affirmations that pause the narrative flow entirely.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "10192",
+   "title": "In-Situ Adaptive Interfaces for Online Browsing: Design Dimensions for Intent-Responsive Automation and User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789092",
+   "system_id": "10192",
+   "evidence": [
+    {
+     "quote": "(1) Intent Detection observes user behavior and classifies browsing intent at regular intervals, (2) Interface Adaptation analyzes page structure and applies appropriate adaptations when intent is detected",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10247",
+   "title": "GuideAI: A Real-time Personalized Learning Solution with Adaptive Interventions",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789125",
+   "system_id": "guideai",
+   "evidence": [
+    {
+     "quote": "physiological interventions (breathing guidance and posture correction), and attention-aware strategies (redirecting focus using gaze analysis).",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10282",
+   "title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789136",
+   "system_id": "10282",
+   "evidence": [
+    {
+     "quote": "We propose that AI assistants should adapt their behavior through trust-adaptive interventions to mitigate such inappropriate reliance.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12806",
+   "title": "ProactiveVA: Proactive Visual Analytics with LLM-Based UI Agent",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3642628",
+   "system_id": "proactiveva",
+   "evidence": [
+    {
+     "quote": "DR2: Tailoring assistance based on problem categories (RQ2). After identifying that user needs help, the proactive agent should infer the specific type of difficulty the user is facing.",
+     "location": "system sec 3.4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12905",
+   "title": "Enhancing Perceived Empathy in Empathic Mixed Reality Agents via Context-Aware Adaptation",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3646601",
+   "system_id": "12905",
+   "evidence": [
+    {
+     "quote": "When SCL increases, the agent reduces pressure by destroying half of the live drones; when SCL decreases, it spawns more drones while ensuring a maximum of eight (see Fig. 2).",
+     "location": "full text sec 3.4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13515",
+   "title": "CrossTalk: Intelligent Substrates for Language-Oriented Interaction in Video-Based Communication and Collaboration",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606773",
+   "system_id": "crosstalk",
+   "evidence": [
+    {
+     "quote": "User intents can be recognized by associating users’ conversations with the descriptions of content, context, and actions of materials within an environment.",
+     "location": "system sec 4 (C2)"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13720",
+   "title": "Sensible Agent: A Framework for Unobtrusive Interaction with Proactive AR Agents",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747748",
+   "system_id": "13720",
+   "evidence": [
+    {
+     "quote": "Sensible Agent dynamically adapts both “what” assistance to offer and, crucially, “how” to deliver it, based on real-time multimodal context sensing.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13881",
+   "title": "DocDancer: Authoring Ultra-Responsive Documents with Layout Generation",
+   "venue": "vlhcc-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1109/vl-hcc57772.2023.00023",
+   "system_id": "docdancer",
+   "evidence": [
+    {
+     "quote": "Bind different options to different content: for customer = new, show the gift card offer; for customer = existing, show the discount offer.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14019",
+   "title": "Co-Advisor: Learning Programming Strategies in Context",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00045",
+   "system_id": "14019",
+   "evidence": [
+    {
+     "quote": "To operationalize these findings, we developed a mapping to align each strategy with a set of keywords representing specific contextual factors. This enables the system to recommend the most appropriate debugging strategy based on the developer’s current problem scenario.",
+     "location": "full text sec V-B"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14046",
+   "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00072",
+   "system_id": "snapclass",
+   "evidence": [
+    {
+     "quote": "In the student management page, teachers can define learners’ scaffolding levels needed as beginner, intermediate and advanced (Figure 2). Later the learners will receive different starter code for their coding assignment.",
+     "location": "full text sec III-B"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16313",
+   "title": "The CoExplorer Technology Probe: A Generative AI-Powered Adaptive Interface to Support Intentionality in Planning and Running Video Meetings",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661507",
+   "system_id": "16313",
+   "evidence": [
+    {
+     "quote": "for each phase, window layouts, and appropriate applications and files",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16714",
+   "title": "When Systems Take Initiative: A Design Framework for Adaptive, Mixed-initiative Database Querying",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812906",
+   "system_id": "16714",
+   "evidence": [
+    {
+     "quote": "We propose and implement a paradigm of adaptive mixed-initiative interaction, where the system interprets user DIS ’26, June 13–17, 2026, Singapore, Singapore Chen et al. behavioral cues (e.g., tentativeness, focus shifts) to infer intent and dynamically adapts its support strategies. This involves switching between responsive and proactive modes, and integrating textual responses with graphical previews to scaffold the query-building process.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17248",
+   "title": "CLARA: AI-Mediated Facilitation for Enhancing Group Cognition and Cohesion in Remote Collaboration",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3786325",
+   "system_id": "clara",
+   "evidence": [
+    {
+     "quote": "CLARA, an AI-driven facilitator, detects the group’s cognitive state (high cognitive load) and affective state (high arousal, low valence) to provide tailored interventions.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+  "category_id": "U06",
+  "category_name": "Artifact Editing & Revision",
+  "exemplars": [
+    {
+      "rid": "13492",
+      "title": "PromptPaint: Steering Text-to-Image Generation Through Paint Medium-like Interactions",
+      "venue": "uist-2023",
+      "year": 2023,
+      "url": "https://doi.org/10.1145/3586183.3606777",
+      "pattern_id": "pat-097",
+      "pattern_name": "Mid-Run Intervention",
+      "final_score": 4.93,
+      "why": "The user changes prompts while the denoising run is still in progress, with intermediate results shown live, so the control channel lands on the run in flight rather than queueing a next attempt. Both reviewers corroborated this against the fulltext, and it is the only mid-run instance in the dimension that is not an agent pause button, which is what keeps the pattern from reading as a debugger feature. Any system with a visible incremental generative process -- diffusion, streaming decode, simulation -- can expose the same steering handle.",
+      "over_the_runner_up": "Morae and the multi-agent debugger both realise mid-run intervention as stop-inject-resume on a discrete agent loop; PromptPaint shows the mechanism on a continuous process, where there is no natural breakpoint to hide behind."
+    },
+    {
+      "rid": "2680",
+      "title": "DirectGPT: A Direct Manipulation Interface to Interact with Large Language Models",
+      "venue": "chi-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613904.3642462",
+      "pattern_id": "pat-021",
+      "pattern_name": "Localized Tweaking Support",
+      "final_score": 4.8,
+      "why": "Selecting an object such as a word before prompting forces the prompt to apply to that object only, so designation precedes invocation and bounds the write. It is the one candidate whose evidence states the confinement itself rather than leaving the write boundary to be inferred, which is the clause the whole pattern turns on. The gesture is medium-independent: any editor with a selection model can scope a generative call the way it already scopes a formatting command.",
+      "over_the_runner_up": "Wordcraft's select-then-replace is the same gesture in the same medium but is the first thing any designer builds, and it never states that the rest of the artifact is left untouched."
+    },
+    {
+      "rid": "13462",
+      "title": "Beyond Text Generation: Supporting Writers with Continuous Automatic Text Summaries",
+      "venue": "uist-2022",
+      "year": 2022,
+      "url": "https://doi.org/10.1145/3526113.3545672",
+      "pattern_id": "pat-018",
+      "pattern_name": "Addressable Segments",
+      "final_score": 4.8,
+      "why": "Each paragraph is represented by exactly one card, and the cards can be reordered, deleted or merged -- an exhaustive one-to-one partition of the artifact plus named per-unit operations, the two halves the signature demands and the only candidate supplying both. It turns continuous generated prose into a set of handles, which is the precondition for every finer-grained revision move in this dimension. Readers should note the cards are a derived side-panel view mapped 1:1 onto the source text, not the prose itself, which is arguably the more transferable form: the addressable layer can be generated over material that has no structure of its own.",
+      "over_the_runner_up": "Compositional Structures partitions prose into typed section and paragraph blocks at two granularities, but by its own curator's account never names the block-level handles, so it is this entry minus the operations."
+    },
+    {
+      "rid": "12840",
+      "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+      "venue": "tvcg-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+      "pattern_id": "pat-029",
+      "pattern_name": "Reverse Engineered Representation",
+      "final_score": 4.6,
+      "why": "A flat SVG is decomposed backwards into semantic layers, the inferred visual encoding scheme, the recovered data and a parameterised generator, all strictly richer than the surface they came from; the user then manipulates those parameters and the visualization is regenerated. This is the dimension's boundary clause -- editable intermediate representations -- in its strongest form, and the reviewers found it the best-evidenced quote in its pattern. The move generalises to any opaque artifact a model can be asked to explain into typed parts: a slide, a page layout, a chart someone else made.",
+      "over_the_runner_up": "Rewriting Video recovers an editable text prompt from footage, which is a lossy description rather than a decomposition, and so inverts the signature's requirement that the recovered representation be richer than the surface."
+    },
+    {
+      "rid": "10383",
+      "title": "I Want It That Way: Enabling Interactive Decision Support Using Large Language Models and Constraint Programming",
+      "venue": "tiis-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3685053",
+      "pattern_id": "pat-019",
+      "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+      "final_score": 4.53,
+      "why": "The system opens with a concrete proposal, the user evaluates that specific proposal, and the expressed preference is fed back to improve the given suggestion -- all three stages of the loop stated in the evidence rather than inferred, with the carryover clause explicit. It is the dimension's most elementary revision cycle, and without it the set would teach only the exotic moves. It is also the only entry outside creative and writing tooling: critique-driven refinement over a constraint-solved schedule shows the loop works where the artifact is a decision, not a document.",
+      "over_the_runner_up": "Metaphorian iterates within a persistent structure but, as its own curator concedes, never shows the opening system proposal, so it demonstrates scoped revision rather than the cycle that names the pattern."
+    }
+  ],
+  "notes": "Overrides. (1) I kept DataWink at pat-029 rather than pat-024. The evidence reviewer preferred to route it to pat-024 and fill pat-029 with rid 13731, but 13731 is not in this dimension's candidate file, so its bibliographic fields could not be taken verbatim and it was not selectable; both reviewers independently call the pat-029 quote the best in that pattern, and the set-level reviewer's fulltext check (regeneration after direct parameter manipulation) closes the loop the pattern curator doubted. (2) I did not carry over any of the four cross-file promotions (rids 5579, 13731, 14009, 13996) for the same reason -- none appear as candidates here. (3) PromptPaint appears twice in the input, at pat-021 and pat-097; under the no-repeated-system rule its single entry is spent on pat-097, where it scores higher and is the pattern's only non-agentic instance, and pat-021 loses nothing because DirectGPT documents the designation act more exactly.\n\nUnrepresented patterns: pat-010 (Prefilled Editable Templates), pat-024 (Program-as-Output), pat-030 (Two-Way Sync View), pat-095 (Manual Fallback Editing), pat-096 (Accept/Reject Controls). With five slots against ten patterns this is unavoidable; I chose one entry per pattern with no doubling, preferring range over depth. The costliest omissions are pat-010, the dimension's most elementary move (the artifact is non-empty at first contact), and pat-030, which the dimension description most directly names -- both are first back in if the set expands, in the order given under near misses.\n\nDistrust list. pat-096 and pat-095 are the weakest-evidenced patterns in the file: the evidence reviewer found the promoted pat-096 entry (rid 9674) contradicted -- the coded control label 'acknowledge' does not appear in the paper, and the disposed items are alerts about the author's own prose rather than generated content -- and found the third pat-095 entry (rid 16923) topical rather than structural. Two further coded quotes could not be located in the fulltext at all: rid 11931 (pat-019) and rid 2288 (pat-030). None of those five sit in this set, but a reader consulting the candidate file directly should treat those rows as unverified. Within the set itself, two caveats: DirectGPT's evidence is a figure caption, and DataWink's regeneration loop is established by the reviewer's fulltext check rather than by the coded quote.",
+  "near_misses": [
+    {
+      "rid": "14026",
+      "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+      "pattern_id": "pat-010",
+      "reason": "The only candidate anywhere that names concrete in-place edit operations (add, edit, delete) on prefilled generated content with no acceptance gate. Dropped only because at 4.55 it competes for the last slot with the propose-critique-revise loop, which covers a wider span of the dimension and a domain nothing else in the set reaches; it is the first entry back in if U06 gets a sixth slot."
+    },
+    {
+      "rid": "13599",
+      "title": "VISAR: A Human-AI Argumentative Writing Assistant with Visual Programming and Rapid Draft Prototyping",
+      "pattern_id": "pat-030",
+      "reason": "Two genuinely dissimilar peer representations of one argument structure -- text editor and visual outline canvas -- with synchronization stated outright; canonical and uncontested by either reviewer. It lost to the Addressable Segments entry for the structural-decomposition slot because that one is the more primitive mechanism the sync view presupposes, and both operate on written prose."
+    },
+    {
+      "rid": "13987",
+      "title": "Keyframer: A Design Probe for Exploring LLM Assistance in 2D Animation Design",
+      "pattern_id": "pat-024",
+      "reason": "Carries the whole prompt-to-code-to-rendered-preview pipeline with direct edits to the intermediate program, and would be pat-024's slot. Excluded because DataWink already seats an editable generated program as the object of revision, and Keyframer's version -- the model writes code, you edit the code -- is the more familiar of the two."
+    },
+    {
+      "rid": "4884",
+      "title": "DesignTrace: Exploring, Iterating and Tracking Design Alternatives with GenAI",
+      "pattern_id": "pat-095",
+      "reason": "Three input routes (typing, suggested tags, extraction from an image region) converging on one attribute slot in a single sentence, which shows the hand-authored route is a peer rather than a fallback mode. Held out on breadth alone: at five slots the mixed-provenance move is the least central of the ten patterns to inspecting and revising generated work."
+    },
+    {
+      "rid": "10078",
+      "title": "ScatterShot: Interactive In-context Example Curation for Text Transformation",
+      "pattern_id": "pat-096",
+      "reason": "A closed three-way vocabulary (+ / - / O) applied identically to every candidate, with the dispositions feeding back as demonstrations so the per-item choice has downstream consequence. Excluded because per-item accept/reject is the dimension's most familiar control and the quote itself admits an out-of-set path ('users can make edits to LLM outputs'), weakening the closure clause."
+    }
+  ]
+}

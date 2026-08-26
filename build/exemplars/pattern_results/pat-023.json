@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-023",
+ "exemplars": [
+  {
+   "rid": "10246",
+   "title": "From Visual to Multimodal Programming: Designing an Interface to Externalize Decomposition Thinking for Novice Learners",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789131",
+   "final_score": 4.3,
+   "why": "Spark turns a runtime, user-articulated goal into visible, structured steps and then enacts those steps through a robot, providing the clearest evidence of both input-specific decomposition and separate handling.",
+   "over_the_runner_up": "Selected over ProDec because the evidence explicitly includes enactment of the generated steps, while ProDec’s excerpt establishes an editable dependency structure but not sequential execution."
+  },
+  {
+   "rid": "14044",
+   "title": "ProDec: Automated Prompt Decomposition",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00070",
+   "final_score": 4.2,
+   "why": "ProDec converts each programming prompt into its own set of dependency-linked subtasks and exposes those reasoning steps for visual inspection and modification, closely matching the pattern’s variable decomposition and editability requirements.",
+   "over_the_runner_up": "Selected over CoExplorer because ProDec exposes explicit subtasks and permits their modification, whereas CoExplorer shows collaboratively refined phases but leaves separate phase execution largely implicit."
+  },
+  {
+   "rid": "7490",
+   "title": "CoExplorer: Generative AI Powered 2D and 3D Adaptive Interfaces to Support Intentionality in Video Meetings",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650797",
+   "final_score": 4.05,
+   "why": "CoExplorer derives meeting-specific phases from a supplied description and lets attendees refine those phases before they organize the meeting, demonstrating visible, collaborative, runtime-dependent decomposition.",
+   "over_the_runner_up": "Selected over Cocoa because CoExplorer explicitly shows a supplied goal description being transformed into a goal-specific sequence, while Cocoa’s excerpt begins with an existing plan and never establishes goal decomposition."
+  }
+ ],
+ "notes": "I retained the consensus top three but reordered the first two: Spark (rid 10246) is the strongest structural match because its evidence covers both visible decomposition and enactment, while ProDec’s evidence does not establish serial execution. No score adjustment exceeds 0.3. Readers should distrust any stronger claim that these excerpts fully demonstrate the structural signature: none explicitly confirms final-artifact assembly; ProDec does not explicitly show serial execution, Spark does not state that steps remain editable before advancement, and CoExplorer only implies that the proposed phases are subsequently handled in sequence.",
+ "pattern_name": "Goal Decomposition",
+ "category_id": "U08",
+ "rated": 30
+}

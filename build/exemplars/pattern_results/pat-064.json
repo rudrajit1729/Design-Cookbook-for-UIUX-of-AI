@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-064",
+ "exemplars": [
+  {
+   "rid": "5580",
+   "title": "GeoVisA11y: An AI-based Geovisualization Question-Answering System for Screen-Reader Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790334",
+   "final_score": 3.65,
+   "why": "GeoVisA11y preserves geographic topology as addressable state nodes and uses a persistent focus cursor with discrete cardinal commands, enabling screen-reader users to traverse the map rather than receive a flattened description.",
+   "over_the_runner_up": "It is stronger than SeeChart because its direction-sensitive adjacency graph demonstrates genuinely structural navigation, whereas SeeChart only establishes linear movement between charts."
+  },
+  {
+   "rid": "10058",
+   "title": "SeeChart: Enabling Accessible Visualizations Through Interactive Natural Language Interface For People with Visual Impairments",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584099",
+   "final_score": 2.7,
+   "why": "SeeChart reconstructs multiple charts as addressable items and maintains a cursor that users advance or reverse with dedicated N/P commands in a screen-reader-oriented interface.",
+   "over_the_runner_up": "It is stronger than ImageExplorer because the evidence explicitly establishes discrete traversal and persistent position between nodes, while ImageExplorer only demonstrates entering a nested layer."
+  },
+  {
+   "rid": "832",
+   "title": "ImageExplorer: Multi-Layered Touch Exploration to Encourage Skepticism Towards Imperfect AI-Generated Image Captions",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501966",
+   "final_score": 1.9,
+   "why": "ImageExplorer parses an image into nested object and sub-object nodes and supplies a discrete double-tap command for moving into the hierarchy, giving it part of the pattern's graph-traversal structure.",
+   "over_the_runner_up": "It edges out AskEase because its object hierarchy and into-layer transition preserve non-linear structure, whereas AskEase is ordinary pagination through an already linear chat history."
+  }
+ ],
+ "notes": "I departed from the consensus by selecting rid 832 instead of the higher-scoring rid 5950. AskEase conflicts with the definition's explicit rejection of flattening into a single linear sequence, while ImageExplorer at least exposes hierarchical nodes and an into command. No individual score adjustment exceeds 0.3. All three selections have evidence limitations: GeoVisA11y does not explicitly quote the spoken response or orientation announcement; SeeChart's quote is truncated and establishes neither within-chart traversal nor an announced position; ImageExplorer is a borderline third exemplar because the supplied evidence emphasizes visible boundaries and does not establish a persistent cursor, nonvisual node rendering, or orientation cues. Only four of the stated seven candidates were supplied, so the selection is necessarily limited to those records.",
+ "pattern_name": "Nonvisual Navigation",
+ "category_id": "U04",
+ "rated": 7
+}

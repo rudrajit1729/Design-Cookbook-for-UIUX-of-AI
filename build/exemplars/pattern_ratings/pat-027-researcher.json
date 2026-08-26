@@ -1,0 +1,356 @@
+{
+ "pattern_id": "pat-027",
+ "lens": "researcher",
+ "ratings": [
+  {
+   "rid": "1661",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Not scored: the quote describes estimating human correctness likelihood from modeled behavior on similar instances. It does not show users supplying exemplars that are induced into an operative specification.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support Specification by Demonstration."
+  },
+  {
+   "rid": "2221",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Selecting positive and negative gallery examples is a legible way to specify a desired GAN direction, and the disentanglement framing suggests an induced reusable control. The quote does not itself describe that induction or subsequent editing, so the structural match is strong but not fully evidenced.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2966",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is an unusually explicit match: users provide image exemplars and descriptions, which the system converts into data-augmentation strategies that govern fine-tuning. Converting training intent into an editable intermediate strategy is consequential and transferable, although impact beyond this workflow cannot be established from the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3512",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The title identifies the key induction step\u2014modeling cognitive dependencies from demonstrations\u2014and the quote identifies the demonstrated GUI task. Inferring cognition rather than merely replaying operations is interesting, but the resulting representation and its editability are not described in the evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3748",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Learning smartphone behavior by observing demonstrations is adjacent to the pattern, but the fragment does not establish intentional user specification, the induced structure, or how it governs and can be edited in later runs. Scores are conservative because those mechanisms cannot be inferred from the title alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3796",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Example stories are transformed into narrative possibility spaces rather than simply reused as source material. Inducing a configurable space at multiple abstraction levels is a distinctive extension of specification by example, though the evidence does not report outcome data.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4067",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 5
+   },
+   "reason": "Users label examples and the system turns those labels into a reusable personal classifier: a clean, rebuildable instance with broad transfer to end-user classification. Its weakness as an exemplar is novelty\u2014example-labeled classifiers are a mature and well-settled design move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4098",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Demonstrating desired table actions plausibly induces a reusable data-wrangling operation, addressing a real expressibility barrier in a broadly transferable domain. The quote only shows the first demonstration step, not the inferred structure, its controls, or later reuse.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4449",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "A concrete example or result is grounded into a reified instrument that can become a general-purpose tool. This moves beyond imitation to editable, composable command abstraction and is one of the clearest and most generative expansions of the pattern in the set.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6006",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The complete loop is present verbatim: the user edits an instance, the system infers the rationale, materializes it as a reusable command, and applies it elsewhere. Inferring a general editing intention from a correction is both highly transferable and a consequential reframing of generated-draft editing.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6355",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Not scored: the interface organizes examples inside a few-shot prompt, so the exemplars themselves continue to condition later generations. The evidence does not show their conversion into a separate reusable structure, as required by the structural signature.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes direct few-shot example prompting, not induction of an operative specification distinct from the exemplars."
+  },
+  {
+   "rid": "7708",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "The explicit Programming by Demonstration label makes the assignment plausible, but the quote supplies none of the interaction loop: what is demonstrated, what reusable specification is inferred, or how it controls later sound generation. AR sound authoring may be useful, but novelty and impact are unjudgeable here.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9410",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 2,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A skilled operator's narrated assembly video is a rich demonstrated instance that the task-planning system can plausibly invert into a cobot plan. Delegating hazardous physical work is consequential, but the mechanism is hardware- and domain-dependent, and the quote does not explicitly describe the induced plan or its editability.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10078",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Not scored: curated examples remain the in-context prompt used to customize the LLM. No distinct template, control state, constraint set, or other reusable structure is induced and exposed for editing.",
+   "disqualify": true,
+   "disqualify_reason": "Direct in-context example conditioning does not satisfy the pattern's required induction into a separate operative specification."
+  },
+  {
+   "rid": "10146",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote establishes that users create examples and thereby influence the LLM, but not whether examples are converted into a reusable specification rather than retained as conversational context. The operative structure, feedback, and subsequent reuse are all unjudgeable from the evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10473",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The evidence only calls the method example-based. It does not say what users provide, what representation is induced, or whether that representation governs later glyph generation. The narrow circular-glyph domain also limits transfer on the available evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10539",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This precisely inverts a finished goal text into reusable control states, making the inferred specification\u2014not the original artifact\u2014the operative object. The reversed-generation framing is clear, domain-transferable, and substantially more interesting than ordinary example conditioning.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11418",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Programming by example is used to build custom data concepts, converting demonstrated values or transformations into reusable visualization specifications. It addresses a central authoring barrier and transfers well beyond one chart type, although the quote does not detail the exact example-entry and concept-editing interface.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12840",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The tool is explicitly described as by-example authoring, but 'reusing and adapting' SVG examples could mean either specification induction or direct reference-based transformation. Without evidence of an extracted template or editable constraint structure, the structural match and mechanism clarity remain moderate-to-low.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13373",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Experts mark valid and invalid instances, and those demonstrations refine reusable validation rules. This is a clear, broadly transferable induction loop with meaningful end-user control, though example-based classifier and rule refinement is an established idea rather than a major reframing.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13698",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A single procedure demonstration is converted into sensor representations for reusable assistant steps, satisfying the induction requirement more directly than simple replay. Learning context-aware steps from one example is interesting, but transfer depends on sensing infrastructure and the user-facing editability of the learned representation is not shown.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13700",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Not scored: the system mines patterns opportunistically from behavior logs. The quote shows neither intentional exemplar submission nor a user-facing specification interaction, placing it outside the pattern's structural and classification boundaries.",
+   "disqualify": true,
+   "disqualify_reason": "Invisible task mining from behavior logs is not user-facing specification by supplied demonstrations."
+  },
+  {
+   "rid": "13794",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Not scored: the prior report is selected as a reference and reused in generating another report. The evidence presents it as source material, not as an exemplar inverted into a separate editable template, constraint set, or control structure.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes reference-based reuse rather than induction of an operative specification."
+  },
+  {
+   "rid": "14038",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote states the full core transformation: one browser demonstration is synthesized into a task-level agentic workflow. The resulting workflow is a reusable structure with broad applicability and major leverage, although workflow synthesis from demonstration extends a mature PbD lineage rather than originating the underlying move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16713",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Recorded actions are reified as composable 'spells,' turning demonstrated behavior into reusable and manipulable action objects. Reification and composition make this more consequential and transferable than simple macro recording, though the quote does not show the recording interface or how generalization beyond literal replay occurs.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

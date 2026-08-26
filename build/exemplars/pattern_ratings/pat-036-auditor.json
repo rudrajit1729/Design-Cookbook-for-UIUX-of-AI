@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-036",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "15463",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The cluster summary and its original responses are two granularities over the same response collection, and the reference to the first cluster implies selection. However, the quote does not show the coarse cluster overview or the selection interaction directly, so the full filter relationship remains partly inferred.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7464",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This plainly demonstrates the signature: a distribution aggregates many examples, selecting an entity filters the fine-grained table, and the table exposes matching cases. The interaction is explicit, reproducible, and highly transferable, though conventional for visual analytics.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13212",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The thematic overview aggregates all facts into clusters, and selecting a cluster reaches detailed facts belonging to it. Both the asymmetric levels and selection-defined detail population are explicit, making this a particularly clean exemplar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15324",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Topic, post, and comment levels establish a plausible aggregation hierarchy over community content. The quote does not explain what each level displays or whether selecting a topic or post filters the finer level, limiting structural confidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11975",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The design goal explicitly connects aggregated data, selected subsets, and individual examples, closely matching the pattern. Because this is an intent statement rather than a description of the implemented views and interaction, the evidence is less decisive than a system-level account.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14013",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Showing summaries of child nodes to help users target useful children supports hierarchical exploration. The quote does not establish that a coarse aggregate view filters a fine item view, so it is closer to hierarchical document navigation than a clean Overview-plus-Detail instance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14017",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Groups and individual messages are two granularities over one conversation collection. However, the quote omits the views, aggregation encoding, and whether group selection defines which messages appear, so only part of the signature is demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8954",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "A sentiment category groups diary entries, and clicking it reveals exactly the associated entries. This clearly supplies coarse-to-fine filtering, although the quote does not say whether the category level contains a substantive aggregate summary rather than simple labels.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14027",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Clicking a high-level module to inspect its internals is a clear drill-down interaction. It is more naturally hierarchical navigation or semantic zoom, however, because the quote does not show a function of many items paired with the filtered items themselves.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9602",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The graph provides a story-wide overview and selecting a story chunk opens its expanded detail, directly supporting overview-to-selected-item inspection. The overview appears structural rather than explicitly aggregate, but it remains a strong collection-and-item instance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13793",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The paper is explicitly about overview-detail interfaces, and the quote defines the core collection overview plus selected-item detail mechanism. Its malleability framing suggests a general contribution beyond implementing a routine master-detail layout, though outcomes cannot be fully judged from the supplied material.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14005",
+   "scores": {
+    "representativeness": 2,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 1,
+    "evidence_strength": 2
+   },
+   "reason": "Selecting a student to see details is compatible with a master-detail interface, but the quote never describes the originating overview, an aggregate over students, or selection-based filtering of a finer population. It is weak, ordinary evidence for the full pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3579",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "This is a pattern-level contribution whose quote explicitly specifies a collection overview, key attributes, and an in-depth view of the selected item. It could define the catalogue entry directly and is broadly transferable; only empirical impact is not visible in the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7627",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "A visual summary of aggregate ratings is paired with inspection of corresponding individual examples, squarely connecting overview and cases. The quote does not specify the selection gesture or exact filtering behavior, preventing a top mechanism score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12247",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "An overview of insights with details on demand for a selected insight and its evidence is a recognizable overview-detail hierarchy. The evidence supports one-click reachability but is less explicit about how coarse selection filters the fine view or whether the overview is an aggregate function.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12537",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Group, conversation, and turn levels form a clean three-level aggregation hierarchy over one conversational dataset. The quote establishes the levels but not their selection linkage or on-screen relationship, so the structural fit is strong but incomplete.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11632",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Summary, instance, and candidate levels suggest multiple granularities, but they may describe stages or modules in a model decision process rather than linked views over one collection. No user selection, filtering, or individual-case display is demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11340",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The subset view summarizes behavior over subsets and an instance view plausibly exposes individual cases. The quote is truncated before describing the instance view and supplies no interaction linking subset selection to its contents, so confidence must remain conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9223",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The interface moves from an integrated case summary to per-modality evidence, but this is primarily summary-to-evidence inspection within one clinical case. The quote does not show an aggregate of many items whose coarse selection filters a fine item population.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13663",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "A test-results overview and detail view are named, but the quotation is truncated and never states what the detail contains or how it is selected. The evidence therefore supports only the labels of the pattern, not its filtering mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11339",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "The Matrix View is a coarse representation from which clicking any plot opens its Single View, clearly specifying overview-to-item interaction. The quote does not describe the matrix's aggregation semantics, but it is solid direct evidence of linked granularity levels.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5222",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Selecting a patient-data insight at L1 opens a drill-down panel containing its underlying data, providing explicit one-click detail and evidentiary inspection. The supplied quote does not fully characterize the L1 overview or its aggregation, keeping it just below canonical exemplars.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12012",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Selecting students or tasks to inspect their conversations implies coarse categories defining finer records. The originating overview and aggregate encoding are absent from the quote, so the exact Overview-plus-Detail structure is only partially demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8499",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Themes summarize a collection and are supported by source quotes, creating an aggregate-to-evidence relationship. The quote describes organized synthesis rather than linked views or a selection that filters the displayed anecdotes, making this closer to evidence-backed summarization.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12832",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Chapters and scenes are ordered granularities over a story and therefore support hierarchical exploration. The quote is a task statement and does not explain the views, aggregation, interaction, or whether chapter selection determines the scenes shown.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10200",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The interface spans line-level code and comparisons across prompts and tasks, suggesting multiple aggregation levels over evaluation records. It does not specify an overview-to-detail selection or show that a coarse choice filters the lines displayed.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13727",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "High-level performance and fine-grained component diagnostics provide broad and detailed analysis, but may be distinct diagnostic views rather than aggregation-linked views over one collection. No coarse selection or resulting fine population is described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12821",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The scatterplot supports pattern discovery while the layered view supports instance inspection, plausibly pairing population overview with individual cases. The caption does not state that selecting a scatterplot region or aggregate filters the inspected instances.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8527",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Scatterplot, issue view, and detailed issue suggest a population-to-issue-to-detail hierarchy. The caption merely lists components and does not establish their aggregation relation, interaction, or selection-defined contents.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12559",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes hierarchical concept/code organization and a grid of generated images, but no aggregate overview, selected-item detail view, or coarse-selection filtering relationship. It instantiates hierarchical or faceted comparison rather than the claimed pattern on the evidence supplied.",
+   "disqualify": true,
+   "disqualify_reason": "The verbatim evidence does not support Overview-plus-Detail's structural signature and instead describes a hierarchy plus comparison grid."
+  }
+ ]
+}

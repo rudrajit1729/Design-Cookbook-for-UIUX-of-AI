@@ -1,0 +1,234 @@
+{
+ "pattern": {
+  "pattern_id": "pat-034",
+  "pattern_name": "Artifact Generation Property Controls",
+  "pattern_slug": "artifact-generation-property-controls",
+  "short_summary": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance.",
+  "definition": "A property of the system or of its output is bound to an ordered control the user sets to a value — a slider, a numbered keypress, a discrete set of levels, a spatial distance. Setting the value re-runs or re-renders under the new setting. The dimension exists before any particular content and persists across generations.",
+  "structural_signature": "A named parameter with an ordered range (short/moderate/long; 1D distance; temperature; abstraction level) is surfaced as a persistent control widget bound to that range. The control does not create content; it scales an already-defined property of whatever content is produced, and the same control is available for every output. Multiple such parameters may be exposed together as a configuration panel.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Predefined Parameters and Options",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "16255",
+   "title": "GenFrame - Embedding Generative AI Into Interactive Artifacts",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660750",
+   "system_id": "16255",
+   "evidence": [
+    {
+     "quote": "The Guidance knob controls the CFG scale, which is a hyperparameter controlling how strictly or freely the model should follow the prompt.",
+     "location": "full text, fine-tuning art styles"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "16462",
+   "title": "Describe Now: User-Driven Audio Description for Blind and Low Vision Individuals",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735685",
+   "system_id": "16462",
+   "evidence": [
+    {
+     "quote": "In a study, 20 BLV participants activated audio descriptions for seven different video genres with two levels of detail: concise and detailed.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16544",
+   "title": "Towards Holistic Prompt Craft",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735414",
+   "system_id": "16544",
+   "evidence": [
+    {
+     "quote": "The UI surfaces controls for the diffusion level (i.e., strength of the AI) and seed.",
+     "location": "full text fig 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16545",
+   "title": "Hidden Layer Interaction: A Technique to Explore the Material of Generative AI",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735437",
+   "system_id": "16545",
+   "evidence": [
+    {
+     "quote": "The interface consists of a drop-down menu to select a Layer and a slider to select a Channel (a).",
+     "location": "fig 7"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16652",
+   "title": "TaskLens: Generating Task-Conditioned Scaffolded Interfaces for Learning Professional Creative Software",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813081",
+   "system_id": "tasklens",
+   "evidence": [
+    {
+     "quote": "The scaffolded interface supports userselectable levels of complexity, which enables beginners to start with fundamental functions and expand the interface as they gain proficiency.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16683",
+   "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813005",
+   "system_id": "ideablocks",
+   "evidence": [
+    {
+     "quote": "range (controlled through the typicality slider)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "16818",
+   "title": "Exploring the Hidden Layers of Image Synthesis through Material-Driven Design Workshops with Fashion and Textile Practitioners",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813012",
+   "system_id": "16818",
+   "evidence": [
+    {
+     "quote": "Vertical and Horizontal sliders let users target specific neuron ranges within a channel, and Method and Factor controls let apply manipulation technique.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17083",
+   "title": "Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3609331",
+   "system_id": "marvista",
+   "evidence": [
+    {
+     "quote": "Before reading an article, Marvista helps a user plan what to read by filtering text based on how much time one can spend, based on which Marvista highlights the most summative subset of the text to read that stays within the user’s time budget (b).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1058 @@
+{
+ "pattern": {
+  "pattern_id": "pat-009",
+  "pattern_name": "Proactive Support",
+  "pattern_slug": "proactive-support",
+  "short_summary": "Output is emitted without a user request immediately preceding it.",
+  "definition": "Output is emitted without a user request immediately preceding it. The trigger is a timer, a change in sensed or task state, or the system's own decision that intervention is warranted, and the user takes no action to summon what appears.",
+  "structural_signature": "An output-producing edge in the control graph whose predecessor is not a user event: a clock, a state-change condition, or an internal decision step. There is no request object attributable to the user for that output, and the interface offers no control the user could have withheld to prevent it appearing at that moment.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Proactive Suggestions",
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "910",
+   "title": "VocabEncounter: NMT-powered Vocabulary Learning by Presenting Computer-Generated Usages of Foreign Words into Users' Daily Lives",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501839",
+   "system_id": "vocabencounter",
+   "evidence": [
+    {
+     "quote": "Then, without allocating dedicated time for studying, the user can become familiarized with how the words are used by seeing the example usages during daily activities, such as Web browsing.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "1699",
+   "title": "Listen to Music, Listen to Yourself: Design of a Conversational Agent to Support Self-Awareness While Listening to Music",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581427",
+   "system_id": "1699",
+   "evidence": [
+    {
+     "quote": "Moreover, we investigated two prominent design factors in the CA, proactive guidance and social information.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "1960",
+   "title": "Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581566",
+   "system_id": "1960",
+   "evidence": [
+    {
+     "quote": "proactively suggest relevant visuals in openvocabulary conversations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2258",
+   "title": "CatAlyst: Domain-Extensible Intervention for Preventing Task Procrastination Using Large Generative Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581133",
+   "system_id": "catalyst",
+   "evidence": [
+    {
+     "quote": "CatAlyst first detects when workers’ progress is halted and then intervenes with them by presenting the continuation of their work",
+     "location": "intro (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2508",
+   "title": "PANDALens: Towards AI-Assisted In-Context Writing on OHMD During Travels",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642320",
+   "system_id": "pandalens",
+   "evidence": [
+    {
+     "quote": "Detecting Jane’s prolonged gaze, PANDALens automatically takes a photo of the fower.",
+     "location": "system sec 5.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3004",
+   "title": "MindShift: Leveraging Large Language Models for Mental-States-Based Problematic Smartphone Use Intervention",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642790",
+   "system_id": "mindshift",
+   "evidence": [
+    {
+     "quote": "Finally, the persuasion will show up in users’ phones to encourage more mindful usage.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3208",
+   "title": "ClassMeta: Designing Interactive Virtual Classmate to Promote VR Classroom Participation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642947",
+   "system_id": "classmeta",
+   "evidence": [
+    {
+     "quote": "When ClassMeta detects that the class has been silent for a certain amount of time, it will intervene by either raising a question or answering the question according to the context (Figure 2 a1 a2).",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3243",
+   "title": "StayFocused: Examining the Effects of Reflective Prompts and Chatbot Support on Compulsive Smartphone Use",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642479",
+   "system_id": "stayfocused",
+   "evidence": [
+    {
+     "quote": "we incorporated refective prompts probing individuals’ phone-checking intentions whenever they check their phones and a chatbot to deliver these prompts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3324",
+   "title": "OmniActions: Predicting Digital Actions in Response to Real-World Multimodal Sensory Inputs with LLMs",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642068",
+   "system_id": "omniactions",
+   "evidence": [
+    {
+     "quote": "We envision that future interfaces should be designed to simultaneously process multimodal sensory inputs, analogous to human sensory perception, and proactively suggest follow-up actions on the target information.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3431",
+   "title": "D-Twins: Your Digital Twin Designed for Real-Time Boredom Intervention",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714163",
+   "system_id": "dtwins",
+   "evidence": [
+    {
+     "quote": "This integration enables D-Twins to rapidly recognize boredom and initiate personalized interventions, which users perceive as highly empathetic, turning boring environments into engaging experiences.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3618",
+   "title": "Piecing Together Teamwork: A Responsible Approach to an LLM-based Educational Jigsaw Agent",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713349",
+   "system_id": "3618",
+   "evidence": [
+    {
+     "quote": "LLM-powered agents can provide timely interventions in collaborative conversations when a teacher is unable to assist the students.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3819",
+   "title": "Are We On Track? AI-Assisted Active and Passive Goal Reflection During Meetings",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714052",
+   "system_id": "3819",
+   "evidence": [
+    {
+     "quote": "AI pops up a question with three options at the time when AI identifies a reflective discussion is needed",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3830",
+   "title": "Exploring the Design Space of Real-time LLM Knowledge Support Systems: A Case Study of Jargon Explanations",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714262",
+   "system_id": "3830",
+   "evidence": [
+    {
+     "quote": "The flashcards auto-scroll with every new jargon word.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3885",
+   "title": "Toward Enabling Natural Conversation with Older Adults via the Design of LLM-Powered Voice Agents that Support Interruptions and Backchannels",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714228",
+   "system_id": "3885",
+   "evidence": [
+    {
+     "quote": "the module will take the initiative to start the conversation again",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3927",
+   "title": "Social-RAG: Retrieving from Group Interactions to Socially Ground AI Generation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713749",
+   "system_id": "socialrag",
+   "evidence": [
+    {
+     "quote": "After gathering and processing this information, PaperPing sends new contextually grounded paper recommendations",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "3998",
+   "title": "AutoPBL: An LLM-powered Platform to Guide and Support Individual Learners Through Self Project-based Learning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714261",
+   "system_id": "autopbl",
+   "evidence": [
+    {
+     "quote": "Checkpoint questions are derived from a taxonomy tailored to SPBL that is designed to proactively engage learners with tasks on varying aspects of SPBL, including learning, doing, and high-level thinking (G2, G3, G4).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4032",
+   "title": "Maintaining \"Balanced\" Conflict: Proactive Intervention Strategies of AI Voice Agents in Online Collaboration of Temporary Design Teams",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713457",
+   "system_id": "4032",
+   "evidence": [
+    {
+     "quote": "The strategy development and effectiveness evaluation of AI voice agents in proactively intervening to manage conflicts.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4090",
+   "title": "CodeA11y: Making AI Coding Assistants Useful for Accessible Web Development",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713335",
+   "system_id": "codea11y",
+   "evidence": [
+    {
+     "quote": "CodeA11y addresses accessibility limitations of Copilot observed in our study with developers through three features: (1) accessibility-by-default code suggestions, (2) automatic identification of relevant accessibility errors, and (3) reminders to replace placeholders…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4105",
+   "title": "Talk to the Hand: an LLM-powered Chatbot with Visual Pointer as Proactive Companion for On-Screen Tasks",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3715579",
+   "system_id": "4105",
+   "evidence": [
+    {
+     "quote": "Proactivity, the AI's ability to proactively send messages to the user based on on-screen user activities",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4123",
+   "title": "Need Help? Designing Proactive AI Assistants for Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714002",
+   "system_id": "4123",
+   "evidence": [
+    {
+     "quote": "there is significant potential for these systems to proactively assist in tasks without explicit invocation, enabling a mixed-initiative interaction",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4195",
+   "title": "CoExploreDS: Framing and Advancing Collaborative Design Space Exploration Between Human and AI",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713869",
+   "system_id": "coexploreds",
+   "evidence": [
+    {
+     "quote": "This system also incorporates deductive, inductive, abductive, and analogical reasoning methods to proactively generate problem or solution suggestions.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4248",
+   "title": "Assistance or Disruption? Exploring and Evaluating the Design and Trade-offs of Proactive AI Programming Support",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713357",
+   "system_id": "4248",
+   "evidence": [
+    {
+     "quote": "a design probe LLM agent that initiates programming assistance based on editor activities and task context",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4393",
+   "title": "Satori 悟り: Towards Proactive AR Assistant with Belief-Desire-Intention User Modeling",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714188",
+   "system_id": "4393",
+   "evidence": [
+    {
+     "quote": "we present Satori, a novel AR system that proactively guides users by modeling both – their mental states and environmental contexts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4421",
+   "title": "Proactive Conversational Agents with Inner Thoughts",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713760",
+   "system_id": "4421",
+   "evidence": [
+    {
+     "quote": "a proactive AI formulates its own inner thoughts during a conversation, and seeks the right moment to contribute",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4580",
+   "title": "AiGet: Transforming Everyday Moments into Hidden Knowledge Discovery with AI Assistance on Smart Glasses",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713953",
+   "system_id": "aiget",
+   "evidence": [
+    {
+     "quote": "we introduce AiGet, a proactive AI assistant integrated with AR smart glasses, designed to seamlessly embed informal learning into lowdemand daily activities (e.g., casual walking and shopping)",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4672",
+   "title": "GraftMind: Facilitating Group Ideation with AI-Mediated Idea Sharing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791388",
+   "system_id": "graftmind",
+   "evidence": [
+    {
+     "quote": "we developed GraftMind, a system that enables users to ideate in private workspaces while an AI mediator proactively leverages collective ideas to provide real-time ideation assistance",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4698",
+   "title": "Having Lunch Now: Understanding How Users Engage with a Proactive Agent for Daily Planning and Self-Reflection",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790957",
+   "system_id": "4698",
+   "evidence": [
+    {
+     "quote": "We conducted a 14-day longitudinal study with 12 participants using a proactive agent that initiated regular check-ins to support daily planning and reflection.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "4818",
+   "title": "SeeSawBot: An LLM-Driven Chatbot Mediating Across Private and Shared Slack Channels to Support Team Dynamics",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791880",
+   "system_id": "seesawbot",
+   "evidence": [
+    {
+     "quote": "Users could tag SeeSawBot in a channel for reactive support, message it directly for private replies, or let it listen and step in proactively in channels or DMs.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4883",
+   "title": "Cognitive Bridge: AI-Generated Boundary Objects for Cross-Functional Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791399",
+   "system_id": "4883",
+   "evidence": [
+    {
+     "quote": "Numbered items: 1–3) interaction modes: Proactive (automatic misalignment detection and generation)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "system_id": "4912",
+   "evidence": [
+    {
+     "quote": "In the final design, every Monday, Quologue reveals only three keywords generated from a randomly selected highlight from a user’s data.",
+     "location": "system sec 3.1.3 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4991",
+   "title": "AmongOthers: A Design Speculation for Rethinking AI in Online Social Communities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790722",
+   "system_id": "amongothers",
+   "evidence": [
+    {
+     "quote": "Simulation flow for periodic execution samples a small set as candidates for commenting and reacting.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5011",
+   "title": "Bloom: Designing for LLM-Augmented Behavior Change Interactions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790506",
+   "system_id": "bloom",
+   "evidence": [
+    {
+     "quote": "(B) The app’s home screen, showing weekly progress, upcoming activities, and proactive messages from Beebo.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5074",
+   "title": "Exploring The Impact of Proactive Generative AI Agent Roles In Time-Sensitive Collaborative Problem-Solving Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791592",
+   "system_id": "5074",
+   "evidence": [
+    {
+     "quote": "(3) they should act proactively, stepping in without waiting for explicit prompts",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5135",
+   "title": "I Felt Bad After We Ignored Her: Understanding How Interface-Driven Social Prominence Shapes Group Discussions with GenAI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791881",
+   "system_id": "5135",
+   "evidence": [
+    {
+     "quote": "We then present a GenAI-based conversational agent that can actively engage in spoken dialogue during video calls",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5281",
+   "title": "ProVoice: Designing Proactive Functionality for In-Vehicle Conversational Assistants using Multi-Objective Bayesian Optimization to Enhance Driver Experience",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791877",
+   "system_id": "provoice",
+   "evidence": [
+    {
+     "quote": "The next step for In-vehicle Conversational Assistants (IVCAs) will be their capability to initiate and automate proactive system interactions throughout journeys.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5352",
+   "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791680",
+   "system_id": "clearfairy",
+   "evidence": [
+    {
+     "quote": "DG2: Detect insufficient rationales in professionals’ decisions and clarify reasoning through in-situ prompting.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5378",
+   "title": "RageSense: Leveraging Acoustic Sensing and LLM-Based Intervention for Emotion Regulation in Mobile Gaming",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791076",
+   "system_id": "ragesense",
+   "evidence": [
+    {
+     "quote": "To transform detection into action, we integrate a large language model (LLM) that generates empathetic, context-aware interventions based on gameplay screenshots, behavioral signals, and emotional trajectories.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5427",
+   "title": "Proactive AI as a Catalyst for Creativity? Balancing Human Agency and AI Contribution in Collaborative Story Writing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790848",
+   "system_id": "5427",
+   "evidence": [
+    {
+     "quote": "Among these, proactive AI assistance–where the system actively infers user needs and offers suggestions without explicit prompts–represents a particularly involved and interventionist approach [28].",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5432",
+   "title": "Prototyping Multimodal GenAI Real-Time Agents with Counterfactual Replays and Hybrid Wizard-of-Oz",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790800",
+   "system_id": "5432",
+   "evidence": [
+    {
+     "quote": "SocraBot follows the user’s verbalizations and screen actions and proactively sends support messages that appear in the overlay GUI window",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Guidance and Feedback"
+   ]
+  },
+  {
+   "rid": "5447",
+   "title": "I followed what felt right, not what I was told: Autonomy, Coaching, and Recognizing Bias Through AI-Mediated Dialogue",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791078",
+   "system_id": "5447",
+   "evidence": [
+    {
+     "quote": "AI nudges toward bias (Bias-Directed), inclusion (Neutral-Directed), unguided dialogue (Self-Directed)",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-005",
+ "exemplars": [
+  {
+   "rid": "13588",
+   "title": "Spellburst: A Node-based Interface for Exploratory Creative Coding with Natural Language Prompts",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606719",
+   "final_score": 4.95,
+   "why": "Spellburst makes persistent alternatives the interface itself: artists create variation branches in a node graph and can merge paths without destroying their separate histories.",
+   "over_the_runner_up": "It outranks Branchat because it supports both forking and recombination in a visible node graph, demonstrating a richer form of branching exploration than conversation-tree navigation alone."
+  },
+  {
+   "rid": "9118",
+   "title": "Branchat: A Tree-Structured Interface for Efficient Revisitation in Long-Horizon LLM Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798792",
+   "final_score": 4.7,
+   "why": "Branchat provides an unusually precise fork operation: users can select any retained conversation node as a parent and spawn a divergent branch within a tree designed for later revisitation.",
+   "over_the_runner_up": "It outranks ImaginationVellum because the evidence identifies the exact user control and parent-child operation used to create a branch, whereas ImaginationVellum's navigation and display mechanics are less fully specified."
+  },
+  {
+   "rid": "13801",
+   "title": "ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747631",
+   "final_score": 4.6,
+   "why": "ImaginationVellum lets users return to different previously generated designs and grow new variation branches from each, preserving multiple visual lineages as live source material on an ideation canvas.",
+   "over_the_runner_up": "It outranks -generAItor because its evidence explicitly shows user-created forking from retained alternatives, while -generAItor clearly exposes a beam-search tree but does not establish an equally explicit path-creation control."
+  }
+ ],
+ "notes": "I departed from the consensus by moving rid 10375 (-generAItor) out of the final three and elevating rids 9118 and 13801. The visible beam-search tree in -generAItor is compelling, but the supplied evidence emphasizes inspecting, explaining, and adapting a model-generated tree rather than explicitly creating and switching among user-controlled branches, leaving part of the structural signature unverified. I raised Branchat by 0.15 and ImaginationVellum by 0.05 because their evidence more directly establishes nondestructive forking from retained prior states; no adjustment exceeds 0.3. Readers should still be cautious that the short excerpts do not independently document every required control: Spellburst's abstract does not explicitly describe active-path switching, Branchat's excerpt does not state that all branches are simultaneously displayed, and ImaginationVellum's excerpt leaves canvas navigation mechanics implicit.",
+ "pattern_name": "Branching Exploration",
+ "category_id": "U05",
+ "rated": 39
+}

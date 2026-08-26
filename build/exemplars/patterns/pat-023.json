@@ -1,0 +1,1514 @@
+{
+ "pattern": {
+  "pattern_id": "pat-023",
+  "pattern_name": "Goal Decomposition",
+  "pattern_slug": "goal-decomposition",
+  "short_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+  "definition": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot. The decomposition is derived from the particular goal, so its shape varies with the input. Each part surfaces as its own step that can be inspected or edited before the next is taken.",
+  "structural_signature": "An input goal is transformed into an ordered list of sub-parts whose length and identity are computed per input (by the system, the user, or both). Each sub-part is executed or generated separately, in sequence, and appears as a discrete step in the interface; the final artifact is assembled from the parts. The sequence exists only for this goal — a different goal yields a different sequence.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 56,
+ "candidates": [
+  {
+   "rid": "1322",
+   "title": "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3517582",
+   "system_id": "1322",
+   "evidence": [
+    {
+     "quote": "debugged unexpected model outputs by “unit-testing” sub-components of a Chain",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2812",
+   "title": "VAL: Interactive Task Learning with GPT Dialog Parsing",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641915",
+   "system_id": "val",
+   "evidence": [
+    {
+     "quote": "a tree structure in which tasks decompose into sequences of subtasks",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3196",
+   "title": "ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642229",
+   "system_id": "chatscratch",
+   "evidence": [
+    {
+     "quote": "the assistant can not only assist children by generating step-by-step code guidance but also improve their CT skills and engagement",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3216",
+   "title": "LLMR: Real-time Prompting of Interactive Worlds using Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642579",
+   "system_id": "llmr",
+   "evidence": [
+    {
+     "quote": "We start with the Planner, which breaks down the user’s request into a sequence of appropriately scoped instructions.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3392",
+   "title": "DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714115",
+   "system_id": "dynex",
+   "evidence": [
+    {
+     "quote": "Code is generated sequentially, and users can test and approve each step before moving onto the next.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3620",
+   "title": "LADICA: A Large Shared Display Interface for Generative AI Cognitive Assistance in Co-located Team Collaboration",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713289",
+   "system_id": "ladica",
+   "evidence": [
+    {
+     "quote": "The team can activate the feature by pressing button on toolbar. Then they can enter their group goal on query bar and LADICA will suggest sub-goals for group collaboration.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3842",
+   "title": "eXplainMR: Generating Real-time Textual and Visual eXplanations to Facilitate UltraSonography Learning in MR",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714015",
+   "system_id": "explainmr",
+   "evidence": [
+    {
+     "quote": "automatically generates subgoals for obtaining an ultrasound image",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3998",
+   "title": "AutoPBL: An LLM-powered Platform to Guide and Support Individual Learners Through Self Project-based Learning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714261",
+   "system_id": "autopbl",
+   "evidence": [
+    {
+     "quote": "AutoPBL tutorials follow a pre-generated two-level project framework.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4034",
+   "title": "CARING-AI: Towards Authoring Context-aware Augmented Reality INstruction through Generative Artificial Intelligence",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713348",
+   "system_id": "caringai",
+   "evidence": [
+    {
+     "quote": "The animation is generated from the textual input of \"cutting an apple\" and contains the following steps: 1) Go to the cutting board, 2) Take the apple with the left hand, 3) Put the apple on the cutting board, 4) Go towards the knife area, 5) Take the knife with the right hand, 6) Go to the cutting board, 7) Cut the ap…",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4190",
+   "title": "DreamGarden: A Designer Assistant for Growing Games from a Single Prompt",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714233",
+   "system_id": "dreamgarden",
+   "evidence": [
+    {
+     "quote": "an LLM-driven planner, capable of breaking down a single, high-level prompt—a dream, memory, or imagined scenario provided by a human user—into a hierarchical action plan",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4310",
+   "title": "Do It For Me vs. Do It With Me: Investigating User Perceptions of Different Paradigms of Automation in Copilots for Feature-Rich Software",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713431",
+   "system_id": "4310",
+   "evidence": [
+    {
+     "quote": "(a) Copilot assistance is structured to provide step-by-step guidance along with semi-automation for only repetitive or trivial steps in the task",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4436",
+   "title": "DBox: Scaffolding Algorithmic Programming Learning through Learner-LLM Co-Decomposition",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713748",
+   "system_id": "dbox",
+   "evidence": [
+    {
+     "quote": "an interactive LLM-based system that scaffolds and adapts to learners’ personalized construction of a step tree through a “learner-LLM co-decomposition” approach, providing tailored support at an appropriate level",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5063",
+   "title": "DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of Task-Oriented Interfaces",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790441",
+   "system_id": "duetui",
+   "evidence": [
+    {
+     "quote": "The agent decomposes a high-level goal into a concrete interface scaffold",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5098",
+   "title": "InspirationGraph for Progressive Design Space Exploration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790779",
+   "system_id": "5098",
+   "evidence": [
+    {
+     "quote": "The system decomposes the exploration into step-by-step iterations using dimension–attribute dictionaries.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5182",
+   "title": "Towards LLM-powered Assistive Drone for Blind and Low Vision Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791343",
+   "system_id": "5182",
+   "evidence": [
+    {
+     "quote": "We leverage an LLM to translate high-level user goals to step-by-step instructions for the drone",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5265",
+   "title": "DataSpeck: An AI-Driven Human-in-the-Loop System for Automating Transformations in Data Conversion Workflows",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791857",
+   "system_id": "dataspeck",
+   "evidence": [
+    {
+     "quote": "DataSpeck employs an AI-driven human-in-the-loop design, using LLMs to analyze semantic relationships and generate step-by-step transformation pipelines autonomously, while only requesting user attention to resolve semantic ambiguities.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5425",
+   "title": "Req2CAD: bridging functional requirements and parametric CAD models to support conceptual 3D design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791949",
+   "system_id": "req2cad",
+   "evidence": [
+    {
+     "quote": "(a) Performing function decomposition from a design problem and reasoning component-level CAD structures for each sub-function.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5627",
+   "title": "When Should Users Check? Modeling Confirmation Frequency in Multi-Step Agentic AI Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790655",
+   "system_id": "5627",
+   "evidence": [
+    {
+     "quote": "Over multiple steps, the agent decomposes a high-level goal into a sequence of fine-grained interface operations.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5764",
+   "title": "GuideMe: A VLM-Based System Assisting Independent Smartphone Learning for Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791448",
+   "system_id": "guideme",
+   "evidence": [
+    {
+     "quote": "GuideMe assists older adults in learning to use a smartphone independently by allowing them to communicate their questions and follow step-by-step instructions.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5950",
+   "title": "From Struggle to Success: Context-Aware Guidance for Screen Reader Users in Computer Use",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790661",
+   "system_id": "5950",
+   "evidence": [
+    {
+     "quote": "We introduce AskEase, an on-demand AI assistant that provides step-by-step, screen reader user-friendly guidance for computer use.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5968",
+   "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791673",
+   "system_id": "cocoa",
+   "evidence": [
+    {
+     "quote": "An interactive plan (A) affords human-agent co-planning and co-execution: a researcher and the AI agent can collaboratively edit the plan in the document and execute the plan steps, similar to executing code cells in a computational notebook.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6000",
+   "title": "Virtual Minds, Real Work: LLM-Powered Preference-Based Planning through Spatial Multi-Agent-Human Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791926",
+   "system_id": "6000",
+   "evidence": [
+    {
+     "quote": "This mechanism automatically decomposes tasks into guidelines and sequentially introduces expert agents.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6029",
+   "title": "AI-generated AR Reassembly Guidance from Disassembly Videos to Scaffold Everyday Repair",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790494",
+   "system_id": "6029",
+   "evidence": [
+    {
+     "quote": "RePairAR deduces steppart-relation structures, reverses these for reassembly planning, and delivers the guidance through mixed-media AR visualizations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6060",
+   "title": "DroidRetriever: A Transparent and Steerable Automation System for Collaborative Mobile Information Seeking",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790396",
+   "system_id": "droidretriever",
+   "evidence": [
+    {
+     "quote": "The system takes natural language commands from users, decomposes tasks, navigates automatically, and finally displays the report at the bottom of the dashboard.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6679",
+   "title": "PromptChainer: Chaining Large Language Model Prompts through Visual Programming",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519729",
+   "system_id": "promptchainer",
+   "evidence": [
+    {
+     "quote": "Recent work has found that chaining multiple LLM runs together (with the output of one step being the input to the next) can help users accomplish these more complex tasks",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7467",
+   "title": "Beyond ChatBots: ExploreLLM for Structured Thoughts and Personalized Model Responses",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651093",
+   "system_id": "7467",
+   "evidence": [
+    {
+     "quote": "ExploreLLM introduces a new interaction pattern with large language models (LLMs) by automatically decomposing complex tasks into sub-tasks",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7490",
+   "title": "CoExplorer: Generative AI Powered 2D and 3D Adaptive Interfaces to Support Intentionality in Video Meetings",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650797",
+   "system_id": "coexplorer",
+   "evidence": [
+    {
+     "quote": "Before the meeting, a GenAI system analyzes an email meeting description and then generates proposed meeting phases as well as a tool for all attendees to identify discussion focus, from which the phases are further refned.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8256",
+   "title": "DocVoyager: Anticipating User's Information Needs and Guiding Document Reading through Question Answering",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719846",
+   "system_id": "docvoyager",
+   "evidence": [
+    {
+     "quote": "DP1. Guide Users to Resolve their Information Needs Stepby-Step.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "8324",
+   "title": "Exploring the Impact of Chatbot Design on Student Engagement and Cognitive Load: A Case Study on Error-Analysis Chatbots",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719862",
+   "system_id": "8324",
+   "evidence": [
+    {
+     "quote": "The GuidedProblem-Solving approach is rooted in scaffolding theories, which emphasize breaking down complex tasks into smaller, more manageable steps to support learning [20]. By posing sequential and targeted questions, this design encourages active problem-solving and engagement",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8397",
+   "title": "Improving User Engagement and Learning Outcomes in LLM-Based Python Tutor: A Study of PACE",
+   "venue": "chiea",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720240",
+   "system_id": "8397",
+   "evidence": [
+    {
+     "quote": "Scaffolding Dataset contains Python problems broken down into smaller sub-problems, each including questions, answers, hints, and incorrect responses with feedback, facts, and solutions for the main problem.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8770",
+   "title": "Demonstrating DreamGarden: A Designer Assistant for Growing Games from a Single Prompt",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721282",
+   "system_id": "demonstratingdreamgarden",
+   "evidence": [
+    {
+     "quote": "capable of breaking down a single, high-level prompt—a dream, memory, or imagined scenario provided by a human user—into a hierarchical action plan",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "9158",
+   "title": "Collaborative AI Scaffolding for Structured Drawing in Dementia Care: A Feasibility Study",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798912",
+   "system_id": "9158",
+   "evidence": [
+    {
+     "quote": "The system summarizes what has been drawn and suggests the next step and/or a color change.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9301",
+   "title": "From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798904",
+   "system_id": "9301",
+   "evidence": [
+    {
+     "quote": "Planner Agent is responsible for proposing and maintaining a list of modeling steps (i.e., a todo list) based on the given task description",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9324",
+   "title": "GenMemo: Exploring Narrative Chaining Visual Mnemonics to Support Memorization of Structured Proposition Texts",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798473",
+   "system_id": "genmemo",
+   "evidence": [
+    {
+     "quote": "GenMemo parses it into concise information units and generates narrative chaining visual mnemonics with shared anchors.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "evidence": [
+    {
+     "quote": "A VLM/LLM pipeline segments the narrated demonstration into steps and refines them into atomic tasks that can be assigned to either the human or the cobot.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10210",
+   "title": "StepMIND: A Visual Framework for Stepwise, Multimodal, and Bidirectional Explanations of AI-Generated Data Analysis Pipeline",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789070",
+   "system_id": "stepmind",
+   "evidence": [
+    {
+     "quote": "By enabling the explanation mode via B , STAGE decomposes the AI-generated query into a sequence of discrete operations such as SELECT, JOIN, WHERE, and GROUP BY, presenting each transformation as an editable step.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10246",
+   "title": "From Visual to Multimodal Programming: Designing an Interface to Externalize Decomposition Thinking for Novice Learners",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789131",
+   "system_id": "10246",
+   "evidence": [
+    {
+     "quote": "We present Spark, a multimodal programming interface that supports the externalization of decomposition thinking by organizing userarticulated goals into structured steps and enacting them through a tangible robot, making decomposition visible and open to inspection.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10369",
+   "title": "Talk2Data: A Natural Language Interface for Exploratory Visual Analysis via Question Decomposition",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643894",
+   "system_id": "talk2data",
+   "evidence": [
+    {
+     "quote": "It leverages an advanced deep-learning model to resolve complex questions into a series of simple questions that could gradually elaborate on the users’ requirements.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10427",
+   "title": "Urania: Visualizing Data Analysis Pipelines for Natural Language-Based Data Exploration",
+   "venue": "tiis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3770071",
+   "system_id": "urania",
+   "evidence": [
+    {
+     "quote": "a novel dataaware question decomposition algorithm that resolves each input question into a data analysis pipeline",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12266",
+   "title": "SNIL: Generating Sports News From Insights With Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3392683",
+   "system_id": "snil",
+   "evidence": [
+    {
+     "quote": "A logical narrative structure with six episodes created by SNIL about the insight: “Joel Embiid most shots were taken from mid-range and happened in the first quarter.” Each episode includes title and description to facilitate the generation of charts and text.",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12319",
+   "title": "SPROUT: An Interactive Authoring Tool for Generating Programming Tutorials With the Visualization of Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3410523",
+   "system_id": "sprout",
+   "evidence": [
+    {
+     "quote": "we decompose the tutorial authoring tasks into a step-by-step exploratory process towards final document accomplishment",
+     "location": "full text, intro"
+    }
+   ],
+   "other_patterns_in_paper": 15,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12415",
+   "title": "LightVA: Lightweight Visual Analytics With LLM Agent-Based Task Planning and Execution",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3496112",
+   "system_id": "lightva",
+   "evidence": [
+    {
+     "quote": "Our method is designed to help users progressively translate high-level analytical goals into low-level tasks, producing visualizations and deriving insights.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12862",
+   "title": "Urbanite: A Dataflow-Based Framework for Human-AI Interactive Alignment in Urban Visual Analytics",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634644",
+   "system_id": "urbanite",
+   "evidence": [
+    {
+     "quote": "(a) The user starts with dataflow generation to define a task.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12953",
+   "title": "Chat2Layout: Interactive 3D Furniture Layout With a Multimodal LLM",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3626731",
+   "system_id": "chat2layout",
+   "evidence": [
+    {
+     "quote": "the agent translating requirements into a task and decomposing it into a sequence of atomic tasks",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13647",
+   "title": "StepWrite: Adaptive Planning for Speech-Driven Text Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747610",
+   "system_id": "stepwrite",
+   "evidence": [
+    {
+     "quote": "StepWrite decomposes the writing process into manageable subtasks and sequentially guides users with contextually-aware nonvisual audio prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13700",
+   "title": "Log2Plan: An Adaptive GUI Automation Framework Integrated with Task Mining Approach",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747663",
+   "system_id": "log2plan",
+   "evidence": [
+    {
+     "quote": "The user command is decomposed into a sequence of event-level tasks. Then, the LocalPlanner generates a task block-level plan, which corresponds to the event, optimized for the current GUI environment.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13705",
+   "title": "MapStory: Prototyping Editable Map Animations with LLM Agents",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747664",
+   "system_id": "mapstory",
+   "evidence": [
+    {
+     "quote": "Users write and edit a script (a), which generates an editable scene breakdown (b).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13791",
+   "title": "Steering Semantic Data Processing With DocWrangler",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747625",
+   "system_id": "13791",
+   "evidence": [
+    {
+     "quote": "(iii) LLM-Assisted Operation Decomposition that identifies when operations or documents are too complex for the LLM to correctly process and suggests decompositions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "13794",
+   "title": "ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747644",
+   "system_id": "respark",
+   "evidence": [
+    {
+     "quote": "the data analysis workflow (a) includes a series of interdependent analysis segments (a1), each corresponding to an analytical objective, data transformations, and insights (a2).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13807",
+   "title": "Vid2Coach: Transforming How-To Videos into Task Assistants",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747612",
+   "system_id": "vid2coach",
+   "evidence": [
+    {
+     "quote": "Given a how-to video, Vid2Coach extracts high-level steps and demonstration details",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13814",
+   "title": "Guided Reality: Generating Visually-Enriched AR Task Guidance with LLMs and Vision Models",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747784",
+   "system_id": "13814",
+   "evidence": [
+    {
+     "quote": "the system generates a step-by-step structured task plan, where each step includes both text and visual guidance embedded in the physical environment",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "14038",
+   "title": "AgentPbD: Interactive Agentic Workflow Generation from User Demonstration on Web Browsers",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00064",
+   "system_id": "agentpbd",
+   "evidence": [
+    {
+     "quote": "Based on the procedural knowledge embedded in a task demonstration, AGENTPbD automatically parses the workflow into inter-connected sub-tasks as a tree structure, while allowing users to change tool use, modify prompts as well as reconstruct the workflow logic.",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14044",
+   "title": "ProDec: Automated Prompt Decomposition",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00070",
+   "system_id": "prodec",
+   "evidence": [
+    {
+     "quote": "We present ProDec, a system that automatically decomposes complex programming prompts into structured subtasks with explicit dependencies, enabling interactive visual exploration and modification of AI reasoning steps.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15726",
+   "title": "WePilot: Integrating Younger Family Members and Chatbot to Support Older Adults Learning Smartphone Usage",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757703",
+   "system_id": "wepilot",
+   "evidence": [
+    {
+     "quote": "WePilot simplifies this process by converting brief descriptions or online tutorial resources into structured solutions (DS3).",
+     "location": "full text sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 12,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16860",
+   "title": "Robo-Blocks: Generative Scaffolding in End-User Design and Programming of Social Robots",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812997",
+   "system_id": "roboblocks",
+   "evidence": [
+    {
+     "quote": "The agent will then convert the story into programmable goals and display them in (b). Hints serve as a secondary layer of scaffolding, further breaking down each programming goal into concrete steps for the user.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17209",
+   "title": "TableTalk: Scaffolding Spreadsheet Development with a Language Agent",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3765286",
+   "system_id": "tabletalk",
+   "evidence": [
+    {
+     "quote": "It uses pre-defined tools to generate spreadsheet components and incrementally build spreadsheets.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

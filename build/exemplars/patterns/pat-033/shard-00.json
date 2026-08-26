@@ -1,0 +1,1065 @@
+{
+ "pattern": {
+  "pattern_id": "pat-033",
+  "pattern_name": "Output Templates",
+  "pattern_slug": "output-templates",
+  "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+  "definition": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take. Generation is validated against or rendered into that structure rather than emitted as free text. The structure exists at the type level: it applies to every output the system produces, not just this one.",
+  "structural_signature": "A named structure with enumerated parts (fields, sections, component types, category labels) is defined independently of any single generation and is stored in the system. The generator's output is emitted into, checked against, or parsed by that structure, and downstream rendering is per-part: each part gets its own visual slot, colour, or handle. Outputs that do not conform are corrected or rejected before display.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U03",
+   "category_name": "Constraints, Guardrails & Reserved Control",
+   "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+   "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "623",
+   "title": "IntelliCircos: A Data-driven and AI-powered Authoring Tool for Circos Plots",
+   "venue": "cgf-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70118",
+   "system_id": "intellicircos",
+   "evidence": [
+    {
+     "quote": "A CIRCOS begins with the <start> terminator and ends with CIRCOS_END, containing one or multiple RING elements. A RING consists of TRACK elements, and RINGs are separated by the <split> terminator, ordered from outside to inside.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "969",
+   "title": "Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3502087",
+   "system_id": "promptiverse",
+   "evidence": [
+    {
+     "quote": "Different types of single prompts that vary by which knowledge elements in the triplet are provided or hidden.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2030",
+   "title": "CoArgue : Fostering Lurkers' Contribution to Collective Arguments in Community-based QA Platforms",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580932",
+   "system_id": "coargue",
+   "evidence": [
+    {
+     "quote": "we developed the taxonomies below to facilitate the design of CoArgue: • Stance: people’s sentiment on a particular topic (e.g., positive, neutral, and negative)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2181",
+   "title": "AngleKindling: Supporting Journalistic Angle Ideation with Large Language Models",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580907",
+   "system_id": "anglekindling",
+   "evidence": [
+    {
+     "quote": "Each section is then inputted to a set of four LLM prompts, to (1) extract the main points of the section (2) ideate potential controversies, (3) identify areas to investigate",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2257",
+   "title": "Don't Just Tell Me, Ask Me: AI Systems that Intelligently Frame Explanations as Questions Improve Human Logical Discernment Accuracy over Causal AI explanations",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580672",
+   "system_id": "2257",
+   "evidence": [
+    {
+     "quote": "the AI explanation feedback templates for causal AI explanations and AI-framed Questioning explanations were shaped in a way that it identifes and highlights the link between premises and conclusion",
+     "location": "full text sec 4.2 Explanation Feedback"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2338",
+   "title": "Beyond Numbers: Creating Analogies to Enhance Data Comprehension and Communication with Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642480",
+   "system_id": "2338",
+   "evidence": [
+    {
+     "quote": "Data analogy design space, which consists of two perspectives: data analogy design (analogy strategy, measurement transformation, and data binding type) and data analogy presentation (presentation form and layout).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "2468",
+   "title": "Inkeraction: An Interaction Modality Powered by Ink Recognition and Synthesis",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642498",
+   "system_id": "inkeraction",
+   "evidence": [
+    {
+     "quote": "The common labels used to describe ink objects and varied relationships between ink objects. The objects are hierarchical, and higher-level objects are made of lower-level objects.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2491",
+   "title": "DiaryHelper: Exploring the Use of an Automatic Contextual Information Recording Agent for Elicitation Diary Study",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642853",
+   "system_id": "diaryhelper",
+   "evidence": [
+    {
+     "quote": "we selected fve dimensions of contextual information to record in DiaryHelper , which are time, location, emotion, people, and activity",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2533",
+   "title": "TutoAI: a cross-domain framework for AI-assisted mixed-media tutorial creation on physical tasks",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642443",
+   "system_id": "tutoai",
+   "evidence": [
+    {
+     "quote": "TutoAI is built on three types of crossdomain components in mixed-media tutorials (D1): steps, objects, and dependencies",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2588",
+   "title": "BIDTrainer: An LLMs-driven Education Tool for Enhancing the Understanding and Reasoning in Bio-inspired Design",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642887",
+   "system_id": "bidtrainer",
+   "evidence": [
+    {
+     "quote": "we present each BID case from the “innovations” section of AskNature [8] as structured triples: \"source -> benefts -> application (S -> B -> A",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2592",
+   "title": "CloChat: Understanding How People Customize, Interact, and Experience Personas in Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642472",
+   "system_id": "clochat",
+   "evidence": [
+    {
+     "quote": "(Step 1) Given the non-visual traits from the CloChat design lab, we first convert them to a JSON specification (purple-filled box).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "3195",
+   "title": "From Paper to Card: Transforming Design Implications with Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642266",
+   "system_id": "3195",
+   "evidence": [
+    {
+     "quote": "Specifcally, we put core design card components (i.e., title, description, image) on the front side, and all the other components (i.e., paper summary, evidence, citation) on the backside.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3405",
+   "title": "GistVis: Automatic Generation of Word-scale Visualizations from Data-rich Documents",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713881",
+   "system_id": "gistvis",
+   "evidence": [
+    {
+     "quote": "Each element in data specification consists a fourtuple, space ❶, breakdown ❷, feature ❸ and value ❹.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3564",
+   "title": "OmniQuery: Contextually Augmenting Captured Multimodal Memories to Enable Personal Question Answering",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713448",
+   "system_id": "omniquery",
+   "evidence": [
+    {
+     "quote": "We conducted a one-month diary study to collect realistic user queries and generated a taxonomy of necessary contextual information for integrating with captured memories.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "3617",
+   "title": "Generative and Malleable User Interfaces with Generative and Evolving Task-Driven Data Model",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713285",
+   "system_id": "3617",
+   "evidence": [
+    {
+     "quote": "The format of object-relational schema and the annotation of attributes within the schema.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3655",
+   "title": "Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713181",
+   "system_id": "3655",
+   "evidence": [
+    {
+     "quote": "checklist-based approaches [41, 42] introduce the use of checklists to evaluate text by breaking down rating dimensions into several key components",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation"
+   ]
+  },
+  {
+   "rid": "3725",
+   "title": "RiskRAG: A Data-Driven Solution for Improved AI Model Risk Reporting",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713979",
+   "system_id": "riskrag",
+   "evidence": [
+    {
+     "quote": "The RiskRAG report includes exemplary model uses (A), a summary of risks by use case (B), and corresponding mitigations (C).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4101",
+   "title": "IdeationWeb: Tracking the Evolution of Design Ideas in Human-AI Co-Creation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713375",
+   "system_id": "ideationweb",
+   "evidence": [
+    {
+     "quote": "It generates structured responses (DG1) based on the FBS model, which is widely adopted in product and engineering design",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4215",
+   "title": "Leveraging Multimodal LLM for Inspirational User Interface Search",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714213",
+   "system_id": "4215",
+   "evidence": [
+    {
+     "quote": "The left panel displays our prompt concept (the mobile UI screenshot and additional prompts (i.e., assistant persona, instruction, feature list, feature definition & instruction, and response form)",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4755",
+   "title": "AgentHands: Generating Interactive Hand Gestures for Spatially Grounded Agent Conversations in XR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790938",
+   "system_id": "agenthands",
+   "evidence": [
+    {
+     "quote": "using a meta-instruction, AgentHands generates verbal responses embedded with GestureEvents aligned to specific words; each event specifies gesture type and parameters",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "system_id": "iruler",
+   "evidence": [
+    {
+     "quote": "Rubrics satisfy this by defining levels for each criteria, and supports weighting criteria by importance all in a tabular layout [20, 63, 125].",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4898",
+   "title": "MindfulAgents: Personalizing Mindfulness Meditation via an Expert-Aligned Multi-Agent System",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791817",
+   "system_id": "mindfulagents",
+   "evidence": [
+    {
+     "quote": "the pipeline begins with the Expert-Alignment Agent (Sec. 4.1), which generates safe meditation guidance templates grounded in expert knowledge and feedback",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4907",
+   "title": "InkIdeator: Supporting Chinese-Style Visual Design Ideation via AI-Infused Exploration of Chinese Paintings",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791675",
+   "system_id": "inkideator",
+   "evidence": [
+    {
+     "quote": "the middle panel shows the prompt structure (i.e., Role Play, Dimension Analysis, Chinese Painting Knowledge Injection, and Response Format) with example",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5064",
+   "title": "Bridging Gulfs in UI Generation through Semantic Guidance",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791966",
+   "system_id": "5064",
+   "evidence": [
+    {
+     "quote": "This yields a four-level hierarchical representation — Product , Design System , Feature , Component — that organizes interdependent des",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "5150",
+   "title": "Toward Scalable ASL Education: Egocentric Stereo Sensing with LLM Feedback for Error-Aware Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790774",
+   "system_id": "5150",
+   "evidence": [
+    {
+     "quote": "we grounded our feedback taxonomy in the standard phonological model of ASL, which categorizes signs into five distinct parameters",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5163",
+   "title": "OpenCD: Empowering Diagnosis of Children's Mathematical Cognition through Open-ended Multimodal Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790318",
+   "system_id": "opencd",
+   "evidence": [
+    {
+     "quote": "This analytical process relies on fne-grained pedagogical knowledge, including the typical behaviors, the key cognitive nodes, how behaviors map to cognition, and the developmental relationships between cognitive nodes.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5176",
+   "title": "From Conversation to Human-AI Common Ground: Extracting Cognitive Workflows for Reuse in Sense-making Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791669",
+   "system_id": "5176",
+   "evidence": [
+    {
+     "quote": "Schema structure. The schema externalizes conversation into phases linked by dependencies, and within each phase captures inputs, activities (thinking steps, and decisions), and outputs.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5218",
+   "title": "Think Twice: Improving Privacy Awareness with Tailored LLM-Powered Interventions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791583",
+   "system_id": "5218",
+   "evidence": [
+    {
+     "quote": "We specified the intervention format in the instructions for consistency across intervention categories and participants. Interventions were concise (under 100 words) and presented as bullet points for the three parts of the interventions.",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5220",
+   "title": "CaseMaster: Designing and Evaluating a Probe for Oral Case Presentation Training with LLM Assistance",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790304",
+   "system_id": "casemaster",
+   "evidence": [
+    {
+     "quote": "prepare their case using the SOAP format",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5260",
+   "title": "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791381",
+   "system_id": "autiverse",
+   "evidence": [
+    {
+     "quote": "It segments what the adolescent has spoken ( b ○) in a specific structure ( c ○) and elicits missing parts",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5348",
+   "title": "RPGAgent: Driving Coherent Story-to-Play Generation with an LLM-Based Multi-Agent System",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790326",
+   "system_id": "rpgagent",
+   "evidence": [
+    {
+     "quote": "Specialized agents exchange structured data to generate coherent narrative, scene, and gameplay mechanics, ensuring structural correctness and consistency between story and world.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5352",
+   "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791680",
+   "system_id": "clearfairy",
+   "evidence": [
+    {
+     "quote": "Three main components (Explanation, Action, Artifact) for constructing Cognitive Decision Steps in Clear.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5445",
+   "title": "DiaryPlay: AI-Assisted Creation of Interactive Story Vignettes for Everyday Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790572",
+   "system_id": "diaryplay",
+   "evidence": [
+    {
+     "quote": "Based on previous literature [106] and the formative study, we use three core elements to represent interactive vignettes: environment, characters, and events.",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5488",
+   "title": "SoundStager: Interactive Design of Story-Driven GenAI Soundscapes for Video",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790870",
+   "system_id": "soundstager",
+   "evidence": [
+    {
+     "quote": "SoundStager analyzes the video narrative to create layered audio scenes (of keynote, signal, soundmark, and archetypal sounds) and supports iterative refinement through a combination of conversational and analog controls.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5489",
+   "title": "ARify: Leveraging Narrated Instructional Videos to Create Augmented Reality Tutorials for Procedural Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790715",
+   "system_id": "arify",
+   "evidence": [
+    {
+     "quote": "we define a tutorial as a hierarchical representation of task → step → action, where a step denotes a semantically coherent subgoal of the task, and an action refers to an atomic operation performed to achieve a subgoal",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5559",
+   "title": "TwistLens: A Docent-Informed Image Transformation to Create Previews That Prompt Anticipation and Interpretive Experiences Before Museum Visits",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790352",
+   "system_id": "twistlens",
+   "evidence": [
+    {
+     "quote": "TwistLens extracts key cues from docent text using a structured taxonomy",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5574",
+   "title": "PrivacyAkinator: Articulating Key Privacy Design Decisions by Answering LLM-Generated Multiple-choice Questions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790408",
+   "system_id": "privacyakinator",
+   "evidence": [
+    {
+     "quote": "a universal privacy representation that abstracts privacy-related design decisions into data flows and stakeholder interactions",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5632",
+   "title": "Notational Animating: An Interactive Approach to Creating and Editing Animation Keyframes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790707",
+   "system_id": "5632",
+   "evidence": [
+    {
+     "quote": "we first formalize these notations into a structured animation representation (i.e., source, path, and target)",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5749",
+   "title": "TaskAudit: Detecting Functiona11ity Errors in Mobile Apps via Agentic Task Execution",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791415",
+   "system_id": "taskaudit",
+   "evidence": [
+    {
+     "quote": "For brevity, we only present selected examples from the specifications, including desc for description, prereq for prerequisites, elem for element, and crit for success criterion.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "6089",
+   "title": "Just-In-Time Objectives: A General Approach for Specialized AI Interactions",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790713",
+   "system_id": "6089",
+   "evidence": [
+    {
+     "quote": "The JSON specification for just-in-time objectives includes a name, 1-2 sentence description, and weight indicating the estimated importance of the objective on a 1-10 scale.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

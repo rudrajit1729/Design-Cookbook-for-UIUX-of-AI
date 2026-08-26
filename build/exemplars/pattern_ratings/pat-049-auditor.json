@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-049",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "13814",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote directly states both required operations: extracting real-world interaction-point positions and embedding guidance at those physical coordinates. This is unusually clean evidence of the spatial-resolution signature; outcomes are only inferable from the task-guidance framing.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16821",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Generated models are explicitly anchored to corresponding physical objects, making referent registration central rather than incidental. The adaptive haptic-prop context is distinctive, although the quote does not explain the tracking implementation or evaluation outcome.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16623",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "An overlaid patient-specific 3D model plausibly requires registration to the patient or manikin, but the quote only describes a simulated visualization and does not state anchoring, tracking, or coordinate resolution. Impact is plausible in surgical navigation but unsubstantiated by the supplied evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9589",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "This plainly supplies the full signature for captured video: 3D reconstruction tracks referent positions, and dialogue is spatialized from those positions. Using registered audio rather than a conventional visual overlay is a strong and transferable variation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16886",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote establishes mixed-reality creation in physical environments but says nothing about extracting referent positions, anchoring output to a referent, or maintaining registration as it moves.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support the pattern's spatial-registration mechanism."
+  },
+  {
+   "rid": "9587",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Mapping detected bounding-box coordinates into a headset's 3D coordinate system to position audio is an explicit spatial-resolution step. The accessibility use case gives the move plausible functional importance, though no measured outcome is provided.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16583",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The caption shows headset-based guidance but never says that the suggestions are positioned on the ceramic piece or otherwise resolved from scene geometry.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate a space-registered overlay rather than an ordinary guidance interface."
+  },
+  {
+   "rid": "9504",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote directly distinguishes cues that follow associated entities from cues fixed at world positions. That is nearly a verbatim demonstration of referent-following and world-registered placement, though the coordinate-extraction implementation is not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16655",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Capturing context through an AR headset does not establish where generated output is rendered or whether it is attached to any scene referent.",
+   "disqualify": true,
+   "disqualify_reason": "The quote contains input capture but no evidence of the pattern's rendering mechanism."
+  },
+  {
+   "rid": "9539",
+   "scores": {
+    "representativeness": 5,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Projected text explicitly follows the tracked hand and changes scale with proximity, making its placement a function of scene geometry. The mechanism is vivid and unusual, but the supplied evidence does not establish a consequential outcome beyond the interaction effect.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15127",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Participant preferences among overlay modes reveal neither what the overlay is attached to nor how its position is resolved or tracked.",
+   "disqualify": true,
+   "disqualify_reason": "The word \u201coverlay\u201d is merely topical here; the structural signature is absent."
+  },
+  {
+   "rid": "6210",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The AR-HUD dynamically places an apology directly above the offending car, strongly implying ongoing vehicle tracking and referent-relative layout. The social effect is interesting, but evidence of outcome and the actual spatial-resolution step are not included.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8813",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Word-level projection of arrows, highlights, and blinking cues directly onto physical poster content is strong evidence of fine-grained registration to real referents. Tracking behavior is not stated, but the claimed precision makes simple panel layout an implausible reading.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8070",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Object recognition yields bounding boxes and center coordinates that drive visual and audio feedback, so placement depends on detected scene geometry. The quote is truncated and does not establish whether audio is fully spatialized or merely reports center positions.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5489",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Spatial anchoring of instructions to physical objects is the right mechanism and is highly transferable. However, this introductory, cited statement reads as a general claim about AR tutorials rather than direct evidence that ARify performs the required registration.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5759",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "A 3D animation overlay guides landmark identification while the participant works on a manikin, strongly indicating alignment with anatomical referents. Exact tracking and placement resolution are not described, and impact is inferred from the training task.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4755",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Moving an XR agent toward a real orchid and pointing at a specific root requires spatial grounding to that referent. It is somewhat closer to spatially grounded agent behavior than a canonical attached overlay, and referent tracking is not explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12566",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Automatic selection of display positions from context is consistent with geometry-dependent AR layout and could materially reduce content-management effort. The quote does not specify that positions come from physical referents rather than generic layout or visibility heuristics.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9463",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Phone tracking and audio positioning based on user orientation establish egocentric spatial audio, not content attached to a tracked scene referent.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence instantiates spatialized output but not the required referent-registered overlay."
+  },
+  {
+   "rid": "8177",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Animated characters are explicitly overlaid on corresponding physical objects, making the objects their spatial referents. The quote does not expose coordinate extraction or confirm that overlays continue following moved objects.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8636",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Projecting cues onto particular poster content is consistent with a registered physical overlay, but this caption lacks the word-level precision or tracking detail supplied for the related Visiobo Demo candidate. The structural step is therefore only implicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5140",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "In-situ projection used for spatial localization and hidden equipment information suggests output registered to exhibits or equipment. The quote does not name the referents, calibration, coordinate extraction, or movement behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9992",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The generated mandala is projected onto the physical paper, but the evidence does not show detection, alignment, or tracking of the paper. It may be a fixed projection canvas rather than geometry-resolved placement.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7263",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Projection back onto tracing paper provides a physical surface but no evidence that the system resolves that surface's position or attaches output to a referent within it. It could be ordinary fixed-canvas projection.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5665",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Cylindrical projections augment room walls and blend generated worlds with physical surroundings, indicating room-scale spatial mapping. The quote does not clarify whether live camera feeds extract wall geometry or merely preserve awareness around a fixed projection setup.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5336",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The backdrop is projected onto a flat surface to create a stage on which children place toys; it is not described as being attached to, or following, those toys or another detected referent.",
+   "disqualify": true,
+   "disqualify_reason": "This is a projected play surface, a neighbouring pattern, rather than a referent-registered overlay."
+  },
+  {
+   "rid": "8428",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Overlaying a recorded motion on a reference model describes comparative visualization, but the quote does not place either element against a real-scene or captured-video referent.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports motion comparison in AR, not scene-geometry-dependent attachment."
+  },
+  {
+   "rid": "7441",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The sketch is composited onto a live camera feed, but no physical canvas, object, or landmark is detected or tracked as its referent. A screen-relative video overlay does not meet the signature.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence shows panel/video compositing without referent registration."
+  },
+  {
+   "rid": "10932",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Embedding visualizations in actual sports scenes is compatible with registered video augmentation, but the quote does not say that graphics are positioned from player, ball, field, or camera geometry. The pattern is suggested rather than demonstrated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3205",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The sequence of pointing a camera at a landmark and viewing a to-scale AR Mercury suggests landmark-triggered spatial placement. The quote does not explicitly state that Mercury is anchored to the landmark or remains registered under movement.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

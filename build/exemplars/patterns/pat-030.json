@@ -1,0 +1,391 @@
+{
+ "pattern": {
+  "pattern_id": "pat-030",
+  "pattern_name": "Two-Way Sync View",
+  "pattern_slug": "two-way-sync-view",
+  "short_summary": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others.",
+  "definition": "Two or more views of the same underlying object are shown at once, each of them editable, and an edit in any one propagates to the others. Neither view is subordinate: the user may work in whichever is convenient and the system reconciles them. The conversion runs in both directions rather than compiling one representation into the other.",
+  "structural_signature": "A shared model backs multiple concurrently displayed representations; each representation has write access to the model; a propagation step updates the sibling representations after any write. The loop is closed — starting in representation A, converting to B, and editing B returns a valid state in A.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Persistent Structured Representation",
+  "dimension": {
+   "category_id": "U06",
+   "category_name": "Artifact Editing & Revision",
+   "category_description": "How users inspect, modify, scope, revise, accept, program, or interrupt generated work at the artifact level.",
+   "classification_boundary": "Centers user control during or after generation, including editable intermediate generators and representations.",
+   "stage": "Acting on the output"
+  }
+ },
+ "eligible": 14,
+ "candidates": [
+  {
+   "rid": "2288",
+   "title": "Charagraph: Interactive Generation of Charts for Realtime Annotation of Data-Rich Paragraphs",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581091",
+   "system_id": "charagraph",
+   "evidence": [
+    {
+     "quote": "Both the text annotations and the chart are interactive and in-sync: modifcations and interactions done on one representation are refected on the other.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3976",
+   "title": "Toyteller: AI-powered Visual Storytelling Through Toy-Playing with Character Symbols",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713435",
+   "system_id": "toyteller",
+   "evidence": [
+    {
+     "quote": "We enabled motion-steered text generation and text-steered motion generation by mapping motions and text",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "4127",
+   "title": "Inkspire: Supporting Design Exploration with Generative AI through Analogical Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713397",
+   "system_id": "inkspire",
+   "evidence": [
+    {
+     "quote": "a complete sketch-to-design-tosketch feedback loop",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "5384",
+   "title": "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791418",
+   "system_id": "crosslit",
+   "evidence": [
+    {
+     "quote": "CrossLit allows researchers to group and annotate papers visually while generating aligned textual structures, and to edit text that automatically updates visual representations.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5657",
+   "title": "Editable XAI: Toward Bidirectional Human-AI Alignment with Co-Editable Explanations of Interpretable Attributes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791375",
+   "system_id": "editablexai",
+   "evidence": [
+    {
+     "quote": "CoExplain explains the neural network with a faithful proxy decision tree, parses user-written rules as an equivalent neural network graph, and collaboratively optimizes the decision tree.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5916",
+   "title": "Vistoria: A Multimodal System to Support Fictional Story Writing through Instrumental Image-Text Co-Editing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790400",
+   "system_id": "vistoria",
+   "evidence": [
+    {
+     "quote": "We present Vistoria, a system for synchronized image-text co-editing in fictional story writing.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9301",
+   "title": "From Idea to Co-Creation: A Planner-Actor-Critic Framework for Agent Augmented 3D Modeling",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798904",
+   "system_id": "9301",
+   "evidence": [
+    {
+     "quote": "manual bi-directional object editing between Blender and Three.js, wireframe mode, and Blender scene being synced in real time",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10210",
+   "title": "StepMIND: A Visual Framework for Stepwise, Multimodal, and Bidirectional Explanations of AI-Generated Data Analysis Pipeline",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789070",
+   "system_id": "stepmind",
+   "evidence": [
+    {
+     "quote": "(3) Bidirectional Editing, enabling seamless updates across modalities",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13599",
+   "title": "VISAR: A Human-AI Argumentative Writing Assistant with Visual Programming and Rapid Draft Prototyping",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606800",
+   "system_id": "visar",
+   "evidence": [
+    {
+     "quote": "The user can edit their argumentative writing outline via either the text editor (A) or the canvas of the visual outline (B); VISAR synchronizes these two workspaces",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13731",
+   "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747758",
+   "system_id": "13731",
+   "evidence": [
+    {
+     "quote": "Interacting with these visualizations results in suggested text edits: for example, connecting two characters in the graph creates an interaction between them, moving an entity updates their described location, and rearranging events on the timeline reorganizes the narrative sequence.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13987",
+   "title": "Keyframer: A Design Probe for Exploring LLM Assistance in 2D Animation Design",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00014",
+   "system_id": "keyframer",
+   "evidence": [
+    {
+     "quote": "The Code and Properties Editors enable users to edit generated animation code directly. Edits in one editor are reflected in the corresponding editor.",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14000",
+   "title": "The Command Line GUIde: Graphical Interfaces from Man Pages via AI",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00026",
+   "system_id": "14000",
+   "evidence": [
+    {
+     "quote": "GUI DE offers the user a bidirectional interface for authoring a command: the selected options in the GUI updates live as they type a command, and, in the reverse, graphical interaction on the GUI edits the command.",
+     "location": "intro (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14029",
+   "title": "Bridging Natural Language and SQL with an LLM-Powered Visual Interface",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00055",
+   "system_id": "14029",
+   "evidence": [
+    {
+     "quote": "VISTA supports synchronized, bidirectional updates between natural language, SQL, and visual blocks.",
+     "location": "full text intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16921",
+   "title": "Elemental Alchemist: A Generative Interface for Semantic Control of Particle Systems Across Dynamic Levels of Abstraction",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812946",
+   "system_id": "16921",
+   "evidence": [
+    {
+     "quote": "B) The hierarchy is represented as a tree structure, which not only organizes conceptual, semantic, and technical controls but also enables synchronization across abstraction levels.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

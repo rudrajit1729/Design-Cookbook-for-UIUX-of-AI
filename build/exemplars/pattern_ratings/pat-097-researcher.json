@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-097",
+ "lens": "researcher",
+ "ratings": [
+  {
+   "rid": "3704",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A particularly clean exemplar: execution is explicitly paused so the user can inject new messages into the active multi-agent run. This makes debugging and steering consequential rather than cosmetic, and the mechanism transfers readily to other agentic systems. The quote does not specify the exact interface or state presentation, keeping mechanism clarity below 5.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3885",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "The user interrupts an agent while it is speaking and immediately changes the conversational trajectory, clearly making an utterance non-atomic. Barge-in is useful and especially consequential for natural older-adult conversation, but it is a well-established voice-interface move rather than a substantial expansion of the design space.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4509",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The evidence gives a concrete in-flight sequence: trigger breathwork at any point, pause the simulation, perform the intervention, and presumably return. Embedding a user-invoked regulatory practice inside an ongoing stressful simulation is an interesting use of interruption, though the mechanism is less directly portable than generic pause-and-steer controls.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The running agent is paused at sensitive content and cannot proceed until the user allows or denies access. This is a highly consequential control channel with a clear pause-prompt-decision mechanism, although it is system-triggered intervention rather than user-initiated interruption. The truncated quote slightly limits evidentiary confidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5240",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "\u201cAt any stage\u201d can describe ordinary editing between pipeline stages and does not establish that a currently executing generation remains interruptible or modifiable. The supplied evidence therefore does not demonstrate the pattern's defining live control channel.",
+   "disqualify": true,
+   "disqualify_reason": "The quote does not support mid-run intervention: it establishes staged refinement, not an intervention that takes effect on an in-flight run."
+  },
+  {
+   "rid": "5322",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "A user rejects the current embodied assistance approach and causes the system to generate a replacement stimulation sequence. Mid-execution redirection of physical assistance is unusually consequential and non-obvious. The quote does not fully clarify whether the current sequence is paused, aborted, or completed before regeneration, and the embodied hardware limits direct transfer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5627",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Repairing agent mistakes while tasks are executing is consistent with consequential mid-run control and addresses a general agent-oversight problem. However, the evidence does not describe what users manipulate, whether execution pauses, or how repairs alter partial state, so this is only a moderately supported exemplar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6060",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Automation pauses on detected risky screens and solicits intervention before continuing, plainly breaking an otherwise autonomous run into controllable segments. The safety and privacy consequences are substantial and broadly transferable, but risk-triggered confirmation checkpoints are now a fairly settled agent-interface pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8667",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "User interjection plausibly redirects an ongoing multi-agent ideation conversation, but the quote supplies no details about timing, partial state, or how steering affects agents already generating. Conversational interjection itself is conventional, and the available evidence does not establish a more distinctive mechanism or outcome.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9385",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Intermediate checkpoints make a deep-research run non-atomic and potentially correctable before completion, a broadly transferable design move. Yet the evidence says neither what users can change nor how the system resumes from modified state, making this more a clear intent than a rebuildable interaction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9743",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Participants can detect conversational drift and inject either prompts or newly relevant environmental photos into the ongoing exchange. That is a concrete, multimodal live steering channel and an interesting response to changing physical context, though its object-conversation setting limits straightforward generalization.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10227",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Interrupting erroneous reasoning as it unfolds and redirecting it toward a customized response places mid-run intervention at the center of the contribution. Coupling visibility into intermediate reasoning with live control is consequential, broadly reusable, and substantially more ambitious than a generic stop button. Exact controls and state-update behavior are not fully specified in the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13492",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The evidence directly states that guiding prompts can be changed during generation, precisely matching the pattern's live parameter-substitution signature. Applying painterly continuous steering to text-to-image generation is a clear and design-space-moving alternative to atomic prompt-then-wait interaction, with transfer potential across generative media.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13652",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Unscripted human questions interrupt an ongoing simulated group scene, so the conversation is not fixed or atomic. However, interjection is an expected property of conversation, and the truncated evidence does not show how active agent behavior, scripts, or simulation state are modified in response.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13756",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The entire contribution is an agent that detects consequential decision points, pauses its active task, obtains the user's choice, and then continues. This is a definitive, rebuildable instance with broad applicability and strong practical impact. Its main novelty is intelligent placement of interruptions rather than interruption itself.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13806",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Letting designers intervene in an optimization process suggests meaningful live redirection of an otherwise autonomous search and is more interesting than merely editing its final result. The quote does not specify the intervention commands, whether optimization continues or restarts, or how partial optimization state is preserved, so scoring remains conservative.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16863",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Intervening in algorithmic decisions and building responses in tandem is suggestive of non-atomic generation, and the public-facing discursive framing is interesting. But the evidence could equally describe turn-by-turn co-construction between separate generations; it does not plainly establish a control channel acting on an executing run.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

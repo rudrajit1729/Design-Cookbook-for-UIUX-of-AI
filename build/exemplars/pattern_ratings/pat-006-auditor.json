@@ -1,0 +1,146 @@
+{
+ "pattern_id": "pat-006",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "2325",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The quote makes cross-model response comparison a central function of the authors' graphical toolkit, and the mechanism is highly transferable. It does not explicitly say that an unchanged prompt is fanned out in parallel or that each response is visibly source-attributed; moreover, prompt variation is also varied, so the evidence is slightly less pure than the pattern's signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3655",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote establishes only that four LLMs produced text attributes. It does not show one unchanged user request, parallel fan-out, outputs returned together, source attribution, or a visible comparison mechanism. Any impact or novelty attributable specifically to this pattern is unjudgeable from the supplied evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern's structural signature or even establish a user-facing multi-model output comparison."
+  },
+  {
+   "rid": "4519",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This is the cleanest quoted instance: users initiate generation through three distinct text-to-motion models, each processes the prompt, and each returns a unique motion sequence. The quote plainly varies the generator while holding the prompt constant. The title and workflow suggest these alternatives support subsequent authoring, although simultaneous presentation and explicit on-screen source labels are not stated verbatim.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5244",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The evidence describes aggregate violin plots of evaluation-score distributions, not multiple attributable outputs generated for one user request. This is benchmark analysis rather than the output-level, user-facing fan-out comparison defined by pat-006.",
+   "disqualify": true,
+   "disqualify_reason": "The paper is presented as benchmark construction/evaluation, and the quote supports aggregate model-performance visualization rather than an interface implementing the pattern."
+  },
+  {
+   "rid": "5396",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 0,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "\u201cModel comparison\u201d is merely named among several hallucination-awareness scaffolds. The quote supplies no account of what is compared, whether one prompt is sent unchanged to distinct models, how outputs are attributed, or whether they appear together. The educational impact may be meaningful, but it cannot be credited to this particular mechanism from the available evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence is topical but does not demonstrate the pattern's structural signature."
+  },
+  {
+   "rid": "5582",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "A study involving four LLMs is not itself multi-model output comparison. The quote gives a factorial experimental design but no unchanged user request, fan-out control flow, common output frame, source attribution, or visible choice mechanism. The persona-conditioned evaluation may instantiate a neighboring experimental-comparison pattern instead.",
+   "disqualify": true,
+   "disqualify_reason": "The quote does not support a user-facing interface implementing multi-model output comparison."
+  },
+  {
+   "rid": "7645",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The quote indicates that suspicious differences between offline-model and production-model outputs are annotated, which plausibly entails attributable outputs set against one another. However, it does not establish a single user request dispatched unchanged to multiple backends, parallel invocation, or outputs presented together as alternatives. It is closer to differential error diagnosis than user-facing comparative exploration.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10200",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The quote directly states the defining fan-out: one user prompt, optionally with one dataset, is sent to multiple LLMs to generate code. The title supplies the interactive comparison context, making this a central and readily transferable implementation. The evidence does not explicitly describe parallel timing, layout, or source labels, so mechanism clarity stops short of perfect.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "11975",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Obtaining responses from test and baseline models for each prompt captures the held-input, varied-generator core, while the title establishes side-by-side interactive analysis. It is a strong and general comparison setting. Evidence strength is limited because the quoted mechanism appears in a background section and does not itself specify the paper's visible presentation, attribution, or precise interaction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12777",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The caption establishes only that Claude and GPT participate in a visualization-generation workflow. It does not say they receive the same input, produce alternatives simultaneously, or have attributable outputs collected in a common comparison frame. The dashboard's broader detection and correction functions cannot substitute for evidence of this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate multi-model output comparison and could equally describe sequential or role-separated model use."
+  }
+ ]
+}

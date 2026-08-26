@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-021",
+ "exemplars": [
+  {
+   "rid": "2680",
+   "title": "DirectGPT: A Direct Manipulation Interface to Interact with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642462",
+   "final_score": 4.8,
+   "why": "Selecting an addressable object before prompting explicitly confines the otherwise ordinary generative operation to that object, directly realizing designation followed by a bounded write.",
+   "over_the_runner_up": "Chosen over PromptPaint because the evidence explicitly says selection forces the prompt to affect only the designated object, making the write boundary less inferential."
+  },
+  {
+   "rid": "13492",
+   "title": "PromptPaint: Steering Text-to-Image Generation Through Paint Medium-like Interactions",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606777",
+   "final_score": 4.45,
+   "why": "Its prompt stencil is a content-free spatial designation that determines exactly where generated image results are applied while leaving the requested transformation conceptually separate.",
+   "over_the_runner_up": "Chosen over Wordcraft because the stencil demonstrates the pattern in a spatial generative medium and more clearly separates where generation applies from what it should generate."
+  },
+  {
+   "rid": "10049",
+   "title": "Wordcraft: Story Writing With Large Language Models",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511105",
+   "final_score": 4.4,
+   "why": "The select–replace–suggest sequence exposes the complete user-facing mechanism: designate a proper text extent, invoke generation for that extent, and return alternatives for insertion at the same position.",
+   "over_the_runner_up": "Chosen over SQUIRE because Wordcraft's evidence shows the user's designation act and the localized generative operation, whereas SQUIRE's abstract states mutation guarantees without showing how a sub-extent is designated."
+  }
+ ],
+ "notes": "I departed from the consensus by excluding second-ranked SQUIRE and promoting Wordcraft. SQUIRE strongly establishes a bounded write set and protected complement, but the supplied abstract does not show the required designation act or even identify the scoping representation; it therefore demonstrates the guarantee better than the full interaction structure. No selected score was adjusted by more than 0.3. Readers should distrust any inference that unselected content is technically guaranteed unchanged in PromptPaint or Wordcraft: both excerpts establish localized application, but neither explicitly documents complement preservation or compositing. The DirectGPT evidence is unusually exact, though it too is a figure caption rather than a full mechanism description.",
+ "pattern_name": "Localized Tweaking Support",
+ "category_id": "U06",
+ "rated": 30
+}

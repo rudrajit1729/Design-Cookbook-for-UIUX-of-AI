@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-015",
+ "exemplars": [
+  {
+   "rid": "13647",
+   "title": "StepWrite: Adaptive Planning for Speech-Driven Text Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747610",
+   "final_score": 4.83,
+   "why": "StepWrite uses an adaptive Q&A dialogue to incrementally populate task-relevant context and then synthesizes that accumulated specification into a coherent draft. It is a particularly consequential instance because question-driven elicitation replaces conventional prompt composition in a hands-free, eyes-free writing workflow.",
+   "over_the_runner_up": "Chosen over Socrates because the elicited answers specify a complete writing output under a meaningful accessibility constraint, making the inversion both more comprehensive and more consequential."
+  },
+  {
+   "rid": "11327",
+   "title": "Socrates: Data Story Generation via Adaptive Machine-Guided Elicitation of User Feedback",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3327363",
+   "final_score": 4.77,
+   "why": "Socrates makes the elicitation policy part of generation: the machine adaptively selects questions, records the user's feedback, and incorporates it into the resulting data story. This clearly demonstrates how system-authored questions can progressively determine a generative specification.",
+   "over_the_runner_up": "Chosen over the email-reply system because its adaptive question selection demonstrates a more general mixed-initiative mechanism than eliciting answers from one fixed source artifact."
+  },
+  {
+   "rid": "3951",
+   "title": "Understanding and Supporting Formal Email Exchange by Answering AI-Generated Questions",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714016",
+   "final_score": 4.7,
+   "why": "The system derives short questions from an incoming email, and the user's answers constitute the specification for a reply instead of requiring the user to compose either a full response or a generative prompt. The source artifact, system questions, user action, and target task are all explicit, making this the cleanest directly reconstructable inversion in the set.",
+   "over_the_runner_up": "Chosen over GenerativeGUI because it clearly replaces open-ended composition with system-generated questions, whereas GenerativeGUI's clarification controls appear within an existing chat and may follow an initial user prompt."
+  }
+ ],
+ "notes": "The final three follow the consensus top three; no score required an adjustment. I retained StepWrite and Socrates above the email example for their broader adaptive mechanisms and higher consequential impact, while recognizing that the email example has the clearest literal structural evidence. Readers should distrust any strong claim that StepWrite or Socrates necessarily asks the very first question before all user content: their excerpts establish adaptive questioning and downstream use, but do not expose the complete turn sequence or input-record schema. The email excerpt clearly establishes system-generated questions and user answers, but only implies rather than explicitly describes how those answers are assembled into the final reply. GenerativeGUI was excluded despite unusually concrete JSON evidence because the excerpt suggests clarification inside an already-started chat, conflicting with the strict head-of-loop signature.",
+ "pattern_name": "Question-Driven Elicitation",
+ "category_id": "U01",
+ "rated": 30
+}

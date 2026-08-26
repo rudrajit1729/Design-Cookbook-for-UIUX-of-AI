@@ -1,0 +1,1052 @@
+{
+ "pattern": {
+  "pattern_id": "pat-062",
+  "pattern_name": "Voice Interaction",
+  "pattern_slug": "voice-interaction",
+  "short_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+  "definition": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy. The system's other controls may still exist, but the contributed interaction is that speech is the channel through which intent enters. Papers in this group either build voice as the sole authoring channel or interrogate what happens when voice is collapsed onto the text pipeline.",
+  "structural_signature": "An audio-capture channel is the entry point of the control flow; the utterance is converted to an internal command, instruction sequence, or code, and that conversion product is what the rest of the system consumes. Nothing else in the flow requires the user to touch a pointer or keyboard, and the surface that would normally accept typed or pointed input is either absent or bypassed.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U04",
+   "category_name": "Modality, Embodiment & Rendering",
+   "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+   "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "2685",
+   "title": "CareJournal: A Voice-Based Conversational Agent for Supporting Care Communications",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642163",
+   "system_id": "carejournal",
+   "evidence": [
+    {
+     "quote": "a voice-based conversational agent that supports care-related disclosure between care partners",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "2940",
+   "title": "Rambler: Supporting Writing With Speech via LLM-Assisted Gist Manipulation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642217",
+   "system_id": "rambler",
+   "evidence": [
+    {
+     "quote": "Supporting long-form text composition via speech with a new dictation interface that consists of three components: 1) dictating trains of thought into Ramble boxes, 2) reviewing the spoken text through automatically generated keywords and summaries, and 3) performing manual or LLM-assisted macro-revisions operated at conceptual levels.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3027",
+   "title": "Understanding the Impact of Long-Term Memory on Self-Disclosure with Large Language Model-Driven Chatbots for Public Health Intervention",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642420",
+   "system_id": "3027",
+   "evidence": [
+    {
+     "quote": "We examine the case of CareCall— an LLM-driven voice chatbot with LTM—through the analysis of 1,252 call logs and interviews with nine users.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3467",
+   "title": "Sonora: Human-AI Co-Creation of 3D Audio Worlds and its Impact on Anxiety and Cognitive Load",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713316",
+   "system_id": "sonora",
+   "evidence": [
+    {
+     "quote": "allowing users to navigate immersive auditory environments and customize soundscapes using voice commands",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3568",
+   "title": "Chorus of the Past: Toward Designing a Multi-agent Conversational Reminiscence System with Digital Artifacts for Older Adults",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713810",
+   "system_id": "3568",
+   "evidence": [
+    {
+     "quote": "The participant sits in front of the 3D monitor and chats with the two agents about the central artifact through voice interaction.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3746",
+   "title": "Unlocking the Power of Speech: Game-Based Accent and Oral Communication Training for Immigrant English Language Learners via Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713945",
+   "system_id": "3746",
+   "evidence": [
+    {
+     "quote": "Player and NPC dialogue views: a) Voice input view; b) Text input view.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3885",
+   "title": "Toward Enabling Natural Conversation with Older Adults via the Design of LLM-Powered Voice Agents that Support Interruptions and Backchannels",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714228",
+   "system_id": "3885",
+   "evidence": [
+    {
+     "quote": "older adults prefer direct voice interaction for conversations",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4034",
+   "title": "CARING-AI: Towards Authoring Context-aware Augmented Reality INstruction through Generative Artificial Intelligence",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713348",
+   "system_id": "caringai",
+   "evidence": [
+    {
+     "quote": "(a) Using CARING-AI, authors frst speak their intended instruction content",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4143",
+   "title": "ShamAIn: Designing Superior Conversational AI Inspired by Shamanism",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714297",
+   "system_id": "shamain",
+   "evidence": [
+    {
+     "quote": "operating software that enables complex voice interactions using LLM, Text-to-Speech (TTS), and Speech-to-Text (STT)",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4217",
+   "title": "Promoting Cognitive Health in Elder Care with Large Language Model-Powered Socially Assistive Robots",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713582",
+   "system_id": "4217",
+   "evidence": [
+    {
+     "quote": "We designed tasks that involved verbal dialogue based on clinically validated cognitive tools.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4314",
+   "title": "GenComUI: Exploring Generative Visual Aids as Medium to Support Task-Oriented Human-Robot Communication",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714238",
+   "system_id": "gencomui",
+   "evidence": [
+    {
+     "quote": "Voice Interaction Module: Handles speech-to-text and text-to-speech conversion, enabling bidirectional voice communication between users and the robot.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4711",
+   "title": "Enhancing Children's Self-Reporting in Chatbot Diaries through Rhyming Style",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791083",
+   "system_id": "4711",
+   "evidence": [
+    {
+     "quote": "Building on these insights, we designed a voice-based sleep diary in rhyming style",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4746",
+   "title": "Enhancing Response Quality by Children in Voice-based Sleep Diaries via AI-based Continuous Feedback",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790684",
+   "system_id": "4746",
+   "evidence": [
+    {
+     "quote": "We examine how to design \"live\", continuous feedback in voicebased sleep diaries in order to enhance the quality of children's responses.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4816",
+   "title": "Orality: A Semantic Canvas for Externalizing and Clarifying Thoughts with Speech",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791713",
+   "system_id": "orality",
+   "evidence": [
+    {
+     "quote": "Through the speech input widget (B), users can externalize their thoughts iteratively to the node-link semantic canvas (A).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5006",
+   "title": "Voice-Based Chatbots for English Speaking Practice in Multilingual Low-Resource Indian Schools: A Multi-Stakeholder Study",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791266",
+   "system_id": "5006",
+   "evidence": [
+    {
+     "quote": "We investigate the deployment of a voice-based chatbot for English conversation practice across four low-resource schools in Delhi.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5182",
+   "title": "Towards LLM-powered Assistive Drone for Blind and Low Vision Users",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791343",
+   "system_id": "5182",
+   "evidence": [
+    {
+     "quote": "Additional hardware components include a Flic button to activate voice input.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5315",
+   "title": "VueBuds: Visual Intelligence with Wireless Earbuds",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791322",
+   "system_id": "vuebuds",
+   "evidence": [
+    {
+     "quote": "Our camera-integrated wireless earbuds enable natural language queries for everyday visual tasks",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5336",
+   "title": "DOLLama: Fostering Family Anti-Bullying Learning through AI-Augmented, Toy-Mediated Educational Drama",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790687",
+   "system_id": "dollama",
+   "evidence": [
+    {
+     "quote": "Paired with it is a tangible microphone that lets children use voice input to create characters and stories, or talk with AI-controlled characters during real-time role-play.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5560",
+   "title": "Exploring the Design of a LLM-Based AI Assistant for Mindfulness Practice With Older Adults",
+   "venue": "chi",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790734",
+   "system_id": "5560",
+   "evidence": [
+    {
+     "quote": "providing a fully voice-guided system capable of guiding participants through mindfulness according to their specified needs",
+     "location": "full text sec 3.3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5569",
+   "title": "Toward Independent Online Shopping of the Visually Impaired Through Voice-based Computer-Using Agent",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791681",
+   "system_id": "5569",
+   "evidence": [
+    {
+     "quote": "our study qualitatively explores the experiences and needs of visually impaired users as they shop online through voice interaction with a CUA",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Judgment and Decision Making",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5665",
+   "title": "Storycaster: An AI System for Immersive Room-based Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791305",
+   "system_id": "storycaster",
+   "evidence": [
+    {
+     "quote": "Participants interact by speaking aloud; their input is captured by a room microphone, transcribed with Azure Speech to Text services, and processed by the Narrator agent.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5879",
+   "title": "NaviNote: Enabling In-situ Spatial Annotation Authoring to Support Exploration and Navigation for Blind and Low Vision People",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790589",
+   "system_id": "navinote",
+   "evidence": [
+    {
+     "quote": "NaviNote is hands-free and voice-based, and supports querying the surroundings, navigating to objects or Chen and Wu, et al. annotations of interest, and creating, editing and deleting annotations.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5896",
+   "title": "AI Twin: Enhancing ESL Speaking Practice through AI Self-Clones of a Better Me",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790266",
+   "system_id": "5896",
+   "evidence": [
+    {
+     "quote": "We chose voice as the primary medium for realizing the AI Twin.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6058",
+   "title": "Agentic Audio Moderator vs Human Moderator in Think-Aloud Usability Testing: Results from a Randomized Controlled Trial: Results from a Randomized Controlled Trial",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791653",
+   "system_id": "6058",
+   "evidence": [
+    {
+     "quote": "Agentic AI holds promise for usability testing, yet its role as an audio moderator in think-aloud protocols is not well understood.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6148",
+   "title": "What Are You Doing?: Effects of Intermediate Feedback from Agentic LLM In-Car Assistants During Multi-Step Processing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790997",
+   "system_id": "6148",
+   "evidence": [
+    {
+     "quote": "Consider an in-car voice assistant that handles complex requests while the driver navigates traffic.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6246",
+   "title": "FeelWave: Enabling Emotion-Aware Voice Interaction through Noise-Robust mmWave Emotion Sensing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790631",
+   "system_id": "feelwave",
+   "evidence": [
+    {
+     "quote": "Voice has been a primary interaction mode with LLM-powered assistants.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6290",
+   "title": "Small Talk, Big Impact? LLM-based Conversational Agents to Mitigate Passive Fatigue in Conditional Automated Driving",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790972",
+   "system_id": "6290",
+   "evidence": [
+    {
+     "quote": "were captured via the headphone’s built-in microphone, creating a natural, hands-free conversational experience",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6911",
+   "title": "Engage AI and Child in Explanatory Dialogue on Commonsense Reasoning",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585699",
+   "system_id": "6911",
+   "evidence": [
+    {
+     "quote": "A child will vocally interact with the system using natural language, which the operator interprets.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7483",
+   "title": "Chart What I Say: Exploring Cross-Modality Prompt Alignment in AI-Assisted Chart Authoring",
+   "venue": "chiea",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650921",
+   "system_id": "7483",
+   "evidence": [
+    {
+     "quote": "Currently, chart-authoring systems tend to integrate voice input capabilities by relying on speech-to-text transcription, processing spoken and typed input similarly.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Oversight"
+   ]
+  },
+  {
+   "rid": "7485",
+   "title": "Chatbot and Fatigued Driver: Exploring the Use of LLM-Based Voice Assistants for Driving Fatigue",
+   "venue": "chiea",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651031",
+   "system_id": "7485",
+   "evidence": [
+    {
+     "quote": "Employing an empirical approach with a driving simulator and the LLM-based voice assistant ”Driver Mate,” the study focuses on conversation complexity and frequency as independent variables, and utilizes electroencephalogram (EEG), driving simulator data, and scales for measures.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U10"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7567",
+   "title": "Exploring the Use of Large Language Model-Driven Chatbots in Virtual Reality to Train Autistic Individuals in Job Communication Skills",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651996",
+   "system_id": "7567",
+   "evidence": [
+    {
+     "quote": "the application only accepts voice-based interactions as the input, as shown in Figure 1(a). Users initiate this speech interaction by pressing a button on the VR headset controller.",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8322",
+   "title": "Exploring the Efficacy of a Chatbot Training Application in Alleviating Graduate Students' Public-Speaking Anxiety During Q&A",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720177",
+   "system_id": "8322",
+   "evidence": [
+    {
+     "quote": "The VR application transcribes the user’s speech using OpenAI Speech-to-Text (Whisper).",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8465",
+   "title": "More-than-Human Storytelling: Designing Longitudinal Narrative Engagements with Generative AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720135",
+   "system_id": "8465",
+   "evidence": [
+    {
+     "quote": "mainly through speech-to-text (STT) using Google Chrome's WebSpeech API",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "8636",
+   "title": "Visiobo: Assisting Poster Reading for Multiple Viewers with a Projector-enhanced Physical Agent",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720146",
+   "system_id": "visiobo",
+   "evidence": [
+    {
+     "quote": "a laptop for real-time speech input processing and generating dialogue and visual enhancements",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8642",
+   "title": "Voice Assistants to Deliver Cognitive Stimulation Therapy for Persons Living with Dementia",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719707",
+   "system_id": "8642",
+   "evidence": [
+    {
+     "quote": "First, the user’s voice utterance is converted to text by Amazon Alexa’s automated speech recognition system.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8732",
+   "title": "Evaluating an AI Documentation Assistant for Anesthesiology Teams",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706658",
+   "system_id": "8732",
+   "evidence": [
+    {
+     "quote": "In this case study, we demonstrate how speech-based artificial intelligence (AI) assistants that leverage closed-loop communication can increase documentation quality.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8751",
+   "title": "Rambler in the Wild: A Diary Study of LLM-Assisted Writing With Speech",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706676",
+   "system_id": "8751",
+   "evidence": [
+    {
+     "quote": "The speech-to-text tool we used is Rambler [10], which has users dictate their impromptu thoughts, placing each segment of recording into a Ramble.",
+     "location": "full text sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8813",
+   "title": "Visiobo Demo: Augmenting Static Prints with Projection-based Visual Cueing and Concept Mapping via LLM Reasoning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721169",
+   "system_id": "8813",
+   "evidence": [
+    {
+     "quote": "(c) Users initiate questions using a non-contact switch, triggering a voice-based interaction.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9018",
+   "title": "You Just Said...: Raising Self-Awareness of Users' Toxic Language in Human-AI Conversations through Utterance Re-Presentation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799087",
+   "system_id": "9018",
+   "evidence": [
+    {
+     "quote": "and was conducted entirely through voice",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9254",
+   "title": "Exploring Natural Language Prompts for Privacy Settings in VR",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798950",
+   "system_id": "9254",
+   "evidence": [
+    {
+     "quote": "users can speak the prompt to the system",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

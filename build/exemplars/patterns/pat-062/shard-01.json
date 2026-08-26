@@ -1,0 +1,531 @@
+{
+ "pattern": {
+  "pattern_id": "pat-062",
+  "pattern_name": "Voice Interaction",
+  "pattern_slug": "voice-interaction",
+  "short_summary": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy.",
+  "definition": "The user drives the system by speaking, and the spoken utterance occupies the slot that a typed prompt or a direct-manipulation action would otherwise occupy. The system's other controls may still exist, but the contributed interaction is that speech is the channel through which intent enters. Papers in this group either build voice as the sole authoring channel or interrogate what happens when voice is collapsed onto the text pipeline.",
+  "structural_signature": "An audio-capture channel is the entry point of the control flow; the utterance is converted to an internal command, instruction sequence, or code, and that conversion product is what the rest of the system consumes. Nothing else in the flow requires the user to touch a pointer or keyboard, and the surface that would normally accept typed or pointed input is either absent or bypassed.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U04",
+   "category_name": "Modality, Embodiment & Rendering",
+   "category_description": "How interaction crosses sensory, physical, spatial, embodied, or representational channels.",
+   "classification_boundary": "The channel, embodiment, or rendering must be the load-bearing interface mechanism.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "9412",
+   "title": "Let Me Finish: Exploring Design Cues for Communication Apprehension in LLM-based Voice Conversational Agents",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798435",
+   "system_id": "9412",
+   "evidence": [
+    {
+     "quote": "participants engaged in real-time voice conversations with an LLM-based VCA",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9525",
+   "title": "ReMe: Scaffolding Personalized Cognitive Training via Controllable LLM-Mediated Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798695",
+   "system_id": "reme",
+   "evidence": [
+    {
+     "quote": "The Training User Interface supports voice-first multimodal dialogue with reusable interaction components beyond conventional chat.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9825",
+   "title": "Future Mobility Maker: A Conversational AI Experience for Public Exhibitions",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799124",
+   "system_id": "9825",
+   "evidence": [
+    {
+     "quote": "Visitors engage in spoken dialogue with life-sized AI agent Saya",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "10270",
+   "title": "SIA: A Framework for Context-Aware Intent Clarification in Speech-Driven Immersive Analytics",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789063",
+   "system_id": "sia",
+   "evidence": [
+    {
+     "quote": "We introduce a context-aware Speech-driven Immersive Analytics framework (SIA) as a speech-oriented approach that leverages speech acts to convey actionable intent.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10271",
+   "title": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789167",
+   "system_id": "voicealign",
+   "evidence": [
+    {
+     "quote": "VoiceAlign intercepts natural voice commands, transforms them to match the required syntax using a large language model, and transmits these adapted commands through a virtual audio channel that remains transparent to the underlying system.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12159",
+   "title": "LLMER: Crafting Interactive Extended Reality Worlds with JSON Data Generated by Large Language Models",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3549549",
+   "system_id": "llmer",
+   "evidence": [
+    {
+     "quote": "In this section, we provide an overview of LLMER, a system designed to craft interactive XR worlds based on users’ audio commands.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "12601",
+   "title": "VOICE: Visual Oracle for Interaction, Conversation, and Explanation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3579956",
+   "system_id": "voice",
+   "evidence": [
+    {
+     "quote": "The VOICE framework can receive arbitrary voice commands from the user and respond verbally",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking"
+   ]
+  },
+  {
+   "rid": "12708",
+   "title": "When LLMs Recognize Your Space: Research on Experiences with Spatially Aware LLM Agents",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3616809",
+   "system_id": "12708",
+   "evidence": [
+    {
+     "quote": "and the user were conducted via voice interaction. Participants pressed",
+     "location": "system sec (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "12936",
+   "title": "EnVisionVR: A Scene Interpretation Tool for Visual Accessibility in Virtual Reality",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3617147",
+   "system_id": "envisionvr",
+   "evidence": [
+    {
+     "quote": "To minimize the need for remapping controller buttons, these functions can be activated by three simple speech commands, namely “Where am I?”, “What is near me?”, and “Where is the <object name>?”.",
+     "location": "system sec 4 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13614",
+   "title": "Talking Spell: A Wearable System Enabling Real-Time Anthropomorphic Voice Interaction with Everyday Objects",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747617",
+   "system_id": "13614",
+   "evidence": [
+    {
+     "quote": "This system empowers users to actively engage with their personal belongings, enabling both object recognition and verbal dialogue.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13626",
+   "title": "AROMA: Mixed-Initiative AI Assistance for Non-Visual Cooking by Grounding Multimodal Information Between Reality and Videos",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747650",
+   "system_id": "aroma",
+   "evidence": [
+    {
+     "quote": "The system comprises four modules to extract knowledge from video recipes, analyze visual information from real-world cooking states, interact with the user through sound, and a module to manage history and agent context.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13647",
+   "title": "StepWrite: Adaptive Planning for Speech-Driven Text Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747610",
+   "system_id": "stepwrite",
+   "evidence": [
+    {
+     "quote": "We introduce StepWrite, a large language model-driven voice-based interaction system that augments human writing ability by enabling structured, hands-free and eyes-free composition of longer-form texts while on the move.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13665",
+   "title": "EchoLadder: Progressive AI-Assisted Design of Immersive VR Scenes",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747659",
+   "system_id": "echoladder",
+   "evidence": [
+    {
+     "quote": "Voice input for user requests: (a) Initial state allows a user to input instruction after pressing the Mic button.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13789",
+   "title": "agentAR: Creating Augmented Reality Applications with Tool-Augmented LLM-based Autonomous Agents",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747676",
+   "system_id": "agentar",
+   "evidence": [
+    {
+     "quote": "• Talk lets users speak to the agent. • Submit sends their spoken request…",
+     "location": "system sec 4.2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14564",
+   "title": "Wizundry: A Cooperative Wizard of Oz Platform for Simulating Future Speech-based Interfaces with Multiple Wizards",
+   "venue": "cscw-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3579591",
+   "system_id": "wizundry",
+   "evidence": [
+    {
+     "quote": "simulate speech-based intelligent features (such as keywords spotting and editing through natural speech)",
+     "location": "system sec 3.1 (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15832",
+   "title": "RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative Gastrointestinal Cancer Care CSCW032",
+   "venue": "cscw-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3788068",
+   "system_id": "recover",
+   "evidence": [
+    {
+     "quote": "In particular, we used an Alexa Echo Dot, a voice assistant widely adopted in prior studies for patient-facing healthcare [24, 73], in our study.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15899",
+   "title": "EFR-GVA EvalKit: An Evaluation Framework for the Design and Development of Interactions between Emergency First Responders and Generative Voice Agents EICS011",
+   "venue": "cscw",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3816763",
+   "system_id": "efrgvaevalkit",
+   "evidence": [
+    {
+     "quote": "The microphone picks up the request of an EFR and the Automatic Speech Recognition (ASR) module transcribes the speech to text (STT).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16234",
+   "title": "GlassMail: Towards Personalised Wearable Assistant for On-the-Go Email Creation on Smart Glasses",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660683",
+   "system_id": "glassmail",
+   "evidence": [
+    {
+     "quote": "GlassMail interactions: 1) The user initiates voice-based communication with GlassMail and simply expresses their email requirements in a single turn.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16623",
+   "title": "LLMs Enable Context-Aware Augmented Reality in Surgical Navigation",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735708",
+   "system_id": "16623",
+   "evidence": [
+    {
+     "quote": "Our work introduces a voice user interface (VUI) for surgical AR assistance systems (ARAS), designed for pancreatic surgery, that integrates Large Language Models (LLMs).",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16885",
+   "title": "Re-Envisioning Instant Photography using Generative AI: An Exploratory Design Probe Using the UnReality Camera",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812872",
+   "system_id": "16885",
+   "evidence": [
+    {
+     "quote": "The UnReality Camera prints a photo of the environment augmented by a user’s spoken words as generative input.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

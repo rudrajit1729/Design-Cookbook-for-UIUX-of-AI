@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-019",
+ "exemplars": [
+  {
+   "rid": "10383",
+   "title": "I Want It That Way: Enabling Interactive Decision Support Using Large Language Models and Constraint Programming",
+   "venue": "tiis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3685053",
+   "final_score": 4.53,
+   "why": "This is the cleanest complete instance: the system begins with a time suggestion, the user evaluates that concrete proposal, and a newly expressed preference is used to improve it in the next iteration.",
+   "over_the_runner_up": "It ranks above Metaphorian because the evidence explicitly shows every stage of the proposal–critique–revision loop, whereas Metaphorian leaves the initial system proposal implicit."
+  },
+  {
+   "rid": "16043",
+   "title": "Metaphorian: Leveraging Large Language Models to Support Extended Metaphor Creation for Science Writing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595996",
+   "final_score": 4.2,
+   "why": "Users iteratively revise an individual sub-metaphor by referencing alternatives while retaining the surrounding metaphor chain, demonstrating cumulative, identity-preserving refinement of a structured artifact.",
+   "over_the_runner_up": "It ranks above Smartboard because the evidence explicitly establishes chained iterations and scoped revision within a persistent artifact, while Smartboard demonstrates state carryover but not repeated rounds."
+  },
+  {
+   "rid": "11931",
+   "title": "Smartboard: Visual Exploration of Team Tactics with LLM Agent",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3456200",
+   "final_score": 4.15,
+   "why": "The interface submits user comments together with the current response, directly encoding the pattern’s defining state transition: critique and the existing artifact jointly produce its refinement.",
+   "over_the_runner_up": "It ranks above Code Shaping because Smartboard explicitly carries the current output into the refinement call, whereas Code Shaping may regenerate code solely from an evolving sketch."
+  }
+ ],
+ "notes": "I departed from the consensus by excluding second-ranked Code Shaping (rid 3895) and promoting Smartboard (rid 11931). Code Shaping has an interesting critique channel, but its quote does not establish that the current code is carried forward; that uncertainty cuts directly against the structural signature. Smartboard supplies unusually explicit evidence of that carryover. No selected score differs from its consensus by more than 0.3. Readers should still distrust some missing interaction detail: Metaphorian does not explicitly show the initial proposal, Smartboard does not establish the opening proposal or repeated rounds, and none of the supplied excerpts reports outcome improvements.",
+ "pattern_name": "Propose-Critique-Revise Iterative Refinement",
+ "category_id": "U06",
+ "rated": 30
+}

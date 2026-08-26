@@ -46,7 +46,7 @@ passed, failed, warnings = [], [], []
 # and the categories in sequence inside each. Source ids are kept on every record as
 # source_category_id. Pattern ids are NOT renumbered - their gaps are deliberate.
 CATEGORY_REMAP = {          # source id -> site id
-    "U02": "U01",           # Input, Context & Specification        | Setting the specs
+    "U02": "U01",           # Input, Context & Specification        | Setting the context
     "U01": "U02",           # Initiative & Intervention Timing      |
     "U03": "U03",           # Constraints, Safety & Agency          |
     "U10": "U04",           # Modality, Embodiment & Output Rend.   | Working the output
@@ -58,7 +58,7 @@ CATEGORY_REMAP = {          # source id -> site id
     "U08": "U10",           # Agent Identity & Multi-Party Roles    |
 }
 STAGE_OF = {
-    "U01": "Setting the specs", "U02": "Setting the specs", "U03": "Setting the specs",
+    "U01": "Setting the context", "U02": "Setting the context", "U03": "Setting the context",
     "U04": "Working the output", "U05": "Working the output",
     "U06": "Working the output", "U07": "Working the output",
     "U08": "Fitting into the work", "U09": "Fitting into the work", "U10": "Fitting into the work",
@@ -619,7 +619,7 @@ asset = {
         "category_id_remap": CATEGORY_REMAP,
         "factor_revisions": revisions,
         "stages": [
-            {"name": "Setting the specs", "categories": ["U01", "U02", "U03"]},
+            {"name": "Setting the context", "categories": ["U01", "U02", "U03"]},
             {"name": "Working the output", "categories": ["U04", "U05", "U06", "U07"]},
             {"name": "Fitting into the work", "categories": ["U08", "U09", "U10"]},
         ],

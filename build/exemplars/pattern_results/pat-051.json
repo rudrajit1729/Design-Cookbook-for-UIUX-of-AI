@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-051",
+ "exemplars": [
+  {
+   "rid": "4085",
+   "title": "Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713229",
+   "final_score": 4.88,
+   "why": "The system pairs each AI decision with removable process metadata—either its contributing features or a contrast against the likely human response—while leaving the underlying recommendation intact.",
+   "over_the_runner_up": "Selected over rid 17234 because its contrastive disclosure exposes the basis of a decision while anticipating user misconceptions, and the supplied evidence also indicates improved decision-making skills."
+  },
+  {
+   "rid": "17234",
+   "title": "Generation Probabilities Are Not Enough: Uncertainty Highlighting in AI Code Completions",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3702320",
+   "final_score": 4.72,
+   "why": "Token-level highlighting binds pipeline-derived uncertainty directly to the relevant parts of a code completion, with distinct encodings for low generation likelihood and predicted human editing.",
+   "over_the_runner_up": "Selected over rid 4889 because the quote specifies the metadata source, its precise attachment to the output, and two experimentally compared disclosure variants."
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "final_score": 4.6,
+   "why": "Clickable Why and Why Not controls reveal complementary justification for an evaluation result without changing the evaluated output, making disclosure optional and tightly bound to that result.",
+   "over_the_runner_up": "Selected over rid 15305 because it provides a reconstructable interaction and complementary explanation structure, whereas the partial-explanation evidence does not reveal what is withheld or how the disclosure appears."
+  }
+ ],
+ "notes": "I departed from the consensus by moving rid 17234 and rid 4889 ahead of rid 15305. Although rid 15305 scored highly, its abstract establishes only no/full/partial explanation conditions; it does not expose enough of the disclosure’s content, presentation, or attachment to the suggestion to serve as one of the three clearest structural exemplars. No score adjustment exceeds 0.3. Evidence limitations remain: rid 4085’s impact is inferred from the title rather than a quoted result; rid 17234’s quote describes conditions but no outcome; and rid 4889’s figure caption does not show the explanations’ content or measured effects.",
+ "pattern_name": "Elements for Process Disclosure",
+ "category_id": "U07",
+ "rated": 30
+}

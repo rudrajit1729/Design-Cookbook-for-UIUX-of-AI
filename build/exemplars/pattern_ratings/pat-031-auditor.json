@@ -1,0 +1,146 @@
+{
+ "pattern_id": "pat-031",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "2685",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "The quote establishes checks before sharing: users confirm recorded responses and separately consent to sharing reactions. That is meaningfully adjacent to a pre-send gate, but it does not show the exact outgoing payload rendered with system-computed annotations or scores, nor editing in the review state. Impact appears plausible in sensitive care communication, but the supplied evidence cannot establish the full mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3606",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "The quote explicitly places a privacy safeguard before data is sent to GPT, and the title suggests user-led minimization. However, it does not say that users see the exact payload, receive annotations on it, edit it in a gated review state, or send from that state. The general idea transfers broadly, but the quoted evidence is too abstract to reconstruct or confidently code as Pre-Send Inspection.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4036",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "This is a strong partial match: the app assesses a photo for inferable location leaks, shows users the detected cues, and offers ways to conceal them before intended disclosure. The assessment-and-mitigation loop is concrete and consequential. The quote does not explicitly establish a mandatory review state or that sending can proceed only from it, so it falls short of a definitive 5.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes automatically providing an anonymized interface to a web-agent model. It supplies no visible user-side inspection checkpoint, rendered outgoing payload, system annotations, editability, or user-controlled send action. This is automated privacy mediation, a neighbouring pattern, rather than evidenced Pre-Send Inspection.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern assignment: it describes automated anonymization without a user-visible, editable pre-transmission review state."
+  },
+  {
+   "rid": "6048",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "Presenting quantified re-identification risk could contribute an assessment within this pattern, but the quote contains no outgoing payload, composition-to-transmission sequence, review gate, editing, or sending interaction. On the supplied evidence it is about risk presentation generally, not Pre-Send Inspection.",
+   "disqualify": true,
+   "disqualify_reason": "The quote supports privacy-risk explanation but provides no evidence of a gated, editable checkpoint before transmission."
+  },
+  {
+   "rid": "8508",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "Data-leak detection and data-flow visualization are topical to privacy inspection, but the quote describes a proposed framework and does not specify an outgoing-content interface. Nothing demonstrates that an exact payload is reviewed, annotated, edited, and then sent from a user-side checkpoint.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes detection and visualization but does not support any pre-send review-and-edit gate."
+  },
+  {
+   "rid": "8519",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 0,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "The sentence is a general rationale for intervening before harmful behavior occurs. It does not describe ResponSight's interface mechanics, an outgoing payload, a system assessment, editing, or gated transmission. It is insufficient even to establish an implemented instance of this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The quote is conceptual and does not evidence the structural signature or a specified pre-send inspection interface."
+  },
+  {
+   "rid": "9215",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote plainly establishes a review step before disclosure in which participants post-edit material and decide what will be shared. That captures the gate, user-side control, and transmission-changing edits unusually well. It does not state that the payload is accompanied by system-computed marks or scores, so the evidence supports most\u2014but not all\u2014of the structural signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9597",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "The workflow clearly interposes human refinement of an AI-generated draft before final delivery, and edits determine what reaches the help-seeker. This is a clean instance of editing a generated draft, but the quote does not show an additional system assessment, annotations, or an explicit inspection screen. It therefore fits the named sub-pattern better than the full structural signature.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13808",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system examines images users intend to share, helps identify privacy risks, and enables mitigation through image editing. This strongly supports pre-disclosure assessment plus payload-changing action and appears central to the contribution. The quote does not prove that transmission is technically gated or proceeds from the inspection state, and it gives limited detail about how risks are rendered or annotated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

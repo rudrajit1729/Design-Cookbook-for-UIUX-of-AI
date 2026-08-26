@@ -1,0 +1,215 @@
+{
+ "pattern": {
+  "pattern_id": "pat-017",
+  "pattern_name": "Staged Pipeline",
+  "pattern_slug": "staged-pipeline",
+  "short_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+  "definition": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives. The interface makes the ordering visible and moves the user along it, one stage at a time. Iteration within a stage or between neighbouring stages may be permitted, but the sequence itself is not authored by the user.",
+  "structural_signature": "A stage list S1…Sn exists in the system independent of any particular input, and each stage has its own module, section, or screen. The surface encodes the order (sections laid out in workflow order, a guided sequence of overlays, a chain of modules each consuming the previous one's output), and advancement is by completing or passing a stage rather than by free navigation. The number and identity of stages are constant across runs.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Step-by-Step Workflow",
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "16860",
+   "title": "Robo-Blocks: Generative Scaffolding in End-User Design and Programming of Social Robots",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812997",
+   "system_id": "roboblocks",
+   "evidence": [
+    {
+     "quote": "Users begin in (1) narrative creation, where they work with LLMs to create narratives featuring a robot.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16861",
+   "title": "CoStage: An Embodied AI Co-Creation System for Children's Performative Storytelling with Robots",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813101",
+   "system_id": "costage",
+   "evidence": [
+    {
+     "quote": "A four-step user creative loop: ideation, refinement, enactment, and critique.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16887",
+   "title": "MetaEmbody: Supporting Embodied Metaphor Ideation for Tangible Interaction Design",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812967",
+   "system_id": "metaembody",
+   "evidence": [
+    {
+     "quote": "we developed MetaEmbody, an AI-assisted creative support system that helps designers explore contextual analogies, derive embodied metaphors, and shape them into tangible interaction concepts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16913",
+   "title": "Implicit Affective Steering: A Design Probe for Generative Curatorial Storytelling",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812861",
+   "system_id": "16913",
+   "evidence": [
+    {
+     "quote": "MoodCurator is a web-based system that enables curatorial storytelling through three interconnected audience steering actions:",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16919",
+   "title": "DataSway: Vivifying Metaphoric Visualization with Animation Clip Generation and Coordination",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813048",
+   "system_id": "datasway",
+   "evidence": [
+    {
+     "quote": "Users can initially derive animation clips for data elements from vision-language models (VLMs) and subsequently coordinate their timelines based on entity order, attribute values, spatial layout, or randomness.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17083",
+   "title": "Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3609331",
+   "system_id": "marvista",
+   "evidence": [
+    {
+     "quote": "In this section, we describe Marvista’s key features spanning three phases: before, during, and after reading an article.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17197",
+   "title": "Prompt2Task: Automating UI Tasks on Smartphones from Textual Prompts",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3716132",
+   "system_id": "prompt2task",
+   "evidence": [
+    {
+     "quote": "Prompt2Task presents results stage-by-stage, allowing users to intuitively interact with the system through dialogues, selections, edits, and demonstrations.",
+     "location": "intro (contributions)"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

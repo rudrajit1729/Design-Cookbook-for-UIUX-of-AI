@@ -1,0 +1,105 @@
+{
+  "category_id": "U09",
+  "category_name": "Workspace Layout & Tool Integration",
+  "exemplars": [
+    {
+      "rid": "13741",
+      "title": "StoryEnsemble: Enabling Dynamic Exploration & Iteration in the Design Process with AI and Forward-Backward Propagation",
+      "venue": "uist-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3746059.3747772",
+      "pattern_id": "pat-026",
+      "pattern_name": "Unified Workspace",
+      "final_score": 4.95,
+      "why": "Four lettered stage regions - personas (A), problems (B), solutions (C), scenarios (D) - sit in one environment, and edits propagate forward and backward across them, so the output of any stage stays directly addressable in the others with no export step. It is the only candidate in the dimension whose coded quote names both the regions and the state mechanism that binds them; every other Unified Workspace candidate asserts integration by using the word 'unified'. Any tool whose stages are currently separate files or tabs can lift the propagation rule: name the stages, bind them to one object, and make edits travel in both directions.",
+      "over_the_runner_up": "SnapClass names the consolidated stages and even the prior tool-switching problem, but 'all in one interface' is co-location; StoryEnsemble is the one quote that shows the shared state rather than claiming it."
+    },
+    {
+      "rid": "4643",
+      "title": "PolicyPad: Collaborative Prototyping of LLM Policies",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3791689",
+      "pattern_id": "pat-086",
+      "pattern_name": "Fixed Functional Panel Layout",
+      "final_score": 4.9,
+      "why": "Three fixed positions carry three functions: collaboration on the left, a collaborative policy editor in the middle, a private model-behavior sidebar on the right. What earns the slot is that the arrangement encodes a social boundary rather than a technical one - shared drafting against private testing of unfinished model behavior - which is the signature's optional 'the layout means something further' clause satisfied verbatim. Any team tool that needs people to coordinate on a common artifact while rehearsing risky changes unseen can copy the shared-middle / private-edge split directly.",
+      "over_the_runner_up": "DynaVis names four regions just as explicitly, but its panels partition tools by technical function; PolicyPad's positions answer 'why this arrangement and not another'."
+    },
+    {
+      "rid": "2436",
+      "title": "Selenite: Scaffolding Online Sensemaking with Comprehensive Overviews Elicited from Large Language Models",
+      "venue": "chi-2024",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3613904.3642149",
+      "pattern_id": "pat-088",
+      "pattern_name": "AI Panels for Host Application",
+      "final_score": 4.83,
+      "why": "An unauthored third-party page the user found by search is left intact while a generated layer attaches at two granularities: global grounding with a set of common criteria beside the page, and local grounding as in-situ annotations of criteria per paragraph. The pattern's signature says the anchoring, not the generation, is what must be specified, and paragraph-level attachment plus a page-level companion is the most reconstructable attachment scheme in the pool. Anyone building an extension over documents they do not own can lift the two-level anchor: one persistent overview, one per-span annotation, both detachable.",
+      "over_the_runner_up": "IntentPrism makes the same plug-in-over-webpages move with a 0.25 gap and adds only cross-page aggregation, which is a sensemaking contribution rather than a layout one; Selenite states the identical claim in strictly richer form."
+    },
+    {
+      "rid": "5580",
+      "title": "GeoVisA11y: An AI-based Geovisualization Question-Answering System for Screen-Reader Users",
+      "venue": "chi-2026",
+      "year": 2026,
+      "url": "https://doi.org/10.1145/3772318.3790334",
+      "pattern_id": "pat-057",
+      "pattern_name": "Companion Chat Panel",
+      "final_score": 4.7,
+      "why": "Two concurrently live regions with the right asymmetry: an interactive map component that stays usable on its own, and a chat component taking unbounded text-or-voice questions that are meaningless without it. The screen-reader use case makes the companion channel consequential rather than decorative - the dialogue is how a non-visual user gets at a visual artifact - which is the strongest available answer to 'why attach a chat to this thing at all'. Transfers to any dense artifact (dashboard, map, model output) whose structure resists linear reading.",
+      "over_the_runner_up": "Proxona scopes its turns to the artifact more explicitly ('thoughts on the storyline'), but GeoVisA11y scores 0.2 higher, shows the same two live regions, and avoids duplicating StoryEnsemble's LLM-persona ideation domain."
+    },
+    {
+      "rid": "4105",
+      "title": "Talk to the Hand: an LLM-powered Chatbot with Visual Pointer as Proactive Companion for On-Screen Tasks",
+      "venue": "chi-2025",
+      "year": 2025,
+      "url": "https://doi.org/10.1145/3706598.3715579",
+      "pattern_id": "pat-091",
+      "pattern_name": "In-Situ Agent Presence",
+      "final_score": 4.7,
+      "why": "The agent takes the form of a second mouse cursor alongside the user's, with its chat bubble attached to that cursor instead of a dedicated chat log area - agent drawn in the user's own coordinate space, anchored to the pointer, and explicitly owned by no container. That last negative clause is the hardest part of the signature to evidence and this quote states it outright, making it the best-evidenced candidate in the dimension. It is also the dimension's counter-move: the exemplar that shows assistance can have no panel at all, which any desktop or canvas tool can borrow.",
+      "over_the_runner_up": "Fairy Cursor is the same cursor-ornament idea from an intro sentence that shows the form but neither the assistance nor the absence of a separate container; Talk to the Hand evidences all three clauses in one line."
+    }
+  ],
+  "notes": "Five slots, seven patterns, so this set leads with five distinct pattern_ids rather than stacking any one - no pattern appears twice and no two entries make the same move. Overrides of pattern-level judgements: (1) rid 2440 Memoro carries the dimension's only 5.0 and is excluded anyway. Its 'modes' are voiced query versus queryless prediction on a screenless in-ear wearable; U09's own boundary is 'visible surface placement and integration, not sensory modality', so leading a layout dimension with a paper that has no visible surface would let a reader define the dimension wrongly from the exemplar alone. (2) pat-087 Dual Artifact Presentation Modes goes unrepresented as a consequence: with Memoro out, rid 10337 is a between-subjects comparison of two interface types with no selector and no single shell, and rid 6070 SceneScout offers two navigation policies over the same imagery with switching behavior nowhere in the quote. None of the three shows a spatial composition, so the pattern as coded in U09 is its weakest-fitting member and buying coverage with any of them would cost a confirmed entry. (3) pat-089 Chat Panels also goes unrepresented. Its best candidate (rid 9215, 3.9) is a full point below the rest of the set, its interestingness is at floor by the curator's own account ('conventional' in one paper's own words), and the papers' contributions lie elsewhere - the ordinary transcript-plus-composer panel is the dimension's baseline, not one of its five best illustrations. Things to distrust in what is kept: every entry rests on a single figure caption or system-section excerpt, so persistence across a session is inferred rather than observed for PolicyPad (and for every pat-086 candidate equally); Selenite's detachment clause is entailed by the host being a third-party page, not stated; GeoVisA11y's quote does not verbatim scope the chat turns to the map, which is the one clause Proxona has and it lacks; and none of the five quotes demonstrates measured outcome impact.",
+  "near_misses": [
+    {
+      "rid": "2977",
+      "title": "DynaVis: Dynamically Synthesized UI Widgets for Visualization Editing",
+      "pattern_id": "pat-086",
+      "reason": "Four named regions with assigned functions and a genuinely sharp idea - a fixed frame whose roles persist while its contents are synthesized on the fly. Excluded only because PolicyPad leads the same pattern and the set prefers a fifth pattern over a second panel layout."
+    },
+    {
+      "rid": "4354",
+      "title": "Proxona: Supporting Creators' Sensemaking and Ideation with LLM-Powered Audience Personas",
+      "pattern_id": "pat-057",
+      "reason": "The cleanest Companion Chat Panel evidence in the pool - it is the only quote that scopes the turns to the displayed artifact ('ask personas for thoughts on the storyline'). Loses the single pat-057 slot to GeoVisA11y on score (4.5 vs 4.7) and on domain spread against StoryEnsemble's LLM-persona ideation. It clearly outranks rid 2446, whose right-hand region is an audience chat window with the agent imported from the paper title."
+    },
+    {
+      "rid": "14046",
+      "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+      "pattern_id": "pat-026",
+      "reason": "The only candidate anywhere in U09 that supplies the normally unobservable half of the Unified Workspace signature - it names the prior platform switching and the four consolidated stages in one sentence. Held out because 'all in one interface' evidences co-location rather than shared state, and StoryEnsemble covers the pattern with both halves."
+    },
+    {
+      "rid": "3465",
+      "title": "CreepyCoCreator? Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality",
+      "pattern_id": "pat-091",
+      "reason": "Carries In-Situ Agent Presence's other branch - agent presence as position-specific edits inside the shared artifact while the user keeps working - which Talk to the Hand cannot show. Held out because the evidence is a truncated figure caption of one experimental condition and the VR implementation costs it on generalizability; with one slot per pattern, the cursor branch is the better-evidenced one."
+    },
+    {
+      "rid": "6070",
+      "title": "SceneScout: Towards AI-Driven Access to Street Level Imagery for Blind Users",
+      "pattern_id": "pat-087",
+      "reason": "The only pat-087 candidate with a visible surface, and the closest this set came to covering a sixth pattern. Excluded because the quote names no selector and no switching, so the signature's third element is absent, and it duplicates GeoVisA11y's blind-user accessibility domain at a zero score gap."
+    },
+    {
+      "rid": "8454",
+      "title": "Meta-evaluating the Effects of Social Preferences on NPC-evaluators in an Energy Community Game",
+      "pattern_id": "pat-089",
+      "reason": "Lowest candidate in the dimension at 3.1 and the clearest case of a quote naming the pattern instead of showing it - the message-history region is carried entirely by the words 'is a chat interface'. Listed as the boundary case the rubric's 'topical but does not show the mechanism' disqualifier is written for."
+    }
+  ]
+}

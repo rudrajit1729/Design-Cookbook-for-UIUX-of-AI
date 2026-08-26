@@ -1,0 +1,244 @@
+{
+ "pattern_id": "pat-097",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "3704",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A canonical instance: users pause an executing multi-agent run and inject new messages that alter that same run. The user action, live control channel, and system behavior are explicit, and the debugging/steering mechanism transfers broadly.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3885",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Barge-in makes an agent utterance interruptible, and the user's repair request affects the ongoing conversation. The interaction is concrete and central to the title, though interruption handling is an established voice-interface move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4509",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The user can pause an in-progress simulation at any point, enter a breathwork activity, and presumably return afterward. This clearly makes the simulation non-atomic, but the intervention is a domain-specific suspension rather than steering the simulation itself.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5071",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The agent pauses during execution at a sensitive-data boundary and exposes an Allow/Deny control that determines whether the run proceeds. This is highly consequential and reusable, although a blocking permission modal is a relatively conventional intervention mechanism and the quote is truncated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5240",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "\u201cAt any stage\u201d could describe ordinary editing between workflow stages or after intermediate outputs; it does not establish a live control channel, an executing process being interrupted, or how an intervention changes an in-flight run. The broader intent is transferable, but the supplied evidence cannot substantiate this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The quote does not demonstrate intervention during execution; it only claims that users may refine a design at unspecified workflow stages."
+  },
+  {
+   "rid": "5322",
+   "scores": {
+    "representativeness": 3,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "A user rejects the current physical-assistance approach and causes generation of a different stimulation sequence, a consequential replanning move. However, the quote does not say whether active assistance is paused or modified in flight versus completing before a new sequence begins.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5627",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Repairing agent mistakes \u201cwhile executing tasks\u201d supports intervention in an ongoing multi-step run and addresses a real oversight problem. The evidence does not specify the control, pause semantics, editable state, or how repairs propagate, so reconstruction is difficult.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6060",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The automation detects risky screens, pauses the active run, and requests user intervention before continuing. This is clear, consequential, and portable across agentic workflows, though system-triggered risk gating is a fairly expected implementation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8667",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Letting a user interject and steer an ongoing multi-agent conversation makes the larger conversational process non-atomic. The evidence names the action and purpose but provides no UI, timing semantics, state model, or concrete system response.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9385",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Intermediate intervention checkpoints divide a deep-research run into inspectable, steerable segments, matching the pattern at a high level. The quote does not reveal what users can change, what appears at a checkpoint, or how execution resumes.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9743",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "During a deviating object conversation, users can inject prompts or newly captured environmental photos into the continuing exchange. The intervention inputs and timing are concrete and notably multimodal, although the resulting update behavior is not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10227",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Interrupting an erroneous generation and steering the model toward a customized response is the paper's stated interaction, directly exposing reasoning as an in-flight controllable process. It is broadly reusable and reframes generation as inspectable execution, though the abstract does not fully specify the controls.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13492",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The user changes guiding prompts during generation, directly substituting parameters on an active run rather than waiting for another generation. This is an unusually clean, rebuildable, and transferable instance of making generation non-atomic.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13652",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "An unscripted user question can enter an ongoing simulated group conversation, making the session steerable rather than fixed. The quote does not clarify whether users interrupt an active utterance, intervene only between turns, or how agents incorporate the question.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13756",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Morae identifies decision points during task execution, pauses the UI agent, obtains a user choice, and then continues under that choice. The trigger, control handoff, partial-state boundary, and applicability to other agents are all explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13806",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Designer intervention inside an ongoing optimization process is a strong, portable alternative to treating optimization as an atomic solver call. However, the quote gives no concrete command, visible intermediate state, update semantics, or continuation behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16863",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Building responses in tandem with the model and intervening in its algorithmic decisions suggests an executing process with user control. The evidence is conceptual rather than reconstructable: it does not identify the intervention action, timing, displayed state, or system response.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

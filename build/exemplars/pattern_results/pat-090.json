@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-090",
+ "exemplars": [
+  {
+   "rid": "2002",
+   "title": "Choice Over Control: How Users Write with Large Language Models using Diegetic and Non-Diegetic Prompting",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580969",
+   "final_score": 4.75,
+   "why": "This is the most complete structural match: pressing Tab explicitly requests generation, and the suggestion appears after the current caret in the same text editor.",
+   "over_the_runner_up": "Unlike HiLDE, its evidence directly states both the user-fired control and the caret-relative placement of the resulting suggestion."
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "final_score": 4.6,
+   "why": "The programmer invokes a keyboard shortcut precisely when and where each next implementation fragment is wanted, making on-demand continuation an unusually intentional, incremental control strategy.",
+   "over_the_runner_up": "It surpasses FigurA11y because the evidence explicitly identifies the shortcut, repeated user invocation, and continuation behavior, whereas FigurA11y’s caption leaves the activating gesture and insertion behavior less certain."
+  },
+  {
+   "rid": "10179",
+   "title": "FigurA11y: AI Assistance for Writing Scientific Alt Text",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645212",
+   "final_score": 4.1,
+   "why": "The explicitly named Generate at Cursor feature places requested generation within the scientific-alt-text authoring field, closely matching the pattern while applying it to consequential accessibility work.",
+   "over_the_runner_up": "It edges out CoAuthor because its evidence establishes cursor-relative generation, while CoAuthor clearly establishes on-demand timing but never states that suggestions are produced at the caret."
+  }
+ ],
+ "notes": "I reversed the top two consensus candidates: rid 2002 ranks first because its quote directly establishes every critical structural element—explicit invocation, current-caret placement, and the same editing surface—while rid 14006 only strongly implies same-surface cursor-relative insertion. Otherwise, the selected set follows the consensus top three, and no score adjustment exceeds 0.3. Readers should distrust the exact insertion semantics for HiLDE because they are implied rather than stated verbatim. FigurA11y is the weakest inclusion: its figure caption names Generate at Cursor and locates it in the authoring workflow, but does not explicitly describe the activating gesture, whether generation occurs only on request, or how text is committed.",
+ "pattern_name": "On-Demand Suggestion",
+ "category_id": "U02",
+ "rated": 17
+}

@@ -2,7 +2,9 @@
 """Pack the site into one self-contained HTML file.
 
 Inlines: styles, React 18 UMD (the same build the previous bundle shipped), the app,
-and the generated data as gzip + base64, inflated in the page with DecompressionStream.
+the generated data as gzip + base64, inflated in the page with DecompressionStream, and
+the exemplar figures as WebP data URIs (already compressed, so those ride as plain JSON
+rather than through the gzip payload).
 The page makes no network requests at all: the Swiss Archive skin uses system faces
 (Helvetica Neue, SF Mono), so nothing is fetched from a CDN.
 """
@@ -21,6 +23,9 @@ react_dom = read("build", "vendor", "react-dom.production.min.js")
 data = json.load(open(os.path.join(ROOT, "build", "cookbook_v2.json"), encoding="utf-8"))
 raw = json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
 b64 = base64.b64encode(gzip.compress(raw, 9)).decode("ascii")
+
+exemplars = read("build", "exemplars_web.json")  # written by build/exemplar_site_figures.py
+exemplars = exemplars.replace("</", "<\\/")  # so no string in it can close the script tag
 
 html = """<!DOCTYPE html>
 <html lang="en">
@@ -41,6 +46,7 @@ html = """<!DOCTYPE html>
 <script>%(react_dom)s</script>
 <script>%(app)s</script>
 <script id="cookbook-data" type="application/gzip;base64">%(b64)s</script>
+<script id="cookbook-exemplars" type="application/json">%(exemplars)s</script>
 <script>
 (function () {
   var b64 = document.getElementById('cookbook-data').textContent.trim();
@@ -58,6 +64,8 @@ html = """<!DOCTYPE html>
   try {
     var stream = new Blob([bytes(b64)]).stream().pipeThrough(new DecompressionStream('gzip'));
     new Response(stream).json().then(function (data) {
+      var ex = document.getElementById('cookbook-exemplars');
+      try { data.exemplars = JSON.parse(ex.textContent); } catch (e) { data.exemplars = null; }
       window.__mountCookbook(data);
     }).catch(function (e) { fail('Could not read the embedded catalogue: ' + e.message); });
   } catch (e) {
@@ -67,8 +75,10 @@ html = """<!DOCTYPE html>
 </script>
 </body>
 </html>
-""" % {"css": css, "app": app, "react": react, "react_dom": react_dom, "b64": b64}
+""" % {"css": css, "app": app, "react": react, "react_dom": react_dom, "b64": b64,
+       "exemplars": exemplars}
 
 open(OUT_HTML, "w", encoding="utf-8").write(html)
-print("wrote %s — %.2f MB (data %.2f MB raw, %.2f MB gzip)"
-      % (os.path.basename(OUT_HTML), os.path.getsize(OUT_HTML) / 1e6, len(raw) / 1e6, len(b64) * 3 / 4 / 1e6))
+print("wrote %s — %.2f MB (data %.2f MB raw, %.2f MB gzip, exemplar figures %.2f MB)"
+      % (os.path.basename(OUT_HTML), os.path.getsize(OUT_HTML) / 1e6, len(raw) / 1e6,
+         len(b64) * 3 / 4 / 1e6, len(exemplars) / 1e6))

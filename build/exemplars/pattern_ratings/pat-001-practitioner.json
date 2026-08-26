@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-001",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "12304",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "A textbook coordinated-view implementation: selecting a region in one heatmap highlights the identical region in every other heatmap. The mechanism is explicit and rebuildable, although linked heatmaps are a fairly standard design move and impact cannot be established from the supplied excerpt alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12837",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Hovering an insight entity visibly coordinates its corresponding subgraph and visual elements across three differently encoded views. This is unusually clear, broadly reusable linking; its outcome impact is plausible but not demonstrated by the available evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13703",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Bidirectional highlighting between feedback units, source context, and relevant text is a strong, transferable correspondence mechanism. The quote does not specify the precise hover or selection trigger, preventing a top mechanism score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "627",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Brushing points in one projection filters and highlights their stable counterparts across representations and layers. This cleanly exposes both the identity mapping and system response, though the layer-comparison setting somewhat constrains direct transfer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10239",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Clicking a call-graph node highlights the corresponding source segment in a synchronized editor, exactly matching the pattern. The move is highly reusable and useful for navigation, but graph-to-source linking is established rather than surprising.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15268",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "A timeline topic selection changes the topic block and highlights mapped nodes on the canvas. The interaction is concrete and useful, but the quote leaves the underlying identity mapping less explicit than the strongest exemplars.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10185",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Selecting a sentence highlights an overlapping pre-tagged counterpart and can preserve that highlight when the sentence moves into a comment pane. The interaction is legible, but the excerpt ambiguously mixes linked renderings with overlap detection inside the same document.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15884",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Inspecting a latent-space point exposes its corresponding image, predicted label, and confidence in a linked region. This is a clear multi-encoding identity mapping, although the exact selection state and visual response are only implied.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14867",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Hovering an extracted review sentence highlights its source sentence, a simple and highly transferable source-linking mechanism. The excerpt does not establish whether this materially improves review judgments, and the interaction itself is conventional.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8598",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Hovering summary phrases highlights their corresponding source passages, making an AI output directly verifiable against evidence. The trigger, mapping, response, and practical trust benefit are all exceptionally clear and readily transferable.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13643",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Selecting an image element traces it to editable prompt labels, turning visible correspondence into precise refinement control. It is a particularly consequential and non-obvious use of linked views, though its element-to-prompt mapping is more specialized than generic cross-view selection.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8404",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Suggestion hover highlights the exact source snippet while separate color treatment shows spans used for generation. The mechanism is concrete and reusable for provenance inspection, albeit close to the expected implementation of source-linked suggestions.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12281",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Selecting an agent-time point in either analytical view moves the monitor to the same agent's location at that time. The stable entity-and-time mapping and cross-view navigation are explicit; generalization is strongest for temporal or spatial monitoring interfaces.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12608",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The supplied quotation is truncated before identifying what the glyph corresponds to or which other view changes, so the Linked Views structural signature cannot be verified.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence quote does not support the pattern assignment: it omits the counterpart, target view, and identity mapping."
+  },
+  {
+   "rid": "13419",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Explicit one-to-one mappings connect code lines, story lines, and comic rows across three encodings. This is a memorable multi-representation correspondence, but the excerpt demonstrates fixed visual links rather than an interaction-driven rendering change.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6200",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Hovering an image reveals labels and highlights the corresponding scene-graph attributes, giving auditors a clear bridge between examples and structured metadata. The interaction is rebuildable, though the image-to-scene-graph pairing is somewhat domain-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13727",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote establishes a stable identity mapping between dots and graph nodes representing the same knowledge-base chunks. It fits the pattern's fixed-correspondence edge case, but provides no hover, selection, or visible coordinated response.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "343",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Brushing one density representation produces linked updates in the remaining density views, directly exposing trigger and coordinated response. It is a strong linked-view exemplar, although the particular relationships between density embeddings require a specialized analytical context.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10527",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Interacting with model-internal representations updates statistical views, indicating coordination but not explicitly stating which items correspond or how they change. With only this quote, impact and distinctiveness remain underdetermined.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13986",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Three-way linking among subgoals, narrative history, and code suggests a valuable multi-encoding correspondence. However, the excerpt supplies neither the user trigger nor the visual response, making the implementation difficult to reconstruct.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13714",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Hover highlights and keyword connections coordinate similar claims across responses, providing a clear comparison aid. It is a weaker structural match because the linked claims are related but distinct items under essentially the same textual encoding, rather than multiple renderings of one item.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2553",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Clicking a feedback link selects the exact target in both the mockup and layer hierarchy, converting abstract critique into inspectable UI context. The three-region response is explicit, broadly transferable, and materially improves the ability to act on feedback.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14017",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The excerpt describes spatial brushing and trajectory highlighting within one visualization, not corresponding renderings across two or more display regions.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted interaction does not demonstrate multiple views or an identity mapping between renderings."
+  },
+  {
+   "rid": "6049",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote shows rubric toggles driving evidence highlighting and separately mentions calibration statistics, but it does not establish that the regions render the same underlying items or maintain visible counterparts.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports filtering and monitoring, but not the Linked Views identity-mapping requirement."
+  },
+  {
+   "rid": "13183",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Calling four views \u201ccoordinated\u201d does not identify shared items, correspondence, a user action, or a cross-view rendering response.",
+   "disqualify": true,
+   "disqualify_reason": "The generic figure caption does not substantiate the pattern's structural signature."
+  },
+  {
+   "rid": "5176",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Bidirectional navigation connects in-situ chat cues with their schema counterparts across textual and structured encodings. This is broadly reusable and consequential for preserving context, although the exact highlight or scroll response is not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12319",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Focusing a code node or text block reveals visual links between the paired representations. The bidirectional focus mechanism is reasonably clear and useful, but the quote does not specify the exact rendering changes or mapping granularity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12559",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quotation ends after saying two hierarchies support something coordinated; it never supplies the coordinated interaction, correspondence, or visual result.",
+   "disqualify": true,
+   "disqualify_reason": "The truncated evidence does not support the Linked Views assignment."
+  },
+  {
+   "rid": "12469",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Although a hover trigger and highlighting are mentioned, the quotation omits what is associated, where it appears, and whether it is a counterpart in another view.",
+   "disqualify": true,
+   "disqualify_reason": "The truncated evidence cannot establish multiple renderings or an identity mapping."
+  },
+  {
+   "rid": "2937",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Hovering a provenance tile reveals its corresponding prompt and highlights the associated generated text. The trigger and two linked responses are explicit and useful for provenance inspection, though direct transfer is strongest in generation-history interfaces.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

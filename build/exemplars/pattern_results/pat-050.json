@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-050",
+ "exemplars": [
+  {
+   "rid": "10281",
+   "title": "Semantic See-through Goggles: Wearing Linguistic Virtual Reality in (Artificial) Intelligence",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789145",
+   "final_score": 4.8,
+   "why": "This is the canonical exemplar: live camera imagery crosses from image to text and back to generated image, with only the terminal reconstruction reaching the wearer and no direct-view bypass.",
+   "over_the_runner_up": "It outranks WebPerceptor because its evidence explicitly establishes the complete capture-to-display chain, cross-representation losses, and displacement of the original signal."
+  },
+  {
+   "rid": "9715",
+   "title": "WebPerceptor: An Open Source Chromium Plugin for Real-Time LLM-Based In-Line, In-Browser Re-Writing of Website Content",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798730",
+   "final_score": 4.1,
+   "why": "WebPerceptor cleanly transplants the pattern to a text stream: an LLM continuously rewrites web content inline so the generated result occupies the perceptual position of the published page rather than appearing as a separate aid.",
+   "over_the_runner_up": "It outranks ShadAR because the LLM directly transforms the content users perceive in real time, whereas ShadAR's generative model creates a shader upstream and the live transformation is then conventional shader execution."
+  },
+  {
+   "rid": "9841",
+   "title": "ShadAR: LLM-driven shader generation to transform visual perception in Augmented Reality",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799378",
+   "final_score": 3.2,
+   "why": "ShadAR places a generated shader directly in the passthrough-video rendering path, making the transformed feed the user's real-time view; it is a valid but less canonical control-flow instance because generation configures the filter rather than reconstructing every frame through a generative model.",
+   "over_the_runner_up": "It outranks the HTML-correction candidate because its evidence identifies a continuous sensor-to-render transformation in the user's perceptual path, while the latter never establishes display, replacement, or no-bypass behavior."
+  }
+ ],
+ "notes": "I retained the consensus top three and their order. I reduced ShadAR from 3.58 to 3.2 because its LLM generates the shader upstream; the continuously interposed operation is shader-based rather than an explicit signal-to-symbolic-to-signal generative reconstruction. Readers should treat WebPerceptor's no-bypass property as strongly implied rather than directly stated, and ShadAR's exclusive displacement of unfiltered passthrough as implied by the rendering description. None of the supplied evidence reports user outcomes, so impact remains provisional. The lower-ranked candidates were not promoted despite their potentially interesting subject matter because their quotes fail to establish the defining continuous, unavoidable capture-to-transform-to-display structure.",
+ "pattern_name": "Generative Filters",
+ "category_id": "U04",
+ "rated": 7
+}

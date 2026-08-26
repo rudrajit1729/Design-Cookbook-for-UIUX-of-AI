@@ -1,0 +1,1090 @@
+{
+ "pattern": {
+  "pattern_id": "pat-017",
+  "pattern_name": "Staged Pipeline",
+  "pattern_slug": "staged-pipeline",
+  "short_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+  "definition": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives. The interface makes the ordering visible and moves the user along it, one stage at a time. Iteration within a stage or between neighbouring stages may be permitted, but the sequence itself is not authored by the user.",
+  "structural_signature": "A stage list S1…Sn exists in the system independent of any particular input, and each stage has its own module, section, or screen. The surface encodes the order (sections laid out in workflow order, a guided sequence of overlays, a chain of modules each consuming the previous one's output), and advancement is by completing or passing a stage rather than by free navigation. The number and identity of stages are constant across runs.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Step-by-Step Workflow",
+  "dimension": {
+   "category_id": "U08",
+   "category_name": "Workflow, History & Session Structure",
+   "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+   "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "6257",
+   "title": "EUREXA: End-User Reconfiguration of Environment with eXplainable Augmentation for Generative Fabrication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791934",
+   "system_id": "eurexa",
+   "evidence": [
+    {
+     "quote": "EUREXA supports end-users through a diagnose–discover–describe workflow: from input with varying ambiguity and complexity, it surfaces latent interaction challenges, presents reconfiguration opportunities through augmentations, and produces interpretable designs.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6277",
+   "title": "Social Media Feed Elicitation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791569",
+   "system_id": "6277",
+   "evidence": [
+    {
+     "quote": "The elicitation interview proceeds in three main stages, meant to direct user intention towards the different main areas of interest for their specification or enjoyment.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6284",
+   "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790553",
+   "system_id": "papertok",
+   "evidence": [
+    {
+     "quote": "The process begins once the user uploads a PDF of their academic paper, and they are taken to Step 1: Hook + Script (Figure 2a).",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6309",
+   "title": "Homeroom: A Value-Aligned and Community-Centered Homeschooling Platform",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791698",
+   "system_id": "homeroom",
+   "evidence": [
+    {
+     "quote": "Homeroom provides plan-then-generate story and curriculum creation, alignment, and comparison to local school standards, and resource sharing in invite-only groups.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7294",
+   "title": "Beyond Text-to-Image: Multimodal Prompts to Explore Generative AI",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3577043",
+   "system_id": "7294",
+   "evidence": [
+    {
+     "quote": "In Opal, we provided a system that translated news article text into prompts of visual language through a series of stages headlined above.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "7441",
+   "title": "ARtVista: Gateway To Empower Anyone Into Artist",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650760",
+   "system_id": "artvista",
+   "evidence": [
+    {
+     "quote": "Users first input prompts via speech recognition to generate realistic images and then select one to transform it into a specific painting style.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7482",
+   "title": "CareerSim: Gamification Design Leveraging LLMs For Career Development Reflection",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650928",
+   "system_id": "careersim",
+   "evidence": [
+    {
+     "quote": "A player’s career development is divided into gradual stages, each with its themes, events and tasks. Players need to make decisions to progress through a certain stage and discover more career possibilities.",
+     "location": "system sec 3.3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7497",
+   "title": "Contextual AI Journaling: Integrating LLM and Time Series Behavioral Sensing Technology to Promote Self-Reflection and Well-being using the MindScape App",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650767",
+   "system_id": "contextualaijournaling",
+   "evidence": [
+    {
+     "quote": "Journaling workfow includes an emoji based mood assessment, a one-minute breathing exercise, followed by contextual prompts.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Metacognition",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "7534",
+   "title": "Empowering Personalized Learning through a Conversation-based Tutoring System with Student Modeling",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651122",
+   "system_id": "7534",
+   "evidence": [
+    {
+     "quote": "The flow begins with an onboarding survey that introduces users to the system’s features and establishes their initial student profile.",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7683",
+   "title": "Prompt-Gaming: A Pilot Study on LLM-Evaluating Agent in a Meaningful Energy Game",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650774",
+   "system_id": "promptgaming",
+   "evidence": [
+    {
+     "quote": "The prompt (see Appendix B) consists of eight levels and is controlled by nine game rules.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7714",
+   "title": "StoryPrompt: Exploring the Design Space of an AI-Empowered Creative Storytelling System for Elementary Children",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651118",
+   "system_id": "storyprompt",
+   "evidence": [
+    {
+     "quote": "the child begins by selecting a character (Figure 1a) and defining the character’s traits such as bravery and honesty (Figure 1b). Next, the child selects three sequential story scenes (Figure 1c) and defines the character emotions associated with each scene (Figure 1d)",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7718",
+   "title": "Supporting Novice Researchers to Write Literature Review using Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650787",
+   "system_id": "7718",
+   "evidence": [
+    {
+     "quote": "LitWeaver defnes three stages of literature review: paper review, topic fnding, and paragraph writing, to help users organize a narrative with clear milestones (DR2: support for organization)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8189",
+   "title": "CaseMaster: Designing a Probe for Oral Case Presentation Training with LLM Assistance",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720206",
+   "system_id": "casemaster",
+   "evidence": [
+    {
+     "quote": "During the Reflection Stage, users can compare their solutions in the (D) Validation panel, where highlighted discrepancies emphasize the differences between their solutions and the reference.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8199",
+   "title": "Colin: A Multimodal Human-AI Co-Creation Storytelling System to Support children's Multi-Level Narrative Skills",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719837",
+   "system_id": "colin",
+   "evidence": [
+    {
+     "quote": "In the generation stage, Colin supports facilitator to define and review generated text and image content freely.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8245",
+   "title": "Designing for Qualitative Evaluation of Synthetic Medical Data",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720274",
+   "system_id": "8245",
+   "evidence": [
+    {
+     "quote": "However, all versions followed the same guided workflow, as shown in Figure 1.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "8263",
+   "title": "Dreamory: AI-Powered Bedtime Storytelling for Emotional Reframing Before In-Sleep Memory Consolidation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719850",
+   "system_id": "dreamory",
+   "evidence": [
+    {
+     "quote": "The system operates through three key stages: letter writing, story generation, and story display.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8270",
+   "title": "EasyFDM: AI-Assisted Multimaterial 3D Printing with Text and Image Representation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719935",
+   "system_id": "easyfdm",
+   "evidence": [
+    {
+     "quote": "EasyFDM Workflow from User Input to 3MF File Generation. This figure showcases the complete workflow of EasyFDM, demonstrating the steps from user input to the generation of a 3MF file for multi-material 3D printing",
+     "location": "fig 4"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8360",
+   "title": "GenAI-Supported Creative Learning in Digital Museum Education: A Case Study of Maritime Art Painting Creation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719910",
+   "system_id": "8360",
+   "evidence": [
+    {
+     "quote": "By integrating GenAI with the five stages of the iterative creative learning path, Mariscope offers a personalized and dynamic learning experience.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8367",
+   "title": "GeneyMAP: Designing GenAI-empowered User Journey Mapping Tool",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720075",
+   "system_id": "geneymap",
+   "evidence": [
+    {
+     "quote": "GeneyMAP workflow empowered GF1-GF8 in four steps",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8391",
+   "title": "ImaginAItion: Promoting Generative AI Literacy Through Game-Based Learning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719844",
+   "system_id": "imaginaition",
+   "evidence": [
+    {
+     "quote": "Players can view the instructions on how to play the game with an overview of the prompting, drawing, and guessing turns along with the scoring mechanisms.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Personalization",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8433",
+   "title": "LearnMate: Enhancing Online Education with LLM-Powered Personalized Learning Plans and Support",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719857",
+   "system_id": "learnmate",
+   "evidence": [
+    {
+     "quote": "The LearnMate course selection interface. Users begin by defining their learning goals through either: (1) specifying learning interests (step a ) to generate course recommendations (step b ), or (2) browsing courses by topic (step c ).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8444",
+   "title": "MAP: Multi-user Personalization with Collaborative LLM-powered Agents",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719853",
+   "system_id": "map",
+   "evidence": [
+    {
+     "quote": "Drawing on conflict resolution theory, we introduce a user-centered workflow for multi-user personalization comprising three stages: Reflection, Analysis, and Feedback.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8457",
+   "title": "MindMate: Exploring the Effect of Conversational Agents on Reflective Writing",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720029",
+   "system_id": "mindmate",
+   "evidence": [
+    {
+     "quote": "consisting of two conversational agents to help learners in the reflective writing guidance (A) and writing (B) phases",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8473",
+   "title": "Navigating Emotions Through Art: Recommendations for Designing Art-Therapy Based Chatbots for Trauma-Impacted Youth: Recommendations for Designing Art-Therapy Based Chatbots for Trauma-Impacted Youth",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719869",
+   "system_id": "8473",
+   "evidence": [
+    {
+     "quote": "Users were first prompted to create a visual using a collage-like system that allows them to visually respond to reflection prompts using provided assets (Figure 1).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8498",
+   "title": "Playing with Politics: Preliminary Results from Interactive Interventions on AI and Democracy in Five Countries with 2024 Elections",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719861",
+   "system_id": "8498",
+   "evidence": [
+    {
+     "quote": "The exhibition was divided into six stages that guide the visitor through several tactile, visual, and text-based elements",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8499",
+   "title": "PolicyPulse: LLM-Synthesis Tool for Policy Researchers",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720266",
+   "system_id": "policypulse",
+   "evidence": [
+    {
+     "quote": "Users interact with PolicyPulse through three main stages",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Accessibility"
+   ]
+  },
+  {
+   "rid": "8514",
+   "title": "Redefining Research Crowdsourcing: Incorporating Human Feedback with LLM-Powered Digital Twins: Incorporating Human Feedback with LLM-Powered Digital Twins",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720269",
+   "system_id": "8514",
+   "evidence": [
+    {
+     "quote": "Participants complete surveys to train their digital twin and test its ability to answer questions in their place.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8551",
+   "title": "SpatiaLearn: Exploring XR Learning Environments for Reflective Writing",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719742",
+   "system_id": "spatialearn",
+   "evidence": [
+    {
+     "quote": "Participants first engage with the learning exercise by watching a video and completing a quiz",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8715",
+   "title": "AI-assisted sensemaking: Human-AI collaboration for the analysis and interpretation of recorded facilitated conversations",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3706688",
+   "system_id": "8715",
+   "evidence": [
+    {
+     "quote": "In this section, we present the different stages that make up the sensemaking pipeline that was piloted in this work: (1) open coding, (2) codebook generation, (3) codebook application (tagging) and (4) generation of AI definitions.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8941",
+   "title": "Transparent Hearts: Balancing Privacy and Trust in AI-Generated Self-Presentation for Online Dating",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720311",
+   "system_id": "8941",
+   "evidence": [
+    {
+     "quote": "(b) AI settings wizard introduced during sign-up to guide user preferences. (c) Account activation screen prompting users to open the customization wizard for additional AI settings.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8999",
+   "title": "It Felt Like My Inner Voice: Benefits of Self-Voice Feedback in AI Reflection Support Systems",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798471",
+   "system_id": "8999",
+   "evidence": [
+    {
+     "quote": "comprising three main UI components: (1) participant setup, (2) reflective writing, and (3) voice feedback (see Fig. 1)",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9001",
+   "title": "It Talks Like a Patient, But Feels Different: Co-Designing AI Standardized Patients with Medical Learners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798336",
+   "system_id": "9001",
+   "evidence": [
+    {
+     "quote": "Conceptual workflow of the co-designed AI standardized patient (AI-SP) system. Learners (1) choose OSCE mode or daily practice",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9046",
+   "title": "AI-Driven Co-Construction of Synthetic Personas for Early-Stage B2B User Research: An Exploratory Study",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798319",
+   "system_id": "9046",
+   "evidence": [
+    {
+     "quote": "Through interaction with the agent, users can (1) organize project context and constraints, (2) generate synthetic persona drafts and iteratively refine them, and (3) ask questions to personas to test initial hypotheses and ideas.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9049",
+   "title": "ARtisanAI: An AR and AI-Enhanced Experience for Ceramic Design-to-Craft",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798379",
+   "system_id": "artisanai",
+   "evidence": [
+    {
+     "quote": "To address this challenge, we present ARtisanAI, an integrated AI and AR workflow that supports the full ceramic design-to-craft process across three stages: ideation, shaping, and decoration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9071",
+   "title": "AnimAlte: Designing a Multimodal AI-Infused Cartoon Video System to Support Structured Vocabulary Learning for Preschoolers at Home",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798929",
+   "system_id": "animalte",
+   "evidence": [
+    {
+     "quote": "User interface flow of AnimAlte: (A)Age input, (B)Video Upload&Word Filtering, (C)Word Selected, (D)First Round Video Watching, (E)Second Round Guided Learning Watching, (F)Exploring guided painting, (G-H) Story Generation.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9122",
+   "title": "Bridging Pedagogy and Play: Introducing a Language Mapping Interface for Human-AI Co-Creation in Educational Game Design",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798862",
+   "system_id": "9122",
+   "evidence": [
+    {
+     "quote": "In the application, the instructors go through 3 phases: the requirement extraction phase, where the AI asks several questions to extract the key grammatical elements defined in the last section; the translation phase, where the AI helps to translate the abstracted teaching language sentence into game language sentence; and the language development phase, where the AI helps to expand the translated sentence into more detailed descriptive paragraphs.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9131",
+   "title": "CAT-AI: Supporting Teacher Workflows with AI-Assisted Exercise Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799367",
+   "system_id": "catai",
+   "evidence": [
+    {
+     "quote": "Complete user interaction flow through CAT-AI’s three-phase workflow. The conceptualization phase (top) guides structured parameter specification through welcome screen, optional file upload, manual input, and pedagogical settings.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9133",
+   "title": "CO-OPERA: Designing an AI System for Middle School Teachers to Co-Create Social Awareness Drama Scripts",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798316",
+   "system_id": "9133",
+   "evidence": [
+    {
+     "quote": "As shown in Fig. 3a, the interface guides the user through an iterative pipeline.",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9144",
+   "title": "CityCure: Walk, Capture, and Reimagine Street Micro-Interventions with In-Situ MR and GenAI",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799077",
+   "system_id": "citycure",
+   "evidence": [
+    {
+     "quote": "(1) walk and notice a local issue, (2) capture the context with hand gesture, (3) voice your opinion, (4) generate design proposals, and (5) share and discuss your proposal in online communities",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9177",
+   "title": "DASEIN: A GenAI-Augmented Diary for Empowering the Sense-Making of Daily Life via Interactive Storytelling and Creative Visualization",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798881",
+   "system_id": "dasein",
+   "evidence": [
+    {
+     "quote": "the system comprises six modules and was developed using the Coze and Unity platforms",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

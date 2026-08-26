@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 .claude/launch.json
+
+# Source archives and intermediates, kept out of the repo for their size. Between them they
+# run to about 1.8 GB, far past what GitHub will carry, and the site needs none of them at
+# runtime: the exemplar figures ship inside build/exemplars_web.json as WebP data URIs.
+# 1.5 GB of PNGs cropped from paper PDFs
+exemplar_figures/
+# 204 MB of extracted paper text
+survey_txts/
+# 92 MB of full-text pulls
+build/fulltext/
+*.zip

@@ -1,0 +1,1637 @@
+{
+ "dimension": {
+  "category_id": "U08",
+  "category_name": "Workflow, History & Session Structure",
+  "category_slug": "workflow-history-and-session-structure",
+  "stage": "Fitting into the work",
+  "category_description": "How visible stages, dialogue states, histories, task decompositions, and session boundaries organize progress over time.",
+  "classification_boundary": "The process structure must be exposed to users; hidden chains of model calls are excluded.",
+  "pattern_count": 4,
+  "eligible_papers": 342,
+  "candidate_count": 342,
+  "patterns": [
+   {
+    "pattern_id": "pat-016",
+    "pattern_name": "Structured Dialogue Flow",
+    "short_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion."
+   },
+   {
+    "pattern_id": "pat-017",
+    "pattern_name": "Staged Pipeline",
+    "short_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives."
+   },
+   {
+    "pattern_id": "pat-023",
+    "pattern_name": "Goal Decomposition",
+    "short_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot."
+   },
+   {
+    "pattern_id": "pat-080",
+    "pattern_name": "Revisitable History",
+    "short_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded."
+   }
+  ]
+ },
+ "shard": 5,
+ "candidates": [
+  {
+   "rid": "4206",
+   "title": "GPTCoach: Towards LLM-Based Physical Activity Coaching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713819",
+   "system_id": "gptcoach",
+   "prefilter_score": 4.068,
+   "prefilter_parts": {
+    "relevance_density": 3.168,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-016",
+     "pattern_name": "Structured Dialogue Flow",
+     "pattern_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "implements the onboarding conversation from an evidence-based coaching program, uses conversational strategies from motivational interviewing",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10129",
+   "title": "ReviewFlow: Intelligent Scaffolding to Support Academic Peer Reviewing",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645159",
+   "system_id": "reviewflow",
+   "prefilter_score": 4.052,
+   "prefilter_parts": {
+    "relevance_density": 3.152,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We found that many experts adopt a workflow of annotating, note-taking, and synthesizing notes into well-justified reviews that align with community standards.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10268",
+   "title": "FuzzySeek: Multimodal Refinement of Imprecise Video Queries for Moment Retrieval",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789095",
+   "system_id": "fuzzyseek",
+   "prefilter_score": 4.02,
+   "prefilter_parts": {
+    "relevance_density": 3.345,
+    "focus": 0.375,
+    "evidence_location": 0.3,
+    "_density_raw": 14.28
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(3) Query rollback to enable iterative back and forth exploration to enable direct or exploratory searches",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6039",
+   "title": "MuseForge: Enhancing Creative Learning in Digital Museum Education with Generative AI",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791173",
+   "system_id": "museforge",
+   "prefilter_score": 3.971,
+   "prefilter_parts": {
+    "relevance_density": 2.171,
+    "focus": 1.5,
+    "evidence_location": 0.3,
+    "_density_raw": 12.08
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Informed by the findings, we designed and developed MuseForge, a platform integrating GenAI with the five stages of the iterative creative development path to support a personalized and dynamic creative learning experience.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2861",
+   "title": "PlantoGraphy: Incorporating Iterative Design Process into Generative Artificial Intelligence for Landscape Rendering",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642824",
+   "system_id": "plantography",
+   "prefilter_score": 3.961,
+   "prefilter_parts": {
+    "relevance_density": 2.911,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 13.33
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A two-stage pipeline is incorporated: first, the concretization module transforms conceptual ideas into concrete scene layouts with a domain-oriented large language model; and second, the illustration module converts scene layouts into realistic landscape renderings with a layout-guided diffusion model fine-tuned through Low-Rank Adaptation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "6000",
+   "title": "Virtual Minds, Real Work: LLM-Powered Preference-Based Planning through Spatial Multi-Agent-Human Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791926",
+   "system_id": "6000",
+   "prefilter_score": 3.961,
+   "prefilter_parts": {
+    "relevance_density": 2.332,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 12.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This mechanism automatically decomposes tasks into guidelines and sequentially introduces expert agents.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Taskformer Mechanism Architecture, depicting five key operational stages: (a) Guideline Generation, (b) Incremental Expansion, (c) Focused Exploration, (d) Collaborative Negotiation, and (e) Consolidation.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3196",
+   "title": "ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642229",
+   "system_id": "chatscratch",
+   "prefilter_score": 3.915,
+   "prefilter_parts": {
+    "relevance_density": 1.415,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 10.13
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When using ChatScratch, the child frst (a) plans and creates assets with an AI-empowered interactive storyboard",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the assistant can not only assist children by generating step-by-step code guidance but also improve their CT skills and engagement",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16887",
+   "title": "MetaEmbody: Supporting Embodied Metaphor Ideation for Tangible Interaction Design",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812967",
+   "system_id": "metaembody",
+   "prefilter_score": 3.88,
+   "prefilter_parts": {
+    "relevance_density": 2.83,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 13.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we developed MetaEmbody, an AI-assisted creative support system that helps designers explore contextual analogies, derive embodied metaphors, and shape them into tangible interaction concepts",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9158",
+   "title": "Collaborative AI Scaffolding for Structured Drawing in Dementia Care: A Feasibility Study",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798912",
+   "system_id": "9158",
+   "prefilter_score": 3.864,
+   "prefilter_parts": {
+    "relevance_density": 2.235,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 12.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system summarizes what has been drawn and suggests the next step and/or a color change.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15275",
+   "title": "PracticeDAPR: An AI-based Education-Supported System for Art Therapy",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711112",
+   "system_id": "practicedapr",
+   "prefilter_score": 3.849,
+   "prefilter_parts": {
+    "relevance_density": 1.849,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 11.23
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The proposed system consists of the following seven pages: (1) Tutorial, (2) To-do, (3) Practice, (4) AI Result, (5) Community – Overall Analysis, (6) Community – Individual Peer Results, and (7) Done.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Diverse Cases - Sketch replay - Client information - Drawing duration - Post survey",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9179",
+   "title": "Dasdaq: Reimagining Dreams as Creative Assets in Human-AI Systems",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798501",
+   "system_id": "dasdaq",
+   "prefilter_score": 3.837,
+   "prefilter_parts": {
+    "relevance_density": 1.737,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 10.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Dasdaq comprises three coupled components that form a pipeline from embodied dream encounter to speculative market participation",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4816",
+   "title": "Orality: A Semantic Canvas for Externalizing and Clarifying Thoughts with Speech",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791713",
+   "system_id": "orality",
+   "prefilter_score": 3.833,
+   "prefilter_parts": {
+    "relevance_density": 2.3,
+    "focus": 0.333,
+    "evidence_location": 1.2,
+    "_density_raw": 12.2
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Clicking the “Thought Evolution” button pops up a timeline window, hovering on which will make the canvas layout go back to that stage with a smooth animated transition.",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 9,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2642",
+   "title": "A Piece of Theatre: Investigating How Teachers Design LLM Chatbots to Assist Adolescent Cyberbullying Education",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642379",
+   "system_id": "2642",
+   "prefilter_score": 3.827,
+   "prefilter_parts": {
+    "relevance_density": 2.927,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 13.39
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-016",
+     "pattern_name": "Structured Dialogue Flow",
+     "pattern_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Using large language models and prompt chaining, our tool allows teachers to prototype bespoke dialogue flows and chatbot utterances.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Control and Agency",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5018",
+   "title": "Privy: Envisioning and Mitigating Privacy Risks for Consumer-facing AI Product Concepts",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791279",
+   "system_id": "privy",
+   "prefilter_score": 3.826,
+   "prefilter_parts": {
+    "relevance_density": 1.576,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 10.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Privy leads users through a structured workflow: they first enter a natural language description of the product and its data sources; then outline use cases and associated beneficiaries; specify the AI capabilities and requirements to support those use-cases",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9505",
+   "title": "Playing the Monograph: Retrieval-Augmented Generation for Interactive Ethnography",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798374",
+   "system_id": "9505",
+   "prefilter_score": 3.817,
+   "prefilter_parts": {
+    "relevance_density": 1.817,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 11.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Once four cultural artefacts are collected, the fieldwork phase ends and the player returns to their university base for an academic challenge.",
+     "evidence_location": "system sec 3.1.1"
+    },
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "present",
+     "confidence": "high",
+     "evidence_quote": "Before entering this Academic Defense, players may review all prior scenes through the day counter.",
+     "evidence_location": "system sec 3.1.1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5090",
+   "title": "I Can Be Anything! Bridging Today and the Future through Generative AI-driven Self-represented Career Imagination for Children",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790985",
+   "system_id": "5090",
+   "prefilter_score": 3.816,
+   "prefilter_parts": {
+    "relevance_density": 2.766,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 13.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Through a step-by-step process of taking a photo, exploring career options, imagining actions, and building story strips, children see themselves embedded in AI-generated narratives.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9537",
+   "title": "Reflexia: AI-Assisted Reflection on Personal Media Consumption",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798688",
+   "system_id": "reflexia",
+   "prefilter_score": 3.816,
+   "prefilter_parts": {
+    "relevance_density": 2.187,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 12.08
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Guided Reflection Session Workflow UI. Left to right: (1), (3), and (4) – reflection phases",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5098",
+   "title": "InspirationGraph for Progressive Design Space Exploration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790779",
+   "system_id": "5098",
+   "prefilter_score": 3.81,
+   "prefilter_parts": {
+    "relevance_density": 2.01,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 11.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system decomposes the exploration into step-by-step iterations using dimension–attribute dictionaries.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5950",
+   "title": "From Struggle to Success: Context-Aware Guidance for Screen Reader Users in Computer Use",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790661",
+   "system_id": "5950",
+   "prefilter_score": 3.809,
+   "prefilter_parts": {
+    "relevance_density": 2.509,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 12.5
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We introduce AskEase, an on-demand AI assistant that provides step-by-step, screen reader user-friendly guidance for computer use.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5702",
+   "title": "HOICraft: In-Situ VLM-based Authoring Tool for Part-Level Hand-Object Interaction Design in VR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790823",
+   "system_id": "hoicraft",
+   "prefilter_score": 3.805,
+   "prefilter_parts": {
+    "relevance_density": 1.705,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 10.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "These modules include (1) interactive part selection, (2) HOI design customization, and (3) HOI design mapping.",
+     "evidence_location": "system sec 5"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9241",
+   "title": "Enhancing mHealth App Onboarding Using a Multimodal Mixed Reality Avatar",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799298",
+   "system_id": "9241",
+   "prefilter_score": 3.784,
+   "prefilter_parts": {
+    "relevance_density": 2.284,
+    "focus": 0.6,
+    "evidence_location": 0.9,
+    "_density_raw": 12.2
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The app tutorial was structured around predefined tasks to provide a representative onboarding procedure covering the app's core functions",
+     "evidence_location": "full text sec 2.4"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8360",
+   "title": "GenAI-Supported Creative Learning in Digital Museum Education: A Case Study of Maritime Art Painting Creation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719910",
+   "system_id": "8360",
+   "prefilter_score": 3.768,
+   "prefilter_parts": {
+    "relevance_density": 2.718,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 12.88
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "By integrating GenAI with the five stages of the iterative creative learning path, Mariscope offers a personalized and dynamic learning experience.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9324",
+   "title": "GenMemo: Exploring Narrative Chaining Visual Mnemonics to Support Memorization of Structured Proposition Texts",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798473",
+   "system_id": "genmemo",
+   "prefilter_score": 3.76,
+   "prefilter_parts": {
+    "relevance_density": 1.56,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 10.53
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "GenMemo parses it into concise information units and generates narrative chaining visual mnemonics with shared anchors.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9071",
+   "title": "AnimAlte: Designing a Multimodal AI-Infused Cartoon Video System to Support Structured Vocabulary Learning for Preschoolers at Home",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798929",
+   "system_id": "animalte",
+   "prefilter_score": 3.751,
+   "prefilter_parts": {
+    "relevance_density": 1.801,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 10.88
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "User interface flow of AnimAlte: (A)Age input, (B)Video Upload&Word Filtering, (C)Word Selected, (D)First Round Video Watching, (E)Second Round Guided Learning Watching, (F)Exploring guided painting, (G-H) Story Generation.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7136",
+   "title": "You Know What I'm Saying: Designing Conversational Strategies of AI Agent for Tip of the Tongue Phenomenon",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585670",
+   "system_id": "7136",
+   "prefilter_score": 3.719,
+   "prefilter_parts": {
+    "relevance_density": 2.219,
+    "focus": 0.6,
+    "evidence_location": 0.9,
+    "_density_raw": 12.09
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-016",
+     "pattern_name": "Structured Dialogue Flow",
+     "pattern_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "If users answered right away “Yes,” the situation was not considered a TOT. However, if the users were unable to recall the name and answered “No,” the situation was considered a TOT.",
+     "evidence_location": "full text sec 3.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6309",
+   "title": "Homeroom: A Value-Aligned and Community-Centered Homeschooling Platform",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791698",
+   "system_id": "homeroom",
+   "prefilter_score": 3.696,
+   "prefilter_parts": {
+    "relevance_density": 1.496,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 10.46
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Homeroom provides plan-then-generate story and curriculum creation, alignment, and comparison to local school standards, and resource sharing in invite-only groups.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AI checks coverage, depth, and engagement, and links recommendations to specific school board standards, while a review workspace captures human judgment. Materials are versioned and can be published to circles or the public repository for re…",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10248",
+   "title": "Intelligent Tutoring in a Driving Simulator: Enhancing Driving Proficiency With AI-Driven Skill Assessment and Personalized Coaching Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789060",
+   "system_id": "10248",
+   "prefilter_score": 3.649,
+   "prefilter_parts": {
+    "relevance_density": 1.399,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 10.06
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Based on these criteria, we adopt an “assessment, assistance and coaching” paradigm grounded in the principles of cognitive and learning science.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16267",
+   "title": "DanceGen: Supporting Choreography Ideation and Prototyping with Generative AI",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3661594",
+   "system_id": "dancegen",
+   "prefilter_score": 3.596,
+   "prefilter_parts": {
+    "relevance_density": 1.721,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 10.81
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system records the text prompts utilized to generate and edit dance sequences, enabling the tracking of choreographic ideas and creative attempts over time.",
+     "evidence_location": "full text, system sec 5.2.3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "11341",
+   "title": "Let the Chart Spark: Embedding Semantic Context into Chart with Text-to-Image Generative Model",
+   "venue": "tvcg-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/tvcg.2023.3326913",
+   "system_id": "11341",
+   "prefilter_score": 3.592,
+   "prefilter_parts": {
+    "relevance_density": 1.592,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 10.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The proposed ChartSpark framework’s workﬂow is depicted in Fig. 3, comprising three primary stages.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3316",
+   "title": "VIVID: Human-AI Collaborative Authoring of Vicarious Dialogues from Lecture Videos",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642867",
+   "system_id": "vivid",
+   "prefilter_score": 3.591,
+   "prefilter_parts": {
+    "relevance_density": 1.962,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 11.6
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "VIVID’s key components of Initial Generation : (A1) User uploads lecture video; (A2) User trims a video section to convert",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5063",
+   "title": "DuetUI: A Bidirectional Context Loop for Human-Agent Co-Generation of Task-Oriented Interfaces",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790441",
+   "system_id": "duetui",
+   "prefilter_score": 3.583,
+   "prefilter_parts": {
+    "relevance_density": 1.383,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 10.06
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The agent decomposes a high-level goal into a concrete interface scaffold",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3392",
+   "title": "DynEx: Dynamic Code Synthesis with Structured Design Exploration for Accelerated Exploratory Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714115",
+   "system_id": "dynex",
+   "prefilter_score": 3.579,
+   "prefilter_parts": {
+    "relevance_density": 1.222,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 9.84
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system has 2 stages: (1) Design Exploration through the Design Matrix, where the system helps the user identify the person, approach, and interaction paradigm of the application.",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Code is generated sequentially, and users can test and approve each step before moving onto the next.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3618",
+   "title": "Piecing Together Teamwork: A Responsible Approach to an LLM-based Educational Jigsaw Agent",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713349",
+   "system_id": "3618",
+   "prefilter_score": 3.531,
+   "prefilter_parts": {
+    "relevance_density": 1.431,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 10.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-016",
+     "pattern_name": "Structured Dialogue Flow",
+     "pattern_summary": "The sequence of conversational turns is governed by an authored control structure — a finite state machine, a protocol tree, a fixed phase sequence, a structured prompting scheme — rather than by the model's turn-by-turn discretion.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Our high-level goal is to create and implement a dialogue policy that is i) tightly aligned with theoretical and empirical work in collaborative learning and content support",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Oversight",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5293",
+   "title": "Designing Staged Evaluation Workflows for LLMs: Integrating Domain Experts, Lay Users, and Model-Generated Evaluation Criteria",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790897",
+   "system_id": "5293",
+   "prefilter_score": 3.503,
+   "prefilter_parts": {
+    "relevance_density": 1.303,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 9.92
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The left panel shows the a priori phase, where participants (A) review a scenario-specific prompt and (B) create and store initial evaluation criteria. The right panel highlights the a posteriori phase",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3842",
+   "title": "eXplainMR: Generating Real-time Textual and Visual eXplanations to Facilitate UltraSonography Learning in MR",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714015",
+   "system_id": "explainmr",
+   "prefilter_score": 3.502,
+   "prefilter_parts": {
+    "relevance_density": 2.702,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 12.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "automatically generates subgoals for obtaining an ultrasound image",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3704",
+   "title": "Interactive Debugging and Steering of Multi-Agent AI Systems",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713581",
+   "system_id": "3704",
+   "prefilter_score": 3.489,
+   "prefilter_parts": {
+    "relevance_density": 2.589,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.64
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-080",
+     "pattern_name": "Revisitable History",
+     "pattern_summary": "Prior states and actions are retained as first-class records rather than discarded when superseded.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the ability to edit and reset prior agent messages",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "4036",
+   "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714074",
+   "system_id": "4036",
+   "prefilter_score": 3.487,
+   "prefilter_parts": {
+    "relevance_density": 1.287,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 9.88
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) Analysis phase: where users get information of the location leaks in the photo they uploaded, (b) Edit phase: where users can mask location information, (c) Review phase: where users can verify the final photo",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "13647",
+   "title": "StepWrite: Adaptive Planning for Speech-Driven Text Generation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747610",
+   "system_id": "stepwrite",
+   "prefilter_score": 3.473,
+   "prefilter_parts": {
+    "relevance_density": 2.573,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 12.61
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-023",
+     "pattern_name": "Goal Decomposition",
+     "pattern_summary": "A goal supplied at runtime is broken into smaller sub-parts, and the parts are produced or handled serially rather than in one shot.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "StepWrite decomposes the writing process into manageable subtasks and sequentially guides users with contextually-aware nonvisual audio prompts.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8391",
+   "title": "ImaginAItion: Promoting Generative AI Literacy Through Game-Based Learning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719844",
+   "system_id": "imaginaition",
+   "prefilter_score": 3.462,
+   "prefilter_parts": {
+    "relevance_density": 1.512,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 10.5
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Players can view the instructions on how to play the game with an overview of the prompting, drawing, and guessing turns along with the scoring mechanisms.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Personalization",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4333",
+   "title": "Persona-L has Entered the Chat: Leveraging LLMs and Ability-based Framework for Personas of People with Complex Needs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713445",
+   "system_id": "4333",
+   "prefilter_score": 3.454,
+   "prefilter_parts": {
+    "relevance_density": 1.254,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 9.87
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-017",
+     "pattern_name": "Staged Pipeline",
+     "pattern_summary": "Work advances through an ordered series of stages that is fixed by the designer before the user arrives.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Phases in User Interface Design: The \"Profile Phase\" involves persona customization and theme selection. The \"Ability Phase\" allows users to explore and select key abilities under a specific theme. The \"Interaction Phase\" facilitates user engagement with the personas LLMs and provides tools for saving and documenting interactions.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Bias and Fairness"
+   ]
+  }
+ ]
+}

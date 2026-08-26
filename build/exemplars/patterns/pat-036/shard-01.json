@@ -1,0 +1,180 @@
+{
+ "pattern": {
+  "pattern_id": "pat-036",
+  "pattern_name": "Overview-plus-Detail",
+  "pattern_slug": "overview-plus-detail",
+  "short_summary": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item.",
+  "definition": "The same collection is presented at more than one level of granularity, from an aggregate summary down to a single item. Interaction at a coarser level selects the population shown at the finer level. The finest level exposes the individual case behind the aggregate.",
+  "structural_signature": "A hierarchy of at least two views over one collection, ordered by an aggregation relation: the coarse view displays a function of many items, the fine view displays items themselves. A selection in the coarse view is a filter that defines the fine view's contents, and the levels are simultaneously present or one-click reachable. The ordering is asymmetric — the fine level cannot substitute for the coarse one.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Hierarchical Exploration",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "14005",
+   "title": "Towards Human-AI Collaboration for Misapplication Detection in Programming Exercises",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00031",
+   "system_id": "14005",
+   "evidence": [
+    {
+     "quote": "Instructors can select a student to view more detailed information, as illustrated in Figure 1.",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14013",
+   "title": "TreeReader: A Hierarchical Academic Paper Reader Powered by Language Models",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00039",
+   "system_id": "treereader",
+   "evidence": [
+    {
+     "quote": "TreeReader displays only the summaries of its children when displaying a section, which reduces the amount of texts the user need to read for targeting the useful child nodes.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14017",
+   "title": "ConvoMap: Interactive Visualizations for Exploring Complex Conversations in Multi-Agent Systems",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00043",
+   "system_id": "convomap",
+   "evidence": [
+    {
+     "quote": "ConvoMap also supports exploring conversation messages at different granularities. Users can examine both groups and individual messages (DG3: Exploration).",
+     "location": "full text sec IV-A"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14027",
+   "title": "AI-Guided Exploration of Large-Scale Codebases",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00053",
+   "system_id": "14027",
+   "evidence": [
+    {
+     "quote": "The front-end renders dynamic visualizations with interactive features such as zooming, panning, and drill-down (e.g., clicking a highlevel module to explore its internals).",
+     "location": "full text sec III"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15324",
+   "title": "ComViewer: An Interactive Visual Tool to Help Viewers Seek Social Support in Online Mental Health Communities",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710904",
+   "system_id": "comviewer",
+   "evidence": [
+    {
+     "quote": "The Zoomable Posts Panel has three levels: (A) the topic level, (B) the post level, and (C) the comment level.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15463",
+   "title": "Dynamic Surveys: Using LLMs to Blend Qualitative Depth, Quantitative Structure, and Collaborative Interaction",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757586",
+   "system_id": "15463",
+   "evidence": [
+    {
+     "quote": "Screenshot from the Department Course Curriculum Survey showing details of the first cluster. It includes a GPT-generated summary highlighting key insights shared by respondents, along with all original responses, follow-up questions with answers, and explanations from respondents on why they ranked the cluster higher or lower than others",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1738 @@
+{
+ "dimension": {
+  "category_id": "U02",
+  "category_name": "Initiative & Intervention Timing",
+  "category_slug": "initiative-and-intervention-timing",
+  "stage": "Setting the context",
+  "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+  "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+  "pattern_count": 6,
+  "eligible_papers": 184,
+  "candidate_count": 184,
+  "patterns": [
+   {
+    "pattern_id": "pat-009",
+    "pattern_name": "Proactive Support",
+    "short_summary": "Output is emitted without a user request immediately preceding it."
+   },
+   {
+    "pattern_id": "pat-011",
+    "pattern_name": "Live Activity Output Synchronization",
+    "short_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs."
+   },
+   {
+    "pattern_id": "pat-012",
+    "pattern_name": "Live Side Panel",
+    "short_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state."
+   },
+   {
+    "pattern_id": "pat-013",
+    "pattern_name": "Deferred Intervention",
+    "short_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step."
+   },
+   {
+    "pattern_id": "pat-082",
+    "pattern_name": "Chunked Interaction Sessions",
+    "short_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close."
+   },
+   {
+    "pattern_id": "pat-090",
+    "pattern_name": "On-Demand Suggestion",
+    "short_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it."
+   }
+  ]
+ },
+ "shard": 0,
+ "candidates": [
+  {
+   "rid": "13772",
+   "title": "ProMemAssist: Exploring Timely Proactive Assistance Through Working Memory Modeling in Multi-Modal Wearable Devices",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747770",
+   "system_id": "promemassist",
+   "prefilter_score": 8.356,
+   "prefilter_parts": {
+    "relevance_density": 3.856,
+    "focus": 3.0,
+    "evidence_location": 1.5,
+    "_density_raw": 7.94
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Messages with high predicted utility are delivered as proactive voice assistance, while F ○ lower-utility messages may be deferred for later evaluation or discarded.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4123",
+   "title": "Need Help? Designing Proactive AI Assistants for Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714002",
+   "system_id": "4123",
+   "prefilter_score": 8.17,
+   "prefilter_parts": {
+    "relevance_density": 5.47,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 42.01
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "there is significant potential for these systems to proactively assist in tasks without explicit invocation, enabling a mixed-initiative interaction",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-012",
+     "pattern_name": "Live Side Panel",
+     "pattern_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "takes in the programmer's context, which includes the current code, user message history, and optionally terminal output, generates a set of suggestions",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13626",
+   "title": "AROMA: Mixed-Initiative AI Assistance for Non-Visual Cooking by Grounding Multimodal Information Between Reality and Videos",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747650",
+   "system_id": "aroma",
+   "prefilter_score": 7.783,
+   "prefilter_parts": {
+    "relevance_density": 4.783,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 13.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Aroma uses a mixed-initiative approach: it responds to user requests while also proactively monitoring the video stream to offer timely alerts and guidance.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We designed and implemented Aroma, a mixed-initiative system that couples BLV users’ non-visual cues with real-time visual information to support users in cooking.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "15755",
+   "title": "Poet-Weaver: Reflecting on Communication Failure in Personal Relationships With Stylized AI-Generated Conversation Digests",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757646",
+   "system_id": "poetweaver",
+   "prefilter_score": 7.663,
+   "prefilter_parts": {
+    "relevance_density": 4.663,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 11.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "pattern_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Poet-Weaver generates a poem",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "pattern_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Poet-Weaver interaction flow for a conversation-reflection session.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5074",
+   "title": "Exploring The Impact of Proactive Generative AI Agent Roles In Time-Sensitive Collaborative Problem-Solving Tasks",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791592",
+   "system_id": "5074",
+   "prefilter_score": 7.66,
+   "prefilter_parts": {
+    "relevance_density": 5.41,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 27.97
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(3) they should act proactively, stepping in without waiting for explicit prompts",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "(A) The green text field shows where Fiona suggested structured collaboration strategies like the 1-2-4-All liberating structure [56], provided time",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3885",
+   "title": "Toward Enabling Natural Conversation with Older Adults via the Design of LLM-Powered Voice Agents that Support Interruptions and Backchannels",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714228",
+   "system_id": "3885",
+   "prefilter_score": 7.602,
+   "prefilter_parts": {
+    "relevance_density": 4.902,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 13.62
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the module will take the initiative to start the conversation again",
+     "evidence_location": "system sec 4"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the Barge-in Agent responds with backchannels",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8423",
+   "title": "Just Talk, and Sticky Notes will be Created: Towards Collaborative Dialogue in Face-to-Face Workshops the Experiment with a Generative AI-Based",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720231",
+   "system_id": "8423",
+   "prefilter_score": 7.301,
+   "prefilter_parts": {
+    "relevance_density": 5.201,
+    "focus": 1.2,
+    "evidence_location": 0.9,
+    "_density_raw": 17.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "The facilitators and participants were regularly provided with sticky notes every 1 minute and 30 seconds, in accordance with the timing of when the tool generated the notes.",
+     "evidence_location": "full text sec 2.2.1"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The summarized content was then shared in real-time on a digital whiteboard in the form of sticky notes.",
+     "evidence_location": "full text sec 2.1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8524",
+   "title": "Reviving Intentional Facial Expressions: an Interface for ALS Patients using Brain Decoding and Image-Generative AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719775",
+   "system_id": "8524",
+   "prefilter_score": 7.241,
+   "prefilter_parts": {
+    "relevance_density": 5.291,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 20.82
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "A concept of the proposed EEG-based facial expression generation interface. Left: A use case where a generated emotional face of an ALS patient is displayed on a bedside monitor for real-time communication.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9484",
+   "title": "PRISM: Post-task Reflection via Intelligent Social Multi-agents for Enhancing Learning Experience and Industrial Skill Retention",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798456",
+   "system_id": "prism",
+   "prefilter_score": 6.841,
+   "prefilter_parts": {
+    "relevance_density": 5.141,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 16.77
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "pattern_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "PRISM (right) addresses this gap by decomposing the task experience into multi-perspective dialogues to scaffold post-task reflection to transform experience into expertise.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7808",
+   "title": "Demonstrating PANDALens: Enhancing Daily Activity Documentation with AI-assisted In-Context Writing on OHMD",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648644",
+   "system_id": "demonstratingpandalens",
+   "prefilter_score": 6.646,
+   "prefilter_parts": {
+    "relevance_density": 3.946,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 8.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "PANDALens automatically captures an image of the robotic exhibit",
+     "evidence_location": "system sec 2.1"
+    },
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "pattern_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "PANDALens waits to ofer comment suggestions until she has fnished her observation and proceeds to the next showcase",
+     "evidence_location": "system sec 2.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "system_id": "hilde",
+   "prefilter_score": 6.357,
+   "prefilter_parts": {
+    "relevance_density": 5.082,
+    "focus": 0.375,
+    "evidence_location": 0.9,
+    "_density_raw": 16.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "he starts by writing the function signature and then presses CMD/CTRL+I every time he wants to prompt H I LD E to complete the next piece of its implementation.",
+     "evidence_location": "full text sec III-A"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3862",
+   "title": "Exploring Mobile Touch Interaction with Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713554",
+   "system_id": "3862",
+   "prefilter_score": 6.235,
+   "prefilter_parts": {
+    "relevance_density": 4.035,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 8.68
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Placing two fingers on the screen sets the cursor",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9513",
+   "title": "Prompting Destiny: Negotiating Socialization and Growth in an LLM-Mediated Speculative Gameworld",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798749",
+   "system_id": "9513",
+   "prefilter_score": 5.892,
+   "prefilter_parts": {
+    "relevance_density": 4.992,
+    "focus": 0.6,
+    "evidence_location": 0.3,
+    "_density_raw": 15.19
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "pattern_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To approximate real educational contexts and reduce score-chasing, the system hides real-time evaluative scores and provides delayed, end-of-stage “growth” feedback as reflective prompts.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5284",
+   "title": "InterFlow: Designing Unobtrusive AI to Empower Interviewers in Semi-Structured Interviews",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790866",
+   "system_id": "interflow",
+   "prefilter_score": 5.25,
+   "prefilter_parts": {
+    "relevance_density": 2.75,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 4.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system dynamically adapts the interview script to the ongoing conversation and provides a visual timer CHI ’26, April 13–17, 2026, Barcelona, Spain to track interview progress and conversational balance.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-012",
+     "pattern_name": "Live Side Panel",
+     "pattern_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system should track interviewers’ time allocation, such as time spent, topic coverage, and talking ratio, to enhance t…",
+     "evidence_location": "system sec 4 G1.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8356",
+   "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719708",
+   "system_id": "gptfootprint",
+   "prefilter_score": 5.18,
+   "prefilter_parts": {
+    "relevance_density": 2.78,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 4.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "After a user reaches a set query limit, a popup prompts them to take a break from ChatGPT.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-012",
+     "pattern_name": "Live Side Panel",
+     "pattern_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(a) The side panel is always visible on screen, and displays an updating display of energy and water usage, with a link to read more about the environmental impacts of LLMs.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3068",
+   "title": "Validating AI-Generated Code with Live Programming",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642495",
+   "system_id": "3068",
+   "prefilter_score": 5.084,
+   "prefilter_parts": {
+    "relevance_density": 1.584,
+    "focus": 2.0,
+    "evidence_location": 1.5,
+    "_density_raw": 1.87
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-012",
+     "pattern_name": "Live Side Panel",
+     "pattern_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "LP environments, such as Projection Boxes [20], visualize runtime values of a program in real-time without any extra effort on the part of the programmer.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "With the cursor positioned at line 7, she presses and to ask for suggestions.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U05"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "10127",
+   "title": "Enhancing Peer Review with AI-Powered Suggestion Generation Assistance: Investigating the Design Dynamics",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645169",
+   "system_id": "10127",
+   "prefilter_score": 4.82,
+   "prefilter_parts": {
+    "relevance_density": 2.87,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 4.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Users write feedback on a business project of a peer and receive possible words, sentences, or expressions to continue their text with, either inline (A) o…",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9604",
+   "title": "StreAM: An LLM-Based System for Stress-Adaptive Meditation at Work",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798694",
+   "system_id": "stream",
+   "prefilter_score": 4.434,
+   "prefilter_parts": {
+    "relevance_density": 1.734,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 2.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "After configuration and initialization of the background processes, users can resume their usual activities while heart-rate metrics are monitored.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "pattern_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "These sessions are tailored to users' personal preferences and persist until physiological indicators signal stress reduction, enabling individuals to swiftly regain focus.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3243",
+   "title": "StayFocused: Examining the Effects of Reflective Prompts and Chatbot Support on Compulsive Smartphone Use",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642479",
+   "system_id": "stayfocused",
+   "prefilter_score": 3.537,
+   "prefilter_parts": {
+    "relevance_density": 0.837,
+    "focus": 1.2,
+    "evidence_location": 1.5,
+    "_density_raw": 1.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we incorporated refective prompts probing individuals’ phone-checking intentions whenever they check their phones and a chatbot to deliver these prompts",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "pattern_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Besides guiding people to set focus sessions for non-screen time",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-013",
+     "pattern_name": "Deferred Intervention",
+     "pattern_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "refection-on-action can help sustain the behavior change by ofering individuals a sense of achievement",
+     "evidence_location": "system sec 3.1.1"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13758",
+   "title": "StorySage: Conversational Autobiography Writing Powered by a Multi-Agent Framework",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747681",
+   "system_id": "storysage",
+   "prefilter_score": 3.315,
+   "prefilter_parts": {
+    "relevance_density": 1.315,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 1.65
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "pattern_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This flow defines a single session, described in Figure 1.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3927",
+   "title": "Social-RAG: Retrieving from Group Interactions to Socially Ground AI Generation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713749",
+   "system_id": "socialrag",
+   "prefilter_score": 7.551,
+   "prefilter_parts": {
+    "relevance_density": 5.351,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 23.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "After gathering and processing this information, PaperPing sends new contextually grounded paper recommendations",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "4991",
+   "title": "AmongOthers: A Design Speculation for Rethinking AI in Online Social Communities",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790722",
+   "system_id": "amongothers",
+   "prefilter_score": 7.431,
+   "prefilter_parts": {
+    "relevance_density": 5.231,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 17.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Simulation flow for periodic execution samples a small set as candidates for commenting and reacting.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Social Perception (Mindset)",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13720",
+   "title": "Sensible Agent: A Framework for Unobtrusive Interaction with Proactive AR Agents",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747748",
+   "system_id": "13720",
+   "prefilter_score": 7.271,
+   "prefilter_parts": {
+    "relevance_density": 5.321,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 23.21
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Sensible Agent proactively prompts the user based on context, toggles context-adaptive unobtrusive interactions, and suggests different types of queries bas…",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4698",
+   "title": "Having Lunch Now: Understanding How Users Engage with a Proactive Agent for Daily Planning and Self-Reflection",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790957",
+   "system_id": "4698",
+   "prefilter_score": 7.24,
+   "prefilter_parts": {
+    "relevance_density": 5.44,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 28.43
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We conducted a 14-day longitudinal study with 12 participants using a proactive agent that initiated regular check-ins to support daily planning and reflection.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-082",
+     "pattern_name": "Chunked Interaction Sessions",
+     "pattern_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "An example of the morning and evening conversations from the field study.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "4032",
+   "title": "Maintaining \"Balanced\" Conflict: Proactive Intervention Strategies of AI Voice Agents in Online Collaboration of Temporary Design Teams",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713457",
+   "system_id": "4032",
+   "prefilter_score": 7.222,
+   "prefilter_parts": {
+    "relevance_density": 5.022,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 15.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The strategy development and effectiveness evaluation of AI voice agents in proactively intervening to manage conflicts.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4105",
+   "title": "Talk to the Hand: an LLM-powered Chatbot with Visual Pointer as Proactive Companion for On-Screen Tasks",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3715579",
+   "system_id": "4105",
+   "prefilter_score": 7.212,
+   "prefilter_parts": {
+    "relevance_density": 4.962,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 15.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Proactivity, the AI's ability to proactively send messages to the user based on on-screen user activities",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13807",
+   "title": "Vid2Coach: Transforming How-To Videos into Task Assistants",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747612",
+   "system_id": "vid2coach",
+   "prefilter_score": 7.125,
+   "prefilter_parts": {
+    "relevance_density": 4.125,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 8.92
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "proactive feedback, and answers to user questions.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We implemented our real-time assistant as a React-based web application that integrates with the Google Gemini Multimodal Live API [4], which supports low-latency bidirectional voice and video communication over WebSocket.",
+     "evidence_location": "system sec 5.5"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3324",
+   "title": "OmniActions: Predicting Digital Actions in Response to Real-World Multimodal Sensory Inputs with LLMs",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642068",
+   "system_id": "omniactions",
+   "prefilter_score": 6.822,
+   "prefilter_parts": {
+    "relevance_density": 4.872,
+    "focus": 1.5,
+    "evidence_location": 0.45,
+    "_density_raw": 13.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We envision that future interfaces should be designed to simultaneously process multimodal sensory inputs, analogous to human sensory perception, and proactively suggest follow-up actions on the target information.",
+     "evidence_location": "intro"
+    }
+   ],
+   "other_dimensions": [
+    "U01"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Judgment and Decision Making",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9370",
+   "title": "INLAY: Preemptive, In-Context Intelligence for Casual Web Browsing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799065",
+   "system_id": "inlay",
+   "prefilter_score": 6.764,
+   "prefilter_parts": {
+    "relevance_density": 4.514,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 11.15
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Inlay’s client-side module activates preemptively on page load",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8782",
+   "title": "Demonstration of GazeNoter: Enhancing AR Note-Taking Through Gaze-Based Selection of LLM Suggestions",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721274",
+   "system_id": "demonstrationofgazenoter",
+   "prefilter_score": 6.753,
+   "prefilter_parts": {
+    "relevance_density": 4.753,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 12.85
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We propose GazeNoter [9] for real-time note-taking with low distraction and cognitive load, and matching users’ intentions in speech-based activities for within-context and beyond-context notes.",
+     "evidence_location": "system sec 2"
+    },
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "All AR contents are displayed on the AR headset only when the button of the ring is touched for note-taking.",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "17248",
+   "title": "CLARA: AI-Mediated Facilitation for Enhancing Group Cognition and Cohesion in Remote Collaboration",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3786325",
+   "system_id": "clara",
+   "prefilter_score": 6.732,
+   "prefilter_parts": {
+    "relevance_density": 4.932,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 14.22
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "CLARA employs real-time multimodal assessment of group states, providing adaptive cognitive prompts to optimise task focus and affective cues to foster positive dynamics.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "CLARA delivers four feedback types: Baseline (neutral task time updates), Cognitive Feedback…",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Social Perception (Mindset)",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15482",
+   "title": "Large Language Model Agents for Improving Engagement with Behavior Change Interventions: Application to Digital Mindfulness",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757619",
+   "system_id": "15482",
+   "prefilter_score": 6.654,
+   "prefilter_parts": {
+    "relevance_density": 4.454,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 10.69
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Participants were reminded via email every other day, over a period of three weeks, to engage in mindfulness exercises, totaling 10 reminders",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Metacognition",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "3208",
+   "title": "ClassMeta: Designing Interactive Virtual Classmate to Promote VR Classroom Participation",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642947",
+   "system_id": "classmeta",
+   "prefilter_score": 6.573,
+   "prefilter_parts": {
+    "relevance_density": 4.573,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 11.28
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "When ClassMeta detects that the class has been silent for a certain amount of time, it will intervene by either raising a question or answering the question according to the context (Figure 2 a1 a2).",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04",
+    "U10"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4883",
+   "title": "Cognitive Bridge: AI-Generated Boundary Objects for Cross-Functional Collaboration",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791399",
+   "system_id": "4883",
+   "prefilter_score": 6.555,
+   "prefilter_parts": {
+    "relevance_density": 4.155,
+    "focus": 1.2,
+    "evidence_location": 1.2,
+    "_density_raw": 8.98
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Numbered items: 1–3) interaction modes: Proactive (automatic misalignment detection and generation)",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "then generates adaptive boundary objects, visual diagrams, wireframes, and flowcharts that translate between professional perspectives in real-time",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9587",
+   "title": "SocialCue: Exploring the Design Space of Social Wayfinding Assistants for Blind and Low Vision People",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799011",
+   "system_id": "socialcue",
+   "prefilter_score": 6.43,
+   "prefilter_parts": {
+    "relevance_density": 5.38,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 27.94
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we explore the design space of a wearable system that provides BLV users with real-time details about the social environment",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U03",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "4580",
+   "title": "AiGet: Transforming Everyday Moments into Hidden Knowledge Discovery with AI Assistance on Smart Glasses",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713953",
+   "system_id": "aiget",
+   "prefilter_score": 6.409,
+   "prefilter_parts": {
+    "relevance_density": 3.109,
+    "focus": 3.0,
+    "evidence_location": 0.3,
+    "_density_raw": 5.18
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we introduce AiGet, a proactive AI assistant integrated with AR smart glasses, designed to seamlessly embed informal learning into lowdemand daily activities (e.g., casual walking and shopping)",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5281",
+   "title": "ProVoice: Designing Proactive Functionality for In-Vehicle Conversational Assistants using Multi-Objective Bayesian Optimization to Enhance Driver Experience",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791877",
+   "system_id": "provoice",
+   "prefilter_score": 6.352,
+   "prefilter_parts": {
+    "relevance_density": 5.052,
+    "focus": 1.0,
+    "evidence_location": 0.3,
+    "_density_raw": 15.99
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The next step for In-vehicle Conversational Assistants (IVCAs) will be their capability to initiate and automate proactive system interactions throughout journeys.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3398",
+   "title": "GazeNoter: Co-Piloted AR Note-Taking via Gaze Selection of LLM Suggestions to Match Users' Intentions",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714294",
+   "system_id": "gazenoter",
+   "prefilter_score": 6.345,
+   "prefilter_parts": {
+    "relevance_density": 4.245,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 9.44
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "DC1. Real-Time System. In speech-based activities, e.g., speeches or discussions, taking notes for critical information, the essence of discourses, questions or opinions should be in a short period for the upcoming interactive Q&A sessions or discussions.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8459",
+   "title": "Mirai: A Wearable Proactive AI \"Inner-Voice\" for Contextual Nudging",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719881",
+   "system_id": "mirai",
+   "prefilter_score": 6.343,
+   "prefilter_parts": {
+    "relevance_density": 4.543,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 11.21
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Mirai is a wearable AI system with an integrated camera, real-time speech processing, and personalized voice-cloning to provide proactive and contextual nudges for positive behavior change.",
+     "evidence_location": "fig 1"
+    },
+    {
+     "pattern_id": "pat-011",
+     "pattern_name": "Live Activity Output Synchronization",
+     "pattern_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "Mirai reminds the user to embody confidence during a challenging conversation about asking for a raise.",
+     "evidence_location": "fig 5"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9382",
+   "title": "IntentWeave: A Progressive Entry Ladder for Multi-Surface Browser Agents in Cloud Portals",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798973",
+   "system_id": "intentweave",
+   "prefilter_score": 6.315,
+   "prefilter_parts": {
+    "relevance_density": 4.065,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 8.69
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-009",
+     "pattern_name": "Proactive Support",
+     "pattern_summary": "Output is emitted without a user request immediately preceding it.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "(B) Product Introduction Page: Context-aware widget prompt; AI detects relevant offerings and displays coupons or promos based on product context.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-090",
+     "pattern_name": "On-Demand Suggestion",
+     "pattern_summary": "A generated continuation is produced at the user's current position in the artifact being edited, and only when the user fires a control to ask for it.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "AI appears as local, momentary affordances aligned to the current object of attention",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

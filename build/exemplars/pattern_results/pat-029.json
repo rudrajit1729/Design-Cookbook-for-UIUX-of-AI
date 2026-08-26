@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-029",
+ "exemplars": [
+  {
+   "rid": "10269",
+   "title": "Rewriting Video: Text-Driven Reauthoring of Video Footage",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789098",
+   "final_score": 4.65,
+   "why": "The system explicitly reverse-engineers finished video into an editable text prompt, reconstructing a source-like generator that becomes the object of reauthoring rather than asking users to manipulate footage directly.",
+   "over_the_runner_up": "Unlike DataWink, whose excerpt establishes rich recovery but not user manipulation, this evidence explicitly identifies the recovered representation as editable."
+  },
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "final_score": 4.6,
+   "why": "DataWink decomposes an existing SVG into semantic layers and reconstructs both its visual-encoding specification and underlying data, closely matching the pattern’s requirement for a recovered representation richer than the rendered surface.",
+   "over_the_runner_up": "It surpasses the terrain exemplar by naming multiple concrete recovered structures—layers, encoding scheme, and precise data—rather than an underspecified signature and structural replica."
+  },
+  {
+   "rid": "196",
+   "title": "Interactive Authoring of Terrain using Diffusion Models",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14941",
+   "final_score": 4.15,
+   "why": "The system extracts a terrain signature, generates a structural replica from it, and explicitly lets the user edit that recovered replica to add or remove features, demonstrating both inverse reconstruction and structure-level manipulation.",
+   "over_the_runner_up": "It edges out LogoMotion because the evidence explicitly says users edit the recovered structure, whereas LogoMotion’s excerpt only establishes conversion and augmentation of a PDF into HTML."
+  }
+ ],
+ "notes": "I departed from the consensus by selecting rid 196 over third-ranked rid 4497. LogoMotion concretely recovers augmented HTML from a finished PDF, but its supplied evidence never shows that users manipulate that representation; the terrain evidence explicitly connects inverse recovery to user editing and therefore better satisfies the structural signature. No score was adjusted by more than 0.3. Readers should distrust claims about the complete re-render loop: none of the excerpts directly documents how a structural edit regenerates the final artifact. DataWink’s user-facing editability is inferred from its reuse-and-adaptation framing, and the video exemplar does not specify the prompt-to-video update interaction.",
+ "pattern_name": "Reverse Engineered Representation",
+ "category_id": "U06",
+ "rated": 10
+}

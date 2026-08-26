@@ -1,0 +1,189 @@
+{
+ "pattern": {
+  "pattern_id": "pat-013",
+  "pattern_name": "Deferred Intervention",
+  "pattern_slug": "deferred-intervention",
+  "short_summary": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step.",
+  "definition": "The system detects something during an ongoing activity but withholds any response until the activity has ended, then presents its findings and the user's controls in a dedicated step. The activity itself runs without system intrusion. The design choice is the placement in time, and the paper argues for it explicitly against the interrupting alternative.",
+  "structural_signature": "Two phases: during phase one the system observes and accumulates without emitting anything to the user; on the terminating event of phase one, phase two opens with the accumulated findings and a set of controls that act retroactively on phase-one material. Nothing the system produces is visible before the boundary, and phase-two actions can revise what phase one produced. Transplants to editing, driving, code review, form filling — anywhere an assist could have fired mid-stream.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Proactive Assistance with a Threshold",
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 6,
+ "candidates": [
+  {
+   "rid": "4065",
+   "title": "TeamVision: An AI-powered Learning Analytics System for Supporting Reflection in Team-based Healthcare Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713395",
+   "system_id": "teamvision",
+   "evidence": [
+    {
+     "quote": "offering educators a dashboard to guide debriefs immediately after simulations",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5884",
+   "title": "Opportunities and Barriers for AI Feedback on Meeting Inclusion in Socioorganizational Teams",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791135",
+   "system_id": "5884",
+   "evidence": [
+    {
+     "quote": "After a meeting, Emily solicits feedback from each user in a private conversation (A).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Coordination and Equitable Participation",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9484",
+   "title": "PRISM: Post-task Reflection via Intelligent Social Multi-agents for Enhancing Learning Experience and Industrial Skill Retention",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798456",
+   "system_id": "prism",
+   "evidence": [
+    {
+     "quote": "PRISM (right) addresses this gap by decomposing the task experience into multi-perspective dialogues to scaffold post-task reflection to transform experience into expertise.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9489",
+   "title": "PerforMagic: Coordinating Bodily Performance and Camera Movement in AI Video Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798782",
+   "system_id": "performagic",
+   "evidence": [
+    {
+     "quote": "Users first record their performance without explicitly CHI EA ’26, April 13–17, 2026, Barcelona, Spain controlling the camera.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9513",
+   "title": "Prompting Destiny: Negotiating Socialization and Growth in an LLM-Mediated Speculative Gameworld",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798749",
+   "system_id": "9513",
+   "evidence": [
+    {
+     "quote": "To approximate real educational contexts and reduce score-chasing, the system hides real-time evaluative scores and provides delayed, end-of-stage “growth” feedback as reflective prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9674",
+   "title": "Tracking, Retrieving, and Auditing for Coherent Epics in Online Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798905",
+   "system_id": "9674",
+   "evidence": [
+    {
+     "quote": "(DG2) Author-triggered, non-intrusive auditing, which allows writers to invoke consistency checks only when needed and keeps auditing closely integrated with the writing workflow",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

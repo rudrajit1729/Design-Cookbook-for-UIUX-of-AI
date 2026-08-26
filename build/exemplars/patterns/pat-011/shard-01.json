@@ -1,0 +1,158 @@
+{
+ "pattern": {
+  "pattern_id": "pat-011",
+  "pattern_name": "Live Activity Output Synchronization",
+  "pattern_slug": "live-activity-output-synchronization",
+  "short_summary": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs.",
+  "definition": "The system emits its output in step with an activity that is unfolding independently — a conversation, a performance, a learning session, a walk through an environment — so that each output appears at the moment its referent occurs. Timing is part of the design, not an implementation detail: an output delivered late would be the wrong output. The pattern is about when material is shown, not what it contains.",
+  "structural_signature": "An input stream is consumed continuously and each produced item is scheduled against a timestamp in that stream; the pipeline is held to a latency budget so that the item is presented while its referent is still current. There is no batch boundary between the activity and the output — the activity does not have to end for output to appear.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "15268",
+   "title": "MeetMap: Real-Time Collaborative Dialogue Mapping with LLMs in Online Meetings",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3711030",
+   "system_id": "meetmap",
+   "evidence": [
+    {
+     "quote": "MeetMap allows users to create dialogue maps collaboratively in real-time during online meetings with LLM support.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15510",
+   "title": "EchoAid: Enhancing Livestream Shopping Accessibility for the DHH Community",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757471",
+   "system_id": "echoaid",
+   "evidence": [
+    {
+     "quote": "EchoAid utilizes advanced speech-to-text conversion, Rapid Serial Visual Presentation (RSVP) technology, and Large Language Models (LLMs) to simplify the complex information flow in live sales environments.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15682",
+   "title": "EchoMind: Supporting Real-time Complex Problem Discussions through Human-AI Collaborative Facilitation",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757587",
+   "system_id": "echomind",
+   "evidence": [
+    {
+     "quote": "We present EchoMind, a system that visualizes discussion knowledge through real-time issue mapping.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15683",
+   "title": "DesignMemo: Integrating Discussion Context into Online Collaboration with Enhanced Design Rationale Tracking",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757579",
+   "system_id": "designmemo",
+   "evidence": [
+    {
+     "quote": "It automatically transcribes the discussions and generates relevant design annotations.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16467",
+   "title": "ClassComet: Exploring and Designing AI-generated Danmaku in Educational Videos to Enhance Online Learning",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735762",
+   "system_id": "classcomet",
+   "evidence": [
+    {
+     "quote": "Danmaku, users' live comments synchronized with, and overlaying on videos, has recently shown potential in promoting online video-based learning.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

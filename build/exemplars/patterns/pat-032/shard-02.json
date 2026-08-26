@@ -1,0 +1,1066 @@
+{
+ "pattern": {
+  "pattern_id": "pat-032",
+  "pattern_name": "Source Conditioned Generation",
+  "pattern_slug": "source-conditioned-generation",
+  "short_summary": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on.",
+  "definition": "An artifact the user already possesses or has produced — a draft, a collection, a document, a physical or staged arrangement, their own prior judgments — is ingested and used as the input the generation is conditioned on. The user supplies material rather than a description of what they want. The output is a function of that material.",
+  "structural_signature": "The system exposes an ingestion path for a user-owned artifact (upload, parse, encode, capture) and routes it into the generator as conditioning state, either directly or after an encoding step. The generation cannot run without that artifact; changing it changes the output. The material is pre-existing with respect to the interaction — it is not authored in order to specify the request.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Structured Format with Predefined Fields",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "7582",
+   "title": "GELEX: Generative AI-Hybrid System for Example-Based Learning",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650900",
+   "system_id": "gelex",
+   "evidence": [
+    {
+     "quote": "users proceed to enter their recipe into a text editor",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7666",
+   "title": "On the Design of Quologue: Uncovering Opportunities and Challenges with Generative AI as a Resource for Creating a Self-Morphing E-book Metadata Archive",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650909",
+   "system_id": "7666",
+   "evidence": [
+    {
+     "quote": "we present Quologue, a web application that allows users to reconnect with their e-book highlights",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7695",
+   "title": "SciCapenter: Supporting Caption Composition for Scientific Figures with Machine-Generated Captions and Ratings",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650738",
+   "system_id": "scicapenter",
+   "evidence": [
+    {
+     "quote": "To begin using SciCapenter, users start by uploading their PDF file in the PDF upload panel (Figure 1.A).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "7767",
+   "title": "Unlocking Memories with AI: Exploring the Role of AI-Generated Cues in Personal Reminiscing",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650979",
+   "system_id": "7767",
+   "evidence": [
+    {
+     "quote": "It then plays voice stories previously recorded by the object's owners, allowing users to interact with the objects and their associated stories.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7793",
+   "title": "iCONTRA: Toward Thematic Collection Design Via Interactive Concept Transfer",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650788",
+   "system_id": "icontra",
+   "evidence": [
+    {
+     "quote": "Given a single object image (i.e., left image), when users input brief prompts",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7980",
+   "title": "Virtual Dream Reliving: Exploring Generative AI in Immersive Environment for Dream Re-experiencing",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3644054",
+   "system_id": "7980",
+   "evidence": [
+    {
+     "quote": "With the recent development of generative AI, especially 3D model generation, it is now possible to generate virtual objects and immersive environments from text-based dream records in near real-time.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "8262",
+   "title": "Dream Relay: Exploring Dream Sharing with Generative AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720238",
+   "system_id": "8262",
+   "evidence": [
+    {
+     "quote": "The dreamers were instructed to record their dreams each morning and sent the records to G1. G1 then generated the dream visuals using GAI.",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8263",
+   "title": "Dreamory: AI-Powered Bedtime Storytelling for Emotional Reframing Before In-Sleep Memory Consolidation",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719850",
+   "system_id": "dreamory",
+   "evidence": [
+    {
+     "quote": "the LLM analyzes the letter to extract key events and emotional elements, then generates a personalized story using meaning-making strategies [15]",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8306",
+   "title": "Exploring Human-AI Collaborative Writing of Product Descriptions on Online Flea Market Apps from the Sellers' and Buyers' Perspectives",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719718",
+   "system_id": "8306",
+   "evidence": [
+    {
+     "quote": "A product description generated by GPT-4o with the photo as input was displayed",
+     "location": "full text sec 2.2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8351",
+   "title": "From Photos to Immersive Memories: Awakening the Past with Panoramic Environments",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720170",
+   "system_id": "8351",
+   "evidence": [
+    {
+     "quote": "Using diary entries encompassing text, photos, and EXIF metadata (location, time) (Fig. 1 (a)), we transform ordinary logs into lifelike VR experiences that closely match the original context (Fig. 2 (b)).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8367",
+   "title": "GeneyMAP: Designing GenAI-empowered User Journey Mapping Tool",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720075",
+   "system_id": "geneymap",
+   "evidence": [
+    {
+     "quote": "F1- Identifying data patterns. This function analyzes raw user data from interviews, surveys, or observations to uncover recurring themes and behaviors.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8405",
+   "title": "IntentPrism: Human-AI Intent Manifestation for Web Information Foraging",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719744",
+   "system_id": "intentprism",
+   "evidence": [
+    {
+     "quote": "(b) Recording mechanism: users save snippets of information by selecting and annotating piece",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8434",
+   "title": "Learning by Teaching: Designing Teachable Agents to Support Children's Pronunciation Skill Learning",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719863",
+   "system_id": "8434",
+   "evidence": [
+    {
+     "quote": "Building on this foundation, our design introduces Phoneme-level Mispronunciation Projection (PMP), where the system amplifies the teachable agent’s pronunciation errors to reflect the user’s mispronunciations.",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8467",
+   "title": "Mozualization: Crafting Music and Visual Representation with Multimodal AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719686",
+   "system_id": "mozualization",
+   "evidence": [
+    {
+     "quote": "a music generation and editing tool that creates multi-style embedded music by integrating diverse inputs, such as keywords, images, and sound clips (e.g., segments from various pieces of music or even a playful cat's meow)",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8473",
+   "title": "Navigating Emotions Through Art: Recommendations for Designing Art-Therapy Based Chatbots for Trauma-Impacted Youth: Recommendations for Designing Art-Therapy Based Chatbots for Trauma-Impacted Youth",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719869",
+   "system_id": "8473",
+   "evidence": [
+    {
+     "quote": "After creating their artwork, the system asked users to write a title and description and then upload all of this into the chatbot interface as the first message (Figure 2).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8514",
+   "title": "Redefining Research Crowdsourcing: Incorporating Human Feedback with LLM-Powered Digital Twins: Incorporating Human Feedback with LLM-Powered Digital Twins",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720269",
+   "system_id": "8514",
+   "evidence": [
+    {
+     "quote": "The platform is a React application that interacts with OpenAI’s GPT-4o model, an LLM, to create “digital twin” responses based on participant data.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8543",
+   "title": "SketchAI: A \"Sketch-First\" Approach to Incorporating Generative AI into Fashion Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719782",
+   "system_id": "sketchai",
+   "evidence": [
+    {
+     "quote": "Step 1 (Upload) lets users capture a photo (1A), upload an existing image (1B), or create a new sketch (1C).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8622",
+   "title": "User-centric Reflective Writing Assistance: Leveraging RAG for Enhanced Personalized Support",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719899",
+   "system_id": "8622",
+   "evidence": [
+    {
+     "quote": "These reflections also form each user's data source for the RAG component of Memoire (described in Section 2.3).",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8666",
+   "title": "WrightHere: Supporting Children's Creative Writing with AI-Infused Interactive 3D Environment",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719932",
+   "system_id": "wrighthere",
+   "evidence": [
+    {
+     "quote": "Each paragraph automatically generates a 3D scene, shown as thumbnail images beside the text.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8783",
+   "title": "Demonstration of TactStyle: Generating Tactile Textures with Generative AI for Digital Fabrication",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721278",
+   "system_id": "demonstrationoftactstyle",
+   "evidence": [
+    {
+     "quote": "(a) The system takes an input model and a stylization prompt (e.g., an image of a texture) and applies two separate stylization processes",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8812",
+   "title": "Time Travel Tours: An Accessible Social VR Storytelling Tool for Older Adults",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721196",
+   "system_id": "8812",
+   "evidence": [
+    {
+     "quote": "The system leverages an AI-assisted creation tool to generate navigable virtual spaces where storytellers can guide others through their memories in real time.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9004",
+   "title": "Like Having Family Nearby: An LLM-Powered Family-Resembling Avatar for offering Psychological Support and Training Guidance during Stroke Rehabilitation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798321",
+   "system_id": "9004",
+   "evidence": [
+    {
+     "quote": "In parallel, family members provided consent and portrait/voice samples for avatar generation, watched a demo video, completed a pre-vie…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9146",
+   "title": "ClayMind: Materializing the Ineffable through AI-Guided Tangible Art for Mental Wellness",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798795",
+   "system_id": "claymind",
+   "evidence": [
+    {
+     "quote": "the system generates stop-motion animations and psychological analysis feedback based on the user's clay work",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9158",
+   "title": "Collaborative AI Scaffolding for Structured Drawing in Dementia Care: A Feasibility Study",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798912",
+   "system_id": "9158",
+   "evidence": [
+    {
+     "quote": "The server calls the Google Gemini VLM API to analyze the current canvas snapshot and drawing history",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9177",
+   "title": "DASEIN: A GenAI-Augmented Diary for Empowering the Sense-Making of Daily Life via Interactive Storytelling and Creative Visualization",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798881",
+   "system_id": "dasein",
+   "evidence": [
+    {
+     "quote": "it creatively visualizes these diary records and the results of the inference as minimalist, pixel-art comic narratives",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9179",
+   "title": "Dasdaq: Reimagining Dreams as Creative Assets in Human-AI Systems",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798501",
+   "system_id": "dasdaq",
+   "evidence": [
+    {
+     "quote": "an AI module for reconstructing and visualizing dream content",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9182",
+   "title": "Dear Friend: Alleviating Anxiety through Co-creative Virtual Agent in Dual-Atmosphere Environments",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798472",
+   "system_id": "9182",
+   "evidence": [
+    {
+     "quote": "it employs a semi-automated pipeline to construct personalized 3D environments from user interviews",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9189",
+   "title": "Designing AI-Mediated Digital Rituals through the Translation of Wabi-Sabi Aesthetics",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798961",
+   "system_id": "9189",
+   "evidence": [
+    {
+     "quote": "The AI tea master synthesized elements such as tea selections, conversational fragments, poetic lines, and temporal impressions into personalized memory cards.",
+     "location": "method sec 5 (PDF)"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9266",
+   "title": "Exploring the Use of Generative AI Technologies to Create Life-Review Summaries with Family Members to Promote Mental Health in Patients with Geriatric Depression",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798313",
+   "system_id": "9266",
+   "evidence": [
+    {
+     "quote": "the independent and collaborative creation of life-review summaries",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9324",
+   "title": "GenMemo: Exploring Narrative Chaining Visual Mnemonics to Support Memorization of Structured Proposition Texts",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798473",
+   "system_id": "genmemo",
+   "evidence": [
+    {
+     "quote": "A learner provides the information to remember (Structured Proposition Texts, SPTs).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9326",
+   "title": "GenerPlay: Bridging Asynchronous Intergenerational Communication Through Generative Interactive Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798448",
+   "system_id": "generplay",
+   "evidence": [
+    {
+     "quote": "The system transforms elders’ family memories and emotional narratives into interactive narrative games",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9410",
+   "title": "Learning to Delegate and Act with DELEGACT: Multimodal Language Models for Task-Level Human Cobot Planning in Industrial Assembly",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798803",
+   "system_id": "9410",
+   "evidence": [
+    {
+     "quote": "Second, users provide supporting context about the human worker, the cobot, and the product. This includes operator competencies, robot capabilities and constraints, and a bill of materials with relevant part properties.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9427",
+   "title": "Making Charts Speak: LLM-Based Conversational Chart Question Answering for Blind and Low-Vision Users",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799030",
+   "system_id": "9427",
+   "evidence": [
+    {
+     "quote": "GraphWhisper employs a comprehensive processing pipeline transforming uploaded chart images into accessible conversational interfaces (Fig. 1).",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9518",
+   "title": "Qualitative Coding Analysis through Open-Source Large Language Models: A User Study and Design Recommendations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798320",
+   "system_id": "9518",
+   "evidence": [
+    {
+     "quote": "Users can upload document files and query the system about their content, with contextual understanding enhanced by a large context window (e.g., extended token limits).",
+     "location": "full text sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9525",
+   "title": "ReMe: Scaffolding Personalized Cognitive Training via Controllable LLM-Mediated Conversations",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798695",
+   "system_id": "reme",
+   "evidence": [
+    {
+     "quote": "By integrating personal life logs, ReMe supports Life Recall activities for episodic-memory practice through guided retrieval and progressive cues.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9535",
+   "title": "Recognizable ≠ Mine: Anchoring and Negotiating Authorship in Child-AI Co-Creation",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798533",
+   "system_id": "9535",
+   "evidence": [
+    {
+     "quote": "Through a human-mediated semantic upscaling workflow, this work explores how children perceive authorship when their rough sketches are transformed into hyper-realistic images.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9537",
+   "title": "Reflexia: AI-Assisted Reflection on Personal Media Consumption",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798688",
+   "system_id": "reflexia",
+   "evidence": [
+    {
+     "quote": "As a part of the setup process, users need to export their watch history JSON file via Google Takeout4 and upload it to the system.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9552",
+   "title": "SELf-Storybook: A Guided AI System for Personalized Social-Emotional Story Authoring by Parents",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798869",
+   "system_id": "selfstorybook",
+   "evidence": [
+    {
+     "quote": "when a photo is uploaded, a storybook-style avatar is generated using the Gemini 2.5 Flash Image model with an option to regenerate",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9590",
+   "title": "SorryIMissedThis: Leveraging Conversation History to Support Sustained Remote Communication",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799073",
+   "system_id": "sorryimissedthis",
+   "evidence": [
+    {
+     "quote": "The system ingests users’ anonymized iMessage histories, generates prompts tailored to conversational context and personal style",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9604",
+   "title": "StreAM: An LLM-Based System for Stress-Adaptive Meditation at Work",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798694",
+   "system_id": "stream",
+   "evidence": [
+    {
+     "quote": "through an imaginary [chosen environment and soundscape] environment. The user has provided these personal notes to incorporate: [notes]",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02"
+   ],
+   "factors": [
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

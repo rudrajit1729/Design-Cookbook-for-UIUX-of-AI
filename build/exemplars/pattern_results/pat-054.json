@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-054",
+ "exemplars": [
+  {
+   "rid": "14026",
+   "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00052",
+   "final_score": 4.45,
+   "why": "The user commits selections before the system evaluates them, and the interface then computes correctness and provides a side-by-side view that makes differences in interpretation directly inspectable.",
+   "over_the_runner_up": "Selected over rid 2711 because it explicitly computes and displays the human-system discrepancy, whereas rid 2711 leaves disagreement implicit in the interaction sequence."
+  },
+  {
+   "rid": "2711",
+   "title": "Are You Really Sure? Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642671",
+   "final_score": 4.3,
+   "why": "It provides an especially clean commit-reveal-redecide sequence: the user records an initial judgment and confidence, receives the AI recommendation and potentially its confidence, and then makes a final judgment.",
+   "over_the_runner_up": "Selected over rid 10282 because its parallel treatment of human and AI confidence makes the paired assessments more legible, while still retaining the complete revision sequence."
+  },
+  {
+   "rid": "10282",
+   "title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789136",
+   "final_score": 4.2,
+   "why": "The interface preserves an independent human decision, reveals AI advice for the same problem, solicits a revised decision, and then connects observed accuracy to an explicit trust update.",
+   "over_the_runner_up": "Selected over rid 9169 because it establishes commitment, AI reveal, and revision, whereas rid 9169 only establishes review of self-reported and system-generated scores."
+  }
+ ],
+ "notes": "The selected membership matches the consensus top three, but the order does not: rid 14026 moves ahead of rid 10282 because it is the only candidate whose evidence explicitly says the system compares the assessments and offers a side-by-side difference view. No score was adjusted by more than 0.3. Readers should distrust any inference that these examples fully satisfy every clause of the structural signature: rid 14026 does not explicitly document a revision affordance, and its “system-defined reference answer” may be fixed rather than model-generated; rid 2711 and rid 10282 document temporal commit-reveal-revise sequences but do not establish that both verdicts remain visible together or that their difference is explicitly rendered or computed.",
+ "pattern_name": "Paired (Human-AI) Assessment",
+ "category_id": "U07",
+ "rated": 22
+}

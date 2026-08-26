@@ -1,0 +1,470 @@
+{
+ "pattern": {
+  "pattern_id": "pat-053",
+  "pattern_name": "Artifact Flagging and Annotations",
+  "pattern_slug": "artifact-flagging-and-annotations",
+  "short_summary": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it.",
+  "definition": "The system marks particular locations inside the user's content and attaches a deeper layer of material to each mark that is not shown until the user asks for it. The first layer is a lightweight in-content indicator; the second is an expandable panel, popup, or tab bar holding explanation, alternatives, or scores. Detail is thus staged rather than presented all at once.",
+  "structural_signature": "Per-unit annotations are rendered inline at their source location; each annotation is an interactive trigger (hover, click, expand) that opens a secondary container holding additional per-unit material. Collapsing the container returns the display to the marked-but-undetailed state, so the content view never carries the full detail at rest.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Span-Level Error Localization & Inline Highlight",
+  "dimension": {
+   "category_id": "U07",
+   "category_name": "Explanation, Inspection & Verification",
+   "category_description": "How evidence, internals, correspondence, quality, interpretations, and planned actions are represented for human judgment.",
+   "classification_boundary": "The representation must support understanding or verification, rather than merely render output into a usable medium.",
+   "stage": "Taking in the output"
+  }
+ },
+ "eligible": 17,
+ "candidates": [
+  {
+   "rid": "2682",
+   "title": "RELIC: Investigating Large Language Model Responses using Self-Consistency",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641904",
+   "system_id": "relic",
+   "evidence": [
+    {
+     "quote": "clicking, users are able to view a list of alternatives and inspect their details (right)",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making"
+   ]
+  },
+  {
+   "rid": "2867",
+   "title": "Explainable Notes: Examining How to Unlock Meaning in Medical Notes with Interactivity and Artificial Intelligence",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642573",
+   "system_id": "2867",
+   "evidence": [
+    {
+     "quote": "This time P15 notices the table cell is clickable. They click on the cell to see the defnition of the phrase “nuclear sclerosis”",
+     "location": "full text sec 8.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3436",
+   "title": "BIASsist: Empowering News Readers via Bias Identification, Explanation, and Neutralization",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713531",
+   "system_id": "biassist",
+   "evidence": [
+    {
+     "quote": "Interface and Interaction. (1) Structure of UI; (2) BIASsist Toggle Switch; (3) Hovering;",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Bias and Fairness"
+   ]
+  },
+  {
+   "rid": "3606",
+   "title": "Rescriber: Smaller-LLM-Powered User-Led Data Minimization for LLM-Based Chatbots",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713701",
+   "system_id": "rescriber",
+   "evidence": [
+    {
+     "quote": "Rescriber displays a tooltip that highlights the detected personal information in the user’s message (A)",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "5071",
+   "title": "PrivWeb: Unobtrusive and Content-aware Privacy Protection For Web Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790919",
+   "system_id": "privweb",
+   "evidence": [
+    {
+     "quote": "For private information with relatively low sensitivity, to flag detected sensitive private information directly on the webpage.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7645",
+   "title": "Machine-Assisted Error Discovery in Conversational AI Systems",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651120",
+   "system_id": "7645",
+   "evidence": [
+    {
+     "quote": "The transcript panel has knobs to toggle additional layers, such as delays between the events. The “Details” toggle reveals the Details Table",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9674",
+   "title": "Tracking, Retrieving, and Auditing for Coherent Epics in Online Narratives",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798905",
+   "system_id": "9674",
+   "evidence": [
+    {
+     "quote": "The editor supports saving drafts and triggering on-demand audits; detected issues are highlighted inline to keep attention on the text.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10129",
+   "title": "ReviewFlow: Intelligent Scaffolding to Support Academic Peer Reviewing",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645159",
+   "system_id": "reviewflow",
+   "evidence": [
+    {
+     "quote": "Users can (A) receive section-level contextual cues guided by community criteria; (B) request phrase-level contextual cues adapted to highlight paper content; (C) click the citation to get an in-situ summarization; (D) check the recommended citations not currently cited by the paper",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10160",
+   "title": "DataDive: Supporting Readers' Contextualization of Statistical Statements with Data Exploration",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645155",
+   "system_id": "datadive",
+   "evidence": [
+    {
+     "quote": "First, the user can click on an underlined sentence within the text (Figure 2A). To support users to notice statistical statements and facilitate data exploration, DataDive pre-processes the text to mark out sentences with statistical information.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10181",
+   "title": "SenseMate: An Accessible and Beginner-Friendly Human-AI Platform for Qualitative Data Analysis",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645194",
+   "system_id": "sensemate",
+   "evidence": [
+    {
+     "quote": "Users can choose to expand the “SenseMate’s Recommendations” section for each story to view and interact with AI recommendations (A). From there, they can click through each recommendation via a tab bar (B).",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10419",
+   "title": "Skeptik: A Hybrid Framework for Combating Potential Misinformation in Journalism",
+   "venue": "tiis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3766891",
+   "system_id": "skeptik",
+   "evidence": [
+    {
+     "quote": "The multi-layer interventions (B) in the popup panel for each falla",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "12777",
+   "title": "MisVisFix: An Interactive Dashboard for Detecting, Explaining, and Correcting Misleading Visualizations using Large Language Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3633884",
+   "system_id": "misvisfix",
+   "evidence": [
+    {
+     "quote": "where hovering over identified issues highlights the corresponding problematic regions directly on the chart",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "13986",
+   "title": "DevTales: A Tool for Providing Narrative Code Histories into Developer Workflows",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00013",
+   "system_id": "devtales",
+   "evidence": [
+    {
+     "quote": "Annotations with related subgoal information when user hovers their mouse over code, allowing them to decide more quickly whether they want to investigate the history further.",
+     "location": "full text sec III-C"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14006",
+   "title": "HiLDE: Intentional Code Generation via Human-in-the-Loop Decoding",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00032",
+   "system_id": "hilde",
+   "evidence": [
+    {
+     "quote": "an assistant that highlights critical decision points in an LLM code completion",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "17002",
+   "title": "Paper Plain: Making Medical Research Papers Approachable to Healthcare Consumers with Natural Language Processing",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3589955",
+   "system_id": "17002",
+   "evidence": [
+    {
+     "quote": "Terms with definitions are underlined (“armamentarium”, “immunomodulatory”). Clicking a term will open a tooltip with a definition and a reference to the definitional resource.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17083",
+   "title": "Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool",
+   "venue": "tochi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3609331",
+   "system_id": "marvista",
+   "evidence": [
+    {
+     "quote": "Marvista then highlights the answers in the text and hovering over a sentence shows the corresponding question (b) and (c).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17256",
+   "title": "Iffy-or-Not: Critically Evaluating Potential Misinformation Using Fallacy Detection and Socratic Questioning with LLMs",
+   "venue": "tochi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3771935",
+   "system_id": "iffyornot",
+   "evidence": [
+    {
+     "quote": "It then highlights content containing fallacies and (A1i) provides an overview of the number of fallacies detected. Users can then (A1ii) hover over the highlight to (A1iii) get more det",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

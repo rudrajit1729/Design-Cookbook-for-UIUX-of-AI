@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-097",
+ "exemplars": [
+  {
+   "rid": "13492",
+   "title": "PromptPaint: Steering Text-to-Image Generation Through Paint Medium-like Interactions",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606777",
+   "final_score": 4.93,
+   "why": "PromptPaint directly exposes a live parameter channel: users change guiding prompts during image generation, and those changes steer the in-flight process rather than a later run.",
+   "over_the_runner_up": "It ranks above Interactive Debugging because the evidence explicitly shows parameters changing while generation continues, whereas the latter requires pausing execution before intervention."
+  },
+  {
+   "rid": "3704",
+   "title": "Interactive Debugging and Steering of Multi-Agent AI Systems",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713581",
+   "final_score": 4.85,
+   "why": "Users pause an executing multi-agent system and inject new messages into the same run, clearly establishing a live control channel, preserved partial state, and consequential mid-execution steering.",
+   "over_the_runner_up": "It ranks above Morae because its evidence explicitly identifies both the intervention command and its delivery into the active run, while Morae’s quote leaves continuation under the user’s choice implicit."
+  },
+  {
+   "rid": "13756",
+   "title": "Morae: Proactively Pausing UI Agents for User Choices",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747797",
+   "final_score": 4.8,
+   "why": "Morae detects decision points during task execution, pauses the active UI-agent run, and hands control to the user before execution proceeds, turning autonomous action into inspectable and revisable segments.",
+   "over_the_runner_up": "It ranks above Interactive Reasoning because Morae’s evidence specifies the pause trigger and user-choice handoff, whereas Hippo’s abstract claims interruption and steering without exposing the concrete control or state-update mechanism."
+  }
+ ],
+ "notes": "I departed from the consensus top three by replacing rid 10227 (Interactive Reasoning) with rid 3704. Hippo is compelling in subject matter and likely implements the pattern, but the supplied abstract does not show how an intervention reaches the in-flight process or how partial state is preserved; rid 3704 explicitly documents pausing an active run and sending new messages mid-run. I slightly reduced Morae from 4.85 to 4.80 because its quotation does not explicitly state that the same run resumes under the selected choice, though that behavior is strongly implied. No adjustment exceeds 0.3. Readers should distrust interface-level details not present in the quotations: PromptPaint does not explain propagation semantics, the multi-agent paper does not describe the state presentation, and Morae’s resume behavior is inferred from the pause-for-choice formulation.",
+ "pattern_name": "Mid-Run Intervention",
+ "category_id": "U06",
+ "rated": 17
+}

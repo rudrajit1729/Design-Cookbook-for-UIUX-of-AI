@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-033",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "12159",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The prompt contains a predeclared JSON schema, making this a plausible output constraint. However, the quote neither enumerates its fields nor confirms that generated JSON is validated against it, so the full structural signature is only partially evidenced.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16684",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A schema of node and edge types is independently derived and used to make the model generate typed graphs. This closely matches the typed-taxonomy form of the pattern, though conformance checking is not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "623",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The quote specifies an explicit hierarchical output grammar with named elements, delimiters, ordering, and cardinality. It is an unusually concrete example from which the template mechanism could be rebuilt, although impact evidence is limited to the title and coded excerpt.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9312",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Users select a narrative schema before writing, and that schema fixes the output sections and their functions. This is a clean, transferable section-skeleton mechanism, though the excerpt does not explicitly describe validation or correction of generated content.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13370",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "Validation and interpretation of a generated recipe suggest an intermediate structured format, but the recipe's schema or enumerated parts are absent. The evidence cannot establish that a stored type-level template determines every recipe.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15714",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The system uses an enumerated taxonomy of argument components and relationship labels, matching the pattern's typed-taxonomy variant and supporting per-type argument-map rendering. The excerpt does not state how invalid classifications or structures are handled.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4755",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The model must emit responses containing typed GestureEvents with parameters, and those structured parts plausibly drive distinct embodied actions. The format is concrete, but allowable gesture types and conformance handling are not shown.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9587",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "This directly describes a generated JSON object with a stable, enumerated set of profile fields. It is a textbook predefined-field output, although the supplied evidence does not show rejection or repair of malformed profiles.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14027",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A structured JSON GUI specification mediates model output and dynamic interface rendering, strongly supporting schema-shaped generation. The quote does not expose the specification's fields or validation behavior, limiting rebuildability.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "17197",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Instructions are represented by an explicit tuple of operation type, parameters, and object descriptions. This is a clear reusable command-output structure, but the quote does not explicitly say that model outputs are validated or rejected against it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6089",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The system defines a reusable JSON specification with precisely enumerated fields and constraints, including description length and weight range. It is a strong, domain-independent instance of predefined structured output.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8138",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The excerpt describes reorganizing source data into database-like fields, not constraining a model's generated output with a stored template. The title alone cannot supply the missing generator-to-schema relationship.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence supports data preprocessing or normalization, not the Output Templates pattern."
+  },
+  {
+   "rid": "14019",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 5
+   },
+   "reason": "The prompt explicitly requires a named JSON object with enumerated attributes, directly fixing the model's output form. It is highly representative and rebuildable, though using a small JSON record is comparatively conventional.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16741",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The LLM is explicitly required to generate every report according to a stakeholder-derived structured template. The move appears consequential in a clinical setting, but the excerpt does not enumerate the themes or explain validation and rendering.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3405",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "An explicit four-part data specification determines the representation used for automatically generated visualizations. The fields are concrete and reusable, although the excerpt does not independently show validation or the mapping from each field to the rendered output.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9180",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A strict DSL demonstrably prevents arbitrary model structures and commands, satisfying the conformance aspect of the pattern. Its grammar and component types are not included, so the named output structure cannot be reconstructed from this evidence alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14012",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 5
+   },
+   "reason": "The model is explicitly prompted to produce a stable five-part output containing title, description, instructions, outcome, and code blocks. This is a canonical section-template instance, albeit a fairly obvious design move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16465",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "A five-section panel could provide per-section output slots, but the quote is truncated and names only part of the skeleton. It also does not establish that model generations must populate or conform to those sections.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5176",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "A reusable schema externalizes conversations into dependency-linked phases, each with enumerated inputs, activities, decisions, and outputs. This is a particularly clear and transferable typed structure whose reuse purpose makes the design move more substantial than ordinary JSON formatting.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9554",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The VLM is explicitly required to infer a schema-guided hierarchical YAML representation, which then supports engine-ready output. The schema's node types, fields, and conformance process are absent from the short excerpt.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13308",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The system predefines allowable types, structures, and formats and requires every generated constraint to have a formal ASP representation. This strongly demonstrates type-level conformance, although the excerpt does not enumerate the actual constraint types.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15682",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The quote enumerates typed graph components and distinct visual treatments, which is compatible with structured output rendering. It never says that AI output is generated into or checked against this node taxonomy, so the central mechanism remains unsupported.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5749",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The excerpt merely expands abbreviations used in unspecified specifications. It does not establish that these are fields in model output, that they form a stored schema, or that generations are checked against them.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence does not support the generator-to-template relationship required by the pattern."
+  },
+  {
+   "rid": "9525",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Reusable puzzle groups have structured templates and constraint rules, but the evidence presents these as activity definitions used by the Puzzle Engine. It does not show that conversational model outputs themselves must conform to those templates.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10207",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Standardized HTML/CSS templates impose consistent structure and interactivity on generated explanation interfaces, matching the rendered-into-a-template variant. The excerpt does not enumerate the slots or describe correction of nonconforming content.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3617",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The fragment only mentions the format and annotations of an object-relational schema. It does not demonstrate that the schema is predefined independently of generation or that model output is emitted into it; the title's emphasis on an evolving data model may instead indicate a neighbouring mechanism.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted evidence is insufficient to establish Output Templates and is more consistent with a generated or evolving data-model pattern."
+  },
+  {
+   "rid": "8794",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Stored blueprints are explicitly reused as structural templates for lyric generation, directly demonstrating advance declaration and persistence across outputs. The excerpt does not enumerate blueprint parts or mention validation, keeping it just below the clearest exemplars.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10198",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "The three named intermediate-representation types provide stable building blocks for scaffolded code generation. This is an interesting structured-generation architecture, but the quote says they scaffold generation rather than showing that final model output must conform to one fixed template.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14007",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The prompt requires a defined mixed output format combining response text with typed action placeholders, and the examples show how those parts trigger embodied behavior. This plainly connects structured generation to per-part downstream handling.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5348",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Structured inter-agent data and enforced structural correctness suggest schema-constrained intermediate outputs. However, no schema, fields, component types, validation method, or visible per-part rendering is given, so this could instead be a general multi-agent coordination mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

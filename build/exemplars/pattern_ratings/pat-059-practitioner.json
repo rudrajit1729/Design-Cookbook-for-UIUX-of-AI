@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-059",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "9078",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A predicted intent variable directly selects an authored explanation template and its evidence/justification fields. This is an unusually clear, rebuildable instance, though outcome impact cannot be established from the supplied title and quote alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9838",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The quote provides the complete lookup: low, medium, and high inferred hesitation select continuation, non-directive holding, and reflective pausing respectively. The mechanism is distinctive and readily transferable; impact evidence is limited to the described intervention.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13881",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The new/existing customer variable cleanly selects between two content variants, making the authored branching mechanism exceptionally legible. However, the quote does not establish that the user state is inferred, and the design move is conventional conditional personalization.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3004",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Mental states are explicitly mapped to persuasion strategies, closely matching the pattern. The supplied evidence does not name the states, strategies, or exact mapping, so a designer could not fully rebuild it from this record alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14019",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Keywords operationalize contextual problem states and route developers to predefined debugging strategies. The mapping approach is portable and concrete, although the evidence omits the actual state-to-strategy table and does not clearly establish a user-level state beyond the current scenario.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8397",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The prompt defines a finite mapping from inferred learner difficulties to Bloom levels, plausibly changing tutoring behavior. The quote conflates skill levels with error types and does not state what output each Bloom level produces, weakening structural clarity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14046",
+   "scores": {
+    "representativeness": 2,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "Beginner, intermediate, and advanced levels select different starter code, so the finite branch is highly rebuildable and consequential. The level is explicitly assigned by a teacher rather than inferred by the system, placing it closer to manual personalization than this pattern.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7118",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "A measured user-state score is converted into three grades that control daily-task detail. The mapping is clear and affects intervention burden, though its evidence and implementation are tied to a specific clinical population and assessment instrument.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16714",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Behavioral cues infer intent and select responsive versus proactive support as well as textual versus graphical presentation. It is impactful and broadly transferable, but the quote does not provide a complete finite mapping between named intent states and every support combination.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6229",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "Three named inferred query intents\u2014lookup, translation, and proofreading\u2014select corresponding UI component sets. This is a clean, reproducible, domain-portable implementation, although intent-specific UI routing is not especially surprising.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9200",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Readiness to change is a genuine user-state variable that selects intervention intensity. The evidence does not enumerate readiness states, intensity options, inference signals, or the actual mapping, so reconstruction would require unavailable details.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9766",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The agent derives a response mode from user input and uses it to balance empathetic and frank behavior, fitting state-driven strategy selection. The modes and classifier-to-mode mapping are not enumerated, and the supplied title metadata is visibly corrupted, warranting conservative evidence scoring.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4106",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "An inferred grounding state changes speech among detailed explanation, concise summary, and abstract recommendation forms. The progression is useful and portable, but the quote is truncated and does not specify thresholds or whether the behavior set is strictly discrete.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9529",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Prosody classifies the user into three named emotion states that determine affectively congruent responses. The state taxonomy is explicit, but 'congruent response' is not an enumerable authored behavior set, and outcome impact is not demonstrated in the available material.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12905",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Physiological state changes select two explicit difficulty behaviors: destroy half the drones when SCL rises or spawn more when it falls, capped at eight. It is unusually concrete and non-obvious, though the literal implementation is specialized to this mixed-reality task.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3691",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The named pipeline\u2014stage decision, state determination, strategy selection\u2014suggests the pattern structurally. However, no user states, alternative strategies, inference inputs, or mappings are supplied, making both reconstruction and impact assessment highly uncertain.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4672",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Idea similarity is used to infer cognitive need, which then selects an assistance strategy. The inference signal is concrete and the ideation application is compelling, but neither the need states nor their corresponding strategies are enumerated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9604",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote supports stress-triggered initiation of a meditation session, but not selection among a finite set of alternative behaviors for the same task content.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate the pattern's required enumerated state-to-behavior branching mechanism."
+  },
+  {
+   "rid": "17248",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Detected group cognitive and affective states reportedly produce tailored interventions, making the pattern plausible and potentially consequential. No intervention alternatives or state-to-intervention mapping are given, so the mechanism remains at the level of intent.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7718",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Document content is used to infer the user's workflow stage and change objectives, directions, and support features. This is transferable, but the selector is principally task progress rather than a clearly described user state, and neither phases nor branch outputs are enumerated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12806",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The design calls for inferring a user's difficulty category and tailoring assistance accordingly, a highly portable formulation of the pattern. The evidence is a design requirement rather than a concrete mapping and omits both category names and associated interventions.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5052",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Learner progress is a relevant state variable and different feedback intents imply alternative coaching strategies. The progress states, intents, and mapping are all absent, so the quoted design goal is insufficient for reconstruction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10192",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Observed behavior is repeatedly classified into browsing intents that select interface adaptations, directly connecting inferred state to substantial UI change. The approach is broad and ambitious, but the quote does not enumerate either intents or their corresponding adaptations.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9399",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The selector described is answer type\u2014short factual versus long explanatory\u2014not a variable describing the user.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence demonstrates content-driven pacing rather than inferred user-state-driven adaptation."
+  },
+  {
+   "rid": "13720",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes broad multimodal context-aware adaptation but identifies neither a user-state variable nor a finite authored mapping to named behaviors.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support the pattern's specific structural signature."
+  },
+  {
+   "rid": "8120",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Heart activity supplies an inferred stress state that changes conversational tone and introduces motivational behavior. The input and broad branches are visible, but stress categories, thresholds, and the finite tone/behavior mapping are not fully specified.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8558",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 2,
+    "evidence_strength": 4
+   },
+   "reason": "Three named expertise groups select tailored explanation behavior, providing a finite and highly reusable segmentation scheme. The quote does not establish automatic inference or describe how the explanations differ, and expertise-level tailoring is a conventional design move.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9835",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 2
+   },
+   "reason": "Dynamic states drive an expression strategy affecting language and vocal pacing, suggesting multimodal state-conditioned behavior. The quote is truncated and never identifies the states, alternatives, inference mechanism, or exact mapping, so the pattern cannot be rebuilt from this evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16313",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The fragment only associates meeting phases with layouts, applications, and files. It does not show an inferred variable describing the user or enough of an authored branching mechanism to establish this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support inferred user-state-driven adaptation."
+  },
+  {
+   "rid": "4386",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Engagement and attention are appropriate inferred user states, and adapting re-engagement content could address a real breakdown. The evidence supplies no discrete state categories, alternative content strategies, or mapping, leaving the defining mechanism underspecified.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

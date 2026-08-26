@@ -1,0 +1,524 @@
+{
+ "pattern_id": "pat-025",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "631",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The quote explicitly shows users inspecting system-inferred analytical intents through visual connections. This is a strong readback, though the evidence does not establish persistence, editability, or exactly how the inferred-intent artifact conditions later behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "1457",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A generated grounded utterance makes the system's interpretation of code visible, and users edit that intermediate representation before resubmitting it. The quote plainly demonstrates the complete structural signature, including correction through the interpretation rather than the original input.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "1661",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "User predictions are transformed into an interactively modifiable decision model that subsequently estimates correctness likelihood. This is a clear inferred schema serving as an editable intermediate artifact, although it models user capability rather than immediate task intent.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2491",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 3
+   },
+   "reason": "Predicting contextual dimensions and confirming them with participants is recognizably an interpretation-confirmation loop. The quote does not say how the predictions are displayed, corrected, persisted, or used downstream, so the mechanism can only be scored conservatively.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3512",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "TaskMind infers operation semantics and cognitive dependencies from demonstrations and materializes them as a user-interpretable task graph. That is a named interpretation artifact, though the quote does not establish whether users can edit it or how directly it controls automation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4314",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes an internal intent-understanding module that acts by planning responses, visual aids, and code updates. It never says the inferred intent or context is exposed to the user as an inspectable object.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports internal intent inference followed by action, not Interpretation Readback."
+  },
+  {
+   "rid": "5033",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system externalizes designers' individual mental models as knowledge graphs and merges them into a shared graph. This strongly resembles inferred-understanding readback, although the quote does not specify editability and the collaborative conceptual-design setting limits demonstrated transfer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5176",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "An AI-derived structured workflow stands between natural conversation and reuse, matching the intermediate-artifact portion of the signature. The quote does not establish that the representation is persistently rendered for inspection or correction.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5558",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The pipeline interprets embodied actions into named Intent Frames, renders them as story marbles on a timeline, and lets users rearrange that representation. The quote gives an unusually complete and distinctive instance of editable interpretation readback.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5632",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Structured feedback explicitly communicates how user notations were interpreted and helps resolve ambiguity. It supports readback in principle, but the quote does not identify the rendered artifact, its persistence, or whether downstream animation is conditioned on user corrections to it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6089",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Objectives are explicitly first-class, visible, modifiable objects that steer multiple downstream AI systems\u2014the intermediate control structure is exceptionally clear and general. Representativeness stops short of 5 because the quote does not itself say that these objectives are inferred from the user's input.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6169",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Guessing an annotation's purpose establishes inference but not readback. The quote does not show that the guessed purpose is displayed, editable, persistent, or used as a visible intermediate object.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not demonstrate the pattern's required visible interpretation artifact."
+  },
+  {
+   "rid": "6178",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Calling AI-generated artifacts computational boundary objects says nothing about whether they represent the system's reading of user input. No inference, readback, correction channel, or downstream conditioning is demonstrated.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence is too generic to support Interpretation Readback at all."
+  },
+  {
+   "rid": "6179",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Reflective feedback that lets users clarify and refine AI understanding is directly relevant to interpretation correction. However, the quote never describes the visible form of that understanding or establishes a persistent intermediate artifact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8405",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "The system explicitly visualizes LLM-recognized user intents, making the inferred reading itself the interface object. It is a clean, central example, although the quote does not establish editability or how the visualization changes later system behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8978",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Emotional descriptions are transformed into visible emotional vectors and an adjustable emotional curve. This is a concrete editable interpretation artifact, but the evidence does not state its downstream effect, and the cocktail/emotion mapping is relatively domain-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9400",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "An inference-confirmation loop clearly implies that the system presents an inferred execution context for user verification. The named or rendered form of that interpretation and the correction interaction are absent from the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9539",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Projected emotional keywords explicitly make the AI's interpretation visible, providing a concrete keyword-overlay form of readback. The quote calls the visibility partial and supplies no evidence of editing or downstream conditioning.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9700",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Revealing an LLM's implicit assumptions is squarely about displaying the system's construal of the user and is highly transferable. The quote does not specify the interface representation, persistence, correction mechanism, or downstream use, preventing a top representativeness score.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9835",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "The installation explicitly externalizes its multimodal state interpretation during interaction, making perceived understanding inspectable. This is an unusual embodiment of the pattern, but the evidence does not describe the artifact precisely or show correction and downstream effects.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10153",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Users can inspect a processing summary that maps each part of their natural-language command to the system's interpretation and explains proposed edit locations. The quote strongly and concretely demonstrates interpretation readback as a verification layer before editing proceeds.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10221",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote describes the system updating an internal belief about intent. The curves appear to explain the approach, but there is no evidence that users see or manipulate this belief as part of the interface.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports latent intent modeling, not a user-facing interpretation readback."
+  },
+  {
+   "rid": "10255",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The parsed prompt becomes an interactive 3D canvas, so a generated intermediate representation plausibly exposes and mediates the system's construal. The quote does not frame the canvas as a verification readback or explicitly establish its downstream role; it may instead primarily be an editable generation scaffold.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13591",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "The system considers additional context and presents a natural-language explanation plus selectable phrases, plausibly exposing and correcting its contextual interpretation. Because the quote is truncated, it does not plainly establish what the phrases represent or how selections condition later behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13637",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A human-readable intent specification is explicitly an intermediate common-ground layer that grounds subsequent AI decisions. This is almost the structural signature verbatim; only the details of its generation, rendering, and editing are missing from the supplied quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13743",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The system externalizes LLM-inferred coding tasks and relationships before code generation and permits direct manipulation of that understanding. It cleanly demonstrates inference, a named editable artifact, and downstream conditioning through the corrected interpretation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14038",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "A visualization generated from user demonstrations lets users inspect the inferred task-level workflow and intent. It is relevant, but the quote emphasizes comprehending the workflow rather than detecting divergence in the system's interpretation, and it does not establish correction through the artifact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14978",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The agent generates a workflow and translates that inferred structure back into a natural-language utterance for observation. This is a clear restatement-style readback, though the truncated evidence does not show whether users edit it or how it governs later execution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16234",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "GlassMail explicitly displays its understanding using word-level chunks and offers opportunities for clarification. This is direct interpretation readback, although the quote provides limited detail about the clarification interaction and downstream email generation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16459",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "AI-generated images let users check and confirm words the system believes they intend, creating a concrete confirmation representation. The quote does not show whether the images encode an inferred interpretation versus candidate output, nor how corrections are made and propagated.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16684",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "AI interpretations of intent are explicitly represented as interpretable, controllable concept graphs. The quote captures inference, a named visible structure, and direct control of the interpretation itself; only the precise downstream operation is implicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16757",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Inspectable and modifiable notepad state is closer to editable memory or state management. The quote does not establish that the state is an inferred reading of user input rather than stored conversational content.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence instantiates a neighboring editable-state pattern, not Interpretation Readback."
+  },
+  {
+   "rid": "16859",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system progressively transforms language and procedural traces into filtered, abstracted, and grouped task specifications. These specifications plausibly externalize the inferred intent, though the quote does not explicitly say they are displayed, editable, or used downstream.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16862",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Vague input is inferred into a goal-and-intents hierarchy and externalized as editable components. This directly exhibits a generated interpretation artifact and correction at the inferred representation layer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16899",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote proposes using inferred intent to produce recommendations. It does not say that the inferred intent itself is shown to users or made available for inspection or correction.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports acting on an inference, not displaying that inference as a first-class object."
+  },
+  {
+   "rid": "16921",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system decomposes user intent into a visible three-level control hierarchy, providing a structured intermediate interpretation. The quote does not explicitly establish edit operations or downstream conditioning, and the particle-system representation is somewhat domain-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16931",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Algorithmic self-portraits, dispositional keywords, and explanations expose the platform's inferred model of the user as a first-class object for reflection. This is a compelling readback of an algorithmic construal, though the evidence does not show editing or downstream system behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

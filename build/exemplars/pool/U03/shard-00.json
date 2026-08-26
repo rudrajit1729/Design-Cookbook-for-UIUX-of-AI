@@ -1,0 +1,1639 @@
+{
+ "dimension": {
+  "category_id": "U03",
+  "category_name": "Constraints, Guardrails & Reserved Control",
+  "category_slug": "constraints-safety-and-agency",
+  "stage": "Setting the context",
+  "category_description": "Visible rules or boundaries that restrict generation, protect artifact regions, preserve privacy, or reserve part of the task for the user.",
+  "classification_boundary": "The constraint must be expressed through the interface or directly shape an observable interaction; invisible policies are excluded.",
+  "pattern_count": 5,
+  "eligible_papers": 168,
+  "candidate_count": 168,
+  "patterns": [
+   {
+    "pattern_id": "pat-033",
+    "pattern_name": "Output Templates",
+    "short_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take."
+   },
+   {
+    "pattern_id": "pat-067",
+    "pattern_name": "User-Authored Rules",
+    "short_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run."
+   },
+   {
+    "pattern_id": "pat-068",
+    "pattern_name": "Withheld Answer",
+    "short_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output."
+   },
+   {
+    "pattern_id": "pat-071",
+    "pattern_name": "Protected Region",
+    "short_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user."
+   },
+   {
+    "pattern_id": "pat-072",
+    "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+    "short_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text."
+   }
+  ]
+ },
+ "shard": 0,
+ "candidates": [
+  {
+   "rid": "10215",
+   "title": "Lights, Camera, Autonomy! Generative Video Fusion for Realistic In Situ Evaluation of Autonomous Drones",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789156",
+   "system_id": "10215",
+   "prefilter_score": 9.476,
+   "prefilter_parts": {
+    "relevance_density": 4.976,
+    "focus": 3.0,
+    "evidence_location": 1.5,
+    "_density_raw": 9.69
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "it introduces a (i) structured, compositional prompting schema for encoding deployment-relevant constraints",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [],
+   "total_patterns": 1,
+   "factors": [
+    "Oversight",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6307",
+   "title": "GenFaceUI: Meta-Design of Generative Personalized Facial Expression Interfaces for Intelligent Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790653",
+   "system_id": "genfaceui",
+   "prefilter_score": 8.405,
+   "prefilter_parts": {
+    "relevance_density": 5.205,
+    "focus": 2.0,
+    "evidence_location": 1.2,
+    "_density_raw": 12.61
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The backend assembles prompts from four modules (Default Prompt, SVG Template, Design Rules, Context Rules), while the frontend provides Design Mode and Test Mode for iterative design–test–sel",
+     "evidence_location": "fig 3"
+    },
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "To operationalize this framework, we developed GenFaceUI, a proofof-concept tool that enables designers to create templates, apply semantic tags, define rules, and iteratively test outcomes.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "10218",
+   "title": "RDoFlow: Automatically assessing under-specified statistical analyses in HCI",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789160",
+   "system_id": "rdoflow",
+   "prefilter_score": 8.009,
+   "prefilter_parts": {
+    "relevance_density": 5.009,
+    "focus": 1.5,
+    "evidence_location": 1.5,
+    "_density_raw": 10.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Protocol tree. ReportDoF questions cover both hypothesis and variable-related concepts. They are interconnected, with the answers to some questions determining the relevance of others.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "Prior work shows that users prefer when AI systems surface candidate results, but leave fnal judgments to them [11].",
+     "evidence_location": "system sec 7"
+    }
+   ],
+   "other_dimensions": [
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "8519",
+   "title": "ResponSight: Explainable and Collaborative Moderation Approach for Responsible Video Content in UGC Platform",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720230",
+   "system_id": "responsight",
+   "prefilter_score": 7.535,
+   "prefilter_parts": {
+    "relevance_density": 5.435,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 20.55
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we integrate key dimensions of responsibility in content moderation and propose six core dimensions for responsible video detection",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3547",
+   "title": "Learning Behaviors Mediate the Effect of AI-powered Support for Metacognitive Calibration on Learning Outcomes",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713960",
+   "system_id": "3547",
+   "prefilter_score": 7.469,
+   "prefilter_parts": {
+    "relevance_density": 5.369,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 18.83
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "After completing a quiz, students were informed whether their answers were correct or incorrect, but correct answers for the incorrect responses were not revealed, encouraging self-guided learning.",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U07"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4127",
+   "title": "Inkspire: Supporting Design Exploration with Generative AI through Analogical Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713397",
+   "system_id": "inkspire",
+   "prefilter_score": 7.436,
+   "prefilter_parts": {
+    "relevance_density": 5.336,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 18.41
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-072",
+     "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+     "pattern_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Design2Sketch (converting AI designs into lower fidelity sketch scaffolding)",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "9097",
+   "title": "Belief Explorer: A Preliminary Evaluation of AI-Mediated Socratic Dialogue for Epistemic Reflection",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799391",
+   "system_id": "9097",
+   "prefilter_score": 7.221,
+   "prefilter_parts": {
+    "relevance_density": 5.271,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 13.0
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Socratic dialogue where the AI poses probing questions rather than direct answers",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15643",
+   "title": "Wisdom of the Crowd, Without the Crowd: A Socratic LLM for Asynchronous Deliberation on Perspectivist Data",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757707",
+   "system_id": "15643",
+   "prefilter_score": 7.207,
+   "prefilter_parts": {
+    "relevance_density": 5.107,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 12.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "engaging in higher-order cognitive processes to facilitate an outcome instead of serving as a question-answering system",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Metacognition",
+    "Coordination and Equitable Participation",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4889",
+   "title": "iRULER: Intelligible Rubric-Based User-Defined LLM Evaluation for Revision",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790539",
+   "system_id": "iruler",
+   "prefilter_score": 7.104,
+   "prefilter_parts": {
+    "relevance_density": 4.747,
+    "focus": 0.857,
+    "evidence_location": 1.5,
+    "_density_raw": 7.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Rubrics satisfy this by defining levels for each criteria, and supports weighting criteria by importance all in a tabular layout [20, 63, 125].",
+     "evidence_location": "system sec 3"
+    },
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This work contributes interactive rubric tools for intelligible LLM-based review and revision of writing, and user-defined rubric creation.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3591",
+   "title": "VeriPlan: Integrating Formal Verification and LLMs into End-User Planning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714113",
+   "system_id": "veriplan",
+   "prefilter_score": 7.095,
+   "prefilter_parts": {
+    "relevance_density": 4.845,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 8.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we use the scenario of a user using an LLM to plan patient navigation for a counseling session while following conflict-prevention rules to illustrate how VeriPlan assists with complex planning tasks",
+     "evidence_location": "system sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5293",
+   "title": "Designing Staged Evaluation Workflows for LLMs: Integrating Domain Experts, Lay Users, and Model-Generated Evaluation Criteria",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790897",
+   "system_id": "5293",
+   "prefilter_score": 6.751,
+   "prefilter_parts": {
+    "relevance_density": 4.551,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 6.11
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In step (2), participants create initial criteria.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U05",
+    "U08"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Coordination and Equitable Participation",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "6055",
+   "title": "Roomify: Spatially-Grounded Style Transformation for Immersive Virtual Environments",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791803",
+   "system_id": "roomify",
+   "prefilter_score": 6.649,
+   "prefilter_parts": {
+    "relevance_density": 5.074,
+    "focus": 0.375,
+    "evidence_location": 1.2,
+    "_density_raw": 11.58
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-071",
+     "pattern_name": "Protected Region",
+     "pattern_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Roomify addresses this through spatially-grounded transformation—treating physical spaces as “spatial containers” that preserve key functional and geometric properties of furniture while enabling radical stylistic changes.",
+     "evidence_location": "abstract"
+    },
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "present",
+     "confidence": "medium",
+     "evidence_quote": "The process extracts style keywords from multimodal input and creates object-level mapping tables satisfying four criteria: function consistency, style coherence, environmental consistenc",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16164",
+   "title": "When is a Tool a Tool? User Perceptions of System Agency in Human-AI Co-Creative Drawing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595977",
+   "system_id": "16164",
+   "prefilter_score": 6.452,
+   "prefilter_parts": {
+    "relevance_density": 4.452,
+    "focus": 0.5,
+    "evidence_location": 1.5,
+    "_density_raw": 5.06
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-071",
+     "pattern_name": "Protected Region",
+     "pattern_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "CICADA draws while preserving a provided “partial” sketch (i.e. user input), incurring a penalty if it moves user-drawn strokes too much, draws over them, or otherwise visually occludes the user’s contributions.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2408",
+   "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642794",
+   "system_id": "creativeconnect",
+   "prefilter_score": 6.447,
+   "prefilter_parts": {
+    "relevance_density": 4.518,
+    "focus": 0.429,
+    "evidence_location": 1.5,
+    "_density_raw": 6.02
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-072",
+     "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+     "pattern_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "All system-generated recombination outputs are produced in line sketches with one-line descriptions so that users can further reinterpret by themselves (DG 4).",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13551",
+   "title": "Style2Fab: Functionality-Aware Segmentation for Fabricating Personalized 3D Models with Generative AI",
+   "venue": "uist-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3586183.3606723",
+   "system_id": "style2fab",
+   "prefilter_score": 4.321,
+   "prefilter_parts": {
+    "relevance_density": 2.521,
+    "focus": 1.5,
+    "evidence_location": 0.3,
+    "_density_raw": 1.59
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-071",
+     "pattern_name": "Protected Region",
+     "pattern_summary": "Part of the working artifact is designated off-limits and the generator is prevented from altering it, with the designation produced by the system rather than drawn by the user.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This method allows users to selectively modify aesthetic segments of 3D models, without afecting the functional segments.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 2,
+   "factors": [
+    "Sensemaking",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4912",
+   "title": "Dust Off Kindle Highlights With Quologue: Surfacing Personal Data With Generative AI for Reflective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790664",
+   "system_id": "4912",
+   "prefilter_score": 2.857,
+   "prefilter_parts": {
+    "relevance_density": 0.982,
+    "focus": 0.375,
+    "evidence_location": 1.5,
+    "_density_raw": 0.64
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-072",
+     "pattern_name": "Low Detail Outlines with User-Filled Specificity",
+     "pattern_summary": "The system renders its output below the fidelity it could achieve, using a sparse representation and minimal accompanying text.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "By removing the contextual anchors of the highlight for users—such as the book title, the author’s name, or the full quote, Quologue transforms e-book metadata from factual reference points in the archive into prompts for personal meaning-making.",
+     "evidence_location": "system sec 3.1.3 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "2030",
+   "title": "CoArgue : Fostering Lurkers' Contribution to Collective Arguments in Community-based QA Platforms",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580932",
+   "system_id": "coargue",
+   "prefilter_score": 7.411,
+   "prefilter_parts": {
+    "relevance_density": 4.911,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 9.27
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we developed the taxonomies below to facilitate the design of CoArgue: • Stance: people’s sentiment on a particular topic (e.g., positive, neutral, and negative)",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13025",
+   "title": "LIVE-GS: LLM Powers Interactive VR Experience with Physics-Aware Gaussian Splatting",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3680710",
+   "system_id": "livegs",
+   "prefilter_score": 7.378,
+   "prefilter_parts": {
+    "relevance_density": 4.878,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 9.14
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We carefully prompt it to comprehend our requirements, reason as an expert author, and output a formatted reply, typically in a json file, which seamlessly interfaces with our physics engine.",
+     "evidence_location": "system sec 5.2 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13373",
+   "title": "RuleScope: Semantic-Aware Authoring of Data Validation Rules",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3697222",
+   "system_id": "rulescope",
+   "prefilter_score": 7.267,
+   "prefilter_parts": {
+    "relevance_density": 5.467,
+    "focus": 0.3,
+    "evidence_location": 1.5,
+    "_density_raw": 46.04
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "1) a taxonomy-driven design that enables generating validation rules in a structured format",
+     "evidence_location": "system sec 4 (full text)"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 10,
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13370",
+   "title": "Chat Modeling: Interaction-Enhanced Agent Framework for Visualizing Literature-Grounded Biological Structures",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3694805",
+   "system_id": "13370",
+   "prefilter_score": 7.102,
+   "prefilter_parts": {
+    "relevance_density": 5.402,
+    "focus": 0.5,
+    "evidence_location": 1.2,
+    "_density_raw": 20.29
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The recipe generator creates validated recipe based on the plans from the modeling planner, while the recipe interpreter converts this recipe into procedural modeling actions.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10271",
+   "title": "VoiceAlign: A Shimming Layer for Enhancing the Usability of Legacy Voice User Interface Systems",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789167",
+   "system_id": "voicealign",
+   "prefilter_score": 6.98,
+   "prefilter_parts": {
+    "relevance_density": 4.78,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 7.86
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The fully quantified command template with four components and a sampler of available values for each component.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8527",
+   "title": "SPHERE: Supporting Personalized Feedback at Scale in Programming Classrooms with Structured Review of Generative AI Outputs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720203",
+   "system_id": "sphere",
+   "prefilter_score": 6.973,
+   "prefilter_parts": {
+    "relevance_density": 5.173,
+    "focus": 0.6,
+    "evidence_location": 1.2,
+    "_density_raw": 12.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Instructors select the critical issues for feedback, which are then summarized and categorized to create Feedback Templates (3).",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9587",
+   "title": "SocialCue: Exploring the Design Space of Social Wayfinding Assistants for Blind and Low Vision People",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799011",
+   "system_id": "socialcue",
+   "prefilter_score": 6.932,
+   "prefilter_parts": {
+    "relevance_density": 4.682,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 6.67
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "This module generates a structured JSON profile per person that includes their clothing, whether they are wearing glasses, their hair color, hairstyle and eye color when visible.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10225",
+   "title": "Filling the Gap: LLMs as Scaffolds for Competency Question Instantiation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789141",
+   "system_id": "10225",
+   "prefilter_score": 6.887,
+   "prefilter_parts": {
+    "relevance_density": 4.387,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 4.63
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The core task evaluated in this work is the LLM-based instantiation of template CQs across multiple entities.",
+     "evidence_location": "system sec 4.1"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3617",
+   "title": "Generative and Malleable User Interfaces with Generative and Evolving Task-Driven Data Model",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713285",
+   "system_id": "3617",
+   "prefilter_score": 6.849,
+   "prefilter_parts": {
+    "relevance_density": 4.649,
+    "focus": 1.0,
+    "evidence_location": 1.2,
+    "_density_raw": 6.37
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The format of object-relational schema and the annotation of attributes within the schema.",
+     "evidence_location": "fig 3"
+    }
+   ],
+   "other_dimensions": [
+    "U06"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4067",
+   "title": "End User Authoring of Personalized Content Classifiers: Comparing Example Labeling, Rule Writing, and LLM Prompting",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713691",
+   "system_id": "4067",
+   "prefilter_score": 6.704,
+   "prefilter_parts": {
+    "relevance_density": 5.304,
+    "focus": 0.5,
+    "evidence_location": 0.9,
+    "_density_raw": 15.79
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The system filters comments that match any constructed rule, which represents a category of texts that the user wants to remove from their content feed.",
+     "evidence_location": "full text sec 3.1.2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13804",
+   "title": "Policy Maps: Tools for Guiding the Unbounded Space of LLM Behaviors",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747680",
+   "system_id": "13804",
+   "prefilter_score": 6.596,
+   "prefilter_parts": {
+    "relevance_density": 3.896,
+    "focus": 1.5,
+    "evidence_location": 1.2,
+    "_density_raw": 3.42
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "medium",
+     "evidence_quote": "A policy map creates an explicit representation of subjective LLM policy decisions by encoding them in a hierarchy of Case, Concept, and Policy abstractions.",
+     "evidence_location": "fig 2"
+    },
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "With Policy Projector, an interactive tool for designing LLM policy maps, an AI practitioner can survey the landscape of model input-output pairs, define custom regions (e.g., “violence”), and navigate these regions with if-then policy rules that can act on LLM outputs (e.g., if output contains “violence” and “graphic details,” then rewrite without “graphic details”).",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4840",
+   "title": "AI for Creativity: A GenAI-Based Approach for Early Concept Design and Its Impact on Senior Architects",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791643",
+   "system_id": "4840",
+   "prefilter_score": 6.572,
+   "prefilter_parts": {
+    "relevance_density": 4.943,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 9.57
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "evaluates them against user-defined principles, and provides actionable suggestions for refinement",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10194",
+   "title": "SPICA: Scalable and Personalized Conversational Agent Framework for AAC Users",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789116",
+   "system_id": "spica_aac",
+   "prefilter_score": 6.566,
+   "prefilter_parts": {
+    "relevance_density": 4.616,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 6.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Illustrative example of a Profile Card representation summarizing a user’s communication preferences, tone, access method, and personal context. The card acts as a compact knowledge schema retrieved by SPICA during real-time conversation.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "9338",
+   "title": "HabitTune: AI-Generated Personalized Children's Songs for Positive Habit Development",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798832",
+   "system_id": "habittune",
+   "prefilter_score": 6.375,
+   "prefilter_parts": {
+    "relevance_density": 4.125,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 3.8
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The prompt produces a structured verse–chorus format",
+     "evidence_location": "system sec 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8137",
+   "title": "ArtBot: An Exploration into AI's Potential for Guiding Art Analysis",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720181",
+   "system_id": "artbot",
+   "prefilter_score": 6.313,
+   "prefilter_parts": {
+    "relevance_density": 4.813,
+    "focus": 0.6,
+    "evidence_location": 0.9,
+    "_density_raw": 8.75
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Naturally, due to the Socratic method implemented in the system prompt, once the first message is sent, the ArtBot will take over, prompting the user with its questions about the work.",
+     "evidence_location": "full text, sec 3.1"
+    }
+   ],
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9312",
+   "title": "From Text-First to Structure-First: A Visual Pipeline for Narrative Writing",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799344",
+   "system_id": "9312",
+   "prefilter_score": 6.304,
+   "prefilter_parts": {
+    "relevance_density": 4.354,
+    "focus": 0.75,
+    "evidence_location": 1.2,
+    "_density_raw": 4.25
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Writers first select a narrative schema, which defines the sections and their intended functions.",
+     "evidence_location": "fig 2"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6141",
+   "title": "CASEbot: A Conversational Agent for Structuring and Personalizing the Design of Self-Experiments in Personal Health",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791551",
+   "system_id": "casebot",
+   "prefilter_score": 6.29,
+   "prefilter_parts": {
+    "relevance_density": 4.19,
+    "focus": 0.6,
+    "evidence_location": 1.5,
+    "_density_raw": 4.05
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "We leverage genAI to design a system that can collect users’ context and preferences and merge them with an ideal structure to support self-experiment design.",
+     "evidence_location": "system sec 3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2257",
+   "title": "Don't Just Tell Me, Ask Me: AI Systems that Intelligently Frame Explanations as Questions Improve Human Logical Discernment Accuracy over Causal AI explanations",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3580672",
+   "system_id": "2257",
+   "prefilter_score": 6.258,
+   "prefilter_parts": {
+    "relevance_density": 4.158,
+    "focus": 1.2,
+    "evidence_location": 0.9,
+    "_density_raw": 4.0
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "the AI explanation feedback templates for causal AI explanations and AI-framed Questioning explanations were shaped in a way that it identifes and highlights the link between premises and conclusion",
+     "evidence_location": "full text sec 4.2 Explanation Feedback"
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "AI system asks participants about the causal link between a reason and the system label. It takes a similar form as the causal AI explanation but does not make it clear whether the label actually follows from the reason.",
+     "evidence_location": "full text sec 4.2 Explanation Feedback"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 5,
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Appropriate Reliance",
+    "Metacognition",
+    "Bias and Fairness",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5150",
+   "title": "Toward Scalable ASL Education: Egocentric Stereo Sensing with LLM Feedback for Error-Aware Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790774",
+   "system_id": "5150",
+   "prefilter_score": 6.167,
+   "prefilter_parts": {
+    "relevance_density": 3.667,
+    "focus": 1.0,
+    "evidence_location": 1.5,
+    "_density_raw": 3.08
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "we grounded our feedback taxonomy in the standard phonological model of ASL, which categorizes signs into five distinct parameters",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "total_patterns": 3,
+   "factors": [
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4893",
+   "title": "Designing Scaffolding Cards to Facilitate LLM-Based Socratic Instruction: An Exploratory Study of Response Strategies to Support Learning",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791696",
+   "system_id": "4893",
+   "prefilter_score": 6.092,
+   "prefilter_parts": {
+    "relevance_density": 5.042,
+    "focus": 0.75,
+    "evidence_location": 0.3,
+    "_density_raw": 10.72
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "could mitigate overreliance by engaging learners with LLM-generated questions rather than passively seeking answers from LLMs",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "total_patterns": 4,
+   "factors": [
+    "Gulf of Envisioning",
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13413",
+   "title": "Social Simulacra: Creating Populated Prototypes for Social Computing Systems",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545616",
+   "system_id": "13413",
+   "prefilter_score": 6.049,
+   "prefilter_parts": {
+    "relevance_density": 4.42,
+    "focus": 0.429,
+    "evidence_location": 1.2,
+    "_density_raw": 4.9
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "C) The “Community Rules” panel describing the rules that the members are encouraged to follow.",
+     "evidence_location": "fig 1"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U10"
+   ],
+   "total_patterns": 7,
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback"
+   ]
+  },
+  {
+   "rid": "8978",
+   "title": "Sip Your Emotions: Blending Emotion and Data in Cocktail Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721336",
+   "system_id": "8978",
+   "prefilter_score": 6.038,
+   "prefilter_parts": {
+    "relevance_density": 5.238,
+    "focus": 0.5,
+    "evidence_location": 0.3,
+    "_density_raw": 12.78
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "Through natural language processing and an emotion-embedding approach, we map textual input onto base spirits, flavors, and garnishes.",
+     "evidence_location": "abstract"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "total_patterns": 6,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Metacognition",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15714",
+   "title": "AMQuestioner: Training Critical Thinking with Question-Driven Interactive Argument Maps in Online Discussion",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757551",
+   "system_id": "amquestioner",
+   "prefilter_score": 5.989,
+   "prefilter_parts": {
+    "relevance_density": 4.714,
+    "focus": 0.375,
+    "evidence_location": 0.9,
+    "_density_raw": 7.35
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-033",
+     "pattern_name": "Output Templates",
+     "pattern_summary": "A structure declared in advance — a schema, slot set, section skeleton, or typed taxonomy — determines the form the model's output must take.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "labeling each sentence with its corresponding argument component (major claim, claim, premise); and (4) annotating the attitude (support, attack) between major claims and claims, and between claims and premises",
+     "evidence_location": "full text sec 4.1.3"
+    }
+   ],
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "system_id": "13637",
+   "prefilter_score": 5.982,
+   "prefilter_parts": {
+    "relevance_density": 3.732,
+    "focus": 0.75,
+    "evidence_location": 1.5,
+    "_density_raw": 3.17
+   },
+   "dimension_edges": [
+    {
+     "pattern_id": "pat-067",
+     "pattern_name": "User-Authored Rules",
+     "pattern_summary": "The user builds up a standing set of rules, principles, or preferences that is stored outside any single generation and consulted on every subsequent run.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "In the near-future, people may coordinate with AI agent systems through project-specific documents that represent accumulations of user intent [64, 94, 101]—lists that we call intent specifications.",
+     "evidence_location": "intro"
+    },
+    {
+     "pattern_id": "pat-068",
+     "pattern_name": "Withheld Answer",
+     "pattern_summary": "The system runs the pipeline that would produce a terminal output but does not emit that output.",
+     "role": "central",
+     "confidence": "high",
+     "evidence_quote": "The Check for Conflicts button provides the ability to perform impact analysis [6], which only highlights potential conflicts without suggesting changes, allowing the user to get a sense of how much effort a change might require.",
+     "evidence_location": "system sec 4"
+    }
+   ],
+   "other_dimensions": [
+    "U06",
+    "U07"
+   ],
+   "total_patterns": 8,
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  }
+ ]
+}

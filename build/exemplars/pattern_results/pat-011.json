@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-011",
+ "exemplars": [
+  {
+   "rid": "1960",
+   "title": "Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581566",
+   "final_score": 4.57,
+   "why": "Visual content is generated synchronously with an independently unfolding verbal exchange, so each caption must appear while its corresponding utterance remains current.",
+   "over_the_runner_up": "It outranks GestureCoach because it expresses the pattern in its most general form—synchronizing heterogeneous outputs to live communication—rather than one specialized coaching intervention."
+  },
+  {
+   "rid": "13765",
+   "title": "GestureCoach: Rehearsing for Engaging Talks with LLM-Driven Gesture Recommendations",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747705",
+   "final_score": 4.5,
+   "why": "The system continuously tracks rehearsal speech and proactively delivers gesture cues during the passages to which they apply, making the live input, timed output, and intervention point explicit.",
+   "over_the_runner_up": "It outranks StoryDrawer because its evidence more clearly identifies both the continuously tracked stream and the user-facing output delivered at the relevant moment."
+  },
+  {
+   "rid": "965",
+   "title": "StoryDrawer: A Child-AI Collaborative Drawing System to Support Children's Creative Visual Storytelling",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501914",
+   "final_score": 4.42,
+   "why": "Children’s telling unfolds independently while the system transforms it into drawings in real time, preserving the live coupling between narration and visual output without waiting for the story to end.",
+   "over_the_runner_up": "It outranks Graphologue because it synchronizes output to an independently unfolding human activity, whereas Graphologue derives one system output from another system-generated stream."
+  }
+ ],
+ "notes": "I departed from the consensus by excluding its second-ranked candidate, Graphologue (rid 13531), and promoting GestureCoach and StoryDrawer. Although Graphologue strongly demonstrates incremental, no-batch stream processing, its referent is the system’s own GPT-4 response rather than the independently unfolding conversation, performance, learning session, or environmental activity required by the definition. GestureCoach was slightly increased from 4.40 to 4.50 because its quote provides the clearest structural evidence: continuously tracked speech, proactive cues, and delivery during rehearsal. No adjustment exceeds 0.3. Readers should distrust implementation-level certainty across all three picks: the supplied excerpts establish synchronicity or real-time behavior but do not document timestamp assignment, latency budgets, segmentation granularity, or measured end-to-end delay.",
+ "pattern_name": "Live Activity Output Synchronization",
+ "category_id": "U02",
+ "rated": 30
+}

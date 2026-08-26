@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-036",
+ "exemplars": [
+  {
+   "rid": "7464",
+   "title": "Automatic Histograms: Leveraging Language Models for Text Dataset Exploration",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650798",
+   "final_score": 4.6,
+   "why": "A distribution summarizes many text examples, and selecting an entity directly filters the linked table to the individual examples containing it. This is the clearest complete match to the aggregate-selection-detail signature.",
+   "over_the_runner_up": "Chosen over Compendia because the evidence explicitly states the filtering operation and identifies the individual cases shown afterward, leaving less of the linkage implicit."
+  },
+  {
+   "rid": "13212",
+   "title": "Compendia: Automated Visual Storytelling Generation From Online Article Collection",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2026.3663204",
+   "final_score": 4.5,
+   "why": "The Thematic Overview aggregates all extracted facts into clusters, while selecting a cluster opens the Story View for detailed exploration of precisely that cluster's facts.",
+   "over_the_runner_up": "Chosen over Malleable Overview-Detail Interfaces because it documents a concrete implemented transition from an aggregate cluster to its constituent facts, whereas the latter's excerpt only defines the general pattern."
+  },
+  {
+   "rid": "3579",
+   "title": "Malleable Overview-Detail Interfaces",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714164",
+   "final_score": 4.1,
+   "why": "The excerpt explicitly establishes asymmetric levels over one collection: an overview of items and key attributes, followed by an in-depth view of the selected individual item.",
+   "over_the_runner_up": "Chosen over Meridian because its evidence describes both levels and the selected item's expanded attributes more completely, while Meridian supplies only a shorter generic definition."
+  }
+ ],
+ "notes": "The final selection preserves the consensus top three, but the scores were judgment-adjusted. Rid 7464 and rid 13212 have direct evidence of implemented overview-to-detail population selection and are the most trustworthy exemplars. Rid 3579 was reduced from 4.45 to 4.10 (a −0.35 adjustment) because the supplied evidence defines the baseline pattern rather than demonstrating the paper's actual malleable interface; readers should therefore distrust any inference that its distinctive contribution is evidenced here. Its definition also describes an item overview rather than an explicitly computed aggregate, making it a weaker structural fit than the first two. Rid 13793 has the same evidentiary problem with less structural detail, while rid 9602's graph is not clearly an aggregate function of many items.",
+ "pattern_name": "Overview-plus-Detail",
+ "category_id": "U07",
+ "rated": 30
+}

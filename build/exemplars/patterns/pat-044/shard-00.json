@@ -1,0 +1,1055 @@
+{
+ "pattern": {
+  "pattern_id": "pat-044",
+  "pattern_name": "Role-Play Scenario",
+  "pattern_slug": "role-play-scenario",
+  "short_summary": "The system generates a bounded scenario and places the user inside it as a participant rather than as an operator addressing a tool.",
+  "definition": "The system generates a bounded scenario and places the user inside it as a participant rather than as an operator addressing a tool. The user acts in role, and the model plays the other parties or the environment; the run can be repeated. What the user produces during the run is behaviour in the scenario, not a request to the model.",
+  "structural_signature": "Control flow: a setup step fixes the scenario's parameters (topic, role, self-representation), after which the interface switches into an in-scenario mode where the user's turns are read as actions of a participant and the model's turns are read as the world's response. The scenario has an entry and an exit, and re-entry restarts it rather than continuing it. The signature is the *frame switch* — user input stops being instructions to a system and becomes conduct inside a generated world. Transplants to sales rehearsal, incident drills, or a generated market a strategy is tested against.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Role-Playing Agent",
+  "dimension": {
+   "category_id": "U10",
+   "category_name": "Agent Identity & Multi-Party Roles",
+   "category_description": "How human and artificial participants are personified, assigned visible roles, coordinated, simulated, or represented to one another.",
+   "classification_boundary": "Identity or social organization must be user-facing; invisible multi-agent division of labor is excluded.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "2620",
+   "title": "EmoEden: Applying Generative Artificial Intelligence to Emotional Learning for Children with High-Function Autism",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642899",
+   "system_id": "emoeden",
+   "evidence": [
+    {
+     "quote": "Creating an immersive learning context, such as a social scenario, can enhance the enjoyment and attention of HFA children",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2642",
+   "title": "A Piece of Theatre: Investigating How Teachers Design LLM Chatbots to Assist Adolescent Cyberbullying Education",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642379",
+   "system_id": "2642",
+   "evidence": [
+    {
+     "quote": "Their goal is to enable students to rehearse both desirable and undesirable reactions to cyberbullying in a safe environment.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "2764",
+   "title": "Eternagram: Probing Player Attitudes Towards Climate Change Using a ChatGPT-driven Text-based Adventure",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642850",
+   "system_id": "eternagram",
+   "evidence": [
+    {
+     "quote": "Illustration of compatible game loop design integrating player-GPT interaction",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "3062",
+   "title": "Rehearsal: Simulating Conflict to Teach Conflict Resolution",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642159",
+   "system_id": "rehearsal",
+   "evidence": [
+    {
+     "quote": "we introduce Rehearsal, a system that allows users to rehearse conficts with a believable simulated interlocutor, explore counterfactual “what if?” scenarios to identify alternative conversational paths, and learn through feedback on how and when to apply specifc confict strategies",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3242",
+   "title": "An Empathy-Based Sandbox Approach to Bridge the Privacy Gap among Attitudes, Goals, Knowledge, and Behaviors",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642363",
+   "system_id": "3242",
+   "evidence": [
+    {
+     "quote": "interact with websites and applications “under the disguise” of an artificial persona",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3746",
+   "title": "Unlocking the Power of Speech: Game-Based Accent and Oral Communication Training for Immigrant English Language Learners via Large Language Models",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713945",
+   "system_id": "3746",
+   "evidence": [
+    {
+     "quote": "The game is set in a fictional, vibrant, and multicultural city called \"Cosmopolis.\" Players take on the role of a character named \"Alex,\" who has just arrived in the city and decided to start a new life.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3944",
+   "title": "Generative Role-Play Communication Training in Virtual Reality for Autistic Individuals: A Study on Job Coach Experiences in Vocational Training Programs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713507",
+   "system_id": "3944",
+   "evidence": [
+    {
+     "quote": "The platform features a VR application that integrates an LLM-powered virtual avatar for roleplaying scenarios, alongside a web interface system that enables job coaches to develop training scenarios through prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4025",
+   "title": "Can AI Prompt Humans? Multimodal Agents Prompt Players? Game Actions and Show Consequences to Raise Sustainability Awareness",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713661",
+   "system_id": "4025",
+   "evidence": [
+    {
+     "quote": "EcoEcho immerses players in the role of a conflicted scientist whose misinterpretation of his father’s dying wish leads him to impede clean energy advancement.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "4052",
+   "title": "TutorUp: What If Your Students Were Simulated? Training Tutors to Address Engagement Challenges in Online Learning",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713589",
+   "system_id": "tutorup",
+   "evidence": [
+    {
+     "quote": "We introduce TutorUp, a Large Language Model (LLM)-based system that enables novice tutors to practice engagement strategies with simulated students through scenario-based training.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4423",
+   "title": "Scaffolding Empathy: Training Counselors with Simulated Patients and Utterance-level Performance Visualizations",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714014",
+   "system_id": "4423",
+   "evidence": [
+    {
+     "quote": "Our resulting system, SimPatient (Figure 2), aims to provide a realistic counseling interaction with a simulated patient (Figure 1), complemented by a comprehensive and tailored evaluation dashboard.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "4509",
+   "title": "Social Simulation for Everyday Self-Care: Design Insights from Leveraging VR, AR, and LLMs for Practicing Stress Relief",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713115",
+   "system_id": "4509",
+   "evidence": [
+    {
+     "quote": "The user can select a topic (left) then begin a dialogue with the generated scene (middle)",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Guidance and Feedback",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5089",
+   "title": "Can LLM-Simulated Practice and Feedback Upskill Human Counselors? A Randomized Study with 90+ Novice Counselors",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791821",
+   "system_id": "5089",
+   "evidence": [
+    {
+     "quote": "The system integrates two core components: (1) LLM-simulated patients that provide realistic, text-based practice conversations",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5124",
+   "title": "DeepAware: Using Experiential Deepfake Simulations to Enhance Cybersecurity Awareness in Older Adults",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791492",
+   "system_id": "deepaware",
+   "evidence": [
+    {
+     "quote": "developed DeepAware, a selfreferential simulation platform that embeds participants’ own faces and voices into deepfake scam scenarios",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5336",
+   "title": "DOLLama: Fostering Family Anti-Bullying Learning through AI-Augmented, Toy-Mediated Educational Drama",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790687",
+   "system_id": "dollama",
+   "evidence": [
+    {
+     "quote": "It allows children to take on the roles of the bullied character or bystanders and co-perform with AI-controlled characters in gamified vignettes.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5445",
+   "title": "DiaryPlay: AI-Assisted Creation of Interactive Story Vignettes for Everyday Storytelling",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790572",
+   "system_id": "diaryplay",
+   "evidence": [
+    {
+     "quote": "lets the audience role-play a character and interact with non-player",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5447",
+   "title": "I followed what felt right, not what I was told: Autonomy, Coaching, and Recognizing Bias Through AI-Mediated Dialogue",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791078",
+   "system_id": "5447",
+   "evidence": [
+    {
+     "quote": "designed and implemented a platform that could simulate “everyday social interactions” and introduce different forms of intervention",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Bias and Fairness",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5552",
+   "title": "Gamifying Compassion: Mitigating Dialect Prejudice Through An AI-Driven Serious Game",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791482",
+   "system_id": "5552",
+   "evidence": [
+    {
+     "quote": "CompassioMate is set in a virtual society where players assume the role of a secret accent detective.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U08"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5619",
+   "title": "ScamPilot: Simulating Conversations with LLMs to Protect Against Online Scams",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791313",
+   "system_id": "scampilot",
+   "evidence": [
+    {
+     "quote": "Unlike games where users explicitly role-play as the scammer or the target [98], ScamPilot places users in the role of a third-party advisor, offering real-time guidance to a simulated interlocutor that is the target of a scam.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5878",
+   "title": "Does Sequencing Matter? Evaluating AI and Human Simulations for High-Stakes Communication Training in Law Enforcement",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791909",
+   "system_id": "5878",
+   "evidence": [
+    {
+     "quote": "The AI-based training, where recruits individually interact with the AI victim personas on laptops.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6191",
+   "title": "CoEmpaTeam: Enhancing Cognitive Empathy using LLM-based Avatars and Dynamic Role Play in Virtual Reality",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790389",
+   "system_id": "coempateam",
+   "evidence": [
+    {
+     "quote": "CoEmpaTeam is an immersive VR application in which participants engage in role play with two LLM-driven avatars, each embodying distinct personalities within a designed living situation.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6224",
+   "title": "LLM-based Embodied Conversational Agent for Reducing Foreign Language Speaking Anxiety in Social VR",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791068",
+   "system_id": "6224",
+   "evidence": [
+    {
+     "quote": "We developed three English-language learning scenarios in social VR and conducted a five-day mixed-methods CHI ’26, April 13–17, 2026, Barcelona, Spain study where participants (N=20) engaged in daily 30-minute roleplay practice with an LLM-based ECA",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6759",
+   "title": "Generating Embodied Storytelling and Interactive Experience of China Intangible Cultural Heritage \"Hua'er\" in Virtual Reality",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519761",
+   "system_id": "6759",
+   "evidence": [
+    {
+     "quote": "Accordingly, we design “Hua’er and the Youth” (HY) that integrates three methods (virtual avatar, participatory performance, and gamebased knowledge acquisition) and conduct a between-subjects user study to compare HY with the Comparison system.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6880",
+   "title": "Closer Worlds: Using Generative AI to Facilitate Intimate Conversations",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585651",
+   "system_id": "6880",
+   "evidence": [
+    {
+     "quote": "Closer Worlds guides users through an imaginary situation in which they build a world to live in together.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6946",
+   "title": "Fable Reborn: Investigating Gameplay Experience between a Human Player and a Virtual Dungeon Master",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585793",
+   "system_id": "6946",
+   "evidence": [
+    {
+     "quote": "At the start of the game session, players were required to create their characters for their campaigns using the online character sheet shown in Figure 1 and to select a campaign (game) room.",
+     "location": "full text sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "7482",
+   "title": "CareerSim: Gamification Design Leveraging LLMs For Career Development Reflection",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650928",
+   "system_id": "careersim",
+   "evidence": [
+    {
+     "quote": "Upon entering the game, players need to set attributes to customize their characters (A). Once the game begins, players will encounter career development events based on their attributes, requiring them to make choices (B).",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "7567",
+   "title": "Exploring the Use of Large Language Model-Driven Chatbots in Virtual Reality to Train Autistic Individuals in Job Communication Skills",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651996",
+   "system_id": "7567",
+   "evidence": [
+    {
+     "quote": "The use of LLM-driven chatbots allows job coaches to create training scenarios for trainees using text prompts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7630",
+   "title": "Language Urban Odyssey: A Serious Game for Enhancing Second Language Acquisition through Large Language Models",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3651112",
+   "system_id": "7630",
+   "evidence": [
+    {
+     "quote": "Players, as \"Alex,\" tackle professional tasks to gain prominence.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U05"
+   ],
+   "factors": [
+    "Personalization",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7683",
+   "title": "Prompt-Gaming: A Pilot Study on LLM-Evaluating Agent in a Meaningful Energy Game",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3650774",
+   "system_id": "promptgaming",
+   "evidence": [
+    {
+     "quote": "In the game, the player starts by installing a single solar panel, and its energy community progressively grows to its household/family, neighbor, neighborhood, city, state, country, and continent.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7829",
+   "title": "Silk Road Journey: A Real-time AI-based Interactive Art Installation for Silk Road Cultural Reenactment and Experience",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648655",
+   "system_id": "7829",
+   "evidence": [
+    {
+     "quote": "In this installation, audiences assume the role of travelers and engage in real-time interaction through physical gestures.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "7924",
+   "title": "Designing Conversational Agents to Support Student Teacher Learning in Virtual Reality Simulation: A Case Study",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3637145",
+   "system_id": "7924",
+   "evidence": [
+    {
+     "quote": "VR simulation creates spaces for student teachers to practice teaching and approximate veteran teachers' professional practices by sensing and reflecting their own practices in situ",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8042",
+   "title": "A Mystery for You: A fact-checking game enhanced by large language models (LLMs) and a tangible interface",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648110",
+   "system_id": "8042",
+   "evidence": [
+    {
+     "quote": "In this game, a player becomes a citizen fact-checker, responding to 'news alerts' printed out by the game interface.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8046",
+   "title": "Language of Zelda: Facilitating Language Learning Practices Using ChatGPT",
+   "venue": "chiea-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613905.3648107",
+   "system_id": "8046",
+   "evidence": [
+    {
+     "quote": "In the game, users practice French in an interactive space and actively use French to navigate the game world, solve puzzles, and interact with non-player characters (NPCs).",
+     "location": "full text, motivation sec 1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8062",
+   "title": "Ask Sir Oliver Ingham: LLM-based Social Simulations for History Education",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719728",
+   "system_id": "8062",
+   "evidence": [
+    {
+     "quote": "We developed a prototype that provides interactive historical contexts, AI-driven character conversations, and structured quests, while allowing teachers to adapt maps, characters, and content.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8241",
+   "title": "Designing VR Simulation System for Clinical Communication Training with LLMs-Based Embodied Conversational Agents",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719693",
+   "system_id": "8241",
+   "evidence": [
+    {
+     "quote": "Overview of VAPS: a)Freely-explore tutorial scene; b)A High-fidelity realistic ECA is communicating with users as an AI patient in clinical patient interaction scene; c) Quick self-debriefing science with simple open-questions",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U04"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8322",
+   "title": "Exploring the Efficacy of a Chatbot Training Application in Alleviating Graduate Students' Public-Speaking Anxiety During Q&A",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720177",
+   "system_id": "8322",
+   "evidence": [
+    {
+     "quote": "the desktop application simulates a Zoom meeting interface to increase immersion by recreating a Q&A scenario over a video-conferencing platform (See Figure 1(b))",
+     "location": "system sec 2.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8429",
+   "title": "LIGS: Developing an LLM-infused Game System for Emergent Narrative",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720212",
+   "system_id": "ligs",
+   "evidence": [
+    {
+     "quote": "In LIGS, players can freely describe their player character’s actions in natural language, while the LLM determines actions of non-player characters (NPCs) and responding stories.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U03"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "8759",
+   "title": "I Like Your Story!: A Co-Creative Story-Crafting Game with a Persona-Driven Character Based on Generative AI",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3721163",
+   "system_id": "8759",
+   "evidence": [
+    {
+     "quote": "Players engage with the king agent through strategic storytelling, guiding him to mention weapon-related keywords, which materialize as battle equipment.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U03"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "8951",
+   "title": "The Reversed Turing Test",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720317",
+   "system_id": "8951",
+   "evidence": [
+    {
+     "quote": "The main game loop: Players are instructed to convince an LLM that they themselves are an AI.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "9001",
+   "title": "It Talks Like a Patient, But Feels Different: Co-Designing AI Standardized Patients with Medical Learners",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798336",
+   "system_id": "9001",
+   "evidence": [
+    {
+     "quote": "then (2) conduct patient history-taking via voice/text with optional prompts",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "9018",
+   "title": "You Just Said...: Raising Self-Awareness of Users' Toxic Language in Human-AI Conversations through Utterance Re-Presentation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799087",
+   "system_id": "9018",
+   "evidence": [
+    {
+     "quote": "we designed a scenario-based voice interaction in which the AI and participant debated over final resource allocation authority. Participants were tasked to persuade the AI that resource allocation decisions in large-scale crises should be handled by a human committee rather than an AI system.",
+     "location": "system sec 3.2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Metacognition",
+    "Perspective-Taking",
+    "Personalization",
+    "Privacy and Ownership"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "pattern": {
+  "pattern_id": "pat-082",
+  "pattern_name": "Chunked Interaction Sessions",
+  "pattern_slug": "chunked-interaction-sessions",
+  "short_summary": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close.",
+  "definition": "Rather than an always-on stream, the system packages interaction into episodes with a defined opening and close. Each session covers a bounded slice of material and ends; the next session is a new episode rather than a continuation of the same thread. The boundary is imposed by the system, not by the user walking away.",
+  "structural_signature": "Control flow is a repeated cycle with an entry condition and a terminal state: material is admitted at session start, processed through a fixed internal flow, and the session closes, after which no further turns belong to it. Session boundaries are visible as flow-diagram endpoints and as scoping for what the system may reference. Transplants to any continuous process that could have been left running — monitoring, tutoring, journaling, review.",
+  "ui_ux_type": "UX",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 4,
+ "candidates": [
+  {
+   "rid": "3243",
+   "title": "StayFocused: Examining the Effects of Reflective Prompts and Chatbot Support on Compulsive Smartphone Use",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642479",
+   "system_id": "stayfocused",
+   "evidence": [
+    {
+     "quote": "Besides guiding people to set focus sessions for non-screen time",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10028",
+   "title": "HINT: Integration Testing for AI-based features with Humans in the Loop",
+   "venue": "iui",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511141",
+   "system_id": "hint",
+   "evidence": [
+    {
+     "quote": "HINT supports early testing of AIbased features within the context of realistic user tasks and makes use of successive sessions to simulate AI experiences that evolve over-time.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13758",
+   "title": "StorySage: Conversational Autobiography Writing Powered by a Multi-Agent Framework",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747681",
+   "system_id": "storysage",
+   "evidence": [
+    {
+     "quote": "This flow defines a single session, described in Figure 1.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15755",
+   "title": "Poet-Weaver: Reflecting on Communication Failure in Personal Relationships With Stylized AI-Generated Conversation Digests",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757646",
+   "system_id": "poetweaver",
+   "evidence": [
+    {
+     "quote": "Poet-Weaver interaction flow for a conversation-reflection session.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Affect, Wellbeing and Connection"
+   ]
+  }
+ ]
+}

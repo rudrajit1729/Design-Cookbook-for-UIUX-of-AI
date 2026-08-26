@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-067",
+ "exemplars": [
+  {
+   "rid": "10177",
+   "title": "ConstitutionMaker: Interactively Critiquing Large Language Models by Converting Feedback into Principles",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645144",
+   "final_score": 4.85,
+   "why": "ConstitutionMaker turns user feedback into an accumulated, named constitution of principles that governs later model behavior, closely matching the pattern’s user-authored collection and persistent-policy mechanism.",
+   "over_the_runner_up": "Chosen over Policy Maps because converting feedback into a named constitution more directly realizes an inspectable standing rule set, while the runner-up organizes policies spatially and does not establish persistence."
+  },
+  {
+   "rid": "13804",
+   "title": "Policy Maps: Tools for Guiding the Unbounded Space of LLM Behaviors",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747680",
+   "final_score": 4.55,
+   "why": "Policy Projector lets practitioners define custom semantic regions and author explicit if-then rules whose actions are applied to LLM outputs, making the compilation and enforcement of user policy unusually concrete.",
+   "over_the_runner_up": "Chosen over Semantic Commit because it demonstrates the complete authoring-to-execution path, whereas the runner-up establishes an accumulated specification list but not how agents operationalize its entries."
+  },
+  {
+   "rid": "13637",
+   "title": "Semantic Commit: Helping Users Update Intent Specifications for AI Memory at Scale",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747778",
+   "final_score": 4.4,
+   "why": "Semantic Commit treats accumulated user intent as project-specific external lists that users update over time, strongly capturing the pattern’s persistent, inspectable collection rather than a one-run instruction.",
+   "over_the_runner_up": "Chosen over I Want It That Way because its accumulated, updateable intent lists better establish persistence and collection structure, while the runner-up’s evidence shows executable constraints but not a standing editable rule set."
+  }
+ ],
+ "notes": "The final membership and order follow the consensus, but the scores for Policy Maps and Semantic Commit are modestly reduced because each proves only one side of the structural signature especially well: Policy Maps shows authoring and execution but not persistence or conventional list management, while Semantic Commit shows accumulation and list structure but not the compilation-and-consultation path. No adjustment exceeds 0.3. Readers should distrust claims about add/edit/remove/reorder operations and cross-generation persistence unless confirmed in the full papers: the supplied evidence consists of short abstract or introduction excerpts and does not directly document those details. ConstitutionMaker is the strongest pick, although even its excerpt does not explicitly show list operations or priority handling.",
+ "pattern_name": "User-Authored Rules",
+ "category_id": "U03",
+ "rated": 25
+}

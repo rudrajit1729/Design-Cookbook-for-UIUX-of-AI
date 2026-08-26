@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-011",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "16467",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "\u201cSynchronized with\u201d video directly supports timestamped presentation of comments alongside playback. However, the quote describes danmaku generally rather than explicitly detailing ClassComet\u2019s AI-generation pipeline, so impact and mechanism are judged conservatively.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8513",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Low latency and real-time adaptation to user input are central requirements for keeping AI music aligned with live jamming. The quote frames these as design requirements rather than plainly confirming how ReaLJam implements or presents each output.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13765",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Speech is continuously tracked during rehearsal and gesture cues are proactively delivered while the corresponding speaking moment remains current. This is a particularly clean, reconstructable instance of synchronized live guidance.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15510",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote lists speech-to-text, RSVP, and LLM components used in a live-sales setting, but never says their outputs are synchronized to the unfolding stream or delivered under a live latency constraint.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence is topical to a live environment but does not demonstrate live activity-output synchronization."
+  },
+  {
+   "rid": "15268",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote establishes real-time collaborative map editing during meetings, but attributes map creation to users and only says that an LLM provides support. It does not demonstrate system-produced items scheduled against the conversation.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports real-time collaboration, a neighboring mechanism, rather than synchronized system output."
+  },
+  {
+   "rid": "8078",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system continuously analyzes an ongoing call and enables immediate scam detection before the call ends; lateness would materially defeat the intervention. The truncated quote prevents full confirmation of the warning presentation mechanism.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15682",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Real-time issue mapping makes discussion knowledge visible while the discussion is unfolding, matching the no-batch aspect of the pattern. The quote does not specify update triggers, timestamps, or latency behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "1960",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The explicit goal of generating synchronous visual captions strongly establishes that outputs accompany their verbal referents rather than arriving after the conversation. Exact scheduling and latency mechanics are not included.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "15683",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "Automatic transcription and annotation generation are described without any indication that annotations appear during the discussion or at the moments their referents occur. They could equally be generated after the session.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence does not support the pattern\u2019s timing assignment at all."
+  },
+  {
+   "rid": "3830",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Knowledge-support flashcards appear in real time while a video is playing, so playback need not end before assistance appears. The quote does not show how individual cards are aligned with particular video timestamps or referents.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7267",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Audience motion drives the virtual fencer\u2019s pose in real time, clearly establishing a continuous movement-to-output loop. Transferability and user impact are constrained by the specialized installation and cannot be established further from the excerpt.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9402",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "The AI assistant is explicitly synchronized with live gameplay, making the assistant\u2019s output contingent on the game\u2019s unfolding state. The quote strongly supports timing, though it does not expose the latency budget or exact synchronization method.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3323",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The excerpt says generated visuals and narration synchronize with one another. Although it mentions walking, it does not establish that either output is scheduled against the independently unfolding walking activity.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence demonstrates multimodal output-to-output synchronization, not synchronization between output and a live activity."
+  },
+  {
+   "rid": "7532",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Automatic captions are generated and emitted through a virtual camera in real time during conferencing, plausibly keeping them aligned with speech. Per-caption referent alignment is implicit rather than directly stated, and outcome evidence is unavailable.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13531",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A streamed text response is the continuous input, and the interactive diagram is constructed before that stream finishes. The quote plainly demonstrates a no-batch, incremental output pipeline, even though explicit timestamps are not mentioned.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "965",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Children\u2019s live telling is transformed into drawings in real time, directly coupling an unfolding narrative stream with visual output. The excerpt is concise and does not reveal update granularity or measured outcomes.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5536",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 5
+   },
+   "reason": "Lecture audio is transcribed automatically in real time, so text appears while its spoken referent remains current. This is a clear but conventional instance; the quote does not show whether downstream question-answering is equally synchronized.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13996",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Instructor slides receive semantic updates during live classroom discussion, establishing output before the activity ends. It remains unclear whether updates are automatically aligned to conversational events or manually initiated by the instructor.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5284",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The interview script adapts to the ongoing conversation and the timer reflects progress during the session, making assistance sensitive to current activity state. The quote does not specify update cadence or latency guarantees.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3819",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "An evolving visualization viewed at multiple moments during a meeting supports session-bound live output. The quote does not say what input drives changes, whether updates correspond to specific referents, or whether they meet a latency constraint.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4746",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Live, continuous smiley or numeric feedback during voice-diary responses fits ongoing activity-output coupling. The excerpt does not identify the measured speech property, update trigger, or timing granularity, limiting mechanism clarity.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8423",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Discussion content is summarized and shared as sticky notes in real time, avoiding a post-workshop batch boundary. The quote does not establish how closely individual notes are scheduled to the utterances they summarize.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3620",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Key information and entities are extracted in real time from an ongoing verbal discussion. This supports continuous consumption and live production, although the quote does not explicitly state when or how extracted items are presented.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9384",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Real-time skill\u2013evidence mapping during an interview is explicitly distinguished from post-interview summarization, strongly supporting the no-batch boundary. Presentation timing and mapping latency are not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5378",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Interventions are delivered in real time and tailored to the player\u2019s current emotional state, where late delivery would plausibly miss the relevant episode. The quote omits detection thresholds, triggers, and presentation details.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6295",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "Real-time interventions occur within live commerce, but the excerpt does not identify the stream event or referent that triggers each comparison or reframing output. It supports live intervention generally more than timestamped synchronization specifically.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4232",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 5,
+    "evidence_strength": 3
+   },
+   "reason": "Contextually relevant humorous suggestions must arrive during the conversational moment to be usable, making timing central in AAC. The phrase \u201ccould suggest\u201d is tentative and does not clearly demonstrate an implemented continuous pipeline.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13515",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "The system matches panel descriptions against users\u2019 real-time conversation to determine momentary relevance, indicating continuous stream consumption. The quote leaves actual panel presentation and latency implicit rather than explicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6167",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "In-the-moment verbalization prompts and low-distraction feedback occur alongside the user\u2019s work process, with timing integral to eliciting verbalization. The excerpt does not specify sensing, scheduling, or latency mechanics.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13626",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "The system couples users\u2019 nonvisual cues with real-time visual information during cooking, suggesting live grounding. The quote does not clearly identify produced output items, their triggers, or alignment with particular cooking events, so the structural match remains incomplete.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

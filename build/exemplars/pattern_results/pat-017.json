@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-017",
+ "exemplars": [
+  {
+   "rid": "5353",
+   "title": "Criticmate: Stagewise Human-AI Co-Critique in Single-Screen UI Evaluation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790929",
+   "final_score": 4.95,
+   "why": "Criticmate makes a fixed Perception–Comprehension–Projection sequence its central interaction structure, gives each stage a distinct epistemic role, and preserves editability without letting users author the sequence.",
+   "over_the_runner_up": "It ranks above rid 4036 because its stages do more than organize task completion: they deliberately separate observation, interpretation, and action to prevent premature critique, making the pipeline more distinctive and conceptually transferable."
+  },
+  {
+   "rid": "4036",
+   "title": "Raising Awareness of Location Information Vulnerabilities in Social Media Photos using LLMs",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714074",
+   "final_score": 4.62,
+   "why": "The interface exposes three fixed, functionally dependent phases—analysis, editing, and review—that take users from detecting privacy leaks through mitigation to verification.",
+   "over_the_runner_up": "It ranks above rid 10222 because the analysis–edit–review order has a stronger necessary dependency and closes a concrete safety loop, whereas CoAutoML's evidence chiefly establishes visible step-by-step progress."
+  },
+  {
+   "rid": "10222",
+   "title": "CoAutoML: User Interface Framework for Machine Learning Novices using LLM-based AutoML and Test-Driven Machine Teaching",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789153",
+   "final_score": 4.48,
+   "why": "CoAutoML provides the clearest literal match to the structural signature: a visible workflow panel exposes five constant stages in order and displays the user's step-by-step progress through them.",
+   "over_the_runner_up": "It ranks above rid 10198 because its evidence explicitly establishes a user-visible ordered progress surface, while Athena's quote names three dependent phases but does not show how the interface exposes or governs advancement through them."
+  }
+ ],
+ "notes": "The final selection follows the top three in the consensus order; no score was adjusted by more than 0.3. I slightly raised rid 4036 and rid 10222 because their evidence directly establishes visible phase structure or an ordered workflow panel. Readers should distrust any implied effectiveness claims: the supplied excerpts establish workflow design, not measured outcomes. Advancement enforcement is also not fully documented for any pick; Criticmate's evidence comes only from the abstract, rid 4036 from a figure caption, and CoAutoML's quote shows progress visibility but not explicit navigation constraints.",
+ "pattern_name": "Staged Pipeline",
+ "category_id": "U08",
+ "rated": 30
+}

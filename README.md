@@ -25,7 +25,7 @@ The site's categories are laid out as one pass through an interaction:
 
 | Stage | Categories |
 |---|---|
-| Setting the specs | U01 Input & Specification · U02 Initiative & Timing · U03 Constraints & Agency |
+| Setting the context | U01 Input & Specification · U02 Initiative & Timing · U03 Constraints & Agency |
 | Working the output | U04 Modality & Rendering · U05 Alternatives · U06 Editing & Revision · U07 Explanation & Verification |
 | Fitting into the work | U08 Workflow & History · U09 Workspace Layout · U10 Agent Identity |
 
@@ -45,6 +45,14 @@ build/cookbook_v2.json                     the generated asset (schema 2.0.0)
 build/paper_patterns_audit.csv             every pattern edge with evidence + review status
 build/paper_factors_audit.csv              every factor edge with evidence + review status
 build/VALIDATION_REPORT.md                 what was checked, what changed, what is open
+build/exemplar_candidates.py               shortlists exemplar candidates per dimension
+build/exemplar_report.py                   renders the exemplar report
+build/exemplar_site_figures.py             re-encodes the picked figures for the bundle
+build/exemplars_web.json                   the exemplar figures the pattern pages show
+build/exemplars/                           rubric, shortlists, ratings, results, EXEMPLARS.md
+exemplar_figure_map/                       pattern → paper → figure, as picked
+exemplar_figures/                          the figures cropped out of the PDFs (1.5 GB)
+.claude/workflows/find-exemplars.js        the rate/review/curate workflow
 
 design_patterns_papers.csv                 source: paper → pattern coding
 human_factors_papers.csv                   source: paper → sub-factor coding
@@ -54,14 +62,69 @@ design_patterns_web_migration_pack/         source: 83 patterns, 10 categories, 
 WEBSITE_DATA_MIGRATION_HANDOFF.md          the original migration brief
 ```
 
+## Finding exemplars
+
+`find-exemplars` is an agentic pass that picks the handful of papers worth showing under each
+of the 10 dimensions, and leaves an audit trail for every choice.
+
+```text
+build/exemplar_candidates.py         deterministic prefilter — 1,748 papers to a 24-paper shortlist per dimension
+build/exemplars/RUBRIC.md            the six criteria, their weights, the disqualifiers — edit here, not in the workflow
+.claude/workflows/find-exemplars.js  the workflow: rate, review, curate, publish
+build/exemplar_report.py             renders the curators' output into one report
+
+build/exemplars/candidates/<CAT>.json  the shortlist handed to the agents
+build/exemplars/ratings/<CAT>-<lens>.json  every rater's raw sheet
+build/exemplars/results/<CAT>.json     one curator's final set
+build/exemplars/EXEMPLARS.md           the report
+```
+
+The prefilter is evidence-only and holds no opinion: a paper reaches the shortlist if it has a
+central, high-confidence, verified edge to one of the dimension's patterns with a substantial
+verbatim quote. Ranking within the shortlist is left entirely to the agents.
+
+Each dimension then passes through six agents. Three **raters** score every candidate against the
+rubric from a different stance — a practitioner who wants to ship the mechanism, a researcher who
+discounts the derivative, a taxonomist who distrusts the coding. Two **reviewers** then contest the
+result: an evidence auditor who re-checks each finalist's quote against `paper_patterns_audit.csv`
+and can mark it unconfirmed, and a challenger whose job is to displace finalists with candidates
+the raters underrated. A **curator** settles it, applies the set-level rules (pattern spread, no
+repeated system, domain spread) and writes the dimension's final set.
+
+```bash
+python3 build/exemplar_candidates.py
+```
+
+Then run the workflow — all ten dimensions is 61 agents, so scope it while iterating:
+
+```text
+Workflow({name: "find-exemplars"})                                  all 10 dimensions
+Workflow({name: "find-exemplars", args: {dimensions: ["U03"]}})     one dimension
+Workflow({name: "find-exemplars", args: {finalists: 10, top: 3}})   review wider, publish fewer
+```
+
+Rerun the prefilter after any recoding pass; the shortlists are derived from the edges, and a run
+is only as current as the `cookbook_v2.json` it was built from.
+
 ## Rebuilding
 
 ```bash
 python3 build/build_v2.py && python3 build/test_v2.py && python3 build/pack_site.py
 ```
 
-No dependencies beyond the Python standard library. The build is deterministic and validates on
-every run; `pack_site.py` rewrites the HTML in place.
+The build is deterministic and validates on every run; `pack_site.py` rewrites the HTML in place.
+Nothing here needs anything beyond the Python standard library except the exemplar figures, which
+want Pillow:
+
+```bash
+python3 build/exemplar_site_figures.py && python3 build/pack_site.py
+```
+
+That reads `exemplar_figure_map/figure_map.json`, re-encodes each picked figure as a WebP capped at
+1000 px, and writes them as data URIs into `build/exemplars_web.json`, which `pack_site.py` inlines.
+The 192 PNGs run to 83 MB and come out around 12 MB, which is what takes the bundle from 2.5 MB to
+19 MB. Only rerun it when the picks change — the JSON is committed, so an ordinary rebuild does not
+need Pillow.
 
 ## Provenance
 

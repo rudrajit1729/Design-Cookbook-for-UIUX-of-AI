@@ -1,0 +1,480 @@
+{
+ "pattern": {
+  "pattern_id": "pat-015",
+  "pattern_name": "Question-Driven Elicitation",
+  "pattern_slug": "question-driven-elicitation",
+  "short_summary": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from.",
+  "definition": "The system takes the interrogative turn: it poses questions — clarification prompts, structured fields, interview turns — and the user's answers, rather than a user-composed prompt, constitute the specification the system works from. The usual prompt-then-generate direction is inverted.",
+  "structural_signature": "A system-authored question precedes any user content at the head of the loop, and each reply is written into the input record consumed by the next stage. The set of questions determines which slots of the specification exist, so the user never composes a full specification unprompted.",
+  "ui_ux_type": "UX",
+  "sub_pattern": "Structured Guidance through Stages",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "13756",
+   "title": "Morae: Proactively Pausing UI Agents for User Choices",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747797",
+   "system_id": "morae",
+   "evidence": [
+    {
+     "quote": "Morae uses large multimodal models to interpret user queries alongside UI code and screenshots, and prompt ∗ Part of this work was conducted at Adobe Research. This work is licensed under a Creative Commons Attribution 4.0 International License. UIST ’25, Busan, Republic of Korea © 2025 Copyright held by the owner/author(s). ACM ISBN 979-8-4007-2037-6/2025/09 https://doi.org/10.1145/3746059.3747797 users for clarification when there is a choice to be made.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13758",
+   "title": "StorySage: Conversational Autobiography Writing Powered by a Multi-Agent Framework",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747681",
+   "system_id": "storysage",
+   "evidence": [
+    {
+     "quote": "Nick begins a conversation with StorySage, during which the system asks questions about his childhood.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "13925",
+   "title": "Let's Fix this Together: Conversational Debugging with GitHub Copilot",
+   "venue": "vlhcc-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1109/vl/hcc60511.2024.00011",
+   "system_id": "13925",
+   "evidence": [
+    {
+     "quote": "ROBIN will be capable of initiating the dialogue, asking clarifying questions, and suggesting the next steps, thus actively guiding the debugging process.",
+     "location": "full text sec II.B"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14026",
+   "title": "Designing Human-AI Collaboration to Support Learning in Counterspeech Writing",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00052",
+   "system_id": "14026",
+   "evidence": [
+    {
+     "quote": "Users then respond to two reflection questions designed to deepen their understanding of the harm caused by the hate speech.",
+     "location": "full text sec IV-B"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Privacy and Ownership",
+    "Bias and Fairness",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "14045",
+   "title": "SciConv: A Conversational Tool for Reproducibility",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00071",
+   "system_id": "sciconv",
+   "evidence": [
+    {
+     "quote": "The assistant prompts for execution commands, which it uses to analyze the code and infer relevant environment settings.",
+     "location": "full text sec III-C"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14816",
+   "title": "Designing the Conversational Agent: Asking Follow-up Questions for Information Elicitation",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637320",
+   "system_id": "14816",
+   "evidence": [
+    {
+     "quote": "Conversational Agents (CAs) can facilitate information elicitation in various scenarios, such as semi-structured interviews. Current CAs can ask predetermined questions but lack skills for asking follow-up questions.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14837",
+   "title": "DesignQuizzer: A Community-Powered Conversational Agent for Learning Visual Design",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637321",
+   "system_id": "designquizzer",
+   "evidence": [
+    {
+     "quote": "We present DesignQuizzer, which asks questions about visual design in UI examples and provides structured comment summaries.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "14852",
+   "title": "Leveraging Large Language Models to Power Chatbots for Collecting User Self-Reported Data",
+   "venue": "cscw-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3637364",
+   "system_id": "14852",
+   "evidence": [
+    {
+     "quote": "chatbots can be deployed to collect self-reports and provide personalized coaching to different individuals [77]",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U03",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15126",
+   "title": "Conversate: Supporting Reflective Learning in Interview Practice Through Interactive Simulation and Dialogic Feedback",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3701188",
+   "system_id": "conversate",
+   "evidence": [
+    {
+     "quote": "The AI agent asks pre-defined interview questions one by one.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15463",
+   "title": "Dynamic Surveys: Using LLMs to Blend Qualitative Depth, Quantitative Structure, and Collaborative Interaction",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757586",
+   "system_id": "15463",
+   "evidence": [
+    {
+     "quote": "The process starts with a single focused open-ended question.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15487",
+   "title": "Remini: Leveraging Chatbot-Mediated Mutual Reminiscence for Promoting Positive Affect and Feeling of Connectedness among Loved Ones",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757650",
+   "system_id": "remini",
+   "evidence": [
+    {
+     "quote": "Remini fosters a positive environment, gently engaging users with casual topics like recreational activities before prompting joyful memory sharing, guided by hints such as “A positive memory is one that makes you feel happy, brings a smile to your face, or reminds you of fun times.”",
+     "location": "system sec 3.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Personalization",
+    "Privacy and Ownership",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "15712",
+   "title": "AI That Helps Us Help Each Other: A Proactive System for Scaffolding Mentor-Novice Collaboration in Entrepreneurship Coaching",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757549",
+   "system_id": "15712",
+   "evidence": [
+    {
+     "quote": "This prototype system (A) asks novices questions about their projects and progress before meetings, and (B) presents mentors with summarized information on novices’ projects and updates.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16234",
+   "title": "GlassMail: Towards Personalised Wearable Assistant for On-the-Go Email Creation on Smart Glasses",
+   "venue": "dis-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3643834.3660683",
+   "system_id": "glassmail",
+   "evidence": [
+    {
+     "quote": "Through two empirical studies, we developed a \"Single Turn with Optional Clarifcation\" approach for accurate user intention recognition",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "16621",
+   "title": "The Benefits and Risks of LLMs for Facilitating Medical Decision-Making Among Laypersons",
+   "venue": "dis-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3715336.3735779",
+   "system_id": "16621",
+   "evidence": [
+    {
+     "quote": "In Version 1, the interface prompted users to write one patient goal, starting with 'The patient wants to...' (Fig. 3).",
+     "location": "system sec 5.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16716",
+   "title": "Design for Cognitive Outcomes First: Countering Instrumental Drift in Generative AI for Knowledge Work",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813061",
+   "system_id": "16716",
+   "evidence": [
+    {
+     "quote": "We operationalize this through a prototype using cognitive scaffolds that require users to articulate contextual nuances, constraints, and strategic realities before generating artifacts.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16756",
+   "title": "LearnMate²: Design and Evaluation of an LLM-powered Personalized and Adaptive Support System for Online Learning",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812972",
+   "system_id": "learnmate",
+   "evidence": [
+    {
+     "quote": "then provide preferences across multiple dimensions, including time availability, learning pace, and content path (steps b to c )",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Metacognition",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "17197",
+   "title": "Prompt2Task: Automating UI Tasks on Smartphones from Textual Prompts",
+   "venue": "tochi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3716132",
+   "system_id": "prompt2task",
+   "evidence": [
+    {
+     "quote": "Interactive Context Enrichment: If the agent determines that relevant context information is still missing after the automated enrichment, it queries the user to obtain the missing details.",
+     "location": "system sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

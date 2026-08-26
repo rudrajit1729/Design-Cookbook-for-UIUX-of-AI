@@ -1,0 +1,531 @@
+{
+ "pattern": {
+  "pattern_id": "pat-026",
+  "pattern_name": "Unified Workspace",
+  "pattern_slug": "unified-workspace",
+  "short_summary": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state.",
+  "definition": "Task stages that were previously carried out in distinct tools, windows, or databases are placed inside one environment where they share state. The consolidation itself, rather than any individual stage, is what the design claims.",
+  "structural_signature": "One application shell containing two or more stages of a workflow whose state is shared, such that the output of one stage is directly addressable in another with no export/import step. Only half of this is observable in the artifact — several stage regions plus shared state; the \"previously separate\" half is a claim about prior tooling, and cannot be read off the interface.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Step-by-Step Workflow",
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 19,
+ "candidates": [
+  {
+   "rid": "4455",
+   "title": "AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714148",
+   "system_id": "aideation",
+   "evidence": [
+    {
+     "quote": "Unlike existing tools, AIdeation combines the strengths of traditional and AI-driven approaches, streamlining the process by unifying research, brainstorming, and design idea refinement into a cohesive, iterative workflow.",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5384",
+   "title": "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791418",
+   "system_id": "crosslit",
+   "evidence": [
+    {
+     "quote": "However, keeping modalities separate forces researchers to switch between tools, disrupting workflow continuity.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5486",
+   "title": "Protosampling: Enabling Free-Form Convergence of Sampling and Prototyping through Canvas-Driven Visual AI Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791884",
+   "system_id": "protosampling",
+   "evidence": [
+    {
+     "quote": "Tightening the loop between sampling and prototyping requires a workspace that invites open-ended exploration and creation while also bringing materials together.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6060",
+   "title": "DroidRetriever: A Transparent and Steerable Automation System for Collaborative Mobile Information Seeking",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790396",
+   "system_id": "droidretriever",
+   "evidence": [
+    {
+     "quote": "We present DroidRetriever, a transparent, steerable system for cross-source mobile information seeking.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "8412",
+   "title": "Introducing 3D Sketching to Overcome Challenges of View-Consistency and Progressive Development in 2D Generative AI-Based Car Exterior Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719731",
+   "system_id": "8412",
+   "evidence": [
+    {
+     "quote": "We propose a novel interactive system for a car exterior design workflow that seamlessly integrates 3D sketching, 2D drawing, and 2D generation in the early design stage (Figure 1).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "9131",
+   "title": "CAT-AI: Supporting Teacher Workflows with AI-Assisted Exercise Creation",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3799367",
+   "system_id": "catai",
+   "evidence": [
+    {
+     "quote": "Goal 2: Integrate Generation, Customization, and Export.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9472",
+   "title": "ORCA: ORchestrating Causal Agent",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798444",
+   "system_id": "orca_causal",
+   "evidence": [
+    {
+     "quote": "We propose ORCA (ORchestrating Causal Agent), an interactive multi-agent framework to enable coherent causal analysis on relational databases by maintaining shared state and introducing human checkpoints.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10184",
+   "title": "From Toil to Thought: Designing for Strategic Exploration and Responsible AI in Systematic Literature Reviews",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789079",
+   "system_id": "10184",
+   "evidence": [
+    {
+     "quote": "Arc operationalizes solutions to these challenges by unifying the fractured SLR workflow into a single environment.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U05",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10236",
+   "title": "SmartWalkCoach: An AI Companion for End-to-End Walking Guidance, Motivation, and Reflection",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789170",
+   "system_id": "smartwalkcoach",
+   "evidence": [
+    {
+     "quote": "a noticeable gap exists between the two aforementioned strands: systems focusing on navigation often lack integrated motivational support, while conversational agents for stimulating physical activity may not be deeply coupled with real-time, contextaware geospatial guidance",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Metacognition",
+    "Social Perception (Mindset)",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10261",
+   "title": "Script2Screen: Supporting Dialogue-Centric Scriptwriting with Interactive Audiovisual Generation",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789075",
+   "system_id": "script2screen",
+   "evidence": [
+    {
+     "quote": "an AI-assisted tool that integrates scriptwriting with audiovisual scene creation in a unified, synchronized workflow",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "12311",
+   "title": "WonderFlow: Narration-Centric Design of Animated Data Videos",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2024.3411575",
+   "system_id": "wonderflow",
+   "evidence": [
+    {
+     "quote": "Additionally, authors can preview and refine their data videos within the same system, without having to switch between different creation tools.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U07"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13651",
+   "title": "VideoCraft: A Mixed Reality-empowered Video Generation Workflow with Spatial Layer Editing for Concept Video Creation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747606",
+   "system_id": "videocraft",
+   "evidence": [
+    {
+     "quote": "These functionalities ensure a seamless workflow from MR content design to video generation, allowing users to efficiently record, refine, and review their videos within the same imm…",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13695",
+   "title": "3D Sketching + 2D Generative AI for Car Exterior Design",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747609",
+   "system_id": "13695",
+   "evidence": [
+    {
+     "quote": "This workflow enables car designers to seamlessly transition between expressive 3D sketching, detailed 2D drawing, and realistic 2D generation",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U01",
+    "U05"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13741",
+   "title": "StoryEnsemble: Enabling Dynamic Exploration & Iteration in the Design Process with AI and Forward-Backward Propagation",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747772",
+   "system_id": "storyensemble",
+   "evidence": [
+    {
+     "quote": "StoryEnsemble enables dynamic exploration and iteration in the design process by leveraging AI and supporting forward and backward propagation of changes across interconnected stages—(A) personas, (B) problems, (C) solutions, and (D) scenarios.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13996",
+   "title": "Dynamite: Real-Time Debriefing Slide Authoring through AI-Enhanced Multimodal Interaction",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00023",
+   "system_id": "dynamite",
+   "evidence": [
+    {
+     "quote": "DYNAMITE provides instructors with a unified, real-time interface that integrates classroom analytics and dynamic slide authoring within a single workspace (Fig. 3).",
+     "location": "full text sec VI-A"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Metacognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "14046",
+   "title": "SnapClass: An AI-Enhanced Classroom Management System for Block-Based Programming",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00072",
+   "system_id": "snapclass",
+   "evidence": [
+    {
+     "quote": "SnapClass addresses switching between platforms to view students’ work and grade them [17], by allowing teachers to view code, track progress, grade, and give feedback all in one interface.",
+     "location": "full text sec III-B"
+    }
+   ],
+   "other_patterns_in_paper": 10,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U03",
+    "U06",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Guidance and Feedback",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "15683",
+   "title": "DesignMemo: Integrating Discussion Context into Online Collaboration with Enhanced Design Rationale Tracking",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3757579",
+   "system_id": "designmemo",
+   "evidence": [
+    {
+     "quote": "we developed DesignMemo, a proof-of-concept collaborative design system integrated with video conferencing",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U07",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "16705",
+   "title": "RoboBlockly Studio: Conversational Block Programming with Embodied Robot Feedback for Computational Thinking",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813071",
+   "system_id": "roboblocklystudio",
+   "evidence": [
+    {
+     "quote": "The framework integrates block-based programming, conversational AI, and embodied robot execution, allowing students to design, test, and refine programs with immediate physical feedback.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U10"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "16714",
+   "title": "When Systems Take Initiative: A Design Framework for Adaptive, Mixed-initiative Database Querying",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3812906",
+   "system_id": "16714",
+   "evidence": [
+    {
+     "quote": "we developed QueryGenie, a system that integrates query expression, generation, execution, and result inspection into a unified interface",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Oversight",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

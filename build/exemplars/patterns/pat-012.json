@@ -1,0 +1,664 @@
+{
+ "pattern": {
+  "pattern_id": "pat-012",
+  "pattern_name": "Live Side Panel",
+  "pattern_slug": "live-side-panel",
+  "short_summary": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state.",
+  "definition": "A persistent region sits beside the surface the user is working on and shows generated content derived from that surface's current state. It refreshes on its own as the work changes rather than when the user asks. The panel is not the artifact under construction; it is a running commentary on it.",
+  "structural_signature": "Two co-present regions with an asymmetric dependency: region A holds the user-authored state, region B renders a derived generation, and B is recomputed as a side effect of changes to A with no invocation step. B is typically read-only or non-committal — its content does not enter the artifact unless the user acts. The adjacency is spatial (margin, sidebar, docked panel) so that A and B are read together.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Proactive Suggestions",
+  "dimension": {
+   "category_id": "U02",
+   "category_name": "Initiative & Intervention Timing",
+   "category_description": "When assistance appears and who triggers it: system-initiated, continuous, deferred, session-bound, or explicitly summoned.",
+   "classification_boundary": "The timing or trigger must be observable in the interaction; surface placement alone belongs to U09.",
+   "stage": "Setting the context"
+  }
+ },
+ "eligible": 24,
+ "candidates": [
+  {
+   "rid": "2170",
+   "title": "Supporting Novices Author Audio Descriptions via Automatic Feedback",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581023",
+   "system_id": "2170",
+   "evidence": [
+    {
+     "quote": "As they type, the system generates feedback to suggest what to describe for that scene in the form of an intera",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3068",
+   "title": "Validating AI-Generated Code with Live Programming",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642495",
+   "system_id": "3068",
+   "evidence": [
+    {
+     "quote": "LP environments, such as Projection Boxes [20], visualize runtime values of a program in real-time without any extra effort on the part of the programmer.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Appropriate Reliance",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3171",
+   "title": "Marco: Supporting Business Document Workflows via Collection-Centric Information Foraging with Large Language Models",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3641969",
+   "system_id": "marco",
+   "evidence": [
+    {
+     "quote": "As users interact with the Notebook View, foraged information is automatically aggregated in the Table View to facilitate comparison across the collection.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3252",
+   "title": "Farsight: Fostering Responsible AI Awareness During AI Application Prototyping",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642335",
+   "system_id": "farsight",
+   "evidence": [
+    {
+     "quote": "The Alert Symbol (§ 4.1) presents an always-on symbol that shows the approximated alert level of a user’s current prompt",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "3300",
+   "title": "Ivie: Lightweight Anchored Explanations of Just-Generated Code",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642239",
+   "system_id": "ivie",
+   "evidence": [
+    {
+     "quote": "When using Ivie, a programmer’s generated code is instantly accompanied by explanations positioned just adjacent to the code.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3605",
+   "title": "Conversation Progress Guide : UI System for Enhancing Self-Efficacy in Conversational AI",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714222",
+   "system_id": "3605",
+   "evidence": [
+    {
+     "quote": "The progress bar is an indicator that visually supports users in recognizing the progress of conversations in problem-solving.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Oversight",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3830",
+   "title": "Exploring the Design Space of Real-time LLM Knowledge Support Systems: A Case Study of Jargon Explanations",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714262",
+   "system_id": "3830",
+   "evidence": [
+    {
+     "quote": "(2) Real-time Knowledge Support Pane. Flashcards are used to contain the real-time support in a chosen format, shown in the side panel.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4123",
+   "title": "Need Help? Designing Proactive AI Assistants for Programming",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714002",
+   "system_id": "4123",
+   "evidence": [
+    {
+     "quote": "takes in the programmer's context, which includes the current code, user message history, and optionally terminal output, generates a set of suggestions",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4232",
+   "title": "Why So Serious? Exploring Timely Humorous Comments in AAC Through AI-Powered Interfaces",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714102",
+   "system_id": "4232",
+   "evidence": [
+    {
+     "quote": "(d) input field to type the starter of the joke (e) dynamically updated suggestion (f) get new suggestion",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U06"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4871",
+   "title": "AI of Oz: Enhancing Wizard of Oz Studies in HCI with AI Assistance for Human Moderation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791324",
+   "system_id": "4871",
+   "evidence": [
+    {
+     "quote": "Throughout the interaction, the Summary module provides a live overview of key conversational points and flagged content.",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Appropriate Reliance",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "5022",
+   "title": "DiagLink: A Dual-User Diagnostic Assistance System by Synergizing Experts with LLMs and Knowledge Graphs",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791724",
+   "system_id": "diaglink",
+   "evidence": [
+    {
+     "quote": "DiagLink provides a simple and intuitive conversational interface for collecting medical history while dynamically displaying the collected information on the right.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Appropriate Reliance",
+    "Sensemaking",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5284",
+   "title": "InterFlow: Designing Unobtrusive AI to Empower Interviewers in Semi-Structured Interviews",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790866",
+   "system_id": "interflow",
+   "evidence": [
+    {
+     "quote": "The system should track interviewers’ time allocation, such as time spent, topic coverage, and talking ratio, to enhance t…",
+     "location": "system sec 4 G1.2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6057",
+   "title": "Plotania: Exploring Transparency Trade-offs in AI Co-Writing Through Virtual Readers and Transparent Attribution",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790926",
+   "system_id": "plotania",
+   "evidence": [
+    {
+     "quote": "Interface shows (A) real-time transparent attribution statistics, and (B) virtual reader providing real-time feedback.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U07",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "8356",
+   "title": "GPTFootprint: Increasing Consumer Awareness of the Environmental Impacts of LLMs",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719708",
+   "system_id": "gptfootprint",
+   "evidence": [
+    {
+     "quote": "(a) The side panel is always visible on screen, and displays an updating display of energy and water usage, with a link to read more about the environmental impacts of LLMs.",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Privacy and Ownership",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8557",
+   "title": "Synthetic Conversation: How Computing Researchers Engage Multi-Perspective Dialogues to Brainstorm Societal Impacts",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719747",
+   "system_id": "8557",
+   "evidence": [
+    {
+     "quote": "The prototype automatically summarize the conversations as new consequences occur.",
+     "location": "full text apparatus"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Risk of Harm and Accountability"
+   ]
+  },
+  {
+   "rid": "8666",
+   "title": "WrightHere: Supporting Children's Creative Writing with AI-Infused Interactive 3D Environment",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719932",
+   "system_id": "wrighthere",
+   "evidence": [
+    {
+     "quote": "In Writer Mode, which supports the translating stage, users write their story in the Main Editor.",
+     "location": "system sec 2"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U04",
+    "U06",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10176",
+   "title": "AI for Low-Code for AI",
+   "venue": "iui-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3640543.3645203",
+   "system_id": "10176",
+   "evidence": [
+    {
+     "quote": "LowCoderVP also encourages liveness [33] by executing the pipeline when either the active pipeline is modified or hyper-p",
+     "location": "system sec 5"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "12247",
+   "title": "InsightLens: Augmenting LLM-Powered Data Analysis With Interactive Insight Management and Navigation",
+   "venue": "tvcg-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/tvcg.2025.3567131",
+   "system_id": "insightlens",
+   "evidence": [
+    {
+     "quote": "As the conversation progresses, the Insight Details updates with the latest extracted insight.",
+     "location": "full text sec 5.2"
+    }
+   ],
+   "other_patterns_in_paper": 11,
+   "other_dimensions": [
+    "U03",
+    "U04",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Bias and Fairness",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13462",
+   "title": "Beyond Text Generation: Supporting Writers with Continuous Automatic Text Summaries",
+   "venue": "uist-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3526113.3545672",
+   "system_id": "13462",
+   "evidence": [
+    {
+     "quote": "It provides continuously updated paragraphwise summaries as margin annotations, using automatic text summarization.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U01",
+    "U05",
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Metacognition",
+    "Guidance and Feedback",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13667",
+   "title": "MACEDON : Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747655",
+   "system_id": "macedon",
+   "evidence": [
+    {
+     "quote": "Based on the findings, we then developed MACEDON, a system that supports multi-dimensional code evaluation in real time, direct code segment optimization, as well as shareable report displays.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U06",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "13702",
+   "title": "OnGoal: Tracking and Visualizing Conversational Goals in Multi-Turn Dialogue with Large Language Models",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747746",
+   "system_id": "ongoal",
+   "evidence": [
+    {
+     "quote": "overviews of goal progression over time, enabling users to navigate complex dialogues more effectively",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "13731",
+   "title": "Visual Story-Writing: Writing by Manipulating Visual Representations of Stories",
+   "venue": "uist-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3746059.3747758",
+   "system_id": "13731",
+   "evidence": [
+    {
+     "quote": "To demonstrate this approach, we developed a text editor that automatically visualizes a graph of entity interactions, movement between locations, and a timeline of story events.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Sensemaking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "15197",
+   "title": "Helping the Helper : Supporting Peer Counselors via AI-Empowered Practice and Feedback",
+   "venue": "cscw-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3710993",
+   "system_id": "15197",
+   "evidence": [
+    {
+     "quote": "We design CARE as a Suggestion Panel. The other components (Chat Information, Chat Window, and Text Input Box) mimic the frontend view of 7 Cups.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U03",
+    "U05",
+    "U10"
+   ],
+   "factors": [
+    "Guidance and Feedback",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "17103",
+   "title": "MemoVis: A GenAI-Powered Tool for Creating Companion Reference Images for 3D Design Feedback",
+   "venue": "tochi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3694681",
+   "system_id": "memovis",
+   "evidence": [
+    {
+     "quote": "MemoVis automatically recommends viewpoints as the feedback provider continuously typing feedback",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U05",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,426 @@
+{
+ "pattern_id": "pat-020",
+ "lens": "practitioner",
+ "ratings": [
+  {
+   "rid": "12078",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Checking and modifying each pipeline step\u2019s intermediate output is central and highly transferable. The quote does not name the artifacts or explain how edits propagate, so rebuildability and impact are somewhat underdetermined.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9487",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "A deliberately non-one-shot workflow exposes a named video blueprint of scripts and visual descriptions for review and refinement before generation. This is a clear, reusable implementation of the pattern, though outcome impact cannot be established from the abstract alone.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16260",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Multimodal input is materialized as a readable final prompt whose segments users edit and reorder before generation. The mapping, on-screen artifact, and editing interaction are unusually concrete and broadly reusable.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "6309",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The plan-then-generate sequence makes an approved outline a required intermediate between parental constraints and the story. It is highly portable, although approval-before-generation is a competent, relatively familiar move and the quote is terse.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "14001",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Prompt-bearing Text Cards are distinct readable objects explicitly consumed to generate images. The quote clearly establishes staging but does not say users inspect or edit the cards, limiting demonstrated user impact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5489",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 5
+   },
+   "reason": "A proposed tutorial structure is visibly inspected and refined in a dedicated editor before the AR tutorial is produced. The mechanism is exceptionally rebuildable, though structurally similar plan-edit-generate workflows are now fairly conventional.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13990",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 5
+   },
+   "reason": "Editable natural-language code summaries are explicitly identified as intermediate representations that scaffold the downstream prompt. Translating a difficult source artifact into an editable semantic representation is strong and transferable, but the exact screen interaction is not described.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9472",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Each module materializes a stateful artifact exposing semantics, scope, query structure, or outcomes, followed by user validation checkpoints. This makes a complex agent pipeline inspectable at several meaningful boundaries; the truncated quote prevents a fully specified interaction account.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "17197",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Users validate and manually correct parsed results before smartphone task automation continues, a clear and portable parse-review-execute pattern. The quote does not name the parsed schema or explicitly state how corrections affect execution.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5855",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "The system surfaces three named graph abstractions for teachers to inspect, edit, and verify during simulation authoring. Multiple task-level representations make the move concrete and distinctive, although the particular graph vocabulary is education-specific.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10227",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Reasoning is rendered as a topic hierarchy that users can review and modify, making a normally hidden intermediate manipulable. The quote does not explicitly confirm that the edited hierarchy is consumed to regenerate or alter the final answer.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "1322",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Modular prompt chains and their intermediate results are the system\u2019s central, user-editable objects. The mechanism directly turns an opaque one-shot call into an inspectable pipeline and transfers across LLM tasks, though this quote alone omits detailed screen behavior.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12844",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A dedicated view structures reasoning for inspection and interactive refinement before visualization output. It is broadly reusable, but the evidence does not specify the reasoning representation or how refinement propagates downstream.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "4820",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Developers can view and manipulate concrete RAG intermediates such as chunks and LLM responses, enabling consequential what-if analysis. The objects are clear and portable, although the quote does not explicitly trace a manipulated value into the next pipeline stage.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13354",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The quote supports intervention before final reconstruction, but only calls the targets \u201cintermediate steps.\u201d It names no readable artifact, interaction, or propagation rule, so a designer could not rebuild the mechanism from the available evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5353",
+   "scores": {
+    "representativeness": 3,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 2,
+    "interestingness": 4,
+    "evidence_strength": 3
+   },
+   "reason": "Intermediate reasoning artifacts are exposed for intervention, which fits the pattern at a high level. Their form, available interventions, and downstream consumption are all unspecified, making the coding plausible but not strongly reconstructable.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13705",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A scene breakdown and primitive animation blocks are materialized in an editable timeline through which users retain fine-grained control over the resulting animation. The interaction is concrete, though the quote does not explicitly state that every output must pass through this representation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5024",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 5,
+    "mechanism_clarity": 2,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "Displaying outputs from every AI step clearly supplies pipeline inspectability, including the non-editable form allowed by the pattern. No artifact types, decision points, editing actions, or propagation behavior are given, so practical impact and rebuildability remain unclear.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16913",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Each module output becomes a transparent, controllable checkpoint, strongly implying materialized values between stages. This modular checkpoint design transfers well, but the evidence does not describe what users see or how they exercise control.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "9688",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Displayed reasoning is a readable intermediate that users directly edit, a clear transparency-to-control move. The quote does not establish whether edited reasoning is actually consumed to change the final decision, so it falls short of a definitive structural match.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13235",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The News Re-presentation View exposes narrative structure and permits caption changes or insertion of missing elements before the visual story is finalized. It is concrete, but the downstream dependency is implied rather than stated and the editing pattern is fairly familiar.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5715",
+   "scores": {
+    "representativeness": 3,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 3,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "A pre-visualization is a distinct rendered artifact explicitly used as input to high-quality rendering. That establishes staging and consumption, but the quote provides no evidence of inspection, approval, or editing by the user.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "12934",
+   "scores": {
+    "representativeness": 0,
+    "impact": 0,
+    "generalizability": 0,
+    "mechanism_clarity": 0,
+    "interestingness": 0,
+    "evidence_strength": 0
+   },
+   "reason": "The quote only says users adjust mood, elements, and visual descriptions to align results. It does not establish a distinct intermediate artifact, its position between input and output, or its consumption by a subsequent stage.",
+   "disqualify": true,
+   "disqualify_reason": "The supplied evidence does not support the pattern\u2019s required intermediate-artifact pipeline structure."
+  },
+  {
+   "rid": "6277",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "A natural-language feed description is explicitly both the interview\u2019s output and the classifier\u2019s input, cleanly establishing a named mediation layer. It is readable and portable, but the quote does not confirm that users inspect or edit it before classification.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "10198",
+   "scores": {
+    "representativeness": 5,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Storyboards, data models, and GUI skeletons are named shared intermediate representations through which developers iteratively craft a complete application. The multi-representation workflow is central and highly transferable, though exact editing operations are absent from the quote.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16685",
+   "scores": {
+    "representativeness": 5,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 5,
+    "interestingness": 5,
+    "evidence_strength": 5
+   },
+   "reason": "Reasoning structures are explicit objects designers inspect, reorganize, and selectively regenerate to form design intent. The interaction is distinctive and rebuildable; only the precise connection from curated reasoning to final generated work is left implicit.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13926",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 5,
+    "evidence_strength": 4
+   },
+   "reason": "Ephemeral UI scaffolds are explicitly inserted between prompts and code generation, replacing a direct mapping with an inspectable interface representation. The evidence does not specify what the scaffold contains, whether users edit it, or exactly how code generation consumes it.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "5348",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Designers can review, edit, and refine agent outputs at any stage of a story-to-play pipeline, providing consequential intervention across intermediates. The artifacts and their propagation rules are unnamed, limiting mechanism clarity despite strong general applicability.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "16859",
+   "scores": {
+    "representativeness": 4,
+    "impact": 5,
+    "generalizability": 5,
+    "mechanism_clarity": 4,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Users progressively refine natural-language instructions into structured intent representations at multiple abstraction levels before robot communication proceeds. The staged transformation is clear and consequential, although display format and downstream consumption are only implied.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "2861",
+   "scores": {
+    "representativeness": 4,
+    "impact": 4,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 4,
+    "evidence_strength": 4
+   },
+   "reason": "Text is transformed into manipulable scene-graph and layout representations that mediate landscape rendering. The panels and user actions are concrete, but the quote does not explicitly say that the edited representations are required inputs to final generation.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  }
+ ]
+}

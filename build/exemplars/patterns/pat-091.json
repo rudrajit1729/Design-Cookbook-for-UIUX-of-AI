@@ -1,0 +1,312 @@
+{
+ "pattern": {
+  "pattern_id": "pat-091",
+  "pattern_name": "In-Situ Agent Presence",
+  "pattern_slug": "in-situ-agent-presence",
+  "short_summary": "The system's activity is rendered within the work surface itself — as cursors, marks, live strokes, or attached companions — instead of being confined to a separate conversation panel.",
+  "definition": "The system's activity is rendered within the work surface itself — as cursors, marks, live strokes, or attached companions — instead of being confined to a separate conversation panel. The user sees where the agent is and what it is touching while they continue to work in the same space. Presence cues are persistent and positioned relative to the artifact's content.",
+  "structural_signature": "Agent state is drawn in the same coordinate space as the user's content, anchored to specific locations or to the pointer, and updates while the user is acting rather than only between turns. There is no separate container that owns the agent; removing the artifact view would remove the agent's visible form.",
+  "ui_ux_type": "UI",
+  "sub_pattern": null,
+  "dimension": {
+   "category_id": "U09",
+   "category_name": "Workspace Layout & Tool Integration",
+   "category_description": "How AI assistance is spatially composed with artifacts, panels, host tools, chat surfaces, presentation modes, and shared workspaces.",
+   "classification_boundary": "Use for visible surface placement and integration, not sensory modality or physical-space registration.",
+   "stage": "Fitting into the work"
+  }
+ },
+ "eligible": 11,
+ "candidates": [
+  {
+   "rid": "965",
+   "title": "StoryDrawer: A Child-AI Collaborative Drawing System to Support Children's Creative Visual Storytelling",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501914",
+   "system_id": "storydrawer",
+   "evidence": [
+    {
+     "quote": "when the child narrates “There were two pink fowers on the roadside,” the system extracts three keywords— “two,” “pink,” and “fower”—and draws two pink fowers in real time",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "3465",
+   "title": "CreepyCoCreator? Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713720",
+   "system_id": "3465",
+   "evidence": [
+    {
+     "quote": "(b) embodied, incremental, highlighted AI adds a new element to the selected position (c) the user paints elements using the palette, (d) AI adds another (creative) element to the chair (e) and modifies the previous addit…",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Oversight",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Perspective-Taking",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "4105",
+   "title": "Talk to the Hand: an LLM-powered Chatbot with Visual Pointer as Proactive Companion for On-Screen Tasks",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3715579",
+   "system_id": "4105",
+   "evidence": [
+    {
+     "quote": "the LLM takes the form of another mouse cursor alongside the user's with chat a bubble attached to the cursor instead of having a dedicated chat log area",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Social Perception (Mindset)",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4248",
+   "title": "Assistance or Disruption? Exploring and Evaluating the Design and Trade-offs of Proactive AI Programming Support",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713357",
+   "system_id": "4248",
+   "evidence": [
+    {
+     "quote": "Represent AI agent’s presence using visible cues to indicate its actions, intentions, and decision-making processes",
+     "location": "system sec 3 (DG2)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5758",
+   "title": "AmIWrite: Exploring Scalable One-on-One Handwriting-Based Tutoring for Mathematical Problem-Solving with an LLM-Powered AI Tutor",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790935",
+   "system_id": "amiwrite",
+   "evidence": [
+    {
+     "quote": "Handwriting features of AmIWrite: a) declarative writing, b) procedural writing, c) selective writing, d) underline, e) circle, f) arrow, and g) check/cross mark.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U08",
+    "U10"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5968",
+   "title": "Cocoa: Co-Planning and Co-Execution with AI Agents",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791673",
+   "system_id": "cocoa",
+   "evidence": [
+    {
+     "quote": "Cocoa integrates AI agents into documents through an interface where a human user and an AI agent can jointly plan and execute plan steps using a shared representation of tasks, role",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 8,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6167",
+   "title": "PointAloud: An Interaction Suite for AI-Supported Pointer-Centric Think-Aloud Computing",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790797",
+   "system_id": "pointaloud",
+   "evidence": [
+    {
+     "quote": "with (A) TalkPointer providing pointer-adjacent low-distraction real-time feedback on the capture process and indicating when a new TalkNote gets created, the TalkNote is (…",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition"
+   ]
+  },
+  {
+   "rid": "8115",
+   "title": "AI See, You See: Human-AI Musical Collaboration in Augmented Reality",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3720052",
+   "system_id": "8115",
+   "evidence": [
+    {
+     "quote": "A view through the AR headset showing real-time visualisations of both the human collaborator's actions (left keyboard) and an AI musician's actions (right keyboard).",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Appropriate Reliance",
+    "Perspective-Taking",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "9992",
+   "title": "Colorbo: Envisioned Mandala Coloringthrough Human-AI Collaboration",
+   "venue": "iui-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3490099.3511135",
+   "system_id": "colorbo",
+   "evidence": [
+    {
+     "quote": "Colorbo and its user colorize a mandala individually by watching each other work.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U04"
+   ],
+   "factors": [
+    "Perspective-Taking",
+    "Personalization",
+    "Spatial and Embodied Cognition",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "16164",
+   "title": "When is a Tool a Tool? User Perceptions of System Agency in Human-AI Co-Creative Drawing",
+   "venue": "dis-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3563657.3595977",
+   "system_id": "16164",
+   "evidence": [
+    {
+     "quote": "Collaboration with Reframer occurs in real time, with the user and the system drawing together concurrently.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U01",
+    "U03",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Social Perception (Mindset)",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "16713",
+   "title": "Exploring Fairy Cursor as a Form of AI Agent for In-the-Flow Assistance: Design Opportunities and Challenges",
+   "venue": "dis-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3800645.3813082",
+   "system_id": "16713",
+   "evidence": [
+    {
+     "quote": "we explore the potential of a new form of assistive agent, which we call Fairy Cursor, that augments the mouse cursor with a lightweight following “Fairy.”",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U01",
+    "U02",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  }
+ ]
+}

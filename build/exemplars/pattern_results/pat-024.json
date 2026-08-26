@@ -1,0 +1,39 @@
+{
+ "pattern_id": "pat-024",
+ "exemplars": [
+  {
+   "rid": "12840",
+   "title": "DataWink: Reusing and Adapting SVG-Based Visualization Examples with Large Multimodal Models",
+   "venue": "tvcg-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1109/tvcg.2025.3634635",
+   "final_score": 4.82,
+   "why": "The clearest structural match: the model produces a functional visualization generator with named inputs for datasets, palettes, and chart configurations, so rebinding parameters yields a family of rendered visualizations.",
+   "over_the_runner_up": "DataWink ranks above Keyframer because its evidence explicitly establishes parameterized, regeneration-free reuse, not merely editable code followed by rendering."
+  },
+  {
+   "rid": "13987",
+   "title": "Keyframer: A Design Probe for Exploring LLM Assistance in 2D Animation Design",
+   "venue": "vlhcc-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1109/vl-hcc65237.2025.00014",
+   "final_score": 4.68,
+   "why": "Keyframer exposes the complete prompt → animation code → rendered preview pipeline and lets users directly edit the intermediate producer, making the program a user-addressable object rather than hidden implementation machinery.",
+   "over_the_runner_up": "Keyframer ranks above the CAD language because the supplied evidence confirms both execution and direct user editing of the generated program, while the CAD quote establishes only the producer–artifact distinction."
+  },
+  {
+   "rid": "743",
+   "title": "A Solver-Aided Hierarchical Language for LLM-Driven CAD Design",
+   "venue": "cgf",
+   "year": 2025,
+   "url": "https://doi.org/10.1111/cgf.70250",
+   "final_score": 4.5,
+   "why": "The paper states the defining distinction directly: the model generates hierarchical CAD programs rather than geometry, and executing those programs produces the requested geometric artifacts.",
+   "over_the_runner_up": "The CAD system ranks above InstructPipe because it unambiguously places geometry downstream of the generated program, whereas InstructPipe's evidence leaves open whether the visual pipeline itself is the final requested artifact."
+  }
+ ],
+ "notes": "I departed from the consensus by promoting Keyframer from fourth to second and placing InstructPipe outside the final three. Keyframer's quote demonstrates more of the structural signature—intermediate code, execution into a distinct artifact, and direct edits—while InstructPipe is weakened by artifact ambiguity: its generated pipeline may itself be the user's intended output. The evidence for the CAD selection does not explicitly demonstrate persistence, editing, or parameter rebinding, and Keyframer likewise does not prove argument-only variation without a new model call. Even DataWink's quote does not directly state persistence or user editing, although its functional generator and named parameters provide the strongest evidence of reusable execution.",
+ "pattern_name": "Program-as-Output",
+ "category_id": "U06",
+ "rated": 30
+}

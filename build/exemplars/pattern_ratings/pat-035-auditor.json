@@ -1,0 +1,160 @@
+{
+ "pattern_id": "pat-035",
+ "lens": "auditor",
+ "ratings": [
+  {
+   "rid": "2013",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 1
+   },
+   "reason": "The quote names three prepared NLP operations, but it assigns them to different content granularities: paraphrasing to sentences and summarization to paragraphs or long texts. It therefore does not demonstrate the same complete action vocabulary on every unit and may directly contradict the required units \u00d7 actions structure. The quote also shows neither invocable per-unit affordances nor action\u2013unit binding. Impact cannot be established from the provided figure text.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence supports a collection of content-type-specific transformations, not a uniform fixed action menu attached to every content unit."
+  },
+  {
+   "rid": "3620",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 3
+   },
+   "reason": "This closely approaches the signature: an affordance appears next to an idea-note unit, the user selects a relation type, and generation is conditioned on both the note and selected type. That mechanism transfers readily to other unit repositories. The quote does not name the relation types or explicitly confirm that every note exposes the same immutable set, so it falls short of definitive evidence and does not support unusually high impact claims.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "3683",
+   "scores": {
+    "representativeness": 0,
+    "impact": 1,
+    "generalizability": 2,
+    "mechanism_clarity": 1,
+    "interestingness": 1,
+    "evidence_strength": 0
+   },
+   "reason": "The fragment only says that action buttons let users save mechanisms. Saving is an ordinary repository operation, not evidence of a prepared prompt applied to a unit for generation. No fixed action vocabulary, repeated per-unit menu, or generation call is shown.",
+   "disqualify": true,
+   "disqualify_reason": "The quoted action is saving content and does not support the Atomic AI Action Menu mechanism."
+  },
+  {
+   "rid": "4816",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 3,
+    "mechanism_clarity": 4,
+    "interestingness": 2,
+    "evidence_strength": 2
+   },
+   "reason": "The quote clearly describes selecting a topic-group unit, invoking a named action, and receiving generated questions linked to that unit. That is a legible action\u2013unit generation binding. However, it shows only one button rather than a small menu of multiple named actions, and it does not establish a system-wide invariant across all groups. Likely value for reflection is visible, but outcome impact is unreported here.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "7932",
+   "scores": {
+    "representativeness": 5,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "This is the cleanest match: topics and subtopics are the units, and each is supported by the same four named prompts\u2014Explanation, Example, Exercise, and Exercise Solution. The repeated fixed vocabulary plainly establishes the core Cartesian structure. The quote does not explicitly describe clicking, immutability, or the returned UI state, and it gives no outcome evidence, so mechanism clarity and impact remain below 5.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "8042",
+   "scores": {
+    "representativeness": 1,
+    "impact": 3,
+    "generalizability": 2,
+    "mechanism_clarity": 3,
+    "interestingness": 4,
+    "evidence_strength": 1
+   },
+   "reason": "The explicit Actions and Actors lists suggest an interesting combinatorial command matrix, but the targets are game actors or evidence categories rather than repository content units. More importantly, the quote does not show that choosing an action\u2013actor pair invokes a prepared prompt or generation call; the nearby AI-generated news caption does not establish that binding. The evidence fits predefined game moves more directly than this pattern.",
+   "disqualify": true,
+   "disqualify_reason": "The quote demonstrates a fixed game action/actor vocabulary but not per-content-unit AI prompt actions bound into generation."
+  },
+  {
+   "rid": "10180",
+   "scores": {
+    "representativeness": 4,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 5,
+    "interestingness": 3,
+    "evidence_strength": 4
+   },
+   "reason": "The quote provides a concrete three-item vocabulary of reflection questions and states that clicking one produces an LLM-generated answer. The questions are framed against a competitor or column unit, making the action\u2013unit binding highly legible and rebuildable. It does not quite prove that every unit receives all three questions or that the set is system-wide and uneditable. Impact is plausible but cannot be elevated without study evidence.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13484",
+   "scores": {
+    "representativeness": 2,
+    "impact": 3,
+    "generalizability": 4,
+    "mechanism_clarity": 4,
+    "interestingness": 3,
+    "evidence_strength": 2
+   },
+   "reason": "The interaction clearly binds a selected node and a named Questions action to generation, making the atomic mechanism and its transfer to other node repositories easy to understand. But only one action is evidenced, not a menu of n actions repeated uniformly across nodes. The quote also does not establish fixedness or report outcome impact.",
+   "disqualify": false,
+   "disqualify_reason": ""
+  },
+  {
+   "rid": "13641",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 1,
+    "evidence_strength": 1
+   },
+   "reason": "A Generate Summary button is a prepared AI action, but the quote identifies neither the content unit it operates on nor a repeated menu containing multiple named actions. It therefore provides no evidence for the defining system-wide units \u00d7 actions structure. Any educational impact would be conjectural from the supplied material.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence shows only a standalone generation button, not a fixed action menu attached uniformly to content units."
+  },
+  {
+   "rid": "16464",
+   "scores": {
+    "representativeness": 1,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 1,
+    "interestingness": 3,
+    "evidence_strength": 1
+   },
+   "reason": "Tangible prompt cubes may encode prepared operations, but the quote does not name them, show that the same set applies to every text unit, or explain how a cube and text become a generation call. Its tangible modality is potentially interesting, but the structural assignment cannot be verified from this evidence.",
+   "disqualify": true,
+   "disqualify_reason": "The fragment is too underspecified to support the required fixed, named, per-unit AI action menu."
+  },
+  {
+   "rid": "16497",
+   "scores": {
+    "representativeness": 0,
+    "impact": 2,
+    "generalizability": 3,
+    "mechanism_clarity": 2,
+    "interestingness": 2,
+    "evidence_strength": 0
+   },
+   "reason": "The five named items are information aids displayed for paraphrase suggestions, not demonstrated invocable prompts that generate output against a selected suggestion. This is structurally closer to explanation or decision-support metadata. The quote supplies no action invocation, fixed per-unit action menu, or action\u2013unit generation binding.",
+   "disqualify": true,
+   "disqualify_reason": "The evidence describes informational aids for outputs, a neighbouring explanation pattern, rather than atomic AI actions users invoke on content units."
+  }
+ ]
+}

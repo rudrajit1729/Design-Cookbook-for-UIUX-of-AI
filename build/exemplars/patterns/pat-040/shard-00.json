@@ -1,0 +1,1047 @@
+{
+ "pattern": {
+  "pattern_id": "pat-040",
+  "pattern_name": "Sketch-Based Input",
+  "pattern_slug": "sketch-based-input",
+  "short_summary": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt.",
+  "definition": "The user's freehand mark — a stroke, a scribble, an arrow, a drawn layout — is taken as input to generation, either alongside or in place of a written prompt. The mark's geometry and its position carry specification, not merely selection. Each drawing pass conditions the next generated result, so drawing is the steering channel.",
+  "structural_signature": "A drawing surface captures freehand vector input; the captured strokes are passed to the generator as conditioning signal; the generated result is returned into or beside the same surface so it can be drawn on again. The stroke's shape and placement are consumed as content, so two different strokes in the same location yield different results.",
+  "ui_ux_type": "UI",
+  "sub_pattern": "Sketch-Based Input",
+  "dimension": {
+   "category_id": "U01",
+   "category_name": "Input, Context & Specification",
+   "category_description": "How users, artifacts, examples, parameters, or user-state signals specify intent and shape the system's next behavior.",
+   "classification_boundary": "Requires a user-facing specification or adaptive interaction; invisible sensing infrastructure is excluded.",
+   "stage": "Setting the context"
+  }
+ },
+ "candidates": [
+  {
+   "rid": "196",
+   "title": "Interactive Authoring of Terrain using Diffusion Models",
+   "venue": "cgf-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1111/cgf.14941",
+   "system_id": "196",
+   "evidence": [
+    {
+     "quote": "an artist first sketches a simple ridge and forked drainage network, then makes their style selection (outlined in red) before adding further details",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "973",
+   "title": "TaleBrush: Sketching Stories with Generative Pretrained Language Models",
+   "venue": "chi-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491102.3501819",
+   "system_id": "talebrush",
+   "evidence": [
+    {
+     "quote": "TaleBrush uses a line sketching interaction for intuitive control and sensemaking of story generation with GPTbased language models, closing the gap in the iterative co-creation process between humans and AI.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2074",
+   "title": "StyleMe: Towards Intelligent Fashion Generation with Designer Style",
+   "venue": "chi-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544548.3581377",
+   "system_id": "styleme",
+   "evidence": [
+    {
+     "quote": "StyleMe system employs generative adversarial network to automatically generate personalized clothing sketches based on designer’s sketches and transfer style from sketch to real clothing image.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "2459",
+   "title": "Neural Canvas: Supporting Scenic Design Prototyping by Integrating 3D Sketching and Generative AI",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642096",
+   "system_id": "2459",
+   "evidence": [
+    {
+     "quote": "Neural Canvas integrates generative AI models into a 3D sketching interface and incorporates four types of projection operations to facilitate 2D-to-3D content creation.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "2772",
+   "title": "DeepTreeSketch: Neural Graph Prediction for Faithful 3D Tree Modeling from Sketches",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642125",
+   "system_id": "deeptreesketch",
+   "evidence": [
+    {
+     "quote": "our system supports a flexible sketching mode for both precise and coarse control of the tree shapes by drawing branch strokes and foliage strokes, respectively",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 1,
+   "other_dimensions": [],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3196",
+   "title": "ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642229",
+   "system_id": "chatscratch",
+   "evidence": [
+    {
+     "quote": "Children express their needs and sketch on the drawing board.",
+     "location": "fig 3"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Accessibility",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3345",
+   "title": "The Impact of Sketch-guided vs. Prompt-guided 3D Generative AIs on the Design Exploration Process",
+   "venue": "chi-2024",
+   "year": 2024,
+   "url": "https://doi.org/10.1145/3613904.3642218",
+   "system_id": "3345",
+   "evidence": [
+    {
+     "quote": "(a) User draws a digital sketch on the canvas (left) and then clicks the ‘Generate’ button below to view a rotatable 3D model output of their sketch (right)",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "3483",
+   "title": "LumaDreams: Designing Positive Dream Meaning-Making for Daily Empowerment",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713495",
+   "system_id": "lumadreams",
+   "evidence": [
+    {
+     "quote": "Informed by meaning-making theories, LumaDreams enables users to journal dreams through sketches and text, which are then transformed into positive images and stories for users to revisit and reflect on.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U04",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Control and Agency",
+    "Metacognition",
+    "Personalization",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3612",
+   "title": "Paratrouper: Exploratory Creation of Character Cast Visuals Using Generative AI",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3714242",
+   "system_id": "paratrouper",
+   "evidence": [
+    {
+     "quote": "or by sketching in the (e) canvas and pressing the (f) generate button",
+     "location": "fig 2"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "3740",
+   "title": "Sketch2Terrain: AI-Driven Real-Time Terrain Sketch Mapping in Augmented Reality",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713467",
+   "system_id": "sketch2terrain",
+   "evidence": [
+    {
+     "quote": "combining freehand sketching with generative Artificial Intelligence",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Sensemaking",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "3895",
+   "title": "Code Shaping: Iterative Code Editing with Free-form AI-Interpreted Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713822",
+   "system_id": "3895",
+   "evidence": [
+    {
+     "quote": "We introduce the concept of code shaping, an interaction paradigm for editing code using free-form sketch annotations directly on top of the code and console output.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4127",
+   "title": "Inkspire: Supporting Design Exploration with Generative AI through Analogical Sketching",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713397",
+   "system_id": "inkspire",
+   "evidence": [
+    {
+     "quote": "The designer may sketch on the Sketching Panel (b) to iteratively guide AI design generations.",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation"
+   ]
+  },
+  {
+   "rid": "4147",
+   "title": "SketchFlex: Facilitating Spatial-Semantic Coherence in Text-to-Image Generation with Region-Based Sketches",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713801",
+   "system_id": "sketchflex",
+   "evidence": [
+    {
+     "quote": "1) the user can draw a sketch, assign a corresponding regional prompt, and use automatic prompt recommendation to refine their initial prompt (G1, G2)",
+     "location": "system sec 4"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "4417",
+   "title": "FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation",
+   "venue": "chi-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706598.3713686",
+   "system_id": "fusionprotor",
+   "evidence": [
+    {
+     "quote": "After sketching local details based on the captured physical prototype and selecting the intended design style, she obtained various generated high-fidelity renderings",
+     "location": "system sec 4.1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5270",
+   "title": "ASafePlace: User-Led Personalization of VR Relaxation via an Art Therapy Activity",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790571",
+   "system_id": "asafeplace",
+   "evidence": [
+    {
+     "quote": "In our system, users sketch a personal sanctuary from memory, which is then transformed into a customized 360° virtual environment with personalized audio guidance for relaxation training.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5271",
+   "title": "3DInkGen: Extending Traditional Ink-Painting Artistry with Generative 3D Creation for Novices",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791234",
+   "system_id": "3dinkgen",
+   "evidence": [
+    {
+     "quote": "The module consists of a drawing board component (a), a drawing canvas (b), a form preview component (c), a input box (d), and an element selector (f).",
+     "location": "fig 5"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Accessibility",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5326",
+   "title": "SketchDynamics: Exploring Free-Form Sketches for Dynamic Intent Expression in Animation Generation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791071",
+   "system_id": "sketchdynamics",
+   "evidence": [
+    {
+     "quote": "we introduce an interaction paradigm where users convey dynamic intent to a vision–language model via free-form sketching",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5439",
+   "title": "Harmonizing the Senses: Designing a Cross-Modal Interactive Art System to Enhance Older Adults' Affective Experiences",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790993",
+   "system_id": "5439",
+   "evidence": [
+    {
+     "quote": "an artificial intelligence (Al)-infused mode was integrated to transform strokes into real-time ink-style artworks, reducing cognitive effort, sustaining engagement",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U02",
+    "U04"
+   ],
+   "factors": [
+    "Personalization",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "5632",
+   "title": "Notational Animating: An Interactive Approach to Creating and Editing Animation Keyframes",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790707",
+   "system_id": "5632",
+   "evidence": [
+    {
+     "quote": "users sketch high-level notations over static drawings to indicate intended motions, which are then interpreted by automatic methods (e.g., GenAI models) to generate animation keyframes",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U03",
+    "U06",
+    "U07",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5715",
+   "title": "Component-Wise Sketching and Generation for Car Interior Design",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790912",
+   "system_id": "5715",
+   "evidence": [
+    {
+     "quote": "we propose a novel workflow in which designers sketch components individually, generate refined renderings for each component, and compose them to pre-visualize concepts",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 7,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "5782",
+   "title": "Less Redraw, More Explore: Suggestion and Completion for Sketch-to-Image",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791026",
+   "system_id": "5782",
+   "evidence": [
+    {
+     "quote": "Sketch-to-image systems let users transform simple line drawings into realistic images, but current workflows force users into tedious redraw-regenerate cycles that slow creative exploration.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U02",
+    "U05",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Guidance and Feedback",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "5960",
+   "title": "Who moved my heart brush? Realms of the Heart: A Human-AI Collaborative Gamified Adjuvant Treatment Application for Depressed Teens Based on Painting Therapy",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3791812",
+   "system_id": "5960",
+   "evidence": [
+    {
+     "quote": "Realms of the Heart includes two AI-driven strategies: the transformation of natural objects collected by teens’ exploration CHI ’26, April 13–17, 2026, Barcelona, Spain into brushes, and the generation of sketches corresponding to natural objects by using brushes based on ControlNet.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U06",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Skill and Self-Efficacy",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "6120",
+   "title": "GestuProp: 3D Virtual Reality Prop Generation with Co-Speech Gestures",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790491",
+   "system_id": "gestuprop",
+   "evidence": [
+    {
+     "quote": "Sketching Mode: Users outline the contours of target objects using one or both hands. The system renders the index finger’s movement trajectory in real time and generates corresponding surfaces once the path is closed",
+     "location": "system sec 4.1.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Personalization",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "6169",
+   "title": "AnnotateGPT: Designing Human-AI Collaboration in Pen-Based Document Annotation",
+   "venue": "chi-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772318.3790867",
+   "system_id": "annotategpt",
+   "evidence": [
+    {
+     "quote": "We introduce AnnotateGPT, a system that uses penbased annotations as an input modality for AI agents to assist with essay feedback.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U07"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "6492",
+   "title": "TaleBrush: Visual Sketching of Story Generation with Pretrained Language Models",
+   "venue": "chiea-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1145/3491101.3519873",
+   "system_id": "talebrush",
+   "evidence": [
+    {
+     "quote": "The tool allows writers to draw out the protagonist’s fortune with a simple and expressive interaction.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U05",
+    "U08"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "6885",
+   "title": "Collaborative Diffusion: Boosting Designerly Co-Creation with Generative AI",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3585680",
+   "system_id": "6885",
+   "evidence": [
+    {
+     "quote": "For image adaptation, any picture in the chat can be selected and edited with Telegram’s built-in sketching features, e.g., drawing over a part of an image.",
+     "location": "system sec"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U05",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Perspective-Taking",
+    "Coordination and Equitable Participation",
+    "Privacy and Ownership",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "7263",
+   "title": "Exploring a Digital Art Collection through Drawing Interactions with a Deep Generative Model",
+   "venue": "chiea-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3544549.3583902",
+   "system_id": "7263",
+   "evidence": [
+    {
+     "quote": "The user places a piece of tracing paper on the surface and draws with a pen (fig. 3).",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [
+    "U04"
+   ],
+   "factors": [
+    "Oversight",
+    "Sensemaking",
+    "Perspective-Taking",
+    "Personalization"
+   ]
+  },
+  {
+   "rid": "8317",
+   "title": "Exploring Visual Prompts: Refining Images with Scribbles and Annotations in Generative AI Image Tools",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719802",
+   "system_id": "8317",
+   "evidence": [
+    {
+     "quote": "Designers preferred annotations for spatial adjustments and referencing in-image elements, while scribbles were favored for specifying attributes such as shape, size, and position, often combined with other methods.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 4,
+   "other_dimensions": [
+    "U04",
+    "U06"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "8407",
+   "title": "Interactive Sketchpad: A Multimodal Tutoring System for Collaborative, Visual Problem-Solving",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719790",
+   "system_id": "8407",
+   "evidence": [
+    {
+     "quote": "The annotated visualization along with additional text or images can be sent directly from the whiteboard back to the LMM which processes the new input and continues the iterative reasoning cycle.",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Sensemaking",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "8412",
+   "title": "Introducing 3D Sketching to Overcome Challenges of View-Consistency and Progressive Development in 2D Generative AI-Based Car Exterior Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719731",
+   "system_id": "8412",
+   "evidence": [
+    {
+     "quote": "This workflow enables car designers to seamlessly transition between expressive 3D sketching, detailed 2D drawing, and realistic 2D generation, facilitating view-consistent and progressive design development.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Spatial and Embodied Cognition"
+   ]
+  },
+  {
+   "rid": "8543",
+   "title": "SketchAI: A \"Sketch-First\" Approach to Incorporating Generative AI into Fashion Design",
+   "venue": "chiea-2025",
+   "year": 2025,
+   "url": "https://doi.org/10.1145/3706599.3719782",
+   "system_id": "sketchai",
+   "evidence": [
+    {
+     "quote": "we introduce SketchAI, a novel sketch-first interface for diffusion models that allows practitioners to use real-time sketching on a tablet computer to guide model outputs",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Accessibility",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9049",
+   "title": "ARtisanAI: An AR and AI-Enhanced Experience for Ceramic Design-to-Craft",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798379",
+   "system_id": "artisanai",
+   "evidence": [
+    {
+     "quote": "Users first draw a conceptual sketch of the ceramic’s shape and style via a virtual board.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U07",
+    "U08",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Guidance and Feedback",
+    "Spatial and Embodied Cognition",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "9476",
+   "title": "One Kiss: Emojis as Agents of Genre Flux in Generative Comics",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798758",
+   "system_id": "9476",
+   "evidence": [
+    {
+     "quote": "Users begin a session by sketching a bounding box and selecting an initial narrative keyword to generate the first panel. Subsequent panels are added iteratively, with each sketch defining the visual rhythm for that beat.",
+     "location": "system sec 3.1"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U02",
+    "U04",
+    "U07"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Control and Agency"
+   ]
+  },
+  {
+   "rid": "9535",
+   "title": "Recognizable ≠ Mine: Anchoring and Negotiating Authorship in Child-AI Co-Creation",
+   "venue": "chiea",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798533",
+   "system_id": "9535",
+   "evidence": [
+    {
+     "quote": "current tools largely function as \"Aesthetic Filters\": they perform Image-to-Image translation that polishes strokes while strictly adhering to the original structure, merely beautifying the child’s drawing skills.",
+     "location": "intro"
+    }
+   ],
+   "other_patterns_in_paper": 2,
+   "other_dimensions": [],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Oversight",
+    "Control and Agency",
+    "Privacy and Ownership"
+   ]
+  },
+  {
+   "rid": "9580",
+   "title": "Sketch2Topo: Diffusion-Model-Based Topology Optimization Using Hand-Drawn Inputs as Condition Constraints",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798434",
+   "system_id": "sketch2topo",
+   "evidence": [
+    {
+     "quote": "With Sketch2Topo, users can use sketching to customize geometries and specify physical constraints.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Control and Agency",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "9616",
+   "title": "TacChat: Exploring User Generation and Accessible Sharing via Tactile Graphics for the Blind and Visually Impaired",
+   "venue": "chiea-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3772363.3798574",
+   "system_id": "tacchat",
+   "evidence": [
+    {
+     "quote": "The system was designed to automatically collect sketches from BLV users and convert into tactile graphics",
+     "location": "intro (full text)"
+    }
+   ],
+   "other_patterns_in_paper": 6,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U08"
+   ],
+   "factors": [
+    "Control and Agency",
+    "Accessibility",
+    "Spatial and Embodied Cognition",
+    "Privacy and Ownership",
+    "Effort and Cognitive Load",
+    "Affect, Wellbeing and Connection"
+   ]
+  },
+  {
+   "rid": "10072",
+   "title": "Drawing with Reframer: Emergence and Control in Co-Creative AI",
+   "venue": "iui-2023",
+   "year": 2023,
+   "url": "https://doi.org/10.1145/3581641.3584095",
+   "system_id": "10072",
+   "evidence": [
+    {
+     "quote": "a model for interactive vector-based synthesis-by-optimisation that seeks to complete a sketch based on the state of the canvas and a text prompt 𝑡 that describes the drawing goal",
+     "location": "system sec 3"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Creativity Support and Ideation",
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking"
+   ]
+  },
+  {
+   "rid": "10243",
+   "title": "Vistoryteller: Designing Data Stories with LLM Agent-Based Generation and Interactive User Control",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789086",
+   "system_id": "vistoryteller",
+   "evidence": [
+    {
+     "quote": "They can sketch a tension flow diagram, which represents how the theme should develop",
+     "location": "fig 1"
+    }
+   ],
+   "other_patterns_in_paper": 9,
+   "other_dimensions": [
+    "U05",
+    "U06",
+    "U08",
+    "U09",
+    "U10"
+   ],
+   "factors": [
+    "Judgment and Decision Making",
+    "Control and Agency",
+    "Perspective-Taking",
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  },
+  {
+   "rid": "10259",
+   "title": "Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts",
+   "venue": "iui-2026",
+   "year": 2026,
+   "url": "https://doi.org/10.1145/3742413.3789080",
+   "system_id": "10259",
+   "evidence": [
+    {
+     "quote": "This work examines how pen-based scribbles and annotations can enhance GenAI image refnement.",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 5,
+   "other_dimensions": [
+    "U04",
+    "U06",
+    "U09"
+   ],
+   "factors": [
+    "Gulf of Envisioning",
+    "Creativity Support and Ideation",
+    "Effort and Cognitive Load"
+   ]
+  },
+  {
+   "rid": "10651",
+   "title": "SAniHead: Sketching Animal-Like 3D Character Heads Using a View-Surface Collaborative Mesh Generative Network",
+   "venue": "tvcg-2022",
+   "year": 2022,
+   "url": "https://doi.org/10.1109/tvcg.2020.3030330",
+   "system_id": "sanihead",
+   "evidence": [
+    {
+     "quote": "we present SAniHead, an interactive system for creating animal-like heads with a mesh representation from dual-view sketches",
+     "location": "abstract"
+    }
+   ],
+   "other_patterns_in_paper": 3,
+   "other_dimensions": [
+    "U06"
+   ],
+   "factors": [
+    "Effort and Cognitive Load",
+    "Skill and Self-Efficacy"
+   ]
+  }
+ ]
+}
