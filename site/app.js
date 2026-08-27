@@ -217,7 +217,7 @@
   // to revise the choices; the route stays wired either way.
   var SHOW_FIGURE_PICKER = false;
   // Temporary: one matrix per stage, alongside the single grid on the home page.
-  var SHOW_STAGE_MATRIX = true;
+  var SHOW_STAGE_MATRIX = false;
 
   /* The matrix ramp normally follows the palette's accent. These are the alternatives a
      reader can pick instead; the ramp is built from whichever colour is chosen, running
